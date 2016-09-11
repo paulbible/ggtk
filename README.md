@@ -1,4 +1,4 @@
-# GGTK: The GO Graph Tool Kit #{#mainpage}
+# GGTK: The GO Graph Tool Kit
 
 A set of modular tools for working with [Gene Ontology](http://geneontology.org/) Graphs.
 
