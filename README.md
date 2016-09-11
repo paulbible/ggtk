@@ -1,5 +1,5 @@
 # GGTK: The GO Graph Tool Kit
-A set of modular tools for working with Gene Ontology Graphs (http://geneontology.org/).
+A set of modular tools for working with [Gene Ontology](http://geneontology.org/) Graphs.
 
 GGTK is composed of a set of C++ header libraries. Simply include the necessary files in your C++ source code. Some header only [Boost](http://www.boost.org) libraries are required for GGTK (Boost 1.54 or later). Using header only libraries allows scientist and developers to use as much or as little of GGTK as needed.
 
@@ -21,5 +21,5 @@ See the LICENSE_1_0.txt file or a copy at http://www.boost.org/LICENSE_1_0.txt
 Check back later. Manuscript in preparation.
 
 # Acknowledgements
-GGTK uses the amazing RapidXML library (http://rapidxml.sourceforge.net/) writen by Marcin Kalicinski.
+GGTK uses the amazing [RapidXML](http://rapidxml.sourceforge.net/) library writen by Marcin Kalicinski.
 
