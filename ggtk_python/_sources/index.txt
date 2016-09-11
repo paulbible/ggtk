@@ -10,7 +10,10 @@ GGTK: The GO Graph Tool Kit
 .. _C++ documentation:
    https://paulbible.github.io/ggtk/ggtk/index.html
 
-GGTK is a set of modular tools for working with the Gene Ontology Graph. These pages provide documentation for the Python interface for GGTK. The `C++ documentation`_ provides details about the GGTK API.
+.. _GitHub Project:
+   https://github.com/paulbible/ggtk
+
+GGTK is a set of modular tools for working with the Gene Ontology Graph. These pages provide documentation for the Python interface for GGTK. The `C++ documentation`_ provides details about the GGTK API. The `GitHub Project`_ hosts all the code for GGTK.
 
 
 Getting Started
