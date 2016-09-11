@@ -13,7 +13,7 @@ from ggtk.TermSimilarity import ResnikSimilarity
 class ResnikSimilairtyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.graph = ggtk.GoParser.parse("../../example_graphs/go.obo","obo")
+        self.graph = ggtk.GoParser.parse("../../example_graphs/go-basic.obo","obo")
         self.annos = ggtk.AnnotationParser.parse("../../example_annotations/goa_human.gaf")
         self.ic_map = TermInformationContentMap(self.graph, self.annos)
         self.sim = ResnikSimilarity(self.graph, self.ic_map)
@@ -44,7 +44,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0043234 -> protein complex
         GO:0043234 -> protein complex
         """
-        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0043234", "GO:0043234"), 5.709408519)
+        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0043234", "GO:0043234"), 5.70882396)
 
     def test_similarity_CC(self):
         """
@@ -52,7 +52,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0043234 -> protein complex
         GO:0000791 -> euchromatin
         """
-        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0043234", "GO:0000791"), 5.442882399)
+        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0043234", "GO:0000791"), 5.44229784)
 
     def test_similarity_CC_1_good_1_root(self):
         """
@@ -72,7 +72,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0043234 -> protein complex
         GO:0043234 -> protein complex
         """
-        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0043234", "GO:0043234"), 0.382777400)
+        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0043234", "GO:0043234"), 0.382753210)
 
     def test_normalized_similarity_CC(self):
         """
@@ -80,7 +80,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0043234 -> protein complex
         GO:0000791 -> euchromatin
         """
-        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0043234", "GO:0000791"), 0.364908618)
+        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0043234", "GO:0000791"), 0.364883728)
 
     def test_normalized_similarity_CC_1_good_1_root(self):
         """
@@ -99,7 +99,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0007155 -> cell adhesion
         GO:0044406 -> adhesion of symbiont to host
         """
-        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0007155", "GO:0044406"),  7.06391047)
+        self.assertAlmostEqual(self.sim.calculateTermSimilarity("GO:0007155", "GO:0044406"),  7.07776885)
 
     def test_normalized_similarity_BP(self):
         """
@@ -107,7 +107,7 @@ class CoreMethodsTests(ResnikSimilairtyTestCase):
         GO:0007155 -> cell adhesion
         GO:0044406 -> adhesion of symbiont to host
         """
-        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0007155", "GO:0044406"),  0.457582306)
+        self.assertAlmostEqual(self.sim.calculateNormalizedTermSimilarity("GO:0007155", "GO:0044406"),  0.4651964752)
 
 ##########################################################################
 # Similarity in MF
