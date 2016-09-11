@@ -1,7 +1,7 @@
 # GGTK: The GO Graph Tool Kit
 A set of modular tools for working with Gene Ontology Graphs (http://geneontology.org/).
 
-GGTK is composed of a set of C++ header libraries. Simply include the necessary files in your C++ source code. Some header only [Boost](www.boost.org) libraries are required for GGTK (Boost 1.54 or later). Using header only libraries allows scientist and developers to use as much or as little of GGTK as needed.
+GGTK is composed of a set of C++ header libraries. Simply include the necessary files in your C++ source code. Some header only [Boost](http://www.boost.org) libraries are required for GGTK (Boost 1.54 or later). Using header only libraries allows scientist and developers to use as much or as little of GGTK as needed.
 
 # Getting Started
 Head over to the [GGTK Documentaiton](https://paulbible.github.io/ggtk/) page to get started.
