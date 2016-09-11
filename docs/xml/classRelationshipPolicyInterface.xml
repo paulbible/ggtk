@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classRelationshipPolicyInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>RelationshipPolicyInterface</compoundname>
+    <derivedcompoundref refid="classAllowedSetRelationshipPolicy" prot="public" virt="non-virtual">AllowedSetRelationshipPolicy</derivedcompoundref>
+    <derivedcompoundref refid="classStandardRelationshipPolicy" prot="public" virt="non-virtual">StandardRelationshipPolicy</derivedcompoundref>
+    <includes refid="RelationshipPolicyInterface_8hpp" local="no">ggtk/RelationshipPolicyInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool RelationshipPolicyInterface::isAllowed</definition>
+        <argsstring>(GO::Relationship relationship)=0</argsstring>
+        <name>isAllowed</name>
+        <reimplementedby refid="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4">isAllowed</reimplementedby>
+        <reimplementedby refid="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90">isAllowed</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref></type>
+          <declname>relationship</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual meethod to test if a relationship is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any subclass to imlement an isAllowed method to enforce the relationship pollicy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelationshipPolicyInterface.hpp" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface to check relationships between <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is interface is used to create parsers which will only use a specific set of relationship when parsing a <ref refid="namespaceGO" kindref="compound">GO</ref> graph file. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="186">
+        <label>RelationshipPolicyInterface</label>
+        <link refid="classRelationshipPolicyInterface"/>
+      </node>
+      <node id="188">
+        <label>StandardRelationshipPolicy</label>
+        <link refid="classStandardRelationshipPolicy"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>AllowedSetRelationshipPolicy</label>
+        <link refid="classAllowedSetRelationshipPolicy"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/RelationshipPolicyInterface.hpp" line="18" column="1" bodyfile="ggtk/RelationshipPolicyInterface.hpp" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb" prot="public" virt="pure-virtual"><scope>RelationshipPolicyInterface</scope><name>isAllowed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

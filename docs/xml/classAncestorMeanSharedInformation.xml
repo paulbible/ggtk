@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAncestorMeanSharedInformation" kind="class" language="C++" prot="public">
+    <compoundname>AncestorMeanSharedInformation</compoundname>
+    <basecompoundref refid="classSharedInformationInterface" prot="public" virt="non-virtual">SharedInformationInterface</basecompoundref>
+    <includes refid="AncestorMeanSharedInformation_8hpp" local="no">ggtk/AncestorMeanSharedInformation.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAncestorMeanSharedInformation_1a0722ae43665494558d4da986ac572bbe" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* AncestorMeanSharedInformation::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="122" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAncestorMeanSharedInformation_1a29547e7e8fee5ad3ae14019263f0bb14" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap AncestorMeanSharedInformation::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="123" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1aef781d2b6461b28b4974aa990611c8a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AncestorMeanSharedInformation::AncestorMeanSharedInformation</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>AncestorMeanSharedInformation</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classAncestorMeanSharedInformation" kindref="compound">AncestorMeanSharedInformation</ref> class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="34" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1a86dad7b02ff45ae758a2b311ad763350" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double AncestorMeanSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the shared infromation between two concepts. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the shared information between two concepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="43" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="43" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1af31937c58ee53db666586b446bc23061" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double AncestorMeanSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the shared information of a single terms,or information content. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method privdes a mechanism for returing a term&apos;s infromation content. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="74" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1abf7d613e1459a5cf49071871e55f8a50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double AncestorMeanSharedInformation::maxInformationContent</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>maxInformationContent</name>
+        <reimplements refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999">maxInformationContent</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the maximum information content for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method provides the absolute max information content within a corpus for normalization purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="87" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="87" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1af7503d6f761957bcb22d0e6614d87fa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AncestorMeanSharedInformation::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <reimplements refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8">hasTerm</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if a term can be found. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the term can be found in the current map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="108" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classAncestorMeanSharedInformation_1a75f59ac9d53014b967d0a81de8a07dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AncestorMeanSharedInformation::isSameOntology</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>isSameOntology</name>
+        <reimplements refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d">isSameOntology</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if the two terms are of like ontologies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determine if two terms are of the same ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AncestorMeanSharedInformation.hpp" line="116" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="116" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate shared infromation as the average information conent of all common ancestors. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates shared infromation by averaging the information content of all common ancestors.</para><para>This shared information method is used a baseline for comparison and may not be meaningful. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>AncestorMeanSharedInformation</label>
+        <link refid="classAncestorMeanSharedInformation"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>AncestorMeanSharedInformation</label>
+        <link refid="classAncestorMeanSharedInformation"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AncestorMeanSharedInformation.hpp" line="27" column="1" bodyfile="ggtk/AncestorMeanSharedInformation.hpp" bodystart="27" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classAncestorMeanSharedInformation_1a0722ae43665494558d4da986ac572bbe" prot="private" virt="non-virtual"><scope>AncestorMeanSharedInformation</scope><name>_goGraph</name></member>
+      <member refid="classAncestorMeanSharedInformation_1a29547e7e8fee5ad3ae14019263f0bb14" prot="private" virt="non-virtual"><scope>AncestorMeanSharedInformation</scope><name>_icMap</name></member>
+      <member refid="classAncestorMeanSharedInformation_1aef781d2b6461b28b4974aa990611c8a1" prot="public" virt="non-virtual"><scope>AncestorMeanSharedInformation</scope><name>AncestorMeanSharedInformation</name></member>
+      <member refid="classAncestorMeanSharedInformation_1af7503d6f761957bcb22d0e6614d87fa4" prot="public" virt="virtual"><scope>AncestorMeanSharedInformation</scope><name>hasTerm</name></member>
+      <member refid="classAncestorMeanSharedInformation_1a75f59ac9d53014b967d0a81de8a07dbb" prot="public" virt="virtual"><scope>AncestorMeanSharedInformation</scope><name>isSameOntology</name></member>
+      <member refid="classAncestorMeanSharedInformation_1abf7d613e1459a5cf49071871e55f8a50" prot="public" virt="virtual"><scope>AncestorMeanSharedInformation</scope><name>maxInformationContent</name></member>
+      <member refid="classAncestorMeanSharedInformation_1a86dad7b02ff45ae758a2b311ad763350" prot="public" virt="virtual"><scope>AncestorMeanSharedInformation</scope><name>sharedInformation</name></member>
+      <member refid="classAncestorMeanSharedInformation_1af31937c58ee53db666586b446bc23061" prot="public" virt="virtual"><scope>AncestorMeanSharedInformation</scope><name>sharedInformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

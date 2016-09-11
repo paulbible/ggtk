@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classStandardXmlGoParser" kind="class" language="C++" prot="public">
+    <compoundname>StandardXmlGoParser</compoundname>
+    <basecompoundref refid="classGoParserInterface" prot="public" virt="non-virtual">GoParserInterface</basecompoundref>
+    <includes refid="StandardXmlGoParser_8hpp" local="no">ggtk/StandardXmlGoParser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStandardXmlGoParser_1ae2e2fd216ae6579f55ef0e988c5e0636" prot="private" static="no" mutable="no">
+        <type><ref refid="classAllowedRelationshipXmlGoParser" kindref="compound">AllowedRelationshipXmlGoParser</ref> *</type>
+        <definition>AllowedRelationshipXmlGoParser* StandardXmlGoParser::_parser</definition>
+        <argsstring></argsstring>
+        <name>_parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="74" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStandardXmlGoParser_1a195011f5475fd11985217c6218610d5b" prot="private" static="no" mutable="no">
+        <type><ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> *</type>
+        <definition>StandardRelationshipPolicy* StandardXmlGoParser::_policy</definition>
+        <argsstring></argsstring>
+        <name>_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="75" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStandardXmlGoParser_1ae56413ab11d1fa8f3870f5bcc262d3f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* StandardXmlGoParser::parseGoFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>parseGoFile</name>
+        <reimplements refid="classGoParserInterface_1aefde440e0d5404b9efa2a16a89e09674">parseGoFile</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Method to parse the go file, should be an XML file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will read a Gene Ontology XML file and add only those relationship which are specified to the graph. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="42" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classStandardXmlGoParser_1a74c344440ef2ce5b30536e09691c92ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool StandardXmlGoParser::isFileGood</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>isFileGood</name>
+        <reimplements refid="classGoParserInterface_1a0d2db54063c1ff58a0e15f0187af5aa1">isFileGood</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>A method to test if a file fits the accepted format. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the file matches accepted format, false otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="50" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classStandardXmlGoParser_1ac05cc1de0c2fc74e089169f9baea1f0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> *</type>
+        <definition>GoParserInterface* StandardXmlGoParser::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classGoParserInterface_1a21c4ea01809737ab2975fb71edf6fcd5">clone</reimplements>
+        <briefdescription>
+<para>a method to create a new instance of this class for use in a factory </para>        </briefdescription>
+        <detaileddescription>
+<para>creats a new pointer to the parser, used by the factory for go parsers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="58" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classStandardXmlGoParser_1aedda17aae5f75704829b279d2bfe7ac7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StandardXmlGoParser::StandardXmlGoParser</definition>
+        <argsstring>()</argsstring>
+        <name>StandardXmlGoParser</name>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>constructor that sets the policy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardXmlGoParser.hpp" line="66" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse only is_a or part_of relationships. </para>    </briefdescription>
+    <detaileddescription>
+<para>Implements <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="218">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+      <node id="217">
+        <label>StandardXmlGoParser</label>
+        <link refid="classStandardXmlGoParser"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="220">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+      <node id="219">
+        <label>StandardXmlGoParser</label>
+        <link refid="classStandardXmlGoParser"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/StandardXmlGoParser.hpp" line="31" column="1" bodyfile="ggtk/StandardXmlGoParser.hpp" bodystart="31" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classStandardXmlGoParser_1ae2e2fd216ae6579f55ef0e988c5e0636" prot="private" virt="non-virtual"><scope>StandardXmlGoParser</scope><name>_parser</name></member>
+      <member refid="classStandardXmlGoParser_1a195011f5475fd11985217c6218610d5b" prot="private" virt="non-virtual"><scope>StandardXmlGoParser</scope><name>_policy</name></member>
+      <member refid="classStandardXmlGoParser_1ac05cc1de0c2fc74e089169f9baea1f0d" prot="public" virt="virtual"><scope>StandardXmlGoParser</scope><name>clone</name></member>
+      <member refid="classStandardXmlGoParser_1a74c344440ef2ce5b30536e09691c92ab" prot="public" virt="virtual"><scope>StandardXmlGoParser</scope><name>isFileGood</name></member>
+      <member refid="classStandardXmlGoParser_1ae56413ab11d1fa8f3870f5bcc262d3f8" prot="public" virt="virtual"><scope>StandardXmlGoParser</scope><name>parseGoFile</name></member>
+      <member refid="classStandardXmlGoParser_1aedda17aae5f75704829b279d2bfe7ac7" prot="public" virt="non-virtual"><scope>StandardXmlGoParser</scope><name>StandardXmlGoParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

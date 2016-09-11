@@ -1,0 +1,70 @@
+\hypertarget{classBestMatchAverageSetSimilarity}{}\section{Best\+Match\+Average\+Set\+Similarity Class Reference}
+\label{classBestMatchAverageSetSimilarity}\index{Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}}
+
+
+A class to calculate the best match average similarity between go terms for 2 sets.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Best\+Match\+Average\+Set\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Best\+Match\+Average\+Set\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBestMatchAverageSetSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBestMatchAverageSetSimilarity_afbc85286f64e945d9c3e0bf193171721}{Best\+Match\+Average\+Set\+Similarity} (\hyperlink{classTermSimilarityInterface}{Term\+Similarity\+Interface} $\ast$sim\+Measure)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classBestMatchAverageSetSimilarity_adf1b3109b46f04087f919bdb33e131f0}{calculate\+Similarity} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsA, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term set to term set similarity for \hyperlink{namespaceGO}{GO} terms;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate the best match average similarity between go terms for 2 sets. 
+
+This class defines the best match average similarity getween two sets of terms. Used by Couto et al.
+
+F. M. Couto, M. J. Silva, and P. M. Coutinho, \char`\"{}\+Measuring semantic similarity
+between Gene Ontology terms,\char`\"{} Data \& Knowledge Engineering, vol. 61, pp. 137-\/152, Apr 2007. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}!Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}}
+\index{Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}!Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}}
+\subsubsection[{\texorpdfstring{Best\+Match\+Average\+Set\+Similarity(\+Term\+Similarity\+Interface $\ast$sim\+Measure)}{BestMatchAverageSetSimilarity(TermSimilarityInterface *simMeasure)}}]{\setlength{\rightskip}{0pt plus 5cm}Best\+Match\+Average\+Set\+Similarity\+::\+Best\+Match\+Average\+Set\+Similarity (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Similarity\+Interface} $\ast$}]{sim\+Measure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classBestMatchAverageSetSimilarity_afbc85286f64e945d9c3e0bf193171721}{}\label{classBestMatchAverageSetSimilarity_afbc85286f64e945d9c3e0bf193171721}
+
+
+Constructor. 
+
+Creates the \hyperlink{classBestMatchAverageSetSimilarity}{Best\+Match\+Average\+Set\+Similarity} class assigning the similarity measure private memeber. 
+
+\subsection{Member Function Documentation}
+\index{Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}!calculate\+Similarity@{calculate\+Similarity}}
+\index{calculate\+Similarity@{calculate\+Similarity}!Best\+Match\+Average\+Set\+Similarity@{Best\+Match\+Average\+Set\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Similarity(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+A, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+B)}{calculateSimilarity(const boost::unordered_set< std::string > &termsA, const boost::unordered_set< std::string > &termsB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Best\+Match\+Average\+Set\+Similarity\+::calculate\+Similarity (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsA, }
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classBestMatchAverageSetSimilarity_adf1b3109b46f04087f919bdb33e131f0}{}\label{classBestMatchAverageSetSimilarity_adf1b3109b46f04087f919bdb33e131f0}
+
+
+A method for calculating term set to term set similarity for \hyperlink{namespaceGO}{GO} terms;. 
+
+This method returns the best match average similarity. 
+
+Implements \hyperlink{classTermSetSimilarityInterface_aeb985b714efc3df40e55bdd31e425e04}{Term\+Set\+Similarity\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Best\+Match\+Average\+Set\+Similarity.\+hpp\end{DoxyCompactItemize}

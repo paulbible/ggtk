@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classStandardRelationshipPolicy" kind="class" language="C++" prot="public">
+    <compoundname>StandardRelationshipPolicy</compoundname>
+    <basecompoundref refid="classRelationshipPolicyInterface" prot="public" virt="non-virtual">RelationshipPolicyInterface</basecompoundref>
+    <includes refid="StandardRelationshipPolicy_8hpp" local="no">ggtk/StandardRelationshipPolicy.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStandardRelationshipPolicy_1adb32786e0361af34b3d7052de3ab7867" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; <ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref>, bool &gt;</type>
+        <definition>boost::unordered_map&lt;GO::Relationship,bool&gt; StandardRelationshipPolicy::_relationshipMap</definition>
+        <argsstring></argsstring>
+        <name>_relationshipMap</name>
+        <briefdescription>
+<para>a map of relationships to bool </para>        </briefdescription>
+        <detaileddescription>
+<para>maps a relationship to a bool. Boost unordered map give constant time find. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardRelationshipPolicy.hpp" line="57" column="1" bodyfile="ggtk/StandardRelationshipPolicy.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStandardRelationshipPolicy_1a8998d51c3752dfcde0b8931607178c4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StandardRelationshipPolicy::StandardRelationshipPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>StandardRelationshipPolicy</name>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardRelationshipPolicy.hpp" line="28" column="1" bodyfile="ggtk/StandardRelationshipPolicy.hpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classStandardRelationshipPolicy_1af23f42bba1feb00a3b22a96ae17ffacf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StandardRelationshipPolicy::StandardRelationshipPolicy</definition>
+        <argsstring>(std::vector&lt; GO::Relationship &gt; relationships)</argsstring>
+        <name>StandardRelationshipPolicy</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref> &gt;</type>
+          <declname>relationships</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creats the <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> using a list(vector) of relationships to allow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardRelationshipPolicy.hpp" line="38" column="1" bodyfile="ggtk/StandardRelationshipPolicy.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool StandardRelationshipPolicy::isAllowed</definition>
+        <argsstring>(GO::Relationship relationship)</argsstring>
+        <name>isAllowed</name>
+        <reimplements refid="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb">isAllowed</reimplements>
+        <param>
+          <type><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref></type>
+          <declname>relationship</declname>
+        </param>
+        <briefdescription>
+<para>a method to test if a relatinoship is allowed or not </para>        </briefdescription>
+        <detaileddescription>
+<para>tests if the relationship is allowed. Overridden to fulfill the <ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/StandardRelationshipPolicy.hpp" line="49" column="1" bodyfile="ggtk/StandardRelationshipPolicy.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to allow only a set of relationships. </para>    </briefdescription>
+    <detaileddescription>
+<para>A class to allow only certain relationships in the go graph. It uses a set of enums to restric the types of relationships considered in a graph. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="214">
+        <label>RelationshipPolicyInterface</label>
+        <link refid="classRelationshipPolicyInterface"/>
+      </node>
+      <node id="213">
+        <label>StandardRelationshipPolicy</label>
+        <link refid="classStandardRelationshipPolicy"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="216">
+        <label>RelationshipPolicyInterface</label>
+        <link refid="classRelationshipPolicyInterface"/>
+      </node>
+      <node id="215">
+        <label>StandardRelationshipPolicy</label>
+        <link refid="classStandardRelationshipPolicy"/>
+        <childnode refid="216" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/StandardRelationshipPolicy.hpp" line="20" column="1" bodyfile="ggtk/StandardRelationshipPolicy.hpp" bodystart="20" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classStandardRelationshipPolicy_1adb32786e0361af34b3d7052de3ab7867" prot="private" virt="non-virtual"><scope>StandardRelationshipPolicy</scope><name>_relationshipMap</name></member>
+      <member refid="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4" prot="public" virt="virtual"><scope>StandardRelationshipPolicy</scope><name>isAllowed</name></member>
+      <member refid="classStandardRelationshipPolicy_1a8998d51c3752dfcde0b8931607178c4d" prot="public" virt="non-virtual"><scope>StandardRelationshipPolicy</scope><name>StandardRelationshipPolicy</name></member>
+      <member refid="classStandardRelationshipPolicy_1af23f42bba1feb00a3b22a96ae17ffacf" prot="public" virt="non-virtual"><scope>StandardRelationshipPolicy</scope><name>StandardRelationshipPolicy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

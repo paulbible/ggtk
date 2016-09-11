@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classJaccardSetSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>JaccardSetSimilarity</compoundname>
+    <basecompoundref refid="classTermSetSimilarityInterface" prot="public" virt="non-virtual">TermSetSimilarityInterface</basecompoundref>
+    <includes refid="JaccardSetSimilarity_8hpp" local="no">ggtk/JaccardSetSimilarity.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJaccardSetSimilarity_1a91ae983223bd59f776c029c1c63f979d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JaccardSetSimilarity::JaccardSetSimilarity</definition>
+        <argsstring>()</argsstring>
+        <name>JaccardSetSimilarity</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classJaccardSetSimilarity" kindref="compound">JaccardSetSimilarity</ref> class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JaccardSetSimilarity.hpp" line="29" column="1" bodyfile="ggtk/JaccardSetSimilarity.hpp" bodystart="29" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classJaccardSetSimilarity_1a122a04f7f67b96e393fcde1025a306c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double JaccardSetSimilarity::calculateSimilarity</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)</argsstring>
+        <name>calculateSimilarity</name>
+        <reimplements refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04">calculateSimilarity</reimplements>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term set to term set similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms;. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Jaccard set similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JaccardSetSimilarity.hpp" line="37" column="1" bodyfile="ggtk/JaccardSetSimilarity.hpp" bodystart="37" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate jaccard similarity between 2 sets. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates jaccard set similarity between two sets of terms. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="125">
+        <label>JaccardSetSimilarity</label>
+        <link refid="classJaccardSetSimilarity"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="128">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="127">
+        <label>JaccardSetSimilarity</label>
+        <link refid="classJaccardSetSimilarity"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/JaccardSetSimilarity.hpp" line="21" column="1" bodyfile="ggtk/JaccardSetSimilarity.hpp" bodystart="21" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classJaccardSetSimilarity_1a122a04f7f67b96e393fcde1025a306c3" prot="public" virt="virtual"><scope>JaccardSetSimilarity</scope><name>calculateSimilarity</name></member>
+      <member refid="classJaccardSetSimilarity_1a91ae983223bd59f776c029c1c63f979d" prot="public" virt="non-virtual"><scope>JaccardSetSimilarity</scope><name>JaccardSetSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

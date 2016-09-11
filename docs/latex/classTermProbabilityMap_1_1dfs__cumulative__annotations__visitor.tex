@@ -1,0 +1,67 @@
+\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor}{}\section{Term\+Probability\+Map\+:\+:dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor Class Reference}
+\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor}\index{Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor@{Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}}
+
+
+Depth first search boost visitor.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Probability\+Map.\+hpp$>$}
+
+Inheritance diagram for Term\+Probability\+Map\+:\+:dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a3c6b493a2f9b5b966f12c947553ffbd2}{dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$in\+Graph, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$in\+Data, std\+::vector$<$ std\+::size\+\_\+t $>$ $\ast$annotations, boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ $\ast$name\+To\+Index)\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a3c6b493a2f9b5b966f12c947553ffbd2}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a3c6b493a2f9b5b966f12c947553ffbd2}
+
+\begin{DoxyCompactList}\small\item\em A parameterized constructor passing parameters to the boost default\+\_\+dfs\+\_\+visitor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Vertex , typename Graph $>$ }\\void \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_ac6147a4c2bcfe83492667b248630a525}{finish\+\_\+vertex} (Vertex u, const Graph \&g)
+\begin{DoxyCompactList}\small\item\em The extended method of the default\+\_\+dfs\+\_\+visitor, finish\+\_\+vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGoGraph}{Go\+Graph} $\ast$ \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a9588ad34b2d743cb8245c91d27fe22e1}{go\+Graph}\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a9588ad34b2d743cb8245c91d27fe22e1}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a9588ad34b2d743cb8245c91d27fe22e1}
+
+\begin{DoxyCompactList}\small\item\em The go graph object. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationData}{Annotation\+Data} $\ast$ \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a2200329f595bd75534fb37be72550d21}{anno\+Data}\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a2200329f595bd75534fb37be72550d21}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_a2200329f595bd75534fb37be72550d21}
+
+\begin{DoxyCompactList}\small\item\em An \hyperlink{classAnnotationData}{Annotation\+Data} object for accessing annotations. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::size\+\_\+t $>$ $\ast$ \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_aab2aba55afae7c48e8834d409a889193}{anno\+List}\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_aab2aba55afae7c48e8834d409a889193}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_aab2aba55afae7c48e8834d409a889193}
+
+\begin{DoxyCompactList}\small\item\em The annotaiton list to hold the and query the cummulative annotations. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ $\ast$ \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_af1db06d68d0e336e1300aabc2ba5ad9c}{name\+Index\+Map}\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_af1db06d68d0e336e1300aabc2ba5ad9c}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_af1db06d68d0e336e1300aabc2ba5ad9c}
+
+\begin{DoxyCompactList}\small\item\em A map from name To index, initialized in this visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Depth first search boost visitor. 
+
+This defines a class used by Term\+Proability\+Map to calculate the cumulative annotations of a term based on the true path rule. Basically this class is passed to a boost Depth first search algorithm to add the number of a child\textquotesingle{}s annotaitons to the parent. 
+
+\subsection{Member Function Documentation}
+\index{Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor@{Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}!finish\+\_\+vertex@{finish\+\_\+vertex}}
+\index{finish\+\_\+vertex@{finish\+\_\+vertex}!Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor@{Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}}
+\subsubsection[{\texorpdfstring{finish\+\_\+vertex(\+Vertex u, const Graph \&g)}{finish_vertex(Vertex u, const Graph &g)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Vertex , typename Graph $>$ void Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor\+::finish\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{Vertex}]{u, }
+\item[{const Graph \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_ac6147a4c2bcfe83492667b248630a525}{}\label{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_ac6147a4c2bcfe83492667b248630a525}
+
+
+The extended method of the default\+\_\+dfs\+\_\+visitor, finish\+\_\+vertex. 
+
+This method is called during a depth first search traversal of a graph and called when the visitor finished or leaves a node. This is the last time the algorithm touches the node.
+
+Here we calculate the number of cummulative annotations for a term (node) by adding the current term\textquotesingle{}s annotations to the annotations of the term\textquotesingle{}s children. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Probability\+Map.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\hypertarget{namespaceAccumulators}{}\section{Accumulators Namespace Reference}
+\label{namespaceAccumulators}\index{Accumulators@{Accumulators}}
+
+
+The \hyperlink{namespaceAccumulators}{Accumulators} namespace provides min, max, and average accumulators to the broader code base.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::min $>$ $>$ \hyperlink{namespaceAccumulators_a475b123bb5929d13a2f78b40f43a1257}{Min\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping boost accumulators. \end{DoxyCompactList}\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::max $>$ $>$ \hyperlink{namespaceAccumulators_ae68012df9b3c9adaca0807437b8b0129}{Max\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping boost accumulators. \end{DoxyCompactList}\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::mean $>$ $>$ \hyperlink{namespaceAccumulators_a42d249e1cf4e4f6c496ab61b7372cf4a}{Mean\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping boost accumulators. \end{DoxyCompactList}\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::max, boost\+::accumulators\+::tag\+::min, boost\+::accumulators\+::tag\+::mean $>$ $>$ \hyperlink{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}{Simple\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping min, max, and mean accumulators. \end{DoxyCompactList}\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::covariance$<$ double, boost\+::accumulators\+::tag\+::covariate1 $>$ $>$ $>$ \hyperlink{namespaceAccumulators_a69e0958469bde3d2198062b52880ec68}{Covariance\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping the covariance accumulator. \end{DoxyCompactList}\item 
+typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::variance $>$ $>$ \hyperlink{namespaceAccumulators_aa858a2eb0c818655fa5d66012dd41b09}{Variance\+Accumulator}
+\begin{DoxyCompactList}\small\item\em A helper type wrapping the variance accumulator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespaceAccumulators_ac0b3251fec13bffecc672a1937401ac6}{extract\+Min} (const \hyperlink{namespaceAccumulators_a475b123bb5929d13a2f78b40f43a1257}{Min\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the min. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_a298ea3ee8758a98b37ed8b8b7a022ba7}{extract\+Max} (const \hyperlink{namespaceAccumulators_ae68012df9b3c9adaca0807437b8b0129}{Max\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the max. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_a42a703c5c61fedbdd8aecd2e558a4467}{extract\+Mean} (const \hyperlink{namespaceAccumulators_a42d249e1cf4e4f6c496ab61b7372cf4a}{Mean\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the mean. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_aaf73f870f07e3daaef9259f4f05f9879}{extract\+Min} (const \hyperlink{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}{Simple\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em An overlaoded helper helper function to extract the min. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_ad2a34538b20bf4420510e3f67c36f75a}{extract\+Max} (const \hyperlink{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}{Simple\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em An overlaoded helper helper function to extract the max. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_ae241aec21f9cee46878d1a589dcba563}{extract\+Mean} (const \hyperlink{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}{Simple\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em An overlaoded helper helper function to extract the mean. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_a89e5b416840bfe8e056d708b6a236da4}{extract\+Covariance} (const \hyperlink{namespaceAccumulators_a69e0958469bde3d2198062b52880ec68}{Covariance\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the covariance. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_a69a4c9a9e60fc7e6e22b43daa75e48bd}{extract\+Variance} (const \hyperlink{namespaceAccumulators_aa858a2eb0c818655fa5d66012dd41b09}{Variance\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the variance. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceAccumulators_ab0dcf3f9dcccf475b65259308a4507df}{extract\+SD} (const \hyperlink{namespaceAccumulators_aa858a2eb0c818655fa5d66012dd41b09}{Variance\+Accumulator} \&acc)
+\begin{DoxyCompactList}\small\item\em A helper helper function to extract the variance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{namespaceAccumulators}{Accumulators} namespace provides min, max, and average accumulators to the broader code base. 
+
+This namespace defines accumulator types from boost. Also provided are specific extactors that will return the accumulator\textquotesingle{}s current value. 
+
+\subsection{Typedef Documentation}
+\index{Accumulators@{Accumulators}!Covariance\+Accumulator@{Covariance\+Accumulator}}
+\index{Covariance\+Accumulator@{Covariance\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Covariance\+Accumulator}{CovarianceAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::covariance$<$double, boost\+::accumulators\+::tag\+::covariate1$>$ $>$ $>$ {\bf Accumulators\+::\+Covariance\+Accumulator}}\hypertarget{namespaceAccumulators_a69e0958469bde3d2198062b52880ec68}{}\label{namespaceAccumulators_a69e0958469bde3d2198062b52880ec68}
+
+
+A helper type wrapping the covariance accumulator. 
+
+Covariance\+Accumulator \index{Accumulators@{Accumulators}!Max\+Accumulator@{Max\+Accumulator}}
+\index{Max\+Accumulator@{Max\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Max\+Accumulator}{MaxAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::max $>$ $>$ {\bf Accumulators\+::\+Max\+Accumulator}}\hypertarget{namespaceAccumulators_ae68012df9b3c9adaca0807437b8b0129}{}\label{namespaceAccumulators_ae68012df9b3c9adaca0807437b8b0129}
+
+
+A helper type wrapping boost accumulators. 
+
+Max\+Accumulator \index{Accumulators@{Accumulators}!Mean\+Accumulator@{Mean\+Accumulator}}
+\index{Mean\+Accumulator@{Mean\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Mean\+Accumulator}{MeanAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::mean $>$ $>$ {\bf Accumulators\+::\+Mean\+Accumulator}}\hypertarget{namespaceAccumulators_a42d249e1cf4e4f6c496ab61b7372cf4a}{}\label{namespaceAccumulators_a42d249e1cf4e4f6c496ab61b7372cf4a}
+
+
+A helper type wrapping boost accumulators. 
+
+Mean\+Accumulator \index{Accumulators@{Accumulators}!Min\+Accumulator@{Min\+Accumulator}}
+\index{Min\+Accumulator@{Min\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Min\+Accumulator}{MinAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::min $>$ $>$ {\bf Accumulators\+::\+Min\+Accumulator}}\hypertarget{namespaceAccumulators_a475b123bb5929d13a2f78b40f43a1257}{}\label{namespaceAccumulators_a475b123bb5929d13a2f78b40f43a1257}
+
+
+A helper type wrapping boost accumulators. 
+
+Min\+Accumulator \index{Accumulators@{Accumulators}!Simple\+Accumulator@{Simple\+Accumulator}}
+\index{Simple\+Accumulator@{Simple\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Simple\+Accumulator}{SimpleAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::max, boost\+::accumulators\+::tag\+::min, boost\+::accumulators\+::tag\+::mean $>$ $>$ {\bf Accumulators\+::\+Simple\+Accumulator}}\hypertarget{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}{}\label{namespaceAccumulators_aed31f3acda76edc1d58c2bcb479a7aec}
+
+
+A helper type wrapping min, max, and mean accumulators. 
+
+Simple\+Accumulator \index{Accumulators@{Accumulators}!Variance\+Accumulator@{Variance\+Accumulator}}
+\index{Variance\+Accumulator@{Variance\+Accumulator}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{Variance\+Accumulator}{VarianceAccumulator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::accumulators\+::accumulator\+\_\+set$<$ double, boost\+::accumulators\+::stats$<$ boost\+::accumulators\+::tag\+::variance$>$ $>$ {\bf Accumulators\+::\+Variance\+Accumulator}}\hypertarget{namespaceAccumulators_aa858a2eb0c818655fa5d66012dd41b09}{}\label{namespaceAccumulators_aa858a2eb0c818655fa5d66012dd41b09}
+
+
+A helper type wrapping the variance accumulator. 
+
+Variance\+Accumulator 
+
+\subsection{Function Documentation}
+\index{Accumulators@{Accumulators}!extract\+Covariance@{extract\+Covariance}}
+\index{extract\+Covariance@{extract\+Covariance}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Covariance(const Covariance\+Accumulator \&acc)}{extractCovariance(const CovarianceAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Covariance (
+\begin{DoxyParamCaption}
+\item[{const {\bf Covariance\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_a89e5b416840bfe8e056d708b6a236da4}{}\label{namespaceAccumulators_a89e5b416840bfe8e056d708b6a236da4}
+
+
+A helper helper function to extract the covariance. 
+
+extract\+Covariance \index{Accumulators@{Accumulators}!extract\+Max@{extract\+Max}}
+\index{extract\+Max@{extract\+Max}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Max(const Max\+Accumulator \&acc)}{extractMax(const MaxAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Max (
+\begin{DoxyParamCaption}
+\item[{const {\bf Max\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_a298ea3ee8758a98b37ed8b8b7a022ba7}{}\label{namespaceAccumulators_a298ea3ee8758a98b37ed8b8b7a022ba7}
+
+
+A helper helper function to extract the max. 
+
+extract\+Max \index{Accumulators@{Accumulators}!extract\+Max@{extract\+Max}}
+\index{extract\+Max@{extract\+Max}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Max(const Simple\+Accumulator \&acc)}{extractMax(const SimpleAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Max (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_ad2a34538b20bf4420510e3f67c36f75a}{}\label{namespaceAccumulators_ad2a34538b20bf4420510e3f67c36f75a}
+
+
+An overlaoded helper helper function to extract the max. 
+
+extract\+Max \index{Accumulators@{Accumulators}!extract\+Mean@{extract\+Mean}}
+\index{extract\+Mean@{extract\+Mean}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Mean(const Mean\+Accumulator \&acc)}{extractMean(const MeanAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Mean (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mean\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_a42a703c5c61fedbdd8aecd2e558a4467}{}\label{namespaceAccumulators_a42a703c5c61fedbdd8aecd2e558a4467}
+
+
+A helper helper function to extract the mean. 
+
+extract\+Mean \index{Accumulators@{Accumulators}!extract\+Mean@{extract\+Mean}}
+\index{extract\+Mean@{extract\+Mean}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Mean(const Simple\+Accumulator \&acc)}{extractMean(const SimpleAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Mean (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_ae241aec21f9cee46878d1a589dcba563}{}\label{namespaceAccumulators_ae241aec21f9cee46878d1a589dcba563}
+
+
+An overlaoded helper helper function to extract the mean. 
+
+extract\+Mean \index{Accumulators@{Accumulators}!extract\+Min@{extract\+Min}}
+\index{extract\+Min@{extract\+Min}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Min(const Min\+Accumulator \&acc)}{extractMin(const MinAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Min (
+\begin{DoxyParamCaption}
+\item[{const {\bf Min\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_ac0b3251fec13bffecc672a1937401ac6}{}\label{namespaceAccumulators_ac0b3251fec13bffecc672a1937401ac6}
+
+
+A helper helper function to extract the min. 
+
+extract\+Min \index{Accumulators@{Accumulators}!extract\+Min@{extract\+Min}}
+\index{extract\+Min@{extract\+Min}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Min(const Simple\+Accumulator \&acc)}{extractMin(const SimpleAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Min (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_aaf73f870f07e3daaef9259f4f05f9879}{}\label{namespaceAccumulators_aaf73f870f07e3daaef9259f4f05f9879}
+
+
+An overlaoded helper helper function to extract the min. 
+
+extract\+Min \index{Accumulators@{Accumulators}!extract\+SD@{extract\+SD}}
+\index{extract\+SD@{extract\+SD}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+S\+D(const Variance\+Accumulator \&acc)}{extractSD(const VarianceAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+SD (
+\begin{DoxyParamCaption}
+\item[{const {\bf Variance\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_ab0dcf3f9dcccf475b65259308a4507df}{}\label{namespaceAccumulators_ab0dcf3f9dcccf475b65259308a4507df}
+
+
+A helper helper function to extract the variance. 
+
+extract\+Variance \index{Accumulators@{Accumulators}!extract\+Variance@{extract\+Variance}}
+\index{extract\+Variance@{extract\+Variance}!Accumulators@{Accumulators}}
+\subsubsection[{\texorpdfstring{extract\+Variance(const Variance\+Accumulator \&acc)}{extractVariance(const VarianceAccumulator &acc)}}]{\setlength{\rightskip}{0pt plus 5cm}double Accumulators\+::extract\+Variance (
+\begin{DoxyParamCaption}
+\item[{const {\bf Variance\+Accumulator} \&}]{acc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAccumulators_a69a4c9a9e60fc7e6e22b43daa75e48bd}{}\label{namespaceAccumulators_a69a4c9a9e60fc7e6e22b43daa75e48bd}
+
+
+A helper helper function to extract the variance. 
+
+extract\+Variance 

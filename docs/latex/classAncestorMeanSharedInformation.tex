@@ -1,0 +1,139 @@
+\hypertarget{classAncestorMeanSharedInformation}{}\section{Ancestor\+Mean\+Shared\+Information Class Reference}
+\label{classAncestorMeanSharedInformation}\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+
+
+A class to calculate shared infromation as the average information conent of all common ancestors.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Ancestor\+Mean\+Shared\+Information.\+hpp$>$}
+
+Inheritance diagram for Ancestor\+Mean\+Shared\+Information\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAncestorMeanSharedInformation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAncestorMeanSharedInformation_aef781d2b6461b28b4974aa990611c8a1}{Ancestor\+Mean\+Shared\+Information} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermInformationContentMap}{Term\+Information\+Content\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classAncestorMeanSharedInformation_a86dad7b02ff45ae758a2b311ad763350}{shared\+Information} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em A method for calculating the shared infromation between two concepts. \end{DoxyCompactList}\item 
+double \hyperlink{classAncestorMeanSharedInformation_af31937c58ee53db666586b446bc23061}{shared\+Information} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the shared information of a single terms,or information content. \end{DoxyCompactList}\item 
+double \hyperlink{classAncestorMeanSharedInformation_abf7d613e1459a5cf49071871e55f8a50}{max\+Information\+Content} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the maximum information content for a term. \end{DoxyCompactList}\item 
+bool \hyperlink{classAncestorMeanSharedInformation_af7503d6f761957bcb22d0e6614d87fa4}{has\+Term} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if a term can be found. \end{DoxyCompactList}\item 
+bool \hyperlink{classAncestorMeanSharedInformation_a75f59ac9d53014b967d0a81de8a07dbb}{is\+Same\+Ontology} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if the two terms are of like ontologies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate shared infromation as the average information conent of all common ancestors. 
+
+This class calculates shared infromation by averaging the information content of all common ancestors.
+
+This shared information method is used a baseline for comparison and may not be meaningful. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{Ancestor\+Mean\+Shared\+Information(\+Go\+Graph $\ast$go\+Graph, Term\+Information\+Content\+Map \&ic\+Map)}{AncestorMeanSharedInformation(GoGraph *goGraph, TermInformationContentMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Ancestor\+Mean\+Shared\+Information\+::\+Ancestor\+Mean\+Shared\+Information (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Information\+Content\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAncestorMeanSharedInformation_aef781d2b6461b28b4974aa990611c8a1}{}\label{classAncestorMeanSharedInformation_aef781d2b6461b28b4974aa990611c8a1}
+
+
+A constructor. 
+
+Creates the \hyperlink{classAncestorMeanSharedInformation}{Ancestor\+Mean\+Shared\+Information} class 
+
+\subsection{Member Function Documentation}
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&term)}{hasTerm(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ancestor\+Mean\+Shared\+Information\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAncestorMeanSharedInformation_af7503d6f761957bcb22d0e6614d87fa4}{}\label{classAncestorMeanSharedInformation_af7503d6f761957bcb22d0e6614d87fa4}
+
+
+An interface method for determining if a term can be found. 
+
+Determines if the term can be found in the current map. 
+
+Implements \hyperlink{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}{Shared\+Information\+Interface}.
+
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!is\+Same\+Ontology@{is\+Same\+Ontology}}
+\index{is\+Same\+Ontology@{is\+Same\+Ontology}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{is\+Same\+Ontology(const std\+::string \&term\+A, const std\+::string \&term\+B)}{isSameOntology(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Ancestor\+Mean\+Shared\+Information\+::is\+Same\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAncestorMeanSharedInformation_a75f59ac9d53014b967d0a81de8a07dbb}{}\label{classAncestorMeanSharedInformation_a75f59ac9d53014b967d0a81de8a07dbb}
+
+
+An interface method for determining if the two terms are of like ontologies. 
+
+Determine if two terms are of the same ontology. 
+
+Implements \hyperlink{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}{Shared\+Information\+Interface}.
+
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!max\+Information\+Content@{max\+Information\+Content}}
+\index{max\+Information\+Content@{max\+Information\+Content}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{max\+Information\+Content(const std\+::string \&term)}{maxInformationContent(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Ancestor\+Mean\+Shared\+Information\+::max\+Information\+Content (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAncestorMeanSharedInformation_abf7d613e1459a5cf49071871e55f8a50}{}\label{classAncestorMeanSharedInformation_abf7d613e1459a5cf49071871e55f8a50}
+
+
+An interface method for returning the maximum information content for a term. 
+
+This method provides the absolute max information content within a corpus for normalization purposes. 
+
+Implements \hyperlink{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}{Shared\+Information\+Interface}.
+
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term\+A, const std\+::string \&term\+B)}{sharedInformation(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Ancestor\+Mean\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAncestorMeanSharedInformation_a86dad7b02ff45ae758a2b311ad763350}{}\label{classAncestorMeanSharedInformation_a86dad7b02ff45ae758a2b311ad763350}
+
+
+A method for calculating the shared infromation between two concepts. 
+
+This method returns the shared information between two concepts. 
+
+Implements \hyperlink{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}{Shared\+Information\+Interface}.
+
+\index{Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Ancestor\+Mean\+Shared\+Information@{Ancestor\+Mean\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term)}{sharedInformation(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Ancestor\+Mean\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAncestorMeanSharedInformation_af31937c58ee53db666586b446bc23061}{}\label{classAncestorMeanSharedInformation_af31937c58ee53db666586b446bc23061}
+
+
+An interface method for returning the shared information of a single terms,or information content. 
+
+This method privdes a mechanism for returing a term\textquotesingle{}s infromation content. 
+
+Implements \hyperlink{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}{Shared\+Information\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Ancestor\+Mean\+Shared\+Information.\+hpp\end{DoxyCompactItemize}

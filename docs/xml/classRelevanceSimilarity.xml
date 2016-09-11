@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classRelevanceSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>RelevanceSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="RelevanceSimilarity_8hpp" local="no">ggtk/RelevanceSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRelevanceSimilarity_1a3e5a111c1ce3c00a86bdbabec41be9c3" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* RelevanceSimilarity::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="124" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRelevanceSimilarity_1a863582c86409678f998553f36efb71f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap RelevanceSimilarity::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="125" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRelevanceSimilarity_1a8c53e47a65cc1cb78aca2e94671b6534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RelevanceSimilarity::RelevanceSimilarity</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>RelevanceSimilarity</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="39" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classRelevanceSimilarity_1a77fd7721c3c98611328f97b6b8c3f9e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double RelevanceSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Relevance similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Relevance similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="48" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="48" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classRelevanceSimilarity_1ad54bb47157112a225b353c47d1e2fad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double RelevanceSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized Relevance similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Relevance similarity scaled between 0 and 1 [0,1] inclusive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="81" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classRelevanceSimilarity_1aa1db55c7a378e45ff66565e5e1043a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RelevanceSimilarity::getMICA</definition>
+        <argsstring>(boost::unordered_set&lt; std::string &gt; &amp;ancestorsA, boost::unordered_set&lt; std::string &gt; &amp;ancestorsB)</argsstring>
+        <name>getMICA</name>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsA</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the most informative common ancestor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method searches the sets to determine the most informatics ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RelevanceSimilarity.hpp" line="90" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="90" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate Relevance similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Relevance similarity.</para><para>A. Schlicker, F. S. Domingues, J. Rahnenfuhrer, and T. Lengauer, &quot;A new measure for functional similarity of gene products based
+ on Gene Ontology,&quot; BMC Bioinformatics, vol. 7, p. 302, 2006.</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>Basically this is Lin similarity scaled by the complement of the probability of the mica 2 * IC(MICA) / ( IC(termA) + IC(termB) )*(1-p(Mica)) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="191">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="190">
+        <label>RelevanceSimilarity</label>
+        <link refid="classRelevanceSimilarity"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="193">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="192">
+        <label>RelevanceSimilarity</label>
+        <link refid="classRelevanceSimilarity"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/RelevanceSimilarity.hpp" line="31" column="1" bodyfile="ggtk/RelevanceSimilarity.hpp" bodystart="31" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classRelevanceSimilarity_1a3e5a111c1ce3c00a86bdbabec41be9c3" prot="private" virt="non-virtual"><scope>RelevanceSimilarity</scope><name>_goGraph</name></member>
+      <member refid="classRelevanceSimilarity_1a863582c86409678f998553f36efb71f0" prot="private" virt="non-virtual"><scope>RelevanceSimilarity</scope><name>_icMap</name></member>
+      <member refid="classRelevanceSimilarity_1ad54bb47157112a225b353c47d1e2fad5" prot="public" virt="virtual"><scope>RelevanceSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classRelevanceSimilarity_1a77fd7721c3c98611328f97b6b8c3f9e3" prot="public" virt="virtual"><scope>RelevanceSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classRelevanceSimilarity_1aa1db55c7a378e45ff66565e5e1043a8e" prot="public" virt="non-virtual"><scope>RelevanceSimilarity</scope><name>getMICA</name></member>
+      <member refid="classRelevanceSimilarity_1a8c53e47a65cc1cb78aca2e94671b6534" prot="public" virt="non-virtual"><scope>RelevanceSimilarity</scope><name>RelevanceSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermSetSimilarityInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>TermSetSimilarityInterface</compoundname>
+    <derivedcompoundref refid="classAllPairsAverageSetSimilarity" prot="public" virt="non-virtual">AllPairsAverageSetSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classAllPairsMaxSetSimilarity" prot="public" virt="non-virtual">AllPairsMaxSetSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classBestMatchAverageSetSimilarity" prot="public" virt="non-virtual">BestMatchAverageSetSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classGentlemanUISimilarity" prot="public" virt="non-virtual">GentlemanUISimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classJaccardSetSimilarity" prot="public" virt="non-virtual">JaccardSetSimilarity</derivedcompoundref>
+    <includes refid="TermSetSimilarityInterface_8hpp" local="no">ggtk/TermSetSimilarityInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double TermSetSimilarityInterface::calculateSimilarity</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)=0</argsstring>
+        <name>calculateSimilarity</name>
+        <reimplementedby refid="classJaccardSetSimilarity_1a122a04f7f67b96e393fcde1025a306c3">calculateSimilarity</reimplementedby>
+        <reimplementedby refid="classBestMatchAverageSetSimilarity_1adf1b3109b46f04087f919bdb33e131f0">calculateSimilarity</reimplementedby>
+        <reimplementedby refid="classAllPairsAverageSetSimilarity_1a685cd98d44c2e2ab9ee4fe7071066cde">calculateSimilarity</reimplementedby>
+        <reimplementedby refid="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1">calculateSimilarity</reimplementedby>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsB</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for calculating term set to term set similarity for sets of <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two sets of go terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSetSimilarityInterface.hpp" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface class for comparing semantic similarity of sets of <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the interface for comparing term set to term set similarity. This is the most useful case for comparing genes with multiple annotations to each other. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="238">
+        <label>GentlemanUISimilarity</label>
+        <link refid="classGentlemanUISimilarity"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>AllPairsAverageSetSimilarity</label>
+        <link refid="classAllPairsAverageSetSimilarity"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="239">
+        <label>JaccardSetSimilarity</label>
+        <link refid="classJaccardSetSimilarity"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>AllPairsMaxSetSimilarity</label>
+        <link refid="classAllPairsMaxSetSimilarity"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>BestMatchAverageSetSimilarity</label>
+        <link refid="classBestMatchAverageSetSimilarity"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/TermSetSimilarityInterface.hpp" line="20" column="1" bodyfile="ggtk/TermSetSimilarityInterface.hpp" bodystart="20" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04" prot="public" virt="pure-virtual"><scope>TermSetSimilarityInterface</scope><name>calculateSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

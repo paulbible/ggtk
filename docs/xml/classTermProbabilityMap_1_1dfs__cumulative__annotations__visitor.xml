@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" kind="class" language="C++" prot="public">
+    <compoundname>TermProbabilityMap::dfs_cumulative_annotations_visitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_dfs_visitor</basecompoundref>
+    <includes refid="TermProbabilityMap_8hpp" local="no">ggtk/TermProbabilityMap.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" prot="public" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* TermProbabilityMap::dfs_cumulative_annotations_visitor::goGraph</definition>
+        <argsstring></argsstring>
+        <name>goGraph</name>
+        <briefdescription>
+<para>The go graph object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="310" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" prot="public" static="no" mutable="no">
+        <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+        <definition>AnnotationData* TermProbabilityMap::dfs_cumulative_annotations_visitor::annoData</definition>
+        <argsstring></argsstring>
+        <name>annoData</name>
+        <briefdescription>
+<para>An <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object for accessing annotations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="313" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::size_t &gt; *</type>
+        <definition>std::vector&lt;std::size_t&gt;* TermProbabilityMap::dfs_cumulative_annotations_visitor::annoList</definition>
+        <argsstring></argsstring>
+        <name>annoList</name>
+        <briefdescription>
+<para>The annotaiton list to hold the and query the cummulative annotations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="316" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt; *</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt;* TermProbabilityMap::dfs_cumulative_annotations_visitor::nameIndexMap</definition>
+        <argsstring></argsstring>
+        <name>nameIndexMap</name>
+        <briefdescription>
+<para>A map from name To index, initialized in this visitor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="319" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a3c6b493a2f9b5b966f12c947553ffbd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermProbabilityMap::dfs_cumulative_annotations_visitor::dfs_cumulative_annotations_visitor</definition>
+        <argsstring>(GoGraph *inGraph, AnnotationData *inData, std::vector&lt; std::size_t &gt; *annotations, boost::unordered_map&lt; std::string, std::size_t &gt; *nameToIndex)</argsstring>
+        <name>dfs_cumulative_annotations_visitor</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>inGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>inData</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::size_t &gt; *</type>
+          <declname>annotations</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; std::string, std::size_t &gt; *</type>
+          <declname>nameToIndex</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor passing parameters to the boost default_dfs_visitor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="254" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1ac6147a4c2bcfe83492667b248630a525" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vertex</type>
+          </param>
+          <param>
+            <type>typename Graph</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void TermProbabilityMap::dfs_cumulative_annotations_visitor::finish_vertex</definition>
+        <argsstring>(Vertex u, const Graph &amp;g)</argsstring>
+        <name>finish_vertex</name>
+        <param>
+          <type>Vertex</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Graph &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para>The extended method of the default_dfs_visitor, finish_vertex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is called during a depth first search traversal of a graph and called when the visitor finished or leaves a node. This is the last time the algorithm touches the node.</para><para>Here we calculate the number of cummulative annotations for a term (node) by adding the current term&apos;s annotations to the annotations of the term&apos;s children. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="268" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="268" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Depth first search boost visitor. </para>    </briefdescription>
+    <detaileddescription>
+<para>This defines a class used by TermProabilityMap to calculate the cumulative annotations of a term based on the true path rule. Basically this class is passed to a boost Depth first search algorithm to add the number of a child&apos;s annotaitons to the parent. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>boost::default_dfs_visitor</label>
+      </node>
+      <node id="51">
+        <label>TermProbabilityMap::dfs_cumulative_annotations_visitor</label>
+        <link refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>boost::default_dfs_visitor</label>
+      </node>
+      <node id="53">
+        <label>TermProbabilityMap::dfs_cumulative_annotations_visitor</label>
+        <link refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>annoData</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>goGraph</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AnnotationData</label>
+        <link refid="classAnnotationData"/>
+      </node>
+      <node id="56">
+        <label>GoGraph</label>
+        <link refid="classGoGraph"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/TermProbabilityMap.hpp" line="250" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="250" bodyend="320"/>
+    <listofallmembers>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>annoData</name></member>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>annoList</name></member>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a3c6b493a2f9b5b966f12c947553ffbd2" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>dfs_cumulative_annotations_visitor</name></member>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1ac6147a4c2bcfe83492667b248630a525" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>finish_vertex</name></member>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>goGraph</name></member>
+      <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" prot="public" virt="non-virtual"><scope>TermProbabilityMap::dfs_cumulative_annotations_visitor</scope><name>nameIndexMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

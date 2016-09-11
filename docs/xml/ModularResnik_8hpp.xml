@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ModularResnik_8hpp" kind="file" language="C++">
+    <compoundname>ModularResnik.hpp</compoundname>
+    <includes refid="TermSimilarityInterface_8hpp" local="no">ggtk/TermSimilarityInterface.hpp</includes>
+    <includes refid="SharedInformationInterface_8hpp" local="no">ggtk/SharedInformationInterface.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="947">
+        <label>ggtk/SharedInformationInterface.hpp</label>
+        <link refid="SharedInformationInterface_8hpp_source"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>string</label>
+      </node>
+      <node id="943">
+        <label>ggtk/ModularResnik.hpp</label>
+        <link refid="ModularResnik.hpp"/>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+      </node>
+      <node id="946">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface_8hpp_source"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="949">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="948">
+        <label>ggtk/ModularResnik.hpp</label>
+        <link refid="ModularResnik.hpp"/>
+        <childnode refid="949" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classModularResnik" prot="public">ModularResnik</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MODULAR_RESNIK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODULAR_RESNIK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermSimilarityInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SharedInformationInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classModularResnik" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classModularResnik" kindref="compound">ModularResnik</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"></codeline>
+<codeline lineno="36" refid="classModularResnik_1a53d184cbe8caf8222455808b03fdc5c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classModularResnik_1a53d184cbe8caf8222455808b03fdc5c9" kindref="member">ModularResnik</ref>(<ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*sharedInformationCalculator){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_siCalculator<sp/>=<sp/>sharedInformationCalculator;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"></codeline>
+<codeline lineno="44" refid="classModularResnik_1a78b925c1aadb000d1773ffdacad549df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classModularResnik_1a78b925c1aadb000d1773ffdacad549df" kindref="member">calculateTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermA)<sp/>||<sp/>!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermB)){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" kindref="member">isSameOntology</ref>(goTermA,<sp/>goTermB)){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kindref="member">sharedInformation</ref>(goTermA,goTermB);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"></codeline>
+<codeline lineno="59" refid="classModularResnik_1aba93eb85400287057037d545e5080265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classModularResnik_1aba93eb85400287057037d545e5080265" kindref="member">calculateNormalizedTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermA)<sp/>||<sp/>!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermB)){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" kindref="member">isSameOntology</ref>(goTermA,<sp/>goTermB)){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sharedInformation<sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kindref="member">sharedInformation</ref>(goTermA,goTermB);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxInformation<sp/><sp/><sp/><sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999" kindref="member">maxInformationContent</ref>(goTermA);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sharedInformation/maxInformation;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"></codeline>
+<codeline lineno="75" refid="classModularResnik_1ab0402a3be9f5b1e590c50b38e4a7fd39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classModularResnik_1ab0402a3be9f5b1e590c50b38e4a7fd39" kindref="member">setSharedInformationCalculator</ref>(<ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*newSharedInformationCalulator){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_siCalculator<sp/>=<sp/>newSharedInformationCalulator;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*_siCalculator;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/ModularResnik.hpp"/>
+  </compounddef>
+</doxygen>

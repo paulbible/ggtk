@@ -1,0 +1,106 @@
+\hypertarget{classJiangConrathSimilarity}{}\section{Jiang\+Conrath\+Similarity Class Reference}
+\label{classJiangConrathSimilarity}\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+
+
+A class to calculate Jiang Conrath similarity between 2 terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Jiang\+Conrath\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Jiang\+Conrath\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classJiangConrathSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJiangConrathSimilarity_addd16c8b26721f64b954c3006aa2ed26}{Jiang\+Conrath\+Similarity} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermInformationContentMap}{Term\+Information\+Content\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classJiangConrathSimilarity_a110fcc0d8b68b6dde9e90d897c859034}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Jiang\+Conrath similarity. \end{DoxyCompactList}\item 
+double \hyperlink{classJiangConrathSimilarity_a489dcbef15f4a5063af79cb03920cdf9}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Jiang\+Conrath similarity. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classJiangConrathSimilarity_a9a72b8c9687bfd578d8c51ec8564e87c}{get\+M\+I\+CA} (boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsA, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsB)
+\begin{DoxyCompactList}\small\item\em A method for calculating the most informative common ancestor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate Jiang Conrath similarity between 2 terms. 
+
+This class calculates Jiang Conrath similarity.
+
+Jiang, J. J., \& Conrath, D. W. (1997). Semantic similarity based on corpus statistics and lexical taxonomy. In Proc. of 10th International Conference on Research on Computational Linguistics, Taiwan.
+
+P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, \char`\"{}\+Semantic similarity measures as tools for exploring the gene ontology,\char`\"{} Pac Symp Biocomput, pp. 601-\/12, 2003.
+
+distance = I\+C(term\+A) + I\+C(term\+B) -\/ 2$\ast$\+IC(M\+I\+CA) max\+Distance = 2$\ast$\+IC(single annotaiotn) similarity = 1 -\/ distance/max\+Distance (see Lord et al.) 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}!Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}!Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+\subsubsection[{\texorpdfstring{Jiang\+Conrath\+Similarity(\+Go\+Graph $\ast$go\+Graph, Term\+Information\+Content\+Map \&ic\+Map)}{JiangConrathSimilarity(GoGraph *goGraph, TermInformationContentMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Jiang\+Conrath\+Similarity\+::\+Jiang\+Conrath\+Similarity (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Information\+Content\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classJiangConrathSimilarity_addd16c8b26721f64b954c3006aa2ed26}{}\label{classJiangConrathSimilarity_addd16c8b26721f64b954c3006aa2ed26}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classStandardRelationshipPolicy}{Standard\+Relationship\+Policy} 
+
+\subsection{Member Function Documentation}
+\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Jiang\+Conrath\+Similarity\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classJiangConrathSimilarity_a489dcbef15f4a5063af79cb03920cdf9}{}\label{classJiangConrathSimilarity_a489dcbef15f4a5063af79cb03920cdf9}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Jiang\+Conrath similarity. 
+
+This method returns the Jiang\+Conrath similarity scaled between 0 and 1 \mbox{[}0,1\mbox{]} inclusive 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Jiang\+Conrath\+Similarity\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classJiangConrathSimilarity_a110fcc0d8b68b6dde9e90d897c859034}{}\label{classJiangConrathSimilarity_a110fcc0d8b68b6dde9e90d897c859034}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Jiang\+Conrath similarity. 
+
+This method returns the Jiang\+Conrath similarity or the information content of the most informative common ancestor. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}!get\+M\+I\+CA@{get\+M\+I\+CA}}
+\index{get\+M\+I\+CA@{get\+M\+I\+CA}!Jiang\+Conrath\+Similarity@{Jiang\+Conrath\+Similarity}}
+\subsubsection[{\texorpdfstring{get\+M\+I\+C\+A(boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+A, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+B)}{getMICA(boost::unordered_set< std::string > &ancestorsA, boost::unordered_set< std::string > &ancestorsB)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Jiang\+Conrath\+Similarity\+::get\+M\+I\+CA (
+\begin{DoxyParamCaption}
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsA, }
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classJiangConrathSimilarity_a9a72b8c9687bfd578d8c51ec8564e87c}{}\label{classJiangConrathSimilarity_a9a72b8c9687bfd578d8c51ec8564e87c}
+
+
+A method for calculating the most informative common ancestor. 
+
+This method searches the sets to determine the most informatics ancestor. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Jiang\+Conrath\+Similarity.\+hpp\end{DoxyCompactItemize}

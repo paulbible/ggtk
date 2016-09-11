@@ -1,0 +1,69 @@
+\hypertarget{classTermSimilarityInterface}{}\section{Term\+Similarity\+Interface Class Reference}
+\label{classTermSimilarityInterface}\index{Term\+Similarity\+Interface@{Term\+Similarity\+Interface}}
+
+
+An interface class for comparing semantic similarity of \hyperlink{namespaceGO}{GO} terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Similarity\+Interface.\+hpp$>$}
+
+Inheritance diagram for Term\+Similarity\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classTermSimilarityInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface class for comparing semantic similarity of \hyperlink{namespaceGO}{GO} terms. 
+
+This class defines the interface for comparing term-\/to-\/term \hyperlink{namespaceGO}{GO} similarity. 
+
+\subsection{Member Function Documentation}
+\index{Term\+Similarity\+Interface@{Term\+Similarity\+Interface}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Term\+Similarity\+Interface@{Term\+Similarity\+Interface}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)=0}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Term\+Similarity\+Interface\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{}\label{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}
+
+
+A pure virtual method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms. 
+
+This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two go terms. This version of the function must be normalzied. Returning similarity between 0 and 1 
+
+Implemented in \hyperlink{classPrecomputedMatrixTermSimilarity_ac2057bd30526a99741c06f8b629b6ae2}{Precomputed\+Matrix\+Term\+Similarity}, \hyperlink{classJiangConrathSimilarity_a489dcbef15f4a5063af79cb03920cdf9}{Jiang\+Conrath\+Similarity}, \hyperlink{classPekarStaabSimilarity_a2de7c29ad8e24467c6b66862320953a1}{Pekar\+Staab\+Similarity}, \hyperlink{classLinSimilarity_a576df5bf234556e57e2ddcfda3d73b93}{Lin\+Similarity}, \hyperlink{classRelevanceSimilarity_ad54bb47157112a225b353c47d1e2fad5}{Relevance\+Similarity}, \hyperlink{classResnikSimilarity_a4e1d6ef4268a905a117fd0c054e4c39b}{Resnik\+Similarity}, \hyperlink{classModularJiangConrath_afbcb95c5f87764de5d33188948f1001b}{Modular\+Jiang\+Conrath}, \hyperlink{classModularLin_a5c4c590808542669e7ba65b60ea8f707}{Modular\+Lin}, and \hyperlink{classModularResnik_aba93eb85400287057037d545e5080265}{Modular\+Resnik}.
+
+\index{Term\+Similarity\+Interface@{Term\+Similarity\+Interface}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Term\+Similarity\+Interface@{Term\+Similarity\+Interface}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)=0}{calculateTermSimilarity(std::string goTermA, std::string goTermB)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Term\+Similarity\+Interface\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{}\label{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}
+
+
+A pure virtual method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms. 
+
+This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two go terms. 
+
+Implemented in \hyperlink{classPrecomputedMatrixTermSimilarity_accf2925db5da35cc040f2016813ed631}{Precomputed\+Matrix\+Term\+Similarity}, \hyperlink{classJiangConrathSimilarity_a110fcc0d8b68b6dde9e90d897c859034}{Jiang\+Conrath\+Similarity}, \hyperlink{classPekarStaabSimilarity_a56bb39dcebcf8909f2006d0698f29211}{Pekar\+Staab\+Similarity}, \hyperlink{classModularJiangConrath_a4bb41aa1eced9dd47f4f4c7125a223d5}{Modular\+Jiang\+Conrath}, \hyperlink{classRelevanceSimilarity_a77fd7721c3c98611328f97b6b8c3f9e3}{Relevance\+Similarity}, \hyperlink{classLinSimilarity_a55d2d8bd6aea6fc3e9b0920f05828a15}{Lin\+Similarity}, \hyperlink{classModularLin_a995ef9e4c53b9e96a32259157416df1b}{Modular\+Lin}, \hyperlink{classResnikSimilarity_a340ace5dbdd105847d5fade4c8d20ade}{Resnik\+Similarity}, and \hyperlink{classModularResnik_a78b925c1aadb000d1773ffdacad549df}{Modular\+Resnik}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Similarity\+Interface.\+hpp\end{DoxyCompactItemize}

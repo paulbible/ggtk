@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classFrontierSharedInformation_1_1EdgeSetVisitor" kind="class" language="C++" prot="private">
+    <compoundname>FrontierSharedInformation::EdgeSetVisitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_bfs_visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa6e8aef786facd2fbf216812f39a23f9" prot="public" static="no" mutable="no">
+        <type>boost::unordered_set&lt; std::size_t &gt; &amp;</type>
+        <definition>boost::unordered_set&lt;std::size_t&gt;&amp; FrontierSharedInformation::EdgeSetVisitor::edgeSet</definition>
+        <argsstring></argsstring>
+        <name>edgeSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="243" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrontierSharedInformation_1_1EdgeSetVisitor_1a0923de486e3253212b5720c5e1d5550e" prot="public" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref> &amp;</type>
+        <definition>GoGraph::EdgeIndexMap&amp; FrontierSharedInformation::EdgeSetVisitor::eMap</definition>
+        <argsstring></argsstring>
+        <name>eMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="244" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrontierSharedInformation_1_1EdgeSetVisitor_1a6a58939e9fb0f404733a91f0ffc20065" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;</type>
+        <definition>boost::unordered_map&lt;std::string,boost::unordered_set&lt;std::size_t&gt; &gt;&amp; FrontierSharedInformation::EdgeSetVisitor::termEdgesMap</definition>
+        <argsstring></argsstring>
+        <name>termEdgesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="245" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa988097e1014cbb4df9798deaa2260f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FrontierSharedInformation::EdgeSetVisitor::EdgeSetVisitor</definition>
+        <argsstring>(boost::unordered_set&lt; std::size_t &gt; &amp;inSet, GoGraph::EdgeIndexMap &amp;inMap, boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;termToEdges)</argsstring>
+        <name>EdgeSetVisitor</name>
+        <param>
+          <type>boost::unordered_set&lt; std::size_t &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref> &amp;</type>
+          <declname>inMap</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;</type>
+          <declname>termToEdges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="217" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1_1EdgeSetVisitor_1acb75e2458170e2c707aff2c2fec5bfd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Edge</type>
+          </param>
+          <param>
+            <type>typename Graph</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void FrontierSharedInformation::EdgeSetVisitor::examine_edge</definition>
+        <argsstring>(Edge e, const Graph &amp;g)</argsstring>
+        <name>examine_edge</name>
+        <param>
+          <type>Edge</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const Graph &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="224" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="224" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="67">
+        <label>FrontierSharedInformation::EdgeSetVisitor</label>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>default_bfs_visitor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="69">
+        <label>FrontierSharedInformation::EdgeSetVisitor</label>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>default_bfs_visitor</label>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/FrontierSharedInformation.hpp" line="214" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="214" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa6e8aef786facd2fbf216812f39a23f9" prot="public" virt="non-virtual"><scope>FrontierSharedInformation::EdgeSetVisitor</scope><name>edgeSet</name></member>
+      <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa988097e1014cbb4df9798deaa2260f7" prot="public" virt="non-virtual"><scope>FrontierSharedInformation::EdgeSetVisitor</scope><name>EdgeSetVisitor</name></member>
+      <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1a0923de486e3253212b5720c5e1d5550e" prot="public" virt="non-virtual"><scope>FrontierSharedInformation::EdgeSetVisitor</scope><name>eMap</name></member>
+      <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1acb75e2458170e2c707aff2c2fec5bfd3" prot="public" virt="non-virtual"><scope>FrontierSharedInformation::EdgeSetVisitor</scope><name>examine_edge</name></member>
+      <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1a6a58939e9fb0f404733a91f0ffc20065" prot="public" virt="non-virtual"><scope>FrontierSharedInformation::EdgeSetVisitor</scope><name>termEdgesMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

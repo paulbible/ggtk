@@ -1,0 +1,101 @@
+\hypertarget{classTermSimilarityWriter}{}\section{Term\+Similarity\+Writer Class Reference}
+\label{classTermSimilarityWriter}\index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+
+
+A class write a term similarity matrix to file. Companion to \hyperlink{classPrecomputedMatrixTermSimilarity}{Precomputed\+Matrix\+Term\+Similarity}.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Similarity\+Writer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTermSimilarityWriter_a53dffc62cbc87ba24bc4e10ea0def16c}{Term\+Similarity\+Writer} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$anno\+Data)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classTermSimilarityWriter_a6675f612d2f294c2a126576a393b2307}{write\+Similarity\+Matrix} (\hyperlink{classTermSimilarityInterface}{Term\+Similarity\+Interface} $\ast$term\+Sim, std\+::string file\+Name, long ontology\+\_\+code)
+\begin{DoxyCompactList}\small\item\em A method to write a term similarity matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classTermSimilarityWriter_ab47132660b1a4a2528dff1b97f934b1b}{write\+Similarity\+Matrix\+BP} (\hyperlink{classTermSimilarityInterface}{Term\+Similarity\+Interface} $\ast$term\+Sim, std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em A method to write a term similarity matrix for Biological Process. \end{DoxyCompactList}\item 
+void \hyperlink{classTermSimilarityWriter_ac541f5cb901cece561648acdfa294653}{write\+Similarity\+Matrix\+MF} (\hyperlink{classTermSimilarityInterface}{Term\+Similarity\+Interface} $\ast$term\+Sim, std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em A method to write a term similarity matrix for Molecular Function. \end{DoxyCompactList}\item 
+void \hyperlink{classTermSimilarityWriter_ad021eceaae4427c3e9efea93a63a15ad}{write\+Similarity\+Matrix\+CC} (\hyperlink{classTermSimilarityInterface}{Term\+Similarity\+Interface} $\ast$term\+Sim, std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em A method to write a term similarity matrix for Cellular Component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class write a term similarity matrix to file. Companion to \hyperlink{classPrecomputedMatrixTermSimilarity}{Precomputed\+Matrix\+Term\+Similarity}. 
+
+This class writes a term similarity matrix to file by first calculating all similarity values between pairs of terms. This class will be use to write matrices read by \hyperlink{classPrecomputedMatrixTermSimilarity}{Precomputed\+Matrix\+Term\+Similarity}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\subsubsection[{\texorpdfstring{Term\+Similarity\+Writer(\+Go\+Graph $\ast$go\+Graph, Annotation\+Data $\ast$anno\+Data)}{TermSimilarityWriter(GoGraph *goGraph, AnnotationData *annoData)}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Similarity\+Writer\+::\+Term\+Similarity\+Writer (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Annotation\+Data} $\ast$}]{anno\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermSimilarityWriter_a53dffc62cbc87ba24bc4e10ea0def16c}{}\label{classTermSimilarityWriter_a53dffc62cbc87ba24bc4e10ea0def16c}
+
+
+Parameterized constructor. 
+
+A simple parameterized constructor. This class take an instance of the \hyperlink{namespaceGO}{GO} Graph. 
+
+\subsection{Member Function Documentation}
+\index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!write\+Similarity\+Matrix@{write\+Similarity\+Matrix}}
+\index{write\+Similarity\+Matrix@{write\+Similarity\+Matrix}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\subsubsection[{\texorpdfstring{write\+Similarity\+Matrix(\+Term\+Similarity\+Interface $\ast$term\+Sim, std\+::string file\+Name, long ontology\+\_\+code)}{writeSimilarityMatrix(TermSimilarityInterface *termSim, std::string fileName, long ontology_code)}}]{\setlength{\rightskip}{0pt plus 5cm}void Term\+Similarity\+Writer\+::write\+Similarity\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Similarity\+Interface} $\ast$}]{term\+Sim, }
+\item[{std\+::string}]{file\+Name, }
+\item[{long}]{ontology\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermSimilarityWriter_a6675f612d2f294c2a126576a393b2307}{}\label{classTermSimilarityWriter_a6675f612d2f294c2a126576a393b2307}
+
+
+A method to write a term similarity matrix. 
+
+Calculates and writes the similarity matrix to file. Calculates the similarity between all pairs of terms. The complexity is O(\+N$^\wedge$2) $\ast$ O(\+Term Pair Calculation Cost). O(\+Term Pair Calculation Cost) is usually near constant time, but some method will be extremely slow and require other methods \index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!write\+Similarity\+Matrix\+BP@{write\+Similarity\+Matrix\+BP}}
+\index{write\+Similarity\+Matrix\+BP@{write\+Similarity\+Matrix\+BP}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\subsubsection[{\texorpdfstring{write\+Similarity\+Matrix\+B\+P(\+Term\+Similarity\+Interface $\ast$term\+Sim, std\+::string file\+Name)}{writeSimilarityMatrixBP(TermSimilarityInterface *termSim, std::string fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Term\+Similarity\+Writer\+::write\+Similarity\+Matrix\+BP (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Similarity\+Interface} $\ast$}]{term\+Sim, }
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermSimilarityWriter_ab47132660b1a4a2528dff1b97f934b1b}{}\label{classTermSimilarityWriter_ab47132660b1a4a2528dff1b97f934b1b}
+
+
+A method to write a term similarity matrix for Biological Process. 
+
+Calcualtes and writes the biological process term similarity matrix \index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!write\+Similarity\+Matrix\+CC@{write\+Similarity\+Matrix\+CC}}
+\index{write\+Similarity\+Matrix\+CC@{write\+Similarity\+Matrix\+CC}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\subsubsection[{\texorpdfstring{write\+Similarity\+Matrix\+C\+C(\+Term\+Similarity\+Interface $\ast$term\+Sim, std\+::string file\+Name)}{writeSimilarityMatrixCC(TermSimilarityInterface *termSim, std::string fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Term\+Similarity\+Writer\+::write\+Similarity\+Matrix\+CC (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Similarity\+Interface} $\ast$}]{term\+Sim, }
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermSimilarityWriter_ad021eceaae4427c3e9efea93a63a15ad}{}\label{classTermSimilarityWriter_ad021eceaae4427c3e9efea93a63a15ad}
+
+
+A method to write a term similarity matrix for Cellular Component. 
+
+Calcualtes and writes the cellular component term similarity matrix \index{Term\+Similarity\+Writer@{Term\+Similarity\+Writer}!write\+Similarity\+Matrix\+MF@{write\+Similarity\+Matrix\+MF}}
+\index{write\+Similarity\+Matrix\+MF@{write\+Similarity\+Matrix\+MF}!Term\+Similarity\+Writer@{Term\+Similarity\+Writer}}
+\subsubsection[{\texorpdfstring{write\+Similarity\+Matrix\+M\+F(\+Term\+Similarity\+Interface $\ast$term\+Sim, std\+::string file\+Name)}{writeSimilarityMatrixMF(TermSimilarityInterface *termSim, std::string fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Term\+Similarity\+Writer\+::write\+Similarity\+Matrix\+MF (
+\begin{DoxyParamCaption}
+\item[{{\bf Term\+Similarity\+Interface} $\ast$}]{term\+Sim, }
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermSimilarityWriter_ac541f5cb901cece561648acdfa294653}{}\label{classTermSimilarityWriter_ac541f5cb901cece561648acdfa294653}
+
+
+A method to write a term similarity matrix for Molecular Function. 
+
+Calcualtes and writes the molecular function term similarity matrix 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Similarity\+Writer.\+hpp\end{DoxyCompactItemize}

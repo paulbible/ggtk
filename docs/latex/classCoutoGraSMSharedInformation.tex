@@ -1,0 +1,185 @@
+\hypertarget{classCoutoGraSMSharedInformation}{}\section{Couto\+Gra\+S\+M\+Shared\+Information Class Reference}
+\label{classCoutoGraSMSharedInformation}\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+
+
+A class to calculate shared infromation accross disjoint common ancetors using the exact algorithm as written in the paper.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Couto\+Gra\+S\+M\+Shared\+Information.\+hpp$>$}
+
+Inheritance diagram for Couto\+Gra\+S\+M\+Shared\+Information\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCoutoGraSMSharedInformation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCoutoGraSMSharedInformation_a8e923a60f27eca7922a628a9efd7afdc}{Couto\+Gra\+S\+M\+Shared\+Information} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermInformationContentMap}{Term\+Information\+Content\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classCoutoGraSMSharedInformation_ac1dd8eacbfde6f724b11f4b276e41faf}{get\+Common\+Disjoint\+Ancestors} (const std\+::string \&term\+C1, const std\+::string \&term\+C2)
+\begin{DoxyCompactList}\small\item\em A method for determining the common disjunctive ancestors. \end{DoxyCompactList}\item 
+bool \hyperlink{classCoutoGraSMSharedInformation_aa935c6e99178b043fd4dbc8f2e4ba29d}{is\+Disjoint} (const std\+::string \&termC, const std\+::string \&term\+A1, const std\+::string \&term\+A2)
+\begin{DoxyCompactList}\small\item\em A method for determining if for a term c, a pair (a1,a2) is disjoint in c. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classCoutoGraSMSharedInformation_abbb7cbdc8131eaab6d5b467fcb1ecd8a}{get\+Num\+Paths} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em A method for calculating the number of paths for one term to another. \end{DoxyCompactList}\item 
+double \hyperlink{classCoutoGraSMSharedInformation_aeb3ea4684e5f198464ce9354171981d3}{shared\+Information} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em An method for returning the shared information of two terms. \end{DoxyCompactList}\item 
+double \hyperlink{classCoutoGraSMSharedInformation_a1c9a0a709b77822cd3bc967beed08b66}{shared\+Information} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the shared information of a single terms,or information content. \end{DoxyCompactList}\item 
+double \hyperlink{classCoutoGraSMSharedInformation_ae97d2b59ecd6d1eeee2583c6005c65a2}{max\+Information\+Content} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the maximum information content for a term. \end{DoxyCompactList}\item 
+bool \hyperlink{classCoutoGraSMSharedInformation_a718055d6fecea9e10125ae4895af7f95}{has\+Term} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if a term can be found. \end{DoxyCompactList}\item 
+bool \hyperlink{classCoutoGraSMSharedInformation_ae6e12a30f03b0c2232d73277d8d47cd1}{is\+Same\+Ontology} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if the two terms are of like ontologies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate shared infromation accross disjoint common ancetors using the exact algorithm as written in the paper. 
+
+This class calculates shared infromation accross disjoint common ancetors.
+
+F. M. Couto, M. J. Silva, and P. M. Coutinho, \char`\"{}\+Measuring semantic similarity
+between Gene Ontology terms,\char`\"{} Data \& Knowledge Engineering, vol. 61, pp. 137-\/152, Apr 2007.
+
+Couto proposing calculating this value a subsituite for the IC of the M\+I\+CA in calculating Resnik, Lin, and Jiang-\/\+Conrath 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{Couto\+Gra\+S\+M\+Shared\+Information(\+Go\+Graph $\ast$go\+Graph, Term\+Information\+Content\+Map \&ic\+Map)}{CoutoGraSMSharedInformation(GoGraph *goGraph, TermInformationContentMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Couto\+Gra\+S\+M\+Shared\+Information\+::\+Couto\+Gra\+S\+M\+Shared\+Information (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Information\+Content\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCoutoGraSMSharedInformation_a8e923a60f27eca7922a628a9efd7afdc}{}\label{classCoutoGraSMSharedInformation_a8e923a60f27eca7922a628a9efd7afdc}
+
+
+A constructor. 
+
+Creates the Couto\+Gra\+S\+M\+Greater\+Or\+Equal class 
+
+\subsection{Member Function Documentation}
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!get\+Common\+Disjoint\+Ancestors@{get\+Common\+Disjoint\+Ancestors}}
+\index{get\+Common\+Disjoint\+Ancestors@{get\+Common\+Disjoint\+Ancestors}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{get\+Common\+Disjoint\+Ancestors(const std\+::string \&term\+C1, const std\+::string \&term\+C2)}{getCommonDisjointAncestors(const std::string &termC1, const std::string &termC2)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Couto\+Gra\+S\+M\+Shared\+Information\+::get\+Common\+Disjoint\+Ancestors (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+C1, }
+\item[{const std\+::string \&}]{term\+C2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCoutoGraSMSharedInformation_ac1dd8eacbfde6f724b11f4b276e41faf}{}\label{classCoutoGraSMSharedInformation_ac1dd8eacbfde6f724b11f4b276e41faf}
+
+
+A method for determining the common disjunctive ancestors. 
+
+This method returns the common disjunctive ancestors for two terms \index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!get\+Num\+Paths@{get\+Num\+Paths}}
+\index{get\+Num\+Paths@{get\+Num\+Paths}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{get\+Num\+Paths(const std\+::string \&term\+A, const std\+::string \&term\+B)}{getNumPaths(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Couto\+Gra\+S\+M\+Shared\+Information\+::get\+Num\+Paths (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCoutoGraSMSharedInformation_abbb7cbdc8131eaab6d5b467fcb1ecd8a}{}\label{classCoutoGraSMSharedInformation_abbb7cbdc8131eaab6d5b467fcb1ecd8a}
+
+
+A method for calculating the number of paths for one term to another. 
+
+This method returns the number of paths between two terms \index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&term)}{hasTerm(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Couto\+Gra\+S\+M\+Shared\+Information\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCoutoGraSMSharedInformation_a718055d6fecea9e10125ae4895af7f95}{}\label{classCoutoGraSMSharedInformation_a718055d6fecea9e10125ae4895af7f95}
+
+
+An interface method for determining if a term can be found. 
+
+Determines if the term can be found in the current map. 
+
+Implements \hyperlink{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}{Shared\+Information\+Interface}.
+
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!is\+Disjoint@{is\+Disjoint}}
+\index{is\+Disjoint@{is\+Disjoint}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{is\+Disjoint(const std\+::string \&term\+C, const std\+::string \&term\+A1, const std\+::string \&term\+A2)}{isDisjoint(const std::string &termC, const std::string &termA1, const std::string &termA2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Couto\+Gra\+S\+M\+Shared\+Information\+::is\+Disjoint (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termC, }
+\item[{const std\+::string \&}]{term\+A1, }
+\item[{const std\+::string \&}]{term\+A2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCoutoGraSMSharedInformation_aa935c6e99178b043fd4dbc8f2e4ba29d}{}\label{classCoutoGraSMSharedInformation_aa935c6e99178b043fd4dbc8f2e4ba29d}
+
+
+A method for determining if for a term c, a pair (a1,a2) is disjoint in c. 
+
+This method returns \index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!is\+Same\+Ontology@{is\+Same\+Ontology}}
+\index{is\+Same\+Ontology@{is\+Same\+Ontology}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{is\+Same\+Ontology(const std\+::string \&term\+A, const std\+::string \&term\+B)}{isSameOntology(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Couto\+Gra\+S\+M\+Shared\+Information\+::is\+Same\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCoutoGraSMSharedInformation_ae6e12a30f03b0c2232d73277d8d47cd1}{}\label{classCoutoGraSMSharedInformation_ae6e12a30f03b0c2232d73277d8d47cd1}
+
+
+An interface method for determining if the two terms are of like ontologies. 
+
+Determine if two terms are of the same ontology. 
+
+Implements \hyperlink{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}{Shared\+Information\+Interface}.
+
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!max\+Information\+Content@{max\+Information\+Content}}
+\index{max\+Information\+Content@{max\+Information\+Content}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{max\+Information\+Content(const std\+::string \&term)}{maxInformationContent(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Couto\+Gra\+S\+M\+Shared\+Information\+::max\+Information\+Content (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCoutoGraSMSharedInformation_ae97d2b59ecd6d1eeee2583c6005c65a2}{}\label{classCoutoGraSMSharedInformation_ae97d2b59ecd6d1eeee2583c6005c65a2}
+
+
+An interface method for returning the maximum information content for a term. 
+
+This method provides the absolute max information content within a corpus for normalization purposes. 
+
+Implements \hyperlink{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}{Shared\+Information\+Interface}.
+
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term\+A, const std\+::string \&term\+B)}{sharedInformation(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Couto\+Gra\+S\+M\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCoutoGraSMSharedInformation_aeb3ea4684e5f198464ce9354171981d3}{}\label{classCoutoGraSMSharedInformation_aeb3ea4684e5f198464ce9354171981d3}
+
+
+An method for returning the shared information of two terms. 
+
+This method returns the mean information content disjoint common ancestors 
+
+Implements \hyperlink{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}{Shared\+Information\+Interface}.
+
+\index{Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Couto\+Gra\+S\+M\+Shared\+Information@{Couto\+Gra\+S\+M\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term)}{sharedInformation(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Couto\+Gra\+S\+M\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCoutoGraSMSharedInformation_a1c9a0a709b77822cd3bc967beed08b66}{}\label{classCoutoGraSMSharedInformation_a1c9a0a709b77822cd3bc967beed08b66}
+
+
+An interface method for returning the shared information of a single terms,or information content. 
+
+This method privdes a mechanism for returing a term\textquotesingle{}s infromation content. 
+
+Implements \hyperlink{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}{Shared\+Information\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Couto\+Gra\+S\+M\+Shared\+Information.\+hpp\end{DoxyCompactItemize}

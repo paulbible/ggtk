@@ -1,0 +1,83 @@
+\hypertarget{classGoParserFactory}{}\section{Go\+Parser\+Factory Class Reference}
+\label{classGoParserFactory}\index{Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+
+
+A class to return an instance of \hyperlink{classGoParserInterface}{Go\+Parser\+Interface} at runtime based on an argument.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Go\+Parser\+Factory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGoParserFactory_ae6a6141ff3e9e10edb8bd94eed661e97}{Go\+Parser\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGoParserFactory_a690c83fe9183f8e49e19c46d7951d5ce}{$\sim$\+Go\+Parser\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGoParserFactory_a93ca2a2c9ae05777d49e95793ce6dbdf}{add\+Parser} (std\+::string name, \hyperlink{classGoParserInterface}{Go\+Parser\+Interface} $\ast$parser)
+\begin{DoxyCompactList}\small\item\em A Method to add a parser to the factory. \end{DoxyCompactList}\item 
+\hyperlink{classGoParserInterface}{Go\+Parser\+Interface} $\ast$ \hyperlink{classGoParserFactory_a3f3b61ae2954943186646444417911cc}{get\+Parser} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em A method to return a parser based on a query string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to return an instance of \hyperlink{classGoParserInterface}{Go\+Parser\+Interface} at runtime based on an argument. 
+
+This class holds a set of parser classes. When queried using the get\+Parser method, it returns an instance of \hyperlink{classGoParserInterface}{Go\+Parser\+Interface} based on a string key. This allows parsers to be easily added to a larger system and switched at runtime. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Go\+Parser\+Factory@{Go\+Parser\+Factory}!Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+\index{Go\+Parser\+Factory@{Go\+Parser\+Factory}!Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{Go\+Parser\+Factory()}{GoParserFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}Go\+Parser\+Factory\+::\+Go\+Parser\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoParserFactory_ae6a6141ff3e9e10edb8bd94eed661e97}{}\label{classGoParserFactory_ae6a6141ff3e9e10edb8bd94eed661e97}
+
+
+Class constructor. 
+
+This constructor initializes the private lists to empty vectors. \index{Go\+Parser\+Factory@{Go\+Parser\+Factory}!````~Go\+Parser\+Factory@{$\sim$\+Go\+Parser\+Factory}}
+\index{````~Go\+Parser\+Factory@{$\sim$\+Go\+Parser\+Factory}!Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Go\+Parser\+Factory()}{~GoParserFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}Go\+Parser\+Factory\+::$\sim$\+Go\+Parser\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoParserFactory_a690c83fe9183f8e49e19c46d7951d5ce}{}\label{classGoParserFactory_a690c83fe9183f8e49e19c46d7951d5ce}
+
+
+Class destructor. 
+
+This destructor clears the names vector. It also deletes each parser pointer explicitly. Finally it clears the parser list. 
+
+\subsection{Member Function Documentation}
+\index{Go\+Parser\+Factory@{Go\+Parser\+Factory}!add\+Parser@{add\+Parser}}
+\index{add\+Parser@{add\+Parser}!Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{add\+Parser(std\+::string name, Go\+Parser\+Interface $\ast$parser)}{addParser(std::string name, GoParserInterface *parser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Go\+Parser\+Factory\+::add\+Parser (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{{\bf Go\+Parser\+Interface} $\ast$}]{parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoParserFactory_a93ca2a2c9ae05777d49e95793ce6dbdf}{}\label{classGoParserFactory_a93ca2a2c9ae05777d49e95793ce6dbdf}
+
+
+A Method to add a parser to the factory. 
+
+This method adds a pointer to a parser and a string to the factory. This string is used to query the appropriate parser. \index{Go\+Parser\+Factory@{Go\+Parser\+Factory}!get\+Parser@{get\+Parser}}
+\index{get\+Parser@{get\+Parser}!Go\+Parser\+Factory@{Go\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{get\+Parser(std\+::string name)}{getParser(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\+Parser\+Interface}$\ast$ Go\+Parser\+Factory\+::get\+Parser (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoParserFactory_a3f3b61ae2954943186646444417911cc}{}\label{classGoParserFactory_a3f3b61ae2954943186646444417911cc}
+
+
+A method to return a parser based on a query string. 
+
+If the string supplied matches one of the keys in the database, the appropriate parser will be returned. If not, a N\+U\+LL pointer is returned. The calling environment must check against N\+U\+LL before using. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Go\+Parser\+Factory.\+hpp\end{DoxyCompactItemize}

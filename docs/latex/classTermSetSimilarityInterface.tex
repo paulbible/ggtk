@@ -1,0 +1,51 @@
+\hypertarget{classTermSetSimilarityInterface}{}\section{Term\+Set\+Similarity\+Interface Class Reference}
+\label{classTermSetSimilarityInterface}\index{Term\+Set\+Similarity\+Interface@{Term\+Set\+Similarity\+Interface}}
+
+
+An interface class for comparing semantic similarity of sets of \hyperlink{namespaceGO}{GO} terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Set\+Similarity\+Interface.\+hpp$>$}
+
+Inheritance diagram for Term\+Set\+Similarity\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.137056cm]{classTermSetSimilarityInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classTermSetSimilarityInterface_aeb985b714efc3df40e55bdd31e425e04}{calculate\+Similarity} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsA, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsB)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for calculating term set to term set similarity for sets of \hyperlink{namespaceGO}{GO} terms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface class for comparing semantic similarity of sets of \hyperlink{namespaceGO}{GO} terms. 
+
+This class defines the interface for comparing term set to term set similarity. This is the most useful case for comparing genes with multiple annotations to each other. 
+
+\subsection{Member Function Documentation}
+\index{Term\+Set\+Similarity\+Interface@{Term\+Set\+Similarity\+Interface}!calculate\+Similarity@{calculate\+Similarity}}
+\index{calculate\+Similarity@{calculate\+Similarity}!Term\+Set\+Similarity\+Interface@{Term\+Set\+Similarity\+Interface}}
+\subsubsection[{\texorpdfstring{calculate\+Similarity(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+A, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+B)=0}{calculateSimilarity(const boost::unordered_set< std::string > &termsA, const boost::unordered_set< std::string > &termsB)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Term\+Set\+Similarity\+Interface\+::calculate\+Similarity (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsA, }
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classTermSetSimilarityInterface_aeb985b714efc3df40e55bdd31e425e04}{}\label{classTermSetSimilarityInterface_aeb985b714efc3df40e55bdd31e425e04}
+
+
+A pure virtual method for calculating term set to term set similarity for sets of \hyperlink{namespaceGO}{GO} terms. 
+
+This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two sets of go terms. 
+
+Implemented in \hyperlink{classAllPairsMaxSetSimilarity_a0eed3f63e2acdeb8365900b9d7a038c1}{All\+Pairs\+Max\+Set\+Similarity}, \hyperlink{classAllPairsAverageSetSimilarity_a685cd98d44c2e2ab9ee4fe7071066cde}{All\+Pairs\+Average\+Set\+Similarity}, \hyperlink{classBestMatchAverageSetSimilarity_adf1b3109b46f04087f919bdb33e131f0}{Best\+Match\+Average\+Set\+Similarity}, and \hyperlink{classJaccardSetSimilarity_a122a04f7f67b96e393fcde1025a306c3}{Jaccard\+Set\+Similarity}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Set\+Similarity\+Interface.\+hpp\end{DoxyCompactItemize}

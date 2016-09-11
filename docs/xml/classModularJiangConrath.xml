@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classModularJiangConrath" kind="class" language="C++" prot="public">
+    <compoundname>ModularJiangConrath</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="ModularJiangConrath_8hpp" local="no">ggtk/ModularJiangConrath.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classModularJiangConrath_1a50012c82575e26f85da7bc9edb8060e1" prot="private" static="no" mutable="no">
+        <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+        <definition>SharedInformationInterface* ModularJiangConrath::_siCalculator</definition>
+        <argsstring></argsstring>
+        <name>_siCalculator</name>
+        <briefdescription>
+<para>private <ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> member used for calculations </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularJiangConrath.hpp" line="91" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classModularJiangConrath_1aae432a48629db51d0f0d00a41d592b87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ModularJiangConrath::ModularJiangConrath</definition>
+        <argsstring>(SharedInformationInterface *sharedInformationCalculator)</argsstring>
+        <name>ModularJiangConrath</name>
+        <param>
+          <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+          <declname>sharedInformationCalculator</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the Jiang Conrath simialrity measure using a given shared infromation calculator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularJiangConrath.hpp" line="40" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ModularJiangConrath::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Lin similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Resnik similarity or the information content of the most informative common ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularJiangConrath.hpp" line="48" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="48" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ModularJiangConrath::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using normalized Lin similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Lin similarity. Lin similarity is already normalized </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularJiangConrath.hpp" line="76" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularJiangConrath_1a44a9dae983e696676cb41c8cf8f93cb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModularJiangConrath::setSharedInformationCalculator</definition>
+        <argsstring>(SharedInformationInterface *newSharedInformationCalulator)</argsstring>
+        <name>setSharedInformationCalculator</name>
+        <param>
+          <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+          <declname>newSharedInformationCalulator</declname>
+        </param>
+        <briefdescription>
+<para>A method to set alternative methods of shared information calculators. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method accepts a new method for calculating the shared information of two terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularJiangConrath.hpp" line="84" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate Jiang Conrath similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Jiang Conrath similarity.</para><para>Jiang, J. J., &amp; Conrath, D. W. (1997). Semantic similarity based on corpus statistics and lexical taxonomy. In Proc. of 10th International Conference on Research on Computational Linguistics, Taiwan.</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>distance = IC(termA) + IC(termB) - 2*IC(MICA) maxDistance = 2*IC(single annotaiotn) similarity = 1 - distance/maxDistance (see Lord et al.) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="147">
+        <label>ModularJiangConrath</label>
+        <link refid="classModularJiangConrath"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="149">
+        <label>ModularJiangConrath</label>
+        <link refid="classModularJiangConrath"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/ModularJiangConrath.hpp" line="32" column="1" bodyfile="ggtk/ModularJiangConrath.hpp" bodystart="32" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classModularJiangConrath_1a50012c82575e26f85da7bc9edb8060e1" prot="private" virt="non-virtual"><scope>ModularJiangConrath</scope><name>_siCalculator</name></member>
+      <member refid="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b" prot="public" virt="virtual"><scope>ModularJiangConrath</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" prot="public" virt="virtual"><scope>ModularJiangConrath</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classModularJiangConrath_1aae432a48629db51d0f0d00a41d592b87" prot="public" virt="non-virtual"><scope>ModularJiangConrath</scope><name>ModularJiangConrath</name></member>
+      <member refid="classModularJiangConrath_1a44a9dae983e696676cb41c8cf8f93cb6" prot="public" virt="non-virtual"><scope>ModularJiangConrath</scope><name>setSharedInformationCalculator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

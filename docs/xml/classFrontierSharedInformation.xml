@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classFrontierSharedInformation" kind="class" language="C++" prot="public">
+    <compoundname>FrontierSharedInformation</compoundname>
+    <basecompoundref refid="classSharedInformationInterface" prot="public" virt="non-virtual">SharedInformationInterface</basecompoundref>
+    <includes refid="FrontierSharedInformation_8hpp" local="no">ggtk/FrontierSharedInformation.hpp</includes>
+    <innerclass refid="classFrontierSharedInformation_1_1EdgeSetVisitor" prot="private">FrontierSharedInformation::EdgeSetVisitor</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFrontierSharedInformation_1ab49ace5529dddcca2b1217264da909d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* FrontierSharedInformation::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="248" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrontierSharedInformation_1a05949df307f5f9033744a49621183a0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap FrontierSharedInformation::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="249" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFrontierSharedInformation_1afd55b315f784ea9991adaa5320108891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FrontierSharedInformation::FrontierSharedInformation</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>FrontierSharedInformation</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classCoutoGraSMSharedInformation" kindref="compound">CoutoGraSMSharedInformation</ref> class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="35" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1a4c9a919ae92d7628bbb5c58ab06c19aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; FrontierSharedInformation::getCommonDisjointAncestors</definition>
+        <argsstring>(const std::string &amp;termC1, const std::string &amp;termC2)</argsstring>
+        <name>getCommonDisjointAncestors</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termC1</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termC2</declname>
+        </param>
+        <briefdescription>
+<para>A method for determining the common disjunctive ancestors. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the common disjunctive ancestors for two terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="45" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="45" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1afd0bf3ea7bb9f4f05f89cc2597bc2dcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double FrontierSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>An method for returning the shared information of two terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the mean information content of the frontier ancestors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="137" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="137" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1a7d9c15e312667dc5ac2af1c7e36f735b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double FrontierSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the shared information of a single terms,or information content. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method privdes a mechanism for returing a term&apos;s infromation content. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="164" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="164" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1a8301888fc7343848a9ee307849e49125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double FrontierSharedInformation::maxInformationContent</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>maxInformationContent</name>
+        <reimplements refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999">maxInformationContent</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the maximum information content for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method provides the absolute max information content within a corpus for normalization purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="177" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="177" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1a4cd9a78345443bdd8c43e7fcee01f9b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool FrontierSharedInformation::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <reimplements refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8">hasTerm</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if a term can be found. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the term can be found in the current map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="198" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="198" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrontierSharedInformation_1a545b12efcab4551d031fb6125f615080" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool FrontierSharedInformation::isSameOntology</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>isSameOntology</name>
+        <reimplements refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d">isSameOntology</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if the two terms are of like ontologies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determine if two terms are of the same ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/FrontierSharedInformation.hpp" line="206" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="206" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate shared infromation across disjoint common ancestors in linear time. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates shared infromation along a semantic frontier between terms. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>FrontierSharedInformation</label>
+        <link refid="classFrontierSharedInformation"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="92">
+        <label>FrontierSharedInformation</label>
+        <link refid="classFrontierSharedInformation"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/FrontierSharedInformation.hpp" line="27" column="1" bodyfile="ggtk/FrontierSharedInformation.hpp" bodystart="27" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classFrontierSharedInformation_1ab49ace5529dddcca2b1217264da909d1" prot="private" virt="non-virtual"><scope>FrontierSharedInformation</scope><name>_goGraph</name></member>
+      <member refid="classFrontierSharedInformation_1a05949df307f5f9033744a49621183a0e" prot="private" virt="non-virtual"><scope>FrontierSharedInformation</scope><name>_icMap</name></member>
+      <member refid="classFrontierSharedInformation_1afd55b315f784ea9991adaa5320108891" prot="public" virt="non-virtual"><scope>FrontierSharedInformation</scope><name>FrontierSharedInformation</name></member>
+      <member refid="classFrontierSharedInformation_1a4c9a919ae92d7628bbb5c58ab06c19aa" prot="public" virt="non-virtual"><scope>FrontierSharedInformation</scope><name>getCommonDisjointAncestors</name></member>
+      <member refid="classFrontierSharedInformation_1a4cd9a78345443bdd8c43e7fcee01f9b4" prot="public" virt="virtual"><scope>FrontierSharedInformation</scope><name>hasTerm</name></member>
+      <member refid="classFrontierSharedInformation_1a545b12efcab4551d031fb6125f615080" prot="public" virt="virtual"><scope>FrontierSharedInformation</scope><name>isSameOntology</name></member>
+      <member refid="classFrontierSharedInformation_1a8301888fc7343848a9ee307849e49125" prot="public" virt="virtual"><scope>FrontierSharedInformation</scope><name>maxInformationContent</name></member>
+      <member refid="classFrontierSharedInformation_1afd0bf3ea7bb9f4f05f89cc2597bc2dcf" prot="public" virt="virtual"><scope>FrontierSharedInformation</scope><name>sharedInformation</name></member>
+      <member refid="classFrontierSharedInformation_1a7d9c15e312667dc5ac2af1c7e36f735b" prot="public" virt="virtual"><scope>FrontierSharedInformation</scope><name>sharedInformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

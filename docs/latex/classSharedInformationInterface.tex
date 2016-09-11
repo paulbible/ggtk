@@ -1,0 +1,120 @@
+\hypertarget{classSharedInformationInterface}{}\section{Shared\+Information\+Interface Class Reference}
+\label{classSharedInformationInterface}\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+
+
+An interface class to define shared information calculations.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Shared\+Information\+Interface.\+hpp$>$}
+
+Inheritance diagram for Shared\+Information\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.761905cm]{classSharedInformationInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}{shared\+Information} (const std\+::string \&termA, const std\+::string \&termB)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for returning the shared information of two terms. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}{shared\+Information} (const std\+::string \&term)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for returning the shared information of a single terms,or information content. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}{max\+Information\+Content} (const std\+::string \&term)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for returning the maximum information content for a term. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}{has\+Term} (const std\+::string \&term)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for determining if a term can be found. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}{is\+Same\+Ontology} (const std\+::string \&termA, const std\+::string \&termB)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for determining if the two terms are of like ontologies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface class to define shared information calculations. 
+
+This class defines the interface for shared information calculations. Pure virtual methods require that shared information methods implement these. 
+
+\subsection{Member Function Documentation}
+\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&term)=0}{hasTerm(const std::string &term)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Shared\+Information\+Interface\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}{}\label{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}
+
+
+A pure virtual method for determining if a term can be found. 
+
+This pure virtual method requires any shared information class to implement this method. This method provides a method for client classes to determine if a term can be found by the method. 
+
+Implemented in \hyperlink{classCoutoGraSMSharedInformation_a718055d6fecea9e10125ae4895af7f95}{Couto\+Gra\+S\+M\+Shared\+Information}, \hyperlink{classCoutoGraSMAdjustedSharedInformation_ae6304b98a7c8784327f978ee59372ca3}{Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, \hyperlink{classFrontierSharedInformation_a4cd9a78345443bdd8c43e7fcee01f9b4}{Frontier\+Shared\+Information}, \hyperlink{classExclusivelyInheritedSharedInformation_a0bf2231c6f714d97a5e55ee67893e403}{Exclusively\+Inherited\+Shared\+Information}, \hyperlink{classMICASharedInformation_a0fece18244af62c7e2258b0af418413a}{M\+I\+C\+A\+Shared\+Information}, and \hyperlink{classAncestorMeanSharedInformation_af7503d6f761957bcb22d0e6614d87fa4}{Ancestor\+Mean\+Shared\+Information}.
+
+\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}!is\+Same\+Ontology@{is\+Same\+Ontology}}
+\index{is\+Same\+Ontology@{is\+Same\+Ontology}!Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+\subsubsection[{\texorpdfstring{is\+Same\+Ontology(const std\+::string \&term\+A, const std\+::string \&term\+B)=0}{isSameOntology(const std::string &termA, const std::string &termB)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Shared\+Information\+Interface\+::is\+Same\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}{}\label{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}
+
+
+A pure virtual method for determining if the two terms are of like ontologies. 
+
+This pure virtual method requires any shared information class to implement this method. This method provides a method for client classes to determine if two terms are of the same ontology. 
+
+Implemented in \hyperlink{classCoutoGraSMSharedInformation_ae6e12a30f03b0c2232d73277d8d47cd1}{Couto\+Gra\+S\+M\+Shared\+Information}, \hyperlink{classCoutoGraSMAdjustedSharedInformation_a9e6387f431eddaf42a1b18529cb3a8f5}{Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, \hyperlink{classFrontierSharedInformation_a545b12efcab4551d031fb6125f615080}{Frontier\+Shared\+Information}, \hyperlink{classExclusivelyInheritedSharedInformation_a7b0ec1a7a1fb653450686c7e31346363}{Exclusively\+Inherited\+Shared\+Information}, \hyperlink{classMICASharedInformation_a9cea24c8af57f17248ffe1f12fea9545}{M\+I\+C\+A\+Shared\+Information}, and \hyperlink{classAncestorMeanSharedInformation_a75f59ac9d53014b967d0a81de8a07dbb}{Ancestor\+Mean\+Shared\+Information}.
+
+\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}!max\+Information\+Content@{max\+Information\+Content}}
+\index{max\+Information\+Content@{max\+Information\+Content}!Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+\subsubsection[{\texorpdfstring{max\+Information\+Content(const std\+::string \&term)=0}{maxInformationContent(const std::string &term)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Shared\+Information\+Interface\+::max\+Information\+Content (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}{}\label{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}
+
+
+A pure virtual method for returning the maximum information content for a term. 
+
+This pure virtual method requires any shared information class to implement this method. This method provides the absolute max information content with in a corpus for normalization purposes. 
+
+Implemented in \hyperlink{classCoutoGraSMSharedInformation_ae97d2b59ecd6d1eeee2583c6005c65a2}{Couto\+Gra\+S\+M\+Shared\+Information}, \hyperlink{classCoutoGraSMAdjustedSharedInformation_ab66e18a4f169878ad2a9e9d6d3feb459}{Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, \hyperlink{classFrontierSharedInformation_a8301888fc7343848a9ee307849e49125}{Frontier\+Shared\+Information}, \hyperlink{classExclusivelyInheritedSharedInformation_af435c2641f3ab4a34db2d473216ceb16}{Exclusively\+Inherited\+Shared\+Information}, \hyperlink{classMICASharedInformation_ae88d4a76721e03bbb418eb870fa18ff1}{M\+I\+C\+A\+Shared\+Information}, and \hyperlink{classAncestorMeanSharedInformation_abf7d613e1459a5cf49071871e55f8a50}{Ancestor\+Mean\+Shared\+Information}.
+
+\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term\+A, const std\+::string \&term\+B)=0}{sharedInformation(const std::string &termA, const std::string &termB)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Shared\+Information\+Interface\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}{}\label{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}
+
+
+A pure virtual method for returning the shared information of two terms. 
+
+This pure virtual method requires any shared information class to implement this method. 
+
+Implemented in \hyperlink{classCoutoGraSMSharedInformation_aeb3ea4684e5f198464ce9354171981d3}{Couto\+Gra\+S\+M\+Shared\+Information}, \hyperlink{classCoutoGraSMAdjustedSharedInformation_ac93a66e1b8efafc8cd1c166424241af9}{Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, \hyperlink{classFrontierSharedInformation_afd0bf3ea7bb9f4f05f89cc2597bc2dcf}{Frontier\+Shared\+Information}, \hyperlink{classExclusivelyInheritedSharedInformation_ae7e51e7f1328cfc5f7b9991c7714eadf}{Exclusively\+Inherited\+Shared\+Information}, \hyperlink{classMICASharedInformation_a8f6329c173f2cd17caf1a65043e8e249}{M\+I\+C\+A\+Shared\+Information}, and \hyperlink{classAncestorMeanSharedInformation_a86dad7b02ff45ae758a2b311ad763350}{Ancestor\+Mean\+Shared\+Information}.
+
+\index{Shared\+Information\+Interface@{Shared\+Information\+Interface}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Shared\+Information\+Interface@{Shared\+Information\+Interface}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term)=0}{sharedInformation(const std::string &term)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Shared\+Information\+Interface\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}{}\label{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}
+
+
+A pure virtual method for returning the shared information of a single terms,or information content. 
+
+This pure virtual method privdes a mechanism for returing a term\textquotesingle{}s infromation content. 
+
+Implemented in \hyperlink{classCoutoGraSMSharedInformation_a1c9a0a709b77822cd3bc967beed08b66}{Couto\+Gra\+S\+M\+Shared\+Information}, \hyperlink{classCoutoGraSMAdjustedSharedInformation_a6a228833a96e710c4e143cefaf364a37}{Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, \hyperlink{classFrontierSharedInformation_a7d9c15e312667dc5ac2af1c7e36f735b}{Frontier\+Shared\+Information}, \hyperlink{classExclusivelyInheritedSharedInformation_ad77022f2d6225c423fa0c5abb8a1443a}{Exclusively\+Inherited\+Shared\+Information}, \hyperlink{classMICASharedInformation_a230adc046f7f4bbab190aaef25d15a37}{M\+I\+C\+A\+Shared\+Information}, and \hyperlink{classAncestorMeanSharedInformation_af31937c58ee53db666586b446bc23061}{Ancestor\+Mean\+Shared\+Information}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Shared\+Information\+Interface.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classGoParserInterface}{}\section{Go\+Parser\+Interface Class Reference}
+\label{classGoParserInterface}\index{Go\+Parser\+Interface@{Go\+Parser\+Interface}}
+
+
+An interface class to define go graph parsers.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Go\+Parser\+Interface.\+hpp$>$}
+
+Inheritance diagram for Go\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.061611cm]{classGoParserInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classGoGraph}{Go\+Graph} $\ast$ \hyperlink{classGoParserInterface_aefde440e0d5404b9efa2a16a89e09674}{parse\+Go\+File} (std\+::string file\+Name)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for parsing the file and returning a \hyperlink{classGoGraph}{Go\+Graph} object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classGoParserInterface_a0d2db54063c1ff58a0e15f0187af5aa1}{is\+File\+Good} (const std\+::string \&filename)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for parsing the file and returning a \hyperlink{classGoGraph}{Go\+Graph} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classGoParserInterface}{Go\+Parser\+Interface} $\ast$ \hyperlink{classGoParserInterface_a21c4ea01809737ab2975fb71edf6fcd5}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual clone function for factory pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface class to define go graph parsers. 
+
+This class defines the interface of a go graph parser. Pure virtual methods require that parsers implement these methods. 
+
+\subsection{Member Function Documentation}
+\index{Go\+Parser\+Interface@{Go\+Parser\+Interface}!clone@{clone}}
+\index{clone@{clone}!Go\+Parser\+Interface@{Go\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{clone()=0}{clone()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Go\+Parser\+Interface}$\ast$ Go\+Parser\+Interface\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classGoParserInterface_a21c4ea01809737ab2975fb71edf6fcd5}{}\label{classGoParserInterface_a21c4ea01809737ab2975fb71edf6fcd5}
+
+
+A pure virtual clone function for factory pattern. 
+
+This pure virtual method returns an instance of this interface. This method is used in a factory class to have the ability to decide the parser at runtime. 
+
+Implemented in \hyperlink{classAllowedRelationshipOboGoParser_add9a434ad4acd785b51550dc5fd9388b}{Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperlink{classAllowedRelationshipXmlGoParser_a3c330bc9f1ccf6422488bf1ea593f52a}{Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperlink{classRapidXmlGoParser_af69641207e01be186f523939ce03f847}{Rapid\+Xml\+Go\+Parser}, \hyperlink{classStandardXmlGoParser_ac05cc1de0c2fc74e089169f9baea1f0d}{Standard\+Xml\+Go\+Parser}, and \hyperlink{classStandardOboGoParser_aa4c7c326bf20327645fe6df7d57e3fc3}{Standard\+Obo\+Go\+Parser}.
+
+\index{Go\+Parser\+Interface@{Go\+Parser\+Interface}!is\+File\+Good@{is\+File\+Good}}
+\index{is\+File\+Good@{is\+File\+Good}!Go\+Parser\+Interface@{Go\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{is\+File\+Good(const std\+::string \&filename)=0}{isFileGood(const std::string &filename)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Go\+Parser\+Interface\+::is\+File\+Good (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classGoParserInterface_a0d2db54063c1ff58a0e15f0187af5aa1}{}\label{classGoParserInterface_a0d2db54063c1ff58a0e15f0187af5aa1}
+
+
+A pure virtual method for parsing the file and returning a \hyperlink{classGoGraph}{Go\+Graph} object. 
+
+This pure virtual method requires any parser to have a method that takes a filename string and returns a \hyperlink{classGoGraph}{Go\+Graph} object pointer. 
+
+Implemented in \hyperlink{classAllowedRelationshipOboGoParser_a67722c03da0ca2e0f9eb4008dddc6e06}{Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperlink{classAllowedRelationshipXmlGoParser_a75e964bc34f575bc6c00c56b43f91d0e}{Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperlink{classRapidXmlGoParser_a945a31fd86bd35720d4158caa35302da}{Rapid\+Xml\+Go\+Parser}, \hyperlink{classStandardXmlGoParser_a74c344440ef2ce5b30536e09691c92ab}{Standard\+Xml\+Go\+Parser}, and \hyperlink{classStandardOboGoParser_af6c430101cecf73606ae979d4de6ea7f}{Standard\+Obo\+Go\+Parser}.
+
+\index{Go\+Parser\+Interface@{Go\+Parser\+Interface}!parse\+Go\+File@{parse\+Go\+File}}
+\index{parse\+Go\+File@{parse\+Go\+File}!Go\+Parser\+Interface@{Go\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{parse\+Go\+File(std\+::string file\+Name)=0}{parseGoFile(std::string fileName)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Go\+Graph}$\ast$ Go\+Parser\+Interface\+::parse\+Go\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classGoParserInterface_aefde440e0d5404b9efa2a16a89e09674}{}\label{classGoParserInterface_aefde440e0d5404b9efa2a16a89e09674}
+
+
+A pure virtual method for parsing the file and returning a \hyperlink{classGoGraph}{Go\+Graph} object. 
+
+This pure virtual method requires any parser to have a method that takes a filename string and returns a \hyperlink{classGoGraph}{Go\+Graph} object pointer. 
+
+Implemented in \hyperlink{classAllowedRelationshipOboGoParser_a6eb0ab84216c386a2595aa47233448ad}{Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperlink{classAllowedRelationshipXmlGoParser_ad6e002e7cd0994866b62dba0896d3d24}{Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperlink{classStandardXmlGoParser_ae56413ab11d1fa8f3870f5bcc262d3f8}{Standard\+Xml\+Go\+Parser}, \hyperlink{classRapidXmlGoParser_a7c42085d86c58983601fdada4aaacd9d}{Rapid\+Xml\+Go\+Parser}, and \hyperlink{classStandardOboGoParser_a4eb0d67f0c78456d1e0a9a3f55294424}{Standard\+Obo\+Go\+Parser}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Go\+Parser\+Interface.\+hpp\end{DoxyCompactItemize}

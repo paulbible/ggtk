@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classNCList" kind="class" language="C++" prot="public">
+    <compoundname>NCList</compoundname>
+    <includes refid="NCList_8hpp" local="no">ggtk/NCList.hpp</includes>
+    <innerclass refid="classNCList_1_1NCNode" prot="public">NCList::NCNode</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNCList_1a2999e47110bf2e20bb9fd8e8689715e3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNCList_1_1NCNode" kindref="compound">NCNode</ref> &gt;</type>
+        <definition>std::vector&lt;NCNode&gt; NCList::_items</definition>
+        <argsstring></argsstring>
+        <name>_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of NCNodes as a vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="466" column="1" bodyfile="ggtk/NCList.hpp" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNCList_1a89e697c86de88207fbe4153600a06cdc" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t NCList::_totalFeatures</definition>
+        <argsstring></argsstring>
+        <name>_totalFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>total number of genes/regions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="472" column="1" bodyfile="ggtk/NCList.hpp" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNCList_1ab6c2b7decd70fcde7b54db4e79b64b85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NCList::NCList</definition>
+        <argsstring>(std::vector&lt; GenomicRegion &gt; &amp;regions)</argsstring>
+        <name>NCList</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt; &amp;</type>
+          <declname>regions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for <ref refid="classNCList" kindref="compound">NCList</ref> that performs the work of sorting and inserting intevals into the NCNodes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="137" column="1" bodyfile="ggtk/NCList.hpp" bodystart="137" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a98e796a8e78efec9d019fb4303d4c8f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::getOverlapIndex</definition>
+        <argsstring>(const GenomicRegion r)</argsstring>
+        <name>getOverlapIndex</name>
+        <param>
+          <type>const <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list index of the overlapped region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="205" column="1" bodyfile="ggtk/NCList.hpp" bodystart="205" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a3199031fe2904e2cac57a682e07573c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::getOverlapIndex</definition>
+        <argsstring>(const std::pair&lt; size_t, size_t &gt; p)</argsstring>
+        <name>getOverlapIndex</name>
+        <param>
+          <type>const std::pair&lt; size_t, size_t &gt;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list index of the overlapped start end pair </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="232" column="1" bodyfile="ggtk/NCList.hpp" bodystart="232" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a01ce26e143d1edf32caf50d472c1cce3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::getOverlapIndex</definition>
+        <argsstring>(const size_t start, const size_t end)</argsstring>
+        <name>getOverlapIndex</name>
+        <param>
+          <type>const size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list index of the overlapped start end interval </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="259" column="1" bodyfile="ggtk/NCList.hpp" bodystart="259" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a226ca89f140feac5088af4be366bcd58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::getOverlapIndex</definition>
+        <argsstring>(const size_t point)</argsstring>
+        <name>getOverlapIndex</name>
+        <param>
+          <type>const size_t</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list index of the overlapped coordinate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="285" column="1" bodyfile="ggtk/NCList.hpp" bodystart="285" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1af67a0c748ed4e7d095bb6092c1f291fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt;</type>
+        <definition>std::vector&lt;GenomicRegion&gt; NCList::getFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>getFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A method to return all genes as a vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="312" column="1" bodyfile="ggtk/NCList.hpp" bodystart="312" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1acaec79f5de348b5645a856fcde6d58cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt;</type>
+        <definition>std::vector&lt;GenomicRegion&gt; NCList::getFeaturesInRange</definition>
+        <argsstring>(const GenomicRegion r)</argsstring>
+        <name>getFeaturesInRange</name>
+        <param>
+          <type>const <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to return all genes in a given range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="332" column="1" bodyfile="ggtk/NCList.hpp" bodystart="332" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1aab695768230d12b179699ca8f19f5d4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt;</type>
+        <definition>std::vector&lt;GenomicRegion&gt; NCList::getFeaturesInRange</definition>
+        <argsstring>(const std::pair&lt; size_t, size_t &gt; p)</argsstring>
+        <name>getFeaturesInRange</name>
+        <param>
+          <type>const std::pair&lt; size_t, size_t &gt;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to return all genes between a start end pair </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="360" column="1" bodyfile="ggtk/NCList.hpp" bodystart="360" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a02b767b23f0007af67174cb2c2e6d92b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt;</type>
+        <definition>std::vector&lt;GenomicRegion&gt; NCList::getFeaturesInRange</definition>
+        <argsstring>(const size_t start, const size_t end)</argsstring>
+        <name>getFeaturesInRange</name>
+        <param>
+          <type>const size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to return all genes between a start end interval </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="388" column="1" bodyfile="ggtk/NCList.hpp" bodystart="388" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a6de14b47eb6b5c7291f5469609d500f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> &gt;</type>
+        <definition>std::vector&lt;GenomicRegion&gt; NCList::getFeaturesAt</definition>
+        <argsstring>(const size_t index)</argsstring>
+        <name>getFeaturesAt</name>
+        <param>
+          <type>const size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to return all genes at a particular index in the list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="415" column="1" bodyfile="ggtk/NCList.hpp" bodystart="415" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a4bb83c717bfa1b169f48809a4ed32f2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size returns number of top level nodes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="430" column="1" bodyfile="ggtk/NCList.hpp" bodystart="430" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a88ba10ba7017497f6912e8f3570239e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NCList::numFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>numFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>numFeatures returns number of all genes/features </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="438" column="1" bodyfile="ggtk/NCList.hpp" bodystart="438" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a4ea0b59d58fcd385adb2fa4e92aae35b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classNCList_1_1NCNode" kindref="compound">NCNode</ref> &gt;</type>
+        <definition>std::vector&lt;NCNode&gt; NCList::getNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the vector of NCNodes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="446" column="1" bodyfile="ggtk/NCList.hpp" bodystart="446" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classNCList_1a002aee45aea558b91957c4f282b83565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref></type>
+        <definition>GenomicRegion NCList::getRegionAt</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>getRegionAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the top level region at an index i </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/NCList.hpp" line="455" column="1" bodyfile="ggtk/NCList.hpp" bodystart="455" bodyend="461"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A container class for quickly finding intersections of genomic intervals. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class prepresents an implementation of Nested Containment Lists by Alekseyenko and Lee.</para><para>Alekseyenko AV and Lee CJ. Nested Containment List (<ref refid="classNCList" kindref="compound">NCList</ref>): a new algorithm for accelerating interval query of genome alignment and interval databases. Bioinformatics. 2007 Jun 1;23(11):1386-93. Epub 2007 Jan 18. </para>    </detaileddescription>
+    <location file="ggtk/NCList.hpp" line="31" column="1" bodyfile="ggtk/NCList.hpp" bodystart="31" bodyend="473"/>
+    <listofallmembers>
+      <member refid="classNCList_1a2999e47110bf2e20bb9fd8e8689715e3" prot="public" virt="non-virtual"><scope>NCList</scope><name>_items</name></member>
+      <member refid="classNCList_1a89e697c86de88207fbe4153600a06cdc" prot="private" virt="non-virtual"><scope>NCList</scope><name>_totalFeatures</name></member>
+      <member refid="classNCList_1af67a0c748ed4e7d095bb6092c1f291fb" prot="public" virt="non-virtual"><scope>NCList</scope><name>getFeatures</name></member>
+      <member refid="classNCList_1a6de14b47eb6b5c7291f5469609d500f6" prot="public" virt="non-virtual"><scope>NCList</scope><name>getFeaturesAt</name></member>
+      <member refid="classNCList_1acaec79f5de348b5645a856fcde6d58cf" prot="public" virt="non-virtual"><scope>NCList</scope><name>getFeaturesInRange</name></member>
+      <member refid="classNCList_1aab695768230d12b179699ca8f19f5d4c" prot="public" virt="non-virtual"><scope>NCList</scope><name>getFeaturesInRange</name></member>
+      <member refid="classNCList_1a02b767b23f0007af67174cb2c2e6d92b" prot="public" virt="non-virtual"><scope>NCList</scope><name>getFeaturesInRange</name></member>
+      <member refid="classNCList_1a4ea0b59d58fcd385adb2fa4e92aae35b" prot="public" virt="non-virtual"><scope>NCList</scope><name>getNodes</name></member>
+      <member refid="classNCList_1a98e796a8e78efec9d019fb4303d4c8f3" prot="public" virt="non-virtual"><scope>NCList</scope><name>getOverlapIndex</name></member>
+      <member refid="classNCList_1a3199031fe2904e2cac57a682e07573c5" prot="public" virt="non-virtual"><scope>NCList</scope><name>getOverlapIndex</name></member>
+      <member refid="classNCList_1a01ce26e143d1edf32caf50d472c1cce3" prot="public" virt="non-virtual"><scope>NCList</scope><name>getOverlapIndex</name></member>
+      <member refid="classNCList_1a226ca89f140feac5088af4be366bcd58" prot="public" virt="non-virtual"><scope>NCList</scope><name>getOverlapIndex</name></member>
+      <member refid="classNCList_1a002aee45aea558b91957c4f282b83565" prot="public" virt="non-virtual"><scope>NCList</scope><name>getRegionAt</name></member>
+      <member refid="classNCList_1ab6c2b7decd70fcde7b54db4e79b64b85" prot="public" virt="non-virtual"><scope>NCList</scope><name>NCList</name></member>
+      <member refid="classNCList_1a88ba10ba7017497f6912e8f3570239e9" prot="public" virt="non-virtual"><scope>NCList</scope><name>numFeatures</name></member>
+      <member refid="classNCList_1a4bb83c717bfa1b169f48809a4ed32f2e" prot="public" virt="non-virtual"><scope>NCList</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

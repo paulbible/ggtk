@@ -1,0 +1,81 @@
+\hypertarget{classTermInformationContentMap}{}\section{Term\+Information\+Content\+Map Class Reference}
+\label{classTermInformationContentMap}\index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+
+
+A class to calculate the information content of a \hyperlink{namespaceGO}{GO} term.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Information\+Content\+Map.\+hpp$>$}
+
+Inheritance diagram for Term\+Information\+Content\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTermInformationContentMap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTermInformationContentMap_ae58d9e3773eff919841e2de522ececd1}{Term\+Information\+Content\+Map} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$graph, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$anno\+Data)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classTermInformationContentMap_a082c021a27478403aad9bb99c0e975e6}{bad\+Id\+Value} ()
+\begin{DoxyCompactList}\small\item\em Return a default value for a term that does not exist. \end{DoxyCompactList}\item 
+\hyperlink{classTermInformationContentMap_a86494db712efa761fb671d51a6902c25}{Term\+Information\+Content\+Map} ()
+\begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class to calculate the information content of a \hyperlink{namespaceGO}{GO} term. 
+
+This class provides a map that returns the information content of a \hyperlink{namespaceGO}{GO} term. This class is used by Information Content methods. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}!Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+\index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}!Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Information\+Content\+Map(\+Go\+Graph $\ast$graph, Annotation\+Data $\ast$anno\+Data)}{TermInformationContentMap(GoGraph *graph, AnnotationData *annoData)}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Information\+Content\+Map\+::\+Term\+Information\+Content\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{graph, }
+\item[{{\bf Annotation\+Data} $\ast$}]{anno\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermInformationContentMap_ae58d9e3773eff919841e2de522ececd1}{}\label{classTermInformationContentMap_ae58d9e3773eff919841e2de522ececd1}
+
+
+A parameterized constructor. 
+
+This constructor takes pointers to \hyperlink{classGoGraph}{Go\+Graph} and \hyperlink{classAnnotationData}{Annotation\+Data} objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. This constructor relies on the \hyperlink{classTermProbabilityMap}{Term\+Probability\+Map}. \index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}!Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+\index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}!Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Information\+Content\+Map()}{TermInformationContentMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Information\+Content\+Map\+::\+Term\+Information\+Content\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermInformationContentMap_a86494db712efa761fb671d51a6902c25}{}\label{classTermInformationContentMap_a86494db712efa761fb671d51a6902c25}
+
+
+A default constructor. 
+
+This constructor creates an empty IC map. Should not be used. 
+
+\subsection{Member Function Documentation}
+\index{Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}!bad\+Id\+Value@{bad\+Id\+Value}}
+\index{bad\+Id\+Value@{bad\+Id\+Value}!Term\+Information\+Content\+Map@{Term\+Information\+Content\+Map}}
+\subsubsection[{\texorpdfstring{bad\+Id\+Value()}{badIdValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Information\+Content\+Map\+::bad\+Id\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classTermInformationContentMap_a082c021a27478403aad9bb99c0e975e6}{}\label{classTermInformationContentMap_a082c021a27478403aad9bb99c0e975e6}
+
+
+Return a default value for a term that does not exist. 
+
+A value to return if the term is not found (does not exist in the map). Returns informaiton content 0. This may not be the ideal behavior. 
+
+Reimplemented from \hyperlink{classTermProbabilityMap_adfeb9edb261c639cceae797cceb88d35}{Term\+Probability\+Map}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Information\+Content\+Map.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceSetUtilities" kind="namespace" language="C++">
+    <compoundname>SetUtilities</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceSetUtilities_1a6ade212eac1c05ff2d454da076425103" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool SetUtilities::set_contains</definition>
+        <argsstring>(const boost::unordered_set&lt; Type &gt; &amp;mySet, Type element)</argsstring>
+        <name>set_contains</name>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>mySet</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>set UTILITY funciton to determine if a set contains an element </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SetUtilities.hpp" line="23" column="1" bodyfile="ggtk/SetUtilities.hpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceSetUtilities_1abf607d9895124b4739a6ae54045ded83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>boost::unordered_set&lt; Type &gt;</type>
+        <definition>static boost::unordered_set&lt;Type&gt; SetUtilities::convert_vector</definition>
+        <argsstring>(const std::vector&lt; Type &gt; &amp;myVec)</argsstring>
+        <name>convert_vector</name>
+        <param>
+          <type>const std::vector&lt; Type &gt; &amp;</type>
+          <declname>myVec</declname>
+        </param>
+        <briefdescription>
+<para>set UTILITY funciton convert a vector to a set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SetUtilities.hpp" line="32" column="1" bodyfile="ggtk/SetUtilities.hpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceSetUtilities_1a21b8cc78d5f516eaa3c4448f0b5f2fbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>boost::unordered_set&lt; Type &gt;</type>
+        <definition>static boost::unordered_set&lt;Type&gt; SetUtilities::set_intersection</definition>
+        <argsstring>(const boost::unordered_set&lt; Type &gt; &amp;setA, const boost::unordered_set&lt; Type &gt; &amp;setB)</argsstring>
+        <name>set_intersection</name>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setB</declname>
+        </param>
+        <briefdescription>
+<para>set OPERATION intersection for boost::unordered_set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SetUtilities.hpp" line="41" column="1" bodyfile="ggtk/SetUtilities.hpp" bodystart="41" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceSetUtilities_1a493a071064f6c199e4e9e0b9bcfc6b38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>boost::unordered_set&lt; Type &gt;</type>
+        <definition>static boost::unordered_set&lt;Type&gt; SetUtilities::set_union</definition>
+        <argsstring>(const boost::unordered_set&lt; Type &gt; &amp;setA, const boost::unordered_set&lt; Type &gt; &amp;setB)</argsstring>
+        <name>set_union</name>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setB</declname>
+        </param>
+        <briefdescription>
+<para>set OPERATION union for boost::unordered_set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SetUtilities.hpp" line="62" column="1" bodyfile="ggtk/SetUtilities.hpp" bodystart="62" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceSetUtilities_1af7010f0e4ec6ac0851fba2372980d355" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>boost::unordered_set&lt; Type &gt;</type>
+        <definition>static boost::unordered_set&lt;Type&gt; SetUtilities::set_difference</definition>
+        <argsstring>(const boost::unordered_set&lt; Type &gt; &amp;setA, const boost::unordered_set&lt; Type &gt; &amp;setB)</argsstring>
+        <name>set_difference</name>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; Type &gt; &amp;</type>
+          <declname>setB</declname>
+        </param>
+        <briefdescription>
+<para>set OPERATION difference A - B </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SetUtilities.hpp" line="77" column="1" bodyfile="ggtk/SetUtilities.hpp" bodystart="77" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceSetUtilities" kindref="compound">SetUtilities</ref> namespace provides useful opperations on generic boost::unordered_set. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceSetUtilities" kindref="compound">SetUtilities</ref> provides useful operations on boost::unordered_set. set_intersection is optimized to traverse the smaller set and test exisitence in the larger set. </para>    </detaileddescription>
+    <location file="ggtk/SetUtilities.hpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

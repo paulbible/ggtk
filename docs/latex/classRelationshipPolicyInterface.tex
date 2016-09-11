@@ -1,0 +1,50 @@
+\hypertarget{classRelationshipPolicyInterface}{}\section{Relationship\+Policy\+Interface Class Reference}
+\label{classRelationshipPolicyInterface}\index{Relationship\+Policy\+Interface@{Relationship\+Policy\+Interface}}
+
+
+An interface to check relationships between \hyperlink{namespaceGO}{GO} terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Relationship\+Policy\+Interface.\+hpp$>$}
+
+Inheritance diagram for Relationship\+Policy\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRelationshipPolicyInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classRelationshipPolicyInterface_ad28012b607e9cf848c791b6a907bb2cb}{is\+Allowed} (\hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{G\+O\+::\+Relationship} relationship)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual meethod to test if a relationship is allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface to check relationships between \hyperlink{namespaceGO}{GO} terms. 
+
+This is interface is used to create parsers which will only use a specific set of relationship when parsing a \hyperlink{namespaceGO}{GO} graph file. 
+
+\subsection{Member Function Documentation}
+\index{Relationship\+Policy\+Interface@{Relationship\+Policy\+Interface}!is\+Allowed@{is\+Allowed}}
+\index{is\+Allowed@{is\+Allowed}!Relationship\+Policy\+Interface@{Relationship\+Policy\+Interface}}
+\subsubsection[{\texorpdfstring{is\+Allowed(\+G\+O\+::\+Relationship relationship)=0}{isAllowed(GO::Relationship relationship)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Relationship\+Policy\+Interface\+::is\+Allowed (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Relationship}}]{relationship}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classRelationshipPolicyInterface_ad28012b607e9cf848c791b6a907bb2cb}{}\label{classRelationshipPolicyInterface_ad28012b607e9cf848c791b6a907bb2cb}
+
+
+A pure virtual meethod to test if a relationship is allowed. 
+
+This pure virtual method requires any subclass to imlement an is\+Allowed method to enforce the relationship pollicy. 
+
+Implemented in \hyperlink{classAllowedSetRelationshipPolicy_ac7454bc649241219f076779330977f90}{Allowed\+Set\+Relationship\+Policy}, and \hyperlink{classStandardRelationshipPolicy_a75acddf7f5106cacf58f74bd837b03e4}{Standard\+Relationship\+Policy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Relationship\+Policy\+Interface.\+hpp\end{DoxyCompactItemize}

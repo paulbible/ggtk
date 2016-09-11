@@ -1,0 +1,1001 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGoGraph" kind="class" language="C++" prot="public">
+    <compoundname>GoGraph</compoundname>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+    <innerclass refid="structGoGraph_1_1EdgeProps" prot="public">GoGraph::EdgeProps</innerclass>
+    <innerclass refid="classGoGraph_1_1SubgraphBFSVisitor" prot="private">GoGraph::SubgraphBFSVisitor</innerclass>
+    <innerclass refid="structGoGraph_1_1VertexProps" prot="public">GoGraph::VertexProps</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" prot="public" static="no">
+        <type>boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::bidirectionalS, boost::property&lt; boost::vertex_index_t, size_t, <ref refid="structGoGraph_1_1VertexProps" kindref="compound">VertexProps</ref> &gt;, boost::property&lt; boost::edge_index_t, size_t, <ref refid="structGoGraph_1_1EdgeProps" kindref="compound">EdgeProps</ref> &gt; &gt;</type>
+        <definition>typedef boost::adjacency_list&lt;boost::vecS, boost::vecS, boost::bidirectionalS, boost::property&lt; boost::vertex_index_t, size_t, VertexProps&gt;, boost::property&lt; boost::edge_index_t, size_t, EdgeProps&gt; &gt; GoGraph::Graph_t</definition>
+        <argsstring></argsstring>
+        <name>Graph_t</name>
+        <briefdescription>
+<para>A Graph type representing Go. </para>        </briefdescription>
+        <detaileddescription>
+<para>This typedef defines a graph type used as the basic go graph. This typedef takes <ref refid="structGoGraph_1_1VertexProps" kindref="compound">VertexProps</ref> and <ref refid="structGoGraph_1_1EdgeProps" kindref="compound">EdgeProps</ref> as templete arguments. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="83" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" prot="public" static="no">
+        <type>boost::subgraph&lt; <ref refid="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" kindref="member">Graph_t</ref> &gt;</type>
+        <definition>typedef boost::subgraph&lt;Graph_t&gt; GoGraph::Graph</definition>
+        <argsstring></argsstring>
+        <name>Graph</name>
+        <briefdescription>
+<para>The main Graph type representing Go. </para>        </briefdescription>
+        <detaileddescription>
+<para>This typedef defines the main type as a subgraph of Graph_t. This allows the the graph to be divided into subgraphs if needed. Virtually not differnece but can cause problems with some boost constructors such as random graph generators. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="92" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &gt;::vertex_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;Graph&gt;::vertex_descriptor GoGraph::GoVertex</definition>
+        <argsstring></argsstring>
+        <name>GoVertex</name>
+        <briefdescription>
+<para>A vertex object. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost vertex_descriptor. Saves typing by using GoVertex. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="101" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a6a06a7cf401fba8f03f8f68b54744a75" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &gt;::edge_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;Graph&gt;::edge_descriptor GoGraph::GoEdge</definition>
+        <argsstring></argsstring>
+        <name>GoEdge</name>
+        <briefdescription>
+<para>An edge object. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost edge_descriptor. Saves typing by using GoEdge. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="107" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &gt;::vertex_iterator</type>
+        <definition>typedef boost::graph_traits&lt;Graph&gt;::vertex_iterator GoGraph::GoVertexIterator</definition>
+        <argsstring></argsstring>
+        <name>GoVertexIterator</name>
+        <briefdescription>
+<para>A vertex iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost vertex_iterator. Saves typing by using GoVertexIterator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="117" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a749886e553031dcb52c595989129514d" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &gt;::in_edge_iterator</type>
+        <definition>typedef boost::graph_traits&lt;Graph&gt;::in_edge_iterator GoGraph::InEdgeIterator</definition>
+        <argsstring></argsstring>
+        <name>InEdgeIterator</name>
+        <briefdescription>
+<para>An in edge iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost in_edge_iterator. Saves typing by using InEdgeIterator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="123" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a40291cfa00013cbb9cfb400c1fc92379" prot="public" static="no">
+        <type>boost::graph_traits&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &gt;::out_edge_iterator</type>
+        <definition>typedef boost::graph_traits&lt;Graph&gt;::out_edge_iterator GoGraph::OutEdgeIterator</definition>
+        <argsstring></argsstring>
+        <name>OutEdgeIterator</name>
+        <briefdescription>
+<para>An out edge iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost out_edge_iterator. Saves typing by using OutEdgeIterator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="129" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" prot="public" static="no">
+        <type>boost::property_map&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref>, boost::vertex_index_t &gt;::type</type>
+        <definition>typedef boost::property_map&lt;Graph, boost::vertex_index_t &gt;::type GoGraph::VertexIndexMap</definition>
+        <argsstring></argsstring>
+        <name>VertexIndexMap</name>
+        <briefdescription>
+<para>A vertex to index map. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost property_map. Saves typing by using VertexIndexMap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="139" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" prot="public" static="no">
+        <type>boost::property_map&lt; <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref>, boost::edge_index_t &gt;::type</type>
+        <definition>typedef boost::property_map&lt;Graph, boost::edge_index_t &gt;::type GoGraph::EdgeIndexMap</definition>
+        <argsstring></argsstring>
+        <name>EdgeIndexMap</name>
+        <briefdescription>
+<para>An edge to index map. </para>        </briefdescription>
+        <detaileddescription>
+<para>A typedef of the boost property_map. Saves typing by using EdgeIndexMap. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="145" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGoGraph_1a7ac9a67a0467410b06c56981e4a3d708" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref></type>
+        <definition>Graph GoGraph::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+<para>Private graph member. </para>        </briefdescription>
+        <detaileddescription>
+<para>The go graph defined as subgraph&lt;Graph_t&gt;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="761" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoGraph_1af7bbf9289dad182fb01894561cc64060" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" kindref="member">VertexIndexMap</ref></type>
+        <definition>VertexIndexMap GoGraph::_vMap</definition>
+        <argsstring></argsstring>
+        <name>_vMap</name>
+        <briefdescription>
+<para>Private vertex map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This maps a vertex object (GoVertex) to its index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="770" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoGraph_1a570b2c82077131bd410a783ee9b55e4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">EdgeIndexMap</ref></type>
+        <definition>EdgeIndexMap GoGraph::_eMap</definition>
+        <argsstring></argsstring>
+        <name>_eMap</name>
+        <briefdescription>
+<para>Private edge map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This maps an edge object (GoEdge) to its index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="776" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoGraph_1aed37b9dae41346687652f74e201f5441" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt; GoGraph::_nameToIndex</definition>
+        <argsstring></argsstring>
+        <name>_nameToIndex</name>
+        <briefdescription>
+<para>A map from term name to index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This maps a term string to its index. Boost unordered_map has O(1) find like a hash map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="782" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoGraph_1aa029d7a510c458928f9b9caaa09511f6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; GoGraph::_names</definition>
+        <argsstring></argsstring>
+        <name>_names</name>
+        <briefdescription>
+<para>A list of term names, titles. </para>        </briefdescription>
+        <detaileddescription>
+<para>A list of go names, the title of the term such as &quot;positive regulation of cell cycle&quot;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="793" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoGraph_1acd32518881bd71c0495a1f15470f8be8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; GoGraph::_descriptions</definition>
+        <argsstring></argsstring>
+        <name>_descriptions</name>
+        <briefdescription>
+<para>A list of term descriptions. </para>        </briefdescription>
+        <detaileddescription>
+<para>A list of go term descriptions. Long explanation and detailed description of the term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="799" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGoGraph_1a48e691ba5998d709d457a949687fccca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoGraph::~GoGraph</definition>
+        <argsstring>()</argsstring>
+        <name>~GoGraph</name>
+        <briefdescription>
+<para>A destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destroying the graph calls clear on all the containers. Other data should be destroyed when leaving scope. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="154" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a41f698c030fec41fe59ade6d1c73721f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoGraph::insertTerm</definition>
+        <argsstring>(const std::string &amp;termId, const std::string &amp;name, const std::string &amp;description, const std::string &amp;ontology)</argsstring>
+        <name>insertTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termId</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ontology</declname>
+        </param>
+        <briefdescription>
+<para>Method to insert terms into the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a go term, description, and ontology information (MF,BP,CC). The method will check if the term already exists in the graph then add the vertex or update the meta data accordingly. The parser can call this method without having to consider if terms have already been added or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="167" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="167" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a346fcf36ed71479d529a2db974ba8bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoGraph::insertRelationship</definition>
+        <argsstring>(const std::string &amp;termParent, const std::string &amp;termChild, const std::string &amp;relationship)</argsstring>
+        <name>insertRelationship</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termParent</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termChild</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>relationship</declname>
+        </param>
+        <briefdescription>
+<para>Method to insert relationship edges into the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a parent term, child term, and relationshp type as arguments. The method will insert the edge into the graph, setting the relationship type based on the data provided. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="210" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="210" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t GoGraph::getNumVertices</definition>
+        <argsstring>()</argsstring>
+        <name>getNumVertices</name>
+        <briefdescription>
+<para>Helper method to get number of vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method calls boost num_vertices on the go graph </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="232" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1acafdd8e76e3813e1276798bed2194232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t GoGraph::getNumEdges</definition>
+        <argsstring>()</argsstring>
+        <name>getNumEdges</name>
+        <briefdescription>
+<para>Helper method to get number of edges. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method calls boost num_edges on the go graph </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="240" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ad82f8d33a7ecc220ac0d93147dafc061" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoGraph::initMaps</definition>
+        <argsstring>()</argsstring>
+        <name>initMaps</name>
+        <briefdescription>
+<para>A method to initialize internal index maps. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method sets the private map variables by call calling boost get on the property maps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="249" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> *</type>
+        <definition>Graph* GoGraph::getGraph</definition>
+        <argsstring>()</argsstring>
+        <name>getGraph</name>
+        <briefdescription>
+<para>A method to return the boost graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is needed to return the graph to other boost algorithms. As stated by boost, subclasses of adjacency_list are not recommended. <ulink url="http://www.boost.org/doc/libs/1_54_0/libs/graph/doc/graph_concepts.html">http://www.boost.org/doc/libs/1_54_0/libs/graph/doc/graph_concepts.html</ulink> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="262" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="262" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GoGraph::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to test term existence. </para>        </briefdescription>
+        <detaileddescription>
+<para>Tests the map for existence of the term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="271" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ae7b982d3f564013844d8046e732cef76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t GoGraph::getTermIndex</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getTermIndex</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the index of the term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the index of the given term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="280" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="280" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GoGraph::getTermStringIdByIndex</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>getTermStringIdByIndex</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the string id based on the index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s string id using its index. Used mainly for testing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="289" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1aa046ee2d278114b6c28f4d5be71b81f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GoGraph::getTermNameByIndex</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>getTermNameByIndex</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the string name based on the index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s string name using its index. Used mainly for testing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="299" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="299" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a175dab9ef8da6c3f06e8f71f21699cf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GoGraph::getTermName</definition>
+        <argsstring>(std::string term)</argsstring>
+        <name>getTermName</name>
+        <param>
+          <type>std::string</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the string name based on the go term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s string name using the go term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="307" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="307" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1aed5db44d61c949aed72482ee41438856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GoGraph::getTermDescriptionByIndex</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>getTermDescriptionByIndex</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the string description based on the index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s description string using its index. Used mainly for testing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="321" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="321" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1abd5d984dd3e1df3d754b1f7e86c487ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GoGraph::getTermDescription</definition>
+        <argsstring>(std::string term)</argsstring>
+        <name>getTermDescription</name>
+        <param>
+          <type>std::string</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the string description based on the go term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s description string using the go term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="329" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="329" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+        <definition>GoVertex GoGraph::getRoot</definition>
+        <argsstring>()</argsstring>
+        <name>getRoot</name>
+        <briefdescription>
+<para>A helper method to return the root of the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the root vertex or first root vertex of a graph. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="344" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="344" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+        <definition>GO::Onto GoGraph::getTermOntology</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getTermOntology</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the ontology of a term by term string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s ontoogy taking a string term as an argument </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="368" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="368" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+        <definition>GO::Onto GoGraph::getTermOntologyByIndex</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>getTermOntologyByIndex</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the ontology of a term by index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s ontoogy taking an index as an argument </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="380" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a3ae1998fd4765b2f952290150a7d164b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+        <definition>GO::Onto GoGraph::getTermOntologyByVertex</definition>
+        <argsstring>(GoVertex vertex)</argsstring>
+        <name>getTermOntologyByVertex</name>
+        <param>
+          <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the ontology of a term by GoVertex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term&apos;s ontoogy taking GoVertex as an argument </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="389" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="389" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t GoGraph::getVertexIndex</definition>
+        <argsstring>(GoVertex vertex)</argsstring>
+        <name>getVertexIndex</name>
+        <param>
+          <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the index of a GoVertex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the index of a GoVertex </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="397" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="397" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+        <definition>GoVertex GoGraph::getVertexByIndex</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>getVertexByIndex</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the GoVertex for the given index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the GoVertex based on the given index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="405" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="405" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+        <definition>GoVertex GoGraph::getVertexByName</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getVertexByName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return the GoVertex for the given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the GoVertex based on the given term </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="413" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="413" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getDescendantTerms</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getDescendantTerms</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to get the desendant terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a term and returns a list of desendant terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="421" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="421" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getAncestorTerms</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getAncestorTerms</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to get the ancestor terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a term and returns a list of ancestor terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="457" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="457" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a9907ae6a2960e527f02e7cdf9507aeb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getParentTerms</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getParentTerms</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to get the parent terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a term and returns a list of parent terms (immediate ancestors). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="489" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="489" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ace2ad63bbc6bb2d1dd3e182e6e9c793e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getChildTerms</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>getChildTerms</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to get the child terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a term and returns a list of child terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="511" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="511" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ab497e840a1a63b5d25d6a104695a54fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getAllTerms</definition>
+        <argsstring>()</argsstring>
+        <name>getAllTerms</name>
+        <briefdescription>
+<para>A helper method to retrieve all terms in the <ref refid="classGoGraph" kindref="compound">GoGraph</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a set of term strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="534" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="534" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ad4f45995d5cd7ebe4f0c20d8923db268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getAllTermsBP</definition>
+        <argsstring>()</argsstring>
+        <name>getAllTermsBP</name>
+        <briefdescription>
+<para>A helper method to retrieve all terms in the <ref refid="classGoGraph" kindref="compound">GoGraph</ref> belonging to the BP ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a set of BP terms in the graph </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="548" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="548" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a9e5592682e5e78c5d45364bf714fd0cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getAllTermsMF</definition>
+        <argsstring>()</argsstring>
+        <name>getAllTermsMF</name>
+        <briefdescription>
+<para>A helper method to retrieve all terms in the <ref refid="classGoGraph" kindref="compound">GoGraph</ref> belonging to the MF ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a set of MF terms in the graph </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="558" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="558" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a47246d323ea642a2ffe169fa6da40bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getAllTermsCC</definition>
+        <argsstring>()</argsstring>
+        <name>getAllTermsCC</name>
+        <briefdescription>
+<para>A helper method to retrieve all terms in the <ref refid="classGoGraph" kindref="compound">GoGraph</ref> belonging to the CC ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a set of CC terms in the graph </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="568" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="568" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a1df055e607d7dc4650efedf56b149289" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForOntology</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;inSet, GO::Onto onto)</argsstring>
+        <name>filterSetForOntology</name>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+          <declname>onto</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to filter out all terms not belonging to a particular ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set of ontology terms matching the given ontology </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="578" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="578" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a083e9fe34636a0e996efd0e9d0d65c3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForOntology</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;inSet, GO::Onto onto)</argsstring>
+        <name>filterSetForOntology</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+          <declname>onto</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to filter out all terms not belonging to a particular ontology from a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set of ontology terms matching the given ontology </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="598" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="598" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a42f95a4728eac397fce20d2dcfc8a442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForBP</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForBP</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only BP terms from a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only BP terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="619" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="619" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ac6e27dbb91d23ea04191abac4c06e401" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForBP</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForBP</name>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only BP terms from a set. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only BP terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="627" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="627" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a22cedc3faddb0ca598620f2868a46046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForMF</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForMF</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only MF terms from a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only MF terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="635" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="635" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ac1885e77b0a5f5158e7a94b4404f8c9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForMF</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForMF</name>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only MF terms from a set. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only MF terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="643" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="643" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1ad1756e5daeea19ec063b67c2a29594be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForCC</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForCC</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only CC terms from a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only CC terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="651" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="651" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a23fc2ff15da505fa77536adbd9b7d01b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::filterSetForCC</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;inSet)</argsstring>
+        <name>filterSetForCC</name>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to retrun only CC terms from a set. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a filtered set containing only CC terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="659" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="659" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1abaa3ff8f11463a38fd03241ff17d3e75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; GoGraph::getOntologyTerms</definition>
+        <argsstring>(GO::Onto ontology)</argsstring>
+        <name>getOntologyTerms</name>
+        <param>
+          <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+          <declname>ontology</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return only the terms of the give ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns only those terms used that occur for the given ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="668" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="668" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a523911c2ddaff88ea64c8f15a01f9fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> *</type>
+        <definition>Graph* GoGraph::getInducedSubgraph2</definition>
+        <argsstring>(const std::string &amp;termId)</argsstring>
+        <name>getInducedSubgraph2</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>A method to return the induced subgraph of a given term, ancestor graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a subgraph of the graph induced by traversing the ancestors of the given vertex. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="699" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="699" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a6ec3b30ab6fbd458b4225ec9532a4e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> *</type>
+        <definition>Graph* GoGraph::getInducedSubgraph</definition>
+        <argsstring>(const std::string &amp;termId)</argsstring>
+        <name>getInducedSubgraph</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>A method to return the induced subgraph of a given term, ancestor graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a subgraph of the graph induced by traversing the ancestors of the given vertex. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="713" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="713" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1a6ce05821a7dfa86e1fa1de412d2c6cb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t GoGraph::getNumComponents</definition>
+        <argsstring>()</argsstring>
+        <name>getNumComponents</name>
+        <briefdescription>
+<para>A method to calculate the number of connected components of the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the number of connected components in the graph. This is used to check if the <ref refid="namespaceGO" kindref="compound">GO</ref> graph conatains only the 3 sub-ontologies. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="732" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="732" bodyend="754"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGoGraph_1a05cbaf87110bd1f2ddae046fae0ec948" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoGraph::getDescendantTermsHelper</definition>
+        <argsstring>(GoVertex vertex, boost::unordered_map&lt; std::size_t, bool &gt; &amp;desendantMap)</argsstring>
+        <name>getDescendantTermsHelper</name>
+        <param>
+          <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+          <declname>vertex</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; std::size_t, bool &gt; &amp;</type>
+          <declname>desendantMap</declname>
+        </param>
+        <briefdescription>
+<para>A private recursive helper method to get the desendant terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is wrapped by a public method. It traverses the children of a node, populating the map with node indices of desendant terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="808" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="808" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1abee7dde9e9bc0896134f2a936bb4089e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoGraph::getAncestorTermsHelper</definition>
+        <argsstring>(GoVertex vertex, boost::unordered_map&lt; std::size_t, bool &gt; &amp;ancestorMap)</argsstring>
+        <name>getAncestorTermsHelper</name>
+        <param>
+          <type><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref></type>
+          <declname>vertex</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; std::size_t, bool &gt; &amp;</type>
+          <declname>ancestorMap</declname>
+        </param>
+        <briefdescription>
+<para>A private recursive helper method to get the ancestor terms for a given term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is wrapped by a public method. It traverses the parents of a node, populating the map with node indices of ancestor terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="828" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="828" bodyend="845"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class holds the Gene Ontology directed acyclic graph. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class holds the Gene Ontology as a boost graph. It provides the graph data, as well as other strucutres which make working with the graph easier. </para>    </detaileddescription>
+    <location file="ggtk/GoGraph.hpp" line="28" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="28" bodyend="867"/>
+    <listofallmembers>
+      <member refid="classGoGraph_1acd32518881bd71c0495a1f15470f8be8" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_descriptions</name></member>
+      <member refid="classGoGraph_1a570b2c82077131bd410a783ee9b55e4d" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_eMap</name></member>
+      <member refid="classGoGraph_1a7ac9a67a0467410b06c56981e4a3d708" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_goGraph</name></member>
+      <member refid="classGoGraph_1aa029d7a510c458928f9b9caaa09511f6" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_names</name></member>
+      <member refid="classGoGraph_1aed37b9dae41346687652f74e201f5441" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_nameToIndex</name></member>
+      <member refid="classGoGraph_1af7bbf9289dad182fb01894561cc64060" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>_vMap</name></member>
+      <member refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>EdgeIndexMap</name></member>
+      <member refid="classGoGraph_1a42f95a4728eac397fce20d2dcfc8a442" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForBP</name></member>
+      <member refid="classGoGraph_1ac6e27dbb91d23ea04191abac4c06e401" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForBP</name></member>
+      <member refid="classGoGraph_1ad1756e5daeea19ec063b67c2a29594be" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForCC</name></member>
+      <member refid="classGoGraph_1a23fc2ff15da505fa77536adbd9b7d01b" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForCC</name></member>
+      <member refid="classGoGraph_1a22cedc3faddb0ca598620f2868a46046" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForMF</name></member>
+      <member refid="classGoGraph_1ac1885e77b0a5f5158e7a94b4404f8c9a" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForMF</name></member>
+      <member refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForOntology</name></member>
+      <member refid="classGoGraph_1a083e9fe34636a0e996efd0e9d0d65c3b" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>filterSetForOntology</name></member>
+      <member refid="classGoGraph_1ab497e840a1a63b5d25d6a104695a54fb" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getAllTerms</name></member>
+      <member refid="classGoGraph_1ad4f45995d5cd7ebe4f0c20d8923db268" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getAllTermsBP</name></member>
+      <member refid="classGoGraph_1a47246d323ea642a2ffe169fa6da40bcf" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getAllTermsCC</name></member>
+      <member refid="classGoGraph_1a9e5592682e5e78c5d45364bf714fd0cf" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getAllTermsMF</name></member>
+      <member refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getAncestorTerms</name></member>
+      <member refid="classGoGraph_1abee7dde9e9bc0896134f2a936bb4089e" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>getAncestorTermsHelper</name></member>
+      <member refid="classGoGraph_1ace2ad63bbc6bb2d1dd3e182e6e9c793e" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getChildTerms</name></member>
+      <member refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getDescendantTerms</name></member>
+      <member refid="classGoGraph_1a05cbaf87110bd1f2ddae046fae0ec948" prot="private" virt="non-virtual"><scope>GoGraph</scope><name>getDescendantTermsHelper</name></member>
+      <member refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getGraph</name></member>
+      <member refid="classGoGraph_1a6ec3b30ab6fbd458b4225ec9532a4e14" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getInducedSubgraph</name></member>
+      <member refid="classGoGraph_1a523911c2ddaff88ea64c8f15a01f9fee" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getInducedSubgraph2</name></member>
+      <member refid="classGoGraph_1a6ce05821a7dfa86e1fa1de412d2c6cb2" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getNumComponents</name></member>
+      <member refid="classGoGraph_1acafdd8e76e3813e1276798bed2194232" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getNumEdges</name></member>
+      <member refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getNumVertices</name></member>
+      <member refid="classGoGraph_1abaa3ff8f11463a38fd03241ff17d3e75" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getOntologyTerms</name></member>
+      <member refid="classGoGraph_1a9907ae6a2960e527f02e7cdf9507aeb1" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getParentTerms</name></member>
+      <member refid="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getRoot</name></member>
+      <member refid="classGoGraph_1abd5d984dd3e1df3d754b1f7e86c487ee" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermDescription</name></member>
+      <member refid="classGoGraph_1aed5db44d61c949aed72482ee41438856" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermDescriptionByIndex</name></member>
+      <member refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermIndex</name></member>
+      <member refid="classGoGraph_1a175dab9ef8da6c3f06e8f71f21699cf6" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermName</name></member>
+      <member refid="classGoGraph_1aa046ee2d278114b6c28f4d5be71b81f0" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermNameByIndex</name></member>
+      <member refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermOntology</name></member>
+      <member refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermOntologyByIndex</name></member>
+      <member refid="classGoGraph_1a3ae1998fd4765b2f952290150a7d164b" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermOntologyByVertex</name></member>
+      <member refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getTermStringIdByIndex</name></member>
+      <member refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getVertexByIndex</name></member>
+      <member refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getVertexByName</name></member>
+      <member refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>getVertexIndex</name></member>
+      <member refid="classGoGraph_1a6a06a7cf401fba8f03f8f68b54744a75" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>GoEdge</name></member>
+      <member refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>GoVertex</name></member>
+      <member refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>GoVertexIterator</name></member>
+      <member refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>Graph</name></member>
+      <member refid="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>Graph_t</name></member>
+      <member refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>hasTerm</name></member>
+      <member refid="classGoGraph_1a749886e553031dcb52c595989129514d" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>InEdgeIterator</name></member>
+      <member refid="classGoGraph_1ad82f8d33a7ecc220ac0d93147dafc061" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>initMaps</name></member>
+      <member refid="classGoGraph_1a346fcf36ed71479d529a2db974ba8bc3" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>insertRelationship</name></member>
+      <member refid="classGoGraph_1a41f698c030fec41fe59ade6d1c73721f" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>insertTerm</name></member>
+      <member refid="classGoGraph_1a40291cfa00013cbb9cfb400c1fc92379" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>OutEdgeIterator</name></member>
+      <member refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>VertexIndexMap</name></member>
+      <member refid="classGoGraph_1a48e691ba5998d709d457a949687fccca" prot="public" virt="non-virtual"><scope>GoGraph</scope><name>~GoGraph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

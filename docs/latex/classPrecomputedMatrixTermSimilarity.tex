@@ -1,0 +1,98 @@
+\hypertarget{classPrecomputedMatrixTermSimilarity}{}\section{Precomputed\+Matrix\+Term\+Similarity Class Reference}
+\label{classPrecomputedMatrixTermSimilarity}\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+
+
+A class to calculate similarity between go terms for 2 sets using a precomuted term similarity matrix.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Precomputed\+Matrix\+Term\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Precomputed\+Matrix\+Term\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPrecomputedMatrixTermSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPrecomputedMatrixTermSimilarity_a7b41f4870cea2125e2997fb5eea5f6fb}{Precomputed\+Matrix\+Term\+Similarity} (std\+::string matrix\+\_\+file)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classPrecomputedMatrixTermSimilarity_accf2925db5da35cc040f2016813ed631}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using a precomputed similarity matrix. \end{DoxyCompactList}\item 
+double \hyperlink{classPrecomputedMatrixTermSimilarity_ac2057bd30526a99741c06f8b629b6ae2}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using a precomputed similarity matrix. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classPrecomputedMatrixTermSimilarity_a341a4dba0540acd9087091aa63c51220}{project\+Term\+Set} (const std\+::vector$<$ std\+::string $>$ \&terms)
+\begin{DoxyCompactList}\small\item\em This method projects a set of terms into it the kernel space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate similarity between go terms for 2 sets using a precomuted term similarity matrix. 
+
+This class allows the term similarity calculation to be decoupled from term set (gene) similarity measure that use them. Term similarity is loaded from a matrix file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}!Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}!Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+\subsubsection[{\texorpdfstring{Precomputed\+Matrix\+Term\+Similarity(std\+::string matrix\+\_\+file)}{PrecomputedMatrixTermSimilarity(std::string matrix_file)}}]{\setlength{\rightskip}{0pt plus 5cm}Precomputed\+Matrix\+Term\+Similarity\+::\+Precomputed\+Matrix\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{matrix\+\_\+file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPrecomputedMatrixTermSimilarity_a7b41f4870cea2125e2997fb5eea5f6fb}{}\label{classPrecomputedMatrixTermSimilarity_a7b41f4870cea2125e2997fb5eea5f6fb}
+
+
+A constructor. 
+
+Parses a matrix file and creates the \hyperlink{classPrecomputedMatrixTermSimilarity}{Precomputed\+Matrix\+Term\+Similarity} object 
+
+\subsection{Member Function Documentation}
+\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Precomputed\+Matrix\+Term\+Similarity\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPrecomputedMatrixTermSimilarity_ac2057bd30526a99741c06f8b629b6ae2}{}\label{classPrecomputedMatrixTermSimilarity_ac2057bd30526a99741c06f8b629b6ae2}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using a precomputed similarity matrix. 
+
+This method returns the similarity scaled between 0 and 1 \mbox{[}0,1\mbox{]} inclusive 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Precomputed\+Matrix\+Term\+Similarity\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPrecomputedMatrixTermSimilarity_accf2925db5da35cc040f2016813ed631}{}\label{classPrecomputedMatrixTermSimilarity_accf2925db5da35cc040f2016813ed631}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using a precomputed similarity matrix. 
+
+This method returns the term similarity as defined by the matrix. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}!project\+Term\+Set@{project\+Term\+Set}}
+\index{project\+Term\+Set@{project\+Term\+Set}!Precomputed\+Matrix\+Term\+Similarity@{Precomputed\+Matrix\+Term\+Similarity}}
+\subsubsection[{\texorpdfstring{project\+Term\+Set(const std\+::vector$<$ std\+::string $>$ \&terms)}{projectTermSet(const std::vector< std::string > &terms)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ Precomputed\+Matrix\+Term\+Similarity\+::project\+Term\+Set (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{terms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPrecomputedMatrixTermSimilarity_a341a4dba0540acd9087091aa63c51220}{}\label{classPrecomputedMatrixTermSimilarity_a341a4dba0540acd9087091aa63c51220}
+
+
+This method projects a set of terms into it the kernel space. 
+
+This method treats the term similarity matrix as a kernel and projects a set of terms into it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Precomputed\+Matrix\+Term\+Similarity.\+hpp\end{DoxyCompactItemize}

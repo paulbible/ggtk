@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAnnotationData" kind="class" language="C++" prot="public">
+    <compoundname>AnnotationData</compoundname>
+    <includes refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAnnotationData_1a9f25041cb6cfabe964e2857b54400a3b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::_genes</definition>
+        <argsstring></argsstring>
+        <name>_genes</name>
+        <briefdescription>
+<para>A list of genes stored by the annotation data object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This storage variable stores the gene names. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="40" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1a88170d72e7addb555701e7aeba30f588" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::_goTerms</definition>
+        <argsstring></argsstring>
+        <name>_goTerms</name>
+        <briefdescription>
+<para>A list of go terms stored by the annotation data object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This storage variable stores the go terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="46" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1a2246453b69594c15745d47f6c3c4c533" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt; AnnotationData::_stringToGene</definition>
+        <argsstring></argsstring>
+        <name>_stringToGene</name>
+        <briefdescription>
+<para>A map from a gene strings to a gene index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This map accespts gene strings and returns gene indices. boost unordered_map ensures O(1) constant time find/has_key queries (hash table). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="58" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1ab743686bf79303fbc0eb16c323d1b104" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt; AnnotationData::_stringToGo</definition>
+        <argsstring></argsstring>
+        <name>_stringToGo</name>
+        <briefdescription>
+<para>A map from a go term strings to a go term index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This map accespts go term strings and returns go term indices. boost unordered_map ensures O(1) constant time find/has_key queries (hash table). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="65" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1a72a19fdf14001e241bd0dc200c5fd0de" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::size_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::size_t&gt; &gt; AnnotationData::_goToGenes</definition>
+        <argsstring></argsstring>
+        <name>_goToGenes</name>
+        <briefdescription>
+<para>A list of lists of genes, one for each go term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector holds one entry for each go term. Each entry holds a list of genes annotated to that go term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="74" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1afdad9a39d18deaf76fae099554caf86e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;GO::EvidenceCode&gt; &gt; AnnotationData::_goToGenesEvidence</definition>
+        <argsstring></argsstring>
+        <name>_goToGenesEvidence</name>
+        <briefdescription>
+<para>A list of lists of evidence codes, one for each go term. Parallel to _goToGenes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector holds one entry for each go term. Each entry holds a list of evidence codes for each gene annotated to that go term. It parallels the _goToGenes vectors having the same size and dimensions for each element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="81" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1aa936d0cc30ba41aa177c5fd0867f38db" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::size_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::size_t&gt; &gt; AnnotationData::_geneToGos</definition>
+        <argsstring></argsstring>
+        <name>_geneToGos</name>
+        <briefdescription>
+<para>A list of lists of go terms, one for each gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector holds one entry for each gene. Each entry holds a list of go terms annotated to that gene. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="88" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationData_1a6bf6ba78c786caf078731b87357f96c0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;GO::EvidenceCode&gt; &gt; AnnotationData::_geneToGosEvidence</definition>
+        <argsstring></argsstring>
+        <name>_geneToGosEvidence</name>
+        <briefdescription>
+<para>A list of lists of evidence codes, one for each gene. Parallel to _geneToGos. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector holds one entry for each gene. Each entry holds a list of evidence codes for each go term annotated to that gene. It parallels the _geneToGos vectors having the same size and dimensions for each element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="95" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAnnotationData_1aa72d292d4f480d2e580ba4d39b88ab8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnnotationData::AnnotationData</definition>
+        <argsstring>()</argsstring>
+        <name>AnnotationData</name>
+        <briefdescription>
+<para>Class constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initialized each vector as an empty vector of the correct type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="102" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a3abda2766658360884f8097cf4ea5281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnnotationData::~AnnotationData</definition>
+        <argsstring>()</argsstring>
+        <name>~AnnotationData</name>
+        <briefdescription>
+<para>class descructor </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor clears all maps and vectors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="117" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="117" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1ac6bd9048c83a52ebaa9a9e83a45e7f4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnnotationData::addAssociation</definition>
+        <argsstring>(const std::string &amp;gene, const std::string &amp;goTerm, const std::string &amp;evidenceCode)</argsstring>
+        <name>addAssociation</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>evidenceCode</declname>
+        </param>
+        <briefdescription>
+<para>A Method to add annotations to the dataset. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds annotations to the database. It takes a gene, a goTerm, and an evidence code. This method checks existence and indexing to remove the burden from parser implementations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="138" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="138" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a406a75a2f26bb7597f27599daf5416ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AnnotationData::hasGoTerm</definition>
+        <argsstring>(const std::string &amp;goTerm)</argsstring>
+        <name>hasGoTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <briefdescription>
+<para>This method tests the existence of a term in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to check if a term exists in the database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="282" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="282" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1af1456f7623ce06262d8782a01fd2ca9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AnnotationData::hasGene</definition>
+        <argsstring>(const std::string &amp;gene)</argsstring>
+        <name>hasGene</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <briefdescription>
+<para>This method tests the existence of a gene in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to check if a gene exists in the database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="291" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a8b99d05f5f0f619958e7850253946b9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getAllGoTerms</definition>
+        <argsstring>()</argsstring>
+        <name>getAllGoTerms</name>
+        <briefdescription>
+<para>This method returns all the go terms in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return all the <ref refid="namespaceGO" kindref="compound">GO</ref> terms in the databse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="299" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="299" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1aa2d7d5ad9601b6984470b8267ff37db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getAllGenes</definition>
+        <argsstring>()</argsstring>
+        <name>getAllGenes</name>
+        <briefdescription>
+<para>This method returns all genes in the database. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return all the genes in the databse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="307" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1aee62a418cae2da15f4b3a4bd9f933376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getGoTermsForGene</definition>
+        <argsstring>(const std::string &amp;gene)</argsstring>
+        <name>getGoTermsForGene</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the go terms for a gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return, for a gene, a list of go terms as a vector of strings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="316" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="316" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1ad1864b7768ab74d74be296e546269881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; AnnotationData::getGoTermsForGeneByOntology</definition>
+        <argsstring>(const std::string &amp;gene, GO::Onto filterOntology, GoGraph *G)</argsstring>
+        <name>getGoTermsForGeneByOntology</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+          <declname>filterOntology</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the go terms for a gene within the specified onotlogy. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return a list of go terms as a set of strings for a gene given the sub ontology BP, MF, or CC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="344" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="344" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a86fa8eaf6310627d530ab118c6e1e22b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; AnnotationData::getGoTermsForGeneBP</definition>
+        <argsstring>(const std::string &amp;gene, GoGraph *G)</argsstring>
+        <name>getGoTermsForGeneBP</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the biological process go terms for a gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return a list of BP go terms for a gene. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="372" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="372" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1ab9639d4828270517550a3e739d03317b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; AnnotationData::getGoTermsForGeneMF</definition>
+        <argsstring>(const std::string &amp;gene, GoGraph *G)</argsstring>
+        <name>getGoTermsForGeneMF</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the molecular function go terms for a gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return a list of MF go terms for a gene. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="380" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a37679ed0830c6d7ec41672b3df541663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; AnnotationData::getGoTermsForGeneCC</definition>
+        <argsstring>(const std::string &amp;gene, GoGraph *G)</argsstring>
+        <name>getGoTermsForGeneCC</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the cellular component go terms for a gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return a list of CC go terms for a gene. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="388" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a4f61ca3276af902c72a031419e8155c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getGoTermsEvidenceForGene</definition>
+        <argsstring>(const std::string &amp;gene)</argsstring>
+        <name>getGoTermsEvidenceForGene</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <briefdescription>
+<para>A method to get the evidence codes for a list of go terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the evidence codes for a list of go terms. It parallels the getGoTermsForGene method and is used for printing and testing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="397" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="397" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a0028d38de841c5a508ad602907b42be7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getGenesForGoTerm</definition>
+        <argsstring>(const std::string &amp;goTerm)</argsstring>
+        <name>getGenesForGoTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <briefdescription>
+<para>This method gets the genes for a go term. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to return, for a go term, a list of genes as a vector of strings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="414" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="414" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1adcae89b874856e2e30319382a51f3c14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnnotationData::addGenesForGoTerm</definition>
+        <argsstring>(const std::string &amp;goTerm, boost::unordered_set&lt; std::string &gt; &amp;geneSet)</argsstring>
+        <name>addGenesForGoTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>geneSet</declname>
+        </param>
+        <briefdescription>
+<para>This method adds the genes for a go term to a set. </para>        </briefdescription>
+        <detaileddescription>
+<para>A helper method to add genes associated to a term to a set of genes. Used in enrichment calculation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="440" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="440" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a95cf54dc33c9f4e948e913424a44c52e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getGenesEvidenceForGoTerm</definition>
+        <argsstring>(const std::string &amp;goTerm)</argsstring>
+        <name>getGenesEvidenceForGoTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <briefdescription>
+<para>A method to get the evidence codes for a list of genes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the evidence codes for a list of genes. It parallels the getGenesForGoTerm method and is used for printing and testing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="460" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="460" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a985193a995893976a17f09217cced074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t AnnotationData::getNumAnnotationsForGoTerm</definition>
+        <argsstring>(const std::string &amp;goTerm)</argsstring>
+        <name>getNumAnnotationsForGoTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>goTerm</declname>
+        </param>
+        <briefdescription>
+<para>A method to get the number of annotations of a particular go term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the number of annotations for a go term. Queries the data base rather than extracting a vector. Used to calculate information content. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="479" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="479" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a367c90051704e541d674d1ee222e6bbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t AnnotationData::getNumAnnotationsForGene</definition>
+        <argsstring>(const std::string &amp;gene)</argsstring>
+        <name>getNumAnnotationsForGene</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>gene</declname>
+        </param>
+        <briefdescription>
+<para>A method to get the number of annotations of a particular gene. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the number of annotations for a go term. Queries the data base rather than extracting a vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="492" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="492" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1aa3eeff87e44cc21e06cc5f49899cf776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t AnnotationData::getNumGenes</definition>
+        <argsstring>()</argsstring>
+        <name>getNumGenes</name>
+        <briefdescription>
+<para>A helper method to get the number of genes in the db. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method reutrns the size of the _genes vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="504" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="504" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1ad47dc3da1210218c0bb90ca80f6355ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t AnnotationData::getNumGoTerms</definition>
+        <argsstring>()</argsstring>
+        <name>getNumGoTerms</name>
+        <briefdescription>
+<para>A helper method to get the number of go terms in the db. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method reutrns the size of the _goTerms vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="513" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="513" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationData_1a25a5ccfa938a1d623e8f162f2959d951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationData::getOntologyTerms</definition>
+        <argsstring>(GoGraph *graph, GO::Onto ontology)</argsstring>
+        <name>getOntologyTerms</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+          <declname>ontology</declname>
+        </param>
+        <briefdescription>
+<para>A helper method to return only the terms of the give ontology. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns only those terms used that occur for the given ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationData.hpp" line="521" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="521" bodyend="531"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for storing information about genes annotated with go terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class hold all information about a set of annotations for genes annotated with go terms. It holds a list of genes, a list of go terms, as well as mappings from a gene to a list of go terms, and mappings from a go term to a list of annotated genes. This class allows querying go annotations and their evidence codes. </para>    </detaileddescription>
+    <location file="ggtk/AnnotationData.hpp" line="30" column="1" bodyfile="ggtk/AnnotationData.hpp" bodystart="30" bodyend="533"/>
+    <listofallmembers>
+      <member refid="classAnnotationData_1a9f25041cb6cfabe964e2857b54400a3b" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_genes</name></member>
+      <member refid="classAnnotationData_1aa936d0cc30ba41aa177c5fd0867f38db" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_geneToGos</name></member>
+      <member refid="classAnnotationData_1a6bf6ba78c786caf078731b87357f96c0" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_geneToGosEvidence</name></member>
+      <member refid="classAnnotationData_1a88170d72e7addb555701e7aeba30f588" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_goTerms</name></member>
+      <member refid="classAnnotationData_1a72a19fdf14001e241bd0dc200c5fd0de" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_goToGenes</name></member>
+      <member refid="classAnnotationData_1afdad9a39d18deaf76fae099554caf86e" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_goToGenesEvidence</name></member>
+      <member refid="classAnnotationData_1a2246453b69594c15745d47f6c3c4c533" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_stringToGene</name></member>
+      <member refid="classAnnotationData_1ab743686bf79303fbc0eb16c323d1b104" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>_stringToGo</name></member>
+      <member refid="classAnnotationData_1ac6bd9048c83a52ebaa9a9e83a45e7f4a" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>addAssociation</name></member>
+      <member refid="classAnnotationData_1adcae89b874856e2e30319382a51f3c14" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>addGenesForGoTerm</name></member>
+      <member refid="classAnnotationData_1aa72d292d4f480d2e580ba4d39b88ab8f" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>AnnotationData</name></member>
+      <member refid="classAnnotationData_1aa2d7d5ad9601b6984470b8267ff37db8" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getAllGenes</name></member>
+      <member refid="classAnnotationData_1a8b99d05f5f0f619958e7850253946b9c" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getAllGoTerms</name></member>
+      <member refid="classAnnotationData_1a95cf54dc33c9f4e948e913424a44c52e" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGenesEvidenceForGoTerm</name></member>
+      <member refid="classAnnotationData_1a0028d38de841c5a508ad602907b42be7" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGenesForGoTerm</name></member>
+      <member refid="classAnnotationData_1a4f61ca3276af902c72a031419e8155c5" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsEvidenceForGene</name></member>
+      <member refid="classAnnotationData_1aee62a418cae2da15f4b3a4bd9f933376" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsForGene</name></member>
+      <member refid="classAnnotationData_1a86fa8eaf6310627d530ab118c6e1e22b" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsForGeneBP</name></member>
+      <member refid="classAnnotationData_1ad1864b7768ab74d74be296e546269881" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsForGeneByOntology</name></member>
+      <member refid="classAnnotationData_1a37679ed0830c6d7ec41672b3df541663" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsForGeneCC</name></member>
+      <member refid="classAnnotationData_1ab9639d4828270517550a3e739d03317b" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getGoTermsForGeneMF</name></member>
+      <member refid="classAnnotationData_1a367c90051704e541d674d1ee222e6bbe" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getNumAnnotationsForGene</name></member>
+      <member refid="classAnnotationData_1a985193a995893976a17f09217cced074" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getNumAnnotationsForGoTerm</name></member>
+      <member refid="classAnnotationData_1aa3eeff87e44cc21e06cc5f49899cf776" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getNumGenes</name></member>
+      <member refid="classAnnotationData_1ad47dc3da1210218c0bb90ca80f6355ec" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getNumGoTerms</name></member>
+      <member refid="classAnnotationData_1a25a5ccfa938a1d623e8f162f2959d951" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>getOntologyTerms</name></member>
+      <member refid="classAnnotationData_1af1456f7623ce06262d8782a01fd2ca9c" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>hasGene</name></member>
+      <member refid="classAnnotationData_1a406a75a2f26bb7597f27599daf5416ad" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>hasGoTerm</name></member>
+      <member refid="classAnnotationData_1a3abda2766658360884f8097cf4ea5281" prot="public" virt="non-virtual"><scope>AnnotationData</scope><name>~AnnotationData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

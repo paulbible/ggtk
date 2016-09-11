@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classLinSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>LinSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="LinSimilarity_8hpp" local="no">ggtk/LinSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLinSimilarity_1a31803620b429d9649d151c2471461846" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* LinSimilarity::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="126" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLinSimilarity_1af6b79843da0b3bd98a4185a9472dac22" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap LinSimilarity::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="127" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLinSimilarity_1a44739dba8ae706d5248615bd9df9cc31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LinSimilarity::LinSimilarity</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>LinSimilarity</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classLinSimilarity" kindref="compound">LinSimilarity</ref> calculator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="38" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classLinSimilarity_1a55d2d8bd6aea6fc3e9b0920f05828a15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double LinSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Lin similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Lin similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="47" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="47" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classLinSimilarity_1a576df5bf234556e57e2ddcfda3d73b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double LinSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized Lin similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Lin similarity scaled between 0 and 1 [0,1] inclusive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="83" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classLinSimilarity_1ab2e39eac3cf61be4e1b44b988fa6f490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string LinSimilarity::getMICA</definition>
+        <argsstring>(boost::unordered_set&lt; std::string &gt; &amp;ancestorsA, boost::unordered_set&lt; std::string &gt; &amp;ancestorsB)</argsstring>
+        <name>getMICA</name>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsA</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the most informative common ancestor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method searches the sets to determine the most informatics ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/LinSimilarity.hpp" line="92" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="92" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate Lin similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Lin similarity.</para><para>Lin, D. (1998) An information theoretic definition of similarity. In: Proc. of the 15th Inernational Conference on Machine Learning. San Franscisco, CA: Morgan Kaufman. pp 296-304</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>2 * IC(MICA) / ( IC(termA) + IC(termB) ) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="134">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="133">
+        <label>LinSimilarity</label>
+        <link refid="classLinSimilarity"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="135">
+        <label>LinSimilarity</label>
+        <link refid="classLinSimilarity"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/LinSimilarity.hpp" line="30" column="1" bodyfile="ggtk/LinSimilarity.hpp" bodystart="30" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classLinSimilarity_1a31803620b429d9649d151c2471461846" prot="private" virt="non-virtual"><scope>LinSimilarity</scope><name>_goGraph</name></member>
+      <member refid="classLinSimilarity_1af6b79843da0b3bd98a4185a9472dac22" prot="private" virt="non-virtual"><scope>LinSimilarity</scope><name>_icMap</name></member>
+      <member refid="classLinSimilarity_1a576df5bf234556e57e2ddcfda3d73b93" prot="public" virt="virtual"><scope>LinSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classLinSimilarity_1a55d2d8bd6aea6fc3e9b0920f05828a15" prot="public" virt="virtual"><scope>LinSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classLinSimilarity_1ab2e39eac3cf61be4e1b44b988fa6f490" prot="public" virt="non-virtual"><scope>LinSimilarity</scope><name>getMICA</name></member>
+      <member refid="classLinSimilarity_1a44739dba8ae706d5248615bd9df9cc31" prot="public" virt="non-virtual"><scope>LinSimilarity</scope><name>LinSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

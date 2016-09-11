@@ -1,0 +1,115 @@
+\hypertarget{classGoaAnnotationParser}{}\section{Goa\+Annotation\+Parser Class Reference}
+\label{classGoaAnnotationParser}\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+
+
+A class to parse a Uniprot Gene Ontolog Annotation (G\+OA) file.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Goa\+Annotation\+Parser.\+hpp$>$}
+
+Inheritance diagram for Goa\+Annotation\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classGoaAnnotationParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnnotationData}{Annotation\+Data} $\ast$ \hyperlink{classGoaAnnotationParser_a2973e2dcfecea10e09da13ed0ab27dff}{parse\+Annotation\+File} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em An interface method for parsing an annotation file. \end{DoxyCompactList}\item 
+bool \hyperlink{classGoaAnnotationParser_aa8093812131c34de52b084ff2b02abbf}{is\+File\+Good} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em A method for checking if a file exists and is formatted correctly. \end{DoxyCompactList}\item 
+\hyperlink{classGoaAnnotationParser_a3f415dfbfd2bce5143eef60532ebadea}{Goa\+Annotation\+Parser} (\hyperlink{classEvidencePolicyInterface}{Evidence\+Policy\+Interface} $\ast$policy)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor method for creating the parser with a policy. \end{DoxyCompactList}\item 
+\hyperlink{classGoaAnnotationParser_aa06b6ba409d97fe794ae1a7606864e65}{Goa\+Annotation\+Parser} ()
+\begin{DoxyCompactList}\small\item\em A default constructor method for creating the parser with a policy. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} $\ast$ \hyperlink{classGoaAnnotationParser_a266297bb5a107572c98515f692684369}{clone} ()
+\begin{DoxyCompactList}\small\item\em An interface method for creating a new instance of the parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to parse a Uniprot Gene Ontolog Annotation (G\+OA) file. 
+
+This class will read a G\+OA file an return an \hyperlink{classAnnotationData}{Annotation\+Data} object pointer. Defined at\+: \href{http://www.ebi.ac.uk/GOA}{\tt http\+://www.\+ebi.\+ac.\+uk/\+G\+OA}
+
+Implements \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Goa\+Annotation\+Parser(\+Evidence\+Policy\+Interface $\ast$policy)}{GoaAnnotationParser(EvidencePolicyInterface *policy)}}]{\setlength{\rightskip}{0pt plus 5cm}Goa\+Annotation\+Parser\+::\+Goa\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence\+Policy\+Interface} $\ast$}]{policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoaAnnotationParser_a3f415dfbfd2bce5143eef60532ebadea}{}\label{classGoaAnnotationParser_a3f415dfbfd2bce5143eef60532ebadea}
+
+
+A parameterized constructor method for creating the parser with a policy. 
+
+Creates the parser \index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Goa\+Annotation\+Parser()}{GoaAnnotationParser()}}]{\setlength{\rightskip}{0pt plus 5cm}Goa\+Annotation\+Parser\+::\+Goa\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoaAnnotationParser_aa06b6ba409d97fe794ae1a7606864e65}{}\label{classGoaAnnotationParser_aa06b6ba409d97fe794ae1a7606864e65}
+
+
+A default constructor method for creating the parser with a policy. 
+
+Creates the parser 
+
+\subsection{Member Function Documentation}
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!clone@{clone}}
+\index{clone@{clone}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{clone()}{clone()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Annotation\+Parser\+Interface}$\ast$ Goa\+Annotation\+Parser\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classGoaAnnotationParser_a266297bb5a107572c98515f692684369}{}\label{classGoaAnnotationParser_a266297bb5a107572c98515f692684369}
+
+
+An interface method for creating a new instance of the parser. 
+
+This method returns a new instance of the class. This method partially fulfills the interface contract. 
+
+Implements \hyperlink{classAnnotationParserInterface_a966edeb9aaaa5e94f4c1436afc731a24}{Annotation\+Parser\+Interface}.
+
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!is\+File\+Good@{is\+File\+Good}}
+\index{is\+File\+Good@{is\+File\+Good}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{is\+File\+Good(const std\+::string \&file\+Name)}{isFileGood(const std::string &fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Goa\+Annotation\+Parser\+::is\+File\+Good (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classGoaAnnotationParser_aa8093812131c34de52b084ff2b02abbf}{}\label{classGoaAnnotationParser_aa8093812131c34de52b084ff2b02abbf}
+
+
+A method for checking if a file exists and is formatted correctly. 
+
+This function checks that the file exists and its format can be recognized. 
+
+Implements \hyperlink{classAnnotationParserInterface_a5848b37ca77d78213c87cc5aefebf030}{Annotation\+Parser\+Interface}.
+
+\index{Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}!parse\+Annotation\+File@{parse\+Annotation\+File}}
+\index{parse\+Annotation\+File@{parse\+Annotation\+File}!Goa\+Annotation\+Parser@{Goa\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{parse\+Annotation\+File(std\+::string filename)}{parseAnnotationFile(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Annotation\+Data}$\ast$ Goa\+Annotation\+Parser\+::parse\+Annotation\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classGoaAnnotationParser_a2973e2dcfecea10e09da13ed0ab27dff}{}\label{classGoaAnnotationParser_a2973e2dcfecea10e09da13ed0ab27dff}
+
+
+An interface method for parsing an annotation file. 
+
+This method takes a filename as in put and returns a pointer to an \hyperlink{classAnnotationData}{Annotation\+Data} object. This method fulfills part of the interface contract. 
+
+Implements \hyperlink{classAnnotationParserInterface_a1d5cfb902f088a9cf96fdc6b1e5529ab}{Annotation\+Parser\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Goa\+Annotation\+Parser.\+hpp\end{DoxyCompactItemize}

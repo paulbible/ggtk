@@ -1,0 +1,118 @@
+\hypertarget{classDisallowedSetEvidencePolicy}{}\section{Disallowed\+Set\+Evidence\+Policy Class Reference}
+\label{classDisallowedSetEvidencePolicy}\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+
+
+A class to allow only a set of evidence codes for annotations.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Disallowed\+Set\+Evidence\+Policy.\+hpp$>$}
+
+Inheritance diagram for Disallowed\+Set\+Evidence\+Policy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDisallowedSetEvidencePolicy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDisallowedSetEvidencePolicy_a4db63ff71aa72c7744187a36099e5b09}{Disallowed\+Set\+Evidence\+Policy} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classDisallowedSetEvidencePolicy_a50c8885e5a3abf0a3110492f07e21268}{Disallowed\+Set\+Evidence\+Policy} (std\+::vector$<$ \hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} $>$ evidence\+Codes)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classDisallowedSetEvidencePolicy_aaa0959ad33624b4d418d57d286c41852}{is\+Allowed} (\hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} evidence\+Code)
+\begin{DoxyCompactList}\small\item\em a method to test if an eviddence code is allowed or not \end{DoxyCompactList}\item 
+void \hyperlink{classDisallowedSetEvidencePolicy_a565f023aa750687b96206608d17cf392}{add\+Evidence} (\hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} evidence\+Code)
+\begin{DoxyCompactList}\small\item\em a method to add a evidence to the set of evidence codes not allowed \end{DoxyCompactList}\item 
+void \hyperlink{classDisallowedSetEvidencePolicy_ab3ccdee816e866886e77aaf1c5129ae8}{add\+Evidence} (const std\+::string \&string\+Code)
+\begin{DoxyCompactList}\small\item\em a method to add a evidence to the set of evidence codes allowed \end{DoxyCompactList}\item 
+bool \hyperlink{classDisallowedSetEvidencePolicy_ac913c46a483b9c163099ce5b2128b881}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em a method to determine if the Policy is empty, disallowed set is never empty \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to allow only a set of evidence codes for annotations. 
+
+A class to allow only certain evidence codes in the go graph. It uses a set of enums to restric the types of evidence codes considered for annotations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{Disallowed\+Set\+Evidence\+Policy()}{DisallowedSetEvidencePolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}Disallowed\+Set\+Evidence\+Policy\+::\+Disallowed\+Set\+Evidence\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDisallowedSetEvidencePolicy_a4db63ff71aa72c7744187a36099e5b09}{}\label{classDisallowedSetEvidencePolicy_a4db63ff71aa72c7744187a36099e5b09}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classDisallowedSetEvidencePolicy}{Disallowed\+Set\+Evidence\+Policy} \index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{Disallowed\+Set\+Evidence\+Policy(std\+::vector$<$ G\+O\+::\+Evidence\+Code $>$ evidence\+Codes)}{DisallowedSetEvidencePolicy(std::vector< GO::EvidenceCode > evidenceCodes)}}]{\setlength{\rightskip}{0pt plus 5cm}Disallowed\+Set\+Evidence\+Policy\+::\+Disallowed\+Set\+Evidence\+Policy (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf G\+O\+::\+Evidence\+Code} $>$}]{evidence\+Codes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDisallowedSetEvidencePolicy_a50c8885e5a3abf0a3110492f07e21268}{}\label{classDisallowedSetEvidencePolicy_a50c8885e5a3abf0a3110492f07e21268}
+
+
+A parameterized constructor. 
+
+Creats the \hyperlink{classDisallowedSetEvidencePolicy}{Disallowed\+Set\+Evidence\+Policy} using a list(vector) of evidence codes to allow 
+
+\subsection{Member Function Documentation}
+\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!add\+Evidence@{add\+Evidence}}
+\index{add\+Evidence@{add\+Evidence}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{add\+Evidence(\+G\+O\+::\+Evidence\+Code evidence\+Code)}{addEvidence(GO::EvidenceCode evidenceCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Disallowed\+Set\+Evidence\+Policy\+::add\+Evidence (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Evidence\+Code}}]{evidence\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDisallowedSetEvidencePolicy_a565f023aa750687b96206608d17cf392}{}\label{classDisallowedSetEvidencePolicy_a565f023aa750687b96206608d17cf392}
+
+
+a method to add a evidence to the set of evidence codes not allowed 
+
+adds a evidence to the set of evidence codes not allowed \index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!add\+Evidence@{add\+Evidence}}
+\index{add\+Evidence@{add\+Evidence}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{add\+Evidence(const std\+::string \&string\+Code)}{addEvidence(const std::string &stringCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Disallowed\+Set\+Evidence\+Policy\+::add\+Evidence (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{string\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDisallowedSetEvidencePolicy_ab3ccdee816e866886e77aaf1c5129ae8}{}\label{classDisallowedSetEvidencePolicy_ab3ccdee816e866886e77aaf1c5129ae8}
+
+
+a method to add a evidence to the set of evidence codes allowed 
+
+adds a evidence to the set of evidence codes allowed by setting its mapped value to true \index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!is\+Allowed@{is\+Allowed}}
+\index{is\+Allowed@{is\+Allowed}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{is\+Allowed(\+G\+O\+::\+Evidence\+Code evidence\+Code)}{isAllowed(GO::EvidenceCode evidenceCode)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Disallowed\+Set\+Evidence\+Policy\+::is\+Allowed (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Evidence\+Code}}]{evidence\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classDisallowedSetEvidencePolicy_aaa0959ad33624b4d418d57d286c41852}{}\label{classDisallowedSetEvidencePolicy_aaa0959ad33624b4d418d57d286c41852}
+
+
+a method to test if an eviddence code is allowed or not 
+
+tests if the evidence is allowed. Overridden to fulfill the \hyperlink{classEvidencePolicyInterface}{Evidence\+Policy\+Interface}. This class disallows a set and so returns false if the evidence code is found. 
+
+Implements \hyperlink{classEvidencePolicyInterface_a432d20dd05ec54db46a452ae8d6be4a7}{Evidence\+Policy\+Interface}.
+
+\index{Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Disallowed\+Set\+Evidence\+Policy@{Disallowed\+Set\+Evidence\+Policy}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Disallowed\+Set\+Evidence\+Policy\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDisallowedSetEvidencePolicy_ac913c46a483b9c163099ce5b2128b881}{}\label{classDisallowedSetEvidencePolicy_ac913c46a483b9c163099ce5b2128b881}
+
+
+a method to determine if the Policy is empty, disallowed set is never empty 
+
+Determines if the Policy is empty 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Disallowed\+Set\+Evidence\+Policy.\+hpp\end{DoxyCompactItemize}

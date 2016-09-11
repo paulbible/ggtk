@@ -1,0 +1,102 @@
+\hypertarget{classModularResnik}{}\section{Modular\+Resnik Class Reference}
+\label{classModularResnik}\index{Modular\+Resnik@{Modular\+Resnik}}
+
+
+A class to calculate resnik similarity between 2 terms using a shared information interface.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Modular\+Resnik.\+hpp$>$}
+
+Inheritance diagram for Modular\+Resnik\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classModularResnik}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classModularResnik_a53d184cbe8caf8222455808b03fdc5c9}{Modular\+Resnik} (\hyperlink{classSharedInformationInterface}{Shared\+Information\+Interface} $\ast$shared\+Information\+Calculator)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classModularResnik_a78b925c1aadb000d1773ffdacad549df}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Resnik similarity. \end{DoxyCompactList}\item 
+double \hyperlink{classModularResnik_aba93eb85400287057037d545e5080265}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Resnik similarity. \end{DoxyCompactList}\item 
+void \hyperlink{classModularResnik_ab0402a3be9f5b1e590c50b38e4a7fd39}{set\+Shared\+Information\+Calculator} (\hyperlink{classSharedInformationInterface}{Shared\+Information\+Interface} $\ast$new\+Shared\+Information\+Calulator)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate resnik similarity between 2 terms using a shared information interface. 
+
+This class calculates Resnik similarity. Philip Resnik (1995). \char`\"{}\+Using information content to evaluate semantic similarity in a taxonomy\char`\"{}. In Chris S. Mellish (Ed.). Proceedings of the 14th international joint conference on Artificial intelligence (I\+J\+C\+AI\textquotesingle{}95)
+
+P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, \char`\"{}\+Semantic similarity measures as tools for exploring the gene ontology,\char`\"{} Pac Symp Biocomput, pp. 601-\/12, 2003.
+
+maximun information content of all shared ancestors I\+C(\+M\+I\+C\+A) 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Modular\+Resnik@{Modular\+Resnik}!Modular\+Resnik@{Modular\+Resnik}}
+\index{Modular\+Resnik@{Modular\+Resnik}!Modular\+Resnik@{Modular\+Resnik}}
+\subsubsection[{\texorpdfstring{Modular\+Resnik(\+Shared\+Information\+Interface $\ast$shared\+Information\+Calculator)}{ModularResnik(SharedInformationInterface *sharedInformationCalculator)}}]{\setlength{\rightskip}{0pt plus 5cm}Modular\+Resnik\+::\+Modular\+Resnik (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Information\+Interface} $\ast$}]{shared\+Information\+Calculator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classModularResnik_a53d184cbe8caf8222455808b03fdc5c9}{}\label{classModularResnik_a53d184cbe8caf8222455808b03fdc5c9}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classStandardRelationshipPolicy}{Standard\+Relationship\+Policy} 
+
+\subsection{Member Function Documentation}
+\index{Modular\+Resnik@{Modular\+Resnik}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Modular\+Resnik@{Modular\+Resnik}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Modular\+Resnik\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classModularResnik_aba93eb85400287057037d545e5080265}{}\label{classModularResnik_aba93eb85400287057037d545e5080265}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Resnik similarity. 
+
+This method returns the Resnik similarity divided by the maximum possible similarity 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Modular\+Resnik@{Modular\+Resnik}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Modular\+Resnik@{Modular\+Resnik}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Modular\+Resnik\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classModularResnik_a78b925c1aadb000d1773ffdacad549df}{}\label{classModularResnik_a78b925c1aadb000d1773ffdacad549df}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Resnik similarity. 
+
+This method returns the Resnik similarity or the information content of the most informative common ancestor. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Modular\+Resnik@{Modular\+Resnik}!set\+Shared\+Information\+Calculator@{set\+Shared\+Information\+Calculator}}
+\index{set\+Shared\+Information\+Calculator@{set\+Shared\+Information\+Calculator}!Modular\+Resnik@{Modular\+Resnik}}
+\subsubsection[{\texorpdfstring{set\+Shared\+Information\+Calculator(\+Shared\+Information\+Interface $\ast$new\+Shared\+Information\+Calulator)}{setSharedInformationCalculator(SharedInformationInterface *newSharedInformationCalulator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Modular\+Resnik\+::set\+Shared\+Information\+Calculator (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Information\+Interface} $\ast$}]{new\+Shared\+Information\+Calulator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classModularResnik_ab0402a3be9f5b1e590c50b38e4a7fd39}{}\label{classModularResnik_ab0402a3be9f5b1e590c50b38e4a7fd39}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classStandardRelationshipPolicy}{Standard\+Relationship\+Policy} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Modular\+Resnik.\+hpp\end{DoxyCompactItemize}

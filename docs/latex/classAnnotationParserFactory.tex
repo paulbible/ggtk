@@ -1,0 +1,83 @@
+\hypertarget{classAnnotationParserFactory}{}\section{Annotation\+Parser\+Factory Class Reference}
+\label{classAnnotationParserFactory}\index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+
+
+A class to return an instance of \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} at runtime based on an argument.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Annotation\+Parser\+Factory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnnotationParserFactory_a47c5872562fa644ef911a7fc864ce26b}{Annotation\+Parser\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationParserFactory_ac1afbb3d17ddf112831c333c992cec5b}{$\sim$\+Annotation\+Parser\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAnnotationParserFactory_a86063c95063074e551e9900b9c5ffe87}{add\+Parser} (std\+::string name, \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} $\ast$parser)
+\begin{DoxyCompactList}\small\item\em A Method to add a parser to the factory. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} $\ast$ \hyperlink{classAnnotationParserFactory_a746a9345db03fb484b446111ceb43fe9}{get\+Parser} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em A method to return a parser based on a query string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to return an instance of \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} at runtime based on an argument. 
+
+This class holds a set of parser classes. When queried using the get\+Parser method, it returns an instance of \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} based on a string key. This allows parsers to be easily added to a larger system and switched at runtime. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}!Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+\index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}!Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{Annotation\+Parser\+Factory()}{AnnotationParserFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}Annotation\+Parser\+Factory\+::\+Annotation\+Parser\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationParserFactory_a47c5872562fa644ef911a7fc864ce26b}{}\label{classAnnotationParserFactory_a47c5872562fa644ef911a7fc864ce26b}
+
+
+Class constructor. 
+
+This constructor initializes the private lists to empty vectors. \index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}!````~Annotation\+Parser\+Factory@{$\sim$\+Annotation\+Parser\+Factory}}
+\index{````~Annotation\+Parser\+Factory@{$\sim$\+Annotation\+Parser\+Factory}!Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Annotation\+Parser\+Factory()}{~AnnotationParserFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}Annotation\+Parser\+Factory\+::$\sim$\+Annotation\+Parser\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationParserFactory_ac1afbb3d17ddf112831c333c992cec5b}{}\label{classAnnotationParserFactory_ac1afbb3d17ddf112831c333c992cec5b}
+
+
+Class destructor. 
+
+This destructor clears the names vector. It also deletes each parser pointer explicitly. Finally it clears the parser list. 
+
+\subsection{Member Function Documentation}
+\index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}!add\+Parser@{add\+Parser}}
+\index{add\+Parser@{add\+Parser}!Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{add\+Parser(std\+::string name, Annotation\+Parser\+Interface $\ast$parser)}{addParser(std::string name, AnnotationParserInterface *parser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Annotation\+Parser\+Factory\+::add\+Parser (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{{\bf Annotation\+Parser\+Interface} $\ast$}]{parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationParserFactory_a86063c95063074e551e9900b9c5ffe87}{}\label{classAnnotationParserFactory_a86063c95063074e551e9900b9c5ffe87}
+
+
+A Method to add a parser to the factory. 
+
+This method adds a pointer to a parser and a string to the factory. This string is used to query the appropriate parser. \index{Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}!get\+Parser@{get\+Parser}}
+\index{get\+Parser@{get\+Parser}!Annotation\+Parser\+Factory@{Annotation\+Parser\+Factory}}
+\subsubsection[{\texorpdfstring{get\+Parser(std\+::string name)}{getParser(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Annotation\+Parser\+Interface}$\ast$ Annotation\+Parser\+Factory\+::get\+Parser (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationParserFactory_a746a9345db03fb484b446111ceb43fe9}{}\label{classAnnotationParserFactory_a746a9345db03fb484b446111ceb43fe9}
+
+
+A method to return a parser based on a query string. 
+
+If the string supplied matches one of the keys in the database, the appropriate parser will be returned. If not, a N\+U\+LL pointer is returned. The calling environment must check against N\+U\+LL before using. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Annotation\+Parser\+Factory.\+hpp\end{DoxyCompactItemize}

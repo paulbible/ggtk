@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classMgiAnnotationParser" kind="class" language="C++" prot="public">
+    <compoundname>MgiAnnotationParser</compoundname>
+    <basecompoundref refid="classGoaAnnotationParser" prot="public" virt="non-virtual">GoaAnnotationParser</basecompoundref>
+    <includes refid="MgiAnnotationParser_8hpp" local="no">ggtk/MgiAnnotationParser.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMgiAnnotationParser_1a2f7a0d1080bf0a338ac35f9cd558da20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MgiAnnotationParser::MgiAnnotationParser</definition>
+        <argsstring>()</argsstring>
+        <name>MgiAnnotationParser</name>
+        <briefdescription>
+<para>A default constructor method for creating the parser. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MgiAnnotationParser.hpp" line="34" column="1" bodyfile="ggtk/MgiAnnotationParser.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMgiAnnotationParser_1ad21111f35a5476970585eb84d7ffbf70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MgiAnnotationParser::MgiAnnotationParser</definition>
+        <argsstring>(EvidencePolicyInterface *policy)</argsstring>
+        <name>MgiAnnotationParser</name>
+        <param>
+          <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor method for creating the parser with a policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser with a custom policy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MgiAnnotationParser.hpp" line="40" column="1" bodyfile="ggtk/MgiAnnotationParser.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse an Mouse Genome Informatics go annotation file. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class will read an mgi annotation file and add those annoations to an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> class. Available at: <ulink url="ftp://ftp.informatics.jax.org/pub/reports/index.html#go">ftp://ftp.informatics.jax.org/pub/reports/index.html#go</ulink></para><para>MGI uses GAF format which is GOA.</para><para>Implements <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="137">
+        <label>MgiAnnotationParser</label>
+        <link refid="classMgiAnnotationParser"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="138">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="140">
+        <label>MgiAnnotationParser</label>
+        <link refid="classMgiAnnotationParser"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="141">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/MgiAnnotationParser.hpp" line="27" column="1" bodyfile="ggtk/MgiAnnotationParser.hpp" bodystart="27" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369" prot="public" virt="virtual"><scope>MgiAnnotationParser</scope><name>clone</name></member>
+      <member refid="classGoaAnnotationParser_1a3f415dfbfd2bce5143eef60532ebadea" prot="public" virt="non-virtual"><scope>MgiAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa06b6ba409d97fe794ae1a7606864e65" prot="public" virt="non-virtual"><scope>MgiAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf" prot="public" virt="virtual"><scope>MgiAnnotationParser</scope><name>isFileGood</name></member>
+      <member refid="classMgiAnnotationParser_1a2f7a0d1080bf0a338ac35f9cd558da20" prot="public" virt="non-virtual"><scope>MgiAnnotationParser</scope><name>MgiAnnotationParser</name></member>
+      <member refid="classMgiAnnotationParser_1ad21111f35a5476970585eb84d7ffbf70" prot="public" virt="non-virtual"><scope>MgiAnnotationParser</scope><name>MgiAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff" prot="public" virt="virtual"><scope>MgiAnnotationParser</scope><name>parseAnnotationFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

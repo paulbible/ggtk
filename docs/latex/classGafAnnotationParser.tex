@@ -1,0 +1,63 @@
+\hypertarget{classGafAnnotationParser}{}\section{Gaf\+Annotation\+Parser Class Reference}
+\label{classGafAnnotationParser}\index{Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}}
+
+
+A class to parse a \hyperlink{namespaceGO}{GO} Annotation File (G\+AF, Format 2.\+0).  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Gaf\+Annotation\+Parser.\+hpp$>$}
+
+Inheritance diagram for Gaf\+Annotation\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classGafAnnotationParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGafAnnotationParser_a1ec096680cb5e3c4f1111b53cc12ce88}{Gaf\+Annotation\+Parser} ()
+\begin{DoxyCompactList}\small\item\em A default constructor method for creating the parser. \end{DoxyCompactList}\item 
+\hyperlink{classGafAnnotationParser_a24dc9179f8df7e913c648ea90f60e3b2}{Gaf\+Annotation\+Parser} (\hyperlink{classEvidencePolicyInterface}{Evidence\+Policy\+Interface} $\ast$policy)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor method for creating the parser with a policy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to parse a \hyperlink{namespaceGO}{GO} Annotation File (G\+AF, Format 2.\+0). 
+
+This class will read a G\+AF file and return an \hyperlink{classAnnotationData}{Annotation\+Data} object pointer. Defined at\+: \href{http://geneontology.org/page/go-annotation-file-format-20}{\tt http\+://geneontology.\+org/page/go-\/annotation-\/file-\/format-\/20}
+
+Implements \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface}.
+
+For now, the important aspects of the G\+AF file and G\+OA file are the same. The \hyperlink{classGafAnnotationParser}{Gaf\+Annotation\+Parser} inherits all functionality from \hyperlink{classGoaAnnotationParser}{Goa\+Annotation\+Parser}. This may change in the future. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}!Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}}
+\index{Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}!Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Gaf\+Annotation\+Parser()}{GafAnnotationParser()}}]{\setlength{\rightskip}{0pt plus 5cm}Gaf\+Annotation\+Parser\+::\+Gaf\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGafAnnotationParser_a1ec096680cb5e3c4f1111b53cc12ce88}{}\label{classGafAnnotationParser_a1ec096680cb5e3c4f1111b53cc12ce88}
+
+
+A default constructor method for creating the parser. 
+
+Creates the parser \index{Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}!Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}}
+\index{Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}!Gaf\+Annotation\+Parser@{Gaf\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Gaf\+Annotation\+Parser(\+Evidence\+Policy\+Interface $\ast$policy)}{GafAnnotationParser(EvidencePolicyInterface *policy)}}]{\setlength{\rightskip}{0pt plus 5cm}Gaf\+Annotation\+Parser\+::\+Gaf\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence\+Policy\+Interface} $\ast$}]{policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGafAnnotationParser_a24dc9179f8df7e913c648ea90f60e3b2}{}\label{classGafAnnotationParser_a24dc9179f8df7e913c648ea90f60e3b2}
+
+
+A parameterized constructor method for creating the parser with a policy. 
+
+Creates the parser with a custom policy 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Gaf\+Annotation\+Parser.\+hpp\end{DoxyCompactItemize}

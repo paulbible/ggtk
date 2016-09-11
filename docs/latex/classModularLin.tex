@@ -1,0 +1,104 @@
+\hypertarget{classModularLin}{}\section{Modular\+Lin Class Reference}
+\label{classModularLin}\index{Modular\+Lin@{Modular\+Lin}}
+
+
+A class to calculate Lin similarity between 2 terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Modular\+Lin.\+hpp$>$}
+
+Inheritance diagram for Modular\+Lin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classModularLin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classModularLin_a1d70b04bb6d75af7d86da15f33bb1732}{Modular\+Lin} (\hyperlink{classSharedInformationInterface}{Shared\+Information\+Interface} $\ast$shared\+Information\+Calculator)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classModularLin_a995ef9e4c53b9e96a32259157416df1b}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Lin similarity. \end{DoxyCompactList}\item 
+double \hyperlink{classModularLin_a5c4c590808542669e7ba65b60ea8f707}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using normalized Lin similarity. \end{DoxyCompactList}\item 
+void \hyperlink{classModularLin_a2730653a908d1d3ae8d379d166906646}{set\+Shared\+Information\+Calculator} (\hyperlink{classSharedInformationInterface}{Shared\+Information\+Interface} $\ast$new\+Shared\+Information\+Calulator)
+\begin{DoxyCompactList}\small\item\em A method to set alternative methods of shared information calculators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate Lin similarity between 2 terms. 
+
+This class calculates Lin similarity.
+
+Lin, D. (1998) An information theoretic definition of similarity. In\+: Proc. of the 15th Inernational Conference on Machine Learning. San Franscisco, CA\+: Morgan Kaufman. pp 296-\/304
+
+P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, \char`\"{}\+Semantic similarity measures as tools for exploring the gene ontology,\char`\"{} Pac Symp Biocomput, pp. 601-\/12, 2003.
+
+2 $\ast$ I\+C(\+M\+I\+C\+A) / ( I\+C(term\+A) + I\+C(term\+B) ) 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Modular\+Lin@{Modular\+Lin}!Modular\+Lin@{Modular\+Lin}}
+\index{Modular\+Lin@{Modular\+Lin}!Modular\+Lin@{Modular\+Lin}}
+\subsubsection[{\texorpdfstring{Modular\+Lin(\+Shared\+Information\+Interface $\ast$shared\+Information\+Calculator)}{ModularLin(SharedInformationInterface *sharedInformationCalculator)}}]{\setlength{\rightskip}{0pt plus 5cm}Modular\+Lin\+::\+Modular\+Lin (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Information\+Interface} $\ast$}]{shared\+Information\+Calculator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classModularLin_a1d70b04bb6d75af7d86da15f33bb1732}{}\label{classModularLin_a1d70b04bb6d75af7d86da15f33bb1732}
+
+
+A constructor. 
+
+Creates the \hyperlink{classLinSimilarity}{Lin\+Similarity} calculator with a particular shared information calculator 
+
+\subsection{Member Function Documentation}
+\index{Modular\+Lin@{Modular\+Lin}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Modular\+Lin@{Modular\+Lin}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Modular\+Lin\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classModularLin_a5c4c590808542669e7ba65b60ea8f707}{}\label{classModularLin_a5c4c590808542669e7ba65b60ea8f707}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using normalized Lin similarity. 
+
+This method returns the Lin similarity. Lin similarity is already normalized 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Modular\+Lin@{Modular\+Lin}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Modular\+Lin@{Modular\+Lin}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Modular\+Lin\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classModularLin_a995ef9e4c53b9e96a32259157416df1b}{}\label{classModularLin_a995ef9e4c53b9e96a32259157416df1b}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Lin similarity. 
+
+This method returns the Resnik similarity or the information content of the most informative common ancestor. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Modular\+Lin@{Modular\+Lin}!set\+Shared\+Information\+Calculator@{set\+Shared\+Information\+Calculator}}
+\index{set\+Shared\+Information\+Calculator@{set\+Shared\+Information\+Calculator}!Modular\+Lin@{Modular\+Lin}}
+\subsubsection[{\texorpdfstring{set\+Shared\+Information\+Calculator(\+Shared\+Information\+Interface $\ast$new\+Shared\+Information\+Calulator)}{setSharedInformationCalculator(SharedInformationInterface *newSharedInformationCalulator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Modular\+Lin\+::set\+Shared\+Information\+Calculator (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Information\+Interface} $\ast$}]{new\+Shared\+Information\+Calulator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classModularLin_a2730653a908d1d3ae8d379d166906646}{}\label{classModularLin_a2730653a908d1d3ae8d379d166906646}
+
+
+A method to set alternative methods of shared information calculators. 
+
+This method accepts a new method for calculating the shared information of two terms. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Modular\+Lin.\+hpp\end{DoxyCompactItemize}

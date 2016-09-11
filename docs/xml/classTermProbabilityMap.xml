@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermProbabilityMap" kind="class" language="C++" prot="public">
+    <compoundname>TermProbabilityMap</compoundname>
+    <derivedcompoundref refid="classTermInformationContentMap" prot="public" virt="non-virtual">TermInformationContentMap</derivedcompoundref>
+    <includes refid="TermProbabilityMap_8hpp" local="no">ggtk/TermProbabilityMap.hpp</includes>
+    <innerclass refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" prot="public">TermProbabilityMap::dfs_cumulative_annotations_visitor</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" prot="protected" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt; TermProbabilityMap::_nameToIndex</definition>
+        <argsstring></argsstring>
+        <name>_nameToIndex</name>
+        <briefdescription>
+<para>A private map that returns the index of a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This map takes string term ids and returns the index for annotation count access. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="329" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; TermProbabilityMap::_probabilities</definition>
+        <argsstring></argsstring>
+        <name>_probabilities</name>
+        <briefdescription>
+<para>A private list of term probabilities. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector of doubles holds the prior probability for each term </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="335" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TermProbabilityMap::_isSingleAnnoMin</definition>
+        <argsstring></argsstring>
+        <name>_isSingleAnnoMin</name>
+        <briefdescription>
+<para>A flag designating the minimum policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This flag will be true and return true is single annotation probability is used, false otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="341" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_bp_normalization_min_1anno</definition>
+        <argsstring></argsstring>
+        <name>_bp_normalization_min_1anno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites Biological Process. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="348" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_bp_normalization_min_minAnno</definition>
+        <argsstring></argsstring>
+        <name>_bp_normalization_min_minAnno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites for Biological Process. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="355" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_mf_normalization_min_1anno</definition>
+        <argsstring></argsstring>
+        <name>_mf_normalization_min_1anno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites Molecular Function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="362" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_mf_normalization_min_minAnno</definition>
+        <argsstring></argsstring>
+        <name>_mf_normalization_min_minAnno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites for Molecular Function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="369" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_cc_normalization_min_1anno</definition>
+        <argsstring></argsstring>
+        <name>_cc_normalization_min_1anno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites Cellular Component. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="376" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TermProbabilityMap::_cc_normalization_min_minAnno</definition>
+        <argsstring></argsstring>
+        <name>_cc_normalization_min_minAnno</name>
+        <briefdescription>
+<para>Normalization factor for calculating normalized simialrites for Cellular Component. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="383" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermProbabilityMap::TermProbabilityMap</definition>
+        <argsstring>(GoGraph *graph, AnnotationData *annoData)</argsstring>
+        <name>TermProbabilityMap</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>annoData</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor takes pointers to <ref refid="classGoGraph" kindref="compound">GoGraph</ref> and <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="37" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="37" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermProbabilityMap::TermProbabilityMap</definition>
+        <argsstring>()</argsstring>
+        <name>TermProbabilityMap</name>
+        <briefdescription>
+<para>A default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initialized the storage structures. Should not be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="135" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermProbabilityMap::~TermProbabilityMap</definition>
+        <argsstring>()</argsstring>
+        <name>~TermProbabilityMap</name>
+        <briefdescription>
+<para>A default desctructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This desctructor clears the containters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="147" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; TermProbabilityMap::getValues</definition>
+        <argsstring>()</argsstring>
+        <name>getValues</name>
+        <briefdescription>
+<para>Accessor for probablities vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the vector of values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="157" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TermProbabilityMap::getKeys</definition>
+        <argsstring>()</argsstring>
+        <name>getKeys</name>
+        <briefdescription>
+<para>Function to return all the keys in the map. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns all valid keys in the map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="165" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="165" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TermProbabilityMap::hasTerm</definition>
+        <argsstring>(const std::string &amp;testTerm)</argsstring>
+        <name>hasTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>testTerm</declname>
+        </param>
+        <briefdescription>
+<para>Method to test if the id exists in the map. </para>        </briefdescription>
+        <detaileddescription>
+<para>Return true the id is found, false if not </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="178" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double TermProbabilityMap::badIdValue</definition>
+        <argsstring>()</argsstring>
+        <name>badIdValue</name>
+        <reimplementedby refid="classTermInformationContentMap_1a082c021a27478403aad9bb99c0e975e6">badIdValue</reimplementedby>
+        <briefdescription>
+<para>Return a default value for a term that does not exist. </para>        </briefdescription>
+        <detaileddescription>
+<para>A value to return if the term is not found (does not exist in the map). Returns probability 1 or certanty. This may not be the ideal behavior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="187" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermProbabilityMap::operator[]</definition>
+        <argsstring>(std::string termId)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::string</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>Overloaded [] bracket operator to mimic Map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This defines a bracket operator to access the data inside of the map. This is done to mimic the behavior of the map class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="196" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="196" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermProbabilityMap::getValue</definition>
+        <argsstring>(std::string termId)</argsstring>
+        <name>getValue</name>
+        <param>
+          <type>std::string</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>Mapping function to return the value mapped by key. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the value mapped by the given key. A specified function for the [] operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="208" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="208" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermProbabilityMap::getMinBP</definition>
+        <argsstring>()</argsstring>
+        <name>getMinBP</name>
+        <briefdescription>
+<para>Get the specific minimum probability for BP. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the minimum probablity for the bp ontology </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="222" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermProbabilityMap::getMinMF</definition>
+        <argsstring>()</argsstring>
+        <name>getMinMF</name>
+        <briefdescription>
+<para>Get the specific minimum probability for MF. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the minimum probablity for the mf ontology </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="231" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermProbabilityMap::getMinCC</definition>
+        <argsstring>()</argsstring>
+        <name>getMinCC</name>
+        <briefdescription>
+<para>Get the specific minimum probability for CC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the minimum probablity for the cc ontology </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermProbabilityMap.hpp" line="240" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="240" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the probability of a <ref refid="namespaceGO" kindref="compound">GO</ref> term. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides a map that returns the probability of <ref refid="namespaceGO" kindref="compound">GO</ref> term. This class is used by Information Content methods to determine the prior probability of a term give an instance of <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="231">
+        <label>TermProbabilityMap</label>
+        <link refid="classTermProbabilityMap"/>
+      </node>
+      <node id="232">
+        <label>TermInformationContentMap</label>
+        <link refid="classTermInformationContentMap"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/TermProbabilityMap.hpp" line="28" column="1" bodyfile="ggtk/TermProbabilityMap.hpp" bodystart="28" bodyend="385"/>
+    <listofallmembers>
+      <member refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_bp_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_bp_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_cc_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_cc_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_isSingleAnnoMin</name></member>
+      <member refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_mf_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_mf_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_nameToIndex</name></member>
+      <member refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" prot="protected" virt="non-virtual"><scope>TermProbabilityMap</scope><name>_probabilities</name></member>
+      <member refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" prot="public" virt="virtual"><scope>TermProbabilityMap</scope><name>badIdValue</name></member>
+      <member refid="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getKeys</name></member>
+      <member refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getMinBP</name></member>
+      <member refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getMinCC</name></member>
+      <member refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getMinMF</name></member>
+      <member refid="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getValue</name></member>
+      <member refid="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>getValues</name></member>
+      <member refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>hasTerm</name></member>
+      <member refid="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>operator[]</name></member>
+      <member refid="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>TermProbabilityMap</name></member>
+      <member refid="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>TermProbabilityMap</name></member>
+      <member refid="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" prot="public" virt="non-virtual"><scope>TermProbabilityMap</scope><name>~TermProbabilityMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

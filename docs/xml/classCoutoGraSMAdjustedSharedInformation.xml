@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classCoutoGraSMAdjustedSharedInformation" kind="class" language="C++" prot="public">
+    <compoundname>CoutoGraSMAdjustedSharedInformation</compoundname>
+    <basecompoundref refid="classSharedInformationInterface" prot="public" virt="non-virtual">SharedInformationInterface</basecompoundref>
+    <includes refid="CoutoGraSMAdjustedSharedInformation_8hpp" local="no">ggtk/CoutoGraSMAdjustedSharedInformation.hpp</includes>
+    <innerclass refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor" prot="private">CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCoutoGraSMAdjustedSharedInformation_1a87cf8bf7f8201f9e7b6e7612102e2387" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* CoutoGraSMAdjustedSharedInformation::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="307" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCoutoGraSMAdjustedSharedInformation_1a758ced2780e11df8077ee6f378065872" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap CoutoGraSMAdjustedSharedInformation::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="308" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1a4a04a361710cd2d01d684756dfaffdaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoutoGraSMAdjustedSharedInformation::CoutoGraSMAdjustedSharedInformation</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>CoutoGraSMAdjustedSharedInformation</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classCoutoGraSMAdjustedSharedInformation" kindref="compound">CoutoGraSMAdjustedSharedInformation</ref> class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="45" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1a1cabbefb71400f4a09a43f2ee772dd13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; CoutoGraSMAdjustedSharedInformation::getCommonDisjointAncestors</definition>
+        <argsstring>(const std::string &amp;termC1, const std::string &amp;termC2)</argsstring>
+        <name>getCommonDisjointAncestors</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termC1</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termC2</declname>
+        </param>
+        <briefdescription>
+<para>Calculate disjunctive ancestors. </para>        </briefdescription>
+        <detaileddescription>
+<para>A method for determining common disjunctive ancestors for two terms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="54" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="54" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1a1075d42621e143afd799a88d49964f6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoutoGraSMAdjustedSharedInformation::isDisjoint</definition>
+        <argsstring>(const std::string &amp;termC, const std::string &amp;termA1, const std::string &amp;termA2)</argsstring>
+        <name>isDisjoint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termC</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA1</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA2</declname>
+        </param>
+        <briefdescription>
+<para>Determine if a terms are disjoint in a concept. </para>        </briefdescription>
+        <detaileddescription>
+<para>A method for determining if, for a term c, a pair (a1,a2) is disjoint in c </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="136" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="136" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1aad9e157135c5d9de7c5e7f49c3d812b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t CoutoGraSMAdjustedSharedInformation::getNumPaths</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>getNumPaths</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the number of paths between two concept terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>A method for calculating the number of paths from one term to another. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="172" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="172" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1ac93a66e1b8efafc8cd1c166424241af9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CoutoGraSMAdjustedSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>Shared infromation between two conecepts. </para>        </briefdescription>
+        <detaileddescription>
+<para>A method for calculating the shared infromation between two concepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="198" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="198" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1a6a228833a96e710c4e143cefaf364a37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CoutoGraSMAdjustedSharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Term information content. </para>        </briefdescription>
+        <detaileddescription>
+<para>An interface method to conventiently get information content of a single term </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="225" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="225" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1ab66e18a4f169878ad2a9e9d6d3feb459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CoutoGraSMAdjustedSharedInformation::maxInformationContent</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>maxInformationContent</name>
+        <reimplements refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999">maxInformationContent</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Maximum Ontology IC for normalization. </para>        </briefdescription>
+        <detaileddescription>
+<para>An interface method for returning the maximum information content for a term within a corpus for normalization purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="237" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="237" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1ae6304b98a7c8784327f978ee59372ca3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CoutoGraSMAdjustedSharedInformation::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <reimplements refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8">hasTerm</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if a term can be found. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the term can be found in the current map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="258" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="258" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1a9e6387f431eddaf42a1b18529cb3a8f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool CoutoGraSMAdjustedSharedInformation::isSameOntology</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>isSameOntology</name>
+        <reimplements refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d">isSameOntology</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if the two terms are of like ontologies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determine if two terms are of the same ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="266" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="266" bodyend="268"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate shared infromation accross disjoint common ancetors using an adjusted algorithm. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates shared infromation accross disjoint common ancetors. This is a modificaiton of the original algorithm provided by Couto. The adjustment changes the contrain to path lengths to strictly greater than. See line 150.</para><para>F. M. Couto, M. J. Silva, and P. M. Coutinho, &quot;Measuring semantic similarity
+between Gene Ontology terms,&quot; Data &amp; Knowledge Engineering, vol. 61, pp. 137-152, Apr 2007.</para><para>Couto proposing calculating this value a subsituite for the IC of the MICA in calculating Resnik, Lin, and Jiang-Conrath </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="43">
+        <label>CoutoGraSMAdjustedSharedInformation</label>
+        <link refid="classCoutoGraSMAdjustedSharedInformation"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="45">
+        <label>CoutoGraSMAdjustedSharedInformation</label>
+        <link refid="classCoutoGraSMAdjustedSharedInformation"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="37" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="37" bodyend="310"/>
+    <listofallmembers>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a87cf8bf7f8201f9e7b6e7612102e2387" prot="private" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>_goGraph</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a758ced2780e11df8077ee6f378065872" prot="private" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>_icMap</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a4a04a361710cd2d01d684756dfaffdaa" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>CoutoGraSMAdjustedSharedInformation</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a1cabbefb71400f4a09a43f2ee772dd13" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>getCommonDisjointAncestors</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1aad9e157135c5d9de7c5e7f49c3d812b4" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>getNumPaths</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1ae6304b98a7c8784327f978ee59372ca3" prot="public" virt="virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>hasTerm</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a1075d42621e143afd799a88d49964f6e" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>isDisjoint</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a9e6387f431eddaf42a1b18529cb3a8f5" prot="public" virt="virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>isSameOntology</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1ab66e18a4f169878ad2a9e9d6d3feb459" prot="public" virt="virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>maxInformationContent</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1ac93a66e1b8efafc8cd1c166424241af9" prot="public" virt="virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>sharedInformation</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1a6a228833a96e710c4e143cefaf364a37" prot="public" virt="virtual"><scope>CoutoGraSMAdjustedSharedInformation</scope><name>sharedInformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

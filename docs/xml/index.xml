@@ -1,0 +1,771 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classAllowedRelationshipOboGoParser" kind="class"><name>AllowedRelationshipOboGoParser</name>
+    <member refid="classAllowedRelationshipOboGoParser_1a3611a55404b4925d8adf66468610beac" kind="variable"><name>relationshipPolicy</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1a6eb0ab84216c386a2595aa47233448ad" kind="function"><name>parseGoFile</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1a67722c03da0ca2e0f9eb4008dddc6e06" kind="function"><name>isFileGood</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1a675bd9d5e302fe77b96e16ef647e53d1" kind="function"><name>splitWith</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1add9a434ad4acd785b51550dc5fd9388b" kind="function"><name>clone</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1ab232a6b864dc4350f95da6f281df4491" kind="function"><name>setPolicy</name></member>
+    <member refid="classAllowedRelationshipOboGoParser_1ac74305e8723b42f6c6ffd78ff4c9824e" kind="function"><name>AllowedRelationshipOboGoParser</name></member>
+  </compound>
+  <compound refid="classAllowedRelationshipXmlGoParser" kind="class"><name>AllowedRelationshipXmlGoParser</name>
+    <member refid="classAllowedRelationshipXmlGoParser_1a3347d1e726be0ed6f502afc235865b16" kind="variable"><name>relationshipPolicy</name></member>
+    <member refid="classAllowedRelationshipXmlGoParser_1ad6e002e7cd0994866b62dba0896d3d24" kind="function"><name>parseGoFile</name></member>
+    <member refid="classAllowedRelationshipXmlGoParser_1a75e964bc34f575bc6c00c56b43f91d0e" kind="function"><name>isFileGood</name></member>
+    <member refid="classAllowedRelationshipXmlGoParser_1a3c330bc9f1ccf6422488bf1ea593f52a" kind="function"><name>clone</name></member>
+    <member refid="classAllowedRelationshipXmlGoParser_1a463df4ceee68bf1321c982812f77eed2" kind="function"><name>setPolicy</name></member>
+    <member refid="classAllowedRelationshipXmlGoParser_1a51bd1af3274c80d1600e0f3b88815ef4" kind="function"><name>AllowedRelationshipXmlGoParser</name></member>
+  </compound>
+  <compound refid="classAllowedSetEvidencePolicy" kind="class"><name>AllowedSetEvidencePolicy</name>
+    <member refid="classAllowedSetEvidencePolicy_1a3bd2c0f82d3714dce4594c7c5703ad4f" kind="variable"><name>_evidenceMap</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1af940574b5c998db67ce580555e1964d3" kind="function"><name>AllowedSetEvidencePolicy</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1a84458d133059ab286b3d3eaa8301d243" kind="function"><name>AllowedSetEvidencePolicy</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1a5979a55da22e57d2faffaa0bdb77457b" kind="function"><name>isAllowed</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1a8a68cd6a472cab9df1dda7b3258618cf" kind="function"><name>addEvidence</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1a1013d74c48b800c7dd0450c0fdaa4090" kind="function"><name>addEvidence</name></member>
+    <member refid="classAllowedSetEvidencePolicy_1ac54f499b3dfd0a55353014f1f277fe64" kind="function"><name>isEmpty</name></member>
+  </compound>
+  <compound refid="classAllowedSetRelationshipPolicy" kind="class"><name>AllowedSetRelationshipPolicy</name>
+    <member refid="classAllowedSetRelationshipPolicy_1a3fdf2e2efd90113d1ff22ea9396005ef" kind="variable"><name>_relationshipMap</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1aebffb7e69930219d89133625ff8936cf" kind="function"><name>AllowedSetRelationshipPolicy</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1a9cd20d2c44a96736c0a74b7e962dae04" kind="function"><name>AllowedSetRelationshipPolicy</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90" kind="function"><name>isAllowed</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1a5da8f3fb718fba44354e56a4595968de" kind="function"><name>addRelationship</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1a013089769911f87f1d8513bc6006dbf9" kind="function"><name>addRelationship</name></member>
+    <member refid="classAllowedSetRelationshipPolicy_1a543f028def505d8df941a308ab315075" kind="function"><name>isEmpty</name></member>
+  </compound>
+  <compound refid="classAllPairsAverageSetSimilarity" kind="class"><name>AllPairsAverageSetSimilarity</name>
+    <member refid="classAllPairsAverageSetSimilarity_1aa6970260ab2b18fcb2655e220811322a" kind="variable"><name>_similarity</name></member>
+    <member refid="classAllPairsAverageSetSimilarity_1a67b7cfe7f078bea616baaf99116ace2e" kind="function"><name>AllPairsAverageSetSimilarity</name></member>
+    <member refid="classAllPairsAverageSetSimilarity_1a685cd98d44c2e2ab9ee4fe7071066cde" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classAllPairsMaxSetSimilarity" kind="class"><name>AllPairsMaxSetSimilarity</name>
+    <member refid="classAllPairsMaxSetSimilarity_1aff7f386a25460acfb641c9d362a1f032" kind="variable"><name>_similarity</name></member>
+    <member refid="classAllPairsMaxSetSimilarity_1a5aef6b55e2aa3b94b62278eb5464dd68" kind="function"><name>AllPairsMaxSetSimilarity</name></member>
+    <member refid="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classAncestorMeanSharedInformation" kind="class"><name>AncestorMeanSharedInformation</name>
+    <member refid="classAncestorMeanSharedInformation_1a0722ae43665494558d4da986ac572bbe" kind="variable"><name>_goGraph</name></member>
+    <member refid="classAncestorMeanSharedInformation_1a29547e7e8fee5ad3ae14019263f0bb14" kind="variable"><name>_icMap</name></member>
+    <member refid="classAncestorMeanSharedInformation_1aef781d2b6461b28b4974aa990611c8a1" kind="function"><name>AncestorMeanSharedInformation</name></member>
+    <member refid="classAncestorMeanSharedInformation_1a86dad7b02ff45ae758a2b311ad763350" kind="function"><name>sharedInformation</name></member>
+    <member refid="classAncestorMeanSharedInformation_1af31937c58ee53db666586b446bc23061" kind="function"><name>sharedInformation</name></member>
+    <member refid="classAncestorMeanSharedInformation_1abf7d613e1459a5cf49071871e55f8a50" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classAncestorMeanSharedInformation_1af7503d6f761957bcb22d0e6614d87fa4" kind="function"><name>hasTerm</name></member>
+    <member refid="classAncestorMeanSharedInformation_1a75f59ac9d53014b967d0a81de8a07dbb" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classAnnotationData" kind="class"><name>AnnotationData</name>
+    <member refid="classAnnotationData_1a9f25041cb6cfabe964e2857b54400a3b" kind="variable"><name>_genes</name></member>
+    <member refid="classAnnotationData_1a88170d72e7addb555701e7aeba30f588" kind="variable"><name>_goTerms</name></member>
+    <member refid="classAnnotationData_1a2246453b69594c15745d47f6c3c4c533" kind="variable"><name>_stringToGene</name></member>
+    <member refid="classAnnotationData_1ab743686bf79303fbc0eb16c323d1b104" kind="variable"><name>_stringToGo</name></member>
+    <member refid="classAnnotationData_1a72a19fdf14001e241bd0dc200c5fd0de" kind="variable"><name>_goToGenes</name></member>
+    <member refid="classAnnotationData_1afdad9a39d18deaf76fae099554caf86e" kind="variable"><name>_goToGenesEvidence</name></member>
+    <member refid="classAnnotationData_1aa936d0cc30ba41aa177c5fd0867f38db" kind="variable"><name>_geneToGos</name></member>
+    <member refid="classAnnotationData_1a6bf6ba78c786caf078731b87357f96c0" kind="variable"><name>_geneToGosEvidence</name></member>
+    <member refid="classAnnotationData_1aa72d292d4f480d2e580ba4d39b88ab8f" kind="function"><name>AnnotationData</name></member>
+    <member refid="classAnnotationData_1a3abda2766658360884f8097cf4ea5281" kind="function"><name>~AnnotationData</name></member>
+    <member refid="classAnnotationData_1ac6bd9048c83a52ebaa9a9e83a45e7f4a" kind="function"><name>addAssociation</name></member>
+    <member refid="classAnnotationData_1a406a75a2f26bb7597f27599daf5416ad" kind="function"><name>hasGoTerm</name></member>
+    <member refid="classAnnotationData_1af1456f7623ce06262d8782a01fd2ca9c" kind="function"><name>hasGene</name></member>
+    <member refid="classAnnotationData_1a8b99d05f5f0f619958e7850253946b9c" kind="function"><name>getAllGoTerms</name></member>
+    <member refid="classAnnotationData_1aa2d7d5ad9601b6984470b8267ff37db8" kind="function"><name>getAllGenes</name></member>
+    <member refid="classAnnotationData_1aee62a418cae2da15f4b3a4bd9f933376" kind="function"><name>getGoTermsForGene</name></member>
+    <member refid="classAnnotationData_1ad1864b7768ab74d74be296e546269881" kind="function"><name>getGoTermsForGeneByOntology</name></member>
+    <member refid="classAnnotationData_1a86fa8eaf6310627d530ab118c6e1e22b" kind="function"><name>getGoTermsForGeneBP</name></member>
+    <member refid="classAnnotationData_1ab9639d4828270517550a3e739d03317b" kind="function"><name>getGoTermsForGeneMF</name></member>
+    <member refid="classAnnotationData_1a37679ed0830c6d7ec41672b3df541663" kind="function"><name>getGoTermsForGeneCC</name></member>
+    <member refid="classAnnotationData_1a4f61ca3276af902c72a031419e8155c5" kind="function"><name>getGoTermsEvidenceForGene</name></member>
+    <member refid="classAnnotationData_1a0028d38de841c5a508ad602907b42be7" kind="function"><name>getGenesForGoTerm</name></member>
+    <member refid="classAnnotationData_1adcae89b874856e2e30319382a51f3c14" kind="function"><name>addGenesForGoTerm</name></member>
+    <member refid="classAnnotationData_1a95cf54dc33c9f4e948e913424a44c52e" kind="function"><name>getGenesEvidenceForGoTerm</name></member>
+    <member refid="classAnnotationData_1a985193a995893976a17f09217cced074" kind="function"><name>getNumAnnotationsForGoTerm</name></member>
+    <member refid="classAnnotationData_1a367c90051704e541d674d1ee222e6bbe" kind="function"><name>getNumAnnotationsForGene</name></member>
+    <member refid="classAnnotationData_1aa3eeff87e44cc21e06cc5f49899cf776" kind="function"><name>getNumGenes</name></member>
+    <member refid="classAnnotationData_1ad47dc3da1210218c0bb90ca80f6355ec" kind="function"><name>getNumGoTerms</name></member>
+    <member refid="classAnnotationData_1a25a5ccfa938a1d623e8f162f2959d951" kind="function"><name>getOntologyTerms</name></member>
+  </compound>
+  <compound refid="classAnnotationParserFactory" kind="class"><name>AnnotationParserFactory</name>
+    <member refid="classAnnotationParserFactory_1a07fc2c734e9aee34d43649f85b7dda13" kind="variable"><name>_names</name></member>
+    <member refid="classAnnotationParserFactory_1a45c749f5e05c0ca63ebd72fee7d4b3bb" kind="variable"><name>_parsers</name></member>
+    <member refid="classAnnotationParserFactory_1a47c5872562fa644ef911a7fc864ce26b" kind="function"><name>AnnotationParserFactory</name></member>
+    <member refid="classAnnotationParserFactory_1ac1afbb3d17ddf112831c333c992cec5b" kind="function"><name>~AnnotationParserFactory</name></member>
+    <member refid="classAnnotationParserFactory_1a86063c95063074e551e9900b9c5ffe87" kind="function"><name>addParser</name></member>
+    <member refid="classAnnotationParserFactory_1a746a9345db03fb484b446111ceb43fe9" kind="function"><name>getParser</name></member>
+  </compound>
+  <compound refid="classAnnotationParserInterface" kind="class"><name>AnnotationParserInterface</name>
+    <member refid="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab" kind="function"><name>parseAnnotationFile</name></member>
+    <member refid="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030" kind="function"><name>isFileGood</name></member>
+    <member refid="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="classBestMatchAverageSetSimilarity" kind="class"><name>BestMatchAverageSetSimilarity</name>
+    <member refid="classBestMatchAverageSetSimilarity_1a9cdb9e3ee2a64372711fc54825666e46" kind="variable"><name>_similarity</name></member>
+    <member refid="classBestMatchAverageSetSimilarity_1afbc85286f64e945d9c3e0bf193171721" kind="function"><name>BestMatchAverageSetSimilarity</name></member>
+    <member refid="classBestMatchAverageSetSimilarity_1adf1b3109b46f04087f919bdb33e131f0" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classCoutoGraSMAdjustedSharedInformation" kind="class"><name>CoutoGraSMAdjustedSharedInformation</name>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a87cf8bf7f8201f9e7b6e7612102e2387" kind="variable"><name>_goGraph</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a758ced2780e11df8077ee6f378065872" kind="variable"><name>_icMap</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a4a04a361710cd2d01d684756dfaffdaa" kind="function"><name>CoutoGraSMAdjustedSharedInformation</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a1cabbefb71400f4a09a43f2ee772dd13" kind="function"><name>getCommonDisjointAncestors</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a1075d42621e143afd799a88d49964f6e" kind="function"><name>isDisjoint</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1aad9e157135c5d9de7c5e7f49c3d812b4" kind="function"><name>getNumPaths</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1ac93a66e1b8efafc8cd1c166424241af9" kind="function"><name>sharedInformation</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a6a228833a96e710c4e143cefaf364a37" kind="function"><name>sharedInformation</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1ab66e18a4f169878ad2a9e9d6d3feb459" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1ae6304b98a7c8784327f978ee59372ca3" kind="function"><name>hasTerm</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1a9e6387f431eddaf42a1b18529cb3a8f5" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classCoutoGraSMSharedInformation" kind="class"><name>CoutoGraSMSharedInformation</name>
+    <member refid="classCoutoGraSMSharedInformation_1a0c3d8e713e165cd86a0c7b3ea95bd950" kind="variable"><name>_goGraph</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1a4758ab6cce195fc9aeec4a038e2ab838" kind="variable"><name>_icMap</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1a8e923a60f27eca7922a628a9efd7afdc" kind="function"><name>CoutoGraSMSharedInformation</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1ac1dd8eacbfde6f724b11f4b276e41faf" kind="function"><name>getCommonDisjointAncestors</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1aa935c6e99178b043fd4dbc8f2e4ba29d" kind="function"><name>isDisjoint</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1abbb7cbdc8131eaab6d5b467fcb1ecd8a" kind="function"><name>getNumPaths</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1aeb3ea4684e5f198464ce9354171981d3" kind="function"><name>sharedInformation</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1a1c9a0a709b77822cd3bc967beed08b66" kind="function"><name>sharedInformation</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1ae97d2b59ecd6d1eeee2583c6005c65a2" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1a718055d6fecea9e10125ae4895af7f95" kind="function"><name>hasTerm</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1ae6e12a30f03b0c2232d73277d8d47cd1" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" kind="class"><name>TermProbabilityMap::dfs_cumulative_annotations_visitor</name>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" kind="variable"><name>goGraph</name></member>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" kind="variable"><name>annoData</name></member>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" kind="variable"><name>annoList</name></member>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" kind="variable"><name>nameIndexMap</name></member>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a3c6b493a2f9b5b966f12c947553ffbd2" kind="function"><name>dfs_cumulative_annotations_visitor</name></member>
+    <member refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1ac6147a4c2bcfe83492667b248630a525" kind="function"><name>finish_vertex</name></member>
+  </compound>
+  <compound refid="classDisallowedSetEvidencePolicy" kind="class"><name>DisallowedSetEvidencePolicy</name>
+    <member refid="classDisallowedSetEvidencePolicy_1a1fe4639ae7f4785e08258ec5cb491d1a" kind="variable"><name>_evidenceMap</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1a4db63ff71aa72c7744187a36099e5b09" kind="function"><name>DisallowedSetEvidencePolicy</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1a50c8885e5a3abf0a3110492f07e21268" kind="function"><name>DisallowedSetEvidencePolicy</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1aaa0959ad33624b4d418d57d286c41852" kind="function"><name>isAllowed</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1a565f023aa750687b96206608d17cf392" kind="function"><name>addEvidence</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1ab3ccdee816e866886e77aaf1c5129ae8" kind="function"><name>addEvidence</name></member>
+    <member refid="classDisallowedSetEvidencePolicy_1ac913c46a483b9c163099ce5b2128b881" kind="function"><name>isEmpty</name></member>
+  </compound>
+  <compound refid="structGoGraph_1_1EdgeProps" kind="struct"><name>GoGraph::EdgeProps</name>
+    <member refid="structGoGraph_1_1EdgeProps_1af9336fa93d326a88970e8dafa64fa85e" kind="variable"><name>relType</name></member>
+    <member refid="structGoGraph_1_1EdgeProps_1ae86950a82bf50040fa0b2c83d7a89fc6" kind="function"><name>~EdgeProps</name></member>
+  </compound>
+  <compound refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor" kind="class"><name>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</name>
+    <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aa38de3516929e2c3bb5bfb96f6a878fd" kind="variable"><name>edgeSet</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1a102382cb59d70ca61c9653ba0d61a76a" kind="variable"><name>eMap</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1af62814b628f72d14881750f0c5e11537" kind="variable"><name>termEdgesMap</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aaadc75e36ad86ac2d65cd4b49dd4ed2e" kind="function"><name>EdgeSetVisitor</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1ad59461b925f7af60975656caaf76915c" kind="function"><name>examine_edge</name></member>
+  </compound>
+  <compound refid="classFrontierSharedInformation_1_1EdgeSetVisitor" kind="class"><name>FrontierSharedInformation::EdgeSetVisitor</name>
+    <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa6e8aef786facd2fbf216812f39a23f9" kind="variable"><name>edgeSet</name></member>
+    <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1a0923de486e3253212b5720c5e1d5550e" kind="variable"><name>eMap</name></member>
+    <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1a6a58939e9fb0f404733a91f0ffc20065" kind="variable"><name>termEdgesMap</name></member>
+    <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1aa988097e1014cbb4df9798deaa2260f7" kind="function"><name>EdgeSetVisitor</name></member>
+    <member refid="classFrontierSharedInformation_1_1EdgeSetVisitor_1acb75e2458170e2c707aff2c2fec5bfd3" kind="function"><name>examine_edge</name></member>
+  </compound>
+  <compound refid="classEntrezGene2GoAnnotationParser" kind="class"><name>EntrezGene2GoAnnotationParser</name>
+    <member refid="classEntrezGene2GoAnnotationParser_1a2118ff50296f85258d2e8780cb0bb3ab" kind="variable"><name>_policy</name></member>
+    <member refid="classEntrezGene2GoAnnotationParser_1aca2333f3cc25595c1283c3b290dd45cf" kind="function"><name>parseAnnotationFile</name></member>
+    <member refid="classEntrezGene2GoAnnotationParser_1a5e418ff06c4e2619c0723b828a8578cd" kind="function"><name>isFileGood</name></member>
+    <member refid="classEntrezGene2GoAnnotationParser_1a56aaa3a03354c6894fed75accfa2637b" kind="function"><name>clone</name></member>
+    <member refid="classEntrezGene2GoAnnotationParser_1ad9fad52a10bd767ff769ee4d953bda3d" kind="function"><name>EntrezGene2GoAnnotationParser</name></member>
+    <member refid="classEntrezGene2GoAnnotationParser_1a50b77b0894f628df64ab3104a99e7f3c" kind="function"><name>EntrezGene2GoAnnotationParser</name></member>
+  </compound>
+  <compound refid="classEvidencePolicyInterface" kind="class"><name>EvidencePolicyInterface</name>
+    <member refid="classEvidencePolicyInterface_1a432d20dd05ec54db46a452ae8d6be4a7" kind="function"><name>isAllowed</name></member>
+  </compound>
+  <compound refid="classExclusivelyInheritedSharedInformation" kind="class"><name>ExclusivelyInheritedSharedInformation</name>
+    <member refid="classExclusivelyInheritedSharedInformation_1a35135778ed6c67466ef93acb1fe4bcf7" kind="variable"><name>_goGraph</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1ae9a6f597d36bb0eecf79cc5526bfc044" kind="variable"><name>_icMap</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1a176bde96479ad6ea0baba4a520b7038e" kind="function"><name>ExclusivelyInheritedSharedInformation</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1a16a51c8f3bd02e6b1e88ebad6faffb5d" kind="function"><name>getCommonDisjointAncestors</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1ae7e51e7f1328cfc5f7b9991c7714eadf" kind="function"><name>sharedInformation</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1ad77022f2d6225c423fa0c5abb8a1443a" kind="function"><name>sharedInformation</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1af435c2641f3ab4a34db2d473216ceb16" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1a0bf2231c6f714d97a5e55ee67893e403" kind="function"><name>hasTerm</name></member>
+    <member refid="classExclusivelyInheritedSharedInformation_1a7b0ec1a7a1fb653450686c7e31346363" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classExperimentalEvidencePolicy" kind="class"><name>ExperimentalEvidencePolicy</name>
+    <member refid="classExperimentalEvidencePolicy_1a842128956f37cc8e5d1cb1c175a6a5a4" kind="function"><name>ExperimentalEvidencePolicy</name></member>
+  </compound>
+  <compound refid="classFrontierSharedInformation" kind="class"><name>FrontierSharedInformation</name>
+    <member refid="classFrontierSharedInformation_1ab49ace5529dddcca2b1217264da909d1" kind="variable"><name>_goGraph</name></member>
+    <member refid="classFrontierSharedInformation_1a05949df307f5f9033744a49621183a0e" kind="variable"><name>_icMap</name></member>
+    <member refid="classFrontierSharedInformation_1afd55b315f784ea9991adaa5320108891" kind="function"><name>FrontierSharedInformation</name></member>
+    <member refid="classFrontierSharedInformation_1a4c9a919ae92d7628bbb5c58ab06c19aa" kind="function"><name>getCommonDisjointAncestors</name></member>
+    <member refid="classFrontierSharedInformation_1afd0bf3ea7bb9f4f05f89cc2597bc2dcf" kind="function"><name>sharedInformation</name></member>
+    <member refid="classFrontierSharedInformation_1a7d9c15e312667dc5ac2af1c7e36f735b" kind="function"><name>sharedInformation</name></member>
+    <member refid="classFrontierSharedInformation_1a8301888fc7343848a9ee307849e49125" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classFrontierSharedInformation_1a4cd9a78345443bdd8c43e7fcee01f9b4" kind="function"><name>hasTerm</name></member>
+    <member refid="classFrontierSharedInformation_1a545b12efcab4551d031fb6125f615080" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classGafAnnotationParser" kind="class"><name>GafAnnotationParser</name>
+    <member refid="classGafAnnotationParser_1a1ec096680cb5e3c4f1111b53cc12ce88" kind="function"><name>GafAnnotationParser</name></member>
+    <member refid="classGafAnnotationParser_1a24dc9179f8df7e913c648ea90f60e3b2" kind="function"><name>GafAnnotationParser</name></member>
+  </compound>
+  <compound refid="classGenomicRegion" kind="class"><name>GenomicRegion</name>
+    <member refid="classGenomicRegion_1a05a207966ea9e12b3bb580edb0569ab3" kind="variable"><name>_chrom</name></member>
+    <member refid="classGenomicRegion_1abb827ad33bd08fcf106229c60bc20106" kind="variable"><name>_name</name></member>
+    <member refid="classGenomicRegion_1af4697f90d465c81be52e9a12f498ca34" kind="variable"><name>_desc</name></member>
+    <member refid="classGenomicRegion_1a48f916f38aad53815e187c28c211a615" kind="function"><name>GenomicRegion</name></member>
+    <member refid="classGenomicRegion_1a249cece2f76a9085d276ee5970ccfa59" kind="function"><name>GenomicRegion</name></member>
+    <member refid="classGenomicRegion_1a8ff9fe5618b932a1caccbd9072ddaaef" kind="function"><name>GenomicRegion</name></member>
+    <member refid="classGenomicRegion_1af370137d0f3498d1611d85d63571af35" kind="function"><name>getChrom</name></member>
+    <member refid="classGenomicRegion_1a206d7c6c224c49b43166b4ad84f1a063" kind="function"><name>getName</name></member>
+    <member refid="classGenomicRegion_1a3ce8ecbe3eb5af63e37720aea716ee1f" kind="function"><name>getDesc</name></member>
+  </compound>
+  <compound refid="classGentlemanUISimilarity" kind="class"><name>GentlemanUISimilarity</name>
+    <member refid="classGentlemanUISimilarity_1aac64eed972ccb9672277b795b088f5a7" kind="typedef"><name>MeanAccumulator</name></member>
+    <member refid="classGentlemanUISimilarity_1a107acffb085bef30138ac89260d9ddc2" kind="typedef"><name>MaxAccumulator</name></member>
+    <member refid="classGentlemanUISimilarity_1afb924baeebc9f174b5c83ed0ee99b5dd" kind="variable"><name>_similarity</name></member>
+    <member refid="classGentlemanUISimilarity_1af6e913ef9fc584207a25dc732e6492b0" kind="function"><name>GentlemanUISimilarity</name></member>
+    <member refid="classGentlemanUISimilarity_1adc95af100919a4c056ab1a45af09c1ac" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classGoaAnnotationParser" kind="class"><name>GoaAnnotationParser</name>
+    <member refid="classGoaAnnotationParser_1a0f1ca353c96c7c25d890cc13c760136b" kind="variable"><name>_policy</name></member>
+    <member refid="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff" kind="function"><name>parseAnnotationFile</name></member>
+    <member refid="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf" kind="function"><name>isFileGood</name></member>
+    <member refid="classGoaAnnotationParser_1a3f415dfbfd2bce5143eef60532ebadea" kind="function"><name>GoaAnnotationParser</name></member>
+    <member refid="classGoaAnnotationParser_1aa06b6ba409d97fe794ae1a7606864e65" kind="function"><name>GoaAnnotationParser</name></member>
+    <member refid="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="classGoGraph" kind="class"><name>GoGraph</name>
+    <member refid="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" kind="typedef"><name>Graph_t</name></member>
+    <member refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kind="typedef"><name>Graph</name></member>
+    <member refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kind="typedef"><name>GoVertex</name></member>
+    <member refid="classGoGraph_1a6a06a7cf401fba8f03f8f68b54744a75" kind="typedef"><name>GoEdge</name></member>
+    <member refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" kind="typedef"><name>GoVertexIterator</name></member>
+    <member refid="classGoGraph_1a749886e553031dcb52c595989129514d" kind="typedef"><name>InEdgeIterator</name></member>
+    <member refid="classGoGraph_1a40291cfa00013cbb9cfb400c1fc92379" kind="typedef"><name>OutEdgeIterator</name></member>
+    <member refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" kind="typedef"><name>VertexIndexMap</name></member>
+    <member refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kind="typedef"><name>EdgeIndexMap</name></member>
+    <member refid="classGoGraph_1a7ac9a67a0467410b06c56981e4a3d708" kind="variable"><name>_goGraph</name></member>
+    <member refid="classGoGraph_1af7bbf9289dad182fb01894561cc64060" kind="variable"><name>_vMap</name></member>
+    <member refid="classGoGraph_1a570b2c82077131bd410a783ee9b55e4d" kind="variable"><name>_eMap</name></member>
+    <member refid="classGoGraph_1aed37b9dae41346687652f74e201f5441" kind="variable"><name>_nameToIndex</name></member>
+    <member refid="classGoGraph_1aa029d7a510c458928f9b9caaa09511f6" kind="variable"><name>_names</name></member>
+    <member refid="classGoGraph_1acd32518881bd71c0495a1f15470f8be8" kind="variable"><name>_descriptions</name></member>
+    <member refid="classGoGraph_1a48e691ba5998d709d457a949687fccca" kind="function"><name>~GoGraph</name></member>
+    <member refid="classGoGraph_1a41f698c030fec41fe59ade6d1c73721f" kind="function"><name>insertTerm</name></member>
+    <member refid="classGoGraph_1a346fcf36ed71479d529a2db974ba8bc3" kind="function"><name>insertRelationship</name></member>
+    <member refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kind="function"><name>getNumVertices</name></member>
+    <member refid="classGoGraph_1acafdd8e76e3813e1276798bed2194232" kind="function"><name>getNumEdges</name></member>
+    <member refid="classGoGraph_1ad82f8d33a7ecc220ac0d93147dafc061" kind="function"><name>initMaps</name></member>
+    <member refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" kind="function"><name>getGraph</name></member>
+    <member refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kind="function"><name>hasTerm</name></member>
+    <member refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kind="function"><name>getTermIndex</name></member>
+    <member refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kind="function"><name>getTermStringIdByIndex</name></member>
+    <member refid="classGoGraph_1aa046ee2d278114b6c28f4d5be71b81f0" kind="function"><name>getTermNameByIndex</name></member>
+    <member refid="classGoGraph_1a175dab9ef8da6c3f06e8f71f21699cf6" kind="function"><name>getTermName</name></member>
+    <member refid="classGoGraph_1aed5db44d61c949aed72482ee41438856" kind="function"><name>getTermDescriptionByIndex</name></member>
+    <member refid="classGoGraph_1abd5d984dd3e1df3d754b1f7e86c487ee" kind="function"><name>getTermDescription</name></member>
+    <member refid="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" kind="function"><name>getRoot</name></member>
+    <member refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kind="function"><name>getTermOntology</name></member>
+    <member refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" kind="function"><name>getTermOntologyByIndex</name></member>
+    <member refid="classGoGraph_1a3ae1998fd4765b2f952290150a7d164b" kind="function"><name>getTermOntologyByVertex</name></member>
+    <member refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" kind="function"><name>getVertexIndex</name></member>
+    <member refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kind="function"><name>getVertexByIndex</name></member>
+    <member refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kind="function"><name>getVertexByName</name></member>
+    <member refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kind="function"><name>getDescendantTerms</name></member>
+    <member refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kind="function"><name>getAncestorTerms</name></member>
+    <member refid="classGoGraph_1a9907ae6a2960e527f02e7cdf9507aeb1" kind="function"><name>getParentTerms</name></member>
+    <member refid="classGoGraph_1ace2ad63bbc6bb2d1dd3e182e6e9c793e" kind="function"><name>getChildTerms</name></member>
+    <member refid="classGoGraph_1ab497e840a1a63b5d25d6a104695a54fb" kind="function"><name>getAllTerms</name></member>
+    <member refid="classGoGraph_1ad4f45995d5cd7ebe4f0c20d8923db268" kind="function"><name>getAllTermsBP</name></member>
+    <member refid="classGoGraph_1a9e5592682e5e78c5d45364bf714fd0cf" kind="function"><name>getAllTermsMF</name></member>
+    <member refid="classGoGraph_1a47246d323ea642a2ffe169fa6da40bcf" kind="function"><name>getAllTermsCC</name></member>
+    <member refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kind="function"><name>filterSetForOntology</name></member>
+    <member refid="classGoGraph_1a083e9fe34636a0e996efd0e9d0d65c3b" kind="function"><name>filterSetForOntology</name></member>
+    <member refid="classGoGraph_1a42f95a4728eac397fce20d2dcfc8a442" kind="function"><name>filterSetForBP</name></member>
+    <member refid="classGoGraph_1ac6e27dbb91d23ea04191abac4c06e401" kind="function"><name>filterSetForBP</name></member>
+    <member refid="classGoGraph_1a22cedc3faddb0ca598620f2868a46046" kind="function"><name>filterSetForMF</name></member>
+    <member refid="classGoGraph_1ac1885e77b0a5f5158e7a94b4404f8c9a" kind="function"><name>filterSetForMF</name></member>
+    <member refid="classGoGraph_1ad1756e5daeea19ec063b67c2a29594be" kind="function"><name>filterSetForCC</name></member>
+    <member refid="classGoGraph_1a23fc2ff15da505fa77536adbd9b7d01b" kind="function"><name>filterSetForCC</name></member>
+    <member refid="classGoGraph_1abaa3ff8f11463a38fd03241ff17d3e75" kind="function"><name>getOntologyTerms</name></member>
+    <member refid="classGoGraph_1a523911c2ddaff88ea64c8f15a01f9fee" kind="function"><name>getInducedSubgraph2</name></member>
+    <member refid="classGoGraph_1a6ec3b30ab6fbd458b4225ec9532a4e14" kind="function"><name>getInducedSubgraph</name></member>
+    <member refid="classGoGraph_1a6ce05821a7dfa86e1fa1de412d2c6cb2" kind="function"><name>getNumComponents</name></member>
+    <member refid="classGoGraph_1a05cbaf87110bd1f2ddae046fae0ec948" kind="function"><name>getDescendantTermsHelper</name></member>
+    <member refid="classGoGraph_1abee7dde9e9bc0896134f2a936bb4089e" kind="function"><name>getAncestorTermsHelper</name></member>
+  </compound>
+  <compound refid="classGoParserFactory" kind="class"><name>GoParserFactory</name>
+    <member refid="classGoParserFactory_1a4b2e6f0c2b364b0ac17854b70b13bc23" kind="variable"><name>_names</name></member>
+    <member refid="classGoParserFactory_1a08c3845092ba0693a8dd9c34553cbe68" kind="variable"><name>_parsers</name></member>
+    <member refid="classGoParserFactory_1ae6a6141ff3e9e10edb8bd94eed661e97" kind="function"><name>GoParserFactory</name></member>
+    <member refid="classGoParserFactory_1a690c83fe9183f8e49e19c46d7951d5ce" kind="function"><name>~GoParserFactory</name></member>
+    <member refid="classGoParserFactory_1a93ca2a2c9ae05777d49e95793ce6dbdf" kind="function"><name>addParser</name></member>
+    <member refid="classGoParserFactory_1a3f3b61ae2954943186646444417911cc" kind="function"><name>getParser</name></member>
+  </compound>
+  <compound refid="classGoParserInterface" kind="class"><name>GoParserInterface</name>
+    <member refid="classGoParserInterface_1aefde440e0d5404b9efa2a16a89e09674" kind="function"><name>parseGoFile</name></member>
+    <member refid="classGoParserInterface_1a0d2db54063c1ff58a0e15f0187af5aa1" kind="function"><name>isFileGood</name></member>
+    <member refid="classGoParserInterface_1a21c4ea01809737ab2975fb71edf6fcd5" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="classJaccardSetSimilarity" kind="class"><name>JaccardSetSimilarity</name>
+    <member refid="classJaccardSetSimilarity_1a91ae983223bd59f776c029c1c63f979d" kind="function"><name>JaccardSetSimilarity</name></member>
+    <member refid="classJaccardSetSimilarity_1a122a04f7f67b96e393fcde1025a306c3" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classJiangConrathSimilarity" kind="class"><name>JiangConrathSimilarity</name>
+    <member refid="classJiangConrathSimilarity_1ab3a03b706a5f6c037ef8286053a07661" kind="variable"><name>_goGraph</name></member>
+    <member refid="classJiangConrathSimilarity_1a43ce2d3ba7522f6a39e396c42a62fc5d" kind="variable"><name>_icMap</name></member>
+    <member refid="classJiangConrathSimilarity_1addd16c8b26721f64b954c3006aa2ed26" kind="function"><name>JiangConrathSimilarity</name></member>
+    <member refid="classJiangConrathSimilarity_1a110fcc0d8b68b6dde9e90d897c859034" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classJiangConrathSimilarity_1a489dcbef15f4a5063af79cb03920cdf9" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classJiangConrathSimilarity_1a9a72b8c9687bfd578d8c51ec8564e87c" kind="function"><name>getMICA</name></member>
+  </compound>
+  <compound refid="classLinSimilarity" kind="class"><name>LinSimilarity</name>
+    <member refid="classLinSimilarity_1a31803620b429d9649d151c2471461846" kind="variable"><name>_goGraph</name></member>
+    <member refid="classLinSimilarity_1af6b79843da0b3bd98a4185a9472dac22" kind="variable"><name>_icMap</name></member>
+    <member refid="classLinSimilarity_1a44739dba8ae706d5248615bd9df9cc31" kind="function"><name>LinSimilarity</name></member>
+    <member refid="classLinSimilarity_1a55d2d8bd6aea6fc3e9b0920f05828a15" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classLinSimilarity_1a576df5bf234556e57e2ddcfda3d73b93" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classLinSimilarity_1ab2e39eac3cf61be4e1b44b988fa6f490" kind="function"><name>getMICA</name></member>
+  </compound>
+  <compound refid="classMgiAnnotationParser" kind="class"><name>MgiAnnotationParser</name>
+    <member refid="classMgiAnnotationParser_1a2f7a0d1080bf0a338ac35f9cd558da20" kind="function"><name>MgiAnnotationParser</name></member>
+    <member refid="classMgiAnnotationParser_1ad21111f35a5476970585eb84d7ffbf70" kind="function"><name>MgiAnnotationParser</name></member>
+  </compound>
+  <compound refid="classMICASharedInformation" kind="class"><name>MICASharedInformation</name>
+    <member refid="classMICASharedInformation_1aa955b45eae3064b744d8c04ee5fc8dec" kind="variable"><name>_goGraph</name></member>
+    <member refid="classMICASharedInformation_1ad4f8eb8e83518c81c9f27ba92490a945" kind="variable"><name>_icMap</name></member>
+    <member refid="classMICASharedInformation_1a6f377d93f091f1b03511d4e107a0b54b" kind="function"><name>MICASharedInformation</name></member>
+    <member refid="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249" kind="function"><name>sharedInformation</name></member>
+    <member refid="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37" kind="function"><name>sharedInformation</name></member>
+    <member refid="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a" kind="function"><name>hasTerm</name></member>
+    <member refid="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classModularJiangConrath" kind="class"><name>ModularJiangConrath</name>
+    <member refid="classModularJiangConrath_1a50012c82575e26f85da7bc9edb8060e1" kind="variable"><name>_siCalculator</name></member>
+    <member refid="classModularJiangConrath_1aae432a48629db51d0f0d00a41d592b87" kind="function"><name>ModularJiangConrath</name></member>
+    <member refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classModularJiangConrath_1a44a9dae983e696676cb41c8cf8f93cb6" kind="function"><name>setSharedInformationCalculator</name></member>
+  </compound>
+  <compound refid="classModularLin" kind="class"><name>ModularLin</name>
+    <member refid="classModularLin_1a2effe77de963d99eda5d069614bd1342" kind="variable"><name>_siCalculator</name></member>
+    <member refid="classModularLin_1a1d70b04bb6d75af7d86da15f33bb1732" kind="function"><name>ModularLin</name></member>
+    <member refid="classModularLin_1a995ef9e4c53b9e96a32259157416df1b" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classModularLin_1a5c4c590808542669e7ba65b60ea8f707" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classModularLin_1a2730653a908d1d3ae8d379d166906646" kind="function"><name>setSharedInformationCalculator</name></member>
+  </compound>
+  <compound refid="classModularResnik" kind="class"><name>ModularResnik</name>
+    <member refid="classModularResnik_1aa676bb378845ff0e2bddb594f4a4dd89" kind="variable"><name>_siCalculator</name></member>
+    <member refid="classModularResnik_1a53d184cbe8caf8222455808b03fdc5c9" kind="function"><name>ModularResnik</name></member>
+    <member refid="classModularResnik_1a78b925c1aadb000d1773ffdacad549df" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classModularResnik_1aba93eb85400287057037d545e5080265" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classModularResnik_1ab0402a3be9f5b1e590c50b38e4a7fd39" kind="function"><name>setSharedInformationCalculator</name></member>
+  </compound>
+  <compound refid="classNCList" kind="class"><name>NCList</name>
+    <member refid="classNCList_1a2999e47110bf2e20bb9fd8e8689715e3" kind="variable"><name>_items</name></member>
+    <member refid="classNCList_1a89e697c86de88207fbe4153600a06cdc" kind="variable"><name>_totalFeatures</name></member>
+    <member refid="classNCList_1ab6c2b7decd70fcde7b54db4e79b64b85" kind="function"><name>NCList</name></member>
+    <member refid="classNCList_1a98e796a8e78efec9d019fb4303d4c8f3" kind="function"><name>getOverlapIndex</name></member>
+    <member refid="classNCList_1a3199031fe2904e2cac57a682e07573c5" kind="function"><name>getOverlapIndex</name></member>
+    <member refid="classNCList_1a01ce26e143d1edf32caf50d472c1cce3" kind="function"><name>getOverlapIndex</name></member>
+    <member refid="classNCList_1a226ca89f140feac5088af4be366bcd58" kind="function"><name>getOverlapIndex</name></member>
+    <member refid="classNCList_1af67a0c748ed4e7d095bb6092c1f291fb" kind="function"><name>getFeatures</name></member>
+    <member refid="classNCList_1acaec79f5de348b5645a856fcde6d58cf" kind="function"><name>getFeaturesInRange</name></member>
+    <member refid="classNCList_1aab695768230d12b179699ca8f19f5d4c" kind="function"><name>getFeaturesInRange</name></member>
+    <member refid="classNCList_1a02b767b23f0007af67174cb2c2e6d92b" kind="function"><name>getFeaturesInRange</name></member>
+    <member refid="classNCList_1a6de14b47eb6b5c7291f5469609d500f6" kind="function"><name>getFeaturesAt</name></member>
+    <member refid="classNCList_1a4bb83c717bfa1b169f48809a4ed32f2e" kind="function"><name>size</name></member>
+    <member refid="classNCList_1a88ba10ba7017497f6912e8f3570239e9" kind="function"><name>numFeatures</name></member>
+    <member refid="classNCList_1a4ea0b59d58fcd385adb2fa4e92aae35b" kind="function"><name>getNodes</name></member>
+    <member refid="classNCList_1a002aee45aea558b91957c4f282b83565" kind="function"><name>getRegionAt</name></member>
+  </compound>
+  <compound refid="classNCList_1_1NCNode" kind="class"><name>NCList::NCNode</name>
+    <member refid="classNCList_1_1NCNode_1a369bc4997b8d3ff5c9c5951bd25ae52a" kind="variable"><name>_region</name></member>
+    <member refid="classNCList_1_1NCNode_1a112ccb41d149a0b9f9ee3e7d10267f48" kind="variable"><name>_containments</name></member>
+    <member refid="classNCList_1_1NCNode_1af213aa74a3ce198f18f85d56135e927c" kind="function"><name>NCNode</name></member>
+    <member refid="classNCList_1_1NCNode_1a171e5700a93bd6fe87cc19201b51c511" kind="function"><name>contains</name></member>
+    <member refid="classNCList_1_1NCNode_1aed822cb1840061636984d861a2bf6dc1" kind="function"><name>contains</name></member>
+    <member refid="classNCList_1_1NCNode_1a7a1dd138ac17fefb6372428d7368fc2f" kind="function"><name>contains</name></member>
+    <member refid="classNCList_1_1NCNode_1a321a463ec67ae56320e292684ccf4f05" kind="function"><name>contains</name></member>
+    <member refid="classNCList_1_1NCNode_1a08dc4cd04cd5f055c795e14015fe99d5" kind="function"><name>overlaps</name></member>
+    <member refid="classNCList_1_1NCNode_1adfcf156f611082e8a878cac5144d57f6" kind="function"><name>overlaps</name></member>
+    <member refid="classNCList_1_1NCNode_1a480672401a51f10fced603acbd913823" kind="function"><name>overlaps</name></member>
+    <member refid="classNCList_1_1NCNode_1a1f892f4b4baea2b6d36b8eb2e92c8181" kind="function"><name>getRegion</name></member>
+  </compound>
+  <compound refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor" kind="class"><name>CoutoGraSMSharedInformation::PathNumDFSVisitor</name>
+    <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1ab5ba5872199670fa732179050ea90745" kind="variable"><name>pathNumMap</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1a457ead14e45903ccc58672c26febe920" kind="function"><name>PathNumDFSVisitor</name></member>
+    <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1af21432223513142232ed9384992894de" kind="function"><name>finish_vertex</name></member>
+  </compound>
+  <compound refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor" kind="class"><name>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</name>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a734067d157a131d1c221a60799f6a583" kind="variable"><name>pathNumMap</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1ae12cf8a1fb8ef6cd5de5c3f02dadf09f" kind="function"><name>PathNumDFSVisitor</name></member>
+    <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a08f0f6fd5bca52b5b83b90dd79b160a9" kind="function"><name>finish_vertex</name></member>
+  </compound>
+  <compound refid="classPekarStaabSimilarity" kind="class"><name>PekarStaabSimilarity</name>
+    <member refid="classPekarStaabSimilarity_1a033957c3526f84c4374a0ae4807bbf5c" kind="variable"><name>_goGraph</name></member>
+    <member refid="classPekarStaabSimilarity_1a583c5bdd143be07302b1ea35f18ba5ed" kind="variable"><name>_depthMap</name></member>
+    <member refid="classPekarStaabSimilarity_1a8da126a2d3dc923dd1749e2f395d41cf" kind="function"><name>PekarStaabSimilarity</name></member>
+    <member refid="classPekarStaabSimilarity_1a56bb39dcebcf8909f2006d0698f29211" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classPekarStaabSimilarity_1a2de7c29ad8e24467c6b66862320953a1" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classPekarStaabSimilarity_1aef5d3e6c69bcd7f614092f342ce624c9" kind="function"><name>getLCA</name></member>
+  </compound>
+  <compound refid="classPrecomputedMatrixTermSimilarity" kind="class"><name>PrecomputedMatrixTermSimilarity</name>
+    <member refid="classPrecomputedMatrixTermSimilarity_1af6f9ae4d45dba71865cec37a8367da72" kind="variable"><name>_termToIndex</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1a8303bb8b4c37c08549775c9f2ccdb89d" kind="variable"><name>_matrix</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1a7b41f4870cea2125e2997fb5eea5f6fb" kind="function"><name>PrecomputedMatrixTermSimilarity</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1accf2925db5da35cc040f2016813ed631" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1ac2057bd30526a99741c06f8b629b6ae2" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1a341a4dba0540acd9087091aa63c51220" kind="function"><name>projectTermSet</name></member>
+    <member refid="classPrecomputedMatrixTermSimilarity_1a8f24569f2631a8aaec6f982068299872" kind="function"><name>hasTerm</name></member>
+  </compound>
+  <compound refid="classRapidXmlGoParser" kind="class"><name>RapidXmlGoParser</name>
+    <member refid="classRapidXmlGoParser_1a7c42085d86c58983601fdada4aaacd9d" kind="function"><name>parseGoFile</name></member>
+    <member refid="classRapidXmlGoParser_1a945a31fd86bd35720d4158caa35302da" kind="function"><name>isFileGood</name></member>
+    <member refid="classRapidXmlGoParser_1af69641207e01be186f523939ce03f847" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="classRelationshipPolicyInterface" kind="class"><name>RelationshipPolicyInterface</name>
+    <member refid="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb" kind="function"><name>isAllowed</name></member>
+  </compound>
+  <compound refid="classRelevanceSimilarity" kind="class"><name>RelevanceSimilarity</name>
+    <member refid="classRelevanceSimilarity_1a3e5a111c1ce3c00a86bdbabec41be9c3" kind="variable"><name>_goGraph</name></member>
+    <member refid="classRelevanceSimilarity_1a863582c86409678f998553f36efb71f0" kind="variable"><name>_icMap</name></member>
+    <member refid="classRelevanceSimilarity_1a8c53e47a65cc1cb78aca2e94671b6534" kind="function"><name>RelevanceSimilarity</name></member>
+    <member refid="classRelevanceSimilarity_1a77fd7721c3c98611328f97b6b8c3f9e3" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classRelevanceSimilarity_1ad54bb47157112a225b353c47d1e2fad5" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classRelevanceSimilarity_1aa1db55c7a378e45ff66565e5e1043a8e" kind="function"><name>getMICA</name></member>
+  </compound>
+  <compound refid="classResnikSimilarity" kind="class"><name>ResnikSimilarity</name>
+    <member refid="classResnikSimilarity_1aa4953703e06a99068af531068a58462b" kind="variable"><name>_goGraph</name></member>
+    <member refid="classResnikSimilarity_1a3c1491ec7a6e2302d7e3537d6ee215d7" kind="variable"><name>_icMap</name></member>
+    <member refid="classResnikSimilarity_1a0e95354ebfc331dd4a73e823501378da" kind="function"><name>ResnikSimilarity</name></member>
+    <member refid="classResnikSimilarity_1a340ace5dbdd105847d5fade4c8d20ade" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classResnikSimilarity_1a4e1d6ef4268a905a117fd0c054e4c39b" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+    <member refid="classResnikSimilarity_1ace3ae20bcef468c53925e45c647584c0" kind="function"><name>getMICA</name></member>
+  </compound>
+  <compound refid="classSharedInformationInterface" kind="class"><name>SharedInformationInterface</name>
+    <member refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kind="function"><name>sharedInformation</name></member>
+    <member refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6" kind="function"><name>sharedInformation</name></member>
+    <member refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999" kind="function"><name>maxInformationContent</name></member>
+    <member refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kind="function"><name>hasTerm</name></member>
+    <member refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" kind="function"><name>isSameOntology</name></member>
+  </compound>
+  <compound refid="classSimpleRegion" kind="class"><name>SimpleRegion</name>
+    <member refid="classSimpleRegion_1a397f3c8897d30259081e41ef9346745b" kind="variable"><name>_id</name></member>
+    <member refid="classSimpleRegion_1a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60" kind="variable"><name>_start</name></member>
+    <member refid="classSimpleRegion_1aaf09baf8cd5cce7f8ad7083fd0b47e78" kind="variable"><name>_end</name></member>
+    <member refid="classSimpleRegion_1a3f3502f62398e26fb88ea7b90ff7d3b8" kind="function"><name>SimpleRegion</name></member>
+    <member refid="classSimpleRegion_1a5432bba56f93741e76de989ccde3ecd5" kind="function"><name>SimpleRegion</name></member>
+    <member refid="classSimpleRegion_1a3175b332ee5cbe1d6c83986666c481d0" kind="function"><name>midpoint</name></member>
+    <member refid="classSimpleRegion_1ab3e6068e293f2b8f0da920d8feb1f12b" kind="function"><name>distance</name></member>
+    <member refid="classSimpleRegion_1aa0f04be989b3fd8726b60ea8af05408e" kind="function"><name>contains</name></member>
+    <member refid="classSimpleRegion_1a71f1e66b268298559e319a39125b20e1" kind="function"><name>contains</name></member>
+    <member refid="classSimpleRegion_1aedbd4cac0fc5318e612af3db76f19541" kind="function"><name>contains</name></member>
+    <member refid="classSimpleRegion_1a39b10cf9d7ba8073da42e2cb95072bff" kind="function"><name>contains</name></member>
+    <member refid="classSimpleRegion_1a1f98da632e768077c967d63819cefedd" kind="function"><name>overlaps</name></member>
+    <member refid="classSimpleRegion_1a0caf8d9707b7b0b29555e8bafd32ed47" kind="function"><name>overlaps</name></member>
+    <member refid="classSimpleRegion_1a087f24f509cc26164a99e8509b720b28" kind="function"><name>overlaps</name></member>
+    <member refid="classSimpleRegion_1a7c0d4f68409075dba1de716a328e9079" kind="function"><name>getStart</name></member>
+    <member refid="classSimpleRegion_1afb4924be3627dedec850a3ada174b083" kind="function"><name>getEnd</name></member>
+    <member refid="classSimpleRegion_1a1014d259fc8c94088b866be2d57835bc" kind="function"><name>getId</name></member>
+  </compound>
+  <compound refid="classStandardOboGoParser" kind="class"><name>StandardOboGoParser</name>
+    <member refid="classStandardOboGoParser_1a1afc17f3b06657469274ec2eebb9b2ad" kind="variable"><name>_parser</name></member>
+    <member refid="classStandardOboGoParser_1a4e2f8057b057244740a493b36fb56ae6" kind="variable"><name>_policy</name></member>
+    <member refid="classStandardOboGoParser_1a4eb0d67f0c78456d1e0a9a3f55294424" kind="function"><name>parseGoFile</name></member>
+    <member refid="classStandardOboGoParser_1af6c430101cecf73606ae979d4de6ea7f" kind="function"><name>isFileGood</name></member>
+    <member refid="classStandardOboGoParser_1aa4c7c326bf20327645fe6df7d57e3fc3" kind="function"><name>clone</name></member>
+    <member refid="classStandardOboGoParser_1ac7d246fea7b1cad797242405c38f8d4a" kind="function"><name>StandardOboGoParser</name></member>
+  </compound>
+  <compound refid="classStandardRelationshipPolicy" kind="class"><name>StandardRelationshipPolicy</name>
+    <member refid="classStandardRelationshipPolicy_1adb32786e0361af34b3d7052de3ab7867" kind="variable"><name>_relationshipMap</name></member>
+    <member refid="classStandardRelationshipPolicy_1a8998d51c3752dfcde0b8931607178c4d" kind="function"><name>StandardRelationshipPolicy</name></member>
+    <member refid="classStandardRelationshipPolicy_1af23f42bba1feb00a3b22a96ae17ffacf" kind="function"><name>StandardRelationshipPolicy</name></member>
+    <member refid="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4" kind="function"><name>isAllowed</name></member>
+  </compound>
+  <compound refid="classStandardXmlGoParser" kind="class"><name>StandardXmlGoParser</name>
+    <member refid="classStandardXmlGoParser_1ae2e2fd216ae6579f55ef0e988c5e0636" kind="variable"><name>_parser</name></member>
+    <member refid="classStandardXmlGoParser_1a195011f5475fd11985217c6218610d5b" kind="variable"><name>_policy</name></member>
+    <member refid="classStandardXmlGoParser_1ae56413ab11d1fa8f3870f5bcc262d3f8" kind="function"><name>parseGoFile</name></member>
+    <member refid="classStandardXmlGoParser_1a74c344440ef2ce5b30536e09691c92ab" kind="function"><name>isFileGood</name></member>
+    <member refid="classStandardXmlGoParser_1ac05cc1de0c2fc74e089169f9baea1f0d" kind="function"><name>clone</name></member>
+    <member refid="classStandardXmlGoParser_1aedda17aae5f75704829b279d2bfe7ac7" kind="function"><name>StandardXmlGoParser</name></member>
+  </compound>
+  <compound refid="classGoGraph_1_1SubgraphBFSVisitor" kind="class"><name>GoGraph::SubgraphBFSVisitor</name>
+    <member refid="classGoGraph_1_1SubgraphBFSVisitor_1ae7465011aaeff0e9e9ad590c95afb9f2" kind="variable"><name>subgraph</name></member>
+    <member refid="classGoGraph_1_1SubgraphBFSVisitor_1a7a8c17092b1b9a24a49fae8a9b2aa95b" kind="function"><name>SubgraphBFSVisitor</name></member>
+    <member refid="classGoGraph_1_1SubgraphBFSVisitor_1ab3e9021193c04d5c0e6abed2ba01b964" kind="function"><name>discover_vertex</name></member>
+  </compound>
+  <compound refid="classTermDepthMap" kind="class"><name>TermDepthMap</name>
+    <member refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kind="variable"><name>_nameToIndex</name></member>
+    <member refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kind="variable"><name>_depths</name></member>
+    <member refid="classTermDepthMap_1abb4c7ebeedc74ae59a8399de33b48389" kind="function"><name>TermDepthMap</name></member>
+    <member refid="classTermDepthMap_1a819c7cb3f26e54e13195a508aff06cdc" kind="function"><name>TermDepthMap</name></member>
+    <member refid="classTermDepthMap_1aec4f9d62c638d0f6519d49bb13d96263" kind="function"><name>~TermDepthMap</name></member>
+    <member refid="classTermDepthMap_1acad3e6559688f3338f7d28fffe53f3ab" kind="function"><name>getValues</name></member>
+    <member refid="classTermDepthMap_1a2cc0c96cf91020df4a035f089ef1a608" kind="function"><name>getKeys</name></member>
+    <member refid="classTermDepthMap_1a11f5ed887edd0b335ac64171ebecf3f3" kind="function"><name>hasTerm</name></member>
+    <member refid="classTermDepthMap_1a687255e97647a9afc0a5f0197d0b05c9" kind="function"><name>operator[]</name></member>
+    <member refid="classTermDepthMap_1af6ba97e619f7fe0a9e906c6eccfd98fa" kind="function"><name>getValue</name></member>
+  </compound>
+  <compound refid="classTermInformationContentMap" kind="class"><name>TermInformationContentMap</name>
+    <member refid="classTermInformationContentMap_1ae58d9e3773eff919841e2de522ececd1" kind="function"><name>TermInformationContentMap</name></member>
+    <member refid="classTermInformationContentMap_1a082c021a27478403aad9bb99c0e975e6" kind="function"><name>badIdValue</name></member>
+    <member refid="classTermInformationContentMap_1a86494db712efa761fb671d51a6902c25" kind="function"><name>TermInformationContentMap</name></member>
+  </compound>
+  <compound refid="classTermProbabilityMap" kind="class"><name>TermProbabilityMap</name>
+    <member refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kind="variable"><name>_nameToIndex</name></member>
+    <member refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kind="variable"><name>_probabilities</name></member>
+    <member refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kind="variable"><name>_isSingleAnnoMin</name></member>
+    <member refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" kind="variable"><name>_bp_normalization_min_1anno</name></member>
+    <member refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" kind="variable"><name>_bp_normalization_min_minAnno</name></member>
+    <member refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" kind="variable"><name>_mf_normalization_min_1anno</name></member>
+    <member refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" kind="variable"><name>_mf_normalization_min_minAnno</name></member>
+    <member refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" kind="variable"><name>_cc_normalization_min_1anno</name></member>
+    <member refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" kind="variable"><name>_cc_normalization_min_minAnno</name></member>
+    <member refid="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" kind="function"><name>TermProbabilityMap</name></member>
+    <member refid="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" kind="function"><name>TermProbabilityMap</name></member>
+    <member refid="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" kind="function"><name>~TermProbabilityMap</name></member>
+    <member refid="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" kind="function"><name>getValues</name></member>
+    <member refid="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" kind="function"><name>getKeys</name></member>
+    <member refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kind="function"><name>hasTerm</name></member>
+    <member refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" kind="function"><name>badIdValue</name></member>
+    <member refid="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" kind="function"><name>operator[]</name></member>
+    <member refid="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" kind="function"><name>getValue</name></member>
+    <member refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" kind="function"><name>getMinBP</name></member>
+    <member refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" kind="function"><name>getMinMF</name></member>
+    <member refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" kind="function"><name>getMinCC</name></member>
+  </compound>
+  <compound refid="classTermSetSimilarityInterface" kind="class"><name>TermSetSimilarityInterface</name>
+    <member refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04" kind="function"><name>calculateSimilarity</name></member>
+  </compound>
+  <compound refid="classTermSimilarityInterface" kind="class"><name>TermSimilarityInterface</name>
+    <member refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47" kind="function"><name>calculateTermSimilarity</name></member>
+    <member refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d" kind="function"><name>calculateNormalizedTermSimilarity</name></member>
+  </compound>
+  <compound refid="classTermSimilarityWriter" kind="class"><name>TermSimilarityWriter</name>
+    <member refid="classTermSimilarityWriter_1ae16972c3cf767292a938605b71f909e3" kind="variable"><name>_goGraph</name></member>
+    <member refid="classTermSimilarityWriter_1a4bb2f89c0fb740ff8a03700b0ef711e6" kind="variable"><name>_annoData</name></member>
+    <member refid="classTermSimilarityWriter_1a53dffc62cbc87ba24bc4e10ea0def16c" kind="function"><name>TermSimilarityWriter</name></member>
+    <member refid="classTermSimilarityWriter_1a6675f612d2f294c2a126576a393b2307" kind="function"><name>writeSimilarityMatrix</name></member>
+    <member refid="classTermSimilarityWriter_1ab47132660b1a4a2528dff1b97f934b1b" kind="function"><name>writeSimilarityMatrixBP</name></member>
+    <member refid="classTermSimilarityWriter_1ac541f5cb901cece561648acdfa294653" kind="function"><name>writeSimilarityMatrixMF</name></member>
+    <member refid="classTermSimilarityWriter_1ad021eceaae4427c3e9efea93a63a15ad" kind="function"><name>writeSimilarityMatrixCC</name></member>
+    <member refid="classTermSimilarityWriter_1a54b3466636f9e8eb7715346c9a4c469a" kind="function"><name>writeMatrix</name></member>
+  </compound>
+  <compound refid="structGoGraph_1_1VertexProps" kind="struct"><name>GoGraph::VertexProps</name>
+    <member refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kind="variable"><name>termId</name></member>
+    <member refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" kind="variable"><name>ontology</name></member>
+    <member refid="structGoGraph_1_1VertexProps_1ad60aea44237ee479a4c8768226778590" kind="function"><name>~VertexProps</name></member>
+  </compound>
+  <compound refid="namespaceAccumulators" kind="namespace"><name>Accumulators</name>
+    <member refid="namespaceAccumulators_1a475b123bb5929d13a2f78b40f43a1257" kind="typedef"><name>MinAccumulator</name></member>
+    <member refid="namespaceAccumulators_1ae68012df9b3c9adaca0807437b8b0129" kind="typedef"><name>MaxAccumulator</name></member>
+    <member refid="namespaceAccumulators_1a42d249e1cf4e4f6c496ab61b7372cf4a" kind="typedef"><name>MeanAccumulator</name></member>
+    <member refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kind="typedef"><name>SimpleAccumulator</name></member>
+    <member refid="namespaceAccumulators_1a69e0958469bde3d2198062b52880ec68" kind="typedef"><name>CovarianceAccumulator</name></member>
+    <member refid="namespaceAccumulators_1aa858a2eb0c818655fa5d66012dd41b09" kind="typedef"><name>VarianceAccumulator</name></member>
+    <member refid="namespaceAccumulators_1ac0b3251fec13bffecc672a1937401ac6" kind="function"><name>extractMin</name></member>
+    <member refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kind="function"><name>extractMax</name></member>
+    <member refid="namespaceAccumulators_1a42a703c5c61fedbdd8aecd2e558a4467" kind="function"><name>extractMean</name></member>
+    <member refid="namespaceAccumulators_1aaf73f870f07e3daaef9259f4f05f9879" kind="function"><name>extractMin</name></member>
+    <member refid="namespaceAccumulators_1ad2a34538b20bf4420510e3f67c36f75a" kind="function"><name>extractMax</name></member>
+    <member refid="namespaceAccumulators_1ae241aec21f9cee46878d1a589dcba563" kind="function"><name>extractMean</name></member>
+    <member refid="namespaceAccumulators_1a89e5b416840bfe8e056d708b6a236da4" kind="function"><name>extractCovariance</name></member>
+    <member refid="namespaceAccumulators_1a69a4c9a9e60fc7e6e22b43daa75e48bd" kind="function"><name>extractVariance</name></member>
+    <member refid="namespaceAccumulators_1ab0dcf3f9dcccf475b65259308a4507df" kind="function"><name>extractSD</name></member>
+  </compound>
+  <compound refid="namespaceAppUtilities" kind="namespace"><name>AppUtilities</name>
+    <member refid="namespaceAppUtilities_1acc1e4029d959cb721fdd93a4fbc652df" kind="function"><name>parseParamFile</name></member>
+    <member refid="namespaceAppUtilities_1ad5b236fff03294eed3f7d7d325a0120c" kind="function"><name>checkParams</name></member>
+    <member refid="namespaceAppUtilities_1aa7a8c715b9f34da9c0ef8e743683dfc5" kind="function"><name>paramList</name></member>
+    <member refid="namespaceAppUtilities_1a122dbc37274a53baca0ad1f152869180" kind="function"><name>parseSimpleFile</name></member>
+    <member refid="namespaceAppUtilities_1a2abdcb1877526f1093efe85c4f751aa9" kind="function"><name>splitTake</name></member>
+    <member refid="namespaceAppUtilities_1a3ea1b7b49b7925da941433b1f604b95a" kind="function"><name>setToVec</name></member>
+    <member refid="namespaceAppUtilities_1a80196823944aee9964b4803f902e4805" kind="function"><name>vecToSet</name></member>
+  </compound>
+  <compound refid="namespaceboost_1_1accumulators" kind="namespace"><name>boost::accumulators</name>
+  </compound>
+  <compound refid="namespaceEnrichmentTools" kind="namespace"><name>EnrichmentTools</name>
+    <member refid="namespaceEnrichmentTools_1a0e1b36171f7c26ceb065fe556b9d7067" kind="function"><name>getDescendantGenes</name></member>
+    <member refid="namespaceEnrichmentTools_1a94a88459ae63a175a3461c3c26385601" kind="function"><name>oneSidedRawPvalue_hyper</name></member>
+    <member refid="namespaceEnrichmentTools_1a82aede901a0585f834f0e4a363dc6276" kind="function"><name>enrichmentSignificance</name></member>
+  </compound>
+  <compound refid="namespaceGO" kind="namespace"><name>GO</name>
+    <member refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kind="enum"><name>Onto</name></member>
+    <member refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3a2a3da8e0233416d02626d806e0ec0014" kind="enumvalue"><name>BP</name></member>
+    <member refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3acd04da4b64f682e1eeff26ccb43757e6" kind="enumvalue"><name>MF</name></member>
+    <member refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3a947e13624fdbee711003719eb930afad" kind="enumvalue"><name>CC</name></member>
+    <member refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3a189f2c52bc07c9530109c6bffec74f71" kind="enumvalue"><name>ONTO_ERROR</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kind="enum"><name>EvidenceCode</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3ac457854b40daaaf647db2a762ba21005" kind="enumvalue"><name>EXP</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a04001b7190a066362c58f200375d43ef" kind="enumvalue"><name>IDA</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a36eea86f0262ba5c910d86dcdb3738fe" kind="enumvalue"><name>IPI</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a98ca28937ed0f3f4607da8a159c130cb" kind="enumvalue"><name>IMP</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a6d5545c4e33a2ccdcd650b48fb535a0a" kind="enumvalue"><name>IGI</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a2d5336807265437258b5798c245d0a0f" kind="enumvalue"><name>IEP</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3ac9a8c531c34663701f982f9c4d21ca1c" kind="enumvalue"><name>ISS</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a4d82994137df168f2d900cff6ecdcd18" kind="enumvalue"><name>ISO</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3abbce81fb8403d617278dc51c371b0eb2" kind="enumvalue"><name>ISA</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a8889e52bfc1353e50aeba83da35b9db2" kind="enumvalue"><name>ISM</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a1def84337918f875b12222eda44474b2" kind="enumvalue"><name>IGC</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a24af6e9bf3677d9be0415ca2a42e6384" kind="enumvalue"><name>IBA</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a2d3d82570795ce5edcc39b7499e60198" kind="enumvalue"><name>IBD</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a441b43a50b1cbe50e5c5bf0e0d7d904e" kind="enumvalue"><name>IKR</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3acade0f009b1a83304a3e9bb43f85b4f7" kind="enumvalue"><name>IRD</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a70edefebc17ebc6667e68e96bfc6cf71" kind="enumvalue"><name>RCA</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3ac467bf3ae5531dd107dfe3bdeca5ec90" kind="enumvalue"><name>TAS</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3ab44caba6399ac45491dbb3043ea41981" kind="enumvalue"><name>NAS</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a7d5666c515bcddce8d719c4d15be068e" kind="enumvalue"><name>IC</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a00f2c901ec653772b6de605969c6558d" kind="enumvalue"><name>ND</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a1571999f8e4e1d6cb5326da8c53e314b" kind="enumvalue"><name>IEA</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3ad456fc57bdf1f60405da2c6ffb80ca1a" kind="enumvalue"><name>NR</name></member>
+    <member refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3a1665c12f435ea7f4095dd853d90dc2f3" kind="enumvalue"><name>ECODE_ERROR</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kind="enum"><name>Relationship</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993a4b35b073fbbd9431fb308f969d6363c5" kind="enumvalue"><name>IS_A</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993a3d5e739406f6cb546e784ab49effe78e" kind="enumvalue"><name>PART_OF</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993a728541c3f9b2e31fa58c58ccccb5364d" kind="enumvalue"><name>REGULATES</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993a5ec76656b62a59aac91093d6a50ca72c" kind="enumvalue"><name>POSITIVELY_REGULATES</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993ad27a657c5781e2b040171fce4699936d" kind="enumvalue"><name>NEGATIVELY_REGULATES</name></member>
+    <member refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993a4b3e819b56eaa1f8827cbb20d1910e1f" kind="enumvalue"><name>REL_ERROR</name></member>
+    <member refid="namespaceGO_1af6c1634f4d87758c78c18232e36b8463" kind="variable"><name>ontologyStringCodes</name></member>
+    <member refid="namespaceGO_1a6a91f575e8a81657a67b52bcfb507e67" kind="variable"><name>evidenceStringCodes</name></member>
+    <member refid="namespaceGO_1a35a0e9d4885b9ef4abbb65adb6bd5bc7" kind="variable"><name>relationshipStringCodes</name></member>
+    <member refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kind="function"><name>getRootTermBP</name></member>
+    <member refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kind="function"><name>getRootTermMF</name></member>
+    <member refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kind="function"><name>getRootTermCC</name></member>
+    <member refid="namespaceGO_1a27850aa3de798d067cc60a03a8552fae" kind="function"><name>ontologyStringToCode</name></member>
+    <member refid="namespaceGO_1adf5775fc9cf071de5a920e7634a12f40" kind="function"><name>ontologyToString</name></member>
+    <member refid="namespaceGO_1a4403262f174622b96e89612c02e46532" kind="function"><name>evidenceStringToCode</name></member>
+    <member refid="namespaceGO_1a11b7264a995616db04a0170821310ef8" kind="function"><name>evidenceToString</name></member>
+    <member refid="namespaceGO_1a6418070e75662d9f3531324cc0c99334" kind="function"><name>relationshipStringToCode</name></member>
+    <member refid="namespaceGO_1a4621c38a5e5ed683f83bd0a9ca6e51ee" kind="function"><name>relationshipToString</name></member>
+  </compound>
+  <compound refid="namespaceSetUtilities" kind="namespace"><name>SetUtilities</name>
+    <member refid="namespaceSetUtilities_1a6ade212eac1c05ff2d454da076425103" kind="function"><name>set_contains</name></member>
+    <member refid="namespaceSetUtilities_1abf607d9895124b4739a6ae54045ded83" kind="function"><name>convert_vector</name></member>
+    <member refid="namespaceSetUtilities_1a21b8cc78d5f516eaa3c4448f0b5f2fbc" kind="function"><name>set_intersection</name></member>
+    <member refid="namespaceSetUtilities_1a493a071064f6c199e4e9e0b9bcfc6b38" kind="function"><name>set_union</name></member>
+    <member refid="namespaceSetUtilities_1af7010f0e4ec6ac0851fba2372980d355" kind="function"><name>set_difference</name></member>
+  </compound>
+  <compound refid="Accumulators_8hpp" kind="file"><name>Accumulators.hpp</name>
+  </compound>
+  <compound refid="AllowedRelationshipOboGoParser_8hpp" kind="file"><name>AllowedRelationshipOboGoParser.hpp</name>
+  </compound>
+  <compound refid="AllowedRelationshipXmlGoParser_8hpp" kind="file"><name>AllowedRelationshipXmlGoParser.hpp</name>
+  </compound>
+  <compound refid="AllowedSetEvidencePolicy_8hpp" kind="file"><name>AllowedSetEvidencePolicy.hpp</name>
+  </compound>
+  <compound refid="AllowedSetRelationshipPolicy_8hpp" kind="file"><name>AllowedSetRelationshipPolicy.hpp</name>
+  </compound>
+  <compound refid="AllPairsAverageSetSimilarity_8hpp" kind="file"><name>AllPairsAverageSetSimilarity.hpp</name>
+  </compound>
+  <compound refid="AllPairsMaxSetSimilarity_8hpp" kind="file"><name>AllPairsMaxSetSimilarity.hpp</name>
+  </compound>
+  <compound refid="AncestorMeanSharedInformation_8hpp" kind="file"><name>AncestorMeanSharedInformation.hpp</name>
+  </compound>
+  <compound refid="AnnotationData_8hpp" kind="file"><name>AnnotationData.hpp</name>
+  </compound>
+  <compound refid="AnnotationParserFactory_8hpp" kind="file"><name>AnnotationParserFactory.hpp</name>
+  </compound>
+  <compound refid="AnnotationParserInterface_8hpp" kind="file"><name>AnnotationParserInterface.hpp</name>
+  </compound>
+  <compound refid="AppUtilities_8hpp" kind="file"><name>AppUtilities.hpp</name>
+  </compound>
+  <compound refid="BestMatchAverageSetSimilarity_8hpp" kind="file"><name>BestMatchAverageSetSimilarity.hpp</name>
+  </compound>
+  <compound refid="CoutoGraSMAdjustedSharedInformation_8hpp" kind="file"><name>CoutoGraSMAdjustedSharedInformation.hpp</name>
+  </compound>
+  <compound refid="CoutoGraSMSharedInformation_8hpp" kind="file"><name>CoutoGraSMSharedInformation.hpp</name>
+  </compound>
+  <compound refid="DisallowedSetEvidencePolicy_8hpp" kind="file"><name>DisallowedSetEvidencePolicy.hpp</name>
+  </compound>
+  <compound refid="EnrichmentTools_8hpp" kind="file"><name>EnrichmentTools.hpp</name>
+  </compound>
+  <compound refid="EntrezGene2GoAnnotationParser_8hpp" kind="file"><name>EntrezGene2GoAnnotationParser.hpp</name>
+  </compound>
+  <compound refid="EvidencePolicyInterface_8hpp" kind="file"><name>EvidencePolicyInterface.hpp</name>
+  </compound>
+  <compound refid="ExclusivelyInheritedSharedInformation_8hpp" kind="file"><name>ExclusivelyInheritedSharedInformation.hpp</name>
+  </compound>
+  <compound refid="ExperimentalEvidencePolicy_8hpp" kind="file"><name>ExperimentalEvidencePolicy.hpp</name>
+  </compound>
+  <compound refid="FrontierSharedInformation_8hpp" kind="file"><name>FrontierSharedInformation.hpp</name>
+  </compound>
+  <compound refid="GafAnnotationParser_8hpp" kind="file"><name>GafAnnotationParser.hpp</name>
+  </compound>
+  <compound refid="GentlemanSimUISetSimilarity_8hpp" kind="file"><name>GentlemanSimUISetSimilarity.hpp</name>
+  </compound>
+  <compound refid="ggtk_8hpp" kind="file"><name>ggtk.hpp</name>
+  </compound>
+  <compound refid="GoaAnnotationParser_8hpp" kind="file"><name>GoaAnnotationParser.hpp</name>
+  </compound>
+  <compound refid="GoEnums_8hpp" kind="file"><name>GoEnums.hpp</name>
+    <member refid="GoEnums_8hpp_1af9871b9c7b481c4d67f63752dba3027d" kind="define"><name>NUM_ONTOLOGIES</name></member>
+    <member refid="GoEnums_8hpp_1a4ea9f75f70b6ec30401167b3ef6f48d0" kind="define"><name>NUM_EVIDENCES</name></member>
+    <member refid="GoEnums_8hpp_1acb72edbc6c777f98d52271bc82f46808" kind="define"><name>NUM_RELATIONSHIPS</name></member>
+  </compound>
+  <compound refid="GoGraph_8hpp" kind="file"><name>GoGraph.hpp</name>
+  </compound>
+  <compound refid="GoParserFactory_8hpp" kind="file"><name>GoParserFactory.hpp</name>
+  </compound>
+  <compound refid="GoParserInterface_8hpp" kind="file"><name>GoParserInterface.hpp</name>
+  </compound>
+  <compound refid="JaccardSetSimilarity_8hpp" kind="file"><name>JaccardSetSimilarity.hpp</name>
+  </compound>
+  <compound refid="JiangConrathSimilarity_8hpp" kind="file"><name>JiangConrathSimilarity.hpp</name>
+  </compound>
+  <compound refid="LinSimilarity_8hpp" kind="file"><name>LinSimilarity.hpp</name>
+  </compound>
+  <compound refid="MgiAnnotationParser_8hpp" kind="file"><name>MgiAnnotationParser.hpp</name>
+  </compound>
+  <compound refid="MICASharedInformation_8hpp" kind="file"><name>MICASharedInformation.hpp</name>
+  </compound>
+  <compound refid="ModularJiangConrath_8hpp" kind="file"><name>ModularJiangConrath.hpp</name>
+  </compound>
+  <compound refid="ModularLin_8hpp" kind="file"><name>ModularLin.hpp</name>
+  </compound>
+  <compound refid="ModularResnik_8hpp" kind="file"><name>ModularResnik.hpp</name>
+  </compound>
+  <compound refid="NCList_8hpp" kind="file"><name>NCList.hpp</name>
+  </compound>
+  <compound refid="PekarStaabSimilarity_8hpp" kind="file"><name>PekarStaabSimilarity.hpp</name>
+  </compound>
+  <compound refid="PrecomputedMatrixTermSimilarity_8hpp" kind="file"><name>PrecomputedMatrixTermSimilarity.hpp</name>
+  </compound>
+  <compound refid="RapidXmlGoParser_8hpp" kind="file"><name>RapidXmlGoParser.hpp</name>
+  </compound>
+  <compound refid="RelationshipPolicyInterface_8hpp" kind="file"><name>RelationshipPolicyInterface.hpp</name>
+  </compound>
+  <compound refid="RelevanceSimilarity_8hpp" kind="file"><name>RelevanceSimilarity.hpp</name>
+  </compound>
+  <compound refid="ResnikSimilarity_8hpp" kind="file"><name>ResnikSimilarity.hpp</name>
+  </compound>
+  <compound refid="SetUtilities_8hpp" kind="file"><name>SetUtilities.hpp</name>
+  </compound>
+  <compound refid="SharedInformationInterface_8hpp" kind="file"><name>SharedInformationInterface.hpp</name>
+  </compound>
+  <compound refid="SimpleRegion_8hpp" kind="file"><name>SimpleRegion.hpp</name>
+    <member refid="SimpleRegion_8hpp_1a58616307a1a06454f0c411535e66a55b" kind="function"><name>NumberToString</name></member>
+    <member refid="SimpleRegion_8hpp_1a8224a318ce4ccec2a9fb5612f9344466" kind="function"><name>operator&lt;</name></member>
+    <member refid="SimpleRegion_8hpp_1a8840ed48dc908f8d37026c73e6f46dc1" kind="function"><name>operator&gt;</name></member>
+  </compound>
+  <compound refid="StandardOboGoParser_8hpp" kind="file"><name>StandardOboGoParser.hpp</name>
+  </compound>
+  <compound refid="StandardRelationshipPolicy_8hpp" kind="file"><name>StandardRelationshipPolicy.hpp</name>
+  </compound>
+  <compound refid="StandardXmlGoParser_8hpp" kind="file"><name>StandardXmlGoParser.hpp</name>
+  </compound>
+  <compound refid="TermDepthMap_8hpp" kind="file"><name>TermDepthMap.hpp</name>
+  </compound>
+  <compound refid="TermInformationContentMap_8hpp" kind="file"><name>TermInformationContentMap.hpp</name>
+  </compound>
+  <compound refid="TermProbabilityMap_8hpp" kind="file"><name>TermProbabilityMap.hpp</name>
+  </compound>
+  <compound refid="TermSetSimilarityInterface_8hpp" kind="file"><name>TermSetSimilarityInterface.hpp</name>
+  </compound>
+  <compound refid="TermSimilarityInterface_8hpp" kind="file"><name>TermSimilarityInterface.hpp</name>
+  </compound>
+  <compound refid="TermSimilarityWriter_8hpp" kind="file"><name>TermSimilarityWriter.hpp</name>
+  </compound>
+  <compound refid="dir_c55fad5f0052b1b91460b549eed8e630" kind="dir"><name>ggtk</name>
+  </compound>
+</doxygenindex>

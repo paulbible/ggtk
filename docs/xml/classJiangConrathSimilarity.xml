@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classJiangConrathSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>JiangConrathSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="JiangConrathSimilarity_8hpp" local="no">ggtk/JiangConrathSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJiangConrathSimilarity_1ab3a03b706a5f6c037ef8286053a07661" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* JiangConrathSimilarity::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="144" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJiangConrathSimilarity_1a43ce2d3ba7522f6a39e396c42a62fc5d" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap JiangConrathSimilarity::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="145" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJiangConrathSimilarity_1addd16c8b26721f64b954c3006aa2ed26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JiangConrathSimilarity::JiangConrathSimilarity</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>JiangConrathSimilarity</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="41" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classJiangConrathSimilarity_1a110fcc0d8b68b6dde9e90d897c859034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double JiangConrathSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using JiangConrath similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the JiangConrath similarity or the information content of the most informative common ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="50" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="50" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classJiangConrathSimilarity_1a489dcbef15f4a5063af79cb03920cdf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double JiangConrathSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized JiangConrath similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the JiangConrath similarity scaled between 0 and 1 [0,1] inclusive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="96" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="96" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classJiangConrathSimilarity_1a9a72b8c9687bfd578d8c51ec8564e87c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string JiangConrathSimilarity::getMICA</definition>
+        <argsstring>(boost::unordered_set&lt; std::string &gt; &amp;ancestorsA, boost::unordered_set&lt; std::string &gt; &amp;ancestorsB)</argsstring>
+        <name>getMICA</name>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsA</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the most informative common ancestor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method searches the sets to determine the most informatics ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/JiangConrathSimilarity.hpp" line="110" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="110" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate Jiang Conrath similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Jiang Conrath similarity.</para><para>Jiang, J. J., &amp; Conrath, D. W. (1997). Semantic similarity based on corpus statistics and lexical taxonomy. In Proc. of 10th International Conference on Research on Computational Linguistics, Taiwan.</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>distance = IC(termA) + IC(termB) - 2*IC(MICA) maxDistance = 2*IC(single annotaiotn) similarity = 1 - distance/maxDistance (see Lord et al.) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="130">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="129">
+        <label>JiangConrathSimilarity</label>
+        <link refid="classJiangConrathSimilarity"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="132">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="131">
+        <label>JiangConrathSimilarity</label>
+        <link refid="classJiangConrathSimilarity"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/JiangConrathSimilarity.hpp" line="33" column="1" bodyfile="ggtk/JiangConrathSimilarity.hpp" bodystart="33" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classJiangConrathSimilarity_1ab3a03b706a5f6c037ef8286053a07661" prot="private" virt="non-virtual"><scope>JiangConrathSimilarity</scope><name>_goGraph</name></member>
+      <member refid="classJiangConrathSimilarity_1a43ce2d3ba7522f6a39e396c42a62fc5d" prot="private" virt="non-virtual"><scope>JiangConrathSimilarity</scope><name>_icMap</name></member>
+      <member refid="classJiangConrathSimilarity_1a489dcbef15f4a5063af79cb03920cdf9" prot="public" virt="virtual"><scope>JiangConrathSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classJiangConrathSimilarity_1a110fcc0d8b68b6dde9e90d897c859034" prot="public" virt="virtual"><scope>JiangConrathSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classJiangConrathSimilarity_1a9a72b8c9687bfd578d8c51ec8564e87c" prot="public" virt="non-virtual"><scope>JiangConrathSimilarity</scope><name>getMICA</name></member>
+      <member refid="classJiangConrathSimilarity_1addd16c8b26721f64b954c3006aa2ed26" prot="public" virt="non-virtual"><scope>JiangConrathSimilarity</scope><name>JiangConrathSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

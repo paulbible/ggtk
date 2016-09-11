@@ -1,0 +1,84 @@
+\hypertarget{classAnnotationParserInterface}{}\section{Annotation\+Parser\+Interface Class Reference}
+\label{classAnnotationParserInterface}\index{Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}}
+
+
+An interface class to define annotation parsers.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Annotation\+Parser\+Interface.\+hpp$>$}
+
+Inheritance diagram for Annotation\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.705314cm]{classAnnotationParserInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$ \hyperlink{classAnnotationParserInterface_a1d5cfb902f088a9cf96fdc6b1e5529ab}{parse\+Annotation\+File} (std\+::string file\+Name)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for parsing the file and returning an \hyperlink{classAnnotationData}{Annotation\+Data} object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classAnnotationParserInterface_a5848b37ca77d78213c87cc5aefebf030}{is\+File\+Good} (const std\+::string \&file\+Name)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method for checking if a file exists and is formatted correctly. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} $\ast$ \hyperlink{classAnnotationParserInterface_a966edeb9aaaa5e94f4c1436afc731a24}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual clone function for factory pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface class to define annotation parsers. 
+
+This class defines the interface of an annotation parser. Pure virtual methods require that parsers implement these methods. 
+
+\subsection{Member Function Documentation}
+\index{Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}!clone@{clone}}
+\index{clone@{clone}!Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{clone()=0}{clone()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Annotation\+Parser\+Interface}$\ast$ Annotation\+Parser\+Interface\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnnotationParserInterface_a966edeb9aaaa5e94f4c1436afc731a24}{}\label{classAnnotationParserInterface_a966edeb9aaaa5e94f4c1436afc731a24}
+
+
+A pure virtual clone function for factory pattern. 
+
+This pure virtual method returns an instance of this interface. This method is used in a factory class to have the ability to decide the parser at runtime. 
+
+Implemented in \hyperlink{classGoaAnnotationParser_a266297bb5a107572c98515f692684369}{Goa\+Annotation\+Parser}, and \hyperlink{classEntrezGene2GoAnnotationParser_a56aaa3a03354c6894fed75accfa2637b}{Entrez\+Gene2\+Go\+Annotation\+Parser}.
+
+\index{Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}!is\+File\+Good@{is\+File\+Good}}
+\index{is\+File\+Good@{is\+File\+Good}!Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{is\+File\+Good(const std\+::string \&file\+Name)=0}{isFileGood(const std::string &fileName)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Annotation\+Parser\+Interface\+::is\+File\+Good (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnnotationParserInterface_a5848b37ca77d78213c87cc5aefebf030}{}\label{classAnnotationParserInterface_a5848b37ca77d78213c87cc5aefebf030}
+
+
+A pure virtual method for checking if a file exists and is formatted correctly. 
+
+This pure virtual function delegates format checking to the implementing class. 
+
+Implemented in \hyperlink{classGoaAnnotationParser_aa8093812131c34de52b084ff2b02abbf}{Goa\+Annotation\+Parser}, and \hyperlink{classEntrezGene2GoAnnotationParser_a5e418ff06c4e2619c0723b828a8578cd}{Entrez\+Gene2\+Go\+Annotation\+Parser}.
+
+\index{Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}!parse\+Annotation\+File@{parse\+Annotation\+File}}
+\index{parse\+Annotation\+File@{parse\+Annotation\+File}!Annotation\+Parser\+Interface@{Annotation\+Parser\+Interface}}
+\subsubsection[{\texorpdfstring{parse\+Annotation\+File(std\+::string file\+Name)=0}{parseAnnotationFile(std::string fileName)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Annotation\+Data}$\ast$ Annotation\+Parser\+Interface\+::parse\+Annotation\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnnotationParserInterface_a1d5cfb902f088a9cf96fdc6b1e5529ab}{}\label{classAnnotationParserInterface_a1d5cfb902f088a9cf96fdc6b1e5529ab}
+
+
+A pure virtual method for parsing the file and returning an \hyperlink{classAnnotationData}{Annotation\+Data} object. 
+
+This pure virtual method requires any parser to have a method that takes a filename string and returns an \hyperlink{classAnnotationData}{Annotation\+Data} object pointer. 
+
+Implemented in \hyperlink{classGoaAnnotationParser_a2973e2dcfecea10e09da13ed0ab27dff}{Goa\+Annotation\+Parser}, and \hyperlink{classEntrezGene2GoAnnotationParser_aca2333f3cc25595c1283c3b290dd45cf}{Entrez\+Gene2\+Go\+Annotation\+Parser}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Annotation\+Parser\+Interface.\+hpp\end{DoxyCompactItemize}

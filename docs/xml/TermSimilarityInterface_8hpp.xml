@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="TermSimilarityInterface_8hpp" kind="file" language="C++">
+    <compoundname>TermSimilarityInterface.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="GoEnums_8hpp" local="no">ggtk/GoEnums.hpp</includes>
+    <includedby refid="AllPairsAverageSetSimilarity_8hpp" local="no">ggtk/AllPairsAverageSetSimilarity.hpp</includedby>
+    <includedby refid="AllPairsMaxSetSimilarity_8hpp" local="no">ggtk/AllPairsMaxSetSimilarity.hpp</includedby>
+    <includedby refid="BestMatchAverageSetSimilarity_8hpp" local="no">ggtk/BestMatchAverageSetSimilarity.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="JiangConrathSimilarity_8hpp" local="no">ggtk/JiangConrathSimilarity.hpp</includedby>
+    <includedby refid="LinSimilarity_8hpp" local="no">ggtk/LinSimilarity.hpp</includedby>
+    <includedby refid="ModularJiangConrath_8hpp" local="no">ggtk/ModularJiangConrath.hpp</includedby>
+    <includedby refid="ModularLin_8hpp" local="no">ggtk/ModularLin.hpp</includedby>
+    <includedby refid="ModularResnik_8hpp" local="no">ggtk/ModularResnik.hpp</includedby>
+    <includedby refid="PekarStaabSimilarity_8hpp" local="no">ggtk/PekarStaabSimilarity.hpp</includedby>
+    <includedby refid="PrecomputedMatrixTermSimilarity_8hpp" local="no">ggtk/PrecomputedMatrixTermSimilarity.hpp</includedby>
+    <includedby refid="RelevanceSimilarity_8hpp" local="no">ggtk/RelevanceSimilarity.hpp</includedby>
+    <includedby refid="ResnikSimilarity_8hpp" local="no">ggtk/ResnikSimilarity.hpp</includedby>
+    <includedby refid="TermSimilarityWriter_8hpp" local="no">ggtk/TermSimilarityWriter.hpp</includedby>
+    <incdepgraph>
+      <node id="1314">
+        <label>string</label>
+      </node>
+      <node id="1315">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface.hpp"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1326">
+        <label>ggtk/PekarStaabSimilarity.hpp</label>
+        <link refid="PekarStaabSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1319">
+        <label>ggtk/AllPairsMaxSetSimilarity.hpp</label>
+        <link refid="AllPairsMaxSetSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1320">
+        <label>ggtk/BestMatchAverageSetSimilarity.hpp</label>
+        <link refid="BestMatchAverageSetSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1329">
+        <label>ggtk/ResnikSimilarity.hpp</label>
+        <link refid="ResnikSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1325">
+        <label>ggtk/ModularResnik.hpp</label>
+        <link refid="ModularResnik_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1323">
+        <label>ggtk/ModularJiangConrath.hpp</label>
+        <link refid="ModularJiangConrath_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1322">
+        <label>ggtk/LinSimilarity.hpp</label>
+        <link refid="LinSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1324">
+        <label>ggtk/ModularLin.hpp</label>
+        <link refid="ModularLin_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1328">
+        <label>ggtk/RelevanceSimilarity.hpp</label>
+        <link refid="RelevanceSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1321">
+        <label>ggtk/JiangConrathSimilarity.hpp</label>
+        <link refid="JiangConrathSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1330">
+        <label>ggtk/TermSimilarityWriter.hpp</label>
+        <link refid="TermSimilarityWriter_8hpp_source"/>
+      </node>
+      <node id="1317">
+        <label>ggtk/AllPairsAverageSetSimilarity.hpp</label>
+        <link refid="AllPairsAverageSetSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1327">
+        <label>ggtk/PrecomputedMatrixTermSimilarity.hpp</label>
+        <link refid="PrecomputedMatrixTermSimilarity_8hpp_source"/>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1316">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface.hpp"/>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+        <childnode refid="1325" relation="include">
+        </childnode>
+        <childnode refid="1326" relation="include">
+        </childnode>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTermSimilarityInterface" prot="public">TermSimilarityInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TERM_SIMILARITY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TERM_SIMILARITY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoEnums.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"></codeline>
+<codeline lineno="18" refid="classTermSimilarityInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47" kindref="member">calculateTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d" kindref="member">calculateNormalizedTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/TermSimilarityInterface.hpp"/>
+  </compounddef>
+</doxygen>

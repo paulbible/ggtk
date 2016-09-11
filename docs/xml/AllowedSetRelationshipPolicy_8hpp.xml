@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="AllowedSetRelationshipPolicy_8hpp" kind="file" language="C++">
+    <compoundname>AllowedSetRelationshipPolicy.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="GoEnums_8hpp" local="no">ggtk/GoEnums.hpp</includes>
+    <includes refid="RelationshipPolicyInterface_8hpp" local="no">ggtk/RelationshipPolicyInterface.hpp</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="83">
+        <label>string</label>
+      </node>
+      <node id="85">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="81">
+        <label>vector</label>
+      </node>
+      <node id="84">
+        <label>ggtk/RelationshipPolicyInterface.hpp</label>
+        <link refid="RelationshipPolicyInterface_8hpp_source"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>ggtk/AllowedSetRelationshipPolicy.hpp</label>
+        <link refid="AllowedSetRelationshipPolicy.hpp"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="87">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="86">
+        <label>ggtk/AllowedSetRelationshipPolicy.hpp</label>
+        <link refid="AllowedSetRelationshipPolicy.hpp"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAllowedSetRelationshipPolicy" prot="public">AllowedSetRelationshipPolicy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ALLOWED_SET_RELATIONSHIP_POLICY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALLOWED_SET_RELATIONSHIP_POLICY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoEnums.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/RelationshipPolicyInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_map.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classAllowedSetRelationshipPolicy" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllowedSetRelationshipPolicy" kindref="compound">AllowedSetRelationshipPolicy</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"></codeline>
+<codeline lineno="30" refid="classAllowedSetRelationshipPolicy_1aebffb7e69930219d89133625ff8936cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1aebffb7e69930219d89133625ff8936cf" kindref="member">AllowedSetRelationshipPolicy</ref>(){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap<sp/>=<sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="38" refid="classAllowedSetRelationshipPolicy_1a9cd20d2c44a96736c0a74b7e962dae04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1a9cd20d2c44a96736c0a74b7e962dae04" kindref="member">AllowedSetRelationshipPolicy</ref>(std::vector&lt;GO::Relationship&gt;<sp/>relationships){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap<sp/>=<sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>relationships.size();++i){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[relationships.at(i)]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"></codeline>
+<codeline lineno="49" refid="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90" kindref="member">isAllowed</ref>(<ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relationship){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_relationshipMap.find(relationship)<sp/>!=<sp/>_relationshipMap.end();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"></codeline>
+<codeline lineno="58" refid="classAllowedSetRelationshipPolicy_1a5da8f3fb718fba44354e56a4595968de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1a5da8f3fb718fba44354e56a4595968de" kindref="member">addRelationship</ref>(<ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relationship){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[relationship]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"></codeline>
+<codeline lineno="66" refid="classAllowedSetRelationshipPolicy_1a013089769911f87f1d8513bc6006dbf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1a013089769911f87f1d8513bc6006dbf9" kindref="member">addRelationship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;relString){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relationship<sp/>=<sp/><ref refid="namespaceGO_1a6418070e75662d9f3531324cc0c99334" kindref="member">GO::relationshipStringToCode</ref>(relString);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(relationship<sp/>!=<sp/>GO::REL_ERROR){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[relationship]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"></codeline>
+<codeline lineno="78" refid="classAllowedSetRelationshipPolicy_1a543f028def505d8df941a308ab315075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAllowedSetRelationshipPolicy_1a543f028def505d8df941a308ab315075" kindref="member">isEmpty</ref>(){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_relationshipMap.size()<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;<sp/>_relationshipMap;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/AllowedSetRelationshipPolicy.hpp"/>
+  </compounddef>
+</doxygen>

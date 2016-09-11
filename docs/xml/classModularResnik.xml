@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classModularResnik" kind="class" language="C++" prot="public">
+    <compoundname>ModularResnik</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="ModularResnik_8hpp" local="no">ggtk/ModularResnik.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classModularResnik_1aa676bb378845ff0e2bddb594f4a4dd89" prot="private" static="no" mutable="no">
+        <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+        <definition>SharedInformationInterface* ModularResnik::_siCalculator</definition>
+        <argsstring></argsstring>
+        <name>_siCalculator</name>
+        <briefdescription>
+<para>private <ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> member used for calculations </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularResnik.hpp" line="82" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classModularResnik_1a53d184cbe8caf8222455808b03fdc5c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ModularResnik::ModularResnik</definition>
+        <argsstring>(SharedInformationInterface *sharedInformationCalculator)</argsstring>
+        <name>ModularResnik</name>
+        <param>
+          <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+          <declname>sharedInformationCalculator</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularResnik.hpp" line="36" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularResnik_1a78b925c1aadb000d1773ffdacad549df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ModularResnik::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Resnik similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Resnik similarity or the information content of the most informative common ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularResnik.hpp" line="44" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularResnik_1aba93eb85400287057037d545e5080265" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ModularResnik::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized Resnik similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Resnik similarity divided by the maximum possible similarity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularResnik.hpp" line="59" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classModularResnik_1ab0402a3be9f5b1e590c50b38e4a7fd39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModularResnik::setSharedInformationCalculator</definition>
+        <argsstring>(SharedInformationInterface *newSharedInformationCalulator)</argsstring>
+        <name>setSharedInformationCalculator</name>
+        <param>
+          <type><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref> *</type>
+          <declname>newSharedInformationCalulator</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ModularResnik.hpp" line="75" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate resnik similarity between 2 terms using a shared information interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Resnik similarity. Philip Resnik (1995). &quot;Using information content to evaluate semantic similarity in a taxonomy&quot;. In Chris S. Mellish (Ed.). Proceedings of the 14th international joint conference on Artificial intelligence (IJCAI&apos;95)</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>maximun information content of all shared ancestors IC(MICA) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="155">
+        <label>ModularResnik</label>
+        <link refid="classModularResnik"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="157">
+        <label>ModularResnik</label>
+        <link refid="classModularResnik"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/ModularResnik.hpp" line="28" column="1" bodyfile="ggtk/ModularResnik.hpp" bodystart="28" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classModularResnik_1aa676bb378845ff0e2bddb594f4a4dd89" prot="private" virt="non-virtual"><scope>ModularResnik</scope><name>_siCalculator</name></member>
+      <member refid="classModularResnik_1aba93eb85400287057037d545e5080265" prot="public" virt="virtual"><scope>ModularResnik</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classModularResnik_1a78b925c1aadb000d1773ffdacad549df" prot="public" virt="virtual"><scope>ModularResnik</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classModularResnik_1a53d184cbe8caf8222455808b03fdc5c9" prot="public" virt="non-virtual"><scope>ModularResnik</scope><name>ModularResnik</name></member>
+      <member refid="classModularResnik_1ab0402a3be9f5b1e590c50b38e4a7fd39" prot="public" virt="non-virtual"><scope>ModularResnik</scope><name>setSharedInformationCalculator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+\hypertarget{classSimpleRegion}{}\section{Simple\+Region Class Reference}
+\label{classSimpleRegion}\index{Simple\+Region@{Simple\+Region}}
+
+
+{\ttfamily \#include $<$ggtk/\+Simple\+Region.\+hpp$>$}
+
+Inheritance diagram for Simple\+Region\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSimpleRegion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimpleRegion_a3f3502f62398e26fb88ea7b90ff7d3b8}{Simple\+Region} ()
+\item 
+\hyperlink{classSimpleRegion_a5432bba56f93741e76de989ccde3ecd5}{Simple\+Region} (const size\+\_\+t id, const size\+\_\+t start, const size\+\_\+t end)
+\item 
+const size\+\_\+t \hyperlink{classSimpleRegion_a3175b332ee5cbe1d6c83986666c481d0}{midpoint} () const 
+\item 
+int \hyperlink{classSimpleRegion_ab3e6068e293f2b8f0da920d8feb1f12b}{distance} (const \hyperlink{classSimpleRegion}{Simple\+Region} \&rhs)
+\item 
+bool \hyperlink{classSimpleRegion_aa0f04be989b3fd8726b60ea8af05408e}{contains} (const \hyperlink{classSimpleRegion}{Simple\+Region} \&rhs)
+\item 
+bool \hyperlink{classSimpleRegion_a71f1e66b268298559e319a39125b20e1}{contains} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&rhs)
+\item 
+bool \hyperlink{classSimpleRegion_aedbd4cac0fc5318e612af3db76f19541}{contains} (const size\+\_\+t rhs\+\_\+start, const size\+\_\+t rhs\+\_\+end)
+\item 
+bool \hyperlink{classSimpleRegion_a39b10cf9d7ba8073da42e2cb95072bff}{contains} (const size\+\_\+t point)
+\item 
+bool \hyperlink{classSimpleRegion_a1f98da632e768077c967d63819cefedd}{overlaps} (const \hyperlink{classSimpleRegion}{Simple\+Region} \&rhs)
+\item 
+bool \hyperlink{classSimpleRegion_a0caf8d9707b7b0b29555e8bafd32ed47}{overlaps} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&rhs)
+\item 
+bool \hyperlink{classSimpleRegion_a087f24f509cc26164a99e8509b720b28}{overlaps} (const size\+\_\+t rhs\+\_\+start, const size\+\_\+t rhs\+\_\+end)
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_a7c0d4f68409075dba1de716a328e9079}{get\+Start} ()
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_afb4924be3627dedec850a3ada174b083}{get\+End} ()
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_a1014d259fc8c94088b866be2d57835bc}{get\+Id} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_a397f3c8897d30259081e41ef9346745b}{\+\_\+id}
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60}{\+\_\+start}
+\item 
+size\+\_\+t \hyperlink{classSimpleRegion_aaf09baf8cd5cce7f8ad7083fd0b47e78}{\+\_\+end}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Region class to be used with \hyperlink{classNCList}{N\+C\+List} This class is used to represent region and genome data. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Simple\+Region@{Simple\+Region}!Simple\+Region@{Simple\+Region}}
+\index{Simple\+Region@{Simple\+Region}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{Simple\+Region()}{SimpleRegion()}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Region\+::\+Simple\+Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a3f3502f62398e26fb88ea7b90ff7d3b8}{}\label{classSimpleRegion_a3f3502f62398e26fb88ea7b90ff7d3b8}
+Default constructor Initializes a simple region. \index{Simple\+Region@{Simple\+Region}!Simple\+Region@{Simple\+Region}}
+\index{Simple\+Region@{Simple\+Region}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{Simple\+Region(const size\+\_\+t id, const size\+\_\+t start, const size\+\_\+t end)}{SimpleRegion(const size_t id, const size_t start, const size_t end)}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Region\+::\+Simple\+Region (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{id, }
+\item[{const size\+\_\+t}]{start, }
+\item[{const size\+\_\+t}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a5432bba56f93741e76de989ccde3ecd5}{}\label{classSimpleRegion_a5432bba56f93741e76de989ccde3ecd5}
+Parameterized constructor Allows the creation of a regions with user specified values 
+
+\subsection{Member Function Documentation}
+\index{Simple\+Region@{Simple\+Region}!contains@{contains}}
+\index{contains@{contains}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{contains(const Simple\+Region \&rhs)}{contains(const SimpleRegion &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Region} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_aa0f04be989b3fd8726b60ea8af05408e}{}\label{classSimpleRegion_aa0f04be989b3fd8726b60ea8af05408e}
+contains test with \hyperlink{classSimpleRegion}{Simple\+Region} objects. Does the region contain rhs? \index{Simple\+Region@{Simple\+Region}!contains@{contains}}
+\index{contains@{contains}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{contains(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&rhs)}{contains(const std::pair< size_t, size_t > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::contains (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a71f1e66b268298559e319a39125b20e1}{}\label{classSimpleRegion_a71f1e66b268298559e319a39125b20e1}
+Tests the contains relationship with a start end pair Does the region contain the start end pair? \index{Simple\+Region@{Simple\+Region}!contains@{contains}}
+\index{contains@{contains}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{contains(const size\+\_\+t rhs\+\_\+start, const size\+\_\+t rhs\+\_\+end)}{contains(const size_t rhs_start, const size_t rhs_end)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::contains (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{rhs\+\_\+start, }
+\item[{const size\+\_\+t}]{rhs\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_aedbd4cac0fc5318e612af3db76f19541}{}\label{classSimpleRegion_aedbd4cac0fc5318e612af3db76f19541}
+Tests the contains relationship with start and end coordinates Does the region contain the interval between start and end? \index{Simple\+Region@{Simple\+Region}!contains@{contains}}
+\index{contains@{contains}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{contains(const size\+\_\+t point)}{contains(const size_t point)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::contains (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a39b10cf9d7ba8073da42e2cb95072bff}{}\label{classSimpleRegion_a39b10cf9d7ba8073da42e2cb95072bff}
+Tests the contains relationship with a single point Does the region contain the point coordinate? \index{Simple\+Region@{Simple\+Region}!distance@{distance}}
+\index{distance@{distance}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{distance(const Simple\+Region \&rhs)}{distance(const SimpleRegion &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}int Simple\+Region\+::distance (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Region} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_ab3e6068e293f2b8f0da920d8feb1f12b}{}\label{classSimpleRegion_ab3e6068e293f2b8f0da920d8feb1f12b}
+Simple distance between two regions. Calculates the distance between two regions by calculating the distance between their midpoints. \index{Simple\+Region@{Simple\+Region}!get\+End@{get\+End}}
+\index{get\+End@{get\+End}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{get\+End()}{getEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::get\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_afb4924be3627dedec850a3ada174b083}{}\label{classSimpleRegion_afb4924be3627dedec850a3ada174b083}
+accessor for end coordinate returns the interval\textquotesingle{}s end coordinate \index{Simple\+Region@{Simple\+Region}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{get\+Id()}{getId()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a1014d259fc8c94088b866be2d57835bc}{}\label{classSimpleRegion_a1014d259fc8c94088b866be2d57835bc}
+accessor for the id returns the interval\textquotesingle{}s id \index{Simple\+Region@{Simple\+Region}!get\+Start@{get\+Start}}
+\index{get\+Start@{get\+Start}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{get\+Start()}{getStart()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::get\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a7c0d4f68409075dba1de716a328e9079}{}\label{classSimpleRegion_a7c0d4f68409075dba1de716a328e9079}
+accessor for start coordinate returns the interval\textquotesingle{}s start coordinate \index{Simple\+Region@{Simple\+Region}!midpoint@{midpoint}}
+\index{midpoint@{midpoint}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{midpoint() const }{midpoint() const }}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t Simple\+Region\+::midpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a3175b332ee5cbe1d6c83986666c481d0}{}\label{classSimpleRegion_a3175b332ee5cbe1d6c83986666c481d0}
+Calculates the midpoint of a region Simple mid point of a region. (end -\/ start)/2 \index{Simple\+Region@{Simple\+Region}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{overlaps(const Simple\+Region \&rhs)}{overlaps(const SimpleRegion &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\+Region} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a1f98da632e768077c967d63819cefedd}{}\label{classSimpleRegion_a1f98da632e768077c967d63819cefedd}
+Tests the overlap relationship with a region Does the region overlap the rhs region? \index{Simple\+Region@{Simple\+Region}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{overlaps(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&rhs)}{overlaps(const std::pair< size_t, size_t > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a0caf8d9707b7b0b29555e8bafd32ed47}{}\label{classSimpleRegion_a0caf8d9707b7b0b29555e8bafd32ed47}
+Tests the overlap relationship with a start end pair Does the region overlap the start end pair? \index{Simple\+Region@{Simple\+Region}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{overlaps(const size\+\_\+t rhs\+\_\+start, const size\+\_\+t rhs\+\_\+end)}{overlaps(const size_t rhs_start, const size_t rhs_end)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\+Region\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{rhs\+\_\+start, }
+\item[{const size\+\_\+t}]{rhs\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSimpleRegion_a087f24f509cc26164a99e8509b720b28}{}\label{classSimpleRegion_a087f24f509cc26164a99e8509b720b28}
+Tests the overlap relationship with start and end coordinates Does the region overlap the interval defines by start and end? 
+
+\subsection{Member Data Documentation}
+\index{Simple\+Region@{Simple\+Region}!\+\_\+end@{\+\_\+end}}
+\index{\+\_\+end@{\+\_\+end}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{\+\_\+end}{_end}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::\+\_\+end}\hypertarget{classSimpleRegion_aaf09baf8cd5cce7f8ad7083fd0b47e78}{}\label{classSimpleRegion_aaf09baf8cd5cce7f8ad7083fd0b47e78}
+the end coordinate for the region \index{Simple\+Region@{Simple\+Region}!\+\_\+id@{\+\_\+id}}
+\index{\+\_\+id@{\+\_\+id}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{\+\_\+id}{_id}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::\+\_\+id}\hypertarget{classSimpleRegion_a397f3c8897d30259081e41ef9346745b}{}\label{classSimpleRegion_a397f3c8897d30259081e41ef9346745b}
+a generic id for the region \index{Simple\+Region@{Simple\+Region}!\+\_\+start@{\+\_\+start}}
+\index{\+\_\+start@{\+\_\+start}!Simple\+Region@{Simple\+Region}}
+\subsubsection[{\texorpdfstring{\+\_\+start}{_start}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Simple\+Region\+::\+\_\+start}\hypertarget{classSimpleRegion_a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60}{}\label{classSimpleRegion_a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60}
+the start coordinate for the region 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Simple\+Region.\+hpp\end{DoxyCompactItemize}

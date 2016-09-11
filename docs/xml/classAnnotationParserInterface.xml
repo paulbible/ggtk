@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAnnotationParserInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AnnotationParserInterface</compoundname>
+    <derivedcompoundref refid="classEntrezGene2GoAnnotationParser" prot="public" virt="non-virtual">EntrezGene2GoAnnotationParser</derivedcompoundref>
+    <derivedcompoundref refid="classGoaAnnotationParser" prot="public" virt="non-virtual">GoaAnnotationParser</derivedcompoundref>
+    <includes refid="AnnotationParserInterface_8hpp" local="no">ggtk/AnnotationParserInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+        <definition>virtual AnnotationData* AnnotationParserInterface::parseAnnotationFile</definition>
+        <argsstring>(std::string fileName)=0</argsstring>
+        <name>parseAnnotationFile</name>
+        <reimplementedby refid="classEntrezGene2GoAnnotationParser_1aca2333f3cc25595c1283c3b290dd45cf">parseAnnotationFile</reimplementedby>
+        <reimplementedby refid="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff">parseAnnotationFile</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for parsing the file and returning an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any parser to have a method that takes a filename string and returns an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserInterface.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AnnotationParserInterface::isFileGood</definition>
+        <argsstring>(const std::string &amp;fileName)=0</argsstring>
+        <name>isFileGood</name>
+        <reimplementedby refid="classEntrezGene2GoAnnotationParser_1a5e418ff06c4e2619c0723b828a8578cd">isFileGood</reimplementedby>
+        <reimplementedby refid="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf">isFileGood</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for checking if a file exists and is formatted correctly. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual function delegates format checking to the implementing class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserInterface.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> *</type>
+        <definition>virtual AnnotationParserInterface* AnnotationParserInterface::clone</definition>
+        <argsstring>()=0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classEntrezGene2GoAnnotationParser_1a56aaa3a03354c6894fed75accfa2637b">clone</reimplementedby>
+        <reimplementedby refid="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369">clone</reimplementedby>
+        <briefdescription>
+<para>A pure virtual clone function for factory pattern. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method returns an instance of this interface. This method is used in a factory class to have the ability to decide the parser at runtime. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserInterface.hpp" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface class to define annotation parsers. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the interface of an annotation parser. Pure virtual methods require that parsers implement these methods. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>MgiAnnotationParser</label>
+        <link refid="classMgiAnnotationParser"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="35">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>EntrezGene2GoAnnotationParser</label>
+        <link refid="classEntrezGene2GoAnnotationParser"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>GafAnnotationParser</label>
+        <link refid="classGafAnnotationParser"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/AnnotationParserInterface.hpp" line="19" column="1" bodyfile="ggtk/AnnotationParserInterface.hpp" bodystart="19" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24" prot="public" virt="pure-virtual"><scope>AnnotationParserInterface</scope><name>clone</name></member>
+      <member refid="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030" prot="public" virt="pure-virtual"><scope>AnnotationParserInterface</scope><name>isFileGood</name></member>
+      <member refid="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab" prot="public" virt="pure-virtual"><scope>AnnotationParserInterface</scope><name>parseAnnotationFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

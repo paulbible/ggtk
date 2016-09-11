@@ -1,0 +1,158 @@
+\hypertarget{classTermDepthMap}{}\section{Term\+Depth\+Map Class Reference}
+\label{classTermDepthMap}\index{Term\+Depth\+Map@{Term\+Depth\+Map}}
+
+
+A class to calculate the depth of a \hyperlink{namespaceGO}{GO} term in the ontology.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Depth\+Map.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTermDepthMap_abb4c7ebeedc74ae59a8399de33b48389}{Term\+Depth\+Map} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor. \end{DoxyCompactList}\item 
+\hyperlink{classTermDepthMap_a819c7cb3f26e54e13195a508aff06cdc}{Term\+Depth\+Map} ()
+\begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classTermDepthMap_aec4f9d62c638d0f6519d49bb13d96263}{$\sim$\+Term\+Depth\+Map} ()
+\begin{DoxyCompactList}\small\item\em A default desctructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classTermDepthMap_acad3e6559688f3338f7d28fffe53f3ab}{get\+Values} ()
+\begin{DoxyCompactList}\small\item\em Accessor for probablities vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classTermDepthMap_a2cc0c96cf91020df4a035f089ef1a608}{get\+Keys} ()
+\begin{DoxyCompactList}\small\item\em Function to return all the keys in the map. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermDepthMap_a11f5ed887edd0b335ac64171ebecf3f3}{has\+Term} (std\+::string test\+Term)
+\begin{DoxyCompactList}\small\item\em Method to test if the id exists in the map. \end{DoxyCompactList}\item 
+double \hyperlink{classTermDepthMap_a687255e97647a9afc0a5f0197d0b05c9}{operator\mbox{[}$\,$\mbox{]}} (std\+::string term\+Id)
+\begin{DoxyCompactList}\small\item\em Overloaded \mbox{[}\mbox{]} bracket operator to mimic Map. \end{DoxyCompactList}\item 
+double \hyperlink{classTermDepthMap_af6ba97e619f7fe0a9e906c6eccfd98fa}{get\+Value} (std\+::string term\+Id)
+\begin{DoxyCompactList}\small\item\em Mapping function to return the value mapped by key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ \hyperlink{classTermDepthMap_adf3435b02b709abc108fa8e18e0b73fa}{\+\_\+name\+To\+Index}
+\begin{DoxyCompactList}\small\item\em A private map that returns the index of a term. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classTermDepthMap_af1bc0c6d34c57061de60e771afd76f11}{\+\_\+depths}
+\begin{DoxyCompactList}\small\item\em A private list of term depths. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate the depth of a \hyperlink{namespaceGO}{GO} term in the ontology. 
+
+This class provides a map that returns the depth of a \hyperlink{namespaceGO}{GO} term. This method is used in graph and edge based similarity methods to calculate a node\textquotesingle{}s depth 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Term\+Depth\+Map@{Term\+Depth\+Map}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\index{Term\+Depth\+Map@{Term\+Depth\+Map}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Depth\+Map(\+Go\+Graph $\ast$graph)}{TermDepthMap(GoGraph *graph)}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Depth\+Map\+::\+Term\+Depth\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_abb4c7ebeedc74ae59a8399de33b48389}{}\label{classTermDepthMap_abb4c7ebeedc74ae59a8399de33b48389}
+
+
+A parameterized constructor. 
+
+This constructor takes pointers to \hyperlink{classGoGraph}{Go\+Graph} and \hyperlink{classAnnotationData}{Annotation\+Data} objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. \index{Term\+Depth\+Map@{Term\+Depth\+Map}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\index{Term\+Depth\+Map@{Term\+Depth\+Map}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Depth\+Map()}{TermDepthMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Depth\+Map\+::\+Term\+Depth\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_a819c7cb3f26e54e13195a508aff06cdc}{}\label{classTermDepthMap_a819c7cb3f26e54e13195a508aff06cdc}
+
+
+A default constructor. 
+
+This constructor initialized the storage structures. Should not be used. \index{Term\+Depth\+Map@{Term\+Depth\+Map}!````~Term\+Depth\+Map@{$\sim$\+Term\+Depth\+Map}}
+\index{````~Term\+Depth\+Map@{$\sim$\+Term\+Depth\+Map}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{$\sim$\+Term\+Depth\+Map()}{~TermDepthMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Depth\+Map\+::$\sim$\+Term\+Depth\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_aec4f9d62c638d0f6519d49bb13d96263}{}\label{classTermDepthMap_aec4f9d62c638d0f6519d49bb13d96263}
+
+
+A default desctructor. 
+
+This desctructor clears the containters 
+
+\subsection{Member Function Documentation}
+\index{Term\+Depth\+Map@{Term\+Depth\+Map}!get\+Keys@{get\+Keys}}
+\index{get\+Keys@{get\+Keys}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{get\+Keys()}{getKeys()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Term\+Depth\+Map\+::get\+Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_a2cc0c96cf91020df4a035f089ef1a608}{}\label{classTermDepthMap_a2cc0c96cf91020df4a035f089ef1a608}
+
+
+Function to return all the keys in the map. 
+
+Returns all valid keys in the map. \index{Term\+Depth\+Map@{Term\+Depth\+Map}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{get\+Value(std\+::string term\+Id)}{getValue(std::string termId)}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Depth\+Map\+::get\+Value (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_af6ba97e619f7fe0a9e906c6eccfd98fa}{}\label{classTermDepthMap_af6ba97e619f7fe0a9e906c6eccfd98fa}
+
+
+Mapping function to return the value mapped by key. 
+
+Get the value mapped by the given key. A specified function for the \mbox{[}\mbox{]} operator \index{Term\+Depth\+Map@{Term\+Depth\+Map}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{get\+Values()}{getValues()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ Term\+Depth\+Map\+::get\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_acad3e6559688f3338f7d28fffe53f3ab}{}\label{classTermDepthMap_acad3e6559688f3338f7d28fffe53f3ab}
+
+
+Accessor for probablities vector. 
+
+Get the vector of values \index{Term\+Depth\+Map@{Term\+Depth\+Map}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{has\+Term(std\+::string test\+Term)}{hasTerm(std::string testTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\+Depth\+Map\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{test\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_a11f5ed887edd0b335ac64171ebecf3f3}{}\label{classTermDepthMap_a11f5ed887edd0b335ac64171ebecf3f3}
+
+
+Method to test if the id exists in the map. 
+
+Return true the id is found, false if not \index{Term\+Depth\+Map@{Term\+Depth\+Map}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{operator[](std\+::string term\+Id)}{operator[](std::string termId)}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Depth\+Map\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermDepthMap_a687255e97647a9afc0a5f0197d0b05c9}{}\label{classTermDepthMap_a687255e97647a9afc0a5f0197d0b05c9}
+
+
+Overloaded \mbox{[}\mbox{]} bracket operator to mimic Map. 
+
+This defines a bracket operator to access the data inside of the map. This is done to mimic the behavior of the map class 
+
+\subsection{Member Data Documentation}
+\index{Term\+Depth\+Map@{Term\+Depth\+Map}!\+\_\+depths@{\+\_\+depths}}
+\index{\+\_\+depths@{\+\_\+depths}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+depths}{_depths}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ Term\+Depth\+Map\+::\+\_\+depths\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermDepthMap_af1bc0c6d34c57061de60e771afd76f11}{}\label{classTermDepthMap_af1bc0c6d34c57061de60e771afd76f11}
+
+
+A private list of term depths. 
+
+This vector of doubles holds the depth for each term \index{Term\+Depth\+Map@{Term\+Depth\+Map}!\+\_\+name\+To\+Index@{\+\_\+name\+To\+Index}}
+\index{\+\_\+name\+To\+Index@{\+\_\+name\+To\+Index}!Term\+Depth\+Map@{Term\+Depth\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+name\+To\+Index}{_nameToIndex}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+map$<$std\+::string,std\+::size\+\_\+t$>$ Term\+Depth\+Map\+::\+\_\+name\+To\+Index\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermDepthMap_adf3435b02b709abc108fa8e18e0b73fa}{}\label{classTermDepthMap_adf3435b02b709abc108fa8e18e0b73fa}
+
+
+A private map that returns the index of a term. 
+
+This map takes string term ids and returns the index for annotation count access. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Depth\+Map.\+hpp\end{DoxyCompactItemize}

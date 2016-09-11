@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classRapidXmlGoParser" kind="class" language="C++" prot="public">
+    <compoundname>RapidXmlGoParser</compoundname>
+    <basecompoundref refid="classGoParserInterface" prot="public" virt="non-virtual">GoParserInterface</basecompoundref>
+    <includes refid="RapidXmlGoParser_8hpp" local="no">ggtk/RapidXmlGoParser.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRapidXmlGoParser_1a7c42085d86c58983601fdada4aaacd9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* RapidXmlGoParser::parseGoFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>parseGoFile</name>
+        <reimplements refid="classGoParserInterface_1aefde440e0d5404b9efa2a16a89e09674">parseGoFile</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Method to parse the go file, should be an XML file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will read a Gene Ontology XML file and add all relationships to the graph. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RapidXmlGoParser.hpp" line="38" column="1" bodyfile="ggtk/RapidXmlGoParser.hpp" bodystart="38" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classRapidXmlGoParser_1a945a31fd86bd35720d4158caa35302da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool RapidXmlGoParser::isFileGood</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>isFileGood</name>
+        <reimplements refid="classGoParserInterface_1a0d2db54063c1ff58a0e15f0187af5aa1">isFileGood</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>A method to test if a file fits the accepted format. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the file matches accepted format, false otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RapidXmlGoParser.hpp" line="171" column="1" bodyfile="ggtk/RapidXmlGoParser.hpp" bodystart="171" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classRapidXmlGoParser_1af69641207e01be186f523939ce03f847" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> *</type>
+        <definition>GoParserInterface* RapidXmlGoParser::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classGoParserInterface_1a21c4ea01809737ab2975fb71edf6fcd5">clone</reimplements>
+        <briefdescription>
+<para>A method to create a new instance of this class for use in a factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>creats a new pointer to the parser, used by the factory for go parsers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/RapidXmlGoParser.hpp" line="223" column="1" bodyfile="ggtk/RapidXmlGoParser.hpp" bodystart="223" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class parses a go XML file using RapidXML library. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class parses a Gene Ontology XML file using RapidXML library.</para><para>Implements <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="183">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+      <node id="182">
+        <label>RapidXmlGoParser</label>
+        <link refid="classRapidXmlGoParser"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="185">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+      <node id="184">
+        <label>RapidXmlGoParser</label>
+        <link refid="classRapidXmlGoParser"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/RapidXmlGoParser.hpp" line="28" column="1" bodyfile="ggtk/RapidXmlGoParser.hpp" bodystart="28" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classRapidXmlGoParser_1af69641207e01be186f523939ce03f847" prot="public" virt="virtual"><scope>RapidXmlGoParser</scope><name>clone</name></member>
+      <member refid="classRapidXmlGoParser_1a945a31fd86bd35720d4158caa35302da" prot="public" virt="virtual"><scope>RapidXmlGoParser</scope><name>isFileGood</name></member>
+      <member refid="classRapidXmlGoParser_1a7c42085d86c58983601fdada4aaacd9d" prot="public" virt="virtual"><scope>RapidXmlGoParser</scope><name>parseGoFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

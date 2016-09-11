@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="SetUtilities_8hpp" kind="file" language="C++">
+    <compoundname>SetUtilities.hpp</compoundname>
+    <includes local="no">boost/unordered_set.hpp</includes>
+    <includes local="no">boost/foreach.hpp</includes>
+    <includedby refid="AncestorMeanSharedInformation_8hpp" local="no">ggtk/AncestorMeanSharedInformation.hpp</includedby>
+    <includedby refid="CoutoGraSMAdjustedSharedInformation_8hpp" local="no">ggtk/CoutoGraSMAdjustedSharedInformation.hpp</includedby>
+    <includedby refid="CoutoGraSMSharedInformation_8hpp" local="no">ggtk/CoutoGraSMSharedInformation.hpp</includedby>
+    <includedby refid="EnrichmentTools_8hpp" local="no">ggtk/EnrichmentTools.hpp</includedby>
+    <includedby refid="ExclusivelyInheritedSharedInformation_8hpp" local="no">ggtk/ExclusivelyInheritedSharedInformation.hpp</includedby>
+    <includedby refid="FrontierSharedInformation_8hpp" local="no">ggtk/FrontierSharedInformation.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="JaccardSetSimilarity_8hpp" local="no">ggtk/JaccardSetSimilarity.hpp</includedby>
+    <includedby refid="MICASharedInformation_8hpp" local="no">ggtk/MICASharedInformation.hpp</includedby>
+    <incdepgraph>
+      <node id="1101">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="1099">
+        <label>ggtk/SetUtilities.hpp</label>
+        <link refid="SetUtilities.hpp"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1105">
+        <label>ggtk/CoutoGraSMAdjustedSharedInformation.hpp</label>
+        <link refid="CoutoGraSMAdjustedSharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1103">
+        <label>ggtk/AncestorMeanSharedInformation.hpp</label>
+        <link refid="AncestorMeanSharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>ggtk/FrontierSharedInformation.hpp</label>
+        <link refid="FrontierSharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>ggtk/SetUtilities.hpp</label>
+        <link refid="SetUtilities.hpp"/>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>ggtk/JaccardSetSimilarity.hpp</label>
+        <link refid="JaccardSetSimilarity_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>ggtk/CoutoGraSMSharedInformation.hpp</label>
+        <link refid="CoutoGraSMSharedInformation_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>ggtk/EnrichmentTools.hpp</label>
+        <link refid="EnrichmentTools_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceSetUtilities">SetUtilities</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SET_UTILITIES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET_UTILITIES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_set.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/foreach.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"></codeline>
+<codeline lineno="18" refid="namespaceSetUtilities" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceSetUtilities" kindref="compound">SetUtilities</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_contains(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;mySet,<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>element)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mySet.find(element)<sp/>!=<sp/>mySet.end();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>convert_vector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Type&gt;<sp/>&amp;myVec)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;Type&gt;<sp/>s(myVec.begin(),myVec.end());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_intersection(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setA,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setB)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iterate<sp/>the<sp/>smaller<sp/>set<sp/>O(n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(setA.size()<sp/>&lt;=<sp/>setB.size()){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;Type&gt;<sp/>intersectionSet;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_FOREACH(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Type<sp/>&amp;element,<sp/>setA){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//find<sp/>element<sp/>in<sp/>O(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(set_contains(setB,element)){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intersectionSet.insert(element);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>intersectionSet;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>set_intersection(setB,setA);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_union(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setA,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setB)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(setA.size()<sp/>&lt;=<sp/>setB.size()){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;Type&gt;<sp/>unionSet<sp/>=<sp/>setB;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unionSet.insert(setA.begin(),setA.end());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unionSet;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>set_union(setB,setA);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_difference(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setA,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;Type&gt;<sp/>&amp;setB)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;Type&gt;<sp/>differenceSet;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_FOREACH(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Type<sp/>&amp;element,setA){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!set_contains(setB,element)){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>differenceSet.insert(element);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>differenceSet;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/SetUtilities.hpp"/>
+  </compounddef>
+</doxygen>

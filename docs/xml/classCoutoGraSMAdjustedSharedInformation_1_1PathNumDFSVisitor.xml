@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor" kind="class" language="C++" prot="private">
+    <compoundname>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_dfs_visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a734067d157a131d1c221a60799f6a583" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt; &amp;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt;&amp; CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor::pathNumMap</definition>
+        <argsstring></argsstring>
+        <name>pathNumMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="304" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1ae12cf8a1fb8ef6cd5de5c3f02dadf09f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor::PathNumDFSVisitor</definition>
+        <argsstring>(boost::unordered_map&lt; std::string, std::size_t &gt; &amp;inMap)</argsstring>
+        <name>PathNumDFSVisitor</name>
+        <param>
+          <type>boost::unordered_map&lt; std::string, std::size_t &gt; &amp;</type>
+          <declname>inMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="281" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a08f0f6fd5bca52b5b83b90dd79b160a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vertex</type>
+          </param>
+          <param>
+            <type>typename Graph</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor::finish_vertex</definition>
+        <argsstring>(Vertex u, const Graph &amp;g)</argsstring>
+        <name>finish_vertex</name>
+        <param>
+          <type>Vertex</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Graph &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="284" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="284" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Depth First Visitor to calculate the number of paths between terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>A class implementing depth first search to calculate path number calculates the number of paths to a target, conceptually equivalent to a topological sort. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="170">
+        <label>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</label>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>default_dfs_visitor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="172">
+        <label>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</label>
+        <childnode refid="173" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>default_dfs_visitor</label>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" line="278" column="1" bodyfile="ggtk/CoutoGraSMAdjustedSharedInformation.hpp" bodystart="278" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a08f0f6fd5bca52b5b83b90dd79b160a9" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</scope><name>finish_vertex</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1ae12cf8a1fb8ef6cd5de5c3f02dadf09f" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</scope><name>PathNumDFSVisitor</name></member>
+      <member refid="classCoutoGraSMAdjustedSharedInformation_1_1PathNumDFSVisitor_1a734067d157a131d1c221a60799f6a583" prot="public" virt="non-virtual"><scope>CoutoGraSMAdjustedSharedInformation::PathNumDFSVisitor</scope><name>pathNumMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

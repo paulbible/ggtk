@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="AllPairsMaxSetSimilarity_8hpp" kind="file" language="C++">
+    <compoundname>AllPairsMaxSetSimilarity.hpp</compoundname>
+    <includes refid="TermSetSimilarityInterface_8hpp" local="no">ggtk/TermSetSimilarityInterface.hpp</includes>
+    <includes refid="TermSimilarityInterface_8hpp" local="no">ggtk/TermSimilarityInterface.hpp</includes>
+    <includes refid="Accumulators_8hpp" local="no">ggtk/Accumulators.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="105">
+        <label>ggtk/AllPairsMaxSetSimilarity.hpp</label>
+        <link refid="AllPairsMaxSetSimilarity.hpp"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>ggtk/TermSetSimilarityInterface.hpp</label>
+        <link refid="TermSetSimilarityInterface_8hpp_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>string</label>
+      </node>
+      <node id="115">
+        <label>boost/accumulators/statistics/min.hpp</label>
+      </node>
+      <node id="116">
+        <label>boost/accumulators/statistics/mean.hpp</label>
+      </node>
+      <node id="114">
+        <label>boost/accumulators/statistics/max.hpp</label>
+      </node>
+      <node id="113">
+        <label>boost/accumulators/statistics.hpp</label>
+      </node>
+      <node id="112">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="118">
+        <label>boost/accumulators/statistics/variance.hpp</label>
+      </node>
+      <node id="108">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="117">
+        <label>boost/accumulators/statistics/covariance.hpp</label>
+      </node>
+      <node id="119">
+        <label>boost/accumulators/statistics/variates/covariate.hpp</label>
+      </node>
+      <node id="111">
+        <label>ggtk/Accumulators.hpp</label>
+        <link refid="Accumulators_8hpp_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface_8hpp_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="121">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="120">
+        <label>ggtk/AllPairsMaxSetSimilarity.hpp</label>
+        <link refid="AllPairsMaxSetSimilarity.hpp"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAllPairsMaxSetSimilarity" prot="public">AllPairsMaxSetSimilarity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ALL_PAIRS_MAX_SIMILARITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALL_PAIRS_MAX_SIMILARITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermSetSimilarityInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermSimilarityInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/Accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classAllPairsMaxSetSimilarity" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllPairsMaxSetSimilarity" kindref="compound">AllPairsMaxSetSimilarity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTermSetSimilarityInterface" kindref="compound">TermSetSimilarityInterface</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"></codeline>
+<codeline lineno="35" refid="classAllPairsMaxSetSimilarity_1a5aef6b55e2aa3b94b62278eb5464dd68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllPairsMaxSetSimilarity_1a5aef6b55e2aa3b94b62278eb5464dd68" kindref="member">AllPairsMaxSetSimilarity</ref>(<ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref>*<sp/>simMeasure){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_similarity<sp/>=<sp/>simMeasure;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"></codeline>
+<codeline lineno="44" refid="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1" kindref="member">calculateSimilarity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;termsA,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;termsB){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>0<sp/>if<sp/>a<sp/>set<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(termsA.size()<sp/>==<sp/>0<sp/>||<sp/>termsB.size()<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>mean<sp/>accumulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1ae68012df9b3c9adaca0807437b8b0129" kindref="member">Accumulators::MaxAccumulator</ref><sp/>simMax;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>aTermIter;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>bTermIter;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iterate<sp/>A<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(aTermIter<sp/>=<sp/>termsA.begin();<sp/>aTermIter<sp/>!=<sp/>termsA.end();<sp/>++aTermIter){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>term<sp/>from<sp/>A<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>aTerm<sp/>=<sp/>*aTermIter;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iterate<sp/>B<sp/>terms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(bTermIter<sp/>=<sp/>termsB.begin();<sp/>bTermIter<sp/>!=<sp/>termsB.end();<sp/>++bTermIter){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>term<sp/>from<sp/>B<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>bTerm<sp/>=<sp/>*bTermIter;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sim<sp/>=<sp/>_similarity-&gt;<ref refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d" kindref="member">calculateNormalizedTermSimilarity</ref>(aTerm,bTerm);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>aTerm<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>bTerm<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>sim<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>to<sp/>accumulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simMax(sim);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>mean<sp/>from<sp/>the<sp/>accumulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(simMax);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref>*<sp/>_similarity;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/AllPairsMaxSetSimilarity.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="GoGraph_8hpp" kind="file" language="C++">
+    <compoundname>GoGraph.hpp</compoundname>
+    <includes refid="GoEnums_8hpp" local="no">ggtk/GoEnums.hpp</includes>
+    <includes local="no">boost/unordered_set.hpp</includes>
+    <includes local="no">boost/graph/adjacency_list.hpp</includes>
+    <includes local="no">boost/graph/subgraph.hpp</includes>
+    <includes local="no">boost/graph/adjacency_iterator.hpp</includes>
+    <includes local="no">boost/graph/graph_traits.hpp</includes>
+    <includes local="no">boost/graph/breadth_first_search.hpp</includes>
+    <includes local="no">boost/graph/connected_components.hpp</includes>
+    <includes local="no">boost/graph/strong_components.hpp</includes>
+    <includes local="no">boost/graph/reverse_graph.hpp</includes>
+    <includedby refid="AncestorMeanSharedInformation_8hpp" local="no">ggtk/AncestorMeanSharedInformation.hpp</includedby>
+    <includedby refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includedby>
+    <includedby refid="CoutoGraSMAdjustedSharedInformation_8hpp" local="no">ggtk/CoutoGraSMAdjustedSharedInformation.hpp</includedby>
+    <includedby refid="CoutoGraSMSharedInformation_8hpp" local="no">ggtk/CoutoGraSMSharedInformation.hpp</includedby>
+    <includedby refid="EnrichmentTools_8hpp" local="no">ggtk/EnrichmentTools.hpp</includedby>
+    <includedby refid="ExclusivelyInheritedSharedInformation_8hpp" local="no">ggtk/ExclusivelyInheritedSharedInformation.hpp</includedby>
+    <includedby refid="FrontierSharedInformation_8hpp" local="no">ggtk/FrontierSharedInformation.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="GoParserInterface_8hpp" local="no">ggtk/GoParserInterface.hpp</includedby>
+    <includedby refid="JiangConrathSimilarity_8hpp" local="no">ggtk/JiangConrathSimilarity.hpp</includedby>
+    <includedby refid="LinSimilarity_8hpp" local="no">ggtk/LinSimilarity.hpp</includedby>
+    <includedby refid="MICASharedInformation_8hpp" local="no">ggtk/MICASharedInformation.hpp</includedby>
+    <includedby refid="PekarStaabSimilarity_8hpp" local="no">ggtk/PekarStaabSimilarity.hpp</includedby>
+    <includedby refid="RelevanceSimilarity_8hpp" local="no">ggtk/RelevanceSimilarity.hpp</includedby>
+    <includedby refid="ResnikSimilarity_8hpp" local="no">ggtk/ResnikSimilarity.hpp</includedby>
+    <includedby refid="TermDepthMap_8hpp" local="no">ggtk/TermDepthMap.hpp</includedby>
+    <includedby refid="TermInformationContentMap_8hpp" local="no">ggtk/TermInformationContentMap.hpp</includedby>
+    <includedby refid="TermProbabilityMap_8hpp" local="no">ggtk/TermProbabilityMap.hpp</includedby>
+    <includedby refid="TermSimilarityWriter_8hpp" local="no">ggtk/TermSimilarityWriter.hpp</includedby>
+    <incdepgraph>
+      <node id="717">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="718">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="711">
+        <label>string</label>
+      </node>
+      <node id="720">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="716">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="714">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="715">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="712">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="709">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph.hpp"/>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="719">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="733">
+        <label>ggtk/PekarStaabSimilarity.hpp</label>
+        <link refid="PekarStaabSimilarity_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>ggtk/CoutoGraSMAdjustedSharedInformation.hpp</label>
+        <link refid="CoutoGraSMAdjustedSharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="723">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="730">
+        <label>ggtk/MgiAnnotationParser.hpp</label>
+        <link refid="MgiAnnotationParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>ggtk/RapidXmlGoParser.hpp</label>
+        <link refid="RapidXmlGoParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>ggtk/TermDepthMap.hpp</label>
+        <link refid="TermDepthMap_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>ggtk/GoaAnnotationParser.hpp</label>
+        <link refid="GoaAnnotationParser_8hpp_source"/>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="722">
+        <label>ggtk/AncestorMeanSharedInformation.hpp</label>
+        <link refid="AncestorMeanSharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>ggtk/FrontierSharedInformation.hpp</label>
+        <link refid="FrontierSharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>ggtk/AnnotationParserFactory.hpp</label>
+        <link refid="AnnotationParserFactory_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="746">
+        <label>ggtk/GoParserInterface.hpp</label>
+        <link refid="GoParserInterface_8hpp_source"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>ggtk/AnnotationParserInterface.hpp</label>
+        <link refid="AnnotationParserInterface_8hpp_source"/>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="727" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="728" relation="include">
+        </childnode>
+        <childnode refid="730" relation="include">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>ggtk/AllowedRelationshipXmlGoParser.hpp</label>
+        <link refid="AllowedRelationshipXmlGoParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>ggtk/ResnikSimilarity.hpp</label>
+        <link refid="ResnikSimilarity_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>ggtk/GafAnnotationParser.hpp</label>
+        <link refid="GafAnnotationParser_8hpp_source"/>
+      </node>
+      <node id="724">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>ggtk/LinSimilarity.hpp</label>
+        <link refid="LinSimilarity_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>ggtk/RelevanceSimilarity.hpp</label>
+        <link refid="RelevanceSimilarity_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>ggtk/AllowedRelationshipOboGoParser.hpp</label>
+        <link refid="AllowedRelationshipOboGoParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>ggtk/JiangConrathSimilarity.hpp</label>
+        <link refid="JiangConrathSimilarity_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph.hpp"/>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="724" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>ggtk/StandardXmlGoParser.hpp</label>
+        <link refid="StandardXmlGoParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>ggtk/TermSimilarityWriter.hpp</label>
+        <link refid="TermSimilarityWriter_8hpp_source"/>
+      </node>
+      <node id="748">
+        <label>ggtk/StandardOboGoParser.hpp</label>
+        <link refid="StandardOboGoParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>ggtk/TermInformationContentMap.hpp</label>
+        <link refid="TermInformationContentMap_8hpp_source"/>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+      </node>
+      <node id="751">
+        <label>ggtk/GoParserFactory.hpp</label>
+        <link refid="GoParserFactory_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>ggtk/CoutoGraSMSharedInformation.hpp</label>
+        <link refid="CoutoGraSMSharedInformation_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>ggtk/EntrezGene2GoAnnotationParser.hpp</label>
+        <link refid="EntrezGene2GoAnnotationParser_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>ggtk/EnrichmentTools.hpp</label>
+        <link refid="EnrichmentTools_8hpp_source"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGoGraph" prot="public">GoGraph</innerclass>
+    <innerclass refid="structGoGraph_1_1VertexProps" prot="public">GoGraph::VertexProps</innerclass>
+    <innerclass refid="structGoGraph_1_1EdgeProps" prot="public">GoGraph::EdgeProps</innerclass>
+    <innerclass refid="classGoGraph_1_1SubgraphBFSVisitor" prot="private">GoGraph::SubgraphBFSVisitor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GO_GRAPH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GO_GRAPH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoEnums.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_set.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/adjacency_list.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/subgraph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/adjacency_iterator.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/graph_traits.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/breadth_first_search.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/connected_components.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/strong_components.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/reverse_graph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classGoGraph" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGoGraph" kindref="compound">GoGraph</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"></codeline>
+<codeline lineno="38" refid="structGoGraph_1_1VertexProps" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGoGraph_1_1VertexProps" kindref="compound">VertexProps</ref>{</highlight></codeline>
+<codeline lineno="42" refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::size_t<sp/>onto_type;</highlight></codeline>
+<codeline lineno="48" refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/><ref refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" kindref="member">ontology</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structGoGraph_1_1VertexProps_1ad60aea44237ee479a4c8768226778590" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGoGraph_1_1VertexProps_1ad60aea44237ee479a4c8768226778590" kindref="member">~VertexProps</ref>(){}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"></codeline>
+<codeline lineno="62" refid="structGoGraph_1_1EdgeProps" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGoGraph_1_1EdgeProps" kindref="compound">EdgeProps</ref>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::size_t<sp/>index;</highlight></codeline>
+<codeline lineno="67" refid="structGoGraph_1_1EdgeProps_1af9336fa93d326a88970e8dafa64fa85e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/><ref refid="structGoGraph_1_1EdgeProps_1af9336fa93d326a88970e8dafa64fa85e" kindref="member">relType</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structGoGraph_1_1EdgeProps_1ae86950a82bf50040fa0b2c83d7a89fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGoGraph_1_1EdgeProps_1ae86950a82bf50040fa0b2c83d7a89fc6" kindref="member">~EdgeProps</ref>(){}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::adjacency_list&lt;boost::vecS,<sp/>boost::vecS,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::bidirectionalS,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::property&lt;<sp/>boost::vertex_index_t,<sp/>size_t,<sp/>VertexProps&gt;,<sp/></highlight></codeline>
+<codeline lineno="83" refid="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::property&lt;<sp/>boost::edge_index_t,<sp/>size_t,<sp/>EdgeProps&gt;<sp/>&gt;<sp/><ref refid="classGoGraph_1a2586bfc8740625d2d615662ac86f10f9" kindref="member">Graph_t</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"></codeline>
+<codeline lineno="92" refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::subgraph&lt;Graph_t&gt;<sp/><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Vertex<sp/>and<sp/>Edge<sp/>typedefs</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"></highlight></codeline>
+<codeline lineno="101" refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;Graph&gt;::vertex_descriptor<sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoVertex</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"></codeline>
+<codeline lineno="107" refid="classGoGraph_1a6a06a7cf401fba8f03f8f68b54744a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;Graph&gt;::edge_descriptor<sp/><ref refid="classGoGraph_1a6a06a7cf401fba8f03f8f68b54744a75" kindref="member">GoEdge</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Vertex<sp/>and<sp/>Edge<sp/>iterators</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"></highlight></codeline>
+<codeline lineno="117" refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;Graph&gt;::vertex_iterator<sp/><ref refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" kindref="member">GoVertexIterator</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"></codeline>
+<codeline lineno="123" refid="classGoGraph_1a749886e553031dcb52c595989129514d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;Graph&gt;::in_edge_iterator<sp/><ref refid="classGoGraph_1a749886e553031dcb52c595989129514d" kindref="member">InEdgeIterator</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"></codeline>
+<codeline lineno="129" refid="classGoGraph_1a40291cfa00013cbb9cfb400c1fc92379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;Graph&gt;::out_edge_iterator<sp/><ref refid="classGoGraph_1a40291cfa00013cbb9cfb400c1fc92379" kindref="member">OutEdgeIterator</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Index<sp/>maps<sp/>for<sp/>edge<sp/>and<sp/>vertex</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight></codeline>
+<codeline lineno="139" refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::property_map&lt;Graph,<sp/>boost::vertex_index_t<sp/>&gt;::type<sp/><ref refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" kindref="member">VertexIndexMap</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"></codeline>
+<codeline lineno="145" refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::property_map&lt;Graph,<sp/>boost::edge_index_t<sp/>&gt;::type<sp/><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">EdgeIndexMap</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"></codeline>
+<codeline lineno="154" refid="classGoGraph_1a48e691ba5998d709d457a949687fccca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a48e691ba5998d709d457a949687fccca" kindref="member">~GoGraph</ref>(){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_nameToIndex.clear();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_names.clear();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_descriptions.clear();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"></codeline>
+<codeline lineno="167" refid="classGoGraph_1a41f698c030fec41fe59ade6d1c73721f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a41f698c030fec41fe59ade6d1c73721f" kindref="member">insertTerm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;description,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" kindref="member">ontology</ref>){</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//term<sp/>already<sp/>exists,<sp/>update<sp/>its<sp/>information,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_nameToIndex.find(termId)<sp/>!=<sp/>_nameToIndex.end()){</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/>_nameToIndex[<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>];</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Term<sp/>needs<sp/>to<sp/>be<sp/>updated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>name<sp/>is<sp/>&quot;name&quot;,<sp/>this<sp/>is<sp/>a<sp/>stub,<sp/>no<sp/>need<sp/>to<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(name.compare(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>0){</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_names.at(index)<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_descriptions.at(index)<sp/>=<sp/>description;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>V<sp/>=<sp/>boost::vertex(index,_goGraph);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph[V].ontology<sp/>=<sp/><ref refid="namespaceGO_1a27850aa3de798d067cc60a03a8552fae" kindref="member">GO::ontologyStringToCode</ref>(ontology);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//term<sp/>is<sp/>new<sp/>and<sp/>must<sp/>be<sp/>added</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//map<sp/>termId<sp/>to<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_nameToIndex[<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>]<sp/>=<sp/>boost::num_vertices(_goGraph);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>vertex<sp/>to<sp/>the<sp/>graph,<sp/>get<sp/>back<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>vertex,<sp/>V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>V<sp/>=<sp/>boost::add_vertex(_goGraph);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>termId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph[V].termId<sp/>=<sp/><ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>ontology</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph[V].ontology<sp/>=<sp/><ref refid="namespaceGO_1a27850aa3de798d067cc60a03a8552fae" kindref="member">GO::ontologyStringToCode</ref>(ontology);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>name<sp/>to<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_names.push_back(name);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>description<sp/>to<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_descriptions.push_back(description);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"></codeline>
+<codeline lineno="210" refid="classGoGraph_1a346fcf36ed71479d529a2db974ba8bc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a346fcf36ed71479d529a2db974ba8bc3" kindref="member">insertRelationship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termParent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termChild,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;relationship){</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>vertices<sp/>by<sp/>name,<sp/>they<sp/>should<sp/>already<sp/>exit<sp/>in<sp/>the<sp/>graph<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/>boost::vertex(_nameToIndex[termParent],_goGraph);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>u<sp/>=<sp/>boost::vertex(_nameToIndex[termChild],_goGraph);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>relationship<sp/>type<sp/>as<sp/>its<sp/>enum<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relType<sp/>=<sp/><ref refid="namespaceGO_1a6418070e75662d9f3531324cc0c99334" kindref="member">GO::relationshipStringToCode</ref>(relationship);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>edge<sp/>to<sp/>the<sp/>graph,<sp/>get<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;GoEdge,bool&gt;<sp/>myPair<sp/>=<sp/>boost::add_edge(v,u,_goGraph);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>that<sp/>edge&apos;s<sp/>internal<sp/>value<sp/>for<sp/>relationship<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoEdge<sp/>e<sp/>=<sp/>myPair.first;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph[e].relType<sp/>=<sp/>relType;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"></codeline>
+<codeline lineno="232" refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>(){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::num_vertices(_goGraph);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"></codeline>
+<codeline lineno="240" refid="classGoGraph_1acafdd8e76e3813e1276798bed2194232" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classGoGraph_1acafdd8e76e3813e1276798bed2194232" kindref="member">getNumEdges</ref>(){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::num_edges(_goGraph);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"></codeline>
+<codeline lineno="249" refid="classGoGraph_1ad82f8d33a7ecc220ac0d93147dafc061" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1ad82f8d33a7ecc220ac0d93147dafc061" kindref="member">initMaps</ref>(){</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_vMap<sp/>=<sp/>boost::get(boost::vertex_index,_goGraph);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_eMap<sp/>=<sp/>boost::get(boost::edge_index,_goGraph);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>method<sp/>initMaps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"></codeline>
+<codeline lineno="262" refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Graph*<sp/><ref refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" kindref="member">getGraph</ref>(){</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;_goGraph;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"></codeline>
+<codeline lineno="271" refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_nameToIndex.find(term)<sp/>!=<sp/>_nameToIndex.end();</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"></codeline>
+<codeline lineno="280" refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kindref="member">getTermIndex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_nameToIndex[term];</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"></codeline>
+<codeline lineno="289" refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(std::size_t<sp/>index){</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(index);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph[v].termId;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"></codeline>
+<codeline lineno="299" refid="classGoGraph_1aa046ee2d278114b6c28f4d5be71b81f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classGoGraph_1aa046ee2d278114b6c28f4d5be71b81f0" kindref="member">getTermNameByIndex</ref>(std::size_t<sp/>index){</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_names.at(index);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"></codeline>
+<codeline lineno="307" refid="classGoGraph_1a175dab9ef8da6c3f06e8f71f21699cf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classGoGraph_1a175dab9ef8da6c3f06e8f71f21699cf6" kindref="member">getTermName</ref>(std::string<sp/>term){</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kindref="member">getTermIndex</ref>(term);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_names.at(index);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"></codeline>
+<codeline lineno="321" refid="classGoGraph_1aed5db44d61c949aed72482ee41438856" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classGoGraph_1aed5db44d61c949aed72482ee41438856" kindref="member">getTermDescriptionByIndex</ref>(std::size_t<sp/>index){</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_descriptions.at(index);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"></codeline>
+<codeline lineno="329" refid="classGoGraph_1abd5d984dd3e1df3d754b1f7e86c487ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classGoGraph_1abd5d984dd3e1df3d754b1f7e86c487ee" kindref="member">getTermDescription</ref>(std::string<sp/>term){</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kindref="member">getTermIndex</ref>(term);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_descriptions.at(index);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"></codeline>
+<codeline lineno="344" refid="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>GoVertex<sp/><ref refid="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" kindref="member">getRoot</ref>(){</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>vertex<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertexIterator<sp/>vi,vend;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creat<sp/>a<sp/>vertex<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>root;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(vi,vend)<sp/>=<sp/>boost::vertices(_goGraph);<sp/>vi<sp/>!=<sp/>vend;<sp/>++vi){</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>it<sp/>has<sp/>no<sp/>out<sp/>edges<sp/>it<sp/>is<sp/>a<sp/>root</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(boost::out_degree(*vi,_goGraph)<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>variable<sp/>and<sp/>break<sp/>the<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root<sp/>=<sp/>*vi;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>root</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>root;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"></codeline>
+<codeline lineno="368" refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/><ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GO::ONTO_ERROR;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph[<ref refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kindref="member">getTermIndex</ref>(term)].ontology;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"></codeline>
+<codeline lineno="380" refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/><ref refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" kindref="member">getTermOntologyByIndex</ref>(std::size_t<sp/>index){</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(index);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph[v].ontology;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"></codeline>
+<codeline lineno="389" refid="classGoGraph_1a3ae1998fd4765b2f952290150a7d164b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/><ref refid="classGoGraph_1a3ae1998fd4765b2f952290150a7d164b" kindref="member">getTermOntologyByVertex</ref>(GoVertex<sp/>vertex){</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph[vertex].ontology;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"></codeline>
+<codeline lineno="397" refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" kindref="member">getVertexIndex</ref>(GoVertex<sp/>vertex){</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_vMap[vertex];</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"></codeline>
+<codeline lineno="405" refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>GoVertex<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(std::size_t<sp/>index){</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::vertex(index,_goGraph);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"></codeline>
+<codeline lineno="413" refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>GoVertex<sp/><ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::vertex(<ref refid="classGoGraph_1ae7b982d3f564013844d8046e732cef76" kindref="member">getTermIndex</ref>(term),_goGraph);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"></codeline>
+<codeline lineno="421" refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kindref="member">getDescendantTerms</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>empty<sp/>set,<sp/>if<sp/>term<sp/>is<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;();</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>correct<sp/>index<sp/>from<sp/>the<sp/>term<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>vIndex<sp/>=<sp/>_nameToIndex[term];</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>vertex<sp/>from<sp/>the<sp/>term<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>vertex<sp/>=<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(vIndex);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>map<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::size_t,bool&gt;<sp/>desendantMap;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>the<sp/>recursive<sp/>helper<sp/>method.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDescendantTermsHelper(vertex,<sp/>desendantMap);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>output<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>desendantTerms;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>an<sp/>iterator<sp/>for<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::size_t,bool&gt;::iterator<sp/>mapIter;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(mapIter<sp/>=<sp/>desendantMap.begin();<sp/>mapIter<sp/>!=<sp/>desendantMap.end();<sp/>++mapIter){</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/><ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(mapIter-&gt;first);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desendantTerms.insert(term);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>desendantTerms;<sp/><sp/></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"></codeline>
+<codeline lineno="457" refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>empty<sp/>set,<sp/>if<sp/>term<sp/>is<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;();</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>correct<sp/>index<sp/>from<sp/>the<sp/>term<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>vIndex<sp/>=<sp/>_nameToIndex[term];</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>vertex<sp/>=<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(vIndex);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>map<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::size_t,bool&gt;<sp/>ancestorMap;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>the<sp/>recursive<sp/>helper<sp/>method.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getAncestorTermsHelper(vertex,<sp/>ancestorMap);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>output<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestorTerms;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>an<sp/>iterator<sp/>for<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::size_t,bool&gt;::iterator<sp/>mapIter;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(mapIter<sp/>=<sp/>ancestorMap.begin();<sp/>mapIter<sp/>!=<sp/>ancestorMap.end();<sp/>++mapIter){</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/><ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(mapIter-&gt;first);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorTerms.insert(term);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ancestorTerms;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"></codeline>
+<codeline lineno="489" refid="classGoGraph_1a9907ae6a2960e527f02e7cdf9507aeb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a9907ae6a2960e527f02e7cdf9507aeb1" kindref="member">getParentTerms</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>empty<sp/>set,<sp/>if<sp/>term<sp/>is<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;();</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>vertex<sp/>=<sp/><ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(term);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>parents;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutEdgeIterator<sp/>ei,<sp/>end;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(boost::tie(ei,<sp/>end)<sp/>=<sp/>boost::out_edges(vertex,<sp/>_goGraph);<sp/>ei<sp/>!=<sp/>end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/>boost::target(*ei,<sp/>_goGraph);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parents.insert(_goGraph[v].<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>parents;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"></codeline>
+<codeline lineno="511" refid="classGoGraph_1ace2ad63bbc6bb2d1dd3e182e6e9c793e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ace2ad63bbc6bb2d1dd3e182e6e9c793e" kindref="member">getChildTerms</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>empty<sp/>set,<sp/>if<sp/>term<sp/>is<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classGoGraph_1af8ee7588b17f58717afc13acb0a33435" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;();</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>vertex<sp/>=<sp/><ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(term);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>children;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InEdgeIterator<sp/>ei,<sp/>end;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(boost::tie(ei,<sp/>end)<sp/>=<sp/>boost::in_edges(vertex,<sp/>_goGraph);<sp/>ei<sp/>!=<sp/>end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/>boost::source(*ei,<sp/>_goGraph);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>children.insert(_goGraph[v].<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>children;</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"></codeline>
+<codeline lineno="534" refid="classGoGraph_1ab497e840a1a63b5d25d6a104695a54fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ab497e840a1a63b5d25d6a104695a54fb" kindref="member">getAllTerms</ref>(){</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>collection<sp/>to<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/><ref refid="classGoGraph_1a69f38e249704b7e8d9f31a2e3bc03633" kindref="member">getVertexByIndex</ref>(i);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(_goGraph[v].<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>);</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"></codeline>
+<codeline lineno="548" refid="classGoGraph_1ad4f45995d5cd7ebe4f0c20d8923db268" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ad4f45995d5cd7ebe4f0c20d8923db268" kindref="member">getAllTermsBP</ref>(){</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet<sp/>=<sp/><ref refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kindref="member">getDescendantTerms</ref>(<ref refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kindref="member">GO::getRootTermBP</ref>());</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(<ref refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kindref="member">GO::getRootTermBP</ref>());</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"></codeline>
+<codeline lineno="558" refid="classGoGraph_1a9e5592682e5e78c5d45364bf714fd0cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a9e5592682e5e78c5d45364bf714fd0cf" kindref="member">getAllTermsMF</ref>(){</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet<sp/>=<sp/><ref refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kindref="member">getDescendantTerms</ref>(<ref refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kindref="member">GO::getRootTermMF</ref>());</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(<ref refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kindref="member">GO::getRootTermMF</ref>());</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"></codeline>
+<codeline lineno="568" refid="classGoGraph_1a47246d323ea642a2ffe169fa6da40bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a47246d323ea642a2ffe169fa6da40bcf" kindref="member">getAllTermsCC</ref>(){</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet<sp/>=<sp/><ref refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kindref="member">getDescendantTerms</ref>(<ref refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kindref="member">GO::getRootTermCC</ref>());</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(<ref refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kindref="member">GO::getRootTermCC</ref>());</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"></codeline>
+<codeline lineno="578" refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;inSet,<sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/>onto){</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>collection<sp/>to<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iterate<sp/>over<sp/>the<sp/>collection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>iter;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(iter<sp/>=<sp/>inSet.begin();<sp/>iter<sp/>!=<sp/>inSet.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/>*iter;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(term)<sp/>==<sp/>onto){</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(term);</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595"></codeline>
+<codeline lineno="598" refid="classGoGraph_1a083e9fe34636a0e996efd0e9d0d65c3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a083e9fe34636a0e996efd0e9d0d65c3b" kindref="member">filterSetForOntology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;inSet,<sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/>onto){</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>collection<sp/>to<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>outSet;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//iterate<sp/>over<sp/>the<sp/>collection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;::const_iterator<sp/>iter;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(iter<sp/>=<sp/>inSet.begin();<sp/>iter<sp/>!=<sp/>inSet.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/>*iter;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(term)<sp/>==<sp/>onto){</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outSet.insert(term);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outSet;</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"></codeline>
+<codeline lineno="619" refid="classGoGraph_1a42f95a4728eac397fce20d2dcfc8a442" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a42f95a4728eac397fce20d2dcfc8a442" kindref="member">filterSetForBP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::BP);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"></codeline>
+<codeline lineno="627" refid="classGoGraph_1ac6e27dbb91d23ea04191abac4c06e401" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ac6e27dbb91d23ea04191abac4c06e401" kindref="member">filterSetForBP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::BP);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"></codeline>
+<codeline lineno="635" refid="classGoGraph_1a22cedc3faddb0ca598620f2868a46046" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a22cedc3faddb0ca598620f2868a46046" kindref="member">filterSetForMF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::MF);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"></codeline>
+<codeline lineno="643" refid="classGoGraph_1ac1885e77b0a5f5158e7a94b4404f8c9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ac1885e77b0a5f5158e7a94b4404f8c9a" kindref="member">filterSetForMF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::MF);</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"></codeline>
+<codeline lineno="651" refid="classGoGraph_1ad1756e5daeea19ec063b67c2a29594be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1ad1756e5daeea19ec063b67c2a29594be" kindref="member">filterSetForCC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::CC);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"></codeline>
+<codeline lineno="659" refid="classGoGraph_1a23fc2ff15da505fa77536adbd9b7d01b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1a23fc2ff15da505fa77536adbd9b7d01b" kindref="member">filterSetForCC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/>&amp;inSet){</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGoGraph_1a1df055e607d7dc4650efedf56b149289" kindref="member">filterSetForOntology</ref>(inSet,<sp/>GO::CC);</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"></codeline>
+<codeline lineno="668" refid="classGoGraph_1abaa3ff8f11463a38fd03241ff17d3e75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classGoGraph_1abaa3ff8f11463a38fd03241ff17d3e75" kindref="member">getOntologyTerms</ref>(<ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/><ref refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" kindref="member">ontology</ref>){</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Use<sp/>only<sp/>terms<sp/>in<sp/>the<sp/>annotation<sp/>database,<sp/>this<sp/>will<sp/>save<sp/>on<sp/>space<sp/>and<sp/>computation<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>rootId;</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ontology){</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::BP:</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootId<sp/>=<sp/><ref refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kindref="member">GO::getRootTermBP</ref>();</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::MF:</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootId<sp/>=<sp/><ref refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kindref="member">GO::getRootTermMF</ref>();</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::CC:</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootId<sp/>=<sp/><ref refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kindref="member">GO::getRootTermCC</ref>();</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::ECODE_ERROR:</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rootId<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//All<sp/>Ontology<sp/>terms<sp/>are<sp/>descendants<sp/>of<sp/>the<sp/>root.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ontologyTerms<sp/>=<sp/><ref refid="classGoGraph_1a0d0a197cc51be0c2f9d0f524a8d66b5e" kindref="member">getDescendantTerms</ref>(rootId);</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>root.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ontologyTerms.insert(rootId);</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ontologyTerms;</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"></codeline>
+<codeline lineno="699" refid="classGoGraph_1a523911c2ddaff88ea64c8f15a01f9fee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Graph*<sp/><ref refid="classGoGraph_1a523911c2ddaff88ea64c8f15a01f9fee" kindref="member">getInducedSubgraph2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>){</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Graph*<sp/>subgraph<sp/>=<sp/>&amp;_goGraph.create_subgraph();</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SubgraphBFSVisitor<sp/>subgraphVisitor(subgraph);</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::breadth_first_search(_goGraph,<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(termId),boost::visitor(subgraphVisitor));</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>subgraph;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"></codeline>
+<codeline lineno="713" refid="classGoGraph_1a6ec3b30ab6fbd458b4225ec9532a4e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Graph*<sp/><ref refid="classGoGraph_1a6ec3b30ab6fbd458b4225ec9532a4e14" kindref="member">getInducedSubgraph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" kindref="member">termId</ref>){</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Graph*<sp/>subgraph<sp/>=<sp/>&amp;_goGraph.create_subgraph();</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestors<sp/>=<sp/><ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(termId);</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>iter;</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(iter<sp/>=<sp/>ancestors.begin();<sp/>iter<sp/>!=<sp/>ancestors.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::add_vertex(<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(*iter),*subgraph);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>subgraph;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"></codeline>
+<codeline lineno="732" refid="classGoGraph_1a6ce05821a7dfa86e1fa1de412d2c6cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classGoGraph_1a6ce05821a7dfa86e1fa1de412d2c6cb2" kindref="member">getNumComponents</ref>(){</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Define<sp/>undirected<sp/>graph<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::adjacency_list<sp/>&lt;<sp/>boost::vecS,<sp/>boost::vecS,<sp/>boost::undirectedS&gt;<sp/>undirected_graph_t;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>undirected_graph_t<sp/>undirected_g;</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Make<sp/>an<sp/>undirected<sp/>copy<sp/>of<sp/>the<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>();<sp/>++i){</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>graph<sp/>vertices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::add_vertex(undirected_g);</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::graph_traits&lt;Graph&gt;::edge_iterator<sp/>iter,<sp/>end;</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::tie(iter,<sp/>end)<sp/>=<sp/>boost::edges(_goGraph);</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>iter<sp/>!=<sp/>end;<sp/>++iter){</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>s<sp/>=<sp/>boost::source(*iter,<sp/>_goGraph);</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>t<sp/>=<sp/>boost::target(*iter,<sp/>_goGraph);</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>edges,<sp/>undirected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::add_edge(_vMap[s],<sp/>_vMap[t],<sp/>undirected_g);</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>the<sp/>connected<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::size_t&gt;<sp/>componentAssignment(<ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>());</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::connected_components(boost::make_reverse_graph(undirected_g),<sp/>&amp;componentAssignment[0]);</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="758"></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/>Graph<sp/>_goGraph;</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>maps<sp/>from<sp/>vertex<sp/>to<sp/>index</highlight></codeline>
+<codeline lineno="767"><highlight class="comment"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/>VertexIndexMap<sp/>_vMap;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/>EdgeIndexMap<sp/><sp/><sp/>_eMap;</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,std::size_t&gt;<sp/>_nameToIndex;</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="786"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list<sp/>of<sp/>go<sp/>short<sp/>names<sp/>and<sp/>long<sp/>descriptions<sp/>(termId<sp/>--&gt;<sp/>index<sp/>--&gt;<sp/>name/description)</highlight></codeline>
+<codeline lineno="787"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>_names;</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight></codeline>
+<codeline lineno="796"></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>_descriptions;</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"></highlight></codeline>
+<codeline lineno="804"></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getDescendantTermsHelper(GoVertex<sp/>vertex,<sp/>boost::unordered_map&lt;std::size_t,bool&gt;<sp/>&amp;desendantMap){</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>edge<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InEdgeIterator<sp/>ei,end;</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loop<sp/>over<sp/>each<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(ei,end)<sp/>=<sp/>boost::in_edges(vertex,<sp/>_goGraph);<sp/>ei<sp/>!=<sp/>end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="813"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>soruce<sp/>vertex<sp/>(<sp/>specific<sp/>--is_a--&gt;<sp/>general<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/>boost::source(*ei,_goGraph);</highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>vertex<sp/>index<sp/>to<sp/>the<sp/>desendant<sp/>map,<sp/>addressed<sp/>in<sp/>the<sp/>method<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>redundancies<sp/>are<sp/>handled<sp/>by<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desendantMap[_vMap[v]]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//make<sp/>the<sp/>recursive<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getDescendantTermsHelper(v,<sp/>desendantMap);</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="824"></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getAncestorTermsHelper(GoVertex<sp/>vertex,<sp/>boost::unordered_map&lt;std::size_t,bool&gt;<sp/>&amp;ancestorMap){</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>edge<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutEdgeIterator<sp/>ei,end;</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"></highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loop<sp/>over<sp/>each<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(ei,end)<sp/>=<sp/>boost::out_edges(vertex,_goGraph);<sp/>ei<sp/>!=<sp/>end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>soruce<sp/>vertex<sp/>(<sp/>specific<sp/>--is_a--&gt;<sp/>general<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoVertex<sp/>v<sp/>=<sp/>boost::target(*ei,_goGraph);</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"></highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>vertex<sp/>index<sp/>to<sp/>the<sp/>desendant<sp/>map,<sp/>addressed<sp/>in<sp/>the<sp/>method<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>redundancies<sp/>are<sp/>handled<sp/>by<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorMap[_vMap[v]]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"></highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//make<sp/>the<sp/>recursive<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getAncestorTermsHelper(v,ancestorMap);</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"></highlight></codeline>
+<codeline lineno="847"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SubgraphBFSVisitor:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::default_bfs_visitor{</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"></highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SubgraphBFSVisitor(<ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref>*<sp/>sub):subgraph(sub){}</highlight></codeline>
+<codeline lineno="857"><highlight class="normal"></highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Vertex,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph<sp/>&gt;</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>discover_vertex(Vertex<sp/>u,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Graph<sp/>&amp;<sp/>g)</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::add_vertex(u,*subgraph);</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref>*<sp/>subgraph;</highlight></codeline>
+<codeline lineno="865"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/GoGraph.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classPekarStaabSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>PekarStaabSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="PekarStaabSimilarity_8hpp" local="no">ggtk/PekarStaabSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPekarStaabSimilarity_1a033957c3526f84c4374a0ae4807bbf5c" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* PekarStaabSimilarity::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="138" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPekarStaabSimilarity_1a583c5bdd143be07302b1ea35f18ba5ed" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermDepthMap" kindref="compound">TermDepthMap</ref></type>
+        <definition>TermDepthMap PekarStaabSimilarity::_depthMap</definition>
+        <argsstring></argsstring>
+        <name>_depthMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="139" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPekarStaabSimilarity_1a8da126a2d3dc923dd1749e2f395d41cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PekarStaabSimilarity::PekarStaabSimilarity</definition>
+        <argsstring>(GoGraph *goGraph, TermDepthMap &amp;icMap)</argsstring>
+        <name>PekarStaabSimilarity</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermDepthMap" kindref="compound">TermDepthMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="40" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classPekarStaabSimilarity_1a56bb39dcebcf8909f2006d0698f29211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double PekarStaabSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Pekar Staab similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the PekarStaab similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="49" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="49" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classPekarStaabSimilarity_1a2de7c29ad8e24467c6b66862320953a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double PekarStaabSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized Pekar Staab similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the PekarStaab similarity scaled between 0 and 1 [0,1] inclusive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="90" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classPekarStaabSimilarity_1aef5d3e6c69bcd7f614092f342ce624c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PekarStaabSimilarity::getLCA</definition>
+        <argsstring>(boost::unordered_set&lt; std::string &gt; &amp;ancestorsA, boost::unordered_set&lt; std::string &gt; &amp;ancestorsB)</argsstring>
+        <name>getLCA</name>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsA</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the least common ancestor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method searches the sets to determine the deepest common ancestor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PekarStaabSimilarity.hpp" line="103" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="103" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate PekarStaab similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Pekar Staab similarity.</para><para>V. Pekar and S. Staab, &quot;Taxonomy learning: factoring the structure 
+ of a taxonomy into a semantic classification decision,&quot; in Proc. of 19th International Conference on Computational Linguistics. Morristown NJ USA: Association for Computational Linguistics, pp. 1-7, 2002.</para><para>H. Yu, L. Gao, K. Tu, and Z. Guo, &quot;Broadly predicting specific gene 
+ functions with expression similarity and taxonomy similarity,&quot; Gene, vol. 352, pp. 75-81, Jun 6 2005.</para><para>lowest common ancestor (LCA) GraphDist(LCA,root)/(GraphDist(a,LCA)+GraphDist(b,LCA)+GraphDist(LCA,root)) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="174">
+        <label>PekarStaabSimilarity</label>
+        <link refid="classPekarStaabSimilarity"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>PekarStaabSimilarity</label>
+        <link refid="classPekarStaabSimilarity"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/PekarStaabSimilarity.hpp" line="32" column="1" bodyfile="ggtk/PekarStaabSimilarity.hpp" bodystart="32" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classPekarStaabSimilarity_1a583c5bdd143be07302b1ea35f18ba5ed" prot="private" virt="non-virtual"><scope>PekarStaabSimilarity</scope><name>_depthMap</name></member>
+      <member refid="classPekarStaabSimilarity_1a033957c3526f84c4374a0ae4807bbf5c" prot="private" virt="non-virtual"><scope>PekarStaabSimilarity</scope><name>_goGraph</name></member>
+      <member refid="classPekarStaabSimilarity_1a2de7c29ad8e24467c6b66862320953a1" prot="public" virt="virtual"><scope>PekarStaabSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classPekarStaabSimilarity_1a56bb39dcebcf8909f2006d0698f29211" prot="public" virt="virtual"><scope>PekarStaabSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classPekarStaabSimilarity_1aef5d3e6c69bcd7f614092f342ce624c9" prot="public" virt="non-virtual"><scope>PekarStaabSimilarity</scope><name>getLCA</name></member>
+      <member refid="classPekarStaabSimilarity_1a8da126a2d3dc923dd1749e2f395d41cf" prot="public" virt="non-virtual"><scope>PekarStaabSimilarity</scope><name>PekarStaabSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

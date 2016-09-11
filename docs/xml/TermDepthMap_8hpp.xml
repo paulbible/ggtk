@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="TermDepthMap_8hpp" kind="file" language="C++">
+    <compoundname>TermDepthMap.hpp</compoundname>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+    <includes refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includes>
+    <includes local="no">boost/graph/breadth_first_search.hpp</includes>
+    <includes local="no">boost/graph/reverse_graph.hpp</includes>
+    <includes local="no">boost/accumulators/accumulators.hpp</includes>
+    <includes local="no">boost/accumulators/statistics.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/min.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/max.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="PekarStaabSimilarity_8hpp" local="no">ggtk/PekarStaabSimilarity.hpp</includedby>
+    <incdepgraph>
+      <node id="1200">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="1201">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="1191">
+        <label>ggtk/TermDepthMap.hpp</label>
+        <link refid="TermDepthMap.hpp"/>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1194">
+        <label>string</label>
+      </node>
+      <node id="1203">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="1208">
+        <label>map</label>
+      </node>
+      <node id="1205">
+        <label>fstream</label>
+      </node>
+      <node id="1199">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="1212">
+        <label>boost/accumulators/statistics/min.hpp</label>
+      </node>
+      <node id="1213">
+        <label>boost/accumulators/statistics/max.hpp</label>
+      </node>
+      <node id="1197">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="1204">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1195" relation="include">
+        </childnode>
+      </node>
+      <node id="1198">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="1211">
+        <label>boost/accumulators/statistics.hpp</label>
+      </node>
+      <node id="1209">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1206">
+        <label>vector</label>
+      </node>
+      <node id="1210">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="1195">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="1207">
+        <label>iostream</label>
+      </node>
+      <node id="1192">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1195" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1193">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="1194" relation="include">
+        </childnode>
+      </node>
+      <node id="1196">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="1202">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1216">
+        <label>ggtk/PekarStaabSimilarity.hpp</label>
+        <link refid="PekarStaabSimilarity_8hpp_source"/>
+        <childnode refid="1215" relation="include">
+        </childnode>
+      </node>
+      <node id="1215">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1214">
+        <label>ggtk/TermDepthMap.hpp</label>
+        <link refid="TermDepthMap.hpp"/>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTermDepthMap" prot="public">TermDepthMap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TERM_DEPTH_MAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TERM_DEPTH_MAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoGraph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/AnnotationData.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/breadth_first_search.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/reverse_graph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/min.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/max.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classTermDepthMap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTermDepthMap" kindref="compound">TermDepthMap</ref>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"></codeline>
+<codeline lineno="35" refid="classTermDepthMap_1abb4c7ebeedc74ae59a8399de33b48389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1abb4c7ebeedc74ae59a8399de33b48389" kindref="member">TermDepthMap</ref>(<ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>graph){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>an<sp/>annotation<sp/>list<sp/>the<sp/>size<sp/>of<sp/>verticies<sp/>in<sp/>go,<sp/>each<sp/>value<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//_depths<sp/>=<sp/>std::vector&lt;std::size_t&gt;(graph-&gt;getNumVertices(),0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref><sp/>=<sp/>std::vector&lt;double&gt;(graph-&gt;<ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>(),<sp/>0);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>(first)<sp/>root<sp/>of<sp/>the<sp/>ontology.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GoGraph::GoVertex<sp/>root<sp/>=<sp/>graph-&gt;getRoot();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>root<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>graph-&gt;getTermStringIdByIndex(root)<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>boost<sp/>graph<sp/>from<sp/>the<sp/>GoGraph<sp/>object.<sp/>Must<sp/>be<sp/>done<sp/>to<sp/>utilize<sp/>boost<sp/>algorithms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref>*<sp/>g<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" kindref="member">getGraph</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wrap<sp/>_depth<sp/>with<sp/>a<sp/>vertex<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" kindref="member">GoGraph::VertexIndexMap</ref><sp/>vMap<sp/>=<sp/>boost::get(boost::vertex_index,*g);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>//<sp/>Temparary<sp/>fix<sp/>until<sp/>I<sp/>can<sp/>get<sp/>SWIG<sp/>to<sp/>recognize<sp/>std::size_t</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::iterator_property_map&lt;<sp/>std::vector&lt;std::size_t&gt;::iterator,</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoGraph::VertexIndexMap<sp/>&gt;<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_map(_depths.begin(),<sp/>vMap);</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::iterator_property_map&lt;<sp/>std::vector&lt;double&gt;::iterator,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a8a262d8dedc41830e5d4208d4d5e76c3" kindref="member">GoGraph::VertexIndexMap</ref><sp/>&gt;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_map(<ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>.begin(),<sp/>vMap);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>the<sp/>boost<sp/>depth<sp/>first<sp/>search<sp/>using<sp/>our<sp/>custom<sp/>visitor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>revering<sp/>the<sp/>graph<sp/>is<sp/>necessary<sp/>otherwise<sp/>the<sp/>root<sp/>vertex<sp/>would<sp/>have<sp/>no<sp/>edges.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//boost::depth_first_search(boost::make_reverse_graph(*g),boost::visitor(vis).root_vertex(root));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>bpRoot<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(<ref refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kindref="member">GO::getRootTermBP</ref>());</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>mfRoot<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(<ref refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kindref="member">GO::getRootTermMF</ref>());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>ccRoot<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(<ref refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kindref="member">GO::getRootTermCC</ref>());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Start<sp/>at<sp/>bproot,<sp/>record<sp/>depths</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>reverse<sp/>graph<sp/>due<sp/>to<sp/>edge<sp/>relationship<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::breadth_first_search(boost::make_reverse_graph(*g),<sp/>bpRoot,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::visitor(boost::make_bfs_visitor(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::record_distances(d_map,<sp/>boost::on_tree_edge())</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Start<sp/>at<sp/>bproot,<sp/>record<sp/>depths</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>reverse<sp/>graph<sp/>due<sp/>to<sp/>edge<sp/>relationship<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::breadth_first_search(boost::make_reverse_graph(*g),<sp/>mfRoot,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::visitor(boost::make_bfs_visitor(</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::record_distances(d_map,<sp/>boost::on_tree_edge())</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Start<sp/>at<sp/>bproot,<sp/>record<sp/>depths</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>reverse<sp/>graph<sp/>due<sp/>to<sp/>edge<sp/>relationship<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::breadth_first_search(boost::make_reverse_graph(*g),<sp/>ccRoot,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::visitor(boost::make_bfs_visitor(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::record_distances(d_map,<sp/>boost::on_tree_edge())</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>term<sp/>to<sp/>index<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref><sp/>=<sp/>boost::unordered_map&lt;std::string,std::size_t&gt;(boost::num_vertices(*g));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vertex<sp/>Iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" kindref="member">GoGraph::GoVertexIterator</ref><sp/>vi,vend;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(vi,vend)<sp/>=<sp/>boost::vertices(*g);<sp/>vi<sp/>!=<sp/>vend;<sp/>++vi){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>v<sp/>=<sp/>*vi;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>[graph-&gt;<ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(vMap[v])]<sp/>=<sp/>vMap[v];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>vMap[v]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>_depths.at(vMap[v])<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>graph-&gt;getTermNameByIndex(vMap[v])<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cin.get();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"></codeline>
+<codeline lineno="108" refid="classTermDepthMap_1a819c7cb3f26e54e13195a508aff06cdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1a819c7cb3f26e54e13195a508aff06cdc" kindref="member">TermDepthMap</ref>(){</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creat<sp/>empty<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref><sp/>=<sp/>boost::unordered_map&lt;std::string,std::size_t&gt;();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//_depths<sp/>=<sp/>std::vector&lt;std::size_t&gt;();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref><sp/>=<sp/>std::vector&lt;double&gt;();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"></codeline>
+<codeline lineno="119" refid="classTermDepthMap_1aec4f9d62c638d0f6519d49bb13d96263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1aec4f9d62c638d0f6519d49bb13d96263" kindref="member">~TermDepthMap</ref>(){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//empty<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>.clear();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>.clear();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"></codeline>
+<codeline lineno="129" refid="classTermDepthMap_1acad3e6559688f3338f7d28fffe53f3ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="classTermDepthMap_1acad3e6559688f3338f7d28fffe53f3ab" kindref="member">getValues</ref>(){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//inline<sp/>std::vector&lt;std::size_t&gt;<sp/>getValues(){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"></codeline>
+<codeline lineno="138" refid="classTermDepthMap_1a2cc0c96cf91020df4a035f089ef1a608" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classTermDepthMap_1a2cc0c96cf91020df4a035f089ef1a608" kindref="member">getKeys</ref>(){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>keys;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,<sp/>std::size_t&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>.begin();<sp/>it<sp/>!=<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>.end();<sp/>++it){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keys.push_back(it-&gt;first);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>keys;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"></codeline>
+<codeline lineno="151" refid="classTermDepthMap_1a11f5ed887edd0b335ac64171ebecf3f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1a11f5ed887edd0b335ac64171ebecf3f3" kindref="member">hasTerm</ref>(std::string<sp/>testTerm){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>.find(testTerm)<sp/>!=<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>.end();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"></codeline>
+<codeline lineno="160" refid="classTermDepthMap_1a687255e97647a9afc0a5f0197d0b05c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1a687255e97647a9afc0a5f0197d0b05c9" kindref="member">operator[]</ref>(std::string<sp/>termId){</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//inline<sp/>size_t&amp;<sp/>operator[](std::string<sp/>termId){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>[termId];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>depth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>.at(index);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"></codeline>
+<codeline lineno="172" refid="classTermDepthMap_1af6ba97e619f7fe0a9e906c6eccfd98fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1af6ba97e619f7fe0a9e906c6eccfd98fa" kindref="member">getValue</ref>(std::string<sp/>termId){</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>[termId];</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>depth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>.at(index);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="181"></codeline>
+<codeline lineno="184" refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,std::size_t&gt;<sp/><ref refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" kindref="member">_nameToIndex</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"></codeline>
+<codeline lineno="190" refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" kindref="member">_depths</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//temparary<sp/>fix<sp/>until<sp/>I<sp/>can<sp/>get<sp/>SWIG<sp/>to<sp/>recognize<sp/>std::size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;std::size_t&gt;<sp/>_depths;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/TermDepthMap.hpp"/>
+  </compounddef>
+</doxygen>

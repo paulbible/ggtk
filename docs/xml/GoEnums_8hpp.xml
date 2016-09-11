@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="GoEnums_8hpp" kind="file" language="C++">
+    <compoundname>GoEnums.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="AllowedRelationshipOboGoParser_8hpp" local="no">ggtk/AllowedRelationshipOboGoParser.hpp</includedby>
+    <includedby refid="AllowedRelationshipXmlGoParser_8hpp" local="no">ggtk/AllowedRelationshipXmlGoParser.hpp</includedby>
+    <includedby refid="AllowedSetEvidencePolicy_8hpp" local="no">ggtk/AllowedSetEvidencePolicy.hpp</includedby>
+    <includedby refid="AllowedSetRelationshipPolicy_8hpp" local="no">ggtk/AllowedSetRelationshipPolicy.hpp</includedby>
+    <includedby refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includedby>
+    <includedby refid="EvidencePolicyInterface_8hpp" local="no">ggtk/EvidencePolicyInterface.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includedby>
+    <includedby refid="RelationshipPolicyInterface_8hpp" local="no">ggtk/RelationshipPolicyInterface.hpp</includedby>
+    <includedby refid="StandardOboGoParser_8hpp" local="no">ggtk/StandardOboGoParser.hpp</includedby>
+    <includedby refid="StandardXmlGoParser_8hpp" local="no">ggtk/StandardXmlGoParser.hpp</includedby>
+    <includedby refid="TermSimilarityInterface_8hpp" local="no">ggtk/TermSimilarityInterface.hpp</includedby>
+    <includedby refid="TermSimilarityWriter_8hpp" local="no">ggtk/TermSimilarityWriter.hpp</includedby>
+    <incdepgraph>
+      <node id="660">
+        <label>string</label>
+      </node>
+      <node id="659">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums.hpp"/>
+        <childnode refid="660" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="679">
+        <label>ggtk/PekarStaabSimilarity.hpp</label>
+        <link refid="PekarStaabSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>ggtk/CoutoGraSMAdjustedSharedInformation.hpp</label>
+        <link refid="CoutoGraSMAdjustedSharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="676">
+        <label>ggtk/MgiAnnotationParser.hpp</label>
+        <link refid="MgiAnnotationParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>ggtk/RapidXmlGoParser.hpp</label>
+        <link refid="RapidXmlGoParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>ggtk/TermDepthMap.hpp</label>
+        <link refid="TermDepthMap_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>ggtk/AllowedSetEvidencePolicy.hpp</label>
+        <link refid="AllowedSetEvidencePolicy_8hpp_source"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>ggtk/DisallowedSetEvidencePolicy.hpp</label>
+        <link refid="DisallowedSetEvidencePolicy_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>ggtk/AllPairsMaxSetSimilarity.hpp</label>
+        <link refid="AllPairsMaxSetSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="674">
+        <label>ggtk/GoaAnnotationParser.hpp</label>
+        <link refid="GoaAnnotationParser_8hpp_source"/>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>ggtk/AncestorMeanSharedInformation.hpp</label>
+        <link refid="AncestorMeanSharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>ggtk/FrontierSharedInformation.hpp</label>
+        <link refid="FrontierSharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>ggtk/ExperimentalEvidencePolicy.hpp</label>
+        <link refid="ExperimentalEvidencePolicy_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>ggtk/AnnotationParserFactory.hpp</label>
+        <link refid="AnnotationParserFactory_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>ggtk/GoParserInterface.hpp</label>
+        <link refid="GoParserInterface_8hpp_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>ggtk/BestMatchAverageSetSimilarity.hpp</label>
+        <link refid="BestMatchAverageSetSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>ggtk/AnnotationParserInterface.hpp</label>
+        <link refid="AnnotationParserInterface_8hpp_source"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>ggtk/AllowedRelationshipXmlGoParser.hpp</label>
+        <link refid="AllowedRelationshipXmlGoParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>ggtk/ResnikSimilarity.hpp</label>
+        <link refid="ResnikSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>ggtk/GafAnnotationParser.hpp</label>
+        <link refid="GafAnnotationParser_8hpp_source"/>
+      </node>
+      <node id="707">
+        <label>ggtk/ModularResnik.hpp</label>
+        <link refid="ModularResnik_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>ggtk/ModularJiangConrath.hpp</label>
+        <link refid="ModularJiangConrath_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>ggtk/LinSimilarity.hpp</label>
+        <link refid="LinSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>ggtk/RelationshipPolicyInterface.hpp</label>
+        <link refid="RelationshipPolicyInterface_8hpp_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>ggtk/EvidencePolicyInterface.hpp</label>
+        <link refid="EvidencePolicyInterface_8hpp_source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>ggtk/ModularLin.hpp</label>
+        <link refid="ModularLin_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>ggtk/RelevanceSimilarity.hpp</label>
+        <link refid="RelevanceSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>ggtk/AllowedRelationshipOboGoParser.hpp</label>
+        <link refid="AllowedRelationshipOboGoParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>ggtk/JiangConrathSimilarity.hpp</label>
+        <link refid="JiangConrathSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="700">
+        <label>ggtk/StandardRelationshipPolicy.hpp</label>
+        <link refid="StandardRelationshipPolicy_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>ggtk/StandardXmlGoParser.hpp</label>
+        <link refid="StandardXmlGoParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>ggtk/TermSimilarityWriter.hpp</label>
+        <link refid="TermSimilarityWriter_8hpp_source"/>
+      </node>
+      <node id="661">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums.hpp"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>ggtk/StandardOboGoParser.hpp</label>
+        <link refid="StandardOboGoParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>ggtk/AllowedSetRelationshipPolicy.hpp</label>
+        <link refid="AllowedSetRelationshipPolicy_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>ggtk/AllPairsAverageSetSimilarity.hpp</label>
+        <link refid="AllPairsAverageSetSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>ggtk/TermInformationContentMap.hpp</label>
+        <link refid="TermInformationContentMap_8hpp_source"/>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>ggtk/GoParserFactory.hpp</label>
+        <link refid="GoParserFactory_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="683">
+        <label>ggtk/CoutoGraSMSharedInformation.hpp</label>
+        <link refid="CoutoGraSMSharedInformation_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="708">
+        <label>ggtk/PrecomputedMatrixTermSimilarity.hpp</label>
+        <link refid="PrecomputedMatrixTermSimilarity_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>ggtk/EntrezGene2GoAnnotationParser.hpp</label>
+        <link refid="EntrezGene2GoAnnotationParser_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface_8hpp_source"/>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>ggtk/EnrichmentTools.hpp</label>
+        <link refid="EnrichmentTools_8hpp_source"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGO">GO</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="GoEnums_8hpp_1af9871b9c7b481c4d67f63752dba3027d" prot="public" static="no">
+        <name>NUM_ONTOLOGIES</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>Number of ontologies, 3 + 1 error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoEnums.hpp" line="13" column="9" bodyfile="ggtk/GoEnums.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="GoEnums_8hpp_1a4ea9f75f70b6ec30401167b3ef6f48d0" prot="public" static="no">
+        <name>NUM_EVIDENCES</name>
+        <initializer>23</initializer>
+        <briefdescription>
+<para>Number of evidence codes, 22 + 1 error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoEnums.hpp" line="16" column="9" bodyfile="ggtk/GoEnums.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="GoEnums_8hpp_1acb72edbc6c777f98d52271bc82f46808" prot="public" static="no">
+        <name>NUM_RELATIONSHIPS</name>
+        <initializer>6</initializer>
+        <briefdescription>
+<para>Number of relationships codes, 5 + 1 error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoEnums.hpp" line="19" column="9" bodyfile="ggtk/GoEnums.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GO_ENUMS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GO_ENUMS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#define<sp/>NUM_ONTOLOGIES<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#define<sp/>NUM_EVIDENCES<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#define<sp/>NUM_RELATIONSHIPS<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"></codeline>
+<codeline lineno="26" refid="namespaceGO" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGO" kindref="compound">GO</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1a01b8a816fd68f54681d8ea9b8f9e6dea" kindref="member">getRootTermBP</ref>(){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GO:0008150&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1ab312ff138d3e84313829ceafcf38b4a8" kindref="member">getRootTermMF</ref>(){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GO:0003674&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1a8d9026b41aa1cb1aa042b17a86c45903" kindref="member">getRootTermCC</ref>(){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GO:0005575&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"></codeline>
+<codeline lineno="47" refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">Onto</ref>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BP=0,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MF=1,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CC=2,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ONTO_ERROR=3</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>ontologyStringCodes[NUM_ONTOLOGIES]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;biological_process&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;molecular_function&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cellular_component&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ONTOLOGY_ERROR&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"></codeline>
+<codeline lineno="69" refid="namespaceGO_1a27850aa3de798d067cc60a03a8552fae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">Onto</ref><sp/><ref refid="namespaceGO_1a27850aa3de798d067cc60a03a8552fae" kindref="member">ontologyStringToCode</ref>(std::string<sp/>code){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>i<sp/>&lt;<sp/>NUM_ONTOLOGIES<sp/>-<sp/>1;<sp/>++i){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>index<sp/>if<sp/>matching,<sp/>cast<sp/>as<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(code.compare(ontologyStringCodes[i])<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">Onto</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>error<sp/>enum<sp/>if<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">Onto</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"></codeline>
+<codeline lineno="85" refid="namespaceGO_1adf5775fc9cf071de5a920e7634a12f40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1adf5775fc9cf071de5a920e7634a12f40" kindref="member">ontologyToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">Onto</ref><sp/>&amp;o){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(o<sp/>&lt;<sp/>GO::BP<sp/>||<sp/>o<sp/>&gt;=<sp/>GO::ONTO_ERROR){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ontologyStringCodes[GO::ONTO_ERROR];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ontologyStringCodes[o];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"></codeline>
+<codeline lineno="98" refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">EvidenceCode</ref>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//experimental</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXP=0,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IDA=1,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IPI=2,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMP=3,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IGI=4,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IEP=5,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//computationally<sp/>assisted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ISS=6,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ISO=7,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ISA=8,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ISM=9,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IGC=10,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IBA=11,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IBD=12,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IKR=13,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IRD=14,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RCA=15,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//author<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TAS=16,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NAS=17,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Curator<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IC=18,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ND=19,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//automatically<sp/>assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IEA=20,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//obsolete<sp/>evidence<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NR=21,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ECODE_ERROR=22</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>evidenceStringCodes[NUM_EVIDENCES]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//experimental</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;EXP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IDA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IPI&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IMP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IGI&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IEP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//computationally<sp/>assisted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ISS&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ISO&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ISA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ISM&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IGC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IBA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IBD&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IKR&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IRD&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;RCA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//author<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TAS&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NAS&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Curator<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ND&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//automatically<sp/>assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;IEA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//obsolete<sp/>evidence<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NR&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Error<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;EVIDENCE_CODE_ERROR&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"></codeline>
+<codeline lineno="184" refid="namespaceGO_1a4403262f174622b96e89612c02e46532" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">EvidenceCode</ref><sp/><ref refid="namespaceGO_1a4403262f174622b96e89612c02e46532" kindref="member">evidenceStringToCode</ref>(std::string<sp/>code){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>i<sp/>&lt;<sp/>NUM_EVIDENCES<sp/>-<sp/>1;<sp/>++i){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>index<sp/>if<sp/>matching,<sp/>cast<sp/>as<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(code.compare(evidenceStringCodes[i])<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">EvidenceCode</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>evidence<sp/>error<sp/>if<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">EvidenceCode</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"></codeline>
+<codeline lineno="200" refid="namespaceGO_1a11b7264a995616db04a0170821310ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1a11b7264a995616db04a0170821310ef8" kindref="member">evidenceToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">EvidenceCode</ref><sp/>&amp;evidence){</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>evidenceStringCodes[evidence];</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"></codeline>
+<codeline lineno="209" refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">Relationship</ref>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IS_A=0,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PART_OF=1,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGULATES=2,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POSITIVELY_REGULATES=3,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NEGATIVELY_REGULATES=4,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REL_ERROR=5</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>relationshipStringCodes[NUM_RELATIONSHIPS]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;is_a&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;part_of&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;regulates&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;positively_regulates&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;negatively_regulates&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;RELATIONSHIP_ERROR&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"></codeline>
+<codeline lineno="236" refid="namespaceGO_1a6418070e75662d9f3531324cc0c99334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">Relationship</ref><sp/><ref refid="namespaceGO_1a6418070e75662d9f3531324cc0c99334" kindref="member">relationshipStringToCode</ref>(std::string<sp/>code){</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>i<sp/>&lt;<sp/>NUM_RELATIONSHIPS<sp/>-<sp/>1;<sp/>++i){</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>index<sp/>if<sp/>matching,<sp/>cast<sp/>as<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(code.compare(relationshipStringCodes[i])<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">Relationship</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>error<sp/>code<sp/>if<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">Relationship</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(i);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"></codeline>
+<codeline lineno="252" refid="namespaceGO_1a4621c38a5e5ed683f83bd0a9ca6e51ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceGO_1a4621c38a5e5ed683f83bd0a9ca6e51ee" kindref="member">relationshipToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">Relationship</ref><sp/>&amp;relationship){</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>relationshipStringCodes[relationship];</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/GoEnums.hpp"/>
+  </compounddef>
+</doxygen>

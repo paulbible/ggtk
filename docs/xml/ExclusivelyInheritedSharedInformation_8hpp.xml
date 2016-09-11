@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ExclusivelyInheritedSharedInformation_8hpp" kind="file" language="C++">
+    <compoundname>ExclusivelyInheritedSharedInformation.hpp</compoundname>
+    <includes refid="TermInformationContentMap_8hpp" local="no">ggtk/TermInformationContentMap.hpp</includes>
+    <includes refid="SharedInformationInterface_8hpp" local="no">ggtk/SharedInformationInterface.hpp</includes>
+    <includes refid="SetUtilities_8hpp" local="no">ggtk/SetUtilities.hpp</includes>
+    <includes refid="Accumulators_8hpp" local="no">ggtk/Accumulators.hpp</includes>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">boost/unordered_set.hpp</includes>
+    <includes local="no">boost/graph/breadth_first_search.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="432">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="433">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="442">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap_8hpp_source"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="453">
+        <label>ggtk/SharedInformationInterface.hpp</label>
+        <link refid="SharedInformationInterface_8hpp_source"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>cmath</label>
+      </node>
+      <node id="426">
+        <label>string</label>
+      </node>
+      <node id="435">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="440">
+        <label>map</label>
+      </node>
+      <node id="437">
+        <label>fstream</label>
+      </node>
+      <node id="431">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="447">
+        <label>boost/accumulators/statistics/min.hpp</label>
+      </node>
+      <node id="448">
+        <label>boost/accumulators/statistics/mean.hpp</label>
+      </node>
+      <node id="454">
+        <label>ggtk/SetUtilities.hpp</label>
+        <link refid="SetUtilities_8hpp_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>boost/accumulators/statistics/max.hpp</label>
+      </node>
+      <node id="429">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="436">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="445">
+        <label>boost/accumulators/statistics.hpp</label>
+      </node>
+      <node id="441">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="421">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation.hpp"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>vector</label>
+      </node>
+      <node id="444">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="450">
+        <label>boost/accumulators/statistics/variance.hpp</label>
+      </node>
+      <node id="427">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="449">
+        <label>boost/accumulators/statistics/covariance.hpp</label>
+      </node>
+      <node id="456">
+        <label>utility</label>
+      </node>
+      <node id="451">
+        <label>boost/accumulators/statistics/variates/covariate.hpp</label>
+      </node>
+      <node id="452">
+        <label>boost/graph/depth_first_search.hpp</label>
+      </node>
+      <node id="439">
+        <label>iostream</label>
+      </node>
+      <node id="443">
+        <label>ggtk/Accumulators.hpp</label>
+        <link refid="Accumulators_8hpp_source"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="422">
+        <label>ggtk/TermInformationContentMap.hpp</label>
+        <link refid="TermInformationContentMap_8hpp_source"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>algorithm</label>
+      </node>
+      <node id="434">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="459">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="458">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation.hpp"/>
+        <childnode refid="459" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classExclusivelyInheritedSharedInformation" prot="public">ExclusivelyInheritedSharedInformation</innerclass>
+    <innerclass refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor" prot="private">ExclusivelyInheritedSharedInformation::EdgeSetVisitor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EXCLUSIVELY_INHERITED_SHARED_INFORMATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXCLUSIVELY_INHERITED_SHARED_INFORMATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermInformationContentMap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SharedInformationInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SetUtilities.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/Accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoGraph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_set.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/breadth_first_search.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classExclusivelyInheritedSharedInformation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classExclusivelyInheritedSharedInformation" kindref="compound">ExclusivelyInheritedSharedInformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"></codeline>
+<codeline lineno="37" refid="classExclusivelyInheritedSharedInformation_1a176bde96479ad6ea0baba4a520b7038e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1a176bde96479ad6ea0baba4a520b7038e" kindref="member">ExclusivelyInheritedSharedInformation</ref>(<ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>goGraph,<ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref><sp/>&amp;icMap){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph<sp/>=<sp/>goGraph;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_icMap<sp/>=<sp/>icMap;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"></codeline>
+<codeline lineno="47" refid="classExclusivelyInheritedSharedInformation_1a16a51c8f3bd02e6b1e88ebad6faffb5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::unordered_set&lt;std::string&gt;<sp/><ref refid="classExclusivelyInheritedSharedInformation_1a16a51c8f3bd02e6b1e88ebad6faffb5d" kindref="member">getCommonDisjointAncestors</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termC1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termC2){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>EICommonSet<sp/>&lt;-<sp/>&lt;empty_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>cda;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//EICA(t,t)<sp/>=<sp/>{t}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(termC1.compare(termC2)<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cda.insert(termC1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cda;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>CommonAnSet<sp/>&lt;-<sp/>GetCommonAnSet(t1,t2,AncestorSet)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestorsC1<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(termC1);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorsC1.insert(termC1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestorsC2<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(termC2);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorsC2.insert(termC2);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>commonAncestors<sp/>=<sp/>SetUtilities::set_intersection(ancestorsC1,ancestorsC2);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>commonAncestors.size()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//commonDisjointAncestors(c,c)<sp/>=<sp/>{c},<sp/>by<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(commonAncestors.size()<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commonAncestors;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>UnionAnSet<sp/>&lt;-<sp/>GetAnSet(t1,AncestorSet)<sp/>U<sp/>GetAnSet(t2,AncestorSet)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>unionAncestors<sp/>=<sp/>SetUtilities::set_union(ancestorsC1,ancestorsC2);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>DiffAnSet<sp/>&lt;-<sp/>UnionAnSet<sp/>-<sp/>CommonAnSet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>diffSet<sp/>=<sp/>SetUtilities::set_difference(unionAncestors,commonAncestors);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>boost<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref>*<sp/>g<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" kindref="member">getGraph</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>iter;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>for<sp/>each<sp/>a<sp/>in<sp/>CommonAnSet<sp/>do<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(iter<sp/>=<sp/>commonAncestors.begin();<sp/>iter<sp/>!=<sp/>commonAncestors.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDisj<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>DirectChildSet<sp/>&lt;-<sp/>getDirectDescendant(a,ChildSet)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//boost::unordered_set&lt;std::string&gt;<sp/>directChildSet;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/>*iter;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;-----&gt;<sp/>&quot;<sp/>&lt;&lt;<sp/>term<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>v<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1aa66361d5993e6fdf5bd320b6ae15e4bc" kindref="member">getVertexByName</ref>(term);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a749886e553031dcb52c595989129514d" kindref="member">GoGraph::InEdgeIterator</ref><sp/>ei,end;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(ei,end)<sp/>=<sp/>boost::in_edges(v,*g);<sp/>ei<sp/>!=<sp/>end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>child<sp/>=<sp/>boost::source(*ei,*g);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" kindref="member">getVertexIndex</ref>(child);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>cTerm<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(index);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>cTerm<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//directChildSet.insert(cTerm);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(diffSet.find(cTerm)<sp/>!=<sp/>diffSet.end()){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//early<sp/>exit<sp/>should<sp/>improve<sp/>runtime</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isDisj<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//the<sp/>below<sp/>code<sp/>was<sp/>dropped<sp/>to<sp/>improve<sp/>runtime,<sp/>improvement<sp/>is<sp/>minor<sp/>though</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>tmpset<sp/>&lt;-<sp/>DiffAnSet<sp/>&lt;intersect&gt;<sp/>DirectChildSet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//boost::unordered_set&lt;std::string&gt;<sp/>tempSet<sp/>=<sp/>SetUtilities::set_intersection(diffSet,directChildSet);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Z&amp;L:<sp/>if<sp/>tmpset<sp/>!=<sp/>&lt;empty_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if(tempSet.size()<sp/>!=<sp/>0){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>isDisj<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>the<sp/>term<sp/>is<sp/>a<sp/>disjoint<sp/>ancestor<sp/>add<sp/>it<sp/>to<sp/>the<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isDisj){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cda.insert(term);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;eisi<sp/>&quot;<sp/>&lt;&lt;<sp/>term<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>_icMap[term]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;eisi<sp/>cda<sp/>size<sp/>&quot;&lt;&lt;<sp/>cda.size()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cda;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"></codeline>
+<codeline lineno="136" refid="classExclusivelyInheritedSharedInformation_1ae7e51e7f1328cfc5f7b9991c7714eadf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1ae7e51e7f1328cfc5f7b9991c7714eadf" kindref="member">sharedInformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termA,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termB){</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>any<sp/>terms<sp/>not<sp/>in<sp/>the<sp/>datbase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termA)<sp/>||<sp/>!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termB)){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>terms<sp/>in<sp/>different<sp/>ontologies</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termA)<sp/>!=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termB)){</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1a42d249e1cf4e4f6c496ab61b7372cf4a" kindref="member">Accumulators::MeanAccumulator</ref><sp/>meanIC;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>cda<sp/>=<sp/><ref refid="classExclusivelyInheritedSharedInformation_1a16a51c8f3bd02e6b1e88ebad6faffb5d" kindref="member">getCommonDisjointAncestors</ref>(termA,termB);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;size<sp/>&quot;<sp/>&lt;&lt;<sp/>cda.size()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>iter<sp/>=<sp/>cda.begin();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;iter<sp/>!=<sp/>cda.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>_icMap[*iter]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meanIC(_icMap[*iter]);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceAccumulators_1a42a703c5c61fedbdd8aecd2e558a4467" kindref="member">Accumulators::extractMean</ref>(meanIC);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"></codeline>
+<codeline lineno="163" refid="classExclusivelyInheritedSharedInformation_1ad77022f2d6225c423fa0c5abb8a1443a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1ad77022f2d6225c423fa0c5abb8a1443a" kindref="member">sharedInformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>any<sp/>terms<sp/>not<sp/>in<sp/>the<sp/>datbase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_icMap[term];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"></codeline>
+<codeline lineno="176" refid="classExclusivelyInheritedSharedInformation_1af435c2641f3ab4a34db2d473216ceb16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1af435c2641f3ab4a34db2d473216ceb16" kindref="member">maxInformationContent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxIC;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//select<sp/>the<sp/>correct<sp/>ontology<sp/>normalization<sp/>factor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/>ontoType<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(term);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ontoType<sp/>==<sp/>GO::BP){</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" kindref="member">getMinBP</ref>());</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ontoType<sp/>==<sp/>GO::MF){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" kindref="member">getMinMF</ref>());</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" kindref="member">getMinCC</ref>());</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxIC;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"></codeline>
+<codeline lineno="197" refid="classExclusivelyInheritedSharedInformation_1a0bf2231c6f714d97a5e55ee67893e403" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1a0bf2231c6f714d97a5e55ee67893e403" kindref="member">hasTerm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(term);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"></codeline>
+<codeline lineno="205" refid="classExclusivelyInheritedSharedInformation_1a7b0ec1a7a1fb653450686c7e31346363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classExclusivelyInheritedSharedInformation_1a7b0ec1a7a1fb653450686c7e31346363" kindref="member">isSameOntology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termA,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termB){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termA)<sp/>==<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termB);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//breadth<sp/>first<sp/>search<sp/>to<sp/>calculate<sp/>the<sp/>visited<sp/>edges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">EdgeSetVisitor:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::default_bfs_visitor{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EdgeSetVisitor(boost::unordered_set&lt;std::size_t&gt;&amp;<sp/>inSet,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref>&amp;<sp/>inMap,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,boost::unordered_set&lt;std::size_t&gt;<sp/>&gt;&amp;<sp/>termToEdges):</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>edgeSet(inSet),eMap(inMap),termEdgesMap(termToEdges){}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Edge,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph<sp/>&gt;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>examine_edge(Edge<sp/>e,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Graph<sp/>&amp;<sp/>g)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>edge<sp/>to<sp/>the<sp/>set<sp/>of<sp/>visited<sp/>edges</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>edgeSet.insert(eMap[e]);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>vertex<sp/>of<sp/>the<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph::vertex_descriptor<sp/>v<sp/>=<sp/>boost::target(e,g);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>term<sp/>=<sp/>g[v].termId;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>a<sp/>set<sp/>for<sp/>the<sp/>term<sp/>if<sp/>none<sp/>exists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(termEdgesMap.find(term)<sp/>==<sp/>termEdgesMap.end()){</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>termEdgesMap[term]<sp/>=<sp/>boost::unordered_set&lt;std::size_t&gt;();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>edge<sp/>to<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>termEdgesMap[term].insert(eMap[e]);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::size_t&gt;&amp;<sp/>edgeSet;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref>&amp;<sp/>eMap;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,boost::unordered_set&lt;std::size_t&gt;<sp/>&gt;&amp;<sp/>termEdgesMap;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>_goGraph;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref><sp/>_icMap;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp"/>
+  </compounddef>
+</doxygen>

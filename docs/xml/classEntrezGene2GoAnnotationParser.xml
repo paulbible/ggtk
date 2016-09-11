@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classEntrezGene2GoAnnotationParser" kind="class" language="C++" prot="public">
+    <compoundname>EntrezGene2GoAnnotationParser</compoundname>
+    <basecompoundref refid="classAnnotationParserInterface" prot="public" virt="non-virtual">AnnotationParserInterface</basecompoundref>
+    <includes refid="EntrezGene2GoAnnotationParser_8hpp" local="no">ggtk/EntrezGene2GoAnnotationParser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEntrezGene2GoAnnotationParser_1a2118ff50296f85258d2e8780cb0bb3ab" prot="private" static="no" mutable="no">
+        <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+        <definition>EvidencePolicyInterface* EntrezGene2GoAnnotationParser::_policy</definition>
+        <argsstring></argsstring>
+        <name>_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="198" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEntrezGene2GoAnnotationParser_1aca2333f3cc25595c1283c3b290dd45cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+        <definition>AnnotationData* EntrezGene2GoAnnotationParser::parseAnnotationFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>parseAnnotationFile</name>
+        <reimplements refid="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab">parseAnnotationFile</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for parsing an annotation file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a filename as in put and returns a pointer to an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object. This method fulfills part of the interface contract. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="33" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="33" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classEntrezGene2GoAnnotationParser_1a5e418ff06c4e2619c0723b828a8578cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool EntrezGene2GoAnnotationParser::isFileGood</definition>
+        <argsstring>(const std::string &amp;fileName)</argsstring>
+        <name>isFileGood</name>
+        <reimplements refid="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030">isFileGood</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A method for checking if a file exists and is formatted correctly. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks that the file exists and its format can be recognized. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="107" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="107" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classEntrezGene2GoAnnotationParser_1a56aaa3a03354c6894fed75accfa2637b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> *</type>
+        <definition>AnnotationParserInterface* EntrezGene2GoAnnotationParser::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24">clone</reimplements>
+        <briefdescription>
+<para>An interface method for creating a new instance of the parser. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a new instance of the class. This method partially fulfills the interface contract. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="174" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classEntrezGene2GoAnnotationParser_1ad9fad52a10bd767ff769ee4d953bda3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EntrezGene2GoAnnotationParser::EntrezGene2GoAnnotationParser</definition>
+        <argsstring>(EvidencePolicyInterface *policy)</argsstring>
+        <name>EntrezGene2GoAnnotationParser</name>
+        <param>
+          <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor method for creating the parser with a policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="183" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classEntrezGene2GoAnnotationParser_1a50b77b0894f628df64ab3104a99e7f3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EntrezGene2GoAnnotationParser::EntrezGene2GoAnnotationParser</definition>
+        <argsstring>()</argsstring>
+        <name>EntrezGene2GoAnnotationParser</name>
+        <briefdescription>
+<para>A default constructor method for creating the parser with the default policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser with the default evidence policy, everything is allowed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="192" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="192" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse an Entrez gene2go annotation file. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class will read an Entrez gene2go file and add those annoations to an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> class. Available at: <ulink url="ftp://ftp.ncbi.nih.gov/gene/DATA/">ftp://ftp.ncbi.nih.gov/gene/DATA/</ulink></para><para>Implements <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="72">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="71">
+        <label>EntrezGene2GoAnnotationParser</label>
+        <link refid="classEntrezGene2GoAnnotationParser"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="74">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="73">
+        <label>EntrezGene2GoAnnotationParser</label>
+        <link refid="classEntrezGene2GoAnnotationParser"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/EntrezGene2GoAnnotationParser.hpp" line="25" column="1" bodyfile="ggtk/EntrezGene2GoAnnotationParser.hpp" bodystart="25" bodyend="200"/>
+    <listofallmembers>
+      <member refid="classEntrezGene2GoAnnotationParser_1a2118ff50296f85258d2e8780cb0bb3ab" prot="private" virt="non-virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>_policy</name></member>
+      <member refid="classEntrezGene2GoAnnotationParser_1a56aaa3a03354c6894fed75accfa2637b" prot="public" virt="virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>clone</name></member>
+      <member refid="classEntrezGene2GoAnnotationParser_1ad9fad52a10bd767ff769ee4d953bda3d" prot="public" virt="non-virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>EntrezGene2GoAnnotationParser</name></member>
+      <member refid="classEntrezGene2GoAnnotationParser_1a50b77b0894f628df64ab3104a99e7f3c" prot="public" virt="non-virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>EntrezGene2GoAnnotationParser</name></member>
+      <member refid="classEntrezGene2GoAnnotationParser_1a5e418ff06c4e2619c0723b828a8578cd" prot="public" virt="virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>isFileGood</name></member>
+      <member refid="classEntrezGene2GoAnnotationParser_1aca2333f3cc25595c1283c3b290dd45cf" prot="public" virt="virtual"><scope>EntrezGene2GoAnnotationParser</scope><name>parseAnnotationFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

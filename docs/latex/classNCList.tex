@@ -1,0 +1,176 @@
+\hypertarget{classNCList}{}\section{N\+C\+List Class Reference}
+\label{classNCList}\index{N\+C\+List@{N\+C\+List}}
+
+
+A container class for quickly finding intersections of genomic intervals.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+N\+C\+List.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNCList_1_1NCNode}{N\+C\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNCList_ab6c2b7decd70fcde7b54db4e79b64b85}{N\+C\+List} (std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \&regions)
+\item 
+size\+\_\+t \hyperlink{classNCList_a98e796a8e78efec9d019fb4303d4c8f3}{get\+Overlap\+Index} (const \hyperlink{classGenomicRegion}{Genomic\+Region} r)
+\item 
+size\+\_\+t \hyperlink{classNCList_a3199031fe2904e2cac57a682e07573c5}{get\+Overlap\+Index} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)
+\item 
+size\+\_\+t \hyperlink{classNCList_a01ce26e143d1edf32caf50d472c1cce3}{get\+Overlap\+Index} (const size\+\_\+t start, const size\+\_\+t end)
+\item 
+size\+\_\+t \hyperlink{classNCList_a226ca89f140feac5088af4be366bcd58}{get\+Overlap\+Index} (const size\+\_\+t point)
+\item 
+std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \hyperlink{classNCList_af67a0c748ed4e7d095bb6092c1f291fb}{get\+Features} ()
+\item 
+std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \hyperlink{classNCList_acaec79f5de348b5645a856fcde6d58cf}{get\+Features\+In\+Range} (const \hyperlink{classGenomicRegion}{Genomic\+Region} r)
+\item 
+std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \hyperlink{classNCList_aab695768230d12b179699ca8f19f5d4c}{get\+Features\+In\+Range} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)
+\item 
+std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \hyperlink{classNCList_a02b767b23f0007af67174cb2c2e6d92b}{get\+Features\+In\+Range} (const size\+\_\+t start, const size\+\_\+t end)
+\item 
+std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \hyperlink{classNCList_a6de14b47eb6b5c7291f5469609d500f6}{get\+Features\+At} (const size\+\_\+t index)
+\item 
+size\+\_\+t \hyperlink{classNCList_a4bb83c717bfa1b169f48809a4ed32f2e}{size} ()
+\item 
+size\+\_\+t \hyperlink{classNCList_a88ba10ba7017497f6912e8f3570239e9}{num\+Features} ()
+\item 
+std\+::vector$<$ \hyperlink{classNCList_1_1NCNode}{N\+C\+Node} $>$ \hyperlink{classNCList_a4ea0b59d58fcd385adb2fa4e92aae35b}{get\+Nodes} ()
+\item 
+\hyperlink{classGenomicRegion}{Genomic\+Region} \hyperlink{classNCList_a002aee45aea558b91957c4f282b83565}{get\+Region\+At} (size\+\_\+t i)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classNCList_1_1NCNode}{N\+C\+Node} $>$ \hyperlink{classNCList_a2999e47110bf2e20bb9fd8e8689715e3}{\+\_\+items}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A container class for quickly finding intersections of genomic intervals. 
+
+This class prepresents an implementation of Nested Containment Lists by Alekseyenko and Lee.
+
+Alekseyenko AV and Lee CJ. Nested Containment List (\hyperlink{classNCList}{N\+C\+List})\+: a new algorithm for accelerating interval query of genome alignment and interval databases. Bioinformatics. 2007 Jun 1;23(11)\+:1386-\/93. Epub 2007 Jan 18. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{N\+C\+List@{N\+C\+List}!N\+C\+List@{N\+C\+List}}
+\index{N\+C\+List@{N\+C\+List}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{N\+C\+List(std\+::vector$<$ Genomic\+Region $>$ \&regions)}{NCList(std::vector< GenomicRegion > &regions)}}]{\setlength{\rightskip}{0pt plus 5cm}N\+C\+List\+::\+N\+C\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Genomic\+Region} $>$ \&}]{regions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_ab6c2b7decd70fcde7b54db4e79b64b85}{}\label{classNCList_ab6c2b7decd70fcde7b54db4e79b64b85}
+Constructor for \hyperlink{classNCList}{N\+C\+List} that performs the work of sorting and inserting intevals into the N\+C\+Nodes. 
+
+\subsection{Member Function Documentation}
+\index{N\+C\+List@{N\+C\+List}!get\+Features@{get\+Features}}
+\index{get\+Features@{get\+Features}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Features()}{getFeatures()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Genomic\+Region}$>$ N\+C\+List\+::get\+Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_af67a0c748ed4e7d095bb6092c1f291fb}{}\label{classNCList_af67a0c748ed4e7d095bb6092c1f291fb}
+A method to return all genes as a vector \index{N\+C\+List@{N\+C\+List}!get\+Features\+At@{get\+Features\+At}}
+\index{get\+Features\+At@{get\+Features\+At}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Features\+At(const size\+\_\+t index)}{getFeaturesAt(const size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Genomic\+Region}$>$ N\+C\+List\+::get\+Features\+At (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a6de14b47eb6b5c7291f5469609d500f6}{}\label{classNCList_a6de14b47eb6b5c7291f5469609d500f6}
+Method to return all genes at a particular index in the list \index{N\+C\+List@{N\+C\+List}!get\+Features\+In\+Range@{get\+Features\+In\+Range}}
+\index{get\+Features\+In\+Range@{get\+Features\+In\+Range}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Features\+In\+Range(const Genomic\+Region r)}{getFeaturesInRange(const GenomicRegion r)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Genomic\+Region}$>$ N\+C\+List\+::get\+Features\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{const {\bf Genomic\+Region}}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_acaec79f5de348b5645a856fcde6d58cf}{}\label{classNCList_acaec79f5de348b5645a856fcde6d58cf}
+Method to return all genes in a given range \index{N\+C\+List@{N\+C\+List}!get\+Features\+In\+Range@{get\+Features\+In\+Range}}
+\index{get\+Features\+In\+Range@{get\+Features\+In\+Range}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Features\+In\+Range(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)}{getFeaturesInRange(const std::pair< size_t, size_t > p)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Genomic\+Region}$>$ N\+C\+List\+::get\+Features\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_aab695768230d12b179699ca8f19f5d4c}{}\label{classNCList_aab695768230d12b179699ca8f19f5d4c}
+Method to return all genes between a start end pair \index{N\+C\+List@{N\+C\+List}!get\+Features\+In\+Range@{get\+Features\+In\+Range}}
+\index{get\+Features\+In\+Range@{get\+Features\+In\+Range}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Features\+In\+Range(const size\+\_\+t start, const size\+\_\+t end)}{getFeaturesInRange(const size_t start, const size_t end)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Genomic\+Region}$>$ N\+C\+List\+::get\+Features\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{start, }
+\item[{const size\+\_\+t}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a02b767b23f0007af67174cb2c2e6d92b}{}\label{classNCList_a02b767b23f0007af67174cb2c2e6d92b}
+Method to return all genes between a start end interval \index{N\+C\+List@{N\+C\+List}!get\+Nodes@{get\+Nodes}}
+\index{get\+Nodes@{get\+Nodes}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Nodes()}{getNodes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+C\+Node}$>$ N\+C\+List\+::get\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a4ea0b59d58fcd385adb2fa4e92aae35b}{}\label{classNCList_a4ea0b59d58fcd385adb2fa4e92aae35b}
+return the vector of N\+C\+Nodes \index{N\+C\+List@{N\+C\+List}!get\+Overlap\+Index@{get\+Overlap\+Index}}
+\index{get\+Overlap\+Index@{get\+Overlap\+Index}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Overlap\+Index(const Genomic\+Region r)}{getOverlapIndex(const GenomicRegion r)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::get\+Overlap\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Genomic\+Region}}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a98e796a8e78efec9d019fb4303d4c8f3}{}\label{classNCList_a98e796a8e78efec9d019fb4303d4c8f3}
+Get the list index of the overlapped region \index{N\+C\+List@{N\+C\+List}!get\+Overlap\+Index@{get\+Overlap\+Index}}
+\index{get\+Overlap\+Index@{get\+Overlap\+Index}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Overlap\+Index(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)}{getOverlapIndex(const std::pair< size_t, size_t > p)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::get\+Overlap\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a3199031fe2904e2cac57a682e07573c5}{}\label{classNCList_a3199031fe2904e2cac57a682e07573c5}
+Get the list index of the overlapped start end pair \index{N\+C\+List@{N\+C\+List}!get\+Overlap\+Index@{get\+Overlap\+Index}}
+\index{get\+Overlap\+Index@{get\+Overlap\+Index}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Overlap\+Index(const size\+\_\+t start, const size\+\_\+t end)}{getOverlapIndex(const size_t start, const size_t end)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::get\+Overlap\+Index (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{start, }
+\item[{const size\+\_\+t}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a01ce26e143d1edf32caf50d472c1cce3}{}\label{classNCList_a01ce26e143d1edf32caf50d472c1cce3}
+Get the list index of the overlapped start end interval \index{N\+C\+List@{N\+C\+List}!get\+Overlap\+Index@{get\+Overlap\+Index}}
+\index{get\+Overlap\+Index@{get\+Overlap\+Index}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Overlap\+Index(const size\+\_\+t point)}{getOverlapIndex(const size_t point)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::get\+Overlap\+Index (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a226ca89f140feac5088af4be366bcd58}{}\label{classNCList_a226ca89f140feac5088af4be366bcd58}
+Get the list index of the overlapped coordinate \index{N\+C\+List@{N\+C\+List}!get\+Region\+At@{get\+Region\+At}}
+\index{get\+Region\+At@{get\+Region\+At}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{get\+Region\+At(size\+\_\+t i)}{getRegionAt(size_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Genomic\+Region} N\+C\+List\+::get\+Region\+At (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a002aee45aea558b91957c4f282b83565}{}\label{classNCList_a002aee45aea558b91957c4f282b83565}
+returns the top level region at an index i \index{N\+C\+List@{N\+C\+List}!num\+Features@{num\+Features}}
+\index{num\+Features@{num\+Features}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{num\+Features()}{numFeatures()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::num\+Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a88ba10ba7017497f6912e8f3570239e9}{}\label{classNCList_a88ba10ba7017497f6912e8f3570239e9}
+num\+Features returns number of all genes/features \index{N\+C\+List@{N\+C\+List}!size@{size}}
+\index{size@{size}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+C\+List\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_a4bb83c717bfa1b169f48809a4ed32f2e}{}\label{classNCList_a4bb83c717bfa1b169f48809a4ed32f2e}
+size returns number of top level nodes 
+
+\subsection{Member Data Documentation}
+\index{N\+C\+List@{N\+C\+List}!\+\_\+items@{\+\_\+items}}
+\index{\+\_\+items@{\+\_\+items}!N\+C\+List@{N\+C\+List}}
+\subsubsection[{\texorpdfstring{\+\_\+items}{_items}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf N\+C\+Node}$>$ N\+C\+List\+::\+\_\+items}\hypertarget{classNCList_a2999e47110bf2e20bb9fd8e8689715e3}{}\label{classNCList_a2999e47110bf2e20bb9fd8e8689715e3}
+List of N\+C\+Nodes as a vector 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/N\+C\+List.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="AnnotationParserInterface_8hpp" kind="file" language="C++">
+    <compoundname>AnnotationParserInterface.hpp</compoundname>
+    <includes refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includes>
+    <includedby refid="AnnotationParserFactory_8hpp" local="no">ggtk/AnnotationParserFactory.hpp</includedby>
+    <includedby refid="EntrezGene2GoAnnotationParser_8hpp" local="no">ggtk/EntrezGene2GoAnnotationParser.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="GoaAnnotationParser_8hpp" local="no">ggtk/GoaAnnotationParser.hpp</includedby>
+    <includedby refid="MgiAnnotationParser_8hpp" local="no">ggtk/MgiAnnotationParser.hpp</includedby>
+    <incdepgraph>
+      <node id="233">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="234">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="226">
+        <label>string</label>
+      </node>
+      <node id="236">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="240">
+        <label>map</label>
+      </node>
+      <node id="237">
+        <label>fstream</label>
+      </node>
+      <node id="223">
+        <label>ggtk/AnnotationParserInterface.hpp</label>
+        <link refid="AnnotationParserInterface.hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="230">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="224">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="241">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="238">
+        <label>vector</label>
+      </node>
+      <node id="228">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="239">
+        <label>iostream</label>
+      </node>
+      <node id="227">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="235">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="244">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="248">
+        <label>ggtk/MgiAnnotationParser.hpp</label>
+        <link refid="MgiAnnotationParser_8hpp_source"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>ggtk/GoaAnnotationParser.hpp</label>
+        <link refid="GoaAnnotationParser_8hpp_source"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>ggtk/AnnotationParserFactory.hpp</label>
+        <link refid="AnnotationParserFactory_8hpp_source"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>ggtk/AnnotationParserInterface.hpp</label>
+        <link refid="AnnotationParserInterface.hpp"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>ggtk/GafAnnotationParser.hpp</label>
+        <link refid="GafAnnotationParser_8hpp_source"/>
+      </node>
+      <node id="245">
+        <label>ggtk/EntrezGene2GoAnnotationParser.hpp</label>
+        <link refid="EntrezGene2GoAnnotationParser_8hpp_source"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAnnotationParserInterface" prot="public">AnnotationParserInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ANNOTATION_PARSER_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANNOTATION_PARSER_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/AnnotationData.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classAnnotationParserInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref>*<sp/><ref refid="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab" kindref="member">parseAnnotationFile</ref>(std::string<sp/>fileName)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030" kindref="member">isFileGood</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;fileName)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref>*<sp/><ref refid="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24" kindref="member">clone</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/AnnotationParserInterface.hpp"/>
+  </compounddef>
+</doxygen>

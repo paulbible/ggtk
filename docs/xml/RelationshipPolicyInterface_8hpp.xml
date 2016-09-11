@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="RelationshipPolicyInterface_8hpp" kind="file" language="C++">
+    <compoundname>RelationshipPolicyInterface.hpp</compoundname>
+    <includes refid="GoEnums_8hpp" local="no">ggtk/GoEnums.hpp</includes>
+    <includedby refid="AllowedRelationshipOboGoParser_8hpp" local="no">ggtk/AllowedRelationshipOboGoParser.hpp</includedby>
+    <includedby refid="AllowedRelationshipXmlGoParser_8hpp" local="no">ggtk/AllowedRelationshipXmlGoParser.hpp</includedby>
+    <includedby refid="AllowedSetRelationshipPolicy_8hpp" local="no">ggtk/AllowedSetRelationshipPolicy.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="StandardOboGoParser_8hpp" local="no">ggtk/StandardOboGoParser.hpp</includedby>
+    <includedby refid="StandardRelationshipPolicy_8hpp" local="no">ggtk/StandardRelationshipPolicy.hpp</includedby>
+    <includedby refid="StandardXmlGoParser_8hpp" local="no">ggtk/StandardXmlGoParser.hpp</includedby>
+    <incdepgraph>
+      <node id="1020">
+        <label>string</label>
+      </node>
+      <node id="1018">
+        <label>ggtk/RelationshipPolicyInterface.hpp</label>
+        <link refid="RelationshipPolicyInterface.hpp"/>
+        <childnode refid="1019" relation="include">
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1023">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1025">
+        <label>ggtk/AllowedRelationshipXmlGoParser.hpp</label>
+        <link refid="AllowedRelationshipXmlGoParser_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1021">
+        <label>ggtk/RelationshipPolicyInterface.hpp</label>
+        <link refid="RelationshipPolicyInterface.hpp"/>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>ggtk/AllowedRelationshipOboGoParser.hpp</label>
+        <link refid="AllowedRelationshipOboGoParser_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>ggtk/StandardRelationshipPolicy.hpp</label>
+        <link refid="StandardRelationshipPolicy_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>ggtk/StandardXmlGoParser.hpp</label>
+        <link refid="StandardXmlGoParser_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>ggtk/StandardOboGoParser.hpp</label>
+        <link refid="StandardOboGoParser_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>ggtk/AllowedSetRelationshipPolicy.hpp</label>
+        <link refid="AllowedSetRelationshipPolicy_8hpp_source"/>
+        <childnode refid="1023" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classRelationshipPolicyInterface" prot="public">RelationshipPolicyInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RELATIONSHIP_POLICY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RELATIONSHIP_POLICY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoEnums.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classRelationshipPolicyInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb" kindref="member">isAllowed</ref>(<ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relationship)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/RelationshipPolicyInterface.hpp"/>
+  </compounddef>
+</doxygen>

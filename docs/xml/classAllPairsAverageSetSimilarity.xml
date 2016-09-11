@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAllPairsAverageSetSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>AllPairsAverageSetSimilarity</compoundname>
+    <basecompoundref refid="classTermSetSimilarityInterface" prot="public" virt="non-virtual">TermSetSimilarityInterface</basecompoundref>
+    <includes refid="AllPairsAverageSetSimilarity_8hpp" local="no">ggtk/AllPairsAverageSetSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllPairsAverageSetSimilarity_1aa6970260ab2b18fcb2655e220811322a" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+        <definition>TermSimilarityInterface* AllPairsAverageSetSimilarity::_similarity</definition>
+        <argsstring></argsstring>
+        <name>_similarity</name>
+        <briefdescription>
+<para>Pointer to the actual similarity measure. </para>        </briefdescription>
+        <detaileddescription>
+<para>This object will actually calculate the similarity between pairs of terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsAverageSetSimilarity.hpp" line="75" column="1" bodyfile="ggtk/AllPairsAverageSetSimilarity.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllPairsAverageSetSimilarity_1a67b7cfe7f078bea616baaf99116ace2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllPairsAverageSetSimilarity::AllPairsAverageSetSimilarity</definition>
+        <argsstring>(TermSimilarityInterface *simMeasure)</argsstring>
+        <name>AllPairsAverageSetSimilarity</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>simMeasure</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classAllPairsAverageSetSimilarity" kindref="compound">AllPairsAverageSetSimilarity</ref> class assigning the similarity measure private memeber. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsAverageSetSimilarity.hpp" line="31" column="1" bodyfile="ggtk/AllPairsAverageSetSimilarity.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllPairsAverageSetSimilarity_1a685cd98d44c2e2ab9ee4fe7071066cde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double AllPairsAverageSetSimilarity::calculateSimilarity</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)</argsstring>
+        <name>calculateSimilarity</name>
+        <reimplements refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04">calculateSimilarity</reimplements>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term set to term set similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms;. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Relevance similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsAverageSetSimilarity.hpp" line="39" column="1" bodyfile="ggtk/AllPairsAverageSetSimilarity.hpp" bodystart="39" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the average similarity between all pairs of go terms for 2 sets. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the all pairs average similarity getween two sets of terms. Put forth by Lord et al.</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Investigating semantic similarity
+measures across the Gene Ontology: the relationship between sequence and annotation,&quot; Bioinformatics, vol. 19, pp. 1275-83, Jul 1 2003. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>AllPairsAverageSetSimilarity</label>
+        <link refid="classAllPairsAverageSetSimilarity"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>AllPairsAverageSetSimilarity</label>
+        <link refid="classAllPairsAverageSetSimilarity"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AllPairsAverageSetSimilarity.hpp" line="25" column="1" bodyfile="ggtk/AllPairsAverageSetSimilarity.hpp" bodystart="25" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classAllPairsAverageSetSimilarity_1aa6970260ab2b18fcb2655e220811322a" prot="private" virt="non-virtual"><scope>AllPairsAverageSetSimilarity</scope><name>_similarity</name></member>
+      <member refid="classAllPairsAverageSetSimilarity_1a67b7cfe7f078bea616baaf99116ace2e" prot="public" virt="non-virtual"><scope>AllPairsAverageSetSimilarity</scope><name>AllPairsAverageSetSimilarity</name></member>
+      <member refid="classAllPairsAverageSetSimilarity_1a685cd98d44c2e2ab9ee4fe7071066cde" prot="public" virt="virtual"><scope>AllPairsAverageSetSimilarity</scope><name>calculateSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

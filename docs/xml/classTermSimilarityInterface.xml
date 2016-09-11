@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermSimilarityInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>TermSimilarityInterface</compoundname>
+    <derivedcompoundref refid="classJiangConrathSimilarity" prot="public" virt="non-virtual">JiangConrathSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classLinSimilarity" prot="public" virt="non-virtual">LinSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classModularJiangConrath" prot="public" virt="non-virtual">ModularJiangConrath</derivedcompoundref>
+    <derivedcompoundref refid="classModularLin" prot="public" virt="non-virtual">ModularLin</derivedcompoundref>
+    <derivedcompoundref refid="classModularResnik" prot="public" virt="non-virtual">ModularResnik</derivedcompoundref>
+    <derivedcompoundref refid="classPekarStaabSimilarity" prot="public" virt="non-virtual">PekarStaabSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classPrecomputedMatrixTermSimilarity" prot="public" virt="non-virtual">PrecomputedMatrixTermSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classRelevanceSimilarity" prot="public" virt="non-virtual">RelevanceSimilarity</derivedcompoundref>
+    <derivedcompoundref refid="classResnikSimilarity" prot="public" virt="non-virtual">ResnikSimilarity</derivedcompoundref>
+    <includes refid="TermSimilarityInterface_8hpp" local="no">ggtk/TermSimilarityInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double TermSimilarityInterface::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)=0</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplementedby refid="classModularResnik_1a78b925c1aadb000d1773ffdacad549df">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classResnikSimilarity_1a340ace5dbdd105847d5fade4c8d20ade">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classModularLin_1a995ef9e4c53b9e96a32259157416df1b">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classLinSimilarity_1a55d2d8bd6aea6fc3e9b0920f05828a15">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classRelevanceSimilarity_1a77fd7721c3c98611328f97b6b8c3f9e3">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classPekarStaabSimilarity_1a56bb39dcebcf8909f2006d0698f29211">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classJiangConrathSimilarity_1a110fcc0d8b68b6dde9e90d897c859034">calculateTermSimilarity</reimplementedby>
+        <reimplementedby refid="classPrecomputedMatrixTermSimilarity_1accf2925db5da35cc040f2016813ed631">calculateTermSimilarity</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two go terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityInterface.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double TermSimilarityInterface::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)=0</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplementedby refid="classModularResnik_1aba93eb85400287057037d545e5080265">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classModularLin_1a5c4c590808542669e7ba65b60ea8f707">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classResnikSimilarity_1a4e1d6ef4268a905a117fd0c054e4c39b">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classRelevanceSimilarity_1ad54bb47157112a225b353c47d1e2fad5">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classLinSimilarity_1a576df5bf234556e57e2ddcfda3d73b93">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classPekarStaabSimilarity_1a2de7c29ad8e24467c6b66862320953a1">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classJiangConrathSimilarity_1a489dcbef15f4a5063af79cb03920cdf9">calculateNormalizedTermSimilarity</reimplementedby>
+        <reimplementedby refid="classPrecomputedMatrixTermSimilarity_1ac2057bd30526a99741c06f8b629b6ae2">calculateNormalizedTermSimilarity</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two go terms. This version of the function must be normalzied. Returning similarity between 0 and 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityInterface.hpp" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface class for comparing semantic similarity of <ref refid="namespaceGO" kindref="compound">GO</ref> terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the interface for comparing term-to-term <ref refid="namespaceGO" kindref="compound">GO</ref> similarity. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="247">
+        <label>PekarStaabSimilarity</label>
+        <link refid="classPekarStaabSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>ModularResnik</label>
+        <link refid="classModularResnik"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>ModularJiangConrath</label>
+        <link refid="classModularJiangConrath"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="245">
+        <label>ModularLin</label>
+        <link refid="classModularLin"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>PrecomputedMatrixTermSimilarity</label>
+        <link refid="classPrecomputedMatrixTermSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>JiangConrathSimilarity</label>
+        <link refid="classJiangConrathSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>LinSimilarity</label>
+        <link refid="classLinSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>ResnikSimilarity</label>
+        <link refid="classResnikSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>RelevanceSimilarity</label>
+        <link refid="classRelevanceSimilarity"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/TermSimilarityInterface.hpp" line="18" column="1" bodyfile="ggtk/TermSimilarityInterface.hpp" bodystart="18" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d" prot="public" virt="pure-virtual"><scope>TermSimilarityInterface</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47" prot="public" virt="pure-virtual"><scope>TermSimilarityInterface</scope><name>calculateTermSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermInformationContentMap" kind="class" language="C++" prot="public">
+    <compoundname>TermInformationContentMap</compoundname>
+    <basecompoundref refid="classTermProbabilityMap" prot="public" virt="non-virtual">TermProbabilityMap</basecompoundref>
+    <includes refid="TermInformationContentMap_8hpp" local="no">ggtk/TermInformationContentMap.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermInformationContentMap_1ae58d9e3773eff919841e2de522ececd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermInformationContentMap::TermInformationContentMap</definition>
+        <argsstring>(GoGraph *graph, AnnotationData *annoData)</argsstring>
+        <name>TermInformationContentMap</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>annoData</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor takes pointers to <ref refid="classGoGraph" kindref="compound">GoGraph</ref> and <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. This constructor relies on the <ref refid="classTermProbabilityMap" kindref="compound">TermProbabilityMap</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermInformationContentMap.hpp" line="33" column="1" bodyfile="ggtk/TermInformationContentMap.hpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermInformationContentMap_1a082c021a27478403aad9bb99c0e975e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double TermInformationContentMap::badIdValue</definition>
+        <argsstring>()</argsstring>
+        <name>badIdValue</name>
+        <reimplements refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35">badIdValue</reimplements>
+        <briefdescription>
+<para>Return a default value for a term that does not exist. </para>        </briefdescription>
+        <detaileddescription>
+<para>A value to return if the term is not found (does not exist in the map). Returns informaiton content 0. This may not be the ideal behavior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermInformationContentMap.hpp" line="47" column="1" bodyfile="ggtk/TermInformationContentMap.hpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermInformationContentMap_1a86494db712efa761fb671d51a6902c25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermInformationContentMap::TermInformationContentMap</definition>
+        <argsstring>()</argsstring>
+        <name>TermInformationContentMap</name>
+        <briefdescription>
+<para>A default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates an empty IC map. Should not be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermInformationContentMap.hpp" line="55" column="1" bodyfile="ggtk/TermInformationContentMap.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the information content of a <ref refid="namespaceGO" kindref="compound">GO</ref> term. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides a map that returns the information content of a <ref refid="namespaceGO" kindref="compound">GO</ref> term. This class is used by Information Content methods. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="228">
+        <label>TermProbabilityMap</label>
+        <link refid="classTermProbabilityMap"/>
+      </node>
+      <node id="227">
+        <label>TermInformationContentMap</label>
+        <link refid="classTermInformationContentMap"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="230">
+        <label>TermProbabilityMap</label>
+        <link refid="classTermProbabilityMap"/>
+      </node>
+      <node id="229">
+        <label>TermInformationContentMap</label>
+        <link refid="classTermInformationContentMap"/>
+        <childnode refid="230" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/TermInformationContentMap.hpp" line="24" column="1" bodyfile="ggtk/TermInformationContentMap.hpp" bodystart="24" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_bp_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_bp_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_cc_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_cc_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_isSingleAnnoMin</name></member>
+      <member refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_mf_normalization_min_1anno</name></member>
+      <member refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_mf_normalization_min_minAnno</name></member>
+      <member refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_nameToIndex</name></member>
+      <member refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" prot="protected" virt="non-virtual"><scope>TermInformationContentMap</scope><name>_probabilities</name></member>
+      <member refid="classTermInformationContentMap_1a082c021a27478403aad9bb99c0e975e6" prot="public" virt="virtual"><scope>TermInformationContentMap</scope><name>badIdValue</name></member>
+      <member refid="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getKeys</name></member>
+      <member refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getMinBP</name></member>
+      <member refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getMinCC</name></member>
+      <member refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getMinMF</name></member>
+      <member refid="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getValue</name></member>
+      <member refid="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>getValues</name></member>
+      <member refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>hasTerm</name></member>
+      <member refid="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>operator[]</name></member>
+      <member refid="classTermInformationContentMap_1ae58d9e3773eff919841e2de522ececd1" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>TermInformationContentMap</name></member>
+      <member refid="classTermInformationContentMap_1a86494db712efa761fb671d51a6902c25" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>TermInformationContentMap</name></member>
+      <member refid="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>TermProbabilityMap</name></member>
+      <member refid="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>TermProbabilityMap</name></member>
+      <member refid="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" prot="public" virt="non-virtual"><scope>TermInformationContentMap</scope><name>~TermProbabilityMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

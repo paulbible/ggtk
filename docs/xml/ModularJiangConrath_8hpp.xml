@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ModularJiangConrath_8hpp" kind="file" language="C++">
+    <compoundname>ModularJiangConrath.hpp</compoundname>
+    <includes refid="TermSimilarityInterface_8hpp" local="no">ggtk/TermSimilarityInterface.hpp</includes>
+    <includes refid="SharedInformationInterface_8hpp" local="no">ggtk/SharedInformationInterface.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="933">
+        <label>ggtk/SharedInformationInterface.hpp</label>
+        <link refid="SharedInformationInterface_8hpp_source"/>
+        <childnode refid="931" relation="include">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>string</label>
+      </node>
+      <node id="929">
+        <label>ggtk/ModularJiangConrath.hpp</label>
+        <link refid="ModularJiangConrath.hpp"/>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="931" relation="include">
+        </childnode>
+      </node>
+      <node id="930">
+        <label>ggtk/TermSimilarityInterface.hpp</label>
+        <link refid="TermSimilarityInterface_8hpp_source"/>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="935">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="934">
+        <label>ggtk/ModularJiangConrath.hpp</label>
+        <link refid="ModularJiangConrath.hpp"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classModularJiangConrath" prot="public">ModularJiangConrath</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MODULAR_JIANG_CONRATH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODULAR_JIANG_CONRATH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermSimilarityInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SharedInformationInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classModularJiangConrath" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classModularJiangConrath" kindref="compound">ModularJiangConrath</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"></codeline>
+<codeline lineno="40" refid="classModularJiangConrath_1aae432a48629db51d0f0d00a41d592b87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classModularJiangConrath_1aae432a48629db51d0f0d00a41d592b87" kindref="member">ModularJiangConrath</ref>(<ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*sharedInformationCalculator){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_siCalculator<sp/>=<sp/>sharedInformationCalculator;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"></codeline>
+<codeline lineno="48" refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" kindref="member">calculateTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermA)<sp/>||<sp/>!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" kindref="member">hasTerm</ref>(goTermB)){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" kindref="member">isSameOntology</ref>(goTermA,<sp/>goTermB)){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sharedIC<sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kindref="member">sharedInformation</ref>(goTermA,goTermB);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>termA_IC<sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kindref="member">sharedInformation</ref>(goTermA);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>termB_IC<sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" kindref="member">sharedInformation</ref>(goTermB);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxIC<sp/>=<sp/>_siCalculator-&gt;<ref refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999" kindref="member">maxInformationContent</ref>(goTermA);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>termA_IC<sp/>+<sp/>termB_IC<sp/>-<sp/>2*sharedIC;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(goTermA<sp/>!=<sp/>goTermB){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1<sp/>-<sp/>(dist/(2.0*maxIC));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"></codeline>
+<codeline lineno="76" refid="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classModularJiangConrath_1afbcb95c5f87764de5d33188948f1001b" kindref="member">calculateNormalizedTermSimilarity</ref>(std::string<sp/>goTermA,<sp/>std::string<sp/>goTermB){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classModularJiangConrath_1a4bb41aa1eced9dd47f4f4c7125a223d5" kindref="member">calculateTermSimilarity</ref>(goTermA,goTermB);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"></codeline>
+<codeline lineno="84" refid="classModularJiangConrath_1a44a9dae983e696676cb41c8cf8f93cb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classModularJiangConrath_1a44a9dae983e696676cb41c8cf8f93cb6" kindref="member">setSharedInformationCalculator</ref>(<ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*newSharedInformationCalulator){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_siCalculator<sp/>=<sp/>newSharedInformationCalulator;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref><sp/>*_siCalculator;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/ModularJiangConrath.hpp"/>
+  </compounddef>
+</doxygen>

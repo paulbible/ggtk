@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor" kind="class" language="C++" prot="private">
+    <compoundname>CoutoGraSMSharedInformation::PathNumDFSVisitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_dfs_visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1ab5ba5872199670fa732179050ea90745" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt; &amp;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt;&amp; CoutoGraSMSharedInformation::PathNumDFSVisitor::pathNumMap</definition>
+        <argsstring></argsstring>
+        <name>pathNumMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMSharedInformation.hpp" line="302" column="1" bodyfile="ggtk/CoutoGraSMSharedInformation.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1a457ead14e45903ccc58672c26febe920" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoutoGraSMSharedInformation::PathNumDFSVisitor::PathNumDFSVisitor</definition>
+        <argsstring>(boost::unordered_map&lt; std::string, std::size_t &gt; &amp;inMap)</argsstring>
+        <name>PathNumDFSVisitor</name>
+        <param>
+          <type>boost::unordered_map&lt; std::string, std::size_t &gt; &amp;</type>
+          <declname>inMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMSharedInformation.hpp" line="279" column="1" bodyfile="ggtk/CoutoGraSMSharedInformation.hpp" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1af21432223513142232ed9384992894de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vertex</type>
+          </param>
+          <param>
+            <type>typename Graph</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void CoutoGraSMSharedInformation::PathNumDFSVisitor::finish_vertex</definition>
+        <argsstring>(Vertex u, const Graph &amp;g)</argsstring>
+        <name>finish_vertex</name>
+        <param>
+          <type>Vertex</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Graph &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/CoutoGraSMSharedInformation.hpp" line="282" column="1" bodyfile="ggtk/CoutoGraSMSharedInformation.hpp" bodystart="282" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="167">
+        <label>default_dfs_visitor</label>
+      </node>
+      <node id="166">
+        <label>CoutoGraSMSharedInformation::PathNumDFSVisitor</label>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="169">
+        <label>default_dfs_visitor</label>
+      </node>
+      <node id="168">
+        <label>CoutoGraSMSharedInformation::PathNumDFSVisitor</label>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/CoutoGraSMSharedInformation.hpp" line="276" column="1" bodyfile="ggtk/CoutoGraSMSharedInformation.hpp" bodystart="276" bodyend="303"/>
+    <listofallmembers>
+      <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1af21432223513142232ed9384992894de" prot="public" virt="non-virtual"><scope>CoutoGraSMSharedInformation::PathNumDFSVisitor</scope><name>finish_vertex</name></member>
+      <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1a457ead14e45903ccc58672c26febe920" prot="public" virt="non-virtual"><scope>CoutoGraSMSharedInformation::PathNumDFSVisitor</scope><name>PathNumDFSVisitor</name></member>
+      <member refid="classCoutoGraSMSharedInformation_1_1PathNumDFSVisitor_1ab5ba5872199670fa732179050ea90745" prot="public" virt="non-virtual"><scope>CoutoGraSMSharedInformation::PathNumDFSVisitor</scope><name>pathNumMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

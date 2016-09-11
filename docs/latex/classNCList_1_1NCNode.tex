@@ -1,0 +1,127 @@
+\hypertarget{classNCList_1_1NCNode}{}\section{N\+C\+List\+:\+:N\+C\+Node Class Reference}
+\label{classNCList_1_1NCNode}\index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+
+
+{\ttfamily \#include $<$ggtk/\+N\+C\+List.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNCList_1_1NCNode_af213aa74a3ce198f18f85d56135e927c}{N\+C\+Node} (\hyperlink{classGenomicRegion}{Genomic\+Region} region, std\+::vector$<$ \hyperlink{classGenomicRegion}{Genomic\+Region} $>$ \&containments)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_a171e5700a93bd6fe87cc19201b51c511}{contains} (const \hyperlink{classGenomicRegion}{Genomic\+Region} g)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_aed822cb1840061636984d861a2bf6dc1}{contains} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_a7a1dd138ac17fefb6372428d7368fc2f}{contains} (const size\+\_\+t start, const size\+\_\+t end)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_a321a463ec67ae56320e292684ccf4f05}{contains} (const size\+\_\+t point)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_a08dc4cd04cd5f055c795e14015fe99d5}{overlaps} (const \hyperlink{classGenomicRegion}{Genomic\+Region} g)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_adfcf156f611082e8a878cac5144d57f6}{overlaps} (const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)
+\item 
+bool \hyperlink{classNCList_1_1NCNode_a480672401a51f10fced603acbd913823}{overlaps} (const size\+\_\+t start, const size\+\_\+t end)
+\item 
+\hyperlink{classGenomicRegion}{Genomic\+Region} \hyperlink{classNCList_1_1NCNode_a1f892f4b4baea2b6d36b8eb2e92c8181}{get\+Region} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenomicRegion}{Genomic\+Region} \hyperlink{classNCList_1_1NCNode_a369bc4997b8d3ff5c9c5951bd25ae52a}{\+\_\+region}
+\item 
+\hyperlink{classNCList}{N\+C\+List} $\ast$ \hyperlink{classNCList_1_1NCNode_a112ccb41d149a0b9f9ee3e7d10267f48}{\+\_\+containments}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure \hyperlink{classNCList_1_1NCNode}{N\+C\+Node}, \hyperlink{classNCList}{N\+C\+List} = List of N\+C\+Nodes 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!N\+C\+Node@{N\+C\+Node}}
+\index{N\+C\+Node@{N\+C\+Node}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{N\+C\+Node(\+Genomic\+Region region, std\+::vector$<$ Genomic\+Region $>$ \&containments)}{NCNode(GenomicRegion region, std::vector< GenomicRegion > &containments)}}]{\setlength{\rightskip}{0pt plus 5cm}N\+C\+List\+::\+N\+C\+Node\+::\+N\+C\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Genomic\+Region}}]{region, }
+\item[{std\+::vector$<$ {\bf Genomic\+Region} $>$ \&}]{containments}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_af213aa74a3ce198f18f85d56135e927c}{}\label{classNCList_1_1NCNode_af213aa74a3ce198f18f85d56135e927c}
+Node Constructor Most of the work done by \hyperlink{classNCList}{N\+C\+List} Constructor 
+
+\subsection{Member Function Documentation}
+\index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!contains@{contains}}
+\index{contains@{contains}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{contains(const Genomic\+Region g)}{contains(const GenomicRegion g)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Genomic\+Region}}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a171e5700a93bd6fe87cc19201b51c511}{}\label{classNCList_1_1NCNode_a171e5700a93bd6fe87cc19201b51c511}
+contains a Genomic Region Overloaded methods to check for containment or overlap
+
+Contianment $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$\vert$ \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!contains@{contains}}
+\index{contains@{contains}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{contains(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)}{contains(const std::pair< size_t, size_t > p)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::contains (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_aed822cb1840061636984d861a2bf6dc1}{}\label{classNCList_1_1NCNode_aed822cb1840061636984d861a2bf6dc1}
+contains a start end pair \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!contains@{contains}}
+\index{contains@{contains}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{contains(const size\+\_\+t start, const size\+\_\+t end)}{contains(const size_t start, const size_t end)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::contains (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{start, }
+\item[{const size\+\_\+t}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a7a1dd138ac17fefb6372428d7368fc2f}{}\label{classNCList_1_1NCNode_a7a1dd138ac17fefb6372428d7368fc2f}
+contains start and end interval \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!contains@{contains}}
+\index{contains@{contains}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{contains(const size\+\_\+t point)}{contains(const size_t point)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::contains (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a321a463ec67ae56320e292684ccf4f05}{}\label{classNCList_1_1NCNode_a321a463ec67ae56320e292684ccf4f05}
+contains a single coordinate \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!get\+Region@{get\+Region}}
+\index{get\+Region@{get\+Region}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{get\+Region()}{getRegion()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Genomic\+Region} N\+C\+List\+::\+N\+C\+Node\+::get\+Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a1f892f4b4baea2b6d36b8eb2e92c8181}{}\label{classNCList_1_1NCNode_a1f892f4b4baea2b6d36b8eb2e92c8181}
+get the current region \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{overlaps(const Genomic\+Region g)}{overlaps(const GenomicRegion g)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const {\bf Genomic\+Region}}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a08dc4cd04cd5f055c795e14015fe99d5}{}\label{classNCList_1_1NCNode_a08dc4cd04cd5f055c795e14015fe99d5}
+overlaps a genomic region
+
+Overlap $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---$\vert$ $\vert$-\/-\/-\/-\/-\/-\/---$\vert$ or $\vert$-\/-\/-\/-\/-\/-\/-\/-\/---$\vert$ \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{overlaps(const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ p)}{overlaps(const std::pair< size_t, size_t > p)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_adfcf156f611082e8a878cac5144d57f6}{}\label{classNCList_1_1NCNode_adfcf156f611082e8a878cac5144d57f6}
+overlaps a start end pair \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{overlaps(const size\+\_\+t start, const size\+\_\+t end)}{overlaps(const size_t start, const size_t end)}}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+C\+List\+::\+N\+C\+Node\+::overlaps (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{start, }
+\item[{const size\+\_\+t}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNCList_1_1NCNode_a480672401a51f10fced603acbd913823}{}\label{classNCList_1_1NCNode_a480672401a51f10fced603acbd913823}
+overlaps a start and end interval 
+
+\subsection{Member Data Documentation}
+\index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!\+\_\+containments@{\+\_\+containments}}
+\index{\+\_\+containments@{\+\_\+containments}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+containments}{_containments}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+C\+List}$\ast$ N\+C\+List\+::\+N\+C\+Node\+::\+\_\+containments}\hypertarget{classNCList_1_1NCNode_a112ccb41d149a0b9f9ee3e7d10267f48}{}\label{classNCList_1_1NCNode_a112ccb41d149a0b9f9ee3e7d10267f48}
+List of all regions completely contained by the top level regions interval. \index{N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}!\+\_\+region@{\+\_\+region}}
+\index{\+\_\+region@{\+\_\+region}!N\+C\+List\+::\+N\+C\+Node@{N\+C\+List\+::\+N\+C\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+region}{_region}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Genomic\+Region} N\+C\+List\+::\+N\+C\+Node\+::\+\_\+region}\hypertarget{classNCList_1_1NCNode_a369bc4997b8d3ff5c9c5951bd25ae52a}{}\label{classNCList_1_1NCNode_a369bc4997b8d3ff5c9c5951bd25ae52a}
+Top level region interval. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/N\+C\+List.\+hpp\end{DoxyCompactItemize}

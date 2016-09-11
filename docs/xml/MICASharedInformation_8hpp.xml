@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="MICASharedInformation_8hpp" kind="file" language="C++">
+    <compoundname>MICASharedInformation.hpp</compoundname>
+    <includes refid="TermInformationContentMap_8hpp" local="no">ggtk/TermInformationContentMap.hpp</includes>
+    <includes refid="SharedInformationInterface_8hpp" local="no">ggtk/SharedInformationInterface.hpp</includes>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+    <includes refid="SetUtilities_8hpp" local="no">ggtk/SetUtilities.hpp</includes>
+    <includes refid="Accumulators_8hpp" local="no">ggtk/Accumulators.hpp</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includes local="no">boost/accumulators/statistics/max.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <incdepgraph>
+      <node id="903">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="904">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="913">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap_8hpp_source"/>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="924">
+        <label>ggtk/SharedInformationInterface.hpp</label>
+        <link refid="SharedInformationInterface_8hpp_source"/>
+        <childnode refid="897" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>cmath</label>
+      </node>
+      <node id="897">
+        <label>string</label>
+      </node>
+      <node id="906">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="911">
+        <label>map</label>
+      </node>
+      <node id="908">
+        <label>fstream</label>
+      </node>
+      <node id="902">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="918">
+        <label>boost/accumulators/statistics/min.hpp</label>
+      </node>
+      <node id="919">
+        <label>boost/accumulators/statistics/mean.hpp</label>
+      </node>
+      <node id="925">
+        <label>ggtk/SetUtilities.hpp</label>
+        <link refid="SetUtilities_8hpp_source"/>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation.hpp"/>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="924" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+      </node>
+      <node id="917">
+        <label>boost/accumulators/statistics/max.hpp</label>
+      </node>
+      <node id="900">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="907">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+      </node>
+      <node id="901">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="916">
+        <label>boost/accumulators/statistics.hpp</label>
+      </node>
+      <node id="912">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="909">
+        <label>vector</label>
+      </node>
+      <node id="915">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="921">
+        <label>boost/accumulators/statistics/variance.hpp</label>
+      </node>
+      <node id="898">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="920">
+        <label>boost/accumulators/statistics/covariance.hpp</label>
+      </node>
+      <node id="922">
+        <label>boost/accumulators/statistics/variates/covariate.hpp</label>
+      </node>
+      <node id="923">
+        <label>boost/graph/depth_first_search.hpp</label>
+      </node>
+      <node id="910">
+        <label>iostream</label>
+      </node>
+      <node id="914">
+        <label>ggtk/Accumulators.hpp</label>
+        <link refid="Accumulators_8hpp_source"/>
+        <childnode refid="915" relation="include">
+        </childnode>
+        <childnode refid="916" relation="include">
+        </childnode>
+        <childnode refid="917" relation="include">
+        </childnode>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+        <childnode refid="901" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="904" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="906" relation="include">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="897" relation="include">
+        </childnode>
+      </node>
+      <node id="899">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="893">
+        <label>ggtk/TermInformationContentMap.hpp</label>
+        <link refid="TermInformationContentMap_8hpp_source"/>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="928">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="927">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation.hpp"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMICASharedInformation" prot="public">MICASharedInformation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MICA_SHARED_INFORMATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MICA_SHARED_INFORMATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/TermInformationContentMap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SharedInformationInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoGraph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/SetUtilities.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/Accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_map.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/accumulators/statistics/max.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classMICASharedInformation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMICASharedInformation" kindref="compound">MICASharedInformation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classSharedInformationInterface" kindref="compound">SharedInformationInterface</ref>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"></codeline>
+<codeline lineno="40" refid="classMICASharedInformation_1a6f377d93f091f1b03511d4e107a0b54b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1a6f377d93f091f1b03511d4e107a0b54b" kindref="member">MICASharedInformation</ref>(<ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>goGraph,<ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref><sp/>&amp;icMap){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_goGraph<sp/>=<sp/>goGraph;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_icMap<sp/>=<sp/>icMap;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"></codeline>
+<codeline lineno="49" refid="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249" kindref="member">sharedInformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termA,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termB){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>any<sp/>terms<sp/>not<sp/>in<sp/>the<sp/>datbase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termA)<sp/>||<sp/>!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termB)){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>terms<sp/>in<sp/>different<sp/>ontologies</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termA)<sp/>!=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termB)){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1ae68012df9b3c9adaca0807437b8b0129" kindref="member">Accumulators::MaxAccumulator</ref><sp/>myMax;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestorsA<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(termA);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorsA.insert(termA);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>ancestorsB<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1ae31e1546b740439d44860fa9543c83c2" kindref="member">getAncestorTerms</ref>(termB);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ancestorsB.insert(termB);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;<sp/>sharedAncestors<sp/>=<sp/>SetUtilities::set_intersection(ancestorsA,ancestorsB);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_set&lt;std::string&gt;::iterator<sp/>iter<sp/>=<sp/>sharedAncestors.begin();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;iter<sp/>!=<sp/>sharedAncestors.end();<sp/>++iter){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myMax(_icMap[*iter]);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(myMax);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"></codeline>
+<codeline lineno="80" refid="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37" kindref="member">sharedInformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>0<sp/>for<sp/>any<sp/>terms<sp/>not<sp/>in<sp/>the<sp/>datbase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(term)){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_icMap[term];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"></codeline>
+<codeline lineno="92" refid="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1" kindref="member">maxInformationContent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxIC;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//select<sp/>the<sp/>correct<sp/>ontology<sp/>normalization<sp/>factor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref><sp/>ontoType<sp/>=<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(term);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ontoType<sp/>==<sp/>GO::BP){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" kindref="member">getMinBP</ref>());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ontoType<sp/>==<sp/>GO::MF){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" kindref="member">getMinMF</ref>());</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxIC<sp/>=<sp/>-std::log(_icMap.<ref refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" kindref="member">getMinCC</ref>());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxIC;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"></codeline>
+<codeline lineno="113" refid="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a" kindref="member">hasTerm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;term){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_icMap.<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(term);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"></codeline>
+<codeline lineno="121" refid="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545" kindref="member">isSameOntology</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termA,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;termB){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termA)<sp/>==<sp/>_goGraph-&gt;<ref refid="classGoGraph_1a9f4f553098e14270f07e7791cfe65447" kindref="member">getTermOntology</ref>(termB);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>_goGraph;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref><sp/>_icMap;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/MICASharedInformation.hpp"/>
+  </compounddef>
+</doxygen>

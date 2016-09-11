@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAllowedSetEvidencePolicy" kind="class" language="C++" prot="public">
+    <compoundname>AllowedSetEvidencePolicy</compoundname>
+    <basecompoundref refid="classEvidencePolicyInterface" prot="public" virt="non-virtual">EvidencePolicyInterface</basecompoundref>
+    <derivedcompoundref refid="classExperimentalEvidencePolicy" prot="public" virt="non-virtual">ExperimentalEvidencePolicy</derivedcompoundref>
+    <includes refid="AllowedSetEvidencePolicy_8hpp" local="no">ggtk/AllowedSetEvidencePolicy.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllowedSetEvidencePolicy_1a3bd2c0f82d3714dce4594c7c5703ad4f" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; <ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref>, bool &gt;</type>
+        <definition>boost::unordered_map&lt;GO::EvidenceCode,bool&gt; AllowedSetEvidencePolicy::_evidenceMap</definition>
+        <argsstring></argsstring>
+        <name>_evidenceMap</name>
+        <briefdescription>
+<para>a map of evidence codes to bool </para>        </briefdescription>
+        <detaileddescription>
+<para>maps an evidence code to a bool. Boost unordered map give constant time find. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="86" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1af940574b5c998db67ce580555e1964d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllowedSetEvidencePolicy::AllowedSetEvidencePolicy</definition>
+        <argsstring>()</argsstring>
+        <name>AllowedSetEvidencePolicy</name>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classAllowedSetEvidencePolicy" kindref="compound">AllowedSetEvidencePolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="30" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1a84458d133059ab286b3d3eaa8301d243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllowedSetEvidencePolicy::AllowedSetEvidencePolicy</definition>
+        <argsstring>(std::vector&lt; GO::EvidenceCode &gt; evidenceCodes)</argsstring>
+        <name>AllowedSetEvidencePolicy</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref> &gt;</type>
+          <declname>evidenceCodes</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creats the <ref refid="classAllowedSetEvidencePolicy" kindref="compound">AllowedSetEvidencePolicy</ref> using a list(vector) of evidence codes to allow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="38" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1a5979a55da22e57d2faffaa0bdb77457b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AllowedSetEvidencePolicy::isAllowed</definition>
+        <argsstring>(GO::EvidenceCode evidenceCode)</argsstring>
+        <name>isAllowed</name>
+        <reimplements refid="classEvidencePolicyInterface_1a432d20dd05ec54db46a452ae8d6be4a7">isAllowed</reimplements>
+        <param>
+          <type><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref></type>
+          <declname>evidenceCode</declname>
+        </param>
+        <briefdescription>
+<para>a method to test if an eviddence code is allowed or not </para>        </briefdescription>
+        <detaileddescription>
+<para>tests if the evidence is allowed. Overridden to fulfill the <ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="49" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1a8a68cd6a472cab9df1dda7b3258618cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AllowedSetEvidencePolicy::addEvidence</definition>
+        <argsstring>(GO::EvidenceCode evidenceCode)</argsstring>
+        <name>addEvidence</name>
+        <param>
+          <type><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref></type>
+          <declname>evidenceCode</declname>
+        </param>
+        <briefdescription>
+<para>a method to add a evidence to the set of evidence codes allowed </para>        </briefdescription>
+        <detaileddescription>
+<para>adds a evidence to the set of evidence codes allowed by setting its mapped value to true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="58" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1a1013d74c48b800c7dd0450c0fdaa4090" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AllowedSetEvidencePolicy::addEvidence</definition>
+        <argsstring>(const std::string &amp;stringCode)</argsstring>
+        <name>addEvidence</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>stringCode</declname>
+        </param>
+        <briefdescription>
+<para>a method to add a evidence to the set of evidence codes allowed </para>        </briefdescription>
+        <detaileddescription>
+<para>adds a evidence to the set of evidence codes allowed by setting its mapped value to true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="66" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetEvidencePolicy_1ac54f499b3dfd0a55353014f1f277fe64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AllowedSetEvidencePolicy::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>a method to determine if the Policy is empty </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the Policy is empty </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="78" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to allow only a set of evidence codes for annotations. </para>    </briefdescription>
+    <detaileddescription>
+<para>A class to allow only certain evidence codes in the go graph. It uses a set of enums to restric the types of evidence codes considered for annotations. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>ExperimentalEvidencePolicy</label>
+        <link refid="classExperimentalEvidencePolicy"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AllowedSetEvidencePolicy</label>
+        <link refid="classAllowedSetEvidencePolicy"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>EvidencePolicyInterface</label>
+        <link refid="classEvidencePolicyInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>AllowedSetEvidencePolicy</label>
+        <link refid="classAllowedSetEvidencePolicy"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>EvidencePolicyInterface</label>
+        <link refid="classEvidencePolicyInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AllowedSetEvidencePolicy.hpp" line="22" column="1" bodyfile="ggtk/AllowedSetEvidencePolicy.hpp" bodystart="22" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classAllowedSetEvidencePolicy_1a3bd2c0f82d3714dce4594c7c5703ad4f" prot="private" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>_evidenceMap</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a8a68cd6a472cab9df1dda7b3258618cf" prot="public" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>addEvidence</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a1013d74c48b800c7dd0450c0fdaa4090" prot="public" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>addEvidence</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1af940574b5c998db67ce580555e1964d3" prot="public" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>AllowedSetEvidencePolicy</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a84458d133059ab286b3d3eaa8301d243" prot="public" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>AllowedSetEvidencePolicy</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a5979a55da22e57d2faffaa0bdb77457b" prot="public" virt="virtual"><scope>AllowedSetEvidencePolicy</scope><name>isAllowed</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1ac54f499b3dfd0a55353014f1f277fe64" prot="public" virt="non-virtual"><scope>AllowedSetEvidencePolicy</scope><name>isEmpty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

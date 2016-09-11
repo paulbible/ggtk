@@ -1,0 +1,67 @@
+\hypertarget{classJaccardSetSimilarity}{}\section{Jaccard\+Set\+Similarity Class Reference}
+\label{classJaccardSetSimilarity}\index{Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}}
+
+
+A class to calculate jaccard similarity between 2 sets.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Jaccard\+Set\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Jaccard\+Set\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classJaccardSetSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJaccardSetSimilarity_a91ae983223bd59f776c029c1c63f979d}{Jaccard\+Set\+Similarity} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classJaccardSetSimilarity_a122a04f7f67b96e393fcde1025a306c3}{calculate\+Similarity} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsA, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&termsB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term set to term set similarity for \hyperlink{namespaceGO}{GO} terms;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate jaccard similarity between 2 sets. 
+
+This class calculates jaccard set similarity between two sets of terms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}!Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}}
+\index{Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}!Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}}
+\subsubsection[{\texorpdfstring{Jaccard\+Set\+Similarity()}{JaccardSetSimilarity()}}]{\setlength{\rightskip}{0pt plus 5cm}Jaccard\+Set\+Similarity\+::\+Jaccard\+Set\+Similarity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classJaccardSetSimilarity_a91ae983223bd59f776c029c1c63f979d}{}\label{classJaccardSetSimilarity_a91ae983223bd59f776c029c1c63f979d}
+
+
+Constructor. 
+
+Creates the \hyperlink{classJaccardSetSimilarity}{Jaccard\+Set\+Similarity} class. 
+
+\subsection{Member Function Documentation}
+\index{Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}!calculate\+Similarity@{calculate\+Similarity}}
+\index{calculate\+Similarity@{calculate\+Similarity}!Jaccard\+Set\+Similarity@{Jaccard\+Set\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Similarity(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+A, const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&terms\+B)}{calculateSimilarity(const boost::unordered_set< std::string > &termsA, const boost::unordered_set< std::string > &termsB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Jaccard\+Set\+Similarity\+::calculate\+Similarity (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsA, }
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{termsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classJaccardSetSimilarity_a122a04f7f67b96e393fcde1025a306c3}{}\label{classJaccardSetSimilarity_a122a04f7f67b96e393fcde1025a306c3}
+
+
+A method for calculating term set to term set similarity for \hyperlink{namespaceGO}{GO} terms;. 
+
+This method returns the Jaccard set similarity. 
+
+Implements \hyperlink{classTermSetSimilarityInterface_aeb985b714efc3df40e55bdd31e425e04}{Term\+Set\+Similarity\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Jaccard\+Set\+Similarity.\+hpp\end{DoxyCompactItemize}

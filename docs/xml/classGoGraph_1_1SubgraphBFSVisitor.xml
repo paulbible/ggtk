@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGoGraph_1_1SubgraphBFSVisitor" kind="class" language="C++" prot="private">
+    <compoundname>GoGraph::SubgraphBFSVisitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_bfs_visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGoGraph_1_1SubgraphBFSVisitor_1ae7465011aaeff0e9e9ad590c95afb9f2" prot="public" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref> *</type>
+        <definition>GoGraph::Graph* GoGraph::SubgraphBFSVisitor::subgraph</definition>
+        <argsstring></argsstring>
+        <name>subgraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="864" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGoGraph_1_1SubgraphBFSVisitor_1a7a8c17092b1b9a24a49fae8a9b2aa95b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoGraph::SubgraphBFSVisitor::SubgraphBFSVisitor</definition>
+        <argsstring>(GoGraph::Graph *sub)</argsstring>
+        <name>SubgraphBFSVisitor</name>
+        <param>
+          <type><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref> *</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="856" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="856" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoGraph_1_1SubgraphBFSVisitor_1ab3e9021193c04d5c0e6abed2ba01b964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vertex</type>
+          </param>
+          <param>
+            <type>typename <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref></type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void GoGraph::SubgraphBFSVisitor::discover_vertex</definition>
+        <argsstring>(Vertex u, const Graph &amp;g)</argsstring>
+        <name>discover_vertex</name>
+        <param>
+          <type>Vertex</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">Graph</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="859" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="859" bodyend="862"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Breath first search visitor that creates the induced subgraph of a graph. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class extends breadth first search and adds a vertex to a subgraph of the graph being visited. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>GoGraph::SubgraphBFSVisitor</label>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>default_bfs_visitor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>GoGraph::SubgraphBFSVisitor</label>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>default_bfs_visitor</label>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/GoGraph.hpp" line="853" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="853" bodyend="865"/>
+    <listofallmembers>
+      <member refid="classGoGraph_1_1SubgraphBFSVisitor_1ab3e9021193c04d5c0e6abed2ba01b964" prot="public" virt="non-virtual"><scope>GoGraph::SubgraphBFSVisitor</scope><name>discover_vertex</name></member>
+      <member refid="classGoGraph_1_1SubgraphBFSVisitor_1ae7465011aaeff0e9e9ad590c95afb9f2" prot="public" virt="non-virtual"><scope>GoGraph::SubgraphBFSVisitor</scope><name>subgraph</name></member>
+      <member refid="classGoGraph_1_1SubgraphBFSVisitor_1a7a8c17092b1b9a24a49fae8a9b2aa95b" prot="public" virt="non-virtual"><scope>GoGraph::SubgraphBFSVisitor</scope><name>SubgraphBFSVisitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

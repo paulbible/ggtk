@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="EvidencePolicyInterface_8hpp" kind="file" language="C++">
+    <compoundname>EvidencePolicyInterface.hpp</compoundname>
+    <includes refid="GoEnums_8hpp" local="no">ggtk/GoEnums.hpp</includes>
+    <includedby refid="AllowedSetEvidencePolicy_8hpp" local="no">ggtk/AllowedSetEvidencePolicy.hpp</includedby>
+    <includedby refid="DisallowedSetEvidencePolicy_8hpp" local="no">ggtk/DisallowedSetEvidencePolicy.hpp</includedby>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="GoaAnnotationParser_8hpp" local="no">ggtk/GoaAnnotationParser.hpp</includedby>
+    <incdepgraph>
+      <node id="413">
+        <label>string</label>
+      </node>
+      <node id="411">
+        <label>ggtk/EvidencePolicyInterface.hpp</label>
+        <link refid="EvidencePolicyInterface.hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="417">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="415">
+        <label>ggtk/AllowedSetEvidencePolicy.hpp</label>
+        <link refid="AllowedSetEvidencePolicy_8hpp_source"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>ggtk/DisallowedSetEvidencePolicy.hpp</label>
+        <link refid="DisallowedSetEvidencePolicy_8hpp_source"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>ggtk/GoaAnnotationParser.hpp</label>
+        <link refid="GoaAnnotationParser_8hpp_source"/>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>ggtk/ExperimentalEvidencePolicy.hpp</label>
+        <link refid="ExperimentalEvidencePolicy_8hpp_source"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>ggtk/GafAnnotationParser.hpp</label>
+        <link refid="GafAnnotationParser_8hpp_source"/>
+      </node>
+      <node id="414">
+        <label>ggtk/EvidencePolicyInterface.hpp</label>
+        <link refid="EvidencePolicyInterface.hpp"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEvidencePolicyInterface" prot="public">EvidencePolicyInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EVIDENCE_POLICY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVIDENCE_POLICY_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoEnums.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classEvidencePolicyInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEvidencePolicyInterface_1a432d20dd05ec54db46a452ae8d6be4a7" kindref="member">isAllowed</ref>(<ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref><sp/>evidenceCode)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/EvidencePolicyInterface.hpp"/>
+  </compounddef>
+</doxygen>

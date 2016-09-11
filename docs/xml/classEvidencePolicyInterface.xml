@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classEvidencePolicyInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>EvidencePolicyInterface</compoundname>
+    <derivedcompoundref refid="classAllowedSetEvidencePolicy" prot="public" virt="non-virtual">AllowedSetEvidencePolicy</derivedcompoundref>
+    <derivedcompoundref refid="classDisallowedSetEvidencePolicy" prot="public" virt="non-virtual">DisallowedSetEvidencePolicy</derivedcompoundref>
+    <includes refid="EvidencePolicyInterface_8hpp" local="no">ggtk/EvidencePolicyInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEvidencePolicyInterface_1a432d20dd05ec54db46a452ae8d6be4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool EvidencePolicyInterface::isAllowed</definition>
+        <argsstring>(GO::EvidenceCode evidenceCode)=0</argsstring>
+        <name>isAllowed</name>
+        <reimplementedby refid="classDisallowedSetEvidencePolicy_1aaa0959ad33624b4d418d57d286c41852">isAllowed</reimplementedby>
+        <reimplementedby refid="classAllowedSetEvidencePolicy_1a5979a55da22e57d2faffaa0bdb77457b">isAllowed</reimplementedby>
+        <param>
+          <type><ref refid="namespaceGO_1a4ce5387bbcdaec3648957c7903f2caf3" kindref="member">GO::EvidenceCode</ref></type>
+          <declname>evidenceCode</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method to test if an evidence code is allowed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any subclass to imlement an isAllowed method to enforce the evidence pollicy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EvidencePolicyInterface.hpp" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface to check evidence codes for <ref refid="namespaceGO" kindref="compound">GO</ref> annotations. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is interface is used to create parsers which will only use a specific set of evidence codes when parsing annotations </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="77">
+        <label>ExperimentalEvidencePolicy</label>
+        <link refid="classExperimentalEvidencePolicy"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>AllowedSetEvidencePolicy</label>
+        <link refid="classAllowedSetEvidencePolicy"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>EvidencePolicyInterface</label>
+        <link refid="classEvidencePolicyInterface"/>
+      </node>
+      <node id="78">
+        <label>DisallowedSetEvidencePolicy</label>
+        <link refid="classDisallowedSetEvidencePolicy"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/EvidencePolicyInterface.hpp" line="19" column="1" bodyfile="ggtk/EvidencePolicyInterface.hpp" bodystart="19" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classEvidencePolicyInterface_1a432d20dd05ec54db46a452ae8d6be4a7" prot="public" virt="pure-virtual"><scope>EvidencePolicyInterface</scope><name>isAllowed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

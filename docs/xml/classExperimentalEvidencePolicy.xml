@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classExperimentalEvidencePolicy" kind="class" language="C++" prot="public">
+    <compoundname>ExperimentalEvidencePolicy</compoundname>
+    <basecompoundref refid="classAllowedSetEvidencePolicy" prot="public" virt="non-virtual">AllowedSetEvidencePolicy</basecompoundref>
+    <includes refid="ExperimentalEvidencePolicy_8hpp" local="no">ggtk/ExperimentalEvidencePolicy.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classExperimentalEvidencePolicy_1a842128956f37cc8e5d1cb1c175a6a5a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExperimentalEvidencePolicy::ExperimentalEvidencePolicy</definition>
+        <argsstring>()</argsstring>
+        <name>ExperimentalEvidencePolicy</name>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classAllowedSetEvidencePolicy" kindref="compound">AllowedSetEvidencePolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExperimentalEvidencePolicy.hpp" line="27" column="1" bodyfile="ggtk/ExperimentalEvidencePolicy.hpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to allow experimental evidence codes for annotations. </para>    </briefdescription>
+    <detaileddescription>
+<para>A class to allow only experimental evidence codes for gene annotations. This class extends the <ref refid="classAllowedSetEvidencePolicy" kindref="compound">AllowedSetEvidencePolicy</ref> and adds the experimental evidence codes to the allowed set. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="84">
+        <label>ExperimentalEvidencePolicy</label>
+        <link refid="classExperimentalEvidencePolicy"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>AllowedSetEvidencePolicy</label>
+        <link refid="classAllowedSetEvidencePolicy"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>EvidencePolicyInterface</label>
+        <link refid="classEvidencePolicyInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>ExperimentalEvidencePolicy</label>
+        <link refid="classExperimentalEvidencePolicy"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>AllowedSetEvidencePolicy</label>
+        <link refid="classAllowedSetEvidencePolicy"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>EvidencePolicyInterface</label>
+        <link refid="classEvidencePolicyInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/ExperimentalEvidencePolicy.hpp" line="20" column="1" bodyfile="ggtk/ExperimentalEvidencePolicy.hpp" bodystart="20" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classAllowedSetEvidencePolicy_1a8a68cd6a472cab9df1dda7b3258618cf" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>addEvidence</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a1013d74c48b800c7dd0450c0fdaa4090" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>addEvidence</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1af940574b5c998db67ce580555e1964d3" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>AllowedSetEvidencePolicy</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a84458d133059ab286b3d3eaa8301d243" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>AllowedSetEvidencePolicy</name></member>
+      <member refid="classExperimentalEvidencePolicy_1a842128956f37cc8e5d1cb1c175a6a5a4" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>ExperimentalEvidencePolicy</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1a5979a55da22e57d2faffaa0bdb77457b" prot="public" virt="virtual"><scope>ExperimentalEvidencePolicy</scope><name>isAllowed</name></member>
+      <member refid="classAllowedSetEvidencePolicy_1ac54f499b3dfd0a55353014f1f277fe64" prot="public" virt="non-virtual"><scope>ExperimentalEvidencePolicy</scope><name>isEmpty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

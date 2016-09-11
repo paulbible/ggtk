@@ -1,0 +1,118 @@
+\hypertarget{classAllowedSetRelationshipPolicy}{}\section{Allowed\+Set\+Relationship\+Policy Class Reference}
+\label{classAllowedSetRelationshipPolicy}\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+
+
+A class to allow only a set of relationships.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Allowed\+Set\+Relationship\+Policy.\+hpp$>$}
+
+Inheritance diagram for Allowed\+Set\+Relationship\+Policy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAllowedSetRelationshipPolicy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAllowedSetRelationshipPolicy_aebffb7e69930219d89133625ff8936cf}{Allowed\+Set\+Relationship\+Policy} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classAllowedSetRelationshipPolicy_a9cd20d2c44a96736c0a74b7e962dae04}{Allowed\+Set\+Relationship\+Policy} (std\+::vector$<$ \hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{G\+O\+::\+Relationship} $>$ relationships)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classAllowedSetRelationshipPolicy_ac7454bc649241219f076779330977f90}{is\+Allowed} (\hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{G\+O\+::\+Relationship} relationship)
+\begin{DoxyCompactList}\small\item\em a method to test if a relatinoship is allowed or not \end{DoxyCompactList}\item 
+void \hyperlink{classAllowedSetRelationshipPolicy_a5da8f3fb718fba44354e56a4595968de}{add\+Relationship} (\hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{G\+O\+::\+Relationship} relationship)
+\begin{DoxyCompactList}\small\item\em a method to add a relationship to the set of relationships allowed \end{DoxyCompactList}\item 
+void \hyperlink{classAllowedSetRelationshipPolicy_a013089769911f87f1d8513bc6006dbf9}{add\+Relationship} (const std\+::string \&rel\+String)
+\begin{DoxyCompactList}\small\item\em a method to add a relationship to the set of relationships allowed \end{DoxyCompactList}\item 
+bool \hyperlink{classAllowedSetRelationshipPolicy_a543f028def505d8df941a308ab315075}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em a method to determine if the Policy is empty \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to allow only a set of relationships. 
+
+A class to allow only certain relationships in the go graph. It uses a set of enums to restric the types of relationships considered in a graph. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{Allowed\+Set\+Relationship\+Policy()}{AllowedSetRelationshipPolicy()}}]{\setlength{\rightskip}{0pt plus 5cm}Allowed\+Set\+Relationship\+Policy\+::\+Allowed\+Set\+Relationship\+Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllowedSetRelationshipPolicy_aebffb7e69930219d89133625ff8936cf}{}\label{classAllowedSetRelationshipPolicy_aebffb7e69930219d89133625ff8936cf}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classAllowedSetRelationshipPolicy}{Allowed\+Set\+Relationship\+Policy} \index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{Allowed\+Set\+Relationship\+Policy(std\+::vector$<$ G\+O\+::\+Relationship $>$ relationships)}{AllowedSetRelationshipPolicy(std::vector< GO::Relationship > relationships)}}]{\setlength{\rightskip}{0pt plus 5cm}Allowed\+Set\+Relationship\+Policy\+::\+Allowed\+Set\+Relationship\+Policy (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf G\+O\+::\+Relationship} $>$}]{relationships}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllowedSetRelationshipPolicy_a9cd20d2c44a96736c0a74b7e962dae04}{}\label{classAllowedSetRelationshipPolicy_a9cd20d2c44a96736c0a74b7e962dae04}
+
+
+A parameterized constructor. 
+
+Creats the \hyperlink{classAllowedSetRelationshipPolicy}{Allowed\+Set\+Relationship\+Policy} using a list(vector) of relationships to allow 
+
+\subsection{Member Function Documentation}
+\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!add\+Relationship@{add\+Relationship}}
+\index{add\+Relationship@{add\+Relationship}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{add\+Relationship(\+G\+O\+::\+Relationship relationship)}{addRelationship(GO::Relationship relationship)}}]{\setlength{\rightskip}{0pt plus 5cm}void Allowed\+Set\+Relationship\+Policy\+::add\+Relationship (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Relationship}}]{relationship}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllowedSetRelationshipPolicy_a5da8f3fb718fba44354e56a4595968de}{}\label{classAllowedSetRelationshipPolicy_a5da8f3fb718fba44354e56a4595968de}
+
+
+a method to add a relationship to the set of relationships allowed 
+
+adds a relationship to the set of relationships allowed by setting its mapped value to true \index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!add\+Relationship@{add\+Relationship}}
+\index{add\+Relationship@{add\+Relationship}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{add\+Relationship(const std\+::string \&rel\+String)}{addRelationship(const std::string &relString)}}]{\setlength{\rightskip}{0pt plus 5cm}void Allowed\+Set\+Relationship\+Policy\+::add\+Relationship (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{rel\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllowedSetRelationshipPolicy_a013089769911f87f1d8513bc6006dbf9}{}\label{classAllowedSetRelationshipPolicy_a013089769911f87f1d8513bc6006dbf9}
+
+
+a method to add a relationship to the set of relationships allowed 
+
+adds a relationship to the set of relationships allowed by setting its mapped value to true \index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!is\+Allowed@{is\+Allowed}}
+\index{is\+Allowed@{is\+Allowed}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{is\+Allowed(\+G\+O\+::\+Relationship relationship)}{isAllowed(GO::Relationship relationship)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Allowed\+Set\+Relationship\+Policy\+::is\+Allowed (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Relationship}}]{relationship}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAllowedSetRelationshipPolicy_ac7454bc649241219f076779330977f90}{}\label{classAllowedSetRelationshipPolicy_ac7454bc649241219f076779330977f90}
+
+
+a method to test if a relatinoship is allowed or not 
+
+tests if the relationship is allowed. Overridden to fulfill the \hyperlink{classRelationshipPolicyInterface}{Relationship\+Policy\+Interface} 
+
+Implements \hyperlink{classRelationshipPolicyInterface_ad28012b607e9cf848c791b6a907bb2cb}{Relationship\+Policy\+Interface}.
+
+\index{Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Allowed\+Set\+Relationship\+Policy@{Allowed\+Set\+Relationship\+Policy}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Allowed\+Set\+Relationship\+Policy\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllowedSetRelationshipPolicy_a543f028def505d8df941a308ab315075}{}\label{classAllowedSetRelationshipPolicy_a543f028def505d8df941a308ab315075}
+
+
+a method to determine if the Policy is empty 
+
+Determines if the Policy is empty 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Allowed\+Set\+Relationship\+Policy.\+hpp\end{DoxyCompactItemize}

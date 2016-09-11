@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermDepthMap" kind="class" language="C++" prot="public">
+    <compoundname>TermDepthMap</compoundname>
+    <includes refid="TermDepthMap_8hpp" local="no">ggtk/TermDepthMap.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" prot="protected" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string,std::size_t&gt; TermDepthMap::_nameToIndex</definition>
+        <argsstring></argsstring>
+        <name>_nameToIndex</name>
+        <briefdescription>
+<para>A private map that returns the index of a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This map takes string term ids and returns the index for annotation count access. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="184" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; TermDepthMap::_depths</definition>
+        <argsstring></argsstring>
+        <name>_depths</name>
+        <briefdescription>
+<para>A private list of term depths. </para>        </briefdescription>
+        <detaileddescription>
+<para>This vector of doubles holds the depth for each term </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="190" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermDepthMap_1abb4c7ebeedc74ae59a8399de33b48389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermDepthMap::TermDepthMap</definition>
+        <argsstring>(GoGraph *graph)</argsstring>
+        <name>TermDepthMap</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor takes pointers to <ref refid="classGoGraph" kindref="compound">GoGraph</ref> and <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="35" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="35" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1a819c7cb3f26e54e13195a508aff06cdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermDepthMap::TermDepthMap</definition>
+        <argsstring>()</argsstring>
+        <name>TermDepthMap</name>
+        <briefdescription>
+<para>A default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initialized the storage structures. Should not be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="108" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1aec4f9d62c638d0f6519d49bb13d96263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermDepthMap::~TermDepthMap</definition>
+        <argsstring>()</argsstring>
+        <name>~TermDepthMap</name>
+        <briefdescription>
+<para>A default desctructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This desctructor clears the containters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="119" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1acad3e6559688f3338f7d28fffe53f3ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; TermDepthMap::getValues</definition>
+        <argsstring>()</argsstring>
+        <name>getValues</name>
+        <briefdescription>
+<para>Accessor for probablities vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the vector of values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="129" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1a2cc0c96cf91020df4a035f089ef1a608" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TermDepthMap::getKeys</definition>
+        <argsstring>()</argsstring>
+        <name>getKeys</name>
+        <briefdescription>
+<para>Function to return all the keys in the map. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns all valid keys in the map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="138" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="138" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1a11f5ed887edd0b335ac64171ebecf3f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TermDepthMap::hasTerm</definition>
+        <argsstring>(std::string testTerm)</argsstring>
+        <name>hasTerm</name>
+        <param>
+          <type>std::string</type>
+          <declname>testTerm</declname>
+        </param>
+        <briefdescription>
+<para>Method to test if the id exists in the map. </para>        </briefdescription>
+        <detaileddescription>
+<para>Return true the id is found, false if not </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="151" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1a687255e97647a9afc0a5f0197d0b05c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermDepthMap::operator[]</definition>
+        <argsstring>(std::string termId)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::string</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>Overloaded [] bracket operator to mimic Map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This defines a bracket operator to access the data inside of the map. This is done to mimic the behavior of the map class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="160" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="160" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermDepthMap_1af6ba97e619f7fe0a9e906c6eccfd98fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TermDepthMap::getValue</definition>
+        <argsstring>(std::string termId)</argsstring>
+        <name>getValue</name>
+        <param>
+          <type>std::string</type>
+          <declname>termId</declname>
+        </param>
+        <briefdescription>
+<para>Mapping function to return the value mapped by key. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the value mapped by the given key. A specified function for the [] operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermDepthMap.hpp" line="172" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="172" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the depth of a <ref refid="namespaceGO" kindref="compound">GO</ref> term in the ontology. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class provides a map that returns the depth of a <ref refid="namespaceGO" kindref="compound">GO</ref> term. This method is used in graph and edge based similarity methods to calculate a node&apos;s depth </para>    </detaileddescription>
+    <location file="ggtk/TermDepthMap.hpp" line="27" column="1" bodyfile="ggtk/TermDepthMap.hpp" bodystart="27" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classTermDepthMap_1af1bc0c6d34c57061de60e771afd76f11" prot="protected" virt="non-virtual"><scope>TermDepthMap</scope><name>_depths</name></member>
+      <member refid="classTermDepthMap_1adf3435b02b709abc108fa8e18e0b73fa" prot="protected" virt="non-virtual"><scope>TermDepthMap</scope><name>_nameToIndex</name></member>
+      <member refid="classTermDepthMap_1a2cc0c96cf91020df4a035f089ef1a608" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>getKeys</name></member>
+      <member refid="classTermDepthMap_1af6ba97e619f7fe0a9e906c6eccfd98fa" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>getValue</name></member>
+      <member refid="classTermDepthMap_1acad3e6559688f3338f7d28fffe53f3ab" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>getValues</name></member>
+      <member refid="classTermDepthMap_1a11f5ed887edd0b335ac64171ebecf3f3" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>hasTerm</name></member>
+      <member refid="classTermDepthMap_1a687255e97647a9afc0a5f0197d0b05c9" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>operator[]</name></member>
+      <member refid="classTermDepthMap_1abb4c7ebeedc74ae59a8399de33b48389" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>TermDepthMap</name></member>
+      <member refid="classTermDepthMap_1a819c7cb3f26e54e13195a508aff06cdc" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>TermDepthMap</name></member>
+      <member refid="classTermDepthMap_1aec4f9d62c638d0f6519d49bb13d96263" prot="public" virt="non-virtual"><scope>TermDepthMap</scope><name>~TermDepthMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

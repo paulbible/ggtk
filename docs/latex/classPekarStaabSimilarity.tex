@@ -1,0 +1,108 @@
+\hypertarget{classPekarStaabSimilarity}{}\section{Pekar\+Staab\+Similarity Class Reference}
+\label{classPekarStaabSimilarity}\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+
+
+A class to calculate Pekar\+Staab similarity between 2 terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Pekar\+Staab\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Pekar\+Staab\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPekarStaabSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPekarStaabSimilarity_a8da126a2d3dc923dd1749e2f395d41cf}{Pekar\+Staab\+Similarity} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermDepthMap}{Term\+Depth\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classPekarStaabSimilarity_a56bb39dcebcf8909f2006d0698f29211}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Pekar Staab similarity. \end{DoxyCompactList}\item 
+double \hyperlink{classPekarStaabSimilarity_a2de7c29ad8e24467c6b66862320953a1}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Pekar Staab similarity. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classPekarStaabSimilarity_aef5d3e6c69bcd7f614092f342ce624c9}{get\+L\+CA} (boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsA, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsB)
+\begin{DoxyCompactList}\small\item\em A method for calculating the least common ancestor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate Pekar\+Staab similarity between 2 terms. 
+
+This class calculates Pekar Staab similarity.
+
+V. Pekar and S. Staab, \char`\"{}\+Taxonomy learning\+: factoring the structure 
+ of a taxonomy into a semantic classification decision,\char`\"{} in Proc. of 19th International Conference on Computational Linguistics. Morristown NJ U\+SA\+: Association for Computational Linguistics, pp. 1-\/7, 2002.
+
+H. Yu, L. Gao, K. Tu, and Z. Guo, \char`\"{}\+Broadly predicting specific gene 
+ functions with expression similarity and taxonomy similarity,\char`\"{} Gene, vol. 352, pp. 75-\/81, Jun 6 2005.
+
+lowest common ancestor (L\+CA) Graph\+Dist(\+L\+C\+A,root)/(Graph\+Dist(a,\+L\+C\+A)+\+Graph\+Dist(b,L\+CA)+\+Graph\+Dist(L\+CA,root)) 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}!Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}!Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+\subsubsection[{\texorpdfstring{Pekar\+Staab\+Similarity(\+Go\+Graph $\ast$go\+Graph, Term\+Depth\+Map \&ic\+Map)}{PekarStaabSimilarity(GoGraph *goGraph, TermDepthMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Pekar\+Staab\+Similarity\+::\+Pekar\+Staab\+Similarity (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Depth\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPekarStaabSimilarity_a8da126a2d3dc923dd1749e2f395d41cf}{}\label{classPekarStaabSimilarity_a8da126a2d3dc923dd1749e2f395d41cf}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classStandardRelationshipPolicy}{Standard\+Relationship\+Policy} 
+
+\subsection{Member Function Documentation}
+\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Pekar\+Staab\+Similarity\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPekarStaabSimilarity_a2de7c29ad8e24467c6b66862320953a1}{}\label{classPekarStaabSimilarity_a2de7c29ad8e24467c6b66862320953a1}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Pekar Staab similarity. 
+
+This method returns the Pekar\+Staab similarity scaled between 0 and 1 \mbox{[}0,1\mbox{]} inclusive 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Pekar\+Staab\+Similarity\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classPekarStaabSimilarity_a56bb39dcebcf8909f2006d0698f29211}{}\label{classPekarStaabSimilarity_a56bb39dcebcf8909f2006d0698f29211}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Pekar Staab similarity. 
+
+This method returns the Pekar\+Staab similarity. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}!get\+L\+CA@{get\+L\+CA}}
+\index{get\+L\+CA@{get\+L\+CA}!Pekar\+Staab\+Similarity@{Pekar\+Staab\+Similarity}}
+\subsubsection[{\texorpdfstring{get\+L\+C\+A(boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+A, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+B)}{getLCA(boost::unordered_set< std::string > &ancestorsA, boost::unordered_set< std::string > &ancestorsB)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Pekar\+Staab\+Similarity\+::get\+L\+CA (
+\begin{DoxyParamCaption}
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsA, }
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classPekarStaabSimilarity_aef5d3e6c69bcd7f614092f342ce624c9}{}\label{classPekarStaabSimilarity_aef5d3e6c69bcd7f614092f342ce624c9}
+
+
+A method for calculating the least common ancestor. 
+
+This method searches the sets to determine the deepest common ancestor 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Pekar\+Staab\+Similarity.\+hpp\end{DoxyCompactItemize}

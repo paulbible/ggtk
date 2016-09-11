@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classSharedInformationInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SharedInformationInterface</compoundname>
+    <derivedcompoundref refid="classAncestorMeanSharedInformation" prot="public" virt="non-virtual">AncestorMeanSharedInformation</derivedcompoundref>
+    <derivedcompoundref refid="classCoutoGraSMAdjustedSharedInformation" prot="public" virt="non-virtual">CoutoGraSMAdjustedSharedInformation</derivedcompoundref>
+    <derivedcompoundref refid="classCoutoGraSMSharedInformation" prot="public" virt="non-virtual">CoutoGraSMSharedInformation</derivedcompoundref>
+    <derivedcompoundref refid="classExclusivelyInheritedSharedInformation" prot="public" virt="non-virtual">ExclusivelyInheritedSharedInformation</derivedcompoundref>
+    <derivedcompoundref refid="classFrontierSharedInformation" prot="public" virt="non-virtual">FrontierSharedInformation</derivedcompoundref>
+    <derivedcompoundref refid="classMICASharedInformation" prot="public" virt="non-virtual">MICASharedInformation</derivedcompoundref>
+    <includes refid="SharedInformationInterface_8hpp" local="no">ggtk/SharedInformationInterface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double SharedInformationInterface::sharedInformation</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)=0</argsstring>
+        <name>sharedInformation</name>
+        <reimplementedby refid="classAncestorMeanSharedInformation_1a86dad7b02ff45ae758a2b311ad763350">sharedInformation</reimplementedby>
+        <reimplementedby refid="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249">sharedInformation</reimplementedby>
+        <reimplementedby refid="classExclusivelyInheritedSharedInformation_1ae7e51e7f1328cfc5f7b9991c7714eadf">sharedInformation</reimplementedby>
+        <reimplementedby refid="classFrontierSharedInformation_1afd0bf3ea7bb9f4f05f89cc2597bc2dcf">sharedInformation</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMAdjustedSharedInformation_1ac93a66e1b8efafc8cd1c166424241af9">sharedInformation</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMSharedInformation_1aeb3ea4684e5f198464ce9354171981d3">sharedInformation</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for returning the shared information of two terms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any shared information class to implement this method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SharedInformationInterface.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double SharedInformationInterface::sharedInformation</definition>
+        <argsstring>(const std::string &amp;term)=0</argsstring>
+        <name>sharedInformation</name>
+        <reimplementedby refid="classAncestorMeanSharedInformation_1af31937c58ee53db666586b446bc23061">sharedInformation</reimplementedby>
+        <reimplementedby refid="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37">sharedInformation</reimplementedby>
+        <reimplementedby refid="classExclusivelyInheritedSharedInformation_1ad77022f2d6225c423fa0c5abb8a1443a">sharedInformation</reimplementedby>
+        <reimplementedby refid="classFrontierSharedInformation_1a7d9c15e312667dc5ac2af1c7e36f735b">sharedInformation</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMAdjustedSharedInformation_1a6a228833a96e710c4e143cefaf364a37">sharedInformation</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMSharedInformation_1a1c9a0a709b77822cd3bc967beed08b66">sharedInformation</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for returning the shared information of a single terms,or information content. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method privdes a mechanism for returing a term&apos;s infromation content. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SharedInformationInterface.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double SharedInformationInterface::maxInformationContent</definition>
+        <argsstring>(const std::string &amp;term)=0</argsstring>
+        <name>maxInformationContent</name>
+        <reimplementedby refid="classAncestorMeanSharedInformation_1abf7d613e1459a5cf49071871e55f8a50">maxInformationContent</reimplementedby>
+        <reimplementedby refid="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1">maxInformationContent</reimplementedby>
+        <reimplementedby refid="classExclusivelyInheritedSharedInformation_1af435c2641f3ab4a34db2d473216ceb16">maxInformationContent</reimplementedby>
+        <reimplementedby refid="classFrontierSharedInformation_1a8301888fc7343848a9ee307849e49125">maxInformationContent</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMAdjustedSharedInformation_1ab66e18a4f169878ad2a9e9d6d3feb459">maxInformationContent</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMSharedInformation_1ae97d2b59ecd6d1eeee2583c6005c65a2">maxInformationContent</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for returning the maximum information content for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any shared information class to implement this method. This method provides the absolute max information content with in a corpus for normalization purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SharedInformationInterface.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SharedInformationInterface::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)=0</argsstring>
+        <name>hasTerm</name>
+        <reimplementedby refid="classAncestorMeanSharedInformation_1af7503d6f761957bcb22d0e6614d87fa4">hasTerm</reimplementedby>
+        <reimplementedby refid="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a">hasTerm</reimplementedby>
+        <reimplementedby refid="classExclusivelyInheritedSharedInformation_1a0bf2231c6f714d97a5e55ee67893e403">hasTerm</reimplementedby>
+        <reimplementedby refid="classFrontierSharedInformation_1a4cd9a78345443bdd8c43e7fcee01f9b4">hasTerm</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMAdjustedSharedInformation_1ae6304b98a7c8784327f978ee59372ca3">hasTerm</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMSharedInformation_1a718055d6fecea9e10125ae4895af7f95">hasTerm</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for determining if a term can be found. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any shared information class to implement this method. This method provides a method for client classes to determine if a term can be found by the method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SharedInformationInterface.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SharedInformationInterface::isSameOntology</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)=0</argsstring>
+        <name>isSameOntology</name>
+        <reimplementedby refid="classAncestorMeanSharedInformation_1a75f59ac9d53014b967d0a81de8a07dbb">isSameOntology</reimplementedby>
+        <reimplementedby refid="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545">isSameOntology</reimplementedby>
+        <reimplementedby refid="classExclusivelyInheritedSharedInformation_1a7b0ec1a7a1fb653450686c7e31346363">isSameOntology</reimplementedby>
+        <reimplementedby refid="classFrontierSharedInformation_1a545b12efcab4551d031fb6125f615080">isSameOntology</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMAdjustedSharedInformation_1a9e6387f431eddaf42a1b18529cb3a8f5">isSameOntology</reimplementedby>
+        <reimplementedby refid="classCoutoGraSMSharedInformation_1ae6e12a30f03b0c2232d73277d8d47cd1">isSameOntology</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual method for determining if the two terms are of like ontologies. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pure virtual method requires any shared information class to implement this method. This method provides a method for client classes to determine if two terms are of the same ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SharedInformationInterface.hpp" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An interface class to define shared information calculations. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the interface for shared information calculations. Pure virtual methods require that shared information methods implement these. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="199">
+        <label>AncestorMeanSharedInformation</label>
+        <link refid="classAncestorMeanSharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>CoutoGraSMAdjustedSharedInformation</label>
+        <link refid="classCoutoGraSMAdjustedSharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>ExclusivelyInheritedSharedInformation</label>
+        <link refid="classExclusivelyInheritedSharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>CoutoGraSMSharedInformation</label>
+        <link refid="classCoutoGraSMSharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>FrontierSharedInformation</label>
+        <link refid="classFrontierSharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>MICASharedInformation</label>
+        <link refid="classMICASharedInformation"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/SharedInformationInterface.hpp" line="19" column="1" bodyfile="ggtk/SharedInformationInterface.hpp" bodystart="19" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8" prot="public" virt="pure-virtual"><scope>SharedInformationInterface</scope><name>hasTerm</name></member>
+      <member refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d" prot="public" virt="pure-virtual"><scope>SharedInformationInterface</scope><name>isSameOntology</name></member>
+      <member refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999" prot="public" virt="pure-virtual"><scope>SharedInformationInterface</scope><name>maxInformationContent</name></member>
+      <member refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7" prot="public" virt="pure-virtual"><scope>SharedInformationInterface</scope><name>sharedInformation</name></member>
+      <member refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6" prot="public" virt="pure-virtual"><scope>SharedInformationInterface</scope><name>sharedInformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

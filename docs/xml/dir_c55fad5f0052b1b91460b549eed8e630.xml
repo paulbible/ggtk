@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c55fad5f0052b1b91460b549eed8e630" kind="dir">
+    <compoundname>ggtk</compoundname>
+    <innerfile refid="Accumulators_8hpp">Accumulators.hpp</innerfile>
+    <innerfile refid="AllowedRelationshipOboGoParser_8hpp">AllowedRelationshipOboGoParser.hpp</innerfile>
+    <innerfile refid="AllowedRelationshipXmlGoParser_8hpp">AllowedRelationshipXmlGoParser.hpp</innerfile>
+    <innerfile refid="AllowedSetEvidencePolicy_8hpp">AllowedSetEvidencePolicy.hpp</innerfile>
+    <innerfile refid="AllowedSetRelationshipPolicy_8hpp">AllowedSetRelationshipPolicy.hpp</innerfile>
+    <innerfile refid="AllPairsAverageSetSimilarity_8hpp">AllPairsAverageSetSimilarity.hpp</innerfile>
+    <innerfile refid="AllPairsMaxSetSimilarity_8hpp">AllPairsMaxSetSimilarity.hpp</innerfile>
+    <innerfile refid="AncestorMeanSharedInformation_8hpp">AncestorMeanSharedInformation.hpp</innerfile>
+    <innerfile refid="AnnotationData_8hpp">AnnotationData.hpp</innerfile>
+    <innerfile refid="AnnotationParserFactory_8hpp">AnnotationParserFactory.hpp</innerfile>
+    <innerfile refid="AnnotationParserInterface_8hpp">AnnotationParserInterface.hpp</innerfile>
+    <innerfile refid="AppUtilities_8hpp">AppUtilities.hpp</innerfile>
+    <innerfile refid="BestMatchAverageSetSimilarity_8hpp">BestMatchAverageSetSimilarity.hpp</innerfile>
+    <innerfile refid="CoutoGraSMAdjustedSharedInformation_8hpp">CoutoGraSMAdjustedSharedInformation.hpp</innerfile>
+    <innerfile refid="CoutoGraSMSharedInformation_8hpp">CoutoGraSMSharedInformation.hpp</innerfile>
+    <innerfile refid="DisallowedSetEvidencePolicy_8hpp">DisallowedSetEvidencePolicy.hpp</innerfile>
+    <innerfile refid="EnrichmentTools_8hpp">EnrichmentTools.hpp</innerfile>
+    <innerfile refid="EntrezGene2GoAnnotationParser_8hpp">EntrezGene2GoAnnotationParser.hpp</innerfile>
+    <innerfile refid="EvidencePolicyInterface_8hpp">EvidencePolicyInterface.hpp</innerfile>
+    <innerfile refid="ExclusivelyInheritedSharedInformation_8hpp">ExclusivelyInheritedSharedInformation.hpp</innerfile>
+    <innerfile refid="ExperimentalEvidencePolicy_8hpp">ExperimentalEvidencePolicy.hpp</innerfile>
+    <innerfile refid="FrontierSharedInformation_8hpp">FrontierSharedInformation.hpp</innerfile>
+    <innerfile refid="GafAnnotationParser_8hpp">GafAnnotationParser.hpp</innerfile>
+    <innerfile refid="GentlemanSimUISetSimilarity_8hpp">GentlemanSimUISetSimilarity.hpp</innerfile>
+    <innerfile refid="ggtk_8hpp">ggtk.hpp</innerfile>
+    <innerfile refid="GoaAnnotationParser_8hpp">GoaAnnotationParser.hpp</innerfile>
+    <innerfile refid="GoEnums_8hpp">GoEnums.hpp</innerfile>
+    <innerfile refid="GoGraph_8hpp">GoGraph.hpp</innerfile>
+    <innerfile refid="GoParserFactory_8hpp">GoParserFactory.hpp</innerfile>
+    <innerfile refid="GoParserInterface_8hpp">GoParserInterface.hpp</innerfile>
+    <innerfile refid="JaccardSetSimilarity_8hpp">JaccardSetSimilarity.hpp</innerfile>
+    <innerfile refid="JiangConrathSimilarity_8hpp">JiangConrathSimilarity.hpp</innerfile>
+    <innerfile refid="LinSimilarity_8hpp">LinSimilarity.hpp</innerfile>
+    <innerfile refid="MgiAnnotationParser_8hpp">MgiAnnotationParser.hpp</innerfile>
+    <innerfile refid="MICASharedInformation_8hpp">MICASharedInformation.hpp</innerfile>
+    <innerfile refid="ModularJiangConrath_8hpp">ModularJiangConrath.hpp</innerfile>
+    <innerfile refid="ModularLin_8hpp">ModularLin.hpp</innerfile>
+    <innerfile refid="ModularResnik_8hpp">ModularResnik.hpp</innerfile>
+    <innerfile refid="NCList_8hpp">NCList.hpp</innerfile>
+    <innerfile refid="PekarStaabSimilarity_8hpp">PekarStaabSimilarity.hpp</innerfile>
+    <innerfile refid="PrecomputedMatrixTermSimilarity_8hpp">PrecomputedMatrixTermSimilarity.hpp</innerfile>
+    <innerfile refid="RapidXmlGoParser_8hpp">RapidXmlGoParser.hpp</innerfile>
+    <innerfile refid="RelationshipPolicyInterface_8hpp">RelationshipPolicyInterface.hpp</innerfile>
+    <innerfile refid="RelevanceSimilarity_8hpp">RelevanceSimilarity.hpp</innerfile>
+    <innerfile refid="ResnikSimilarity_8hpp">ResnikSimilarity.hpp</innerfile>
+    <innerfile refid="SetUtilities_8hpp">SetUtilities.hpp</innerfile>
+    <innerfile refid="SharedInformationInterface_8hpp">SharedInformationInterface.hpp</innerfile>
+    <innerfile refid="SimpleRegion_8hpp">SimpleRegion.hpp</innerfile>
+    <innerfile refid="StandardOboGoParser_8hpp">StandardOboGoParser.hpp</innerfile>
+    <innerfile refid="StandardRelationshipPolicy_8hpp">StandardRelationshipPolicy.hpp</innerfile>
+    <innerfile refid="StandardXmlGoParser_8hpp">StandardXmlGoParser.hpp</innerfile>
+    <innerfile refid="TermDepthMap_8hpp">TermDepthMap.hpp</innerfile>
+    <innerfile refid="TermInformationContentMap_8hpp">TermInformationContentMap.hpp</innerfile>
+    <innerfile refid="TermProbabilityMap_8hpp">TermProbabilityMap.hpp</innerfile>
+    <innerfile refid="TermSetSimilarityInterface_8hpp">TermSetSimilarityInterface.hpp</innerfile>
+    <innerfile refid="TermSimilarityInterface_8hpp">TermSimilarityInterface.hpp</innerfile>
+    <innerfile refid="TermSimilarityWriter_8hpp">TermSimilarityWriter.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ggtk/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGafAnnotationParser" kind="class" language="C++" prot="public">
+    <compoundname>GafAnnotationParser</compoundname>
+    <basecompoundref refid="classGoaAnnotationParser" prot="public" virt="non-virtual">GoaAnnotationParser</basecompoundref>
+    <includes refid="GafAnnotationParser_8hpp" local="no">ggtk/GafAnnotationParser.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGafAnnotationParser_1a1ec096680cb5e3c4f1111b53cc12ce88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GafAnnotationParser::GafAnnotationParser</definition>
+        <argsstring>()</argsstring>
+        <name>GafAnnotationParser</name>
+        <briefdescription>
+<para>A default constructor method for creating the parser. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GafAnnotationParser.hpp" line="30" column="1" bodyfile="ggtk/GafAnnotationParser.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classGafAnnotationParser_1a24dc9179f8df7e913c648ea90f60e3b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GafAnnotationParser::GafAnnotationParser</definition>
+        <argsstring>(EvidencePolicyInterface *policy)</argsstring>
+        <name>GafAnnotationParser</name>
+        <param>
+          <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor method for creating the parser with a policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser with a custom policy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GafAnnotationParser.hpp" line="36" column="1" bodyfile="ggtk/GafAnnotationParser.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse a <ref refid="namespaceGO" kindref="compound">GO</ref> Annotation File (GAF, Format 2.0). </para>    </briefdescription>
+    <detaileddescription>
+<para>This class will read a GAF file and return an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object pointer. Defined at: <ulink url="http://geneontology.org/page/go-annotation-file-format-20">http://geneontology.org/page/go-annotation-file-format-20</ulink></para><para>Implements <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref>.</para><para>For now, the important aspects of the GAF file and GOA file are the same. The <ref refid="classGafAnnotationParser" kindref="compound">GafAnnotationParser</ref> inherits all functionality from <ref refid="classGoaAnnotationParser" kindref="compound">GoaAnnotationParser</ref>. This may change in the future. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="95">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>GafAnnotationParser</label>
+        <link refid="classGafAnnotationParser"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="99">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="98">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>GafAnnotationParser</label>
+        <link refid="classGafAnnotationParser"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/GafAnnotationParser.hpp" line="23" column="1" bodyfile="ggtk/GafAnnotationParser.hpp" bodystart="23" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369" prot="public" virt="virtual"><scope>GafAnnotationParser</scope><name>clone</name></member>
+      <member refid="classGafAnnotationParser_1a1ec096680cb5e3c4f1111b53cc12ce88" prot="public" virt="non-virtual"><scope>GafAnnotationParser</scope><name>GafAnnotationParser</name></member>
+      <member refid="classGafAnnotationParser_1a24dc9179f8df7e913c648ea90f60e3b2" prot="public" virt="non-virtual"><scope>GafAnnotationParser</scope><name>GafAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1a3f415dfbfd2bce5143eef60532ebadea" prot="public" virt="non-virtual"><scope>GafAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa06b6ba409d97fe794ae1a7606864e65" prot="public" virt="non-virtual"><scope>GafAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf" prot="public" virt="virtual"><scope>GafAnnotationParser</scope><name>isFileGood</name></member>
+      <member refid="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff" prot="public" virt="virtual"><scope>GafAnnotationParser</scope><name>parseAnnotationFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

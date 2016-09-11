@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="TermProbabilityMap_8hpp" kind="file" language="C++">
+    <compoundname>TermProbabilityMap.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+    <includes refid="AnnotationData_8hpp" local="no">ggtk/AnnotationData.hpp</includes>
+    <includes refid="Accumulators_8hpp" local="no">ggtk/Accumulators.hpp</includes>
+    <includes local="no">boost/graph/depth_first_search.hpp</includes>
+    <includes local="no">boost/graph/reverse_graph.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="TermInformationContentMap_8hpp" local="no">ggtk/TermInformationContentMap.hpp</includedby>
+    <incdepgraph>
+      <node id="1270">
+        <label>boost/graph/breadth_first_search.hpp</label>
+      </node>
+      <node id="1271">
+        <label>boost/graph/connected_components.hpp</label>
+      </node>
+      <node id="1260">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap.hpp"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>cmath</label>
+      </node>
+      <node id="1262">
+        <label>string</label>
+      </node>
+      <node id="1273">
+        <label>boost/graph/reverse_graph.hpp</label>
+      </node>
+      <node id="1278">
+        <label>map</label>
+      </node>
+      <node id="1275">
+        <label>fstream</label>
+      </node>
+      <node id="1269">
+        <label>boost/graph/graph_traits.hpp</label>
+      </node>
+      <node id="1284">
+        <label>boost/accumulators/statistics/min.hpp</label>
+      </node>
+      <node id="1285">
+        <label>boost/accumulators/statistics/mean.hpp</label>
+      </node>
+      <node id="1283">
+        <label>boost/accumulators/statistics/max.hpp</label>
+      </node>
+      <node id="1267">
+        <label>boost/graph/subgraph.hpp</label>
+      </node>
+      <node id="1274">
+        <label>ggtk/AnnotationData.hpp</label>
+        <link refid="AnnotationData_8hpp_source"/>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+      </node>
+      <node id="1268">
+        <label>boost/graph/adjacency_iterator.hpp</label>
+      </node>
+      <node id="1282">
+        <label>boost/accumulators/statistics.hpp</label>
+      </node>
+      <node id="1279">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1276">
+        <label>vector</label>
+      </node>
+      <node id="1281">
+        <label>boost/accumulators/accumulators.hpp</label>
+      </node>
+      <node id="1287">
+        <label>boost/accumulators/statistics/variance.hpp</label>
+      </node>
+      <node id="1265">
+        <label>boost/unordered_set.hpp</label>
+      </node>
+      <node id="1286">
+        <label>boost/accumulators/statistics/covariance.hpp</label>
+      </node>
+      <node id="1288">
+        <label>boost/accumulators/statistics/variates/covariate.hpp</label>
+      </node>
+      <node id="1289">
+        <label>boost/graph/depth_first_search.hpp</label>
+      </node>
+      <node id="1277">
+        <label>iostream</label>
+      </node>
+      <node id="1280">
+        <label>ggtk/Accumulators.hpp</label>
+        <link refid="Accumulators_8hpp_source"/>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>ggtk/GoGraph.hpp</label>
+        <link refid="GoGraph_8hpp_source"/>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="1262" relation="include">
+        </childnode>
+      </node>
+      <node id="1266">
+        <label>boost/graph/adjacency_list.hpp</label>
+      </node>
+      <node id="1272">
+        <label>boost/graph/strong_components.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1294">
+        <label>ggtk/CoutoGraSMAdjustedSharedInformation.hpp</label>
+        <link refid="CoutoGraSMAdjustedSharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1290">
+        <label>ggtk/TermProbabilityMap.hpp</label>
+        <link refid="TermProbabilityMap.hpp"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1293">
+        <label>ggtk/AncestorMeanSharedInformation.hpp</label>
+        <link refid="AncestorMeanSharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>ggtk/FrontierSharedInformation.hpp</label>
+        <link refid="FrontierSharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1302">
+        <label>ggtk/ResnikSimilarity.hpp</label>
+        <link refid="ResnikSimilarity_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>ggtk/MICASharedInformation.hpp</label>
+        <link refid="MICASharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>ggtk/ExclusivelyInheritedSharedInformation.hpp</label>
+        <link refid="ExclusivelyInheritedSharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>ggtk/LinSimilarity.hpp</label>
+        <link refid="LinSimilarity_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1301">
+        <label>ggtk/RelevanceSimilarity.hpp</label>
+        <link refid="RelevanceSimilarity_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>ggtk/JiangConrathSimilarity.hpp</label>
+        <link refid="JiangConrathSimilarity_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>ggtk/TermInformationContentMap.hpp</label>
+        <link refid="TermInformationContentMap_8hpp_source"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>ggtk/CoutoGraSMSharedInformation.hpp</label>
+        <link refid="CoutoGraSMSharedInformation_8hpp_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTermProbabilityMap" prot="public">TermProbabilityMap</innerclass>
+    <innerclass refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" prot="public">TermProbabilityMap::dfs_cumulative_annotations_visitor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TERM_PROBABILITY_MAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TERM_PROBABILITY_MAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/GoGraph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/AnnotationData.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/Accumulators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/depth_first_search.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/graph/reverse_graph.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classTermProbabilityMap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTermProbabilityMap" kindref="compound">TermProbabilityMap</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"></codeline>
+<codeline lineno="37" refid="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a44b7437af56eecc461983a70b5e0e5f3" kindref="member">TermProbabilityMap</ref>(<ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>graph,<sp/><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref>*<sp/>annoData){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>default<sp/>minimum<sp/>probablity<sp/>policy<sp/>for<sp/>normalization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>an<sp/>annotation<sp/>list<sp/>the<sp/>size<sp/>of<sp/>verticies<sp/>in<sp/>go,<sp/>each<sp/>value<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref><sp/>=<sp/>std::vector&lt;double&gt;(graph-&gt;<ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>(),0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>(first)<sp/>root<sp/>of<sp/>the<sp/>ontology.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>root<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1a1e8f6565c1cdab44ffbbdcd771246f7c" kindref="member">getRoot</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>root<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>graph-&gt;getTermStringIdByIndex(root)<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//a<sp/>variable<sp/>for<sp/>the<sp/>cummulative<sp/>annotaions<sp/>of<sp/>the<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::size_t&gt;<sp/>annotationCounts(graph-&gt;<ref refid="classGoGraph_1a624f621a9c3cd956fb664daf113e3729" kindref="member">getNumVertices</ref>(),0);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>the<sp/>visitor<sp/>abject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" kindref="compound">dfs_cumulative_annotations_visitor</ref><sp/>vis(graph<sp/>,annoData,<sp/>&amp;annotationCounts,&amp;<ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>boost<sp/>graph<sp/>from<sp/>the<sp/>GoGraph<sp/>object.<sp/>Must<sp/>be<sp/>done<sp/>to<sp/>utilize<sp/>boost<sp/>algorithms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1aae4ae00d4785dcee01a514feb768f380" kindref="member">GoGraph::Graph</ref>*<sp/>g<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1a752d7576d649cdc0befa982ca5c3ea98" kindref="member">getGraph</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>the<sp/>boost<sp/>depth<sp/>first<sp/>search<sp/>using<sp/>our<sp/>custom<sp/>visitor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>revering<sp/>the<sp/>graph<sp/>is<sp/>necessary<sp/>otherwise<sp/>the<sp/>root<sp/>vertex<sp/>would<sp/>have<sp/>no<sp/>edges.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::depth_first_search(boost::make_reverse_graph(*g),<sp/>boost::visitor(vis).root_vertex(root));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Traverse<sp/>the<sp/>vertices<sp/>to<sp/>find<sp/>the<sp/>roots<sp/>for<sp/>each<sp/>ontology</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">Accumulators::SimpleAccumulator</ref><sp/>minMaxBP;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">Accumulators::SimpleAccumulator</ref><sp/>minMaxMF;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">Accumulators::SimpleAccumulator</ref><sp/>minMaxCC;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vertex<sp/>Iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1a1e893efb01d71292881b2fa45c771b79" kindref="member">GoGraph::GoVertexIterator</ref><sp/>vi,vend;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(vi,vend)<sp/>=<sp/>boost::vertices(*g);<sp/>vi<sp/>!=<sp/>vend;<sp/>++vi){</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>v<sp/>=<sp/>*vi;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" kindref="member">getVertexIndex</ref>(v);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>counts<sp/>=<sp/>(double)annotationCounts.at(index);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(counts<sp/>==<sp/>0.0){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//switch<sp/>on<sp/>ontology,<sp/>find<sp/>the<sp/>max<sp/>for<sp/>each<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(graph-&gt;<ref refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" kindref="member">getTermOntologyByIndex</ref>(index)){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::BP:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minMaxBP(counts);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::MF:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minMaxMF(counts);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::CC:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minMaxCC(counts);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::ONTO_ERROR:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>for,<sp/>vertex<sp/>iterator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>single<sp/>annotation<sp/>minimum<sp/>normalization<sp/>factors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" kindref="member">_bp_normalization_min_1anno</ref><sp/>=<sp/>1.0/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxBP);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" kindref="member">_mf_normalization_min_1anno</ref><sp/>=<sp/>1.0/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxMF);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" kindref="member">_cc_normalization_min_1anno</ref><sp/>=<sp/>1.0/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxCC);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>minimum<sp/>annotation<sp/>minimum<sp/>normalization<sp/>factors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" kindref="member">_bp_normalization_min_minAnno</ref><sp/>=<sp/><ref refid="namespaceAccumulators_1ac0b3251fec13bffecc672a1937401ac6" kindref="member">Accumulators::extractMin</ref>(minMaxBP)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxBP);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" kindref="member">_mf_normalization_min_minAnno</ref><sp/>=<sp/><ref refid="namespaceAccumulators_1ac0b3251fec13bffecc672a1937401ac6" kindref="member">Accumulators::extractMin</ref>(minMaxMF)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxMF);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" kindref="member">_cc_normalization_min_minAnno</ref><sp/>=<sp/><ref refid="namespaceAccumulators_1ac0b3251fec13bffecc672a1937401ac6" kindref="member">Accumulators::extractMin</ref>(minMaxCC)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxCC);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Traverse<sp/>the<sp/>cummulative<sp/>annotation<sp/>vector,<sp/>convert<sp/>to<sp/>probability,<sp/>add<sp/>to<sp/>probability<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(boost::tie(vi,vend)<sp/>=<sp/>boost::vertices(*g);<sp/>vi<sp/>!=<sp/>vend;<sp/>++vi){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph_1afabec0fb17c98de989e7dd9f3a54e650" kindref="member">GoGraph::GoVertex</ref><sp/>v<sp/>=<sp/>*vi;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/>graph-&gt;<ref refid="classGoGraph_1a524fd1ade5d14d4dc3c900bf82162be6" kindref="member">getVertexIndex</ref>(v);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(graph-&gt;<ref refid="classGoGraph_1a0531ffa131c90e9871e280aa5faeaa42" kindref="member">getTermOntologyByIndex</ref>(index)){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::BP:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.at(index)<sp/>=<sp/>annotationCounts.at(index)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxBP);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::MF:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.at(index)<sp/>=<sp/>annotationCounts.at(index)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxMF);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::CC:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.at(index)<sp/>=<sp/>annotationCounts.at(index)/<ref refid="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" kindref="member">Accumulators::extractMax</ref>(minMaxCC);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GO::ONTO_ERROR:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>constructor<sp/>logic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"></codeline>
+<codeline lineno="135" refid="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a3bddf2e9aa81dd0e1f40aa1dc4ff2713" kindref="member">TermProbabilityMap</ref>(){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>default<sp/>minimum<sp/>probablity<sp/>policy<sp/>for<sp/>normalization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>empty<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref><sp/>=<sp/>boost::unordered_map&lt;std::string,std::size_t&gt;();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref><sp/>=<sp/>std::vector&lt;double&gt;();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"></codeline>
+<codeline lineno="147" refid="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a9e409916fa3c75fb7900a3f83d7c55b9" kindref="member">~TermProbabilityMap</ref>(){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//empty<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>.clear();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.clear();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"></codeline>
+<codeline lineno="157" refid="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><ref refid="classTermProbabilityMap_1ae960575c867ee0954b6beee3c10b280d" kindref="member">getValues</ref>(){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"></codeline>
+<codeline lineno="165" refid="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classTermProbabilityMap_1a207545a1c1703d8be20fc0847156f2cc" kindref="member">getKeys</ref>(){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>keys;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,<sp/>std::size_t&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>.begin();<sp/>it<sp/>!=<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>.end();<sp/>++it){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keys.push_back(it-&gt;first);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>keys;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"></codeline>
+<codeline lineno="178" refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;testTerm){</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>.find(testTerm)<sp/>!=<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>.end();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"></codeline>
+<codeline lineno="187" refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" kindref="member">badIdValue</ref>(){</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"></codeline>
+<codeline lineno="196" refid="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1acd472ef3c011377e6b9bdb01a60e84e1" kindref="member">operator[]</ref>(std::string<sp/>termId){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termId)){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" kindref="member">badIdValue</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>[termId];</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.at(index);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"></codeline>
+<codeline lineno="208" refid="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a4ef29e6a25cb1b781c5a0b05b9b82ebf" kindref="member">getValue</ref>(std::string<sp/>termId){</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classTermProbabilityMap_1a14087f464ea33bf0247d6034e9ee2e9f" kindref="member">hasTerm</ref>(termId)){</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1adfeb9edb261c639cceae797cceb88d35" kindref="member">badIdValue</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>index<sp/>=<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>[termId];</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>.at(index);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"></codeline>
+<codeline lineno="222" refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1aa0cbaada30cf4fe8f7bf55acdfcbe7aa" kindref="member">getMinBP</ref>(){</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref><sp/>?<sp/><ref refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" kindref="member">_bp_normalization_min_1anno</ref><sp/>:<sp/><ref refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" kindref="member">_bp_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"></codeline>
+<codeline lineno="231" refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1af23163c0122e7745b6581eda91a72809" kindref="member">getMinMF</ref>(){</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref><sp/>?<sp/><ref refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" kindref="member">_mf_normalization_min_1anno</ref><sp/>:<sp/><ref refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" kindref="member">_mf_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237"></codeline>
+<codeline lineno="240" refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1aa74c8e413fa1cce4d6528ccfad32efad" kindref="member">getMinCC</ref>(){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref><sp/>?<sp/><ref refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" kindref="member">_cc_normalization_min_1anno</ref><sp/>:<sp/><ref refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" kindref="member">_cc_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"></codeline>
+<codeline lineno="250" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor" kindref="compound">dfs_cumulative_annotations_visitor</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::default_dfs_visitor{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="254" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a3c6b493a2f9b5b966f12c947553ffbd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a3c6b493a2f9b5b966f12c947553ffbd2" kindref="member">dfs_cumulative_annotations_visitor</ref>(<ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/>inGraph,<ref refid="classAnnotationData" kindref="compound">AnnotationData</ref>*<sp/>inData,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::size_t&gt;*<sp/>annotations,boost::unordered_map&lt;std::string,std::size_t&gt;*<sp/>nameToIndex)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" kindref="member">goGraph</ref>(inGraph),<ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" kindref="member">annoData</ref>(inData),<ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" kindref="member">annoList</ref>(annotations),<ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" kindref="member">nameIndexMap</ref>(nameToIndex){}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Vertex,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph<sp/>&gt;</highlight></codeline>
+<codeline lineno="268" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1ac6147a4c2bcfe83492667b248630a525" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1ac6147a4c2bcfe83492667b248630a525" kindref="member">finish_vertex</ref>(Vertex<sp/>u,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Graph<sp/>&amp;<sp/>g)<sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>vertx<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>uIndex<sp/>=<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(boost::vertex_index,g)[u];</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>the<sp/>termId<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>termId<sp/>=<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" kindref="member">goGraph</ref>-&gt;<ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(uIndex);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//use<sp/>the<sp/>AnnotationData<sp/>object<sp/>to<sp/>get<sp/>the<sp/>actual<sp/>number<sp/>of<sp/>annotations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>currentTermAnnos<sp/>=<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" kindref="member">annoData</ref>-&gt;<ref refid="classAnnotationData_1a985193a995893976a17f09217cced074" kindref="member">getNumAnnotationsForGoTerm</ref>(termId);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>termId<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialized<sp/>this<sp/>map<sp/>for<sp/>the<sp/>TermProbablilityMap,<sp/>can<sp/>initialize<sp/>it<sp/>for<sp/>free<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" kindref="member">nameIndexMap</ref>-&gt;insert(std::make_pair(termId,uIndex));</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Iterate<sp/>over<sp/>the<sp/>children<sp/>of<sp/>the<sp/>term<sp/>to<sp/>add<sp/>the<sp/>child<sp/>annotations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>boost::graph_traits&lt;<sp/>Graph<sp/>&gt;::out_edge_iterator<sp/>ei,<sp/>e_end;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(tie(ei,<sp/>e_end)<sp/>=<sp/>boost::out_edges(u,<sp/>g);<sp/>ei<sp/>!=<sp/>e_end;<sp/>++ei){</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vertex<sp/>v<sp/>=<sp/>boost::target(*ei,<sp/>g);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>vIndex<sp/>=<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(boost::vertex_index,g)[v];</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>childTermId<sp/>=<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" kindref="member">goGraph</ref>-&gt;<ref refid="classGoGraph_1aa885bffcce6c156769236ca2af9a453e" kindref="member">getTermStringIdByIndex</ref>(vIndex);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;child<sp/>&quot;<sp/>&lt;&lt;<sp/>childTermId<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentTermAnnos<sp/>+=<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" kindref="member">annoList</ref>-&gt;at(vIndex);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>for,<sp/>each<sp/>child</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" kindref="member">annoList</ref>-&gt;at(uIndex)<sp/>=<sp/>currentTermAnnos;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>uIndex<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>termId<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>annoList-&gt;at(uIndex)<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cin.get();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//end<sp/>method,<sp/>finish_vertex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGoGraph" kindref="compound">GoGraph</ref>*<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a9588ad34b2d743cb8245c91d27fe22e1" kindref="member">goGraph</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref>*<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1a2200329f595bd75534fb37be72550d21" kindref="member">annoData</ref>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::size_t&gt;*<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1aab2aba55afae7c48e8834d409a889193" kindref="member">annoList</ref>;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,std::size_t&gt;*<sp/><ref refid="classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor_1af1db06d68d0e336e1300aabc2ba5ad9c" kindref="member">nameIndexMap</ref>;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight><highlight class="comment">//end<sp/>class,<sp/>DFS<sp/>visitor<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="326"></codeline>
+<codeline lineno="329" refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::unordered_map&lt;std::string,std::size_t&gt;<sp/><ref refid="classTermProbabilityMap_1af94f810eb87afe5c7bddb14d19735e86" kindref="member">_nameToIndex</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"></codeline>
+<codeline lineno="335" refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classTermProbabilityMap_1a1cbbbb63e115e69359e2d4fb65be6227" kindref="member">_probabilities</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"></codeline>
+<codeline lineno="341" refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a7cb93d7a55e3002065838f16a1f8c282" kindref="member">_isSingleAnnoMin</ref>;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"></codeline>
+<codeline lineno="348" refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a1bdc8b5b73d1686abbaf1f5dd698d500" kindref="member">_bp_normalization_min_1anno</ref>;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"></codeline>
+<codeline lineno="355" refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1aedd2c51ffd41664ef2dd714bde4aa5fa" kindref="member">_bp_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"></codeline>
+<codeline lineno="362" refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a9c240b82c9cec69d2d777b3a95d81891" kindref="member">_mf_normalization_min_1anno</ref>;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"></codeline>
+<codeline lineno="369" refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1adfbe0bba2e300c32941c7d83f8e3febb" kindref="member">_mf_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"></codeline>
+<codeline lineno="376" refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a8c16045a4e738758ff5510c04da20290" kindref="member">_cc_normalization_min_1anno</ref>;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"></codeline>
+<codeline lineno="383" refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classTermProbabilityMap_1a5a665cb81ee03caca135a9a36cd544a1" kindref="member">_cc_normalization_min_minAnno</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/TermProbabilityMap.hpp"/>
+  </compounddef>
+</doxygen>

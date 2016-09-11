@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor" kind="class" language="C++" prot="private">
+    <compoundname>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">default_bfs_visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aa38de3516929e2c3bb5bfb96f6a878fd" prot="public" static="no" mutable="no">
+        <type>boost::unordered_set&lt; std::size_t &gt; &amp;</type>
+        <definition>boost::unordered_set&lt;std::size_t&gt;&amp; ExclusivelyInheritedSharedInformation::EdgeSetVisitor::edgeSet</definition>
+        <argsstring></argsstring>
+        <name>edgeSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="242" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1a102382cb59d70ca61c9653ba0d61a76a" prot="public" static="no" mutable="no">
+        <type><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref> &amp;</type>
+        <definition>GoGraph::EdgeIndexMap&amp; ExclusivelyInheritedSharedInformation::EdgeSetVisitor::eMap</definition>
+        <argsstring></argsstring>
+        <name>eMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="243" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1af62814b628f72d14881750f0c5e11537" prot="public" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;</type>
+        <definition>boost::unordered_map&lt;std::string,boost::unordered_set&lt;std::size_t&gt; &gt;&amp; ExclusivelyInheritedSharedInformation::EdgeSetVisitor::termEdgesMap</definition>
+        <argsstring></argsstring>
+        <name>termEdgesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="244" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aaadc75e36ad86ac2d65cd4b49dd4ed2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExclusivelyInheritedSharedInformation::EdgeSetVisitor::EdgeSetVisitor</definition>
+        <argsstring>(boost::unordered_set&lt; std::size_t &gt; &amp;inSet, GoGraph::EdgeIndexMap &amp;inMap, boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;termToEdges)</argsstring>
+        <name>EdgeSetVisitor</name>
+        <param>
+          <type>boost::unordered_set&lt; std::size_t &gt; &amp;</type>
+          <declname>inSet</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoGraph_1a1fd5f6b3ef1f58a665bbc8e317be9817" kindref="member">GoGraph::EdgeIndexMap</ref> &amp;</type>
+          <declname>inMap</declname>
+        </param>
+        <param>
+          <type>boost::unordered_map&lt; std::string, boost::unordered_set&lt; std::size_t &gt; &gt; &amp;</type>
+          <declname>termToEdges</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="216" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1ad59461b925f7af60975656caaf76915c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Edge</type>
+          </param>
+          <param>
+            <type>typename Graph</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ExclusivelyInheritedSharedInformation::EdgeSetVisitor::examine_edge</definition>
+        <argsstring>(Edge e, const Graph &amp;g)</argsstring>
+        <name>examine_edge</name>
+        <param>
+          <type>Edge</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const Graph &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="223" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="223" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="63">
+        <label>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</label>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>boost::default_bfs_visitor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</label>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>boost::default_bfs_visitor</label>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/ExclusivelyInheritedSharedInformation.hpp" line="213" column="1" bodyfile="ggtk/ExclusivelyInheritedSharedInformation.hpp" bodystart="213" bodyend="245"/>
+    <listofallmembers>
+      <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aa38de3516929e2c3bb5bfb96f6a878fd" prot="public" virt="non-virtual"><scope>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</scope><name>edgeSet</name></member>
+      <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1aaadc75e36ad86ac2d65cd4b49dd4ed2e" prot="public" virt="non-virtual"><scope>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</scope><name>EdgeSetVisitor</name></member>
+      <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1a102382cb59d70ca61c9653ba0d61a76a" prot="public" virt="non-virtual"><scope>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</scope><name>eMap</name></member>
+      <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1ad59461b925f7af60975656caaf76915c" prot="public" virt="non-virtual"><scope>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</scope><name>examine_edge</name></member>
+      <member refid="classExclusivelyInheritedSharedInformation_1_1EdgeSetVisitor_1af62814b628f72d14881750f0c5e11537" prot="public" virt="non-virtual"><scope>ExclusivelyInheritedSharedInformation::EdgeSetVisitor</scope><name>termEdgesMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

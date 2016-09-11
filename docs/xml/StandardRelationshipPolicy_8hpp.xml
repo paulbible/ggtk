@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="StandardRelationshipPolicy_8hpp" kind="file" language="C++">
+    <compoundname>StandardRelationshipPolicy.hpp</compoundname>
+    <includes refid="RelationshipPolicyInterface_8hpp" local="no">ggtk/RelationshipPolicyInterface.hpp</includes>
+    <includes local="no">boost/unordered_map.hpp</includes>
+    <includedby refid="ggtk_8hpp" local="no">ggtk/ggtk.hpp</includedby>
+    <includedby refid="StandardOboGoParser_8hpp" local="no">ggtk/StandardOboGoParser.hpp</includedby>
+    <includedby refid="StandardXmlGoParser_8hpp" local="no">ggtk/StandardXmlGoParser.hpp</includedby>
+    <incdepgraph>
+      <node id="1161">
+        <label>string</label>
+      </node>
+      <node id="1162">
+        <label>boost/unordered_map.hpp</label>
+      </node>
+      <node id="1159">
+        <label>ggtk/RelationshipPolicyInterface.hpp</label>
+        <link refid="RelationshipPolicyInterface_8hpp_source"/>
+        <childnode refid="1160" relation="include">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>ggtk/StandardRelationshipPolicy.hpp</label>
+        <link refid="StandardRelationshipPolicy.hpp"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1162" relation="include">
+        </childnode>
+      </node>
+      <node id="1160">
+        <label>ggtk/GoEnums.hpp</label>
+        <link refid="GoEnums_8hpp_source"/>
+        <childnode refid="1161" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1164">
+        <label>ggtk/ggtk.hpp</label>
+        <link refid="ggtk_8hpp_source"/>
+      </node>
+      <node id="1163">
+        <label>ggtk/StandardRelationshipPolicy.hpp</label>
+        <link refid="StandardRelationshipPolicy.hpp"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1166" relation="include">
+        </childnode>
+      </node>
+      <node id="1166">
+        <label>ggtk/StandardXmlGoParser.hpp</label>
+        <link refid="StandardXmlGoParser_8hpp_source"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>ggtk/StandardOboGoParser.hpp</label>
+        <link refid="StandardOboGoParser_8hpp_source"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classStandardRelationshipPolicy" prot="public">StandardRelationshipPolicy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*=============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016<sp/>Paul<sp/>W.<sp/>Bible</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Distributed<sp/>under<sp/>the<sp/>Boost<sp/>Software<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STANDARD_RELATIONSHIP_POLICY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STANDARD_RELATIONSHIP_POLICY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ggtk/RelationshipPolicyInterface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unordered_map.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classStandardRelationshipPolicy" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"></codeline>
+<codeline lineno="28" refid="classStandardRelationshipPolicy_1a8998d51c3752dfcde0b8931607178c4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classStandardRelationshipPolicy_1a8998d51c3752dfcde0b8931607178c4d" kindref="member">StandardRelationshipPolicy</ref>(){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap<sp/>=<sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[GO::IS_A]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[GO::PART_OF]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"></codeline>
+<codeline lineno="38" refid="classStandardRelationshipPolicy_1af23f42bba1feb00a3b22a96ae17ffacf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classStandardRelationshipPolicy_1af23f42bba1feb00a3b22a96ae17ffacf" kindref="member">StandardRelationshipPolicy</ref>(std::vector&lt;GO::Relationship&gt;<sp/>relationships){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap<sp/>=<sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>relationships.size();++i){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_relationshipMap[relationships.at(i)]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"></codeline>
+<codeline lineno="49" refid="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classStandardRelationshipPolicy_1a75acddf7f5106cacf58f74bd837b03e4" kindref="member">isAllowed</ref>(<ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref><sp/>relationship){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_relationshipMap.find(relationship)<sp/>!=<sp/>_relationshipMap.end();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::unordered_map&lt;GO::Relationship,bool&gt;<sp/>_relationshipMap;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ggtk/StandardRelationshipPolicy.hpp"/>
+  </compounddef>
+</doxygen>

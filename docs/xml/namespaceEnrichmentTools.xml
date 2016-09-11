@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceEnrichmentTools" kind="namespace" language="C++">
+    <compoundname>EnrichmentTools</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceEnrichmentTools_1a0e1b36171f7c26ceb065fe556b9d7067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt;std::string&gt; EnrichmentTools::getDescendantGenes</definition>
+        <argsstring>(GoGraph *go, AnnotationData *data, const std::string &amp;term)</argsstring>
+        <name>getDescendantGenes</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>go</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A method for determining which genes are annotated with the given term or a child of that term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method calculates the set of the genes annotated with a given term or transatively with a child of that term. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EnrichmentTools.hpp" line="30" column="1" bodyfile="ggtk/EnrichmentTools.hpp" bodystart="30" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceEnrichmentTools_1a94a88459ae63a175a3461c3c26385601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double EnrichmentTools::oneSidedRawPvalue_hyper</definition>
+        <argsstring>(size_t sample, size_t success, size_t population, size_t test_value)</argsstring>
+        <name>oneSidedRawPvalue_hyper</name>
+        <param>
+          <type>size_t</type>
+          <declname>sample</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>success</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>population</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>test_value</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the result of a hypergeometic test. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method calculates p-value of a hypergeometice test give 4 values. The sample size, n The population success K The the population size N The test value k</para><para>Answers the question: "What is probability of seeing value of k or more successes in a sample of size n, given that the population of size N contains K total successes." </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EnrichmentTools.hpp" line="60" column="1" bodyfile="ggtk/EnrichmentTools.hpp" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceEnrichmentTools_1a82aede901a0585f834f0e4a363dc6276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double EnrichmentTools::enrichmentSignificance</definition>
+        <argsstring>(GoGraph *go, AnnotationData *data, boost::unordered_set&lt; std::string &gt; &amp;genes, const std::string &amp;term)</argsstring>
+        <name>enrichmentSignificance</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>go</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>genes</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>A method to calculate the enrichment of a specific term in a sample of genes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method performs a hypergeometic test of enrichment for a term given a set of genes that serves as the sample. The population is taken as all genes in the annotation database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/EnrichmentTools.hpp" line="77" column="1" bodyfile="ggtk/EnrichmentTools.hpp" bodystart="77" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceEnrichmentTools" kindref="compound">EnrichmentTools</ref> namespace provides simple functions for calulating <ref refid="namespaceGO" kindref="compound">GO</ref> term enrichment. </para>    </briefdescription>
+    <detaileddescription>
+<para>This namespace defines free functions that allow enrichment p-values to be calculated. These funcitons can serve as the foundation for more sophisticated enrichment anlayis. </para>    </detaileddescription>
+    <location file="ggtk/EnrichmentTools.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

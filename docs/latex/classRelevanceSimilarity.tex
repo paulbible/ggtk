@@ -1,0 +1,107 @@
+\hypertarget{classRelevanceSimilarity}{}\section{Relevance\+Similarity Class Reference}
+\label{classRelevanceSimilarity}\index{Relevance\+Similarity@{Relevance\+Similarity}}
+
+
+A class to calculate Relevance similarity between 2 terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Relevance\+Similarity.\+hpp$>$}
+
+Inheritance diagram for Relevance\+Similarity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRelevanceSimilarity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRelevanceSimilarity_a8c53e47a65cc1cb78aca2e94671b6534}{Relevance\+Similarity} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermInformationContentMap}{Term\+Information\+Content\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+double \hyperlink{classRelevanceSimilarity_a77fd7721c3c98611328f97b6b8c3f9e3}{calculate\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Relevance similarity. \end{DoxyCompactList}\item 
+double \hyperlink{classRelevanceSimilarity_ad54bb47157112a225b353c47d1e2fad5}{calculate\+Normalized\+Term\+Similarity} (std\+::string go\+TermA, std\+::string go\+TermB)
+\begin{DoxyCompactList}\small\item\em A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Relevance similarity. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classRelevanceSimilarity_aa1db55c7a378e45ff66565e5e1043a8e}{get\+M\+I\+CA} (boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsA, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestorsB)
+\begin{DoxyCompactList}\small\item\em A method for calculating the most informative common ancestor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate Relevance similarity between 2 terms. 
+
+This class calculates Relevance similarity.
+
+A. Schlicker, F. S. Domingues, J. Rahnenfuhrer, and T. Lengauer, \char`\"{}\+A new measure for functional similarity of gene products based
+ on Gene Ontology,\char`\"{} B\+MC Bioinformatics, vol. 7, p. 302, 2006.
+
+P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, \char`\"{}\+Semantic similarity measures as tools for exploring the gene ontology,\char`\"{} Pac Symp Biocomput, pp. 601-\/12, 2003.
+
+Basically this is Lin similarity scaled by the complement of the probability of the mica 2 $\ast$ I\+C(\+M\+I\+C\+A) / ( I\+C(term\+A) + I\+C(term\+B) )$\ast$(1-\/p(Mica)) 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Relevance\+Similarity@{Relevance\+Similarity}!Relevance\+Similarity@{Relevance\+Similarity}}
+\index{Relevance\+Similarity@{Relevance\+Similarity}!Relevance\+Similarity@{Relevance\+Similarity}}
+\subsubsection[{\texorpdfstring{Relevance\+Similarity(\+Go\+Graph $\ast$go\+Graph, Term\+Information\+Content\+Map \&ic\+Map)}{RelevanceSimilarity(GoGraph *goGraph, TermInformationContentMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Relevance\+Similarity\+::\+Relevance\+Similarity (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Information\+Content\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRelevanceSimilarity_a8c53e47a65cc1cb78aca2e94671b6534}{}\label{classRelevanceSimilarity_a8c53e47a65cc1cb78aca2e94671b6534}
+
+
+A constructor. 
+
+Creates the default(empty) \hyperlink{classStandardRelationshipPolicy}{Standard\+Relationship\+Policy} 
+
+\subsection{Member Function Documentation}
+\index{Relevance\+Similarity@{Relevance\+Similarity}!calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}}
+\index{calculate\+Normalized\+Term\+Similarity@{calculate\+Normalized\+Term\+Similarity}!Relevance\+Similarity@{Relevance\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Normalized\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateNormalizedTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Relevance\+Similarity\+::calculate\+Normalized\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRelevanceSimilarity_ad54bb47157112a225b353c47d1e2fad5}{}\label{classRelevanceSimilarity_ad54bb47157112a225b353c47d1e2fad5}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Normalized Relevance similarity. 
+
+This method returns the Relevance similarity scaled between 0 and 1 \mbox{[}0,1\mbox{]} inclusive 
+
+Implements \hyperlink{classTermSimilarityInterface_aa46b7870c7725faab85ec502a3e5242d}{Term\+Similarity\+Interface}.
+
+\index{Relevance\+Similarity@{Relevance\+Similarity}!calculate\+Term\+Similarity@{calculate\+Term\+Similarity}}
+\index{calculate\+Term\+Similarity@{calculate\+Term\+Similarity}!Relevance\+Similarity@{Relevance\+Similarity}}
+\subsubsection[{\texorpdfstring{calculate\+Term\+Similarity(std\+::string go\+Term\+A, std\+::string go\+Term\+B)}{calculateTermSimilarity(std::string goTermA, std::string goTermB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Relevance\+Similarity\+::calculate\+Term\+Similarity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{go\+TermA, }
+\item[{std\+::string}]{go\+TermB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRelevanceSimilarity_a77fd7721c3c98611328f97b6b8c3f9e3}{}\label{classRelevanceSimilarity_a77fd7721c3c98611328f97b6b8c3f9e3}
+
+
+A method for calculating term-\/to-\/term similarity for \hyperlink{namespaceGO}{GO} terms using Relevance similarity. 
+
+This method returns the Relevance similarity. 
+
+Implements \hyperlink{classTermSimilarityInterface_ae3474adcfcb02faef65ed5e16ef4db47}{Term\+Similarity\+Interface}.
+
+\index{Relevance\+Similarity@{Relevance\+Similarity}!get\+M\+I\+CA@{get\+M\+I\+CA}}
+\index{get\+M\+I\+CA@{get\+M\+I\+CA}!Relevance\+Similarity@{Relevance\+Similarity}}
+\subsubsection[{\texorpdfstring{get\+M\+I\+C\+A(boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+A, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&ancestors\+B)}{getMICA(boost::unordered_set< std::string > &ancestorsA, boost::unordered_set< std::string > &ancestorsB)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Relevance\+Similarity\+::get\+M\+I\+CA (
+\begin{DoxyParamCaption}
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsA, }
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{ancestorsB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRelevanceSimilarity_aa1db55c7a378e45ff66565e5e1043a8e}{}\label{classRelevanceSimilarity_aa1db55c7a378e45ff66565e5e1043a8e}
+
+
+A method for calculating the most informative common ancestor. 
+
+This method searches the sets to determine the most informatics ancestor. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Relevance\+Similarity.\+hpp\end{DoxyCompactItemize}

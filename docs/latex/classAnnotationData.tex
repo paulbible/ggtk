@@ -1,0 +1,390 @@
+\hypertarget{classAnnotationData}{}\section{Annotation\+Data Class Reference}
+\label{classAnnotationData}\index{Annotation\+Data@{Annotation\+Data}}
+
+
+A class for storing information about genes annotated with go terms.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Annotation\+Data.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnnotationData_aa72d292d4f480d2e580ba4d39b88ab8f}{Annotation\+Data} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationData_a3abda2766658360884f8097cf4ea5281}{$\sim$\+Annotation\+Data} ()
+\begin{DoxyCompactList}\small\item\em class descructor \end{DoxyCompactList}\item 
+void \hyperlink{classAnnotationData_ac6bd9048c83a52ebaa9a9e83a45e7f4a}{add\+Association} (const std\+::string \&gene, const std\+::string \&go\+Term, const std\+::string \&evidence\+Code)
+\begin{DoxyCompactList}\small\item\em A Method to add annotations to the dataset. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnnotationData_a406a75a2f26bb7597f27599daf5416ad}{has\+Go\+Term} (const std\+::string \&go\+Term)
+\begin{DoxyCompactList}\small\item\em This method tests the existence of a term in the database. \end{DoxyCompactList}\item 
+bool \hyperlink{classAnnotationData_af1456f7623ce06262d8782a01fd2ca9c}{has\+Gene} (const std\+::string \&gene)
+\begin{DoxyCompactList}\small\item\em This method tests the existence of a gene in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a8b99d05f5f0f619958e7850253946b9c}{get\+All\+Go\+Terms} ()
+\begin{DoxyCompactList}\small\item\em This method returns all the go terms in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_aa2d7d5ad9601b6984470b8267ff37db8}{get\+All\+Genes} ()
+\begin{DoxyCompactList}\small\item\em This method returns all genes in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_aee62a418cae2da15f4b3a4bd9f933376}{get\+Go\+Terms\+For\+Gene} (const std\+::string \&gene)
+\begin{DoxyCompactList}\small\item\em This method gets the go terms for a gene. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classAnnotationData_ad1864b7768ab74d74be296e546269881}{get\+Go\+Terms\+For\+Gene\+By\+Ontology} (const std\+::string \&gene, \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} filter\+Ontology, \hyperlink{classGoGraph}{Go\+Graph} $\ast$G)
+\begin{DoxyCompactList}\small\item\em This method gets the go terms for a gene within the specified onotlogy. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classAnnotationData_a86fa8eaf6310627d530ab118c6e1e22b}{get\+Go\+Terms\+For\+Gene\+BP} (const std\+::string \&gene, \hyperlink{classGoGraph}{Go\+Graph} $\ast$G)
+\begin{DoxyCompactList}\small\item\em This method gets the biological process go terms for a gene. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classAnnotationData_ab9639d4828270517550a3e739d03317b}{get\+Go\+Terms\+For\+Gene\+MF} (const std\+::string \&gene, \hyperlink{classGoGraph}{Go\+Graph} $\ast$G)
+\begin{DoxyCompactList}\small\item\em This method gets the molecular function go terms for a gene. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classAnnotationData_a37679ed0830c6d7ec41672b3df541663}{get\+Go\+Terms\+For\+Gene\+CC} (const std\+::string \&gene, \hyperlink{classGoGraph}{Go\+Graph} $\ast$G)
+\begin{DoxyCompactList}\small\item\em This method gets the cellular component go terms for a gene. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a4f61ca3276af902c72a031419e8155c5}{get\+Go\+Terms\+Evidence\+For\+Gene} (const std\+::string \&gene)
+\begin{DoxyCompactList}\small\item\em A method to get the evidence codes for a list of go terms. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a0028d38de841c5a508ad602907b42be7}{get\+Genes\+For\+Go\+Term} (const std\+::string \&go\+Term)
+\begin{DoxyCompactList}\small\item\em This method gets the genes for a go term. \end{DoxyCompactList}\item 
+void \hyperlink{classAnnotationData_adcae89b874856e2e30319382a51f3c14}{add\+Genes\+For\+Go\+Term} (const std\+::string \&go\+Term, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&gene\+Set)
+\begin{DoxyCompactList}\small\item\em This method adds the genes for a go term to a set. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a95cf54dc33c9f4e948e913424a44c52e}{get\+Genes\+Evidence\+For\+Go\+Term} (const std\+::string \&go\+Term)
+\begin{DoxyCompactList}\small\item\em A method to get the evidence codes for a list of genes. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classAnnotationData_a985193a995893976a17f09217cced074}{get\+Num\+Annotations\+For\+Go\+Term} (const std\+::string \&go\+Term)
+\begin{DoxyCompactList}\small\item\em A method to get the number of annotations of a particular go term. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classAnnotationData_a367c90051704e541d674d1ee222e6bbe}{get\+Num\+Annotations\+For\+Gene} (const std\+::string \&gene)
+\begin{DoxyCompactList}\small\item\em A method to get the number of annotations of a particular gene. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classAnnotationData_aa3eeff87e44cc21e06cc5f49899cf776}{get\+Num\+Genes} ()
+\begin{DoxyCompactList}\small\item\em A helper method to get the number of genes in the db. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classAnnotationData_ad47dc3da1210218c0bb90ca80f6355ec}{get\+Num\+Go\+Terms} ()
+\begin{DoxyCompactList}\small\item\em A helper method to get the number of go terms in the db. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a25a5ccfa938a1d623e8f162f2959d951}{get\+Ontology\+Terms} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$graph, \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} ontology)
+\begin{DoxyCompactList}\small\item\em A helper method to return only the terms of the give ontology. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a9f25041cb6cfabe964e2857b54400a3b}{\+\_\+genes}
+\begin{DoxyCompactList}\small\item\em A list of genes stored by the annotation data object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classAnnotationData_a88170d72e7addb555701e7aeba30f588}{\+\_\+go\+Terms}
+\begin{DoxyCompactList}\small\item\em A list of go terms stored by the annotation data object. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ \hyperlink{classAnnotationData_a2246453b69594c15745d47f6c3c4c533}{\+\_\+string\+To\+Gene}
+\begin{DoxyCompactList}\small\item\em A map from a gene strings to a gene index. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ \hyperlink{classAnnotationData_ab743686bf79303fbc0eb16c323d1b104}{\+\_\+string\+To\+Go}
+\begin{DoxyCompactList}\small\item\em A map from a go term strings to a go term index. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ std\+::size\+\_\+t $>$ $>$ \hyperlink{classAnnotationData_a72a19fdf14001e241bd0dc200c5fd0de}{\+\_\+go\+To\+Genes}
+\begin{DoxyCompactList}\small\item\em A list of lists of genes, one for each go term. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} $>$ $>$ \hyperlink{classAnnotationData_afdad9a39d18deaf76fae099554caf86e}{\+\_\+go\+To\+Genes\+Evidence}
+\begin{DoxyCompactList}\small\item\em A list of lists of evidence codes, one for each go term. Parallel to \+\_\+go\+To\+Genes. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ std\+::size\+\_\+t $>$ $>$ \hyperlink{classAnnotationData_aa936d0cc30ba41aa177c5fd0867f38db}{\+\_\+gene\+To\+Gos}
+\begin{DoxyCompactList}\small\item\em A list of lists of go terms, one for each gene. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} $>$ $>$ \hyperlink{classAnnotationData_a6bf6ba78c786caf078731b87357f96c0}{\+\_\+gene\+To\+Gos\+Evidence}
+\begin{DoxyCompactList}\small\item\em A list of lists of evidence codes, one for each gene. Parallel to \+\_\+gene\+To\+Gos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for storing information about genes annotated with go terms. 
+
+This class hold all information about a set of annotations for genes annotated with go terms. It holds a list of genes, a list of go terms, as well as mappings from a gene to a list of go terms, and mappings from a go term to a list of annotated genes. This class allows querying go annotations and their evidence codes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Annotation\+Data@{Annotation\+Data}!Annotation\+Data@{Annotation\+Data}}
+\index{Annotation\+Data@{Annotation\+Data}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{Annotation\+Data()}{AnnotationData()}}]{\setlength{\rightskip}{0pt plus 5cm}Annotation\+Data\+::\+Annotation\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_aa72d292d4f480d2e580ba4d39b88ab8f}{}\label{classAnnotationData_aa72d292d4f480d2e580ba4d39b88ab8f}
+
+
+Class constructor. 
+
+This constructor initialized each vector as an empty vector of the correct type. \index{Annotation\+Data@{Annotation\+Data}!````~Annotation\+Data@{$\sim$\+Annotation\+Data}}
+\index{````~Annotation\+Data@{$\sim$\+Annotation\+Data}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{$\sim$\+Annotation\+Data()}{~AnnotationData()}}]{\setlength{\rightskip}{0pt plus 5cm}Annotation\+Data\+::$\sim$\+Annotation\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a3abda2766658360884f8097cf4ea5281}{}\label{classAnnotationData_a3abda2766658360884f8097cf4ea5281}
+
+
+class descructor 
+
+This destructor clears all maps and vectors. 
+
+\subsection{Member Function Documentation}
+\index{Annotation\+Data@{Annotation\+Data}!add\+Association@{add\+Association}}
+\index{add\+Association@{add\+Association}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{add\+Association(const std\+::string \&gene, const std\+::string \&go\+Term, const std\+::string \&evidence\+Code)}{addAssociation(const std::string &gene, const std::string &goTerm, const std::string &evidenceCode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Annotation\+Data\+::add\+Association (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene, }
+\item[{const std\+::string \&}]{go\+Term, }
+\item[{const std\+::string \&}]{evidence\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_ac6bd9048c83a52ebaa9a9e83a45e7f4a}{}\label{classAnnotationData_ac6bd9048c83a52ebaa9a9e83a45e7f4a}
+
+
+A Method to add annotations to the dataset. 
+
+This method adds annotations to the database. It takes a gene, a go\+Term, and an evidence code. This method checks existence and indexing to remove the burden from parser implementations. \index{Annotation\+Data@{Annotation\+Data}!add\+Genes\+For\+Go\+Term@{add\+Genes\+For\+Go\+Term}}
+\index{add\+Genes\+For\+Go\+Term@{add\+Genes\+For\+Go\+Term}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{add\+Genes\+For\+Go\+Term(const std\+::string \&go\+Term, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&gene\+Set)}{addGenesForGoTerm(const std::string &goTerm, boost::unordered_set< std::string > &geneSet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Annotation\+Data\+::add\+Genes\+For\+Go\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{go\+Term, }
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{gene\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_adcae89b874856e2e30319382a51f3c14}{}\label{classAnnotationData_adcae89b874856e2e30319382a51f3c14}
+
+
+This method adds the genes for a go term to a set. 
+
+A helper method to add genes associated to a term to a set of genes. Used in enrichment calculation \index{Annotation\+Data@{Annotation\+Data}!get\+All\+Genes@{get\+All\+Genes}}
+\index{get\+All\+Genes@{get\+All\+Genes}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+All\+Genes()}{getAllGenes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+All\+Genes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_aa2d7d5ad9601b6984470b8267ff37db8}{}\label{classAnnotationData_aa2d7d5ad9601b6984470b8267ff37db8}
+
+
+This method returns all genes in the database. 
+
+A helper method to return all the genes in the databse \index{Annotation\+Data@{Annotation\+Data}!get\+All\+Go\+Terms@{get\+All\+Go\+Terms}}
+\index{get\+All\+Go\+Terms@{get\+All\+Go\+Terms}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+All\+Go\+Terms()}{getAllGoTerms()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+All\+Go\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a8b99d05f5f0f619958e7850253946b9c}{}\label{classAnnotationData_a8b99d05f5f0f619958e7850253946b9c}
+
+
+This method returns all the go terms in the database. 
+
+A helper method to return all the \hyperlink{namespaceGO}{GO} terms in the databse \index{Annotation\+Data@{Annotation\+Data}!get\+Genes\+Evidence\+For\+Go\+Term@{get\+Genes\+Evidence\+For\+Go\+Term}}
+\index{get\+Genes\+Evidence\+For\+Go\+Term@{get\+Genes\+Evidence\+For\+Go\+Term}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Genes\+Evidence\+For\+Go\+Term(const std\+::string \&go\+Term)}{getGenesEvidenceForGoTerm(const std::string &goTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+Genes\+Evidence\+For\+Go\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{go\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a95cf54dc33c9f4e948e913424a44c52e}{}\label{classAnnotationData_a95cf54dc33c9f4e948e913424a44c52e}
+
+
+A method to get the evidence codes for a list of genes. 
+
+This method returns the evidence codes for a list of genes. It parallels the get\+Genes\+For\+Go\+Term method and is used for printing and testing. \index{Annotation\+Data@{Annotation\+Data}!get\+Genes\+For\+Go\+Term@{get\+Genes\+For\+Go\+Term}}
+\index{get\+Genes\+For\+Go\+Term@{get\+Genes\+For\+Go\+Term}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Genes\+For\+Go\+Term(const std\+::string \&go\+Term)}{getGenesForGoTerm(const std::string &goTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+Genes\+For\+Go\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{go\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a0028d38de841c5a508ad602907b42be7}{}\label{classAnnotationData_a0028d38de841c5a508ad602907b42be7}
+
+
+This method gets the genes for a go term. 
+
+A helper method to return, for a go term, a list of genes as a vector of strings. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+Evidence\+For\+Gene@{get\+Go\+Terms\+Evidence\+For\+Gene}}
+\index{get\+Go\+Terms\+Evidence\+For\+Gene@{get\+Go\+Terms\+Evidence\+For\+Gene}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+Evidence\+For\+Gene(const std\+::string \&gene)}{getGoTermsEvidenceForGene(const std::string &gene)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+Evidence\+For\+Gene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a4f61ca3276af902c72a031419e8155c5}{}\label{classAnnotationData_a4f61ca3276af902c72a031419e8155c5}
+
+
+A method to get the evidence codes for a list of go terms. 
+
+This method returns the evidence codes for a list of go terms. It parallels the get\+Go\+Terms\+For\+Gene method and is used for printing and testing. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+For\+Gene@{get\+Go\+Terms\+For\+Gene}}
+\index{get\+Go\+Terms\+For\+Gene@{get\+Go\+Terms\+For\+Gene}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+For\+Gene(const std\+::string \&gene)}{getGoTermsForGene(const std::string &gene)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+For\+Gene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_aee62a418cae2da15f4b3a4bd9f933376}{}\label{classAnnotationData_aee62a418cae2da15f4b3a4bd9f933376}
+
+
+This method gets the go terms for a gene. 
+
+A helper method to return, for a gene, a list of go terms as a vector of strings. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+For\+Gene\+BP@{get\+Go\+Terms\+For\+Gene\+BP}}
+\index{get\+Go\+Terms\+For\+Gene\+BP@{get\+Go\+Terms\+For\+Gene\+BP}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+For\+Gene\+B\+P(const std\+::string \&gene, Go\+Graph $\ast$\+G)}{getGoTermsForGeneBP(const std::string &gene, GoGraph *G)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+For\+Gene\+BP (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene, }
+\item[{{\bf Go\+Graph} $\ast$}]{G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a86fa8eaf6310627d530ab118c6e1e22b}{}\label{classAnnotationData_a86fa8eaf6310627d530ab118c6e1e22b}
+
+
+This method gets the biological process go terms for a gene. 
+
+A helper method to return a list of BP go terms for a gene. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+For\+Gene\+By\+Ontology@{get\+Go\+Terms\+For\+Gene\+By\+Ontology}}
+\index{get\+Go\+Terms\+For\+Gene\+By\+Ontology@{get\+Go\+Terms\+For\+Gene\+By\+Ontology}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+For\+Gene\+By\+Ontology(const std\+::string \&gene, G\+O\+::\+Onto filter\+Ontology, Go\+Graph $\ast$\+G)}{getGoTermsForGeneByOntology(const std::string &gene, GO::Onto filterOntology, GoGraph *G)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+For\+Gene\+By\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene, }
+\item[{{\bf G\+O\+::\+Onto}}]{filter\+Ontology, }
+\item[{{\bf Go\+Graph} $\ast$}]{G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_ad1864b7768ab74d74be296e546269881}{}\label{classAnnotationData_ad1864b7768ab74d74be296e546269881}
+
+
+This method gets the go terms for a gene within the specified onotlogy. 
+
+A helper method to return a list of go terms as a set of strings for a gene given the sub ontology BP, MF, or CC. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+For\+Gene\+CC@{get\+Go\+Terms\+For\+Gene\+CC}}
+\index{get\+Go\+Terms\+For\+Gene\+CC@{get\+Go\+Terms\+For\+Gene\+CC}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+For\+Gene\+C\+C(const std\+::string \&gene, Go\+Graph $\ast$\+G)}{getGoTermsForGeneCC(const std::string &gene, GoGraph *G)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+For\+Gene\+CC (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene, }
+\item[{{\bf Go\+Graph} $\ast$}]{G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a37679ed0830c6d7ec41672b3df541663}{}\label{classAnnotationData_a37679ed0830c6d7ec41672b3df541663}
+
+
+This method gets the cellular component go terms for a gene. 
+
+A helper method to return a list of CC go terms for a gene. \index{Annotation\+Data@{Annotation\+Data}!get\+Go\+Terms\+For\+Gene\+MF@{get\+Go\+Terms\+For\+Gene\+MF}}
+\index{get\+Go\+Terms\+For\+Gene\+MF@{get\+Go\+Terms\+For\+Gene\+MF}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Go\+Terms\+For\+Gene\+M\+F(const std\+::string \&gene, Go\+Graph $\ast$\+G)}{getGoTermsForGeneMF(const std::string &gene, GoGraph *G)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Annotation\+Data\+::get\+Go\+Terms\+For\+Gene\+MF (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene, }
+\item[{{\bf Go\+Graph} $\ast$}]{G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_ab9639d4828270517550a3e739d03317b}{}\label{classAnnotationData_ab9639d4828270517550a3e739d03317b}
+
+
+This method gets the molecular function go terms for a gene. 
+
+A helper method to return a list of MF go terms for a gene. \index{Annotation\+Data@{Annotation\+Data}!get\+Num\+Annotations\+For\+Gene@{get\+Num\+Annotations\+For\+Gene}}
+\index{get\+Num\+Annotations\+For\+Gene@{get\+Num\+Annotations\+For\+Gene}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Num\+Annotations\+For\+Gene(const std\+::string \&gene)}{getNumAnnotationsForGene(const std::string &gene)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Annotation\+Data\+::get\+Num\+Annotations\+For\+Gene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a367c90051704e541d674d1ee222e6bbe}{}\label{classAnnotationData_a367c90051704e541d674d1ee222e6bbe}
+
+
+A method to get the number of annotations of a particular gene. 
+
+This method returns the number of annotations for a go term. Queries the data base rather than extracting a vector. \index{Annotation\+Data@{Annotation\+Data}!get\+Num\+Annotations\+For\+Go\+Term@{get\+Num\+Annotations\+For\+Go\+Term}}
+\index{get\+Num\+Annotations\+For\+Go\+Term@{get\+Num\+Annotations\+For\+Go\+Term}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Num\+Annotations\+For\+Go\+Term(const std\+::string \&go\+Term)}{getNumAnnotationsForGoTerm(const std::string &goTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Annotation\+Data\+::get\+Num\+Annotations\+For\+Go\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{go\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a985193a995893976a17f09217cced074}{}\label{classAnnotationData_a985193a995893976a17f09217cced074}
+
+
+A method to get the number of annotations of a particular go term. 
+
+This method returns the number of annotations for a go term. Queries the data base rather than extracting a vector. Used to calculate information content. \index{Annotation\+Data@{Annotation\+Data}!get\+Num\+Genes@{get\+Num\+Genes}}
+\index{get\+Num\+Genes@{get\+Num\+Genes}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Num\+Genes()}{getNumGenes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Annotation\+Data\+::get\+Num\+Genes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_aa3eeff87e44cc21e06cc5f49899cf776}{}\label{classAnnotationData_aa3eeff87e44cc21e06cc5f49899cf776}
+
+
+A helper method to get the number of genes in the db. 
+
+This method reutrns the size of the \+\_\+genes vector. \index{Annotation\+Data@{Annotation\+Data}!get\+Num\+Go\+Terms@{get\+Num\+Go\+Terms}}
+\index{get\+Num\+Go\+Terms@{get\+Num\+Go\+Terms}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Num\+Go\+Terms()}{getNumGoTerms()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Annotation\+Data\+::get\+Num\+Go\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_ad47dc3da1210218c0bb90ca80f6355ec}{}\label{classAnnotationData_ad47dc3da1210218c0bb90ca80f6355ec}
+
+
+A helper method to get the number of go terms in the db. 
+
+This method reutrns the size of the \+\_\+go\+Terms vector. \index{Annotation\+Data@{Annotation\+Data}!get\+Ontology\+Terms@{get\+Ontology\+Terms}}
+\index{get\+Ontology\+Terms@{get\+Ontology\+Terms}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{get\+Ontology\+Terms(\+Go\+Graph $\ast$graph, G\+O\+::\+Onto ontology)}{getOntologyTerms(GoGraph *graph, GO::Onto ontology)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::get\+Ontology\+Terms (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{graph, }
+\item[{{\bf G\+O\+::\+Onto}}]{ontology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a25a5ccfa938a1d623e8f162f2959d951}{}\label{classAnnotationData_a25a5ccfa938a1d623e8f162f2959d951}
+
+
+A helper method to return only the terms of the give ontology. 
+
+Returns only those terms used that occur for the given ontology. \index{Annotation\+Data@{Annotation\+Data}!has\+Gene@{has\+Gene}}
+\index{has\+Gene@{has\+Gene}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{has\+Gene(const std\+::string \&gene)}{hasGene(const std::string &gene)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Annotation\+Data\+::has\+Gene (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{gene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_af1456f7623ce06262d8782a01fd2ca9c}{}\label{classAnnotationData_af1456f7623ce06262d8782a01fd2ca9c}
+
+
+This method tests the existence of a gene in the database. 
+
+A helper method to check if a gene exists in the database. \index{Annotation\+Data@{Annotation\+Data}!has\+Go\+Term@{has\+Go\+Term}}
+\index{has\+Go\+Term@{has\+Go\+Term}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{has\+Go\+Term(const std\+::string \&go\+Term)}{hasGoTerm(const std::string &goTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Annotation\+Data\+::has\+Go\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{go\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAnnotationData_a406a75a2f26bb7597f27599daf5416ad}{}\label{classAnnotationData_a406a75a2f26bb7597f27599daf5416ad}
+
+
+This method tests the existence of a term in the database. 
+
+A helper method to check if a term exists in the database. 
+
+\subsection{Member Data Documentation}
+\index{Annotation\+Data@{Annotation\+Data}!\+\_\+genes@{\+\_\+genes}}
+\index{\+\_\+genes@{\+\_\+genes}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+genes}{_genes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::\+\_\+genes}\hypertarget{classAnnotationData_a9f25041cb6cfabe964e2857b54400a3b}{}\label{classAnnotationData_a9f25041cb6cfabe964e2857b54400a3b}
+
+
+A list of genes stored by the annotation data object. 
+
+This storage variable stores the gene names. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+gene\+To\+Gos@{\+\_\+gene\+To\+Gos}}
+\index{\+\_\+gene\+To\+Gos@{\+\_\+gene\+To\+Gos}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+gene\+To\+Gos}{_geneToGos}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$std\+::size\+\_\+t$>$ $>$ Annotation\+Data\+::\+\_\+gene\+To\+Gos}\hypertarget{classAnnotationData_aa936d0cc30ba41aa177c5fd0867f38db}{}\label{classAnnotationData_aa936d0cc30ba41aa177c5fd0867f38db}
+
+
+A list of lists of go terms, one for each gene. 
+
+This vector holds one entry for each gene. Each entry holds a list of go terms annotated to that gene. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+gene\+To\+Gos\+Evidence@{\+\_\+gene\+To\+Gos\+Evidence}}
+\index{\+\_\+gene\+To\+Gos\+Evidence@{\+\_\+gene\+To\+Gos\+Evidence}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+gene\+To\+Gos\+Evidence}{_geneToGosEvidence}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf G\+O\+::\+Evidence\+Code}$>$ $>$ Annotation\+Data\+::\+\_\+gene\+To\+Gos\+Evidence}\hypertarget{classAnnotationData_a6bf6ba78c786caf078731b87357f96c0}{}\label{classAnnotationData_a6bf6ba78c786caf078731b87357f96c0}
+
+
+A list of lists of evidence codes, one for each gene. Parallel to \+\_\+gene\+To\+Gos. 
+
+This vector holds one entry for each gene. Each entry holds a list of evidence codes for each go term annotated to that gene. It parallels the \+\_\+gene\+To\+Gos vectors having the same size and dimensions for each element. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+go\+Terms@{\+\_\+go\+Terms}}
+\index{\+\_\+go\+Terms@{\+\_\+go\+Terms}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+go\+Terms}{_goTerms}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Annotation\+Data\+::\+\_\+go\+Terms}\hypertarget{classAnnotationData_a88170d72e7addb555701e7aeba30f588}{}\label{classAnnotationData_a88170d72e7addb555701e7aeba30f588}
+
+
+A list of go terms stored by the annotation data object. 
+
+This storage variable stores the go terms. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+go\+To\+Genes@{\+\_\+go\+To\+Genes}}
+\index{\+\_\+go\+To\+Genes@{\+\_\+go\+To\+Genes}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+go\+To\+Genes}{_goToGenes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$std\+::size\+\_\+t$>$ $>$ Annotation\+Data\+::\+\_\+go\+To\+Genes}\hypertarget{classAnnotationData_a72a19fdf14001e241bd0dc200c5fd0de}{}\label{classAnnotationData_a72a19fdf14001e241bd0dc200c5fd0de}
+
+
+A list of lists of genes, one for each go term. 
+
+This vector holds one entry for each go term. Each entry holds a list of genes annotated to that go term. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+go\+To\+Genes\+Evidence@{\+\_\+go\+To\+Genes\+Evidence}}
+\index{\+\_\+go\+To\+Genes\+Evidence@{\+\_\+go\+To\+Genes\+Evidence}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+go\+To\+Genes\+Evidence}{_goToGenesEvidence}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf G\+O\+::\+Evidence\+Code}$>$ $>$ Annotation\+Data\+::\+\_\+go\+To\+Genes\+Evidence}\hypertarget{classAnnotationData_afdad9a39d18deaf76fae099554caf86e}{}\label{classAnnotationData_afdad9a39d18deaf76fae099554caf86e}
+
+
+A list of lists of evidence codes, one for each go term. Parallel to \+\_\+go\+To\+Genes. 
+
+This vector holds one entry for each go term. Each entry holds a list of evidence codes for each gene annotated to that go term. It parallels the \+\_\+go\+To\+Genes vectors having the same size and dimensions for each element. \index{Annotation\+Data@{Annotation\+Data}!\+\_\+string\+To\+Gene@{\+\_\+string\+To\+Gene}}
+\index{\+\_\+string\+To\+Gene@{\+\_\+string\+To\+Gene}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+string\+To\+Gene}{_stringToGene}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+map$<$std\+::string,std\+::size\+\_\+t$>$ Annotation\+Data\+::\+\_\+string\+To\+Gene}\hypertarget{classAnnotationData_a2246453b69594c15745d47f6c3c4c533}{}\label{classAnnotationData_a2246453b69594c15745d47f6c3c4c533}
+
+
+A map from a gene strings to a gene index. 
+
+This map accespts gene strings and returns gene indices. boost unordered\+\_\+map ensures O(1) constant time find/has\+\_\+key queries (hash table). \index{Annotation\+Data@{Annotation\+Data}!\+\_\+string\+To\+Go@{\+\_\+string\+To\+Go}}
+\index{\+\_\+string\+To\+Go@{\+\_\+string\+To\+Go}!Annotation\+Data@{Annotation\+Data}}
+\subsubsection[{\texorpdfstring{\+\_\+string\+To\+Go}{_stringToGo}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+map$<$std\+::string,std\+::size\+\_\+t$>$ Annotation\+Data\+::\+\_\+string\+To\+Go}\hypertarget{classAnnotationData_ab743686bf79303fbc0eb16c323d1b104}{}\label{classAnnotationData_ab743686bf79303fbc0eb16c323d1b104}
+
+
+A map from a go term strings to a go term index. 
+
+This map accespts go term strings and returns go term indices. boost unordered\+\_\+map ensures O(1) constant time find/has\+\_\+key queries (hash table). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Annotation\+Data.\+hpp\end{DoxyCompactItemize}

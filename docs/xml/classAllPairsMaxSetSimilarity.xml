@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAllPairsMaxSetSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>AllPairsMaxSetSimilarity</compoundname>
+    <basecompoundref refid="classTermSetSimilarityInterface" prot="public" virt="non-virtual">TermSetSimilarityInterface</basecompoundref>
+    <includes refid="AllPairsMaxSetSimilarity_8hpp" local="no">ggtk/AllPairsMaxSetSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllPairsMaxSetSimilarity_1aff7f386a25460acfb641c9d362a1f032" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+        <definition>TermSimilarityInterface* AllPairsMaxSetSimilarity::_similarity</definition>
+        <argsstring></argsstring>
+        <name>_similarity</name>
+        <briefdescription>
+<para>Pointer to the actual similarity measure. </para>        </briefdescription>
+        <detaileddescription>
+<para>This object will actually calculate the similarity between pairs of terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsMaxSetSimilarity.hpp" line="81" column="1" bodyfile="ggtk/AllPairsMaxSetSimilarity.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllPairsMaxSetSimilarity_1a5aef6b55e2aa3b94b62278eb5464dd68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllPairsMaxSetSimilarity::AllPairsMaxSetSimilarity</definition>
+        <argsstring>(TermSimilarityInterface *simMeasure)</argsstring>
+        <name>AllPairsMaxSetSimilarity</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>simMeasure</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classAllPairsMaxSetSimilarity" kindref="compound">AllPairsMaxSetSimilarity</ref> class assigning the similarity measure private memeber. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsMaxSetSimilarity.hpp" line="35" column="1" bodyfile="ggtk/AllPairsMaxSetSimilarity.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double AllPairsMaxSetSimilarity::calculateSimilarity</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)</argsstring>
+        <name>calculateSimilarity</name>
+        <reimplements refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04">calculateSimilarity</reimplements>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term set to term set similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms;. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the all pairs max similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllPairsMaxSetSimilarity.hpp" line="44" column="1" bodyfile="ggtk/AllPairsMaxSetSimilarity.hpp" bodystart="44" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the max similarity between all pairs of go terms for 2 sets. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the all pairs max similarity between two sets of terms. Used by Sevilla et al.</para><para>J. L. Sevilla, V. Segura, A. Podhorski, E. Guruceaga, J. M. Mato, L. A. Martinez-Cruz, et al., &quot;Correlation between gene expression and
+ GO semantic similarity,&quot; IEEE/ACM Trans Comput Biol Bioinform, vol. 2, pp. 330-8, Oct-Dec 2005. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="21">
+        <label>AllPairsMaxSetSimilarity</label>
+        <link refid="classAllPairsMaxSetSimilarity"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="23">
+        <label>AllPairsMaxSetSimilarity</label>
+        <link refid="classAllPairsMaxSetSimilarity"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AllPairsMaxSetSimilarity.hpp" line="26" column="1" bodyfile="ggtk/AllPairsMaxSetSimilarity.hpp" bodystart="26" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classAllPairsMaxSetSimilarity_1aff7f386a25460acfb641c9d362a1f032" prot="private" virt="non-virtual"><scope>AllPairsMaxSetSimilarity</scope><name>_similarity</name></member>
+      <member refid="classAllPairsMaxSetSimilarity_1a5aef6b55e2aa3b94b62278eb5464dd68" prot="public" virt="non-virtual"><scope>AllPairsMaxSetSimilarity</scope><name>AllPairsMaxSetSimilarity</name></member>
+      <member refid="classAllPairsMaxSetSimilarity_1a0eed3f63e2acdeb8365900b9d7a038c1" prot="public" virt="virtual"><scope>AllPairsMaxSetSimilarity</scope><name>calculateSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

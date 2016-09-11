@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceAccumulators" kind="namespace" language="C++">
+    <compoundname>Accumulators</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceAccumulators_1a475b123bb5929d13a2f78b40f43a1257" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::min &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::min &gt; &gt; Accumulators::MinAccumulator</definition>
+        <argsstring></argsstring>
+        <name>MinAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping boost accumulators. </para>        </briefdescription>
+        <detaileddescription>
+<para>MinAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="34" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceAccumulators_1ae68012df9b3c9adaca0807437b8b0129" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::max &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::max &gt; &gt; Accumulators::MaxAccumulator</definition>
+        <argsstring></argsstring>
+        <name>MaxAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping boost accumulators. </para>        </briefdescription>
+        <detaileddescription>
+<para>MaxAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="40" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceAccumulators_1a42d249e1cf4e4f6c496ab61b7372cf4a" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::mean &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::mean &gt; &gt; Accumulators::MeanAccumulator</definition>
+        <argsstring></argsstring>
+        <name>MeanAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping boost accumulators. </para>        </briefdescription>
+        <detaileddescription>
+<para>MeanAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="46" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::max, boost::accumulators::tag::min, boost::accumulators::tag::mean &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::max, boost::accumulators::tag::min, boost::accumulators::tag::mean &gt; &gt; Accumulators::SimpleAccumulator</definition>
+        <argsstring></argsstring>
+        <name>SimpleAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping min, max, and mean accumulators. </para>        </briefdescription>
+        <detaileddescription>
+<para>SimpleAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="61" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceAccumulators_1a69e0958469bde3d2198062b52880ec68" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::covariance&lt; double, boost::accumulators::tag::covariate1 &gt; &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::covariance&lt;double, boost::accumulators::tag::covariate1&gt; &gt; &gt; Accumulators::CovarianceAccumulator</definition>
+        <argsstring></argsstring>
+        <name>CovarianceAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping the covariance accumulator. </para>        </briefdescription>
+        <detaileddescription>
+<para>CovarianceAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="70" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceAccumulators_1aa858a2eb0c818655fa5d66012dd41b09" prot="public" static="no">
+        <type>boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::variance &gt; &gt;</type>
+        <definition>typedef boost::accumulators::accumulator_set&lt; double, boost::accumulators::stats&lt; boost::accumulators::tag::variance&gt; &gt; Accumulators::VarianceAccumulator</definition>
+        <argsstring></argsstring>
+        <name>VarianceAccumulator</name>
+        <briefdescription>
+<para>A helper type wrapping the variance accumulator. </para>        </briefdescription>
+        <detaileddescription>
+<para>VarianceAccumulator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="77" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceAccumulators_1ac0b3251fec13bffecc672a1937401ac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMin</definition>
+        <argsstring>(const MinAccumulator &amp;acc)</argsstring>
+        <name>extractMin</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1a475b123bb5929d13a2f78b40f43a1257" kindref="member">MinAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the min. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="83" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1a298ea3ee8758a98b37ed8b8b7a022ba7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMax</definition>
+        <argsstring>(const MaxAccumulator &amp;acc)</argsstring>
+        <name>extractMax</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1ae68012df9b3c9adaca0807437b8b0129" kindref="member">MaxAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the max. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMax </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="90" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1a42a703c5c61fedbdd8aecd2e558a4467" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMean</definition>
+        <argsstring>(const MeanAccumulator &amp;acc)</argsstring>
+        <name>extractMean</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1a42d249e1cf4e4f6c496ab61b7372cf4a" kindref="member">MeanAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the mean. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMean </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="97" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1aaf73f870f07e3daaef9259f4f05f9879" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMin</definition>
+        <argsstring>(const SimpleAccumulator &amp;acc)</argsstring>
+        <name>extractMin</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">SimpleAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>An overlaoded helper helper function to extract the min. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="104" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1ad2a34538b20bf4420510e3f67c36f75a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMax</definition>
+        <argsstring>(const SimpleAccumulator &amp;acc)</argsstring>
+        <name>extractMax</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">SimpleAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>An overlaoded helper helper function to extract the max. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMax </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="111" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1ae241aec21f9cee46878d1a589dcba563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractMean</definition>
+        <argsstring>(const SimpleAccumulator &amp;acc)</argsstring>
+        <name>extractMean</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1aed31f3acda76edc1d58c2bcb479a7aec" kindref="member">SimpleAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>An overlaoded helper helper function to extract the mean. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractMean </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="118" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1a89e5b416840bfe8e056d708b6a236da4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractCovariance</definition>
+        <argsstring>(const CovarianceAccumulator &amp;acc)</argsstring>
+        <name>extractCovariance</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1a69e0958469bde3d2198062b52880ec68" kindref="member">CovarianceAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the covariance. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractCovariance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="125" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1a69a4c9a9e60fc7e6e22b43daa75e48bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractVariance</definition>
+        <argsstring>(const VarianceAccumulator &amp;acc)</argsstring>
+        <name>extractVariance</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1aa858a2eb0c818655fa5d66012dd41b09" kindref="member">VarianceAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the variance. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractVariance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="132" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAccumulators_1ab0dcf3f9dcccf475b65259308a4507df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Accumulators::extractSD</definition>
+        <argsstring>(const VarianceAccumulator &amp;acc)</argsstring>
+        <name>extractSD</name>
+        <param>
+          <type>const <ref refid="namespaceAccumulators_1aa858a2eb0c818655fa5d66012dd41b09" kindref="member">VarianceAccumulator</ref> &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <briefdescription>
+<para>A helper helper function to extract the variance. </para>        </briefdescription>
+        <detaileddescription>
+<para>extractVariance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/Accumulators.hpp" line="139" column="1" bodyfile="ggtk/Accumulators.hpp" bodystart="139" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceAccumulators" kindref="compound">Accumulators</ref> namespace provides min, max, and average accumulators to the broader code base. </para>    </briefdescription>
+    <detaileddescription>
+<para>This namespace defines accumulator types from boost. Also provided are specific extactors that will return the accumulator&apos;s current value. </para>    </detaileddescription>
+    <location file="ggtk/Accumulators.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

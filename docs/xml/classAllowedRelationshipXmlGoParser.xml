@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAllowedRelationshipXmlGoParser" kind="class" language="C++" prot="public">
+    <compoundname>AllowedRelationshipXmlGoParser</compoundname>
+    <basecompoundref refid="classGoParserInterface" prot="public" virt="non-virtual">GoParserInterface</basecompoundref>
+    <includes refid="AllowedRelationshipXmlGoParser_8hpp" local="no">ggtk/AllowedRelationshipXmlGoParser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllowedRelationshipXmlGoParser_1a3347d1e726be0ed6f502afc235865b16" prot="private" static="no" mutable="no">
+        <type><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> *</type>
+        <definition>RelationshipPolicyInterface* AllowedRelationshipXmlGoParser::relationshipPolicy</definition>
+        <argsstring></argsstring>
+        <name>relationshipPolicy</name>
+        <briefdescription>
+<para>A <ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This <ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> holds the relationships to be allowed during parsing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="258" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllowedRelationshipXmlGoParser_1ad6e002e7cd0994866b62dba0896d3d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* AllowedRelationshipXmlGoParser::parseGoFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>parseGoFile</name>
+        <reimplements refid="classGoParserInterface_1aefde440e0d5404b9efa2a16a89e09674">parseGoFile</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Method to parse the go file, should be an XML file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method will read a Gene Ontology XML file and add only those relationship which are specified to the graph. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="44" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="44" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedRelationshipXmlGoParser_1a75e964bc34f575bc6c00c56b43f91d0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AllowedRelationshipXmlGoParser::isFileGood</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>isFileGood</name>
+        <reimplements refid="classGoParserInterface_1a0d2db54063c1ff58a0e15f0187af5aa1">isFileGood</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>A method to test if a file fits the accepted format. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the file matches accepted format, false otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="184" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="184" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedRelationshipXmlGoParser_1a3c330bc9f1ccf6422488bf1ea593f52a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> *</type>
+        <definition>GoParserInterface* AllowedRelationshipXmlGoParser::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classGoParserInterface_1a21c4ea01809737ab2975fb71edf6fcd5">clone</reimplements>
+        <briefdescription>
+<para>a method to create a new instance of this class for use in a factory </para>        </briefdescription>
+        <detaileddescription>
+<para>creats a new pointer to the parser, used by the factory for go parsers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="232" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedRelationshipXmlGoParser_1a463df4ceee68bf1321c982812f77eed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AllowedRelationshipXmlGoParser::setPolicy</definition>
+        <argsstring>(RelationshipPolicyInterface *policy)</argsstring>
+        <name>setPolicy</name>
+        <param>
+          <type><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>a method to set the policy </para>        </briefdescription>
+        <detaileddescription>
+<para>sets the policy of the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="241" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedRelationshipXmlGoParser_1a51bd1af3274c80d1600e0f3b88815ef4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllowedRelationshipXmlGoParser::AllowedRelationshipXmlGoParser</definition>
+        <argsstring>(RelationshipPolicyInterface *policy)</argsstring>
+        <name>AllowedRelationshipXmlGoParser</name>
+        <param>
+          <type><ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>constructor that sets the policy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="250" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="250" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse only a specified set of relationships. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class will read a Gene Ontology XML file and add only those relationship which are specified to the graph. The most important method of this class if the parseGoFile which takes the file name as a parameter.</para><para>Implements <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AllowedRelationshipXmlGoParser</label>
+        <link refid="classAllowedRelationshipXmlGoParser"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AllowedRelationshipXmlGoParser</label>
+        <link refid="classAllowedRelationshipXmlGoParser"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GoParserInterface</label>
+        <link refid="classGoParserInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AllowedRelationshipXmlGoParser.hpp" line="33" column="1" bodyfile="ggtk/AllowedRelationshipXmlGoParser.hpp" bodystart="33" bodyend="261"/>
+    <listofallmembers>
+      <member refid="classAllowedRelationshipXmlGoParser_1a51bd1af3274c80d1600e0f3b88815ef4" prot="public" virt="non-virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>AllowedRelationshipXmlGoParser</name></member>
+      <member refid="classAllowedRelationshipXmlGoParser_1a3c330bc9f1ccf6422488bf1ea593f52a" prot="public" virt="virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>clone</name></member>
+      <member refid="classAllowedRelationshipXmlGoParser_1a75e964bc34f575bc6c00c56b43f91d0e" prot="public" virt="virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>isFileGood</name></member>
+      <member refid="classAllowedRelationshipXmlGoParser_1ad6e002e7cd0994866b62dba0896d3d24" prot="public" virt="virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>parseGoFile</name></member>
+      <member refid="classAllowedRelationshipXmlGoParser_1a3347d1e726be0ed6f502afc235865b16" prot="private" virt="non-virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>relationshipPolicy</name></member>
+      <member refid="classAllowedRelationshipXmlGoParser_1a463df4ceee68bf1321c982812f77eed2" prot="public" virt="non-virtual"><scope>AllowedRelationshipXmlGoParser</scope><name>setPolicy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

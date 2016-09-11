@@ -1,0 +1,50 @@
+\hypertarget{classEvidencePolicyInterface}{}\section{Evidence\+Policy\+Interface Class Reference}
+\label{classEvidencePolicyInterface}\index{Evidence\+Policy\+Interface@{Evidence\+Policy\+Interface}}
+
+
+An interface to check evidence codes for \hyperlink{namespaceGO}{GO} annotations.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Evidence\+Policy\+Interface.\+hpp$>$}
+
+Inheritance diagram for Evidence\+Policy\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEvidencePolicyInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classEvidencePolicyInterface_a432d20dd05ec54db46a452ae8d6be4a7}{is\+Allowed} (\hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{G\+O\+::\+Evidence\+Code} evidence\+Code)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual method to test if an evidence code is allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface to check evidence codes for \hyperlink{namespaceGO}{GO} annotations. 
+
+This is interface is used to create parsers which will only use a specific set of evidence codes when parsing annotations 
+
+\subsection{Member Function Documentation}
+\index{Evidence\+Policy\+Interface@{Evidence\+Policy\+Interface}!is\+Allowed@{is\+Allowed}}
+\index{is\+Allowed@{is\+Allowed}!Evidence\+Policy\+Interface@{Evidence\+Policy\+Interface}}
+\subsubsection[{\texorpdfstring{is\+Allowed(\+G\+O\+::\+Evidence\+Code evidence\+Code)=0}{isAllowed(GO::EvidenceCode evidenceCode)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Evidence\+Policy\+Interface\+::is\+Allowed (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Evidence\+Code}}]{evidence\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classEvidencePolicyInterface_a432d20dd05ec54db46a452ae8d6be4a7}{}\label{classEvidencePolicyInterface_a432d20dd05ec54db46a452ae8d6be4a7}
+
+
+A pure virtual method to test if an evidence code is allowed. 
+
+This pure virtual method requires any subclass to imlement an is\+Allowed method to enforce the evidence pollicy. 
+
+Implemented in \hyperlink{classAllowedSetEvidencePolicy_a5979a55da22e57d2faffaa0bdb77457b}{Allowed\+Set\+Evidence\+Policy}, and \hyperlink{classDisallowedSetEvidencePolicy_aaa0959ad33624b4d418d57d286c41852}{Disallowed\+Set\+Evidence\+Policy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Evidence\+Policy\+Interface.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,151 @@
+\hypertarget{classFrontierSharedInformation}{}\section{Frontier\+Shared\+Information Class Reference}
+\label{classFrontierSharedInformation}\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+
+
+A class to calculate shared infromation across disjoint common ancestors in linear time.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Frontier\+Shared\+Information.\+hpp$>$}
+
+Inheritance diagram for Frontier\+Shared\+Information\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFrontierSharedInformation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFrontierSharedInformation_afd55b315f784ea9991adaa5320108891}{Frontier\+Shared\+Information} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go\+Graph, \hyperlink{classTermInformationContentMap}{Term\+Information\+Content\+Map} \&ic\+Map)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classFrontierSharedInformation_a4c9a919ae92d7628bbb5c58ab06c19aa}{get\+Common\+Disjoint\+Ancestors} (const std\+::string \&term\+C1, const std\+::string \&term\+C2)
+\begin{DoxyCompactList}\small\item\em A method for determining the common disjunctive ancestors. \end{DoxyCompactList}\item 
+double \hyperlink{classFrontierSharedInformation_afd0bf3ea7bb9f4f05f89cc2597bc2dcf}{shared\+Information} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em An method for returning the shared information of two terms. \end{DoxyCompactList}\item 
+double \hyperlink{classFrontierSharedInformation_a7d9c15e312667dc5ac2af1c7e36f735b}{shared\+Information} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the shared information of a single terms,or information content. \end{DoxyCompactList}\item 
+double \hyperlink{classFrontierSharedInformation_a8301888fc7343848a9ee307849e49125}{max\+Information\+Content} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for returning the maximum information content for a term. \end{DoxyCompactList}\item 
+bool \hyperlink{classFrontierSharedInformation_a4cd9a78345443bdd8c43e7fcee01f9b4}{has\+Term} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if a term can be found. \end{DoxyCompactList}\item 
+bool \hyperlink{classFrontierSharedInformation_a545b12efcab4551d031fb6125f615080}{is\+Same\+Ontology} (const std\+::string \&termA, const std\+::string \&termB)
+\begin{DoxyCompactList}\small\item\em An interface method for determining if the two terms are of like ontologies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate shared infromation across disjoint common ancestors in linear time. 
+
+This class calculates shared infromation along a semantic frontier between terms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{Frontier\+Shared\+Information(\+Go\+Graph $\ast$go\+Graph, Term\+Information\+Content\+Map \&ic\+Map)}{FrontierSharedInformation(GoGraph *goGraph, TermInformationContentMap &icMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Frontier\+Shared\+Information\+::\+Frontier\+Shared\+Information (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go\+Graph, }
+\item[{{\bf Term\+Information\+Content\+Map} \&}]{ic\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFrontierSharedInformation_afd55b315f784ea9991adaa5320108891}{}\label{classFrontierSharedInformation_afd55b315f784ea9991adaa5320108891}
+
+
+A constructor. 
+
+Creates the \hyperlink{classCoutoGraSMSharedInformation}{Couto\+Gra\+S\+M\+Shared\+Information} class 
+
+\subsection{Member Function Documentation}
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!get\+Common\+Disjoint\+Ancestors@{get\+Common\+Disjoint\+Ancestors}}
+\index{get\+Common\+Disjoint\+Ancestors@{get\+Common\+Disjoint\+Ancestors}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{get\+Common\+Disjoint\+Ancestors(const std\+::string \&term\+C1, const std\+::string \&term\+C2)}{getCommonDisjointAncestors(const std::string &termC1, const std::string &termC2)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Frontier\+Shared\+Information\+::get\+Common\+Disjoint\+Ancestors (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+C1, }
+\item[{const std\+::string \&}]{term\+C2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classFrontierSharedInformation_a4c9a919ae92d7628bbb5c58ab06c19aa}{}\label{classFrontierSharedInformation_a4c9a919ae92d7628bbb5c58ab06c19aa}
+
+
+A method for determining the common disjunctive ancestors. 
+
+This method returns the common disjunctive ancestors for two terms \index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&term)}{hasTerm(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Frontier\+Shared\+Information\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFrontierSharedInformation_a4cd9a78345443bdd8c43e7fcee01f9b4}{}\label{classFrontierSharedInformation_a4cd9a78345443bdd8c43e7fcee01f9b4}
+
+
+An interface method for determining if a term can be found. 
+
+Determines if the term can be found in the current map. 
+
+Implements \hyperlink{classSharedInformationInterface_a3f056cf6a40eea8c1669108087dcd5c8}{Shared\+Information\+Interface}.
+
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!is\+Same\+Ontology@{is\+Same\+Ontology}}
+\index{is\+Same\+Ontology@{is\+Same\+Ontology}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{is\+Same\+Ontology(const std\+::string \&term\+A, const std\+::string \&term\+B)}{isSameOntology(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Frontier\+Shared\+Information\+::is\+Same\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFrontierSharedInformation_a545b12efcab4551d031fb6125f615080}{}\label{classFrontierSharedInformation_a545b12efcab4551d031fb6125f615080}
+
+
+An interface method for determining if the two terms are of like ontologies. 
+
+Determine if two terms are of the same ontology. 
+
+Implements \hyperlink{classSharedInformationInterface_a607463b9736df9c4b8ec3ba9fe41c19d}{Shared\+Information\+Interface}.
+
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!max\+Information\+Content@{max\+Information\+Content}}
+\index{max\+Information\+Content@{max\+Information\+Content}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{max\+Information\+Content(const std\+::string \&term)}{maxInformationContent(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Frontier\+Shared\+Information\+::max\+Information\+Content (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFrontierSharedInformation_a8301888fc7343848a9ee307849e49125}{}\label{classFrontierSharedInformation_a8301888fc7343848a9ee307849e49125}
+
+
+An interface method for returning the maximum information content for a term. 
+
+This method provides the absolute max information content within a corpus for normalization purposes. 
+
+Implements \hyperlink{classSharedInformationInterface_a7356ba99509458777972ce0f00ebd999}{Shared\+Information\+Interface}.
+
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term\+A, const std\+::string \&term\+B)}{sharedInformation(const std::string &termA, const std::string &termB)}}]{\setlength{\rightskip}{0pt plus 5cm}double Frontier\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{termA, }
+\item[{const std\+::string \&}]{termB}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFrontierSharedInformation_afd0bf3ea7bb9f4f05f89cc2597bc2dcf}{}\label{classFrontierSharedInformation_afd0bf3ea7bb9f4f05f89cc2597bc2dcf}
+
+
+An method for returning the shared information of two terms. 
+
+This method returns the mean information content of the frontier ancestors 
+
+Implements \hyperlink{classSharedInformationInterface_a76e8858eb598442b86b0fd3be1c519e7}{Shared\+Information\+Interface}.
+
+\index{Frontier\+Shared\+Information@{Frontier\+Shared\+Information}!shared\+Information@{shared\+Information}}
+\index{shared\+Information@{shared\+Information}!Frontier\+Shared\+Information@{Frontier\+Shared\+Information}}
+\subsubsection[{\texorpdfstring{shared\+Information(const std\+::string \&term)}{sharedInformation(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Frontier\+Shared\+Information\+::shared\+Information (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classFrontierSharedInformation_a7d9c15e312667dc5ac2af1c7e36f735b}{}\label{classFrontierSharedInformation_a7d9c15e312667dc5ac2af1c7e36f735b}
+
+
+An interface method for returning the shared information of a single terms,or information content. 
+
+This method privdes a mechanism for returing a term\textquotesingle{}s infromation content. 
+
+Implements \hyperlink{classSharedInformationInterface_aba102c0e44fbc098baef6074f1eb37b6}{Shared\+Information\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Frontier\+Shared\+Information.\+hpp\end{DoxyCompactItemize}

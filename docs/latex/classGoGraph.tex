@@ -1,0 +1,664 @@
+\hypertarget{classGoGraph}{}\section{Go\+Graph Class Reference}
+\label{classGoGraph}\index{Go\+Graph@{Go\+Graph}}
+
+
+This class holds the Gene Ontology directed acyclic graph.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Go\+Graph.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGoGraph_1_1EdgeProps}{Edge\+Props}
+\begin{DoxyCompactList}\small\item\em An Edge Property object. \end{DoxyCompactList}\item 
+struct \hyperlink{structGoGraph_1_1VertexProps}{Vertex\+Props}
+\begin{DoxyCompactList}\small\item\em A Vertex Property object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::adjacency\+\_\+list$<$ boost\+::vecS, boost\+::vecS, boost\+::bidirectionalS, boost\+::property$<$ boost\+::vertex\+\_\+index\+\_\+t, size\+\_\+t, \hyperlink{structGoGraph_1_1VertexProps}{Vertex\+Props} $>$, boost\+::property$<$ boost\+::edge\+\_\+index\+\_\+t, size\+\_\+t, \hyperlink{structGoGraph_1_1EdgeProps}{Edge\+Props} $>$ $>$ \hyperlink{classGoGraph_a2586bfc8740625d2d615662ac86f10f9}{Graph\+\_\+t}
+\begin{DoxyCompactList}\small\item\em A Graph type representing Go. \end{DoxyCompactList}\item 
+typedef boost\+::subgraph$<$ \hyperlink{classGoGraph_a2586bfc8740625d2d615662ac86f10f9}{Graph\+\_\+t} $>$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph}
+\begin{DoxyCompactList}\small\item\em The main Graph type representing Go. \end{DoxyCompactList}\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $>$\+::vertex\+\_\+descriptor \hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex}
+\begin{DoxyCompactList}\small\item\em A vertex object. \end{DoxyCompactList}\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $>$\+::edge\+\_\+descriptor \hyperlink{classGoGraph_a6a06a7cf401fba8f03f8f68b54744a75}{Go\+Edge}
+\begin{DoxyCompactList}\small\item\em An edge object. \end{DoxyCompactList}\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $>$\+::vertex\+\_\+iterator \hyperlink{classGoGraph_a1e893efb01d71292881b2fa45c771b79}{Go\+Vertex\+Iterator}
+\begin{DoxyCompactList}\small\item\em A vertex iterator. \end{DoxyCompactList}\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $>$\+::in\+\_\+edge\+\_\+iterator \hyperlink{classGoGraph_a749886e553031dcb52c595989129514d}{In\+Edge\+Iterator}
+\begin{DoxyCompactList}\small\item\em An in edge iterator. \end{DoxyCompactList}\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $>$\+::out\+\_\+edge\+\_\+iterator \hyperlink{classGoGraph_a40291cfa00013cbb9cfb400c1fc92379}{Out\+Edge\+Iterator}
+\begin{DoxyCompactList}\small\item\em An out edge iterator. \end{DoxyCompactList}\item 
+typedef boost\+::property\+\_\+map$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph}, boost\+::vertex\+\_\+index\+\_\+t $>$\+::type \hyperlink{classGoGraph_a8a262d8dedc41830e5d4208d4d5e76c3}{Vertex\+Index\+Map}
+\begin{DoxyCompactList}\small\item\em A vertex to index map. \end{DoxyCompactList}\item 
+typedef boost\+::property\+\_\+map$<$ \hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph}, boost\+::edge\+\_\+index\+\_\+t $>$\+::type \hyperlink{classGoGraph_a1fd5f6b3ef1f58a665bbc8e317be9817}{Edge\+Index\+Map}
+\begin{DoxyCompactList}\small\item\em An edge to index map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGoGraph_a48e691ba5998d709d457a949687fccca}{$\sim$\+Go\+Graph} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGoGraph_a41f698c030fec41fe59ade6d1c73721f}{insert\+Term} (const std\+::string \&term\+Id, const std\+::string \&name, const std\+::string \&description, const std\+::string \&ontology)
+\begin{DoxyCompactList}\small\item\em Method to insert terms into the graph. \end{DoxyCompactList}\item 
+void \hyperlink{classGoGraph_a346fcf36ed71479d529a2db974ba8bc3}{insert\+Relationship} (const std\+::string \&term\+Parent, const std\+::string \&term\+Child, const std\+::string \&relationship)
+\begin{DoxyCompactList}\small\item\em Method to insert relationship edges into the graph. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classGoGraph_a624f621a9c3cd956fb664daf113e3729}{get\+Num\+Vertices} ()
+\begin{DoxyCompactList}\small\item\em Helper method to get number of vertices. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classGoGraph_acafdd8e76e3813e1276798bed2194232}{get\+Num\+Edges} ()
+\begin{DoxyCompactList}\small\item\em Helper method to get number of edges. \end{DoxyCompactList}\item 
+void \hyperlink{classGoGraph_ad82f8d33a7ecc220ac0d93147dafc061}{init\+Maps} ()
+\begin{DoxyCompactList}\small\item\em A method to initialize internal index maps. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $\ast$ \hyperlink{classGoGraph_a752d7576d649cdc0befa982ca5c3ea98}{get\+Graph} ()
+\begin{DoxyCompactList}\small\item\em A method to return the boost graph. \end{DoxyCompactList}\item 
+bool \hyperlink{classGoGraph_af8ee7588b17f58717afc13acb0a33435}{has\+Term} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to test term existence. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classGoGraph_ae7b982d3f564013844d8046e732cef76}{get\+Term\+Index} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to return the index of the term. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classGoGraph_aa885bffcce6c156769236ca2af9a453e}{get\+Term\+String\+Id\+By\+Index} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em A helper method to return the string id based on the index. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classGoGraph_aa046ee2d278114b6c28f4d5be71b81f0}{get\+Term\+Name\+By\+Index} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em A helper method to return the string name based on the index. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classGoGraph_a175dab9ef8da6c3f06e8f71f21699cf6}{get\+Term\+Name} (std\+::string term)
+\begin{DoxyCompactList}\small\item\em A helper method to return the string name based on the go term. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classGoGraph_aed5db44d61c949aed72482ee41438856}{get\+Term\+Description\+By\+Index} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em A helper method to return the string description based on the index. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classGoGraph_abd5d984dd3e1df3d754b1f7e86c487ee}{get\+Term\+Description} (std\+::string term)
+\begin{DoxyCompactList}\small\item\em A helper method to return the string description based on the go term. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex} \hyperlink{classGoGraph_a1e8f6565c1cdab44ffbbdcd771246f7c}{get\+Root} ()
+\begin{DoxyCompactList}\small\item\em A helper method to return the root of the graph. \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} \hyperlink{classGoGraph_a9f4f553098e14270f07e7791cfe65447}{get\+Term\+Ontology} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to return the ontology of a term by term string. \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} \hyperlink{classGoGraph_a0531ffa131c90e9871e280aa5faeaa42}{get\+Term\+Ontology\+By\+Index} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em A helper method to return the ontology of a term by index. \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} \hyperlink{classGoGraph_a3ae1998fd4765b2f952290150a7d164b}{get\+Term\+Ontology\+By\+Vertex} (\hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex} vertex)
+\begin{DoxyCompactList}\small\item\em A helper method to return the ontology of a term by Go\+Vertex. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classGoGraph_a524fd1ade5d14d4dc3c900bf82162be6}{get\+Vertex\+Index} (\hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex} vertex)
+\begin{DoxyCompactList}\small\item\em A helper method to return the index of a Go\+Vertex. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex} \hyperlink{classGoGraph_a69f38e249704b7e8d9f31a2e3bc03633}{get\+Vertex\+By\+Index} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em A helper method to return the Go\+Vertex for the given index. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{Go\+Vertex} \hyperlink{classGoGraph_aa66361d5993e6fdf5bd320b6ae15e4bc}{get\+Vertex\+By\+Name} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to return the Go\+Vertex for the given term. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a0d0a197cc51be0c2f9d0f524a8d66b5e}{get\+Descendant\+Terms} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to get the desendant terms for a given term. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ae31e1546b740439d44860fa9543c83c2}{get\+Ancestor\+Terms} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to get the ancestor terms for a given term. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a9907ae6a2960e527f02e7cdf9507aeb1}{get\+Parent\+Terms} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to get the parent terms for a given term. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ace2ad63bbc6bb2d1dd3e182e6e9c793e}{get\+Child\+Terms} (const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A helper method to get the child terms for a given term. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ab497e840a1a63b5d25d6a104695a54fb}{get\+All\+Terms} ()
+\begin{DoxyCompactList}\small\item\em A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph}. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ad4f45995d5cd7ebe4f0c20d8923db268}{get\+All\+Terms\+BP} ()
+\begin{DoxyCompactList}\small\item\em A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the BP ontology. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a9e5592682e5e78c5d45364bf714fd0cf}{get\+All\+Terms\+MF} ()
+\begin{DoxyCompactList}\small\item\em A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the MF ontology. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a47246d323ea642a2ffe169fa6da40bcf}{get\+All\+Terms\+CC} ()
+\begin{DoxyCompactList}\small\item\em A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the CC ontology. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a1df055e607d7dc4650efedf56b149289}{filter\+Set\+For\+Ontology} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set, \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} onto)
+\begin{DoxyCompactList}\small\item\em A helper method to filter out all terms not belonging to a particular ontology. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a083e9fe34636a0e996efd0e9d0d65c3b}{filter\+Set\+For\+Ontology} (const std\+::vector$<$ std\+::string $>$ \&in\+Set, \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} onto)
+\begin{DoxyCompactList}\small\item\em A helper method to filter out all terms not belonging to a particular ontology from a vector. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a42f95a4728eac397fce20d2dcfc8a442}{filter\+Set\+For\+BP} (const std\+::vector$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only BP terms from a vector. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ac6e27dbb91d23ea04191abac4c06e401}{filter\+Set\+For\+BP} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only BP terms from a set. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a22cedc3faddb0ca598620f2868a46046}{filter\+Set\+For\+MF} (const std\+::vector$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only MF terms from a vector. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ac1885e77b0a5f5158e7a94b4404f8c9a}{filter\+Set\+For\+MF} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only MF terms from a set. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_ad1756e5daeea19ec063b67c2a29594be}{filter\+Set\+For\+CC} (const std\+::vector$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only CC terms from a vector. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_a23fc2ff15da505fa77536adbd9b7d01b}{filter\+Set\+For\+CC} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)
+\begin{DoxyCompactList}\small\item\em A helper method to retrun only CC terms from a set. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classGoGraph_abaa3ff8f11463a38fd03241ff17d3e75}{get\+Ontology\+Terms} (\hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{G\+O\+::\+Onto} ontology)
+\begin{DoxyCompactList}\small\item\em A helper method to return only the terms of the give ontology. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $\ast$ \hyperlink{classGoGraph_a523911c2ddaff88ea64c8f15a01f9fee}{get\+Induced\+Subgraph2} (const std\+::string \&term\+Id)
+\begin{DoxyCompactList}\small\item\em A method to return the induced subgraph of a given term, ancestor graph. \end{DoxyCompactList}\item 
+\hyperlink{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{Graph} $\ast$ \hyperlink{classGoGraph_a6ec3b30ab6fbd458b4225ec9532a4e14}{get\+Induced\+Subgraph} (const std\+::string \&term\+Id)
+\begin{DoxyCompactList}\small\item\em A method to return the induced subgraph of a given term, ancestor graph. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classGoGraph_a6ce05821a7dfa86e1fa1de412d2c6cb2}{get\+Num\+Components} ()
+\begin{DoxyCompactList}\small\item\em A method to calculate the number of connected components of the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds the Gene Ontology directed acyclic graph. 
+
+This class holds the Gene Ontology as a boost graph. It provides the graph data, as well as other strucutres which make working with the graph easier. 
+
+\subsection{Member Typedef Documentation}
+\index{Go\+Graph@{Go\+Graph}!Edge\+Index\+Map@{Edge\+Index\+Map}}
+\index{Edge\+Index\+Map@{Edge\+Index\+Map}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Edge\+Index\+Map}{EdgeIndexMap}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::property\+\_\+map$<${\bf Graph}, boost\+::edge\+\_\+index\+\_\+t $>$\+::type {\bf Go\+Graph\+::\+Edge\+Index\+Map}}\hypertarget{classGoGraph_a1fd5f6b3ef1f58a665bbc8e317be9817}{}\label{classGoGraph_a1fd5f6b3ef1f58a665bbc8e317be9817}
+
+
+An edge to index map. 
+
+A typedef of the boost property\+\_\+map. Saves typing by using Edge\+Index\+Map. \index{Go\+Graph@{Go\+Graph}!Go\+Edge@{Go\+Edge}}
+\index{Go\+Edge@{Go\+Edge}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Go\+Edge}{GoEdge}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::graph\+\_\+traits$<${\bf Graph}$>$\+::edge\+\_\+descriptor {\bf Go\+Graph\+::\+Go\+Edge}}\hypertarget{classGoGraph_a6a06a7cf401fba8f03f8f68b54744a75}{}\label{classGoGraph_a6a06a7cf401fba8f03f8f68b54744a75}
+
+
+An edge object. 
+
+A typedef of the boost edge\+\_\+descriptor. Saves typing by using Go\+Edge. \index{Go\+Graph@{Go\+Graph}!Go\+Vertex@{Go\+Vertex}}
+\index{Go\+Vertex@{Go\+Vertex}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Go\+Vertex}{GoVertex}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::graph\+\_\+traits$<${\bf Graph}$>$\+::vertex\+\_\+descriptor {\bf Go\+Graph\+::\+Go\+Vertex}}\hypertarget{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}{}\label{classGoGraph_afabec0fb17c98de989e7dd9f3a54e650}
+
+
+A vertex object. 
+
+A typedef of the boost vertex\+\_\+descriptor. Saves typing by using Go\+Vertex. \index{Go\+Graph@{Go\+Graph}!Go\+Vertex\+Iterator@{Go\+Vertex\+Iterator}}
+\index{Go\+Vertex\+Iterator@{Go\+Vertex\+Iterator}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Go\+Vertex\+Iterator}{GoVertexIterator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::graph\+\_\+traits$<${\bf Graph}$>$\+::vertex\+\_\+iterator {\bf Go\+Graph\+::\+Go\+Vertex\+Iterator}}\hypertarget{classGoGraph_a1e893efb01d71292881b2fa45c771b79}{}\label{classGoGraph_a1e893efb01d71292881b2fa45c771b79}
+
+
+A vertex iterator. 
+
+A typedef of the boost vertex\+\_\+iterator. Saves typing by using Go\+Vertex\+Iterator. \index{Go\+Graph@{Go\+Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Graph}{Graph}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::subgraph$<${\bf Graph\+\_\+t}$>$ {\bf Go\+Graph\+::\+Graph}}\hypertarget{classGoGraph_aae4ae00d4785dcee01a514feb768f380}{}\label{classGoGraph_aae4ae00d4785dcee01a514feb768f380}
+
+
+The main Graph type representing Go. 
+
+This typedef defines the main type as a subgraph of Graph\+\_\+t. This allows the the graph to be divided into subgraphs if needed. Virtually not differnece but can cause problems with some boost constructors such as random graph generators. \index{Go\+Graph@{Go\+Graph}!Graph\+\_\+t@{Graph\+\_\+t}}
+\index{Graph\+\_\+t@{Graph\+\_\+t}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Graph\+\_\+t}{Graph_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::adjacency\+\_\+list$<$boost\+::vecS, boost\+::vecS, boost\+::bidirectionalS, boost\+::property$<$ boost\+::vertex\+\_\+index\+\_\+t, size\+\_\+t, {\bf Vertex\+Props}$>$, boost\+::property$<$ boost\+::edge\+\_\+index\+\_\+t, size\+\_\+t, {\bf Edge\+Props}$>$ $>$ {\bf Go\+Graph\+::\+Graph\+\_\+t}}\hypertarget{classGoGraph_a2586bfc8740625d2d615662ac86f10f9}{}\label{classGoGraph_a2586bfc8740625d2d615662ac86f10f9}
+
+
+A Graph type representing Go. 
+
+This typedef defines a graph type used as the basic go graph. This typedef takes \hyperlink{structGoGraph_1_1VertexProps}{Vertex\+Props} and \hyperlink{structGoGraph_1_1EdgeProps}{Edge\+Props} as templete arguments. \index{Go\+Graph@{Go\+Graph}!In\+Edge\+Iterator@{In\+Edge\+Iterator}}
+\index{In\+Edge\+Iterator@{In\+Edge\+Iterator}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{In\+Edge\+Iterator}{InEdgeIterator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::graph\+\_\+traits$<${\bf Graph}$>$\+::in\+\_\+edge\+\_\+iterator {\bf Go\+Graph\+::\+In\+Edge\+Iterator}}\hypertarget{classGoGraph_a749886e553031dcb52c595989129514d}{}\label{classGoGraph_a749886e553031dcb52c595989129514d}
+
+
+An in edge iterator. 
+
+A typedef of the boost in\+\_\+edge\+\_\+iterator. Saves typing by using In\+Edge\+Iterator. \index{Go\+Graph@{Go\+Graph}!Out\+Edge\+Iterator@{Out\+Edge\+Iterator}}
+\index{Out\+Edge\+Iterator@{Out\+Edge\+Iterator}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Out\+Edge\+Iterator}{OutEdgeIterator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::graph\+\_\+traits$<${\bf Graph}$>$\+::out\+\_\+edge\+\_\+iterator {\bf Go\+Graph\+::\+Out\+Edge\+Iterator}}\hypertarget{classGoGraph_a40291cfa00013cbb9cfb400c1fc92379}{}\label{classGoGraph_a40291cfa00013cbb9cfb400c1fc92379}
+
+
+An out edge iterator. 
+
+A typedef of the boost out\+\_\+edge\+\_\+iterator. Saves typing by using Out\+Edge\+Iterator. \index{Go\+Graph@{Go\+Graph}!Vertex\+Index\+Map@{Vertex\+Index\+Map}}
+\index{Vertex\+Index\+Map@{Vertex\+Index\+Map}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{Vertex\+Index\+Map}{VertexIndexMap}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::property\+\_\+map$<${\bf Graph}, boost\+::vertex\+\_\+index\+\_\+t $>$\+::type {\bf Go\+Graph\+::\+Vertex\+Index\+Map}}\hypertarget{classGoGraph_a8a262d8dedc41830e5d4208d4d5e76c3}{}\label{classGoGraph_a8a262d8dedc41830e5d4208d4d5e76c3}
+
+
+A vertex to index map. 
+
+A typedef of the boost property\+\_\+map. Saves typing by using Vertex\+Index\+Map. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Go\+Graph@{Go\+Graph}!````~Go\+Graph@{$\sim$\+Go\+Graph}}
+\index{````~Go\+Graph@{$\sim$\+Go\+Graph}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{$\sim$\+Go\+Graph()}{~GoGraph()}}]{\setlength{\rightskip}{0pt plus 5cm}Go\+Graph\+::$\sim$\+Go\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a48e691ba5998d709d457a949687fccca}{}\label{classGoGraph_a48e691ba5998d709d457a949687fccca}
+
+
+A destructor. 
+
+Destroying the graph calls clear on all the containers. Other data should be destroyed when leaving scope. 
+
+\subsection{Member Function Documentation}
+\index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+BP@{filter\+Set\+For\+BP}}
+\index{filter\+Set\+For\+BP@{filter\+Set\+For\+BP}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+B\+P(const std\+::vector$<$ std\+::string $>$ \&in\+Set)}{filterSetForBP(const std::vector< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+BP (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a42f95a4728eac397fce20d2dcfc8a442}{}\label{classGoGraph_a42f95a4728eac397fce20d2dcfc8a442}
+
+
+A helper method to retrun only BP terms from a vector. 
+
+This method returns a filtered set containing only BP terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+BP@{filter\+Set\+For\+BP}}
+\index{filter\+Set\+For\+BP@{filter\+Set\+For\+BP}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+B\+P(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)}{filterSetForBP(const boost::unordered_set< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+BP (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ac6e27dbb91d23ea04191abac4c06e401}{}\label{classGoGraph_ac6e27dbb91d23ea04191abac4c06e401}
+
+
+A helper method to retrun only BP terms from a set. 
+
+This method returns a filtered set containing only BP terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+CC@{filter\+Set\+For\+CC}}
+\index{filter\+Set\+For\+CC@{filter\+Set\+For\+CC}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+C\+C(const std\+::vector$<$ std\+::string $>$ \&in\+Set)}{filterSetForCC(const std::vector< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+CC (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ad1756e5daeea19ec063b67c2a29594be}{}\label{classGoGraph_ad1756e5daeea19ec063b67c2a29594be}
+
+
+A helper method to retrun only CC terms from a vector. 
+
+This method returns a filtered set containing only CC terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+CC@{filter\+Set\+For\+CC}}
+\index{filter\+Set\+For\+CC@{filter\+Set\+For\+CC}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+C\+C(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)}{filterSetForCC(const boost::unordered_set< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+CC (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a23fc2ff15da505fa77536adbd9b7d01b}{}\label{classGoGraph_a23fc2ff15da505fa77536adbd9b7d01b}
+
+
+A helper method to retrun only CC terms from a set. 
+
+This method returns a filtered set containing only CC terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+MF@{filter\+Set\+For\+MF}}
+\index{filter\+Set\+For\+MF@{filter\+Set\+For\+MF}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+M\+F(const std\+::vector$<$ std\+::string $>$ \&in\+Set)}{filterSetForMF(const std::vector< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+MF (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a22cedc3faddb0ca598620f2868a46046}{}\label{classGoGraph_a22cedc3faddb0ca598620f2868a46046}
+
+
+A helper method to retrun only MF terms from a vector. 
+
+This method returns a filtered set containing only MF terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+MF@{filter\+Set\+For\+MF}}
+\index{filter\+Set\+For\+MF@{filter\+Set\+For\+MF}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+M\+F(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set)}{filterSetForMF(const boost::unordered_set< std::string > &inSet)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+MF (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{in\+Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ac1885e77b0a5f5158e7a94b4404f8c9a}{}\label{classGoGraph_ac1885e77b0a5f5158e7a94b4404f8c9a}
+
+
+A helper method to retrun only MF terms from a set. 
+
+This method returns a filtered set containing only MF terms \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+Ontology@{filter\+Set\+For\+Ontology}}
+\index{filter\+Set\+For\+Ontology@{filter\+Set\+For\+Ontology}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+Ontology(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&in\+Set, G\+O\+::\+Onto onto)}{filterSetForOntology(const boost::unordered_set< std::string > &inSet, GO::Onto onto)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{in\+Set, }
+\item[{{\bf G\+O\+::\+Onto}}]{onto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a1df055e607d7dc4650efedf56b149289}{}\label{classGoGraph_a1df055e607d7dc4650efedf56b149289}
+
+
+A helper method to filter out all terms not belonging to a particular ontology. 
+
+This method returns a filtered set of ontology terms matching the given ontology \index{Go\+Graph@{Go\+Graph}!filter\+Set\+For\+Ontology@{filter\+Set\+For\+Ontology}}
+\index{filter\+Set\+For\+Ontology@{filter\+Set\+For\+Ontology}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{filter\+Set\+For\+Ontology(const std\+::vector$<$ std\+::string $>$ \&in\+Set, G\+O\+::\+Onto onto)}{filterSetForOntology(const std::vector< std::string > &inSet, GO::Onto onto)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::filter\+Set\+For\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{in\+Set, }
+\item[{{\bf G\+O\+::\+Onto}}]{onto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a083e9fe34636a0e996efd0e9d0d65c3b}{}\label{classGoGraph_a083e9fe34636a0e996efd0e9d0d65c3b}
+
+
+A helper method to filter out all terms not belonging to a particular ontology from a vector. 
+
+This method returns a filtered set of ontology terms matching the given ontology \index{Go\+Graph@{Go\+Graph}!get\+All\+Terms@{get\+All\+Terms}}
+\index{get\+All\+Terms@{get\+All\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+All\+Terms()}{getAllTerms()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+All\+Terms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ab497e840a1a63b5d25d6a104695a54fb}{}\label{classGoGraph_ab497e840a1a63b5d25d6a104695a54fb}
+
+
+A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph}. 
+
+This method returns a set of term strings \index{Go\+Graph@{Go\+Graph}!get\+All\+Terms\+BP@{get\+All\+Terms\+BP}}
+\index{get\+All\+Terms\+BP@{get\+All\+Terms\+BP}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+All\+Terms\+B\+P()}{getAllTermsBP()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+All\+Terms\+BP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ad4f45995d5cd7ebe4f0c20d8923db268}{}\label{classGoGraph_ad4f45995d5cd7ebe4f0c20d8923db268}
+
+
+A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the BP ontology. 
+
+This method returns a set of BP terms in the graph \index{Go\+Graph@{Go\+Graph}!get\+All\+Terms\+CC@{get\+All\+Terms\+CC}}
+\index{get\+All\+Terms\+CC@{get\+All\+Terms\+CC}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+All\+Terms\+C\+C()}{getAllTermsCC()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+All\+Terms\+CC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a47246d323ea642a2ffe169fa6da40bcf}{}\label{classGoGraph_a47246d323ea642a2ffe169fa6da40bcf}
+
+
+A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the CC ontology. 
+
+This method returns a set of CC terms in the graph \index{Go\+Graph@{Go\+Graph}!get\+All\+Terms\+MF@{get\+All\+Terms\+MF}}
+\index{get\+All\+Terms\+MF@{get\+All\+Terms\+MF}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+All\+Terms\+M\+F()}{getAllTermsMF()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+All\+Terms\+MF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a9e5592682e5e78c5d45364bf714fd0cf}{}\label{classGoGraph_a9e5592682e5e78c5d45364bf714fd0cf}
+
+
+A helper method to retrieve all terms in the \hyperlink{classGoGraph}{Go\+Graph} belonging to the MF ontology. 
+
+This method returns a set of MF terms in the graph \index{Go\+Graph@{Go\+Graph}!get\+Ancestor\+Terms@{get\+Ancestor\+Terms}}
+\index{get\+Ancestor\+Terms@{get\+Ancestor\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Ancestor\+Terms(const std\+::string \&term)}{getAncestorTerms(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+Ancestor\+Terms (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ae31e1546b740439d44860fa9543c83c2}{}\label{classGoGraph_ae31e1546b740439d44860fa9543c83c2}
+
+
+A helper method to get the ancestor terms for a given term. 
+
+This method takes a term and returns a list of ancestor terms. \index{Go\+Graph@{Go\+Graph}!get\+Child\+Terms@{get\+Child\+Terms}}
+\index{get\+Child\+Terms@{get\+Child\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Child\+Terms(const std\+::string \&term)}{getChildTerms(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+Child\+Terms (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ace2ad63bbc6bb2d1dd3e182e6e9c793e}{}\label{classGoGraph_ace2ad63bbc6bb2d1dd3e182e6e9c793e}
+
+
+A helper method to get the child terms for a given term. 
+
+This method takes a term and returns a list of child terms. \index{Go\+Graph@{Go\+Graph}!get\+Descendant\+Terms@{get\+Descendant\+Terms}}
+\index{get\+Descendant\+Terms@{get\+Descendant\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Descendant\+Terms(const std\+::string \&term)}{getDescendantTerms(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+Descendant\+Terms (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a0d0a197cc51be0c2f9d0f524a8d66b5e}{}\label{classGoGraph_a0d0a197cc51be0c2f9d0f524a8d66b5e}
+
+
+A helper method to get the desendant terms for a given term. 
+
+This method takes a term and returns a list of desendant terms. \index{Go\+Graph@{Go\+Graph}!get\+Graph@{get\+Graph}}
+\index{get\+Graph@{get\+Graph}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Graph()}{getGraph()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$\ast$ Go\+Graph\+::get\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a752d7576d649cdc0befa982ca5c3ea98}{}\label{classGoGraph_a752d7576d649cdc0befa982ca5c3ea98}
+
+
+A method to return the boost graph. 
+
+This method is needed to return the graph to other boost algorithms. As stated by boost, subclasses of adjacency\+\_\+list are not recommended. \href{http://www.boost.org/doc/libs/1_54_0/libs/graph/doc/graph_concepts.html}{\tt http\+://www.\+boost.\+org/doc/libs/1\+\_\+54\+\_\+0/libs/graph/doc/graph\+\_\+concepts.\+html} \index{Go\+Graph@{Go\+Graph}!get\+Induced\+Subgraph@{get\+Induced\+Subgraph}}
+\index{get\+Induced\+Subgraph@{get\+Induced\+Subgraph}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Induced\+Subgraph(const std\+::string \&term\+Id)}{getInducedSubgraph(const std::string &termId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$\ast$ Go\+Graph\+::get\+Induced\+Subgraph (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a6ec3b30ab6fbd458b4225ec9532a4e14}{}\label{classGoGraph_a6ec3b30ab6fbd458b4225ec9532a4e14}
+
+
+A method to return the induced subgraph of a given term, ancestor graph. 
+
+This method returns a subgraph of the graph induced by traversing the ancestors of the given vertex. \index{Go\+Graph@{Go\+Graph}!get\+Induced\+Subgraph2@{get\+Induced\+Subgraph2}}
+\index{get\+Induced\+Subgraph2@{get\+Induced\+Subgraph2}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Induced\+Subgraph2(const std\+::string \&term\+Id)}{getInducedSubgraph2(const std::string &termId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graph}$\ast$ Go\+Graph\+::get\+Induced\+Subgraph2 (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a523911c2ddaff88ea64c8f15a01f9fee}{}\label{classGoGraph_a523911c2ddaff88ea64c8f15a01f9fee}
+
+
+A method to return the induced subgraph of a given term, ancestor graph. 
+
+This method returns a subgraph of the graph induced by traversing the ancestors of the given vertex. \index{Go\+Graph@{Go\+Graph}!get\+Num\+Components@{get\+Num\+Components}}
+\index{get\+Num\+Components@{get\+Num\+Components}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Num\+Components()}{getNumComponents()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Go\+Graph\+::get\+Num\+Components (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a6ce05821a7dfa86e1fa1de412d2c6cb2}{}\label{classGoGraph_a6ce05821a7dfa86e1fa1de412d2c6cb2}
+
+
+A method to calculate the number of connected components of the graph. 
+
+This method calculates the number of connected components in the graph. This is used to check if the \hyperlink{namespaceGO}{GO} graph conatains only the 3 sub-\/ontologies. \index{Go\+Graph@{Go\+Graph}!get\+Num\+Edges@{get\+Num\+Edges}}
+\index{get\+Num\+Edges@{get\+Num\+Edges}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Num\+Edges()}{getNumEdges()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Go\+Graph\+::get\+Num\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_acafdd8e76e3813e1276798bed2194232}{}\label{classGoGraph_acafdd8e76e3813e1276798bed2194232}
+
+
+Helper method to get number of edges. 
+
+This method calls boost num\+\_\+edges on the go graph \index{Go\+Graph@{Go\+Graph}!get\+Num\+Vertices@{get\+Num\+Vertices}}
+\index{get\+Num\+Vertices@{get\+Num\+Vertices}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Num\+Vertices()}{getNumVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Go\+Graph\+::get\+Num\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a624f621a9c3cd956fb664daf113e3729}{}\label{classGoGraph_a624f621a9c3cd956fb664daf113e3729}
+
+
+Helper method to get number of vertices. 
+
+This method calls boost num\+\_\+vertices on the go graph \index{Go\+Graph@{Go\+Graph}!get\+Ontology\+Terms@{get\+Ontology\+Terms}}
+\index{get\+Ontology\+Terms@{get\+Ontology\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Ontology\+Terms(\+G\+O\+::\+Onto ontology)}{getOntologyTerms(GO::Onto ontology)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+Ontology\+Terms (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+O\+::\+Onto}}]{ontology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_abaa3ff8f11463a38fd03241ff17d3e75}{}\label{classGoGraph_abaa3ff8f11463a38fd03241ff17d3e75}
+
+
+A helper method to return only the terms of the give ontology. 
+
+Returns only those terms used that occur for the given ontology. \index{Go\+Graph@{Go\+Graph}!get\+Parent\+Terms@{get\+Parent\+Terms}}
+\index{get\+Parent\+Terms@{get\+Parent\+Terms}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Parent\+Terms(const std\+::string \&term)}{getParentTerms(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Go\+Graph\+::get\+Parent\+Terms (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a9907ae6a2960e527f02e7cdf9507aeb1}{}\label{classGoGraph_a9907ae6a2960e527f02e7cdf9507aeb1}
+
+
+A helper method to get the parent terms for a given term. 
+
+This method takes a term and returns a list of parent terms (immediate ancestors). \index{Go\+Graph@{Go\+Graph}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Root()}{getRoot()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\+Vertex} Go\+Graph\+::get\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a1e8f6565c1cdab44ffbbdcd771246f7c}{}\label{classGoGraph_a1e8f6565c1cdab44ffbbdcd771246f7c}
+
+
+A helper method to return the root of the graph. 
+
+This method returns the root vertex or first root vertex of a graph. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Description@{get\+Term\+Description}}
+\index{get\+Term\+Description@{get\+Term\+Description}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Description(std\+::string term)}{getTermDescription(std::string term)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Go\+Graph\+::get\+Term\+Description (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_abd5d984dd3e1df3d754b1f7e86c487ee}{}\label{classGoGraph_abd5d984dd3e1df3d754b1f7e86c487ee}
+
+
+A helper method to return the string description based on the go term. 
+
+This method returns the term\textquotesingle{}s description string using the go term. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Description\+By\+Index@{get\+Term\+Description\+By\+Index}}
+\index{get\+Term\+Description\+By\+Index@{get\+Term\+Description\+By\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Description\+By\+Index(std\+::size\+\_\+t index)}{getTermDescriptionByIndex(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Go\+Graph\+::get\+Term\+Description\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_aed5db44d61c949aed72482ee41438856}{}\label{classGoGraph_aed5db44d61c949aed72482ee41438856}
+
+
+A helper method to return the string description based on the index. 
+
+This method returns the term\textquotesingle{}s description string using its index. Used mainly for testing. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Index@{get\+Term\+Index}}
+\index{get\+Term\+Index@{get\+Term\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Index(const std\+::string \&term)}{getTermIndex(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Go\+Graph\+::get\+Term\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ae7b982d3f564013844d8046e732cef76}{}\label{classGoGraph_ae7b982d3f564013844d8046e732cef76}
+
+
+A helper method to return the index of the term. 
+
+This method returns the index of the given term. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Name@{get\+Term\+Name}}
+\index{get\+Term\+Name@{get\+Term\+Name}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Name(std\+::string term)}{getTermName(std::string term)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Go\+Graph\+::get\+Term\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a175dab9ef8da6c3f06e8f71f21699cf6}{}\label{classGoGraph_a175dab9ef8da6c3f06e8f71f21699cf6}
+
+
+A helper method to return the string name based on the go term. 
+
+This method returns the term\textquotesingle{}s string name using the go term. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Name\+By\+Index@{get\+Term\+Name\+By\+Index}}
+\index{get\+Term\+Name\+By\+Index@{get\+Term\+Name\+By\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Name\+By\+Index(std\+::size\+\_\+t index)}{getTermNameByIndex(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Go\+Graph\+::get\+Term\+Name\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_aa046ee2d278114b6c28f4d5be71b81f0}{}\label{classGoGraph_aa046ee2d278114b6c28f4d5be71b81f0}
+
+
+A helper method to return the string name based on the index. 
+
+This method returns the term\textquotesingle{}s string name using its index. Used mainly for testing. \index{Go\+Graph@{Go\+Graph}!get\+Term\+Ontology@{get\+Term\+Ontology}}
+\index{get\+Term\+Ontology@{get\+Term\+Ontology}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Ontology(const std\+::string \&term)}{getTermOntology(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+O\+::\+Onto} Go\+Graph\+::get\+Term\+Ontology (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a9f4f553098e14270f07e7791cfe65447}{}\label{classGoGraph_a9f4f553098e14270f07e7791cfe65447}
+
+
+A helper method to return the ontology of a term by term string. 
+
+This method returns the term\textquotesingle{}s ontoogy taking a string term as an argument \index{Go\+Graph@{Go\+Graph}!get\+Term\+Ontology\+By\+Index@{get\+Term\+Ontology\+By\+Index}}
+\index{get\+Term\+Ontology\+By\+Index@{get\+Term\+Ontology\+By\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Ontology\+By\+Index(std\+::size\+\_\+t index)}{getTermOntologyByIndex(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+O\+::\+Onto} Go\+Graph\+::get\+Term\+Ontology\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a0531ffa131c90e9871e280aa5faeaa42}{}\label{classGoGraph_a0531ffa131c90e9871e280aa5faeaa42}
+
+
+A helper method to return the ontology of a term by index. 
+
+This method returns the term\textquotesingle{}s ontoogy taking an index as an argument \index{Go\+Graph@{Go\+Graph}!get\+Term\+Ontology\+By\+Vertex@{get\+Term\+Ontology\+By\+Vertex}}
+\index{get\+Term\+Ontology\+By\+Vertex@{get\+Term\+Ontology\+By\+Vertex}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+Ontology\+By\+Vertex(\+Go\+Vertex vertex)}{getTermOntologyByVertex(GoVertex vertex)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+O\+::\+Onto} Go\+Graph\+::get\+Term\+Ontology\+By\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Vertex}}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a3ae1998fd4765b2f952290150a7d164b}{}\label{classGoGraph_a3ae1998fd4765b2f952290150a7d164b}
+
+
+A helper method to return the ontology of a term by Go\+Vertex. 
+
+This method returns the term\textquotesingle{}s ontoogy taking Go\+Vertex as an argument \index{Go\+Graph@{Go\+Graph}!get\+Term\+String\+Id\+By\+Index@{get\+Term\+String\+Id\+By\+Index}}
+\index{get\+Term\+String\+Id\+By\+Index@{get\+Term\+String\+Id\+By\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Term\+String\+Id\+By\+Index(std\+::size\+\_\+t index)}{getTermStringIdByIndex(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Go\+Graph\+::get\+Term\+String\+Id\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_aa885bffcce6c156769236ca2af9a453e}{}\label{classGoGraph_aa885bffcce6c156769236ca2af9a453e}
+
+
+A helper method to return the string id based on the index. 
+
+This method returns the term\textquotesingle{}s string id using its index. Used mainly for testing. \index{Go\+Graph@{Go\+Graph}!get\+Vertex\+By\+Index@{get\+Vertex\+By\+Index}}
+\index{get\+Vertex\+By\+Index@{get\+Vertex\+By\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Vertex\+By\+Index(std\+::size\+\_\+t index)}{getVertexByIndex(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\+Vertex} Go\+Graph\+::get\+Vertex\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a69f38e249704b7e8d9f31a2e3bc03633}{}\label{classGoGraph_a69f38e249704b7e8d9f31a2e3bc03633}
+
+
+A helper method to return the Go\+Vertex for the given index. 
+
+This method returns the Go\+Vertex based on the given index \index{Go\+Graph@{Go\+Graph}!get\+Vertex\+By\+Name@{get\+Vertex\+By\+Name}}
+\index{get\+Vertex\+By\+Name@{get\+Vertex\+By\+Name}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Vertex\+By\+Name(const std\+::string \&term)}{getVertexByName(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Go\+Vertex} Go\+Graph\+::get\+Vertex\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_aa66361d5993e6fdf5bd320b6ae15e4bc}{}\label{classGoGraph_aa66361d5993e6fdf5bd320b6ae15e4bc}
+
+
+A helper method to return the Go\+Vertex for the given term. 
+
+This method returns the Go\+Vertex based on the given term \index{Go\+Graph@{Go\+Graph}!get\+Vertex\+Index@{get\+Vertex\+Index}}
+\index{get\+Vertex\+Index@{get\+Vertex\+Index}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{get\+Vertex\+Index(\+Go\+Vertex vertex)}{getVertexIndex(GoVertex vertex)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t Go\+Graph\+::get\+Vertex\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Vertex}}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a524fd1ade5d14d4dc3c900bf82162be6}{}\label{classGoGraph_a524fd1ade5d14d4dc3c900bf82162be6}
+
+
+A helper method to return the index of a Go\+Vertex. 
+
+This method returns the index of a Go\+Vertex \index{Go\+Graph@{Go\+Graph}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&term)}{hasTerm(const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Go\+Graph\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_af8ee7588b17f58717afc13acb0a33435}{}\label{classGoGraph_af8ee7588b17f58717afc13acb0a33435}
+
+
+A helper method to test term existence. 
+
+Tests the map for existence of the term. \index{Go\+Graph@{Go\+Graph}!init\+Maps@{init\+Maps}}
+\index{init\+Maps@{init\+Maps}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{init\+Maps()}{initMaps()}}]{\setlength{\rightskip}{0pt plus 5cm}void Go\+Graph\+::init\+Maps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_ad82f8d33a7ecc220ac0d93147dafc061}{}\label{classGoGraph_ad82f8d33a7ecc220ac0d93147dafc061}
+
+
+A method to initialize internal index maps. 
+
+This method sets the private map variables by call calling boost get on the property maps. \index{Go\+Graph@{Go\+Graph}!insert\+Relationship@{insert\+Relationship}}
+\index{insert\+Relationship@{insert\+Relationship}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{insert\+Relationship(const std\+::string \&term\+Parent, const std\+::string \&term\+Child, const std\+::string \&relationship)}{insertRelationship(const std::string &termParent, const std::string &termChild, const std::string &relationship)}}]{\setlength{\rightskip}{0pt plus 5cm}void Go\+Graph\+::insert\+Relationship (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+Parent, }
+\item[{const std\+::string \&}]{term\+Child, }
+\item[{const std\+::string \&}]{relationship}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a346fcf36ed71479d529a2db974ba8bc3}{}\label{classGoGraph_a346fcf36ed71479d529a2db974ba8bc3}
+
+
+Method to insert relationship edges into the graph. 
+
+This method takes a parent term, child term, and relationshp type as arguments. The method will insert the edge into the graph, setting the relationship type based on the data provided. \index{Go\+Graph@{Go\+Graph}!insert\+Term@{insert\+Term}}
+\index{insert\+Term@{insert\+Term}!Go\+Graph@{Go\+Graph}}
+\subsubsection[{\texorpdfstring{insert\+Term(const std\+::string \&term\+Id, const std\+::string \&name, const std\+::string \&description, const std\+::string \&ontology)}{insertTerm(const std::string &termId, const std::string &name, const std::string &description, const std::string &ontology)}}]{\setlength{\rightskip}{0pt plus 5cm}void Go\+Graph\+::insert\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{term\+Id, }
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{description, }
+\item[{const std\+::string \&}]{ontology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classGoGraph_a41f698c030fec41fe59ade6d1c73721f}{}\label{classGoGraph_a41f698c030fec41fe59ade6d1c73721f}
+
+
+Method to insert terms into the graph. 
+
+This method takes a go term, description, and ontology information (MF,BP,CC). The method will check if the term already exists in the graph then add the vertex or update the meta data accordingly. The parser can call this method without having to consider if terms have already been added or not. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Go\+Graph.\+hpp\end{DoxyCompactItemize}

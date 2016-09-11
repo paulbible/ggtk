@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classSimpleRegion" kind="class" language="C++" prot="public">
+    <compoundname>SimpleRegion</compoundname>
+    <derivedcompoundref refid="classGenomicRegion" prot="public" virt="non-virtual">GenomicRegion</derivedcompoundref>
+    <includes refid="SimpleRegion_8hpp" local="no">ggtk/SimpleRegion.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSimpleRegion_1a397f3c8897d30259081e41ef9346745b" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a generic id for the region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="36" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSimpleRegion_1a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::_start</definition>
+        <argsstring></argsstring>
+        <name>_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the start coordinate for the region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="40" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSimpleRegion_1aaf09baf8cd5cce7f8ad7083fd0b47e78" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the end coordinate for the region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="44" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSimpleRegion_1a3f3502f62398e26fb88ea7b90ff7d3b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SimpleRegion::SimpleRegion</definition>
+        <argsstring>()</argsstring>
+        <name>SimpleRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor Initializes a simple region. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="49" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a5432bba56f93741e76de989ccde3ecd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SimpleRegion::SimpleRegion</definition>
+        <argsstring>(const size_t id, const size_t start, const size_t end)</argsstring>
+        <name>SimpleRegion</name>
+        <param>
+          <type>const size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameterized constructor Allows the creation of a regions with user specified values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="58" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a3175b332ee5cbe1d6c83986666c481d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>const size_t SimpleRegion::midpoint</definition>
+        <argsstring>() const </argsstring>
+        <name>midpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the midpoint of a region Simple mid point of a region. (end - start)/2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="68" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1ab3e6068e293f2b8f0da920d8feb1f12b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SimpleRegion::distance</definition>
+        <argsstring>(const SimpleRegion &amp;rhs)</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple distance between two regions. Calculates the distance between two regions by calculating the distance between their midpoints. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="76" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1aa0f04be989b3fd8726b60ea8af05408e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::contains</definition>
+        <argsstring>(const SimpleRegion &amp;rhs)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contains test with <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> objects. Does the region contain rhs? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="88" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a71f1e66b268298559e319a39125b20e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::contains</definition>
+        <argsstring>(const std::pair&lt; size_t, size_t &gt; &amp;rhs)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const std::pair&lt; size_t, size_t &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the contains relationship with a start end pair Does the region contain the start end pair? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="97" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1aedbd4cac0fc5318e612af3db76f19541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::contains</definition>
+        <argsstring>(const size_t rhs_start, const size_t rhs_end)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const size_t</type>
+          <declname>rhs_start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>rhs_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the contains relationship with start and end coordinates Does the region contain the interval between start and end? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="106" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a39b10cf9d7ba8073da42e2cb95072bff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::contains</definition>
+        <argsstring>(const size_t point)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const size_t</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the contains relationship with a single point Does the region contain the point coordinate? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="115" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a1f98da632e768077c967d63819cefedd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::overlaps</definition>
+        <argsstring>(const SimpleRegion &amp;rhs)</argsstring>
+        <name>overlaps</name>
+        <param>
+          <type>const <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the overlap relationship with a region Does the region overlap the rhs region? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="124" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="124" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a0caf8d9707b7b0b29555e8bafd32ed47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::overlaps</definition>
+        <argsstring>(const std::pair&lt; size_t, size_t &gt; &amp;rhs)</argsstring>
+        <name>overlaps</name>
+        <param>
+          <type>const std::pair&lt; size_t, size_t &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the overlap relationship with a start end pair Does the region overlap the start end pair? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="138" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a087f24f509cc26164a99e8509b720b28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimpleRegion::overlaps</definition>
+        <argsstring>(const size_t rhs_start, const size_t rhs_end)</argsstring>
+        <name>overlaps</name>
+        <param>
+          <type>const size_t</type>
+          <declname>rhs_start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>rhs_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests the overlap relationship with start and end coordinates Does the region overlap the interval defines by start and end? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="152" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="152" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a7c0d4f68409075dba1de716a328e9079" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::getStart</definition>
+        <argsstring>()</argsstring>
+        <name>getStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>accessor for start coordinate returns the interval&apos;s start coordinate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="166" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1afb4924be3627dedec850a3ada174b083" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::getEnd</definition>
+        <argsstring>()</argsstring>
+        <name>getEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>accessor for end coordinate returns the interval&apos;s end coordinate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="174" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleRegion_1a1014d259fc8c94088b866be2d57835bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SimpleRegion::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>accessor for the id returns the interval&apos;s id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="181" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A Region class to be used with <ref refid="classNCList" kindref="compound">NCList</ref> This class is used to represent region and genome data. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="207">
+        <label>GenomicRegion</label>
+        <link refid="classGenomicRegion"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>SimpleRegion</label>
+        <link refid="classSimpleRegion"/>
+      </node>
+    </inheritancegraph>
+    <location file="ggtk/SimpleRegion.hpp" line="31" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="31" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classSimpleRegion_1aaf09baf8cd5cce7f8ad7083fd0b47e78" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>_end</name></member>
+      <member refid="classSimpleRegion_1a397f3c8897d30259081e41ef9346745b" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>_id</name></member>
+      <member refid="classSimpleRegion_1a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>_start</name></member>
+      <member refid="classSimpleRegion_1aa0f04be989b3fd8726b60ea8af05408e" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1a71f1e66b268298559e319a39125b20e1" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1aedbd4cac0fc5318e612af3db76f19541" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1a39b10cf9d7ba8073da42e2cb95072bff" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1ab3e6068e293f2b8f0da920d8feb1f12b" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>distance</name></member>
+      <member refid="classSimpleRegion_1afb4924be3627dedec850a3ada174b083" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>getEnd</name></member>
+      <member refid="classSimpleRegion_1a1014d259fc8c94088b866be2d57835bc" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>getId</name></member>
+      <member refid="classSimpleRegion_1a7c0d4f68409075dba1de716a328e9079" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>getStart</name></member>
+      <member refid="classSimpleRegion_1a3175b332ee5cbe1d6c83986666c481d0" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>midpoint</name></member>
+      <member refid="classSimpleRegion_1a1f98da632e768077c967d63819cefedd" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a0caf8d9707b7b0b29555e8bafd32ed47" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a087f24f509cc26164a99e8509b720b28" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a3f3502f62398e26fb88ea7b90ff7d3b8" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>SimpleRegion</name></member>
+      <member refid="classSimpleRegion_1a5432bba56f93741e76de989ccde3ecd5" prot="public" virt="non-virtual"><scope>SimpleRegion</scope><name>SimpleRegion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

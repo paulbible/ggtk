@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classMICASharedInformation" kind="class" language="C++" prot="public">
+    <compoundname>MICASharedInformation</compoundname>
+    <basecompoundref refid="classSharedInformationInterface" prot="public" virt="non-virtual">SharedInformationInterface</basecompoundref>
+    <includes refid="MICASharedInformation_8hpp" local="no">ggtk/MICASharedInformation.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMICASharedInformation_1aa955b45eae3064b744d8c04ee5fc8dec" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* MICASharedInformation::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="127" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMICASharedInformation_1ad4f8eb8e83518c81c9f27ba92490a945" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap MICASharedInformation::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="128" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMICASharedInformation_1a6f377d93f091f1b03511d4e107a0b54b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MICASharedInformation::MICASharedInformation</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>MICASharedInformation</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classMICASharedInformation" kindref="compound">MICASharedInformation</ref> class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="40" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double MICASharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1a76e8858eb598442b86b0fd3be1c519e7">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the shared infromation between two concepts. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the shared information between two concepts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="49" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="49" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double MICASharedInformation::sharedInformation</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>sharedInformation</name>
+        <reimplements refid="classSharedInformationInterface_1aba102c0e44fbc098baef6074f1eb37b6">sharedInformation</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the shared information of a single terms,or information content. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method privdes a mechanism for returing a term&apos;s infromation content. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="80" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double MICASharedInformation::maxInformationContent</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>maxInformationContent</name>
+        <reimplements refid="classSharedInformationInterface_1a7356ba99509458777972ce0f00ebd999">maxInformationContent</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for returning the maximum information content for a term. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method provides the absolute max information content within a corpus for normalization purposes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="92" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="92" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool MICASharedInformation::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <reimplements refid="classSharedInformationInterface_1a3f056cf6a40eea8c1669108087dcd5c8">hasTerm</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if a term can be found. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the term can be found in the current map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="113" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool MICASharedInformation::isSameOntology</definition>
+        <argsstring>(const std::string &amp;termA, const std::string &amp;termB)</argsstring>
+        <name>isSameOntology</name>
+        <reimplements refid="classSharedInformationInterface_1a607463b9736df9c4b8ec3ba9fe41c19d">isSameOntology</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termA</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>termB</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for determining if the two terms are of like ontologies. </para>        </briefdescription>
+        <detaileddescription>
+<para>Determine if two terms are of the same ontology. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/MICASharedInformation.hpp" line="121" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate shared infromation as the most informative common ancestor (MICA) </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates shared infromation using the most informative common ancestor (MICA). The MICA is a term that is also known as the minimum subsumer.</para><para>This shared information method forms the basis of 3 inforamtion content measures put forward by Lord el al.</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="143">
+        <label>MICASharedInformation</label>
+        <link refid="classMICASharedInformation"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="145">
+        <label>MICASharedInformation</label>
+        <link refid="classMICASharedInformation"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>SharedInformationInterface</label>
+        <link refid="classSharedInformationInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/MICASharedInformation.hpp" line="33" column="1" bodyfile="ggtk/MICASharedInformation.hpp" bodystart="33" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classMICASharedInformation_1aa955b45eae3064b744d8c04ee5fc8dec" prot="private" virt="non-virtual"><scope>MICASharedInformation</scope><name>_goGraph</name></member>
+      <member refid="classMICASharedInformation_1ad4f8eb8e83518c81c9f27ba92490a945" prot="private" virt="non-virtual"><scope>MICASharedInformation</scope><name>_icMap</name></member>
+      <member refid="classMICASharedInformation_1a0fece18244af62c7e2258b0af418413a" prot="public" virt="virtual"><scope>MICASharedInformation</scope><name>hasTerm</name></member>
+      <member refid="classMICASharedInformation_1a9cea24c8af57f17248ffe1f12fea9545" prot="public" virt="virtual"><scope>MICASharedInformation</scope><name>isSameOntology</name></member>
+      <member refid="classMICASharedInformation_1ae88d4a76721e03bbb418eb870fa18ff1" prot="public" virt="virtual"><scope>MICASharedInformation</scope><name>maxInformationContent</name></member>
+      <member refid="classMICASharedInformation_1a6f377d93f091f1b03511d4e107a0b54b" prot="public" virt="non-virtual"><scope>MICASharedInformation</scope><name>MICASharedInformation</name></member>
+      <member refid="classMICASharedInformation_1a8f6329c173f2cd17caf1a65043e8e249" prot="public" virt="virtual"><scope>MICASharedInformation</scope><name>sharedInformation</name></member>
+      <member refid="classMICASharedInformation_1a230adc046f7f4bbab190aaef25d15a37" prot="public" virt="virtual"><scope>MICASharedInformation</scope><name>sharedInformation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

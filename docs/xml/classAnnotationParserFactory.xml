@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAnnotationParserFactory" kind="class" language="C++" prot="public">
+    <compoundname>AnnotationParserFactory</compoundname>
+    <includes refid="AnnotationParserFactory_8hpp" local="no">ggtk/AnnotationParserFactory.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAnnotationParserFactory_1a07fc2c734e9aee34d43649f85b7dda13" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AnnotationParserFactory::_names</definition>
+        <argsstring></argsstring>
+        <name>_names</name>
+        <briefdescription>
+<para>A list of strings which correspond to parsers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This list holds the names of parsers added to the factory. These are the keys used to query a parser. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="31" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAnnotationParserFactory_1a45c749f5e05c0ca63ebd72fee7d4b3bb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> * &gt;</type>
+        <definition>std::vector&lt;AnnotationParserInterface*&gt; AnnotationParserFactory::_parsers</definition>
+        <argsstring></argsstring>
+        <name>_parsers</name>
+        <briefdescription>
+<para>A list of parsers which are currently held in the factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This list holds the instances of <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> that can be returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="37" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAnnotationParserFactory_1a47c5872562fa644ef911a7fc864ce26b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnnotationParserFactory::AnnotationParserFactory</definition>
+        <argsstring>()</argsstring>
+        <name>AnnotationParserFactory</name>
+        <briefdescription>
+<para>Class constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes the private lists to empty vectors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="45" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationParserFactory_1ac1afbb3d17ddf112831c333c992cec5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnnotationParserFactory::~AnnotationParserFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~AnnotationParserFactory</name>
+        <briefdescription>
+<para>Class destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor clears the names vector. It also deletes each parser pointer explicitly. Finally it clears the parser list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="56" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationParserFactory_1a86063c95063074e551e9900b9c5ffe87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnnotationParserFactory::addParser</definition>
+        <argsstring>(std::string name, AnnotationParserInterface *parser)</argsstring>
+        <name>addParser</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> *</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>A Method to add a parser to the factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds a pointer to a parser and a string to the factory. This string is used to query the appropriate parser. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="74" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classAnnotationParserFactory_1a746a9345db03fb484b446111ceb43fe9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> *</type>
+        <definition>AnnotationParserInterface* AnnotationParserFactory::getParser</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>getParser</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>A method to return a parser based on a query string. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the string supplied matches one of the keys in the database, the appropriate parser will be returned. If not, a NULL pointer is returned. The calling environment must check against NULL before using. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AnnotationParserFactory.hpp" line="86" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="86" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to return an instance of <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> at runtime based on an argument. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class holds a set of parser classes. When queried using the getParser method, it returns an instance of <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> based on a string key. This allows parsers to be easily added to a larger system and switched at runtime. </para>    </detaileddescription>
+    <location file="ggtk/AnnotationParserFactory.hpp" line="23" column="1" bodyfile="ggtk/AnnotationParserFactory.hpp" bodystart="23" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classAnnotationParserFactory_1a07fc2c734e9aee34d43649f85b7dda13" prot="private" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>_names</name></member>
+      <member refid="classAnnotationParserFactory_1a45c749f5e05c0ca63ebd72fee7d4b3bb" prot="private" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>_parsers</name></member>
+      <member refid="classAnnotationParserFactory_1a86063c95063074e551e9900b9c5ffe87" prot="public" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>addParser</name></member>
+      <member refid="classAnnotationParserFactory_1a47c5872562fa644ef911a7fc864ce26b" prot="public" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>AnnotationParserFactory</name></member>
+      <member refid="classAnnotationParserFactory_1a746a9345db03fb484b446111ceb43fe9" prot="public" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>getParser</name></member>
+      <member refid="classAnnotationParserFactory_1ac1afbb3d17ddf112831c333c992cec5b" prot="public" virt="non-virtual"><scope>AnnotationParserFactory</scope><name>~AnnotationParserFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

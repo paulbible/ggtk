@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classPrecomputedMatrixTermSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>PrecomputedMatrixTermSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="PrecomputedMatrixTermSimilarity_8hpp" local="no">ggtk/PrecomputedMatrixTermSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPrecomputedMatrixTermSimilarity_1af6f9ae4d45dba71865cec37a8367da72" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; std::string, std::size_t &gt;</type>
+        <definition>boost::unordered_map&lt;std::string, std::size_t&gt; PrecomputedMatrixTermSimilarity::_termToIndex</definition>
+        <argsstring></argsstring>
+        <name>_termToIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="139" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPrecomputedMatrixTermSimilarity_1a8303bb8b4c37c08549775c9f2ccdb89d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; PrecomputedMatrixTermSimilarity::_matrix</definition>
+        <argsstring></argsstring>
+        <name>_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="140" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPrecomputedMatrixTermSimilarity_1a7b41f4870cea2125e2997fb5eea5f6fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PrecomputedMatrixTermSimilarity::PrecomputedMatrixTermSimilarity</definition>
+        <argsstring>(std::string matrix_file)</argsstring>
+        <name>PrecomputedMatrixTermSimilarity</name>
+        <param>
+          <type>std::string</type>
+          <declname>matrix_file</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Parses a matrix file and creates the <ref refid="classPrecomputedMatrixTermSimilarity" kindref="compound">PrecomputedMatrixTermSimilarity</ref> object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="30" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="30" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrecomputedMatrixTermSimilarity_1accf2925db5da35cc040f2016813ed631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double PrecomputedMatrixTermSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using a precomputed similarity matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the term similarity as defined by the matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="92" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrecomputedMatrixTermSimilarity_1ac2057bd30526a99741c06f8b629b6ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double PrecomputedMatrixTermSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using a precomputed similarity matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the similarity scaled between 0 and 1 [0,1] inclusive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="106" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classPrecomputedMatrixTermSimilarity_1a341a4dba0540acd9087091aa63c51220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; PrecomputedMatrixTermSimilarity::projectTermSet</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;terms)</argsstring>
+        <name>projectTermSet</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+<para>This method projects a set of terms into it the kernel space. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method treats the term similarity matrix as a kernel and projects a set of terms into it. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="116" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="116" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPrecomputedMatrixTermSimilarity_1a8f24569f2631a8aaec6f982068299872" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PrecomputedMatrixTermSimilarity::hasTerm</definition>
+        <argsstring>(const std::string &amp;term)</argsstring>
+        <name>hasTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="135" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="135" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate similarity between go terms for 2 sets using a precomuted term similarity matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class allows the term similarity calculation to be decoupled from term set (gene) similarity measure that use them. Term similarity is loaded from a matrix file. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="179">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="178">
+        <label>PrecomputedMatrixTermSimilarity</label>
+        <link refid="classPrecomputedMatrixTermSimilarity"/>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="181">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="180">
+        <label>PrecomputedMatrixTermSimilarity</label>
+        <link refid="classPrecomputedMatrixTermSimilarity"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/PrecomputedMatrixTermSimilarity.hpp" line="22" column="1" bodyfile="ggtk/PrecomputedMatrixTermSimilarity.hpp" bodystart="22" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classPrecomputedMatrixTermSimilarity_1a8303bb8b4c37c08549775c9f2ccdb89d" prot="private" virt="non-virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>_matrix</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1af6f9ae4d45dba71865cec37a8367da72" prot="private" virt="non-virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>_termToIndex</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1ac2057bd30526a99741c06f8b629b6ae2" prot="public" virt="virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1accf2925db5da35cc040f2016813ed631" prot="public" virt="virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1a8f24569f2631a8aaec6f982068299872" prot="private" virt="non-virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>hasTerm</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1a7b41f4870cea2125e2997fb5eea5f6fb" prot="public" virt="non-virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>PrecomputedMatrixTermSimilarity</name></member>
+      <member refid="classPrecomputedMatrixTermSimilarity_1a341a4dba0540acd9087091aa63c51220" prot="public" virt="non-virtual"><scope>PrecomputedMatrixTermSimilarity</scope><name>projectTermSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

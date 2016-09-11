@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structGoGraph_1_1VertexProps" kind="struct" language="C++" prot="public">
+    <compoundname>GoGraph::VertexProps</compoundname>
+    <includes refid="GoGraph_8hpp" local="no">ggtk/GoGraph.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GoGraph::VertexProps::termId</definition>
+        <argsstring></argsstring>
+        <name>termId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The term id of the go term, the <ref refid="namespaceGO" kindref="compound">GO</ref> accession, <ref refid="namespaceGO" kindref="compound">GO</ref>:########. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="42" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGO_1a5ae335887b5cf40a9ef3045be9247fc3" kindref="member">GO::Onto</ref></type>
+        <definition>GO::Onto GoGraph::VertexProps::ontology</definition>
+        <argsstring></argsstring>
+        <name>ontology</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The ontology of the <ref refid="namespaceGO" kindref="compound">GO</ref> term, BP, MF, CC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="48" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGoGraph_1_1VertexProps_1ad60aea44237ee479a4c8768226778590" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoGraph::VertexProps::~VertexProps</definition>
+        <argsstring>()</argsstring>
+        <name>~VertexProps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desctructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoGraph.hpp" line="53" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Vertex Property object. </para>    </briefdescription>
+    <detaileddescription>
+<para>This struct represent the data needed by each vertex. Boost provides constant time access to these members by querying them using the vertex and graph objects (graphVar[vertex].termId ... etc.). </para>    </detaileddescription>
+    <location file="ggtk/GoGraph.hpp" line="38" column="1" bodyfile="ggtk/GoGraph.hpp" bodystart="38" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structGoGraph_1_1VertexProps_1a353631ac064161688da0fb4f458dfcb8" prot="public" virt="non-virtual"><scope>GoGraph::VertexProps</scope><name>ontology</name></member>
+      <member refid="structGoGraph_1_1VertexProps_1a9f3a3e42785bc040b0b827b1ffd3f039" prot="public" virt="non-virtual"><scope>GoGraph::VertexProps</scope><name>termId</name></member>
+      <member refid="structGoGraph_1_1VertexProps_1ad60aea44237ee479a4c8768226778590" prot="public" virt="non-virtual"><scope>GoGraph::VertexProps</scope><name>~VertexProps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

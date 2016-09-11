@@ -1,0 +1,115 @@
+\hypertarget{classEntrezGene2GoAnnotationParser}{}\section{Entrez\+Gene2\+Go\+Annotation\+Parser Class Reference}
+\label{classEntrezGene2GoAnnotationParser}\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+
+
+A class to parse an Entrez gene2go annotation file.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Entrez\+Gene2\+Go\+Annotation\+Parser.\+hpp$>$}
+
+Inheritance diagram for Entrez\+Gene2\+Go\+Annotation\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEntrezGene2GoAnnotationParser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnnotationData}{Annotation\+Data} $\ast$ \hyperlink{classEntrezGene2GoAnnotationParser_aca2333f3cc25595c1283c3b290dd45cf}{parse\+Annotation\+File} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em An interface method for parsing an annotation file. \end{DoxyCompactList}\item 
+bool \hyperlink{classEntrezGene2GoAnnotationParser_a5e418ff06c4e2619c0723b828a8578cd}{is\+File\+Good} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em A method for checking if a file exists and is formatted correctly. \end{DoxyCompactList}\item 
+\hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} $\ast$ \hyperlink{classEntrezGene2GoAnnotationParser_a56aaa3a03354c6894fed75accfa2637b}{clone} ()
+\begin{DoxyCompactList}\small\item\em An interface method for creating a new instance of the parser. \end{DoxyCompactList}\item 
+\hyperlink{classEntrezGene2GoAnnotationParser_ad9fad52a10bd767ff769ee4d953bda3d}{Entrez\+Gene2\+Go\+Annotation\+Parser} (\hyperlink{classEvidencePolicyInterface}{Evidence\+Policy\+Interface} $\ast$policy)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor method for creating the parser with a policy. \end{DoxyCompactList}\item 
+\hyperlink{classEntrezGene2GoAnnotationParser_a50b77b0894f628df64ab3104a99e7f3c}{Entrez\+Gene2\+Go\+Annotation\+Parser} ()
+\begin{DoxyCompactList}\small\item\em A default constructor method for creating the parser with the default policy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to parse an Entrez gene2go annotation file. 
+
+This class will read an Entrez gene2go file and add those annoations to an \hyperlink{classAnnotationData}{Annotation\+Data} class. Available at\+: \href{ftp://ftp.ncbi.nih.gov/gene/DATA/}{\tt ftp\+://ftp.\+ncbi.\+nih.\+gov/gene/\+D\+A\+T\+A/}
+
+Implements \hyperlink{classAnnotationParserInterface}{Annotation\+Parser\+Interface} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Entrez\+Gene2\+Go\+Annotation\+Parser(\+Evidence\+Policy\+Interface $\ast$policy)}{EntrezGene2GoAnnotationParser(EvidencePolicyInterface *policy)}}]{\setlength{\rightskip}{0pt plus 5cm}Entrez\+Gene2\+Go\+Annotation\+Parser\+::\+Entrez\+Gene2\+Go\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Evidence\+Policy\+Interface} $\ast$}]{policy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEntrezGene2GoAnnotationParser_ad9fad52a10bd767ff769ee4d953bda3d}{}\label{classEntrezGene2GoAnnotationParser_ad9fad52a10bd767ff769ee4d953bda3d}
+
+
+A parameterized constructor method for creating the parser with a policy. 
+
+Creates the parser \index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{Entrez\+Gene2\+Go\+Annotation\+Parser()}{EntrezGene2GoAnnotationParser()}}]{\setlength{\rightskip}{0pt plus 5cm}Entrez\+Gene2\+Go\+Annotation\+Parser\+::\+Entrez\+Gene2\+Go\+Annotation\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEntrezGene2GoAnnotationParser_a50b77b0894f628df64ab3104a99e7f3c}{}\label{classEntrezGene2GoAnnotationParser_a50b77b0894f628df64ab3104a99e7f3c}
+
+
+A default constructor method for creating the parser with the default policy. 
+
+Creates the parser with the default evidence policy, everything is allowed. 
+
+\subsection{Member Function Documentation}
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!clone@{clone}}
+\index{clone@{clone}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{clone()}{clone()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Annotation\+Parser\+Interface}$\ast$ Entrez\+Gene2\+Go\+Annotation\+Parser\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classEntrezGene2GoAnnotationParser_a56aaa3a03354c6894fed75accfa2637b}{}\label{classEntrezGene2GoAnnotationParser_a56aaa3a03354c6894fed75accfa2637b}
+
+
+An interface method for creating a new instance of the parser. 
+
+This method returns a new instance of the class. This method partially fulfills the interface contract. 
+
+Implements \hyperlink{classAnnotationParserInterface_a966edeb9aaaa5e94f4c1436afc731a24}{Annotation\+Parser\+Interface}.
+
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!is\+File\+Good@{is\+File\+Good}}
+\index{is\+File\+Good@{is\+File\+Good}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{is\+File\+Good(const std\+::string \&file\+Name)}{isFileGood(const std::string &fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Entrez\+Gene2\+Go\+Annotation\+Parser\+::is\+File\+Good (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classEntrezGene2GoAnnotationParser_a5e418ff06c4e2619c0723b828a8578cd}{}\label{classEntrezGene2GoAnnotationParser_a5e418ff06c4e2619c0723b828a8578cd}
+
+
+A method for checking if a file exists and is formatted correctly. 
+
+This function checks that the file exists and its format can be recognized. 
+
+Implements \hyperlink{classAnnotationParserInterface_a5848b37ca77d78213c87cc5aefebf030}{Annotation\+Parser\+Interface}.
+
+\index{Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}!parse\+Annotation\+File@{parse\+Annotation\+File}}
+\index{parse\+Annotation\+File@{parse\+Annotation\+File}!Entrez\+Gene2\+Go\+Annotation\+Parser@{Entrez\+Gene2\+Go\+Annotation\+Parser}}
+\subsubsection[{\texorpdfstring{parse\+Annotation\+File(std\+::string filename)}{parseAnnotationFile(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Annotation\+Data}$\ast$ Entrez\+Gene2\+Go\+Annotation\+Parser\+::parse\+Annotation\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classEntrezGene2GoAnnotationParser_aca2333f3cc25595c1283c3b290dd45cf}{}\label{classEntrezGene2GoAnnotationParser_aca2333f3cc25595c1283c3b290dd45cf}
+
+
+An interface method for parsing an annotation file. 
+
+This method takes a filename as in put and returns a pointer to an \hyperlink{classAnnotationData}{Annotation\+Data} object. This method fulfills part of the interface contract. 
+
+Implements \hyperlink{classAnnotationParserInterface_a1d5cfb902f088a9cf96fdc6b1e5529ab}{Annotation\+Parser\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Entrez\+Gene2\+Go\+Annotation\+Parser.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,289 @@
+\hypertarget{classTermProbabilityMap}{}\section{Term\+Probability\+Map Class Reference}
+\label{classTermProbabilityMap}\index{Term\+Probability\+Map@{Term\+Probability\+Map}}
+
+
+A class to calculate the probability of a \hyperlink{namespaceGO}{GO} term.  
+
+
+
+
+{\ttfamily \#include $<$ggtk/\+Term\+Probability\+Map.\+hpp$>$}
+
+Inheritance diagram for Term\+Probability\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTermProbabilityMap}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classTermProbabilityMap_1_1dfs__cumulative__annotations__visitor}{dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}
+\begin{DoxyCompactList}\small\item\em Depth first search boost visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTermProbabilityMap_a44b7437af56eecc461983a70b5e0e5f3}{Term\+Probability\+Map} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$graph, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$anno\+Data)
+\begin{DoxyCompactList}\small\item\em A parameterized constructor. \end{DoxyCompactList}\item 
+\hyperlink{classTermProbabilityMap_a3bddf2e9aa81dd0e1f40aa1dc4ff2713}{Term\+Probability\+Map} ()
+\begin{DoxyCompactList}\small\item\em A default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classTermProbabilityMap_a9e409916fa3c75fb7900a3f83d7c55b9}{$\sim$\+Term\+Probability\+Map} ()
+\begin{DoxyCompactList}\small\item\em A default desctructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classTermProbabilityMap_ae960575c867ee0954b6beee3c10b280d}{get\+Values} ()
+\begin{DoxyCompactList}\small\item\em Accessor for probablities vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classTermProbabilityMap_a207545a1c1703d8be20fc0847156f2cc}{get\+Keys} ()
+\begin{DoxyCompactList}\small\item\em Function to return all the keys in the map. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermProbabilityMap_a14087f464ea33bf0247d6034e9ee2e9f}{has\+Term} (const std\+::string \&test\+Term)
+\begin{DoxyCompactList}\small\item\em Method to test if the id exists in the map. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classTermProbabilityMap_adfeb9edb261c639cceae797cceb88d35}{bad\+Id\+Value} ()
+\begin{DoxyCompactList}\small\item\em Return a default value for a term that does not exist. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_acd472ef3c011377e6b9bdb01a60e84e1}{operator\mbox{[}$\,$\mbox{]}} (std\+::string term\+Id)
+\begin{DoxyCompactList}\small\item\em Overloaded \mbox{[}\mbox{]} bracket operator to mimic Map. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_a4ef29e6a25cb1b781c5a0b05b9b82ebf}{get\+Value} (std\+::string term\+Id)
+\begin{DoxyCompactList}\small\item\em Mapping function to return the value mapped by key. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_aa0cbaada30cf4fe8f7bf55acdfcbe7aa}{get\+Min\+BP} ()
+\begin{DoxyCompactList}\small\item\em Get the specific minimum probability for BP. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_af23163c0122e7745b6581eda91a72809}{get\+Min\+MF} ()
+\begin{DoxyCompactList}\small\item\em Get the specific minimum probability for MF. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_aa74c8e413fa1cce4d6528ccfad32efad}{get\+Min\+CC} ()
+\begin{DoxyCompactList}\small\item\em Get the specific minimum probability for CC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::unordered\+\_\+map$<$ std\+::string, std\+::size\+\_\+t $>$ \hyperlink{classTermProbabilityMap_af94f810eb87afe5c7bddb14d19735e86}{\+\_\+name\+To\+Index}
+\begin{DoxyCompactList}\small\item\em A private map that returns the index of a term. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classTermProbabilityMap_a1cbbbb63e115e69359e2d4fb65be6227}{\+\_\+probabilities}
+\begin{DoxyCompactList}\small\item\em A private list of term probabilities. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermProbabilityMap_a7cb93d7a55e3002065838f16a1f8c282}{\+\_\+is\+Single\+Anno\+Min}
+\begin{DoxyCompactList}\small\item\em A flag designating the minimum policy. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_a1bdc8b5b73d1686abbaf1f5dd698d500}{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites Biological Process. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_aedd2c51ffd41664ef2dd714bde4aa5fa}{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites for Biological Process. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_a9c240b82c9cec69d2d777b3a95d81891}{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites Molecular Function. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_adfbe0bba2e300c32941c7d83f8e3febb}{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites for Molecular Function. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_a8c16045a4e738758ff5510c04da20290}{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites Cellular Component. \end{DoxyCompactList}\item 
+double \hyperlink{classTermProbabilityMap_a5a665cb81ee03caca135a9a36cd544a1}{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+\begin{DoxyCompactList}\small\item\em Normalization factor for calculating normalized simialrites for Cellular Component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to calculate the probability of a \hyperlink{namespaceGO}{GO} term. 
+
+This class provides a map that returns the probability of \hyperlink{namespaceGO}{GO} term. This class is used by Information Content methods to determine the prior probability of a term give an instance of \hyperlink{classAnnotationData}{Annotation\+Data}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Probability\+Map(\+Go\+Graph $\ast$graph, Annotation\+Data $\ast$anno\+Data)}{TermProbabilityMap(GoGraph *graph, AnnotationData *annoData)}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Probability\+Map\+::\+Term\+Probability\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{graph, }
+\item[{{\bf Annotation\+Data} $\ast$}]{anno\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a44b7437af56eecc461983a70b5e0e5f3}{}\label{classTermProbabilityMap_a44b7437af56eecc461983a70b5e0e5f3}
+
+
+A parameterized constructor. 
+
+This constructor takes pointers to \hyperlink{classGoGraph}{Go\+Graph} and \hyperlink{classAnnotationData}{Annotation\+Data} objects. Only the parameterized construtor is allowed to ensure these objects are created with valid parameters. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{Term\+Probability\+Map()}{TermProbabilityMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Probability\+Map\+::\+Term\+Probability\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a3bddf2e9aa81dd0e1f40aa1dc4ff2713}{}\label{classTermProbabilityMap_a3bddf2e9aa81dd0e1f40aa1dc4ff2713}
+
+
+A default constructor. 
+
+This constructor initialized the storage structures. Should not be used. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!````~Term\+Probability\+Map@{$\sim$\+Term\+Probability\+Map}}
+\index{````~Term\+Probability\+Map@{$\sim$\+Term\+Probability\+Map}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{$\sim$\+Term\+Probability\+Map()}{~TermProbabilityMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Term\+Probability\+Map\+::$\sim$\+Term\+Probability\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a9e409916fa3c75fb7900a3f83d7c55b9}{}\label{classTermProbabilityMap_a9e409916fa3c75fb7900a3f83d7c55b9}
+
+
+A default desctructor. 
+
+This desctructor clears the containters 
+
+\subsection{Member Function Documentation}
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!bad\+Id\+Value@{bad\+Id\+Value}}
+\index{bad\+Id\+Value@{bad\+Id\+Value}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{bad\+Id\+Value()}{badIdValue()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Term\+Probability\+Map\+::bad\+Id\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classTermProbabilityMap_adfeb9edb261c639cceae797cceb88d35}{}\label{classTermProbabilityMap_adfeb9edb261c639cceae797cceb88d35}
+
+
+Return a default value for a term that does not exist. 
+
+A value to return if the term is not found (does not exist in the map). Returns probability 1 or certanty. This may not be the ideal behavior. 
+
+Reimplemented in \hyperlink{classTermInformationContentMap_a082c021a27478403aad9bb99c0e975e6}{Term\+Information\+Content\+Map}.
+
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Keys@{get\+Keys}}
+\index{get\+Keys@{get\+Keys}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Keys()}{getKeys()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Term\+Probability\+Map\+::get\+Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a207545a1c1703d8be20fc0847156f2cc}{}\label{classTermProbabilityMap_a207545a1c1703d8be20fc0847156f2cc}
+
+
+Function to return all the keys in the map. 
+
+Returns all valid keys in the map. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Min\+BP@{get\+Min\+BP}}
+\index{get\+Min\+BP@{get\+Min\+BP}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Min\+B\+P()}{getMinBP()}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::get\+Min\+BP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_aa0cbaada30cf4fe8f7bf55acdfcbe7aa}{}\label{classTermProbabilityMap_aa0cbaada30cf4fe8f7bf55acdfcbe7aa}
+
+
+Get the specific minimum probability for BP. 
+
+This function returns the minimum probablity for the bp ontology \index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Min\+CC@{get\+Min\+CC}}
+\index{get\+Min\+CC@{get\+Min\+CC}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Min\+C\+C()}{getMinCC()}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::get\+Min\+CC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_aa74c8e413fa1cce4d6528ccfad32efad}{}\label{classTermProbabilityMap_aa74c8e413fa1cce4d6528ccfad32efad}
+
+
+Get the specific minimum probability for CC. 
+
+This function returns the minimum probablity for the cc ontology \index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Min\+MF@{get\+Min\+MF}}
+\index{get\+Min\+MF@{get\+Min\+MF}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Min\+M\+F()}{getMinMF()}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::get\+Min\+MF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_af23163c0122e7745b6581eda91a72809}{}\label{classTermProbabilityMap_af23163c0122e7745b6581eda91a72809}
+
+
+Get the specific minimum probability for MF. 
+
+This function returns the minimum probablity for the mf ontology \index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Value(std\+::string term\+Id)}{getValue(std::string termId)}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::get\+Value (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a4ef29e6a25cb1b781c5a0b05b9b82ebf}{}\label{classTermProbabilityMap_a4ef29e6a25cb1b781c5a0b05b9b82ebf}
+
+
+Mapping function to return the value mapped by key. 
+
+Get the value mapped by the given key. A specified function for the \mbox{[}\mbox{]} operator \index{Term\+Probability\+Map@{Term\+Probability\+Map}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{get\+Values()}{getValues()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ Term\+Probability\+Map\+::get\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_ae960575c867ee0954b6beee3c10b280d}{}\label{classTermProbabilityMap_ae960575c867ee0954b6beee3c10b280d}
+
+
+Accessor for probablities vector. 
+
+Get the vector of values \index{Term\+Probability\+Map@{Term\+Probability\+Map}!has\+Term@{has\+Term}}
+\index{has\+Term@{has\+Term}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{has\+Term(const std\+::string \&test\+Term)}{hasTerm(const std::string &testTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\+Probability\+Map\+::has\+Term (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{test\+Term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_a14087f464ea33bf0247d6034e9ee2e9f}{}\label{classTermProbabilityMap_a14087f464ea33bf0247d6034e9ee2e9f}
+
+
+Method to test if the id exists in the map. 
+
+Return true the id is found, false if not \index{Term\+Probability\+Map@{Term\+Probability\+Map}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{operator[](std\+::string term\+Id)}{operator[](std::string termId)}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{term\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classTermProbabilityMap_acd472ef3c011377e6b9bdb01a60e84e1}{}\label{classTermProbabilityMap_acd472ef3c011377e6b9bdb01a60e84e1}
+
+
+Overloaded \mbox{[}\mbox{]} bracket operator to mimic Map. 
+
+This defines a bracket operator to access the data inside of the map. This is done to mimic the behavior of the map class 
+
+\subsection{Member Data Documentation}
+\index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}}
+\index{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}{_bp_normalization_min_1anno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a1bdc8b5b73d1686abbaf1f5dd698d500}{}\label{classTermProbabilityMap_a1bdc8b5b73d1686abbaf1f5dd698d500}
+
+
+Normalization factor for calculating normalized simialrites Biological Process. 
+
+Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}}
+\index{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}{_bp_normalization_min_minAnno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_aedd2c51ffd41664ef2dd714bde4aa5fa}{}\label{classTermProbabilityMap_aedd2c51ffd41664ef2dd714bde4aa5fa}
+
+
+Normalization factor for calculating normalized simialrites for Biological Process. 
+
+Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}}
+\index{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}{_cc_normalization_min_1anno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a8c16045a4e738758ff5510c04da20290}{}\label{classTermProbabilityMap_a8c16045a4e738758ff5510c04da20290}
+
+
+Normalization factor for calculating normalized simialrites Cellular Component. 
+
+Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}}
+\index{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}{_cc_normalization_min_minAnno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a5a665cb81ee03caca135a9a36cd544a1}{}\label{classTermProbabilityMap_a5a665cb81ee03caca135a9a36cd544a1}
+
+
+Normalization factor for calculating normalized simialrites for Cellular Component. 
+
+Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+is\+Single\+Anno\+Min@{\+\_\+is\+Single\+Anno\+Min}}
+\index{\+\_\+is\+Single\+Anno\+Min@{\+\_\+is\+Single\+Anno\+Min}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+is\+Single\+Anno\+Min}{_isSingleAnnoMin}}]{\setlength{\rightskip}{0pt plus 5cm}bool Term\+Probability\+Map\+::\+\_\+is\+Single\+Anno\+Min\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a7cb93d7a55e3002065838f16a1f8c282}{}\label{classTermProbabilityMap_a7cb93d7a55e3002065838f16a1f8c282}
+
+
+A flag designating the minimum policy. 
+
+This flag will be true and return true is single annotation probability is used, false otherwise. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}}
+\index{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno@{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}{_mf_normalization_min_1anno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a9c240b82c9cec69d2d777b3a95d81891}{}\label{classTermProbabilityMap_a9c240b82c9cec69d2d777b3a95d81891}
+
+
+Normalization factor for calculating normalized simialrites Molecular Function. 
+
+Normalization factor representing the minimum probability using a single annotation devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}}
+\index{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno@{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}{_mf_normalization_min_minAnno}}]{\setlength{\rightskip}{0pt plus 5cm}double Term\+Probability\+Map\+::\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_adfbe0bba2e300c32941c7d83f8e3febb}{}\label{classTermProbabilityMap_adfbe0bba2e300c32941c7d83f8e3febb}
+
+
+Normalization factor for calculating normalized simialrites for Molecular Function. 
+
+Normalization factor representing the minimum probability using the number of annotations of the least probable term devided by the cumulative annotations. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+name\+To\+Index@{\+\_\+name\+To\+Index}}
+\index{\+\_\+name\+To\+Index@{\+\_\+name\+To\+Index}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+name\+To\+Index}{_nameToIndex}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+map$<$std\+::string,std\+::size\+\_\+t$>$ Term\+Probability\+Map\+::\+\_\+name\+To\+Index\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_af94f810eb87afe5c7bddb14d19735e86}{}\label{classTermProbabilityMap_af94f810eb87afe5c7bddb14d19735e86}
+
+
+A private map that returns the index of a term. 
+
+This map takes string term ids and returns the index for annotation count access. \index{Term\+Probability\+Map@{Term\+Probability\+Map}!\+\_\+probabilities@{\+\_\+probabilities}}
+\index{\+\_\+probabilities@{\+\_\+probabilities}!Term\+Probability\+Map@{Term\+Probability\+Map}}
+\subsubsection[{\texorpdfstring{\+\_\+probabilities}{_probabilities}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ Term\+Probability\+Map\+::\+\_\+probabilities\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classTermProbabilityMap_a1cbbbb63e115e69359e2d4fb65be6227}{}\label{classTermProbabilityMap_a1cbbbb63e115e69359e2d4fb65be6227}
+
+
+A private list of term probabilities. 
+
+This vector of doubles holds the prior probability for each term 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ggtk/Term\+Probability\+Map.\+hpp\end{DoxyCompactItemize}

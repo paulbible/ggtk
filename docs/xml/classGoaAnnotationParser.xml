@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGoaAnnotationParser" kind="class" language="C++" prot="public">
+    <compoundname>GoaAnnotationParser</compoundname>
+    <basecompoundref refid="classAnnotationParserInterface" prot="public" virt="non-virtual">AnnotationParserInterface</basecompoundref>
+    <derivedcompoundref refid="classGafAnnotationParser" prot="public" virt="non-virtual">GafAnnotationParser</derivedcompoundref>
+    <derivedcompoundref refid="classMgiAnnotationParser" prot="public" virt="non-virtual">MgiAnnotationParser</derivedcompoundref>
+    <includes refid="GoaAnnotationParser_8hpp" local="no">ggtk/GoaAnnotationParser.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGoaAnnotationParser_1a0f1ca353c96c7c25d890cc13c760136b" prot="private" static="no" mutable="no">
+        <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+        <definition>EvidencePolicyInterface* GoaAnnotationParser::_policy</definition>
+        <argsstring></argsstring>
+        <name>_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="227" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+        <definition>AnnotationData* GoaAnnotationParser::parseAnnotationFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>parseAnnotationFile</name>
+        <reimplements refid="classAnnotationParserInterface_1a1d5cfb902f088a9cf96fdc6b1e5529ab">parseAnnotationFile</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>An interface method for parsing an annotation file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method takes a filename as in put and returns a pointer to an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object. This method fulfills part of the interface contract. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="36" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="36" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool GoaAnnotationParser::isFileGood</definition>
+        <argsstring>(const std::string &amp;fileName)</argsstring>
+        <name>isFileGood</name>
+        <reimplements refid="classAnnotationParserInterface_1a5848b37ca77d78213c87cc5aefebf030">isFileGood</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A method for checking if a file exists and is formatted correctly. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks that the file exists and its format can be recognized. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="118" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="118" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoaAnnotationParser_1a3f415dfbfd2bce5143eef60532ebadea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoaAnnotationParser::GoaAnnotationParser</definition>
+        <argsstring>(EvidencePolicyInterface *policy)</argsstring>
+        <name>GoaAnnotationParser</name>
+        <param>
+          <type><ref refid="classEvidencePolicyInterface" kindref="compound">EvidencePolicyInterface</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor method for creating the parser with a policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="203" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoaAnnotationParser_1aa06b6ba409d97fe794ae1a7606864e65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoaAnnotationParser::GoaAnnotationParser</definition>
+        <argsstring>()</argsstring>
+        <name>GoaAnnotationParser</name>
+        <briefdescription>
+<para>A default constructor method for creating the parser with a policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the parser </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="212" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> *</type>
+        <definition>AnnotationParserInterface* GoaAnnotationParser::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="classAnnotationParserInterface_1a966edeb9aaaa5e94f4c1436afc731a24">clone</reimplements>
+        <briefdescription>
+<para>An interface method for creating a new instance of the parser. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns a new instance of the class. This method partially fulfills the interface contract. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoaAnnotationParser.hpp" line="222" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="222" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to parse a Uniprot Gene Ontolog Annotation (GOA) file. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class will read a GOA file an return an <ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> object pointer. Defined at: <ulink url="http://www.ebi.ac.uk/GOA">http://www.ebi.ac.uk/GOA</ulink></para><para>Implements <ref refid="classAnnotationParserInterface" kindref="compound">AnnotationParserInterface</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>MgiAnnotationParser</label>
+        <link refid="classMgiAnnotationParser"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="108">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>GafAnnotationParser</label>
+        <link refid="classGafAnnotationParser"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="113">
+        <label>AnnotationParserInterface</label>
+        <link refid="classAnnotationParserInterface"/>
+      </node>
+      <node id="112">
+        <label>GoaAnnotationParser</label>
+        <link refid="classGoaAnnotationParser"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/GoaAnnotationParser.hpp" line="27" column="1" bodyfile="ggtk/GoaAnnotationParser.hpp" bodystart="27" bodyend="229"/>
+    <listofallmembers>
+      <member refid="classGoaAnnotationParser_1a0f1ca353c96c7c25d890cc13c760136b" prot="private" virt="non-virtual"><scope>GoaAnnotationParser</scope><name>_policy</name></member>
+      <member refid="classGoaAnnotationParser_1a266297bb5a107572c98515f692684369" prot="public" virt="virtual"><scope>GoaAnnotationParser</scope><name>clone</name></member>
+      <member refid="classGoaAnnotationParser_1a3f415dfbfd2bce5143eef60532ebadea" prot="public" virt="non-virtual"><scope>GoaAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa06b6ba409d97fe794ae1a7606864e65" prot="public" virt="non-virtual"><scope>GoaAnnotationParser</scope><name>GoaAnnotationParser</name></member>
+      <member refid="classGoaAnnotationParser_1aa8093812131c34de52b084ff2b02abbf" prot="public" virt="virtual"><scope>GoaAnnotationParser</scope><name>isFileGood</name></member>
+      <member refid="classGoaAnnotationParser_1a2973e2dcfecea10e09da13ed0ab27dff" prot="public" virt="virtual"><scope>GoaAnnotationParser</scope><name>parseAnnotationFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

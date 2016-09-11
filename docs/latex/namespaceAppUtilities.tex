@@ -1,0 +1,115 @@
+\hypertarget{namespaceAppUtilities}{}\section{App\+Utilities Namespace Reference}
+\label{namespaceAppUtilities}\index{App\+Utilities@{App\+Utilities}}
+
+
+The \hyperlink{namespaceAppUtilities}{App\+Utilities} namespace provides utility functions that facilitate application creation and integration.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceAppUtilities_acc1e4029d959cb721fdd93a4fbc652df}{parse\+Param\+File} (const std\+::string fname, std\+::map$<$ std\+::string, std\+::string $>$ \&param\+Map)
+\begin{DoxyCompactList}\small\item\em A method for parsing a parameter file. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceAppUtilities_ad5b236fff03294eed3f7d7d325a0120c}{check\+Params} (const std\+::map$<$ std\+::string, std\+::string $>$ \&param\+Map, const std\+::vector$<$ std\+::string $>$ \&params, std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em A method for checking the parameters loaded in a map. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceAppUtilities_aa7a8c715b9f34da9c0ef8e743683dfc5}{param\+List} (std\+::string param\+\_\+str)
+\begin{DoxyCompactList}\small\item\em A method for extracting a comma separated string of paramters. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceAppUtilities_a122dbc37274a53baca0ad1f152869180}{parse\+Simple\+File} (const std\+::string fname)
+\begin{DoxyCompactList}\small\item\em A method for parsing a simple single column file. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceAppUtilities_a2abdcb1877526f1093efe85c4f751aa9}{split\+Take} (const std\+::string \&name, const char \&sep, const size\+\_\+t \&n)
+\begin{DoxyCompactList}\small\item\em A method to split a string and return the nth element. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceAppUtilities_a3ea1b7b49b7925da941433b1f604b95a}{set\+To\+Vec} (const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&uset)
+\begin{DoxyCompactList}\small\item\em A method to split a string and return the nth element. \end{DoxyCompactList}\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{namespaceAppUtilities_a80196823944aee9964b4803f902e4805}{vec\+To\+Set} (const std\+::vector$<$ std\+::string $>$ \&vec)
+\begin{DoxyCompactList}\small\item\em A method to split a string and return the nth element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{namespaceAppUtilities}{App\+Utilities} namespace provides utility functions that facilitate application creation and integration. 
+
+This namespace defines free functions that aid in constructing applicaitons using this tool kit. The main use for this name space is to construct and check the validity of paramaters used as intput to \hyperlink{namespaceGO}{GO} applicaitons and to provide certain container converstion (vector -\/$>$ set etc.). 
+
+\subsection{Function Documentation}
+\index{App\+Utilities@{App\+Utilities}!check\+Params@{check\+Params}}
+\index{check\+Params@{check\+Params}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{check\+Params(const std\+::map$<$ std\+::string, std\+::string $>$ \&param\+Map, const std\+::vector$<$ std\+::string $>$ \&params, std\+::string \&message)}{checkParams(const std::map< std::string, std::string > &paramMap, const std::vector< std::string > &params, std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}bool App\+Utilities\+::check\+Params (
+\begin{DoxyParamCaption}
+\item[{const std\+::map$<$ std\+::string, std\+::string $>$ \&}]{param\+Map, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{params, }
+\item[{std\+::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_ad5b236fff03294eed3f7d7d325a0120c}{}\label{namespaceAppUtilities_ad5b236fff03294eed3f7d7d325a0120c}
+
+
+A method for checking the parameters loaded in a map. 
+
+This method checks the existence of specific keys in the parameter map. If all specified keys exist, true is returned. Otherwise false is returned and specific error messages are placed int the message parameter. \index{App\+Utilities@{App\+Utilities}!param\+List@{param\+List}}
+\index{param\+List@{param\+List}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{param\+List(std\+::string param\+\_\+str)}{paramList(std::string param_str)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ App\+Utilities\+::param\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{param\+\_\+str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_aa7a8c715b9f34da9c0ef8e743683dfc5}{}\label{namespaceAppUtilities_aa7a8c715b9f34da9c0ef8e743683dfc5}
+
+
+A method for extracting a comma separated string of paramters. 
+
+This method checks provides an easy method for inputing a list of madatory params to be checked with check\+Params \index{App\+Utilities@{App\+Utilities}!parse\+Param\+File@{parse\+Param\+File}}
+\index{parse\+Param\+File@{parse\+Param\+File}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{parse\+Param\+File(const std\+::string fname, std\+::map$<$ std\+::string, std\+::string $>$ \&param\+Map)}{parseParamFile(const std::string fname, std::map< std::string, std::string > &paramMap)}}]{\setlength{\rightskip}{0pt plus 5cm}void App\+Utilities\+::parse\+Param\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{fname, }
+\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{param\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_acc1e4029d959cb721fdd93a4fbc652df}{}\label{namespaceAppUtilities_acc1e4029d959cb721fdd93a4fbc652df}
+
+
+A method for parsing a parameter file. 
+
+This method parses a tab delimited parameter file and returns a map of parameters. \index{App\+Utilities@{App\+Utilities}!parse\+Simple\+File@{parse\+Simple\+File}}
+\index{parse\+Simple\+File@{parse\+Simple\+File}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{parse\+Simple\+File(const std\+::string fname)}{parseSimpleFile(const std::string fname)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ App\+Utilities\+::parse\+Simple\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{fname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_a122dbc37274a53baca0ad1f152869180}{}\label{namespaceAppUtilities_a122dbc37274a53baca0ad1f152869180}
+
+
+A method for parsing a simple single column file. 
+
+This method parses a simple single column file. \index{App\+Utilities@{App\+Utilities}!set\+To\+Vec@{set\+To\+Vec}}
+\index{set\+To\+Vec@{set\+To\+Vec}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{set\+To\+Vec(const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&uset)}{setToVec(const boost::unordered_set< std::string > &uset)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ App\+Utilities\+::set\+To\+Vec (
+\begin{DoxyParamCaption}
+\item[{const boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{uset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_a3ea1b7b49b7925da941433b1f604b95a}{}\label{namespaceAppUtilities_a3ea1b7b49b7925da941433b1f604b95a}
+
+
+A method to split a string and return the nth element. 
+
+This method splits a string by the given character and return the element at n. \index{App\+Utilities@{App\+Utilities}!split\+Take@{split\+Take}}
+\index{split\+Take@{split\+Take}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{split\+Take(const std\+::string \&name, const char \&sep, const size\+\_\+t \&n)}{splitTake(const std::string &name, const char &sep, const size_t &n)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string App\+Utilities\+::split\+Take (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const char \&}]{sep, }
+\item[{const size\+\_\+t \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_a2abdcb1877526f1093efe85c4f751aa9}{}\label{namespaceAppUtilities_a2abdcb1877526f1093efe85c4f751aa9}
+
+
+A method to split a string and return the nth element. 
+
+This method splits a string by the given character and return the element at n. \index{App\+Utilities@{App\+Utilities}!vec\+To\+Set@{vec\+To\+Set}}
+\index{vec\+To\+Set@{vec\+To\+Set}!App\+Utilities@{App\+Utilities}}
+\subsubsection[{\texorpdfstring{vec\+To\+Set(const std\+::vector$<$ std\+::string $>$ \&vec)}{vecToSet(const std::vector< std::string > &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$ std\+::string $>$ App\+Utilities\+::vec\+To\+Set (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceAppUtilities_a80196823944aee9964b4803f902e4805}{}\label{namespaceAppUtilities_a80196823944aee9964b4803f902e4805}
+
+
+A method to split a string and return the nth element. 
+
+This method splits a string by the given character and return the element at n. 

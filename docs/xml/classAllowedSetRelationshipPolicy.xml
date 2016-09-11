@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAllowedSetRelationshipPolicy" kind="class" language="C++" prot="public">
+    <compoundname>AllowedSetRelationshipPolicy</compoundname>
+    <basecompoundref refid="classRelationshipPolicyInterface" prot="public" virt="non-virtual">RelationshipPolicyInterface</basecompoundref>
+    <includes refid="AllowedSetRelationshipPolicy_8hpp" local="no">ggtk/AllowedSetRelationshipPolicy.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllowedSetRelationshipPolicy_1a3fdf2e2efd90113d1ff22ea9396005ef" prot="private" static="no" mutable="no">
+        <type>boost::unordered_map&lt; <ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref>, bool &gt;</type>
+        <definition>boost::unordered_map&lt;GO::Relationship,bool&gt; AllowedSetRelationshipPolicy::_relationshipMap</definition>
+        <argsstring></argsstring>
+        <name>_relationshipMap</name>
+        <briefdescription>
+<para>a map of relationships to boo </para>        </briefdescription>
+        <detaileddescription>
+<para>maps a relationship to a bool. Boost unordered map give constant time find. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="86" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1aebffb7e69930219d89133625ff8936cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllowedSetRelationshipPolicy::AllowedSetRelationshipPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>AllowedSetRelationshipPolicy</name>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classAllowedSetRelationshipPolicy" kindref="compound">AllowedSetRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="30" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1a9cd20d2c44a96736c0a74b7e962dae04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AllowedSetRelationshipPolicy::AllowedSetRelationshipPolicy</definition>
+        <argsstring>(std::vector&lt; GO::Relationship &gt; relationships)</argsstring>
+        <name>AllowedSetRelationshipPolicy</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref> &gt;</type>
+          <declname>relationships</declname>
+        </param>
+        <briefdescription>
+<para>A parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creats the <ref refid="classAllowedSetRelationshipPolicy" kindref="compound">AllowedSetRelationshipPolicy</ref> using a list(vector) of relationships to allow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="38" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool AllowedSetRelationshipPolicy::isAllowed</definition>
+        <argsstring>(GO::Relationship relationship)</argsstring>
+        <name>isAllowed</name>
+        <reimplements refid="classRelationshipPolicyInterface_1ad28012b607e9cf848c791b6a907bb2cb">isAllowed</reimplements>
+        <param>
+          <type><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref></type>
+          <declname>relationship</declname>
+        </param>
+        <briefdescription>
+<para>a method to test if a relatinoship is allowed or not </para>        </briefdescription>
+        <detaileddescription>
+<para>tests if the relationship is allowed. Overridden to fulfill the <ref refid="classRelationshipPolicyInterface" kindref="compound">RelationshipPolicyInterface</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="49" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1a5da8f3fb718fba44354e56a4595968de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AllowedSetRelationshipPolicy::addRelationship</definition>
+        <argsstring>(GO::Relationship relationship)</argsstring>
+        <name>addRelationship</name>
+        <param>
+          <type><ref refid="namespaceGO_1aaa3905b2e000a8be411da8038827f993" kindref="member">GO::Relationship</ref></type>
+          <declname>relationship</declname>
+        </param>
+        <briefdescription>
+<para>a method to add a relationship to the set of relationships allowed </para>        </briefdescription>
+        <detaileddescription>
+<para>adds a relationship to the set of relationships allowed by setting its mapped value to true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="58" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1a013089769911f87f1d8513bc6006dbf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AllowedSetRelationshipPolicy::addRelationship</definition>
+        <argsstring>(const std::string &amp;relString)</argsstring>
+        <name>addRelationship</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>relString</declname>
+        </param>
+        <briefdescription>
+<para>a method to add a relationship to the set of relationships allowed </para>        </briefdescription>
+        <detaileddescription>
+<para>adds a relationship to the set of relationships allowed by setting its mapped value to true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="66" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllowedSetRelationshipPolicy_1a543f028def505d8df941a308ab315075" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AllowedSetRelationshipPolicy::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>a method to determine if the Policy is empty </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines if the Policy is empty </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="78" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to allow only a set of relationships. </para>    </briefdescription>
+    <detaileddescription>
+<para>A class to allow only certain relationships in the go graph. It uses a set of enums to restric the types of relationships considered in a graph. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>RelationshipPolicyInterface</label>
+        <link refid="classRelationshipPolicyInterface"/>
+      </node>
+      <node id="13">
+        <label>AllowedSetRelationshipPolicy</label>
+        <link refid="classAllowedSetRelationshipPolicy"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>RelationshipPolicyInterface</label>
+        <link refid="classRelationshipPolicyInterface"/>
+      </node>
+      <node id="15">
+        <label>AllowedSetRelationshipPolicy</label>
+        <link refid="classAllowedSetRelationshipPolicy"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/AllowedSetRelationshipPolicy.hpp" line="22" column="1" bodyfile="ggtk/AllowedSetRelationshipPolicy.hpp" bodystart="22" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classAllowedSetRelationshipPolicy_1a3fdf2e2efd90113d1ff22ea9396005ef" prot="private" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>_relationshipMap</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1a5da8f3fb718fba44354e56a4595968de" prot="public" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>addRelationship</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1a013089769911f87f1d8513bc6006dbf9" prot="public" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>addRelationship</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1aebffb7e69930219d89133625ff8936cf" prot="public" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>AllowedSetRelationshipPolicy</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1a9cd20d2c44a96736c0a74b7e962dae04" prot="public" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>AllowedSetRelationshipPolicy</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1ac7454bc649241219f076779330977f90" prot="public" virt="virtual"><scope>AllowedSetRelationshipPolicy</scope><name>isAllowed</name></member>
+      <member refid="classAllowedSetRelationshipPolicy_1a543f028def505d8df941a308ab315075" prot="public" virt="non-virtual"><scope>AllowedSetRelationshipPolicy</scope><name>isEmpty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

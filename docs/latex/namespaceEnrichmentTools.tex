@@ -1,0 +1,68 @@
+\hypertarget{namespaceEnrichmentTools}{}\section{Enrichment\+Tools Namespace Reference}
+\label{namespaceEnrichmentTools}\index{Enrichment\+Tools@{Enrichment\+Tools}}
+
+
+The \hyperlink{namespaceEnrichmentTools}{Enrichment\+Tools} namespace provides simple functions for calulating \hyperlink{namespaceGO}{GO} term enrichment.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{namespaceEnrichmentTools_a0e1b36171f7c26ceb065fe556b9d7067}{get\+Descendant\+Genes} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$data, const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A method for determining which genes are annotated with the given term or a child of that term. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceEnrichmentTools_a94a88459ae63a175a3461c3c26385601}{one\+Sided\+Raw\+Pvalue\+\_\+hyper} (size\+\_\+t sample, size\+\_\+t success, size\+\_\+t population, size\+\_\+t test\+\_\+value)
+\begin{DoxyCompactList}\small\item\em A method for calculating the result of a hypergeometic test. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceEnrichmentTools_a82aede901a0585f834f0e4a363dc6276}{enrichment\+Significance} (\hyperlink{classGoGraph}{Go\+Graph} $\ast$go, \hyperlink{classAnnotationData}{Annotation\+Data} $\ast$data, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&genes, const std\+::string \&term)
+\begin{DoxyCompactList}\small\item\em A method to calculate the enrichment of a specific term in a sample of genes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{namespaceEnrichmentTools}{Enrichment\+Tools} namespace provides simple functions for calulating \hyperlink{namespaceGO}{GO} term enrichment. 
+
+This namespace defines free functions that allow enrichment p-\/values to be calculated. These funcitons can serve as the foundation for more sophisticated enrichment anlayis. 
+
+\subsection{Function Documentation}
+\index{Enrichment\+Tools@{Enrichment\+Tools}!enrichment\+Significance@{enrichment\+Significance}}
+\index{enrichment\+Significance@{enrichment\+Significance}!Enrichment\+Tools@{Enrichment\+Tools}}
+\subsubsection[{\texorpdfstring{enrichment\+Significance(\+Go\+Graph $\ast$go, Annotation\+Data $\ast$data, boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&genes, const std\+::string \&term)}{enrichmentSignificance(GoGraph *go, AnnotationData *data, boost::unordered_set< std::string > &genes, const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}double Enrichment\+Tools\+::enrichment\+Significance (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go, }
+\item[{{\bf Annotation\+Data} $\ast$}]{data, }
+\item[{boost\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{genes, }
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceEnrichmentTools_a82aede901a0585f834f0e4a363dc6276}{}\label{namespaceEnrichmentTools_a82aede901a0585f834f0e4a363dc6276}
+
+
+A method to calculate the enrichment of a specific term in a sample of genes. 
+
+This method performs a hypergeometic test of enrichment for a term given a set of genes that serves as the sample. The population is taken as all genes in the annotation database. \index{Enrichment\+Tools@{Enrichment\+Tools}!get\+Descendant\+Genes@{get\+Descendant\+Genes}}
+\index{get\+Descendant\+Genes@{get\+Descendant\+Genes}!Enrichment\+Tools@{Enrichment\+Tools}}
+\subsubsection[{\texorpdfstring{get\+Descendant\+Genes(\+Go\+Graph $\ast$go, Annotation\+Data $\ast$data, const std\+::string \&term)}{getDescendantGenes(GoGraph *go, AnnotationData *data, const std::string &term)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::unordered\+\_\+set$<$std\+::string$>$ Enrichment\+Tools\+::get\+Descendant\+Genes (
+\begin{DoxyParamCaption}
+\item[{{\bf Go\+Graph} $\ast$}]{go, }
+\item[{{\bf Annotation\+Data} $\ast$}]{data, }
+\item[{const std\+::string \&}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceEnrichmentTools_a0e1b36171f7c26ceb065fe556b9d7067}{}\label{namespaceEnrichmentTools_a0e1b36171f7c26ceb065fe556b9d7067}
+
+
+A method for determining which genes are annotated with the given term or a child of that term. 
+
+This method calculates the set of the genes annotated with a given term or transatively with a child of that term. \index{Enrichment\+Tools@{Enrichment\+Tools}!one\+Sided\+Raw\+Pvalue\+\_\+hyper@{one\+Sided\+Raw\+Pvalue\+\_\+hyper}}
+\index{one\+Sided\+Raw\+Pvalue\+\_\+hyper@{one\+Sided\+Raw\+Pvalue\+\_\+hyper}!Enrichment\+Tools@{Enrichment\+Tools}}
+\subsubsection[{\texorpdfstring{one\+Sided\+Raw\+Pvalue\+\_\+hyper(size\+\_\+t sample, size\+\_\+t success, size\+\_\+t population, size\+\_\+t test\+\_\+value)}{oneSidedRawPvalue_hyper(size_t sample, size_t success, size_t population, size_t test_value)}}]{\setlength{\rightskip}{0pt plus 5cm}double Enrichment\+Tools\+::one\+Sided\+Raw\+Pvalue\+\_\+hyper (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{sample, }
+\item[{size\+\_\+t}]{success, }
+\item[{size\+\_\+t}]{population, }
+\item[{size\+\_\+t}]{test\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceEnrichmentTools_a94a88459ae63a175a3461c3c26385601}{}\label{namespaceEnrichmentTools_a94a88459ae63a175a3461c3c26385601}
+
+
+A method for calculating the result of a hypergeometic test. 
+
+This method calculates p-\/value of a hypergeometice test give 4 values. The sample size, n The population success K The the population size N The test value k
+
+Answers the question\+: "What is probability of seeing value of k or more successes in a sample of size n, given that the population of size N contains K total successes." 

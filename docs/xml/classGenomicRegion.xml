@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGenomicRegion" kind="class" language="C++" prot="public">
+    <compoundname>GenomicRegion</compoundname>
+    <basecompoundref refid="classSimpleRegion" prot="public" virt="non-virtual">SimpleRegion</basecompoundref>
+    <includes refid="SimpleRegion_8hpp" local="no">ggtk/SimpleRegion.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGenomicRegion_1a05a207966ea9e12b3bb580edb0569ab3" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char GenomicRegion::_chrom</definition>
+        <argsstring></argsstring>
+        <name>_chrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a character representing the chromosome </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="194" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenomicRegion_1abb827ad33bd08fcf106229c60bc20106" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GenomicRegion::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the name or accession of the region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="198" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenomicRegion_1af4697f90d465c81be52e9a12f498ca34" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GenomicRegion::_desc</definition>
+        <argsstring></argsstring>
+        <name>_desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a description for the region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="202" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGenomicRegion_1a48f916f38aad53815e187c28c211a615" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenomicRegion::GenomicRegion</definition>
+        <argsstring>(const std::string chrom, const size_t start, const size_t end, const size_t id, std::string name, std::string desc)</argsstring>
+        <name>GenomicRegion</name>
+        <param>
+          <type>const std::string</type>
+          <declname>chrom</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a parameterized constructor for the genomic region. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="206" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="206" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenomicRegion_1a249cece2f76a9085d276ee5970ccfa59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenomicRegion::GenomicRegion</definition>
+        <argsstring>(const size_t id, const size_t start, const size_t end)</argsstring>
+        <name>GenomicRegion</name>
+        <param>
+          <type>const size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a simple parametrized constructor for the genomic region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="233" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="233" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenomicRegion_1a8ff9fe5618b932a1caccbd9072ddaaef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenomicRegion::GenomicRegion</definition>
+        <argsstring>()</argsstring>
+        <name>GenomicRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a default constructor for the genomic region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="242" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="242" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenomicRegion_1af370137d0f3498d1611d85d63571af35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GenomicRegion::getChrom</definition>
+        <argsstring>()</argsstring>
+        <name>getChrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns the chromosome for the genomic region </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="250" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="250" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenomicRegion_1a206d7c6c224c49b43166b4ad84f1a063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GenomicRegion::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>accessor for the genomic region&apos;s name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="271" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenomicRegion_1a3ce8ecbe3eb5af63e37720aea716ee1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GenomicRegion::getDesc</definition>
+        <argsstring>()</argsstring>
+        <name>getDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>accessor for the genomic region&apos;s description </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/SimpleRegion.hpp" line="277" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="277" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>EXPERIMENTAL: <ref refid="classGenomicRegion" kindref="compound">GenomicRegion</ref> class inheriting from <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> Adds a few vaibles to <ref refid="classSimpleRegion" kindref="compound">SimpleRegion</ref> for use in modeling genomic regions. This class is experimental and will be updated at some point in the future. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="100">
+        <label>GenomicRegion</label>
+        <link refid="classGenomicRegion"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>SimpleRegion</label>
+        <link refid="classSimpleRegion"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="102">
+        <label>GenomicRegion</label>
+        <link refid="classGenomicRegion"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>SimpleRegion</label>
+        <link refid="classSimpleRegion"/>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/SimpleRegion.hpp" line="190" column="1" bodyfile="ggtk/SimpleRegion.hpp" bodystart="190" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classGenomicRegion_1a05a207966ea9e12b3bb580edb0569ab3" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_chrom</name></member>
+      <member refid="classGenomicRegion_1af4697f90d465c81be52e9a12f498ca34" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_desc</name></member>
+      <member refid="classSimpleRegion_1aaf09baf8cd5cce7f8ad7083fd0b47e78" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_end</name></member>
+      <member refid="classSimpleRegion_1a397f3c8897d30259081e41ef9346745b" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_id</name></member>
+      <member refid="classGenomicRegion_1abb827ad33bd08fcf106229c60bc20106" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_name</name></member>
+      <member refid="classSimpleRegion_1a24ee6f4ef0fc3ba2bfe9bc9eb8dfca60" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>_start</name></member>
+      <member refid="classSimpleRegion_1aa0f04be989b3fd8726b60ea8af05408e" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1a71f1e66b268298559e319a39125b20e1" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1aedbd4cac0fc5318e612af3db76f19541" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1a39b10cf9d7ba8073da42e2cb95072bff" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>contains</name></member>
+      <member refid="classSimpleRegion_1ab3e6068e293f2b8f0da920d8feb1f12b" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>distance</name></member>
+      <member refid="classGenomicRegion_1a48f916f38aad53815e187c28c211a615" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>GenomicRegion</name></member>
+      <member refid="classGenomicRegion_1a249cece2f76a9085d276ee5970ccfa59" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>GenomicRegion</name></member>
+      <member refid="classGenomicRegion_1a8ff9fe5618b932a1caccbd9072ddaaef" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>GenomicRegion</name></member>
+      <member refid="classGenomicRegion_1af370137d0f3498d1611d85d63571af35" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getChrom</name></member>
+      <member refid="classGenomicRegion_1a3ce8ecbe3eb5af63e37720aea716ee1f" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getDesc</name></member>
+      <member refid="classSimpleRegion_1afb4924be3627dedec850a3ada174b083" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getEnd</name></member>
+      <member refid="classSimpleRegion_1a1014d259fc8c94088b866be2d57835bc" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getId</name></member>
+      <member refid="classGenomicRegion_1a206d7c6c224c49b43166b4ad84f1a063" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getName</name></member>
+      <member refid="classSimpleRegion_1a7c0d4f68409075dba1de716a328e9079" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>getStart</name></member>
+      <member refid="classSimpleRegion_1a3175b332ee5cbe1d6c83986666c481d0" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>midpoint</name></member>
+      <member refid="classSimpleRegion_1a1f98da632e768077c967d63819cefedd" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a0caf8d9707b7b0b29555e8bafd32ed47" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a087f24f509cc26164a99e8509b720b28" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>overlaps</name></member>
+      <member refid="classSimpleRegion_1a3f3502f62398e26fb88ea7b90ff7d3b8" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>SimpleRegion</name></member>
+      <member refid="classSimpleRegion_1a5432bba56f93741e76de989ccde3ecd5" prot="public" virt="non-virtual"><scope>GenomicRegion</scope><name>SimpleRegion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

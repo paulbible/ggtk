@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceAppUtilities" kind="namespace" language="C++">
+    <compoundname>AppUtilities</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceAppUtilities_1acc1e4029d959cb721fdd93a4fbc652df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AppUtilities::parseParamFile</definition>
+        <argsstring>(const std::string fname, std::map&lt; std::string, std::string &gt; &amp;paramMap)</argsstring>
+        <name>parseParamFile</name>
+        <param>
+          <type>const std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::string &gt; &amp;</type>
+          <declname>paramMap</declname>
+        </param>
+        <briefdescription>
+<para>A method for parsing a parameter file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method parses a tab delimited parameter file and returns a map of parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="30" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="30" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1ad5b236fff03294eed3f7d7d325a0120c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AppUtilities::checkParams</definition>
+        <argsstring>(const std::map&lt; std::string, std::string &gt; &amp;paramMap, const std::vector&lt; std::string &gt; &amp;params, std::string &amp;message)</argsstring>
+        <name>checkParams</name>
+        <param>
+          <type>const std::map&lt; std::string, std::string &gt; &amp;</type>
+          <declname>paramMap</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>A method for checking the parameters loaded in a map. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method checks the existence of specific keys in the parameter map. If all specified keys exist, true is returned. Otherwise false is returned and specific error messages are placed int the message parameter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="60" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1aa7a8c715b9f34da9c0ef8e743683dfc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AppUtilities::paramList</definition>
+        <argsstring>(std::string param_str)</argsstring>
+        <name>paramList</name>
+        <param>
+          <type>std::string</type>
+          <declname>param_str</declname>
+        </param>
+        <briefdescription>
+<para>A method for extracting a comma separated string of paramters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method checks provides an easy method for inputing a list of madatory params to be checked with checkParams </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="79" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="79" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1a122dbc37274a53baca0ad1f152869180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; AppUtilities::parseSimpleFile</definition>
+        <argsstring>(const std::string fname)</argsstring>
+        <name>parseSimpleFile</name>
+        <param>
+          <type>const std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>A method for parsing a simple single column file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method parses a simple single column file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="98" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1a2abdcb1877526f1093efe85c4f751aa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string AppUtilities::splitTake</definition>
+        <argsstring>(const std::string &amp;name, const char &amp;sep, const size_t &amp;n)</argsstring>
+        <name>splitTake</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>sep</declname>
+        </param>
+        <param>
+          <type>const size_t &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>A method to split a string and return the nth element. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method splits a string by the given character and return the element at n. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="116" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="116" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1a3ea1b7b49b7925da941433b1f604b95a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; AppUtilities::setToVec</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;uset)</argsstring>
+        <name>setToVec</name>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>uset</declname>
+        </param>
+        <briefdescription>
+<para>A method to split a string and return the nth element. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method splits a string by the given character and return the element at n. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="144" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="144" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceAppUtilities_1a80196823944aee9964b4803f902e4805" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::unordered_set&lt; std::string &gt;</type>
+        <definition>boost::unordered_set&lt; std::string &gt; AppUtilities::vecToSet</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;vec)</argsstring>
+        <name>vecToSet</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>A method to split a string and return the nth element. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method splits a string by the given character and return the element at n. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/AppUtilities.hpp" line="159" column="1" bodyfile="ggtk/AppUtilities.hpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceAppUtilities" kindref="compound">AppUtilities</ref> namespace provides utility functions that facilitate application creation and integration. </para>    </briefdescription>
+    <detaileddescription>
+<para>This namespace defines free functions that aid in constructing applicaitons using this tool kit. The main use for this name space is to construct and check the validity of paramaters used as intput to <ref refid="namespaceGO" kindref="compound">GO</ref> applicaitons and to provide certain container converstion (vector -&gt; set etc.). </para>    </detaileddescription>
+    <location file="ggtk/AppUtilities.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

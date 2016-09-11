@@ -1,0 +1,180 @@
+\hypertarget{namespaceGO}{}\section{GO Namespace Reference}
+\label{namespaceGO}\index{GO@{GO}}
+
+
+\hyperlink{namespaceGO}{GO} namespaces.  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{Onto} \{ {\bfseries BP} =0, 
+{\bfseries MF} =1, 
+{\bfseries CC} =2, 
+{\bfseries O\+N\+T\+O\+\_\+\+E\+R\+R\+OR} =3
+ \}\begin{DoxyCompactList}\small\item\em Ontology enum type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{Evidence\+Code} \{ \\*
+{\bfseries E\+XP} =0, 
+{\bfseries I\+DA} =1, 
+{\bfseries I\+PI} =2, 
+{\bfseries I\+MP} =3, 
+\\*
+{\bfseries I\+GI} =4, 
+{\bfseries I\+EP} =5, 
+{\bfseries I\+SS} =6, 
+{\bfseries I\+SO} =7, 
+\\*
+{\bfseries I\+SA} =8, 
+{\bfseries I\+SM} =9, 
+{\bfseries I\+GC} =10, 
+{\bfseries I\+BA} =11, 
+\\*
+{\bfseries I\+BD} =12, 
+{\bfseries I\+KR} =13, 
+{\bfseries I\+RD} =14, 
+{\bfseries R\+CA} =15, 
+\\*
+{\bfseries T\+AS} =16, 
+{\bfseries N\+AS} =17, 
+{\bfseries IC} =18, 
+{\bfseries ND} =19, 
+\\*
+{\bfseries I\+EA} =20, 
+{\bfseries NR} =21, 
+{\bfseries E\+C\+O\+D\+E\+\_\+\+E\+R\+R\+OR} =22
+ \}\begin{DoxyCompactList}\small\item\em Evcidence Code enum type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{Relationship} \{ \\*
+{\bfseries I\+S\+\_\+A} =0, 
+{\bfseries P\+A\+R\+T\+\_\+\+OF} =1, 
+{\bfseries R\+E\+G\+U\+L\+A\+T\+ES} =2, 
+{\bfseries P\+O\+S\+I\+T\+I\+V\+E\+L\+Y\+\_\+\+R\+E\+G\+U\+L\+A\+T\+ES} =3, 
+\\*
+{\bfseries N\+E\+G\+A\+T\+I\+V\+E\+L\+Y\+\_\+\+R\+E\+G\+U\+L\+A\+T\+ES} =4, 
+{\bfseries R\+E\+L\+\_\+\+E\+R\+R\+OR} =5
+ \}\begin{DoxyCompactList}\small\item\em Relationship codes enum. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{namespaceGO_a01b8a816fd68f54681d8ea9b8f9e6dea}{get\+Root\+Term\+BP} ()\hypertarget{namespaceGO_a01b8a816fd68f54681d8ea9b8f9e6dea}{}\label{namespaceGO_a01b8a816fd68f54681d8ea9b8f9e6dea}
+
+\begin{DoxyCompactList}\small\item\em function that returns strings representing the root ontology term biological\+\_\+process \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceGO_ab312ff138d3e84313829ceafcf38b4a8}{get\+Root\+Term\+MF} ()\hypertarget{namespaceGO_ab312ff138d3e84313829ceafcf38b4a8}{}\label{namespaceGO_ab312ff138d3e84313829ceafcf38b4a8}
+
+\begin{DoxyCompactList}\small\item\em function that returns strings representing the root ontology term molecular\+\_\+function \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceGO_a8d9026b41aa1cb1aa042b17a86c45903}{get\+Root\+Term\+CC} ()\hypertarget{namespaceGO_a8d9026b41aa1cb1aa042b17a86c45903}{}\label{namespaceGO_a8d9026b41aa1cb1aa042b17a86c45903}
+
+\begin{DoxyCompactList}\small\item\em function that returns strings representing the root ontology term cellular\+\_\+component \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{Onto} \hyperlink{namespaceGO_a27850aa3de798d067cc60a03a8552fae}{ontology\+String\+To\+Code} (std\+::string code)
+\begin{DoxyCompactList}\small\item\em A method for returning the ontology code based on string. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceGO_adf5775fc9cf071de5a920e7634a12f40}{ontology\+To\+String} (const \hyperlink{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{Onto} \&o)
+\begin{DoxyCompactList}\small\item\em A method for returning a human readable string from the ontology code. \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{Evidence\+Code} \hyperlink{namespaceGO_a4403262f174622b96e89612c02e46532}{evidence\+String\+To\+Code} (std\+::string code)
+\begin{DoxyCompactList}\small\item\em A method for converting evidence code strings to enums. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceGO_a11b7264a995616db04a0170821310ef8}{evidence\+To\+String} (const \hyperlink{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{Evidence\+Code} \&evidence)
+\begin{DoxyCompactList}\small\item\em A method for returning a human readable string from an evidence code. \end{DoxyCompactList}\item 
+\hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{Relationship} \hyperlink{namespaceGO_a6418070e75662d9f3531324cc0c99334}{relationship\+String\+To\+Code} (std\+::string code)
+\begin{DoxyCompactList}\small\item\em A method to convert relationship codes from string to enum. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceGO_a4621c38a5e5ed683f83bd0a9ca6e51ee}{relationship\+To\+String} (const \hyperlink{namespaceGO_aaa3905b2e000a8be411da8038827f993}{Relationship} \&relationship)
+\begin{DoxyCompactList}\small\item\em A method for returning a human readable string from a Relationship. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespaceGO}{GO} namespaces. 
+
+This namespace is a set of static variables related to go terms and relationships. 
+
+\subsection{Enumeration Type Documentation}
+\index{GO@{GO}!Evidence\+Code@{Evidence\+Code}}
+\index{Evidence\+Code@{Evidence\+Code}!GO@{GO}}
+\subsubsection[{\texorpdfstring{Evidence\+Code}{EvidenceCode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+O\+::\+Evidence\+Code}}\hypertarget{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}{}\label{namespaceGO_a4ce5387bbcdaec3648957c7903f2caf3}
+
+
+Evcidence Code enum type. 
+
+This enum defines a type for evidence codes. Defined at \href{http://www.geneontology.org/GO.evidence.shtml}{\tt http\+://www.\+geneontology.\+org/\+G\+O.\+evidence.\+shtml} \index{GO@{GO}!Onto@{Onto}}
+\index{Onto@{Onto}!GO@{GO}}
+\subsubsection[{\texorpdfstring{Onto}{Onto}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+O\+::\+Onto}}\hypertarget{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}{}\label{namespaceGO_a5ae335887b5cf40a9ef3045be9247fc3}
+
+
+Ontology enum type. 
+
+This enum defines a type for sub-\/ontologies. \index{GO@{GO}!Relationship@{Relationship}}
+\index{Relationship@{Relationship}!GO@{GO}}
+\subsubsection[{\texorpdfstring{Relationship}{Relationship}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+O\+::\+Relationship}}\hypertarget{namespaceGO_aaa3905b2e000a8be411da8038827f993}{}\label{namespaceGO_aaa3905b2e000a8be411da8038827f993}
+
+
+Relationship codes enum. 
+
+This enum represents the relationship codes for ontology edges. 
+
+\subsection{Function Documentation}
+\index{GO@{GO}!evidence\+String\+To\+Code@{evidence\+String\+To\+Code}}
+\index{evidence\+String\+To\+Code@{evidence\+String\+To\+Code}!GO@{GO}}
+\subsubsection[{\texorpdfstring{evidence\+String\+To\+Code(std\+::string code)}{evidenceStringToCode(std::string code)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Evidence\+Code} G\+O\+::evidence\+String\+To\+Code (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_a4403262f174622b96e89612c02e46532}{}\label{namespaceGO_a4403262f174622b96e89612c02e46532}
+
+
+A method for converting evidence code strings to enums. 
+
+This method takes a string representing the evidence code and converts it to an enum. \index{GO@{GO}!evidence\+To\+String@{evidence\+To\+String}}
+\index{evidence\+To\+String@{evidence\+To\+String}!GO@{GO}}
+\subsubsection[{\texorpdfstring{evidence\+To\+String(const Evidence\+Code \&evidence)}{evidenceToString(const EvidenceCode &evidence)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string G\+O\+::evidence\+To\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Evidence\+Code} \&}]{evidence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_a11b7264a995616db04a0170821310ef8}{}\label{namespaceGO_a11b7264a995616db04a0170821310ef8}
+
+
+A method for returning a human readable string from an evidence code. 
+
+This method takes an evidence code enum value and returns a string \index{GO@{GO}!ontology\+String\+To\+Code@{ontology\+String\+To\+Code}}
+\index{ontology\+String\+To\+Code@{ontology\+String\+To\+Code}!GO@{GO}}
+\subsubsection[{\texorpdfstring{ontology\+String\+To\+Code(std\+::string code)}{ontologyStringToCode(std::string code)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Onto} G\+O\+::ontology\+String\+To\+Code (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_a27850aa3de798d067cc60a03a8552fae}{}\label{namespaceGO_a27850aa3de798d067cc60a03a8552fae}
+
+
+A method for returning the ontology code based on string. 
+
+This method takes a string and returns the proper enum \index{GO@{GO}!ontology\+To\+String@{ontology\+To\+String}}
+\index{ontology\+To\+String@{ontology\+To\+String}!GO@{GO}}
+\subsubsection[{\texorpdfstring{ontology\+To\+String(const Onto \&o)}{ontologyToString(const Onto &o)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string G\+O\+::ontology\+To\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Onto} \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_adf5775fc9cf071de5a920e7634a12f40}{}\label{namespaceGO_adf5775fc9cf071de5a920e7634a12f40}
+
+
+A method for returning a human readable string from the ontology code. 
+
+This method takes an ontology enum value and returns a string \index{GO@{GO}!relationship\+String\+To\+Code@{relationship\+String\+To\+Code}}
+\index{relationship\+String\+To\+Code@{relationship\+String\+To\+Code}!GO@{GO}}
+\subsubsection[{\texorpdfstring{relationship\+String\+To\+Code(std\+::string code)}{relationshipStringToCode(std::string code)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Relationship} G\+O\+::relationship\+String\+To\+Code (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_a6418070e75662d9f3531324cc0c99334}{}\label{namespaceGO_a6418070e75662d9f3531324cc0c99334}
+
+
+A method to convert relationship codes from string to enum. 
+
+This method converts the string representation of a relationship to an enum. \index{GO@{GO}!relationship\+To\+String@{relationship\+To\+String}}
+\index{relationship\+To\+String@{relationship\+To\+String}!GO@{GO}}
+\subsubsection[{\texorpdfstring{relationship\+To\+String(const Relationship \&relationship)}{relationshipToString(const Relationship &relationship)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string G\+O\+::relationship\+To\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relationship} \&}]{relationship}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceGO_a4621c38a5e5ed683f83bd0a9ca6e51ee}{}\label{namespaceGO_a4621c38a5e5ed683f83bd0a9ca6e51ee}
+
+
+A method for returning a human readable string from a Relationship. 
+
+This method takes an evidence code enum pointer value and returns a string 

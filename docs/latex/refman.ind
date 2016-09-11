@@ -1,0 +1,967 @@
+\begin{theindex}
+
+  \item {\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+chrom}
+    \subitem {Genomic\+Region}, \hyperpage{59}
+  \item {\+\_\+containments}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{90}
+  \item {\+\_\+depths}
+    \subitem {Term\+Depth\+Map}, \hyperpage{110}
+  \item {\+\_\+desc}
+    \subitem {Genomic\+Region}, \hyperpage{59}
+  \item {\+\_\+end}
+    \subitem {Simple\+Region}, \hyperpage{103}
+  \item {\+\_\+gene\+To\+Gos}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+gene\+To\+Gos\+Evidence}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+genes}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+go\+Terms}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+go\+To\+Genes}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+go\+To\+Genes\+Evidence}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+id}
+    \subitem {Simple\+Region}, \hyperpage{103}
+  \item {\+\_\+is\+Single\+Anno\+Min}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+items}
+    \subitem {N\+C\+List}, \hyperpage{89}
+  \item {\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}
+    \subitem {Term\+Probability\+Map}, \hyperpage{116}
+  \item {\+\_\+name}
+    \subitem {Genomic\+Region}, \hyperpage{59}
+  \item {\+\_\+name\+To\+Index}
+    \subitem {Term\+Depth\+Map}, \hyperpage{110}
+    \subitem {Term\+Probability\+Map}, \hyperpage{116}
+  \item {\+\_\+probabilities}
+    \subitem {Term\+Probability\+Map}, \hyperpage{116}
+  \item {\+\_\+region}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{90}
+  \item {\+\_\+start}
+    \subitem {Simple\+Region}, \hyperpage{103}
+  \item {\+\_\+string\+To\+Gene}
+    \subitem {Annotation\+Data}, \hyperpage{35}
+  \item {\+\_\+string\+To\+Go}
+    \subitem {Annotation\+Data}, \hyperpage{36}
+  \item {$\sim$\+Annotation\+Data}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {$\sim$\+Annotation\+Parser\+Factory}
+    \subitem {Annotation\+Parser\+Factory}, \hyperpage{37}
+  \item {$\sim$\+Edge\+Props}
+    \subitem {Go\+Graph\+::\+Edge\+Props}, \hyperpage{48}
+  \item {$\sim$\+Go\+Graph}
+    \subitem {Go\+Graph}, \hyperpage{66}
+  \item {$\sim$\+Go\+Parser\+Factory}
+    \subitem {Go\+Parser\+Factory}, \hyperpage{72}
+  \item {$\sim$\+Term\+Depth\+Map}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+  \item {$\sim$\+Term\+Probability\+Map}
+    \subitem {Term\+Probability\+Map}, \hyperpage{113}
+  \item {$\sim$\+Vertex\+Props}
+    \subitem {Go\+Graph\+::\+Vertex\+Props}, \hyperpage{120}
+
+  \indexspace
+
+  \item {Accumulators}, \hyperpage{9}
+    \subitem {Covariance\+Accumulator}, \hyperpage{10}
+    \subitem {extract\+Covariance}, \hyperpage{11}
+    \subitem {extract\+Max}, \hyperpage{11}
+    \subitem {extract\+Mean}, \hyperpage{11}
+    \subitem {extract\+Min}, \hyperpage{11, 12}
+    \subitem {extract\+SD}, \hyperpage{12}
+    \subitem {extract\+Variance}, \hyperpage{12}
+    \subitem {Max\+Accumulator}, \hyperpage{10}
+    \subitem {Mean\+Accumulator}, \hyperpage{10}
+    \subitem {Min\+Accumulator}, \hyperpage{10}
+    \subitem {Simple\+Accumulator}, \hyperpage{10}
+    \subitem {Variance\+Accumulator}, \hyperpage{11}
+  \item {add\+Association}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {add\+Evidence}
+    \subitem {Allowed\+Set\+Evidence\+Policy}, \hyperpage{23}
+    \subitem {Disallowed\+Set\+Evidence\+Policy}, \hyperpage{47}
+  \item {add\+Genes\+For\+Go\+Term}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {add\+Parser}
+    \subitem {Annotation\+Parser\+Factory}, \hyperpage{37}
+    \subitem {Go\+Parser\+Factory}, \hyperpage{72}
+  \item {add\+Relationship}
+    \subitem {Allowed\+Set\+Relationship\+Policy}, \hyperpage{25}
+  \item {All\+Pairs\+Average\+Set\+Similarity}, \hyperpage{26}
+    \subitem {All\+Pairs\+Average\+Set\+Similarity}, \hyperpage{26}
+    \subitem {calculate\+Similarity}, \hyperpage{27}
+  \item {All\+Pairs\+Max\+Set\+Similarity}, \hyperpage{27}
+    \subitem {All\+Pairs\+Max\+Set\+Similarity}, \hyperpage{28}
+    \subitem {calculate\+Similarity}, \hyperpage{28}
+  \item {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{19}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+    \subitem {clone}, \hyperpage{20}
+    \subitem {is\+File\+Good}, \hyperpage{20}
+    \subitem {parse\+Go\+File}, \hyperpage{20}
+    \subitem {set\+Policy}, \hyperpage{20}
+    \subitem {split\+With}, \hyperpage{20}
+  \item {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{21}
+    \subitem {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{21}
+    \subitem {clone}, \hyperpage{22}
+    \subitem {is\+File\+Good}, \hyperpage{22}
+    \subitem {parse\+Go\+File}, \hyperpage{22}
+    \subitem {set\+Policy}, \hyperpage{22}
+  \item {Allowed\+Set\+Evidence\+Policy}, \hyperpage{22}
+    \subitem {add\+Evidence}, \hyperpage{23}
+    \subitem {Allowed\+Set\+Evidence\+Policy}, \hyperpage{23}
+    \subitem {is\+Allowed}, \hyperpage{24}
+    \subitem {is\+Empty}, \hyperpage{24}
+  \item {Allowed\+Set\+Relationship\+Policy}, \hyperpage{24}
+    \subitem {add\+Relationship}, \hyperpage{25}
+    \subitem {Allowed\+Set\+Relationship\+Policy}, \hyperpage{25}
+    \subitem {is\+Allowed}, \hyperpage{25}
+    \subitem {is\+Empty}, \hyperpage{25}
+  \item {Ancestor\+Mean\+Shared\+Information}, \hyperpage{28}
+    \subitem {Ancestor\+Mean\+Shared\+Information}, \hyperpage{29}
+    \subitem {has\+Term}, \hyperpage{29}
+    \subitem {is\+Same\+Ontology}, \hyperpage{29}
+    \subitem {max\+Information\+Content}, \hyperpage{29}
+    \subitem {shared\+Information}, \hyperpage{29, 30}
+  \item {Annotation\+Data}, \hyperpage{30}
+    \subitem {\+\_\+gene\+To\+Gos}, \hyperpage{35}
+    \subitem {\+\_\+gene\+To\+Gos\+Evidence}, \hyperpage{35}
+    \subitem {\+\_\+genes}, \hyperpage{35}
+    \subitem {\+\_\+go\+Terms}, \hyperpage{35}
+    \subitem {\+\_\+go\+To\+Genes}, \hyperpage{35}
+    \subitem {\+\_\+go\+To\+Genes\+Evidence}, \hyperpage{35}
+    \subitem {\+\_\+string\+To\+Gene}, \hyperpage{35}
+    \subitem {\+\_\+string\+To\+Go}, \hyperpage{36}
+    \subitem {$\sim$\+Annotation\+Data}, \hyperpage{32}
+    \subitem {add\+Association}, \hyperpage{32}
+    \subitem {add\+Genes\+For\+Go\+Term}, \hyperpage{32}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+    \subitem {get\+All\+Genes}, \hyperpage{32}
+    \subitem {get\+All\+Go\+Terms}, \hyperpage{32}
+    \subitem {get\+Genes\+Evidence\+For\+Go\+Term}, \hyperpage{32}
+    \subitem {get\+Genes\+For\+Go\+Term}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+Evidence\+For\+Gene}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+For\+Gene}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+For\+Gene\+BP}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+For\+Gene\+By\+Ontology}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+For\+Gene\+CC}, \hyperpage{33}
+    \subitem {get\+Go\+Terms\+For\+Gene\+MF}, \hyperpage{33}
+    \subitem {get\+Num\+Annotations\+For\+Gene}, \hyperpage{34}
+    \subitem {get\+Num\+Annotations\+For\+Go\+Term}, \hyperpage{34}
+    \subitem {get\+Num\+Genes}, \hyperpage{34}
+    \subitem {get\+Num\+Go\+Terms}, \hyperpage{34}
+    \subitem {get\+Ontology\+Terms}, \hyperpage{34}
+    \subitem {has\+Gene}, \hyperpage{34}
+    \subitem {has\+Go\+Term}, \hyperpage{34}
+  \item {Annotation\+Parser\+Factory}, \hyperpage{36}
+    \subitem {$\sim$\+Annotation\+Parser\+Factory}, \hyperpage{37}
+    \subitem {add\+Parser}, \hyperpage{37}
+    \subitem {Annotation\+Parser\+Factory}, \hyperpage{37}
+    \subitem {get\+Parser}, \hyperpage{37}
+  \item {Annotation\+Parser\+Interface}, \hyperpage{37}
+    \subitem {clone}, \hyperpage{38}
+    \subitem {is\+File\+Good}, \hyperpage{38}
+    \subitem {parse\+Annotation\+File}, \hyperpage{38}
+  \item {App\+Utilities}, \hyperpage{12}
+    \subitem {check\+Params}, \hyperpage{13}
+    \subitem {param\+List}, \hyperpage{13}
+    \subitem {parse\+Param\+File}, \hyperpage{13}
+    \subitem {parse\+Simple\+File}, \hyperpage{13}
+    \subitem {set\+To\+Vec}, \hyperpage{13}
+    \subitem {split\+Take}, \hyperpage{13}
+    \subitem {vec\+To\+Set}, \hyperpage{14}
+
+  \indexspace
+
+  \item {bad\+Id\+Value}
+    \subitem {Term\+Information\+Content\+Map}, \hyperpage{111}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {Best\+Match\+Average\+Set\+Similarity}, \hyperpage{39}
+    \subitem {Best\+Match\+Average\+Set\+Similarity}, \hyperpage{39}
+    \subitem {calculate\+Similarity}, \hyperpage{39}
+
+  \indexspace
+
+  \item {calculate\+Normalized\+Term\+Similarity}
+    \subitem {Jiang\+Conrath\+Similarity}, \hyperpage{76}
+    \subitem {Lin\+Similarity}, \hyperpage{78}
+    \subitem {Modular\+Jiang\+Conrath}, \hyperpage{82}
+    \subitem {Modular\+Lin}, \hyperpage{84}
+    \subitem {Modular\+Resnik}, \hyperpage{86}
+    \subitem {Pekar\+Staab\+Similarity}, \hyperpage{92}
+    \subitem {Precomputed\+Matrix\+Term\+Similarity}, \hyperpage{93}
+    \subitem {Relevance\+Similarity}, \hyperpage{97}
+    \subitem {Resnik\+Similarity}, \hyperpage{98}
+    \subitem {Term\+Similarity\+Interface}, \hyperpage{118}
+  \item {calculate\+Similarity}
+    \subitem {All\+Pairs\+Average\+Set\+Similarity}, \hyperpage{27}
+    \subitem {All\+Pairs\+Max\+Set\+Similarity}, \hyperpage{28}
+    \subitem {Best\+Match\+Average\+Set\+Similarity}, \hyperpage{39}
+    \subitem {Gentleman\+U\+I\+Similarity}, \hyperpage{60}
+    \subitem {Jaccard\+Set\+Similarity}, \hyperpage{75}
+    \subitem {Term\+Set\+Similarity\+Interface}, \hyperpage{117}
+  \item {calculate\+Term\+Similarity}
+    \subitem {Jiang\+Conrath\+Similarity}, \hyperpage{76}
+    \subitem {Lin\+Similarity}, \hyperpage{78}
+    \subitem {Modular\+Jiang\+Conrath}, \hyperpage{82}
+    \subitem {Modular\+Lin}, \hyperpage{84}
+    \subitem {Modular\+Resnik}, \hyperpage{86}
+    \subitem {Pekar\+Staab\+Similarity}, \hyperpage{92}
+    \subitem {Precomputed\+Matrix\+Term\+Similarity}, \hyperpage{93}
+    \subitem {Relevance\+Similarity}, \hyperpage{97}
+    \subitem {Resnik\+Similarity}, \hyperpage{98}
+    \subitem {Term\+Similarity\+Interface}, \hyperpage{118}
+  \item {check\+Params}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {clone}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+    \subitem {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{22}
+    \subitem {Annotation\+Parser\+Interface}, \hyperpage{38}
+    \subitem {Entrez\+Gene2\+Go\+Annotation\+Parser}, \hyperpage{50}
+    \subitem {Go\+Parser\+Interface}, \hyperpage{73}
+    \subitem {Goa\+Annotation\+Parser}, \hyperpage{61}
+    \subitem {Rapid\+Xml\+Go\+Parser}, \hyperpage{94}
+    \subitem {Standard\+Obo\+Go\+Parser}, \hyperpage{104}
+    \subitem {Standard\+Xml\+Go\+Parser}, \hyperpage{107}
+  \item {contains}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{90}
+    \subitem {Simple\+Region}, \hyperpage{102}
+  \item {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{40}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {get\+Common\+Disjoint\+Ancestors}, \hyperpage{41}
+    \subitem {get\+Num\+Paths}, \hyperpage{41}
+    \subitem {has\+Term}, \hyperpage{41}
+    \subitem {is\+Disjoint}, \hyperpage{41}
+    \subitem {is\+Same\+Ontology}, \hyperpage{41}
+    \subitem {max\+Information\+Content}, \hyperpage{41}
+    \subitem {shared\+Information}, \hyperpage{42}
+  \item {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{42}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{43}
+    \subitem {get\+Common\+Disjoint\+Ancestors}, \hyperpage{43}
+    \subitem {get\+Num\+Paths}, \hyperpage{43}
+    \subitem {has\+Term}, \hyperpage{44}
+    \subitem {is\+Disjoint}, \hyperpage{44}
+    \subitem {is\+Same\+Ontology}, \hyperpage{44}
+    \subitem {max\+Information\+Content}, \hyperpage{44}
+    \subitem {shared\+Information}, \hyperpage{44}
+  \item {Covariance\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Disallowed\+Set\+Evidence\+Policy}, \hyperpage{46}
+    \subitem {add\+Evidence}, \hyperpage{47}
+    \subitem {Disallowed\+Set\+Evidence\+Policy}, \hyperpage{47}
+    \subitem {is\+Allowed}, \hyperpage{47}
+    \subitem {is\+Empty}, \hyperpage{47}
+  \item {distance}
+    \subitem {Simple\+Region}, \hyperpage{102}
+
+  \indexspace
+
+  \item {Edge\+Index\+Map}
+    \subitem {Go\+Graph}, \hyperpage{64}
+  \item {enrichment\+Significance}
+    \subitem {Enrichment\+Tools}, \hyperpage{14}
+  \item {Enrichment\+Tools}, \hyperpage{14}
+    \subitem {enrichment\+Significance}, \hyperpage{14}
+    \subitem {get\+Descendant\+Genes}, \hyperpage{14}
+    \subitem {one\+Sided\+Raw\+Pvalue\+\_\+hyper}, \hyperpage{15}
+  \item {Entrez\+Gene2\+Go\+Annotation\+Parser}, \hyperpage{49}
+    \subitem {clone}, \hyperpage{50}
+    \subitem {Entrez\+Gene2\+Go\+Annotation\+Parser}, \hyperpage{49}
+    \subitem {is\+File\+Good}, \hyperpage{50}
+    \subitem {parse\+Annotation\+File}, \hyperpage{50}
+  \item {Evidence\+Code}
+    \subitem {GO}, \hyperpage{16}
+  \item {Evidence\+Policy\+Interface}, \hyperpage{50}
+    \subitem {is\+Allowed}, \hyperpage{51}
+  \item {evidence\+String\+To\+Code}
+    \subitem {GO}, \hyperpage{17}
+  \item {evidence\+To\+String}
+    \subitem {GO}, \hyperpage{17}
+  \item {Exclusively\+Inherited\+Shared\+Information}, \hyperpage{51}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{52}
+    \subitem {get\+Common\+Disjoint\+Ancestors}, \hyperpage{52}
+    \subitem {has\+Term}, \hyperpage{52}
+    \subitem {is\+Same\+Ontology}, \hyperpage{52}
+    \subitem {max\+Information\+Content}, \hyperpage{53}
+    \subitem {shared\+Information}, \hyperpage{53}
+  \item {Experimental\+Evidence\+Policy}, \hyperpage{53}
+    \subitem {Experimental\+Evidence\+Policy}, \hyperpage{54}
+  \item {extract\+Covariance}
+    \subitem {Accumulators}, \hyperpage{11}
+  \item {extract\+Max}
+    \subitem {Accumulators}, \hyperpage{11}
+  \item {extract\+Mean}
+    \subitem {Accumulators}, \hyperpage{11}
+  \item {extract\+Min}
+    \subitem {Accumulators}, \hyperpage{11, 12}
+  \item {extract\+SD}
+    \subitem {Accumulators}, \hyperpage{12}
+  \item {extract\+Variance}
+    \subitem {Accumulators}, \hyperpage{12}
+
+  \indexspace
+
+  \item {filter\+Set\+For\+BP}
+    \subitem {Go\+Graph}, \hyperpage{66}
+  \item {filter\+Set\+For\+CC}
+    \subitem {Go\+Graph}, \hyperpage{66}
+  \item {filter\+Set\+For\+MF}
+    \subitem {Go\+Graph}, \hyperpage{66}
+  \item {filter\+Set\+For\+Ontology}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {finish\+\_\+vertex}
+    \subitem {Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}, 
+		\hyperpage{46}
+  \item {Frontier\+Shared\+Information}, \hyperpage{54}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55}
+    \subitem {get\+Common\+Disjoint\+Ancestors}, \hyperpage{55}
+    \subitem {has\+Term}, \hyperpage{55}
+    \subitem {is\+Same\+Ontology}, \hyperpage{55}
+    \subitem {max\+Information\+Content}, \hyperpage{55}
+    \subitem {shared\+Information}, \hyperpage{55, 56}
+
+  \indexspace
+
+  \item {Gaf\+Annotation\+Parser}, \hyperpage{56}
+    \subitem {Gaf\+Annotation\+Parser}, \hyperpage{57}
+  \item {Genomic\+Region}, \hyperpage{57}
+    \subitem {\+\_\+chrom}, \hyperpage{59}
+    \subitem {\+\_\+desc}, \hyperpage{59}
+    \subitem {\+\_\+name}, \hyperpage{59}
+    \subitem {Genomic\+Region}, \hyperpage{58}
+    \subitem {get\+Chrom}, \hyperpage{58}
+    \subitem {get\+Desc}, \hyperpage{58}
+    \subitem {get\+Name}, \hyperpage{58}
+  \item {Gentleman\+U\+I\+Similarity}, \hyperpage{59}
+    \subitem {calculate\+Similarity}, \hyperpage{60}
+    \subitem {Gentleman\+U\+I\+Similarity}, \hyperpage{60}
+  \item {get\+All\+Genes}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {get\+All\+Go\+Terms}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {get\+All\+Terms}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {get\+All\+Terms\+BP}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {get\+All\+Terms\+CC}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {get\+All\+Terms\+MF}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {get\+Ancestor\+Terms}
+    \subitem {Go\+Graph}, \hyperpage{67}
+  \item {get\+Child\+Terms}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Chrom}
+    \subitem {Genomic\+Region}, \hyperpage{58}
+  \item {get\+Common\+Disjoint\+Ancestors}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{43}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{52}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55}
+  \item {get\+Desc}
+    \subitem {Genomic\+Region}, \hyperpage{58}
+  \item {get\+Descendant\+Genes}
+    \subitem {Enrichment\+Tools}, \hyperpage{14}
+  \item {get\+Descendant\+Terms}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+End}
+    \subitem {Simple\+Region}, \hyperpage{102}
+  \item {get\+Features}
+    \subitem {N\+C\+List}, \hyperpage{87}
+  \item {get\+Features\+At}
+    \subitem {N\+C\+List}, \hyperpage{87}
+  \item {get\+Features\+In\+Range}
+    \subitem {N\+C\+List}, \hyperpage{87, 88}
+  \item {get\+Genes\+Evidence\+For\+Go\+Term}
+    \subitem {Annotation\+Data}, \hyperpage{32}
+  \item {get\+Genes\+For\+Go\+Term}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+Evidence\+For\+Gene}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+For\+Gene}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+For\+Gene\+BP}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+For\+Gene\+By\+Ontology}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+For\+Gene\+CC}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Go\+Terms\+For\+Gene\+MF}
+    \subitem {Annotation\+Data}, \hyperpage{33}
+  \item {get\+Graph}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Id}
+    \subitem {Simple\+Region}, \hyperpage{102}
+  \item {get\+Induced\+Subgraph}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Induced\+Subgraph2}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Keys}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+L\+CA}
+    \subitem {Pekar\+Staab\+Similarity}, \hyperpage{92}
+  \item {get\+M\+I\+CA}
+    \subitem {Jiang\+Conrath\+Similarity}, \hyperpage{76}
+    \subitem {Lin\+Similarity}, \hyperpage{78}
+    \subitem {Relevance\+Similarity}, \hyperpage{97}
+    \subitem {Resnik\+Similarity}, \hyperpage{99}
+  \item {get\+Min\+BP}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+Min\+CC}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+Min\+MF}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+Name}
+    \subitem {Genomic\+Region}, \hyperpage{58}
+  \item {get\+Nodes}
+    \subitem {N\+C\+List}, \hyperpage{88}
+  \item {get\+Num\+Annotations\+For\+Gene}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {get\+Num\+Annotations\+For\+Go\+Term}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {get\+Num\+Components}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Num\+Edges}
+    \subitem {Go\+Graph}, \hyperpage{68}
+  \item {get\+Num\+Genes}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {get\+Num\+Go\+Terms}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {get\+Num\+Paths}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{43}
+  \item {get\+Num\+Vertices}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Ontology\+Terms}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Overlap\+Index}
+    \subitem {N\+C\+List}, \hyperpage{88}
+  \item {get\+Parent\+Terms}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Parser}
+    \subitem {Annotation\+Parser\+Factory}, \hyperpage{37}
+    \subitem {Go\+Parser\+Factory}, \hyperpage{72}
+  \item {get\+Region}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{90}
+  \item {get\+Region\+At}
+    \subitem {N\+C\+List}, \hyperpage{88}
+  \item {get\+Root}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Start}
+    \subitem {Simple\+Region}, \hyperpage{103}
+  \item {get\+Term\+Description}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Term\+Description\+By\+Index}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Term\+Index}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Term\+Name}
+    \subitem {Go\+Graph}, \hyperpage{69}
+  \item {get\+Term\+Name\+By\+Index}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Term\+Ontology}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Term\+Ontology\+By\+Index}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Term\+Ontology\+By\+Vertex}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Term\+String\+Id\+By\+Index}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Value}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+Values}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+  \item {get\+Vertex\+By\+Index}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Vertex\+By\+Name}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {get\+Vertex\+Index}
+    \subitem {Go\+Graph}, \hyperpage{70}
+  \item {GO}, \hyperpage{15}
+    \subitem {Evidence\+Code}, \hyperpage{16}
+    \subitem {evidence\+String\+To\+Code}, \hyperpage{17}
+    \subitem {evidence\+To\+String}, \hyperpage{17}
+    \subitem {Onto}, \hyperpage{16}
+    \subitem {ontology\+String\+To\+Code}, \hyperpage{17}
+    \subitem {ontology\+To\+String}, \hyperpage{17}
+    \subitem {Relationship}, \hyperpage{16}
+    \subitem {relationship\+String\+To\+Code}, \hyperpage{17}
+    \subitem {relationship\+To\+String}, \hyperpage{17}
+  \item {Go\+Edge}
+    \subitem {Go\+Graph}, \hyperpage{64}
+  \item {Go\+Graph}, \hyperpage{62}
+    \subitem {$\sim$\+Go\+Graph}, \hyperpage{66}
+    \subitem {Edge\+Index\+Map}, \hyperpage{64}
+    \subitem {filter\+Set\+For\+BP}, \hyperpage{66}
+    \subitem {filter\+Set\+For\+CC}, \hyperpage{66}
+    \subitem {filter\+Set\+For\+MF}, \hyperpage{66}
+    \subitem {filter\+Set\+For\+Ontology}, \hyperpage{67}
+    \subitem {get\+All\+Terms}, \hyperpage{67}
+    \subitem {get\+All\+Terms\+BP}, \hyperpage{67}
+    \subitem {get\+All\+Terms\+CC}, \hyperpage{67}
+    \subitem {get\+All\+Terms\+MF}, \hyperpage{67}
+    \subitem {get\+Ancestor\+Terms}, \hyperpage{67}
+    \subitem {get\+Child\+Terms}, \hyperpage{68}
+    \subitem {get\+Descendant\+Terms}, \hyperpage{68}
+    \subitem {get\+Graph}, \hyperpage{68}
+    \subitem {get\+Induced\+Subgraph}, \hyperpage{68}
+    \subitem {get\+Induced\+Subgraph2}, \hyperpage{68}
+    \subitem {get\+Num\+Components}, \hyperpage{68}
+    \subitem {get\+Num\+Edges}, \hyperpage{68}
+    \subitem {get\+Num\+Vertices}, \hyperpage{69}
+    \subitem {get\+Ontology\+Terms}, \hyperpage{69}
+    \subitem {get\+Parent\+Terms}, \hyperpage{69}
+    \subitem {get\+Root}, \hyperpage{69}
+    \subitem {get\+Term\+Description}, \hyperpage{69}
+    \subitem {get\+Term\+Description\+By\+Index}, \hyperpage{69}
+    \subitem {get\+Term\+Index}, \hyperpage{69}
+    \subitem {get\+Term\+Name}, \hyperpage{69}
+    \subitem {get\+Term\+Name\+By\+Index}, \hyperpage{70}
+    \subitem {get\+Term\+Ontology}, \hyperpage{70}
+    \subitem {get\+Term\+Ontology\+By\+Index}, \hyperpage{70}
+    \subitem {get\+Term\+Ontology\+By\+Vertex}, \hyperpage{70}
+    \subitem {get\+Term\+String\+Id\+By\+Index}, \hyperpage{70}
+    \subitem {get\+Vertex\+By\+Index}, \hyperpage{70}
+    \subitem {get\+Vertex\+By\+Name}, \hyperpage{70}
+    \subitem {get\+Vertex\+Index}, \hyperpage{70}
+    \subitem {Go\+Edge}, \hyperpage{64}
+    \subitem {Go\+Vertex}, \hyperpage{64}
+    \subitem {Go\+Vertex\+Iterator}, \hyperpage{65}
+    \subitem {Graph}, \hyperpage{65}
+    \subitem {Graph\+\_\+t}, \hyperpage{65}
+    \subitem {has\+Term}, \hyperpage{71}
+    \subitem {In\+Edge\+Iterator}, \hyperpage{65}
+    \subitem {init\+Maps}, \hyperpage{71}
+    \subitem {insert\+Relationship}, \hyperpage{71}
+    \subitem {insert\+Term}, \hyperpage{71}
+    \subitem {Out\+Edge\+Iterator}, \hyperpage{65}
+    \subitem {Vertex\+Index\+Map}, \hyperpage{65}
+  \item {Go\+Graph\+::\+Edge\+Props}, \hyperpage{48}
+    \subitem {$\sim$\+Edge\+Props}, \hyperpage{48}
+    \subitem {rel\+Type}, \hyperpage{48}
+  \item {Go\+Graph\+::\+Vertex\+Props}, \hyperpage{120}
+    \subitem {$\sim$\+Vertex\+Props}, \hyperpage{120}
+    \subitem {ontology}, \hyperpage{121}
+    \subitem {term\+Id}, \hyperpage{121}
+  \item {Go\+Parser\+Factory}, \hyperpage{71}
+    \subitem {$\sim$\+Go\+Parser\+Factory}, \hyperpage{72}
+    \subitem {add\+Parser}, \hyperpage{72}
+    \subitem {get\+Parser}, \hyperpage{72}
+    \subitem {Go\+Parser\+Factory}, \hyperpage{72}
+  \item {Go\+Parser\+Interface}, \hyperpage{73}
+    \subitem {clone}, \hyperpage{73}
+    \subitem {is\+File\+Good}, \hyperpage{73}
+    \subitem {parse\+Go\+File}, \hyperpage{74}
+  \item {Go\+Vertex}
+    \subitem {Go\+Graph}, \hyperpage{64}
+  \item {Go\+Vertex\+Iterator}
+    \subitem {Go\+Graph}, \hyperpage{65}
+  \item {Goa\+Annotation\+Parser}, \hyperpage{60}
+    \subitem {clone}, \hyperpage{61}
+    \subitem {Goa\+Annotation\+Parser}, \hyperpage{61}
+    \subitem {is\+File\+Good}, \hyperpage{61}
+    \subitem {parse\+Annotation\+File}, \hyperpage{61}
+  \item {Graph}
+    \subitem {Go\+Graph}, \hyperpage{65}
+  \item {Graph\+\_\+t}
+    \subitem {Go\+Graph}, \hyperpage{65}
+
+  \indexspace
+
+  \item {has\+Gene}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {has\+Go\+Term}
+    \subitem {Annotation\+Data}, \hyperpage{34}
+  \item {has\+Term}
+    \subitem {Ancestor\+Mean\+Shared\+Information}, \hyperpage{29}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{44}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{52}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55}
+    \subitem {Go\+Graph}, \hyperpage{71}
+    \subitem {M\+I\+C\+A\+Shared\+Information}, \hyperpage{80}
+    \subitem {Shared\+Information\+Interface}, \hyperpage{100}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {Term\+Probability\+Map}, \hyperpage{114}
+
+  \indexspace
+
+  \item {In\+Edge\+Iterator}
+    \subitem {Go\+Graph}, \hyperpage{65}
+  \item {init\+Maps}
+    \subitem {Go\+Graph}, \hyperpage{71}
+  \item {insert\+Relationship}
+    \subitem {Go\+Graph}, \hyperpage{71}
+  \item {insert\+Term}
+    \subitem {Go\+Graph}, \hyperpage{71}
+  \item {is\+Allowed}
+    \subitem {Allowed\+Set\+Evidence\+Policy}, \hyperpage{24}
+    \subitem {Allowed\+Set\+Relationship\+Policy}, \hyperpage{25}
+    \subitem {Disallowed\+Set\+Evidence\+Policy}, \hyperpage{47}
+    \subitem {Evidence\+Policy\+Interface}, \hyperpage{51}
+    \subitem {Relationship\+Policy\+Interface}, \hyperpage{96}
+    \subitem {Standard\+Relationship\+Policy}, \hyperpage{106}
+  \item {is\+Disjoint}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{44}
+  \item {is\+Empty}
+    \subitem {Allowed\+Set\+Evidence\+Policy}, \hyperpage{24}
+    \subitem {Allowed\+Set\+Relationship\+Policy}, \hyperpage{25}
+    \subitem {Disallowed\+Set\+Evidence\+Policy}, \hyperpage{47}
+  \item {is\+File\+Good}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+    \subitem {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{22}
+    \subitem {Annotation\+Parser\+Interface}, \hyperpage{38}
+    \subitem {Entrez\+Gene2\+Go\+Annotation\+Parser}, \hyperpage{50}
+    \subitem {Go\+Parser\+Interface}, \hyperpage{73}
+    \subitem {Goa\+Annotation\+Parser}, \hyperpage{61}
+    \subitem {Rapid\+Xml\+Go\+Parser}, \hyperpage{94}
+    \subitem {Standard\+Obo\+Go\+Parser}, \hyperpage{104}
+    \subitem {Standard\+Xml\+Go\+Parser}, \hyperpage{107}
+  \item {is\+Same\+Ontology}
+    \subitem {Ancestor\+Mean\+Shared\+Information}, \hyperpage{29}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{44}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{52}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55}
+    \subitem {M\+I\+C\+A\+Shared\+Information}, \hyperpage{80}
+    \subitem {Shared\+Information\+Interface}, \hyperpage{100}
+
+  \indexspace
+
+  \item {Jaccard\+Set\+Similarity}, \hyperpage{74}
+    \subitem {calculate\+Similarity}, \hyperpage{75}
+    \subitem {Jaccard\+Set\+Similarity}, \hyperpage{75}
+  \item {Jiang\+Conrath\+Similarity}, \hyperpage{75}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{76}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{76}
+    \subitem {get\+M\+I\+CA}, \hyperpage{76}
+    \subitem {Jiang\+Conrath\+Similarity}, \hyperpage{76}
+
+  \indexspace
+
+  \item {Lin\+Similarity}, \hyperpage{77}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{78}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{78}
+    \subitem {get\+M\+I\+CA}, \hyperpage{78}
+    \subitem {Lin\+Similarity}, \hyperpage{77}
+
+  \indexspace
+
+  \item {M\+I\+C\+A\+Shared\+Information}, \hyperpage{79}
+    \subitem {has\+Term}, \hyperpage{80}
+    \subitem {is\+Same\+Ontology}, \hyperpage{80}
+    \subitem {M\+I\+C\+A\+Shared\+Information}, \hyperpage{80}
+    \subitem {max\+Information\+Content}, \hyperpage{81}
+    \subitem {shared\+Information}, \hyperpage{81}
+  \item {Max\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{10}
+  \item {max\+Information\+Content}
+    \subitem {Ancestor\+Mean\+Shared\+Information}, \hyperpage{29}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{41}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{44}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{53}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55}
+    \subitem {M\+I\+C\+A\+Shared\+Information}, \hyperpage{81}
+    \subitem {Shared\+Information\+Interface}, \hyperpage{100}
+  \item {Mean\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{10}
+  \item {Mgi\+Annotation\+Parser}, \hyperpage{78}
+    \subitem {Mgi\+Annotation\+Parser}, \hyperpage{79}
+  \item {midpoint}
+    \subitem {Simple\+Region}, \hyperpage{103}
+  \item {Min\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{10}
+  \item {Modular\+Jiang\+Conrath}, \hyperpage{81}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{82}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{82}
+    \subitem {Modular\+Jiang\+Conrath}, \hyperpage{82}
+    \subitem {set\+Shared\+Information\+Calculator}, \hyperpage{83}
+  \item {Modular\+Lin}, \hyperpage{83}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{84}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{84}
+    \subitem {Modular\+Lin}, \hyperpage{84}
+    \subitem {set\+Shared\+Information\+Calculator}, \hyperpage{84}
+  \item {Modular\+Resnik}, \hyperpage{85}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{86}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{86}
+    \subitem {Modular\+Resnik}, \hyperpage{85}
+    \subitem {set\+Shared\+Information\+Calculator}, \hyperpage{86}
+
+  \indexspace
+
+  \item {N\+C\+List}, \hyperpage{86}
+    \subitem {\+\_\+items}, \hyperpage{89}
+    \subitem {get\+Features}, \hyperpage{87}
+    \subitem {get\+Features\+At}, \hyperpage{87}
+    \subitem {get\+Features\+In\+Range}, \hyperpage{87, 88}
+    \subitem {get\+Nodes}, \hyperpage{88}
+    \subitem {get\+Overlap\+Index}, \hyperpage{88}
+    \subitem {get\+Region\+At}, \hyperpage{88}
+    \subitem {N\+C\+List}, \hyperpage{87}
+    \subitem {num\+Features}, \hyperpage{88}
+    \subitem {size}, \hyperpage{88}
+  \item {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{89}
+    \subitem {\+\_\+containments}, \hyperpage{90}
+    \subitem {\+\_\+region}, \hyperpage{90}
+    \subitem {contains}, \hyperpage{90}
+    \subitem {get\+Region}, \hyperpage{90}
+    \subitem {N\+C\+Node}, \hyperpage{89}
+    \subitem {overlaps}, \hyperpage{90}
+  \item {N\+C\+Node}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{89}
+  \item {num\+Features}
+    \subitem {N\+C\+List}, \hyperpage{88}
+
+  \indexspace
+
+  \item {one\+Sided\+Raw\+Pvalue\+\_\+hyper}
+    \subitem {Enrichment\+Tools}, \hyperpage{15}
+  \item {Onto}
+    \subitem {GO}, \hyperpage{16}
+  \item {ontology}
+    \subitem {Go\+Graph\+::\+Vertex\+Props}, \hyperpage{121}
+  \item {ontology\+String\+To\+Code}
+    \subitem {GO}, \hyperpage{17}
+  \item {ontology\+To\+String}
+    \subitem {GO}, \hyperpage{17}
+  \item {operator[]}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {Term\+Probability\+Map}, \hyperpage{115}
+  \item {Out\+Edge\+Iterator}
+    \subitem {Go\+Graph}, \hyperpage{65}
+  \item {overlaps}
+    \subitem {N\+C\+List\+::\+N\+C\+Node}, \hyperpage{90}
+    \subitem {Simple\+Region}, \hyperpage{103}
+
+  \indexspace
+
+  \item {param\+List}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {parse\+Annotation\+File}
+    \subitem {Annotation\+Parser\+Interface}, \hyperpage{38}
+    \subitem {Entrez\+Gene2\+Go\+Annotation\+Parser}, \hyperpage{50}
+    \subitem {Goa\+Annotation\+Parser}, \hyperpage{61}
+  \item {parse\+Go\+File}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+    \subitem {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{22}
+    \subitem {Go\+Parser\+Interface}, \hyperpage{74}
+    \subitem {Rapid\+Xml\+Go\+Parser}, \hyperpage{95}
+    \subitem {Standard\+Obo\+Go\+Parser}, \hyperpage{105}
+    \subitem {Standard\+Xml\+Go\+Parser}, \hyperpage{107}
+  \item {parse\+Param\+File}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {parse\+Simple\+File}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {Pekar\+Staab\+Similarity}, \hyperpage{91}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{92}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{92}
+    \subitem {get\+L\+CA}, \hyperpage{92}
+    \subitem {Pekar\+Staab\+Similarity}, \hyperpage{92}
+  \item {Precomputed\+Matrix\+Term\+Similarity}, \hyperpage{92}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{93}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{93}
+    \subitem {Precomputed\+Matrix\+Term\+Similarity}, \hyperpage{93}
+    \subitem {project\+Term\+Set}, \hyperpage{93}
+  \item {project\+Term\+Set}
+    \subitem {Precomputed\+Matrix\+Term\+Similarity}, \hyperpage{93}
+
+  \indexspace
+
+  \item {Rapid\+Xml\+Go\+Parser}, \hyperpage{94}
+    \subitem {clone}, \hyperpage{94}
+    \subitem {is\+File\+Good}, \hyperpage{94}
+    \subitem {parse\+Go\+File}, \hyperpage{95}
+  \item {rel\+Type}
+    \subitem {Go\+Graph\+::\+Edge\+Props}, \hyperpage{48}
+  \item {Relationship}
+    \subitem {GO}, \hyperpage{16}
+  \item {Relationship\+Policy\+Interface}, \hyperpage{95}
+    \subitem {is\+Allowed}, \hyperpage{96}
+  \item {relationship\+String\+To\+Code}
+    \subitem {GO}, \hyperpage{17}
+  \item {relationship\+To\+String}
+    \subitem {GO}, \hyperpage{17}
+  \item {Relevance\+Similarity}, \hyperpage{96}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{97}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{97}
+    \subitem {get\+M\+I\+CA}, \hyperpage{97}
+    \subitem {Relevance\+Similarity}, \hyperpage{97}
+  \item {Resnik\+Similarity}, \hyperpage{97}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{98}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{98}
+    \subitem {get\+M\+I\+CA}, \hyperpage{99}
+    \subitem {Resnik\+Similarity}, \hyperpage{98}
+
+  \indexspace
+
+  \item {set\+Policy}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+    \subitem {Allowed\+Relationship\+Xml\+Go\+Parser}, \hyperpage{22}
+  \item {set\+Shared\+Information\+Calculator}
+    \subitem {Modular\+Jiang\+Conrath}, \hyperpage{83}
+    \subitem {Modular\+Lin}, \hyperpage{84}
+    \subitem {Modular\+Resnik}, \hyperpage{86}
+  \item {set\+To\+Vec}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {Set\+Utilities}, \hyperpage{17}
+  \item {shared\+Information}
+    \subitem {Ancestor\+Mean\+Shared\+Information}, \hyperpage{29, 30}
+    \subitem {Couto\+Gra\+S\+M\+Adjusted\+Shared\+Information}, 
+		\hyperpage{42}
+    \subitem {Couto\+Gra\+S\+M\+Shared\+Information}, \hyperpage{44}
+    \subitem {Exclusively\+Inherited\+Shared\+Information}, 
+		\hyperpage{53}
+    \subitem {Frontier\+Shared\+Information}, \hyperpage{55, 56}
+    \subitem {M\+I\+C\+A\+Shared\+Information}, \hyperpage{81}
+    \subitem {Shared\+Information\+Interface}, \hyperpage{100}
+  \item {Shared\+Information\+Interface}, \hyperpage{99}
+    \subitem {has\+Term}, \hyperpage{100}
+    \subitem {is\+Same\+Ontology}, \hyperpage{100}
+    \subitem {max\+Information\+Content}, \hyperpage{100}
+    \subitem {shared\+Information}, \hyperpage{100}
+  \item {Simple\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{10}
+  \item {Simple\+Region}, \hyperpage{101}
+    \subitem {\+\_\+end}, \hyperpage{103}
+    \subitem {\+\_\+id}, \hyperpage{103}
+    \subitem {\+\_\+start}, \hyperpage{103}
+    \subitem {contains}, \hyperpage{102}
+    \subitem {distance}, \hyperpage{102}
+    \subitem {get\+End}, \hyperpage{102}
+    \subitem {get\+Id}, \hyperpage{102}
+    \subitem {get\+Start}, \hyperpage{103}
+    \subitem {midpoint}, \hyperpage{103}
+    \subitem {overlaps}, \hyperpage{103}
+    \subitem {Simple\+Region}, \hyperpage{102}
+  \item {size}
+    \subitem {N\+C\+List}, \hyperpage{88}
+  \item {split\+Take}
+    \subitem {App\+Utilities}, \hyperpage{13}
+  \item {split\+With}
+    \subitem {Allowed\+Relationship\+Obo\+Go\+Parser}, \hyperpage{20}
+  \item {Standard\+Obo\+Go\+Parser}, \hyperpage{104}
+    \subitem {clone}, \hyperpage{104}
+    \subitem {is\+File\+Good}, \hyperpage{104}
+    \subitem {parse\+Go\+File}, \hyperpage{105}
+    \subitem {Standard\+Obo\+Go\+Parser}, \hyperpage{104}
+  \item {Standard\+Relationship\+Policy}, \hyperpage{105}
+    \subitem {is\+Allowed}, \hyperpage{106}
+    \subitem {Standard\+Relationship\+Policy}, \hyperpage{106}
+  \item {Standard\+Xml\+Go\+Parser}, \hyperpage{106}
+    \subitem {clone}, \hyperpage{107}
+    \subitem {is\+File\+Good}, \hyperpage{107}
+    \subitem {parse\+Go\+File}, \hyperpage{107}
+    \subitem {Standard\+Xml\+Go\+Parser}, \hyperpage{107}
+
+  \indexspace
+
+  \item {Term\+Depth\+Map}, \hyperpage{108}
+    \subitem {\+\_\+depths}, \hyperpage{110}
+    \subitem {\+\_\+name\+To\+Index}, \hyperpage{110}
+    \subitem {$\sim$\+Term\+Depth\+Map}, \hyperpage{109}
+    \subitem {get\+Keys}, \hyperpage{109}
+    \subitem {get\+Value}, \hyperpage{109}
+    \subitem {get\+Values}, \hyperpage{109}
+    \subitem {has\+Term}, \hyperpage{109}
+    \subitem {operator[]}, \hyperpage{109}
+    \subitem {Term\+Depth\+Map}, \hyperpage{109}
+  \item {term\+Id}
+    \subitem {Go\+Graph\+::\+Vertex\+Props}, \hyperpage{121}
+  \item {Term\+Information\+Content\+Map}, \hyperpage{110}
+    \subitem {bad\+Id\+Value}, \hyperpage{111}
+    \subitem {Term\+Information\+Content\+Map}, \hyperpage{111}
+  \item {Term\+Probability\+Map}, \hyperpage{112}
+    \subitem {\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+1anno}, 
+		\hyperpage{115}
+    \subitem {\+\_\+bp\+\_\+normalization\+\_\+min\+\_\+min\+Anno}, 
+		\hyperpage{115}
+    \subitem {\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+1anno}, 
+		\hyperpage{115}
+    \subitem {\+\_\+cc\+\_\+normalization\+\_\+min\+\_\+min\+Anno}, 
+		\hyperpage{115}
+    \subitem {\+\_\+is\+Single\+Anno\+Min}, \hyperpage{115}
+    \subitem {\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+1anno}, 
+		\hyperpage{115}
+    \subitem {\+\_\+mf\+\_\+normalization\+\_\+min\+\_\+min\+Anno}, 
+		\hyperpage{116}
+    \subitem {\+\_\+name\+To\+Index}, \hyperpage{116}
+    \subitem {\+\_\+probabilities}, \hyperpage{116}
+    \subitem {$\sim$\+Term\+Probability\+Map}, \hyperpage{113}
+    \subitem {bad\+Id\+Value}, \hyperpage{114}
+    \subitem {get\+Keys}, \hyperpage{114}
+    \subitem {get\+Min\+BP}, \hyperpage{114}
+    \subitem {get\+Min\+CC}, \hyperpage{114}
+    \subitem {get\+Min\+MF}, \hyperpage{114}
+    \subitem {get\+Value}, \hyperpage{114}
+    \subitem {get\+Values}, \hyperpage{114}
+    \subitem {has\+Term}, \hyperpage{114}
+    \subitem {operator[]}, \hyperpage{115}
+    \subitem {Term\+Probability\+Map}, \hyperpage{113}
+  \item {Term\+Probability\+Map\+::dfs\+\_\+cumulative\+\_\+annotations\+\_\+visitor}, 
+		\hyperpage{45}
+    \subitem {finish\+\_\+vertex}, \hyperpage{46}
+  \item {Term\+Set\+Similarity\+Interface}, \hyperpage{116}
+    \subitem {calculate\+Similarity}, \hyperpage{117}
+  \item {Term\+Similarity\+Interface}, \hyperpage{117}
+    \subitem {calculate\+Normalized\+Term\+Similarity}, \hyperpage{118}
+    \subitem {calculate\+Term\+Similarity}, \hyperpage{118}
+  \item {Term\+Similarity\+Writer}, \hyperpage{118}
+    \subitem {Term\+Similarity\+Writer}, \hyperpage{119}
+    \subitem {write\+Similarity\+Matrix}, \hyperpage{119}
+    \subitem {write\+Similarity\+Matrix\+BP}, \hyperpage{119}
+    \subitem {write\+Similarity\+Matrix\+CC}, \hyperpage{119}
+    \subitem {write\+Similarity\+Matrix\+MF}, \hyperpage{120}
+
+  \indexspace
+
+  \item {Variance\+Accumulator}
+    \subitem {Accumulators}, \hyperpage{11}
+  \item {vec\+To\+Set}
+    \subitem {App\+Utilities}, \hyperpage{14}
+  \item {Vertex\+Index\+Map}
+    \subitem {Go\+Graph}, \hyperpage{65}
+
+  \indexspace
+
+  \item {write\+Similarity\+Matrix}
+    \subitem {Term\+Similarity\+Writer}, \hyperpage{119}
+  \item {write\+Similarity\+Matrix\+BP}
+    \subitem {Term\+Similarity\+Writer}, \hyperpage{119}
+  \item {write\+Similarity\+Matrix\+CC}
+    \subitem {Term\+Similarity\+Writer}, \hyperpage{119}
+  \item {write\+Similarity\+Matrix\+MF}
+    \subitem {Term\+Similarity\+Writer}, \hyperpage{120}
+
+\end{theindex}

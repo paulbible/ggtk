@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGoParserFactory" kind="class" language="C++" prot="public">
+    <compoundname>GoParserFactory</compoundname>
+    <includes refid="GoParserFactory_8hpp" local="no">ggtk/GoParserFactory.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGoParserFactory_1a4b2e6f0c2b364b0ac17854b70b13bc23" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; GoParserFactory::_names</definition>
+        <argsstring></argsstring>
+        <name>_names</name>
+        <briefdescription>
+<para>A list of strings which correspond to parsers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This list holds the names of parsers added to the factory. These are the keys used to query a parser. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="32" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGoParserFactory_1a08c3845092ba0693a8dd9c34553cbe68" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> * &gt;</type>
+        <definition>std::vector&lt;GoParserInterface*&gt; GoParserFactory::_parsers</definition>
+        <argsstring></argsstring>
+        <name>_parsers</name>
+        <briefdescription>
+<para>A list of parsers which are currently held in the factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This list holds the instances of <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> that can be returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="38" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGoParserFactory_1ae6a6141ff3e9e10edb8bd94eed661e97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoParserFactory::GoParserFactory</definition>
+        <argsstring>()</argsstring>
+        <name>GoParserFactory</name>
+        <briefdescription>
+<para>Class constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes the private lists to empty vectors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="46" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoParserFactory_1a690c83fe9183f8e49e19c46d7951d5ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GoParserFactory::~GoParserFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~GoParserFactory</name>
+        <briefdescription>
+<para>Class destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor clears the names vector. It also deletes each parser pointer explicitly. Finally it clears the parser list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="57" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="57" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoParserFactory_1a93ca2a2c9ae05777d49e95793ce6dbdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GoParserFactory::addParser</definition>
+        <argsstring>(std::string name, GoParserInterface *parser)</argsstring>
+        <name>addParser</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> *</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>A Method to add a parser to the factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method adds a pointer to a parser and a string to the factory. This string is used to query the appropriate parser. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="75" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classGoParserFactory_1a3f3b61ae2954943186646444417911cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> *</type>
+        <definition>GoParserInterface* GoParserFactory::getParser</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>getParser</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>A method to return a parser based on a query string. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the string supplied matches one of the keys in the database, the appropriate parser will be returned. If not, a NULL pointer is returned. The calling environment must check against NULL before using. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/GoParserFactory.hpp" line="87" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="87" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to return an instance of <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> at runtime based on an argument. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class holds a set of parser classes. When queried using the getParser method, it returns an instance of <ref refid="classGoParserInterface" kindref="compound">GoParserInterface</ref> based on a string key. This allows parsers to be easily added to a larger system and switched at runtime. </para>    </detaileddescription>
+    <location file="ggtk/GoParserFactory.hpp" line="24" column="1" bodyfile="ggtk/GoParserFactory.hpp" bodystart="24" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classGoParserFactory_1a4b2e6f0c2b364b0ac17854b70b13bc23" prot="private" virt="non-virtual"><scope>GoParserFactory</scope><name>_names</name></member>
+      <member refid="classGoParserFactory_1a08c3845092ba0693a8dd9c34553cbe68" prot="private" virt="non-virtual"><scope>GoParserFactory</scope><name>_parsers</name></member>
+      <member refid="classGoParserFactory_1a93ca2a2c9ae05777d49e95793ce6dbdf" prot="public" virt="non-virtual"><scope>GoParserFactory</scope><name>addParser</name></member>
+      <member refid="classGoParserFactory_1a3f3b61ae2954943186646444417911cc" prot="public" virt="non-virtual"><scope>GoParserFactory</scope><name>getParser</name></member>
+      <member refid="classGoParserFactory_1ae6a6141ff3e9e10edb8bd94eed661e97" prot="public" virt="non-virtual"><scope>GoParserFactory</scope><name>GoParserFactory</name></member>
+      <member refid="classGoParserFactory_1a690c83fe9183f8e49e19c46d7951d5ce" prot="public" virt="non-virtual"><scope>GoParserFactory</scope><name>~GoParserFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

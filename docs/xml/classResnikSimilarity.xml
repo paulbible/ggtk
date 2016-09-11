@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classResnikSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>ResnikSimilarity</compoundname>
+    <basecompoundref refid="classTermSimilarityInterface" prot="public" virt="non-virtual">TermSimilarityInterface</basecompoundref>
+    <includes refid="ResnikSimilarity_8hpp" local="no">ggtk/ResnikSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classResnikSimilarity_1aa4953703e06a99068af531068a58462b" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* ResnikSimilarity::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="140" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResnikSimilarity_1a3c1491ec7a6e2302d7e3537d6ee215d7" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref></type>
+        <definition>TermInformationContentMap ResnikSimilarity::_icMap</definition>
+        <argsstring></argsstring>
+        <name>_icMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="141" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResnikSimilarity_1a0e95354ebfc331dd4a73e823501378da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResnikSimilarity::ResnikSimilarity</definition>
+        <argsstring>(GoGraph *goGraph, TermInformationContentMap &amp;icMap)</argsstring>
+        <name>ResnikSimilarity</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classTermInformationContentMap" kindref="compound">TermInformationContentMap</ref> &amp;</type>
+          <declname>icMap</declname>
+        </param>
+        <briefdescription>
+<para>A constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the default(empty) <ref refid="classStandardRelationshipPolicy" kindref="compound">StandardRelationshipPolicy</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="36" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classResnikSimilarity_1a340ace5dbdd105847d5fade4c8d20ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ResnikSimilarity::calculateTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1ae3474adcfcb02faef65ed5e16ef4db47">calculateTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Resnik similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Resnik similarity or the information content of the most informative common ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="45" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="45" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classResnikSimilarity_1a4e1d6ef4268a905a117fd0c054e4c39b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double ResnikSimilarity::calculateNormalizedTermSimilarity</definition>
+        <argsstring>(std::string goTermA, std::string goTermB)</argsstring>
+        <name>calculateNormalizedTermSimilarity</name>
+        <reimplements refid="classTermSimilarityInterface_1aa46b7870c7725faab85ec502a3e5242d">calculateNormalizedTermSimilarity</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>goTermA</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>goTermB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term-to-term similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms using Normalized Resnik similarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the Resnik similarity divided by the maximum possible similarity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="78" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="78" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classResnikSimilarity_1ace3ae20bcef468c53925e45c647584c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ResnikSimilarity::getMICA</definition>
+        <argsstring>(boost::unordered_set&lt; std::string &gt; &amp;ancestorsA, boost::unordered_set&lt; std::string &gt; &amp;ancestorsB)</argsstring>
+        <name>getMICA</name>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsA</declname>
+        </param>
+        <param>
+          <type>boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>ancestorsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating the most informative common ancestor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method searches the sets to determine the most informatics ancestor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/ResnikSimilarity.hpp" line="106" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="106" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate resnik similarity between 2 terms. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class calculates Resnik similarity. Philip Resnik (1995). &quot;Using information content to evaluate semantic similarity in a taxonomy&quot;. In Chris S. Mellish (Ed.). Proceedings of the 14th international joint conference on Artificial intelligence (IJCAI&apos;95)</para><para>P. W. Lord, R. D. Stevens, A. Brass, and C. A. Goble, &quot;Semantic similarity measures as tools for exploring the gene ontology,&quot; Pac Symp Biocomput, pp. 601-12, 2003.</para><para>maximun information content of all shared ancestors IC(MICA) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="195">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="194">
+        <label>ResnikSimilarity</label>
+        <link refid="classResnikSimilarity"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="197">
+        <label>TermSimilarityInterface</label>
+        <link refid="classTermSimilarityInterface"/>
+      </node>
+      <node id="196">
+        <label>ResnikSimilarity</label>
+        <link refid="classResnikSimilarity"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/ResnikSimilarity.hpp" line="28" column="1" bodyfile="ggtk/ResnikSimilarity.hpp" bodystart="28" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classResnikSimilarity_1aa4953703e06a99068af531068a58462b" prot="private" virt="non-virtual"><scope>ResnikSimilarity</scope><name>_goGraph</name></member>
+      <member refid="classResnikSimilarity_1a3c1491ec7a6e2302d7e3537d6ee215d7" prot="private" virt="non-virtual"><scope>ResnikSimilarity</scope><name>_icMap</name></member>
+      <member refid="classResnikSimilarity_1a4e1d6ef4268a905a117fd0c054e4c39b" prot="public" virt="virtual"><scope>ResnikSimilarity</scope><name>calculateNormalizedTermSimilarity</name></member>
+      <member refid="classResnikSimilarity_1a340ace5dbdd105847d5fade4c8d20ade" prot="public" virt="virtual"><scope>ResnikSimilarity</scope><name>calculateTermSimilarity</name></member>
+      <member refid="classResnikSimilarity_1ace3ae20bcef468c53925e45c647584c0" prot="public" virt="non-virtual"><scope>ResnikSimilarity</scope><name>getMICA</name></member>
+      <member refid="classResnikSimilarity_1a0e95354ebfc331dd4a73e823501378da" prot="public" virt="non-virtual"><scope>ResnikSimilarity</scope><name>ResnikSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

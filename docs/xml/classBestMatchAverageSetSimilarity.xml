@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classBestMatchAverageSetSimilarity" kind="class" language="C++" prot="public">
+    <compoundname>BestMatchAverageSetSimilarity</compoundname>
+    <basecompoundref refid="classTermSetSimilarityInterface" prot="public" virt="non-virtual">TermSetSimilarityInterface</basecompoundref>
+    <includes refid="BestMatchAverageSetSimilarity_8hpp" local="no">ggtk/BestMatchAverageSetSimilarity.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBestMatchAverageSetSimilarity_1a9cdb9e3ee2a64372711fc54825666e46" prot="private" static="no" mutable="no">
+        <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+        <definition>TermSimilarityInterface* BestMatchAverageSetSimilarity::_similarity</definition>
+        <argsstring></argsstring>
+        <name>_similarity</name>
+        <briefdescription>
+<para>Pointer to the actual similarity measure. </para>        </briefdescription>
+        <detaileddescription>
+<para>This object will actually calculate the similarity between pairs of terms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/BestMatchAverageSetSimilarity.hpp" line="111" column="1" bodyfile="ggtk/BestMatchAverageSetSimilarity.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBestMatchAverageSetSimilarity_1afbc85286f64e945d9c3e0bf193171721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BestMatchAverageSetSimilarity::BestMatchAverageSetSimilarity</definition>
+        <argsstring>(TermSimilarityInterface *simMeasure)</argsstring>
+        <name>BestMatchAverageSetSimilarity</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>simMeasure</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates the <ref refid="classBestMatchAverageSetSimilarity" kindref="compound">BestMatchAverageSetSimilarity</ref> class assigning the similarity measure private memeber. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/BestMatchAverageSetSimilarity.hpp" line="31" column="1" bodyfile="ggtk/BestMatchAverageSetSimilarity.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classBestMatchAverageSetSimilarity_1adf1b3109b46f04087f919bdb33e131f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double BestMatchAverageSetSimilarity::calculateSimilarity</definition>
+        <argsstring>(const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)</argsstring>
+        <name>calculateSimilarity</name>
+        <reimplements refid="classTermSetSimilarityInterface_1aeb985b714efc3df40e55bdd31e425e04">calculateSimilarity</reimplements>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsA</declname>
+        </param>
+        <param>
+          <type>const boost::unordered_set&lt; std::string &gt; &amp;</type>
+          <declname>termsB</declname>
+        </param>
+        <briefdescription>
+<para>A method for calculating term set to term set similarity for <ref refid="namespaceGO" kindref="compound">GO</ref> terms;. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method returns the best match average similarity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/BestMatchAverageSetSimilarity.hpp" line="39" column="1" bodyfile="ggtk/BestMatchAverageSetSimilarity.hpp" bodystart="39" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to calculate the best match average similarity between go terms for 2 sets. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class defines the best match average similarity getween two sets of terms. Used by Couto et al.</para><para>F. M. Couto, M. J. Silva, and P. M. Coutinho, &quot;Measuring semantic similarity
+between Gene Ontology terms,&quot; Data &amp; Knowledge Engineering, vol. 61, pp. 137-152, Apr 2007. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="39">
+        <label>BestMatchAverageSetSimilarity</label>
+        <link refid="classBestMatchAverageSetSimilarity"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="42">
+        <label>TermSetSimilarityInterface</label>
+        <link refid="classTermSetSimilarityInterface"/>
+      </node>
+      <node id="41">
+        <label>BestMatchAverageSetSimilarity</label>
+        <link refid="classBestMatchAverageSetSimilarity"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ggtk/BestMatchAverageSetSimilarity.hpp" line="24" column="1" bodyfile="ggtk/BestMatchAverageSetSimilarity.hpp" bodystart="24" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classBestMatchAverageSetSimilarity_1a9cdb9e3ee2a64372711fc54825666e46" prot="private" virt="non-virtual"><scope>BestMatchAverageSetSimilarity</scope><name>_similarity</name></member>
+      <member refid="classBestMatchAverageSetSimilarity_1afbc85286f64e945d9c3e0bf193171721" prot="public" virt="non-virtual"><scope>BestMatchAverageSetSimilarity</scope><name>BestMatchAverageSetSimilarity</name></member>
+      <member refid="classBestMatchAverageSetSimilarity_1adf1b3109b46f04087f919bdb33e131f0" prot="public" virt="virtual"><scope>BestMatchAverageSetSimilarity</scope><name>calculateSimilarity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

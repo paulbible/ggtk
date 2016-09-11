@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classTermSimilarityWriter" kind="class" language="C++" prot="public">
+    <compoundname>TermSimilarityWriter</compoundname>
+    <includes refid="TermSimilarityWriter_8hpp" local="no">ggtk/TermSimilarityWriter.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTermSimilarityWriter_1ae16972c3cf767292a938605b71f909e3" prot="private" static="no" mutable="no">
+        <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+        <definition>GoGraph* TermSimilarityWriter::_goGraph</definition>
+        <argsstring></argsstring>
+        <name>_goGraph</name>
+        <briefdescription>
+<para>A pointer to the gene ontology graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="125" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTermSimilarityWriter_1a4bb2f89c0fb740ff8a03700b0ef711e6" prot="private" static="no" mutable="no">
+        <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+        <definition>AnnotationData* TermSimilarityWriter::_annoData</definition>
+        <argsstring></argsstring>
+        <name>_annoData</name>
+        <briefdescription>
+<para>A pointer to the annotation database. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="127" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTermSimilarityWriter_1a53dffc62cbc87ba24bc4e10ea0def16c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TermSimilarityWriter::TermSimilarityWriter</definition>
+        <argsstring>(GoGraph *goGraph, AnnotationData *annoData)</argsstring>
+        <name>TermSimilarityWriter</name>
+        <param>
+          <type><ref refid="classGoGraph" kindref="compound">GoGraph</ref> *</type>
+          <declname>goGraph</declname>
+        </param>
+        <param>
+          <type><ref refid="classAnnotationData" kindref="compound">AnnotationData</ref> *</type>
+          <declname>annoData</declname>
+        </param>
+        <briefdescription>
+<para>Parameterized constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>A simple parameterized constructor. This class take an instance of the <ref refid="namespaceGO" kindref="compound">GO</ref> Graph. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="34" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermSimilarityWriter_1a6675f612d2f294c2a126576a393b2307" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TermSimilarityWriter::writeSimilarityMatrix</definition>
+        <argsstring>(TermSimilarityInterface *termSim, std::string fileName, long ontology_code)</argsstring>
+        <name>writeSimilarityMatrix</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>termSim</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>ontology_code</declname>
+        </param>
+        <briefdescription>
+<para>A method to write a term similarity matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculates and writes the similarity matrix to file. Calculates the similarity between all pairs of terms. The complexity is O(N^2) * O(Term Pair Calculation Cost). O(Term Pair Calculation Cost) is usually near constant time, but some method will be extremely slow and require other methods </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="48" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="48" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermSimilarityWriter_1ab47132660b1a4a2528dff1b97f934b1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TermSimilarityWriter::writeSimilarityMatrixBP</definition>
+        <argsstring>(TermSimilarityInterface *termSim, std::string fileName)</argsstring>
+        <name>writeSimilarityMatrixBP</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>termSim</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A method to write a term similarity matrix for Biological Process. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calcualtes and writes the biological process term similarity matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="84" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermSimilarityWriter_1ac541f5cb901cece561648acdfa294653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TermSimilarityWriter::writeSimilarityMatrixMF</definition>
+        <argsstring>(TermSimilarityInterface *termSim, std::string fileName)</argsstring>
+        <name>writeSimilarityMatrixMF</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>termSim</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A method to write a term similarity matrix for Molecular Function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calcualtes and writes the molecular function term similarity matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="92" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classTermSimilarityWriter_1ad021eceaae4427c3e9efea93a63a15ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TermSimilarityWriter::writeSimilarityMatrixCC</definition>
+        <argsstring>(TermSimilarityInterface *termSim, std::string fileName)</argsstring>
+        <name>writeSimilarityMatrixCC</name>
+        <param>
+          <type><ref refid="classTermSimilarityInterface" kindref="compound">TermSimilarityInterface</ref> *</type>
+          <declname>termSim</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>A method to write a term similarity matrix for Cellular Component. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calcualtes and writes the cellular component term similarity matrix </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="100" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTermSimilarityWriter_1a54b3466636f9e8eb7715346c9a4c469a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TermSimilarityWriter::writeMatrix</definition>
+        <argsstring>(std::string fname, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;matrix, const std::vector&lt; std::string &gt; &amp;terms)</argsstring>
+        <name>writeMatrix</name>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+<para>A method to write a matrix to file. </para>        </briefdescription>
+        <detaileddescription>
+<para>writes the matrix to file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ggtk/TermSimilarityWriter.hpp" line="110" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="110" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class write a term similarity matrix to file. Companion to <ref refid="classPrecomputedMatrixTermSimilarity" kindref="compound">PrecomputedMatrixTermSimilarity</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class writes a term similarity matrix to file by first calculating all similarity values between pairs of terms. This class will be use to write matrices read by <ref refid="classPrecomputedMatrixTermSimilarity" kindref="compound">PrecomputedMatrixTermSimilarity</ref>. </para>    </detaileddescription>
+    <location file="ggtk/TermSimilarityWriter.hpp" line="25" column="1" bodyfile="ggtk/TermSimilarityWriter.hpp" bodystart="25" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classTermSimilarityWriter_1a4bb2f89c0fb740ff8a03700b0ef711e6" prot="private" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>_annoData</name></member>
+      <member refid="classTermSimilarityWriter_1ae16972c3cf767292a938605b71f909e3" prot="private" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>_goGraph</name></member>
+      <member refid="classTermSimilarityWriter_1a53dffc62cbc87ba24bc4e10ea0def16c" prot="public" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>TermSimilarityWriter</name></member>
+      <member refid="classTermSimilarityWriter_1a54b3466636f9e8eb7715346c9a4c469a" prot="private" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>writeMatrix</name></member>
+      <member refid="classTermSimilarityWriter_1a6675f612d2f294c2a126576a393b2307" prot="public" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>writeSimilarityMatrix</name></member>
+      <member refid="classTermSimilarityWriter_1ab47132660b1a4a2528dff1b97f934b1b" prot="public" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>writeSimilarityMatrixBP</name></member>
+      <member refid="classTermSimilarityWriter_1ad021eceaae4427c3e9efea93a63a15ad" prot="public" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>writeSimilarityMatrixCC</name></member>
+      <member refid="classTermSimilarityWriter_1ac541f5cb901cece561648acdfa294653" prot="public" virt="non-virtual"><scope>TermSimilarityWriter</scope><name>writeSimilarityMatrixMF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
