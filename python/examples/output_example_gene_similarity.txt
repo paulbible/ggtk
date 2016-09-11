@@ -1,0 +1,30 @@
+Loading GO Graph from ../../example_graphs/go-basic.obo
+Loading Annotation Data from ../../example_annotations/goa_human.gaf
+
+---> Genes having annotations relating to "tolerance induction" (GO:0002507) <---
+P21580
+Q9Y6W8
+P01137
+Q9BZS1
+
+---> Randomly selected genes, unlikely related to "tolerance induction" <--- 
+Q6P9A3
+Q14833
+
+---> Gene semantic similarity between related genes <---
+Sim(P21580, Q9Y6W8) = 0.425485
+Sim(P21580, P01137) = 0.658997
+Sim(P21580, Q9BZS1) = 0.717327
+Sim(Q9Y6W8, P01137) = 0.579611
+Sim(Q9Y6W8, Q9BZS1) = 0.607843
+Sim(P01137, Q9BZS1) = 0.706438
+
+---> Gene semantic similarity between likely unrelated genes <---
+Sim(P21580, Q6P9A3) = 0.443086
+Sim(P21580, Q14833) = 0.493765
+Sim(Q9Y6W8, Q6P9A3) = 0.108516
+Sim(Q9Y6W8, Q14833) = 0.328182
+Sim(P01137, Q6P9A3) = 0.537562
+Sim(P01137, Q14833) = 0.582750
+Sim(Q9BZS1, Q6P9A3) = 0.659842
+Sim(Q9BZS1, Q14833) = 0.444889

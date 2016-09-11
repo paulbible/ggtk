@@ -1,0 +1,53 @@
+Loading GO Graph from ../../example_graphs/go-basic.obo
+
+----> Graph Statistics <----
+Number of Relationships (edges) in the graph: 81084
+Number of Terms (vertices) in the graph: 42718
+
+----> Ontology Statistics <----
+Number of BP terms: 28651
+-- BP Examples: 
+GO:0035986, senescence-associated heterochromatin focus assembly, "The assembly of chromatin into senescence-associa, ..."
+GO:0006635, fatty acid beta-oxidation, "A fatty acid oxidation process that results in th, ..."
+GO:0010070, zygote asymmetric cell division, "The division of the zygote into two daughter cell, ..."
+
+Number of MF terms: 10160
+-- MF Examples: 
+GO:0047093, 4-hydroxyquinoline 3-monooxygenase activity, "Catalysis of the reaction: H(+) + NADH + O(2) + q, ..."
+GO:0050019, L-arabinitol 4-dehydrogenase activity, "Catalysis of the reaction: L-arabinitol + NAD(+) , ..."
+GO:0022818, sodium ion uniporter activity, "Catalysis of the active transport of a sodium ion, ..."
+
+Number of CC terms: 3907
+-- CC Examples: 
+GO:0005575, cellular_component, "The part of a cell or its extracellular environme, ..."
+GO:0000506, glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex, "An enzyme complex that catalyzes the transfer of , ..."
+GO:0009428, bacterial-type flagellum basal body, distal rod, P ring, "One of the rings of the flagellar basal body; anc, ..."
+
+Total terms: 42718
+
+----> Term Depth of the 3 Ontologies <----
+Max term depth in BP: 11
+Avg term depth in BP: 5.489128
+
+Max term depth in MF: 11
+Avg term depth in MF: 5.168307
+
+Max term depth in CC: 9
+Avg term depth in MF: 3.811108
+
+----> In Degree and Out Degree <----
+Max BP In Degree (Children) 418
+Avg BP In Degree 2.141461
+Max BP Out Degree (Parents) 8
+Avg BP Out Degree 2.141461
+
+Max MF In Degree (Children) 285
+Avg MF In Degree 1.219193
+Max MF Out Degree (Parents) 7
+Avg MF Out Degree 1.219193
+
+Max MF In Degree (Children) 464
+Avg MF In Degree 1.879191
+Max MF Out Degree (Parents) 6
+Avg MF Out Degree 1.879191
+

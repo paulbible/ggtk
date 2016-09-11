@@ -1,0 +1,80 @@
+Loading GO Graph from ../../example_graphs/go-basic.obo
+Loading Annotation Data from ../../example_annotations/goa_human.gaf
+
+---> Working with the "signaling" branch of BP  <---
+---> Selected Test Terms <---
+GO:0016082, synaptic vesicle priming, "A process that converts synaptic vesicles to a st, ..."
+GO:0038166, angiotensin-activated signaling pathway, "The series of molecular signals generated as a co, ..."
+GO:0060084, synaptic transmission involved in micturition, "The process of communication from a neuron to a s, ..."
+GO:0035872, nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway, "A series of molecular signals generated as a cons, ..."
+
+--> ResnikSim( GO:0016082, GO:0016082) using different Shared Information calculations <--
+0.478324 Ancestor Mean
+0.863326 Most Informative Common Ancestor
+0.863326 Couto et al.'s GraSM
+0.863326 Adjusted Couto
+0.863326 Frotier Shared Information
+
+--> ResnikSim( GO:0016082, GO:0038166) using different Shared Information calculations <--
+0.206114 Ancestor Mean
+0.359337 Most Informative Common Ancestor
+0.206114 Couto et al.'s GraSM
+0.184227 Adjusted Couto
+0.184227 Frotier Shared Information
+
+--> ResnikSim( GO:0016082, GO:0060084) using different Shared Information calculations <--
+0.357363 Ancestor Mean
+0.555131 Most Informative Common Ancestor
+0.357363 Couto et al.'s GraSM
+0.356758 Adjusted Couto
+0.300079 Frotier Shared Information
+
+--> ResnikSim( GO:0016082, GO:0035872) using different Shared Information calculations <--
+0.206114 Ancestor Mean
+0.359337 Most Informative Common Ancestor
+0.206114 Couto et al.'s GraSM
+0.184227 Adjusted Couto
+0.184227 Frotier Shared Information
+
+--> ResnikSim( GO:0038166, GO:0038166) using different Shared Information calculations <--
+0.416912 Ancestor Mean
+0.831415 Most Informative Common Ancestor
+0.831415 Couto et al.'s GraSM
+0.831415 Adjusted Couto
+0.831415 Frotier Shared Information
+
+--> ResnikSim( GO:0038166, GO:0060084) using different Shared Information calculations <--
+0.225788 Ancestor Mean
+0.359337 Most Informative Common Ancestor
+0.225788 Couto et al.'s GraSM
+0.199808 Adjusted Couto
+0.213497 Frotier Shared Information
+
+--> ResnikSim( GO:0038166, GO:0035872) using different Shared Information calculations <--
+0.215972 Ancestor Mean
+0.368520 Most Informative Common Ancestor
+0.215972 Couto et al.'s GraSM
+0.213093 Adjusted Couto
+0.309897 Frotier Shared Information
+
+--> ResnikSim( GO:0060084, GO:0060084) using different Shared Information calculations <--
+0.472916 Ancestor Mean
+0.927792 Most Informative Common Ancestor
+0.927792 Couto et al.'s GraSM
+0.927792 Adjusted Couto
+0.927792 Frotier Shared Information
+
+--> ResnikSim( GO:0060084, GO:0035872) using different Shared Information calculations <--
+0.225788 Ancestor Mean
+0.359337 Most Informative Common Ancestor
+0.225788 Couto et al.'s GraSM
+0.199808 Adjusted Couto
+0.213497 Frotier Shared Information
+
+--> ResnikSim( GO:0035872, GO:0035872) using different Shared Information calculations <--
+0.281228 Ancestor Mean
+0.770187 Most Informative Common Ancestor
+0.770187 Couto et al.'s GraSM
+0.770187 Adjusted Couto
+0.770187 Frotier Shared Information
+

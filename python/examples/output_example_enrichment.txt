@@ -1,0 +1,59 @@
+Loading GO Graph from ../../example_graphs/go-basic.obo
+Loading Annotation Data from ../../example_annotations/goa_human.gaf
+
+---> Genes having annotations relating to "tolerance induction" (GO:0002507) <---
+O00182, P51679, Q9BZS1, P07948, P01137, Q16581, Q8TDQ0, Q92949, Q9Y6W8, P01024, P21580, A6NK06
+
+---> These genes are annotated with 455 distinct BP terms <---
+
+---> Enriched terms having a P < 1.0e-05 <---
+P-value = 1.92240e-43, Term: GO:0002507, Name = tolerance induction
+P-value = 6.29140e-16, Term: GO:0050777, Name = negative regulation of immune response
+P-value = 2.36427e-14, Term: GO:0001817, Name = regulation of cytokine production
+P-value = 4.51574e-13, Term: GO:0006954, Name = inflammatory response
+P-value = 6.89765e-13, Term: GO:0006955, Name = immune response
+P-value = 6.31582e-12, Term: GO:0050776, Name = regulation of immune response
+P-value = 5.52794e-11, Term: GO:0042130, Name = negative regulation of T cell proliferation
+P-value = 1.86700e-10, Term: GO:0002513, Name = tolerance induction to self antigen
+P-value = 1.86700e-10, Term: GO:0034136, Name = negative regulation of toll-like receptor 2 signaling pathway
+P-value = 3.20207e-10, Term: GO:0032088, Name = negative regulation of NF-kappaB transcription factor activity
+P-value = 2.06229e-09, Term: GO:0050869, Name = negative regulation of B cell activation
+P-value = 2.91097e-09, Term: GO:0006952, Name = defense response
+P-value = 4.53730e-09, Term: GO:0045824, Name = negative regulation of innate immune response
+P-value = 5.10275e-09, Term: GO:0032715, Name = negative regulation of interleukin-6 production
+P-value = 6.52533e-09, Term: GO:0034144, Name = negative regulation of toll-like receptor 4 signaling pathway
+P-value = 1.00781e-08, Term: GO:0050727, Name = regulation of inflammatory response
+P-value = 1.06657e-08, Term: GO:0032720, Name = negative regulation of tumor necrosis factor production
+P-value = 1.08619e-08, Term: GO:0022408, Name = negative regulation of cell-cell adhesion
+P-value = 1.08619e-08, Term: GO:0043433, Name = negative regulation of sequence-specific DNA binding transcription factor activity
+P-value = 1.38571e-08, Term: GO:0032496, Name = response to lipopolysaccharide
+P-value = 1.46062e-08, Term: GO:0071222, Name = cellular response to lipopolysaccharide
+P-value = 1.56498e-08, Term: GO:0045591, Name = positive regulation of regulatory T cell differentiation
+P-value = 1.80371e-08, Term: GO:0071219, Name = cellular response to molecule of bacterial origin
+P-value = 1.80628e-08, Term: GO:0002237, Name = response to molecule of bacterial origin
+P-value = 2.90876e-08, Term: GO:0008285, Name = negative regulation of cell proliferation
+P-value = 4.73655e-08, Term: GO:0048872, Name = homeostasis of number of cells
+P-value = 5.90630e-08, Term: GO:0002250, Name = adaptive immune response
+P-value = 1.04075e-07, Term: GO:0032703, Name = negative regulation of interleukin-2 production
+P-value = 1.63454e-07, Term: GO:0008284, Name = positive regulation of cell proliferation
+P-value = 2.46744e-07, Term: GO:0001782, Name = B cell homeostasis
+P-value = 2.85603e-07, Term: GO:0032753, Name = positive regulation of interleukin-4 production
+P-value = 3.58315e-07, Term: GO:0002519, Name = natural killer cell tolerance induction
+P-value = 3.58315e-07, Term: GO:0002652, Name = regulation of tolerance induction dependent upon immune response
+P-value = 3.58315e-07, Term: GO:0072573, Name = tolerance induction to lipopolysaccharide
+P-value = 3.58315e-07, Term: GO:1904469, Name = positive regulation of tumor necrosis factor secretion
+P-value = 4.81509e-07, Term: GO:0010575, Name = positive regulation of vascular endothelial growth factor production
+P-value = 5.41507e-07, Term: GO:0032673, Name = regulation of interleukin-4 production
+P-value = 7.89060e-07, Term: GO:0045087, Name = innate immune response
+P-value = 8.30991e-07, Term: GO:0032689, Name = negative regulation of interferon-gamma production
+P-value = 1.00794e-06, Term: GO:0097028, Name = dendritic cell differentiation
+P-value = 1.07457e-06, Term: GO:0032831, Name = positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation
+P-value = 1.07457e-06, Term: GO:2000670, Name = positive regulation of dendritic cell apoptotic process
+P-value = 1.47559e-06, Term: GO:0050707, Name = regulation of cytokine secretion
+P-value = 1.82074e-06, Term: GO:0032480, Name = negative regulation of type I interferon production
+P-value = 3.57942e-06, Term: GO:0045066, Name = regulatory T cell differentiation
+P-value = 3.59930e-06, Term: GO:0032570, Name = response to progesterone
+P-value = 3.81025e-06, Term: GO:0007565, Name = female pregnancy
+P-value = 5.36727e-06, Term: GO:0002677, Name = negative regulation of chronic inflammatory response
+P-value = 5.97950e-06, Term: GO:0032270, Name = positive regulation of cellular protein metabolic process
+P-value = 8.03123e-06, Term: GO:0010629, Name = negative regulation of gene expression

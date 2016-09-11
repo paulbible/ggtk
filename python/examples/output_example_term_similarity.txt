@@ -1,0 +1,60 @@
+Loading GO Graph from ../../example_graphs/go-basic.obo
+Loading Annotation Data from ../../example_annotations/goa_human.gaf
+
+---> Working with the "signaling" branch of BP  <---
+---> Selected Test Terms <---
+GO:0016082, synaptic vesicle priming, "A process that converts synaptic vesicles to a st, ..."
+GO:0038166, angiotensin-activated signaling pathway, "The series of molecular signals generated as a co, ..."
+GO:0060084, synaptic transmission involved in micturition, "The process of communication from a neuron to a s, ..."
+GO:0035872, nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway, "A series of molecular signals generated as a cons, ..."
+
+--> Sim( GO:0016082, GO:0016082) <--
+Resnik 0.863326
+Lin 1.000000
+Jiang Conrath 1.000000
+
+--> Sim( GO:0016082, GO:0038166) <--
+Resnik 0.359337
+Lin 0.424061
+Jiang Conrath 0.511967
+
+--> Sim( GO:0016082, GO:0060084) <--
+Resnik 0.555131
+Lin 0.619871
+Jiang Conrath 0.659572
+
+--> Sim( GO:0016082, GO:0035872) <--
+Resnik 0.359337
+Lin 0.439956
+Jiang Conrath 0.542581
+
+--> Sim( GO:0038166, GO:0038166) <--
+Resnik 0.831415
+Lin 1.000000
+Jiang Conrath 1.000000
+
+--> Sim( GO:0038166, GO:0060084) <--
+Resnik 0.359337
+Lin 0.408522
+Jiang Conrath 0.479733
+
+--> Sim( GO:0038166, GO:0035872) <--
+Resnik 0.368520
+Lin 0.460189
+Jiang Conrath 0.567719
+
+--> Sim( GO:0060084, GO:0060084) <--
+Resnik 0.927792
+Lin 1.000000
+Jiang Conrath 1.000000
+
+--> Sim( GO:0060084, GO:0035872) <--
+Resnik 0.359337
+Lin 0.423253
+Jiang Conrath 0.510347
+
+--> Sim( GO:0035872, GO:0035872) <--
+Resnik 0.770187
+Lin 1.000000
+Jiang Conrath 1.000000
+
