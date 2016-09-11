@@ -7,3 +7,6 @@ GGTK is composed of a set of C++ header libraries. Simply include the necessary 
 GGTK is realeased under the Boost Software License - Version 1.0.
 
 See the LICENSE_1_0.txt file or a copy at http://www.boost.org/LICENSE_1_0.txt
+
+# Acknowledgements
+GGTK uses the amazing RapidXML library (http://rapidxml.sourceforge.net/) writen by Marcin Kalicinski.
