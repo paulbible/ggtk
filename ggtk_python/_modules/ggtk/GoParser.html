@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ggtk.GoParser &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for ggtk.GoParser</h1><div class="highlight"><pre>
+<span></span><span class="c1">#==============================================================================</span>
+<span class="c1">#  Copyright (c) 2016 Paul W. Bible</span>
+<span class="c1">#</span>
+<span class="c1">#  Distributed under the Boost Software License, Version 1.0. (See accompanying</span>
+<span class="c1">#  file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)</span>
+<span class="c1">#==============================================================================</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The GoParsers module provides a means for parsing different type of Gene Ontology graphs.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">go_parsers</span>
+<span class="kn">import</span> <span class="nn">_GoGraph</span>
+<span class="kn">from</span> <span class="nn">exceptions</span> <span class="k">import</span> <span class="ne">IOError</span><span class="p">,</span> <span class="ne">ValueError</span>
+
+<div class="viewcode-block" id="parse"><a class="viewcode-back" href="../../basic_classes.html#ggtk.GoParser.parse">[docs]</a><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">relationships</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Parse a Gene Ontology file. Format values are &#39;obo&#39; and &#39;xml&#39;.</span>
+
+<span class="sd">    If no relationships are give, only the standard is_a and part_of relationshiips will be used.</span>
+
+<span class="sd">    Adding a list of relationship strings allows the user</span>
+<span class="sd">    to select the desired set of relationships to be parsed.</span>
+
+<span class="sd">    If relationships is given as a list, the parse will restrict relationships to only those given</span>
+<span class="sd">    in the list. Should this subset of relationships result in a graph with more or less than</span>
+<span class="sd">    3 components (BP, MF, CC), an error will be raised.</span>
+
+<span class="sd">    Allowed relationship strings are:</span>
+<span class="sd">    {&#39;is_a&#39;,</span>
+<span class="sd">    &#39;part_of&#39;,</span>
+<span class="sd">    &#39;regulates&#39;,</span>
+<span class="sd">    &#39;positively_regulates&#39;,</span>
+<span class="sd">    &#39;negatively_regulates&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">relationships</span><span class="p">:</span>
+        <span class="n">asrp</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">AllowedSetRelationshipPolicy</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">relationships</span><span class="p">:</span>
+            <span class="n">asrp</span><span class="o">.</span><span class="n">addRelationship</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">asrp</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;GGTK Invalid Relationships: No valid relationships in the set.&#39;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;obo&#39;</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">AllowedRelationshipOboGoParser</span><span class="p">(</span><span class="n">asrp</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+            <span class="n">graph_proxy</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+            <span class="n">num_components</span> <span class="o">=</span> <span class="n">graph_proxy</span><span class="o">.</span><span class="n">getNumComponents</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">num_components</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;GGTK Relationships Error: 3 graph components expected. </span><span class="si">%i</span><span class="s1"> found.&#39;</span> <span class="o">%</span> <span class="n">num_components</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;xml&#39;</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">AllowedRelationshipXmlGoParser</span><span class="p">(</span><span class="n">asrp</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+            <span class="n">graph_proxy</span> <span class="o">=</span>  <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+            <span class="n">num_components</span> <span class="o">=</span> <span class="n">graph_proxy</span><span class="o">.</span><span class="n">getNumComponents</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">num_components</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;GGTK Relationships Error: 3 graph components expected. </span><span class="si">%i</span><span class="s1"> found.&#39;</span> <span class="o">%</span> <span class="n">num_components</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;obo&#39;</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">StandardOboGoParser</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+            <span class="n">graph_proxy</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;xml&#39;</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">StandardXmlGoParser</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+            <span class="n">graph_proxy</span> <span class="o">=</span>  <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;GGTK Parser Not Defined: No parser of type </span><span class="si">%s</span><span class="s1"> is defined.&#39;</span> <span class="o">%</span> <span class="nb">format</span><span class="p">)</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

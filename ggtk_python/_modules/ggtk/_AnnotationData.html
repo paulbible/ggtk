@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ggtk._AnnotationData &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for ggtk._AnnotationData</h1><div class="highlight"><pre>
+<span></span><span class="c1">#==============================================================================</span>
+<span class="c1">#  Copyright (c) 2016 Paul W. Bible</span>
+<span class="c1">#</span>
+<span class="c1">#  Distributed under the Boost Software License, Version 1.0. (See accompanying</span>
+<span class="c1">#  file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)</span>
+<span class="c1">#==============================================================================</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The _AnnotationData module encapsulates the AnnotationData class</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">app_utilities</span>
+<span class="kn">import</span> <span class="nn">go_enums</span>
+
+<div class="viewcode-block" id="AnnotationData"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData">[docs]</a><span class="k">class</span> <span class="nc">AnnotationData</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    AnnotationData class, a more friendly python wrapper for the C++ AnnotationData class.</span>
+<span class="sd">    This class should not be instatiated by the user. It is returned by AnnotationParser functions.</span>
+<span class="sd">    The AnnotationData serves as a database that connects biological entities to GO annotations.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">anno_data_swig_proxy</span><span class="p">):</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">anno_data_swig_proxy</span>
+
+<div class="viewcode-block" id="AnnotationData.getNumGenes"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getNumGenes">[docs]</a>    <span class="k">def</span> <span class="nf">getNumGenes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the number of genes referenced in the annotaiton database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getNumGenes</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getNumGoTerms"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getNumGoTerms">[docs]</a>    <span class="k">def</span> <span class="nf">getNumGoTerms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the number of GO terms referenced in the annotaiton database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getNumGoTerms</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="AnnotationData.hasGene"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.hasGene">[docs]</a>    <span class="k">def</span> <span class="nf">hasGene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Determine if the gene exists in the database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">hasGene</span><span class="p">(</span><span class="n">gene_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.hasGoTerm"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.hasGoTerm">[docs]</a>    <span class="k">def</span> <span class="nf">hasGoTerm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Determine if the GO term exists in the datbase.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">hasGoTerm</span><span class="p">(</span><span class="n">go_term</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getAllGoTerms"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getAllGoTerms">[docs]</a>    <span class="k">def</span> <span class="nf">getAllGoTerms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns all the GO terms with annotations in the database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getAllGoTerms</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getAllGenes"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getAllGenes">[docs]</a>    <span class="k">def</span> <span class="nf">getAllGenes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns all genes in the database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getAllGenes</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getNumAnnotationsForGene"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getNumAnnotationsForGene">[docs]</a>    <span class="k">def</span> <span class="nf">getNumAnnotationsForGene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the number of GO terms annotated to a gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getNumAnnotationsForGene</span><span class="p">(</span><span class="n">gene_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getNumAnnotationsForGoTerm"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getNumAnnotationsForGoTerm">[docs]</a>    <span class="k">def</span> <span class="nf">getNumAnnotationsForGoTerm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the number of genes annotated annotated with a GO term.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getNumAnnotationsForGoTerm</span><span class="p">(</span><span class="n">go_term</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGoTermsForGene"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGoTermsForGene">[docs]</a>    <span class="k">def</span> <span class="nf">getGoTermsForGene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of GO terms annotated to the given gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGoTermsForGene</span><span class="p">(</span><span class="n">gene_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGenesForGoTerm"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGenesForGoTerm">[docs]</a>    <span class="k">def</span> <span class="nf">getGenesForGoTerm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of genes annotated with the given gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGenesForGoTerm</span><span class="p">(</span><span class="n">go_term</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGoTermsEvidenceForGene"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGoTermsEvidenceForGene">[docs]</a>    <span class="k">def</span> <span class="nf">getGoTermsEvidenceForGene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of evidence types corresponding to the annotation of each GO term.</span>
+<span class="sd">        The list is the same length as the returned GO term list.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGoTermsEvidenceForGene</span><span class="p">(</span><span class="n">gene_name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGenesEvidenceForGoTerm"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGenesEvidenceForGoTerm">[docs]</a>    <span class="k">def</span> <span class="nf">getGenesEvidenceForGoTerm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of evidence types corresponding to the annotation of each gene to this term.</span>
+<span class="sd">        The list is the same length as the returned gene list.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGenesEvidenceForGoTerm</span><span class="p">(</span><span class="n">go_term</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGoTermsForGeneBP"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGoTermsForGeneBP">[docs]</a>    <span class="k">def</span> <span class="nf">getGoTermsForGeneBP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of biological process GO terms for a gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">app_utilities</span><span class="o">.</span><span class="n">setToVec</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGoTermsForGeneBP</span><span class="p">(</span><span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGoTermsForGeneMF"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGoTermsForGeneMF">[docs]</a>    <span class="k">def</span> <span class="nf">getGoTermsForGeneMF</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of molecular function GO terms for a gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">app_utilities</span><span class="o">.</span><span class="n">setToVec</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGoTermsForGeneMF</span><span class="p">(</span><span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="AnnotationData.getGoTermsForGeneCC"><a class="viewcode-back" href="../../basic_classes.html#ggtk._AnnotationData.AnnotationData.getGoTermsForGeneCC">[docs]</a>    <span class="k">def</span> <span class="nf">getGoTermsForGeneCC</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a list of cellular component GO terms for a gene.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">app_utilities</span><span class="o">.</span><span class="n">setToVec</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">getGoTermsForGeneCC</span><span class="p">(</span><span class="n">gene_name</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">))</span></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

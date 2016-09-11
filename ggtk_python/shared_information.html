@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Shared Information &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="index.html" />
+    <link rel="up" title="GGTK Python API" href="ggtk_api.html" />
+    <link rel="next" title="Term Set Similarity" href="term_set_similarity.html" />
+    <link rel="prev" title="Term Similarity" href="term_similarity.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="term_set_similarity.html" title="Term Set Similarity"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="term_similarity.html" title="Term Similarity"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="ggtk_api.html" accesskey="U">GGTK Python API</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="shared-information">
+<h1>Shared Information<a class="headerlink" href="#shared-information" title="Permalink to this headline">¶</a></h1>
+<p>These classes define <strong>Shared Information</strong> calculators. They represent different methods for SI calculation.</p>
+<div class="section" id="basesharedinformation-class">
+<h2>BaseSharedInformation Class<a class="headerlink" href="#basesharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk._BaseSharedInformation.BaseSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk._BaseSharedInformation.</code><code class="descname">BaseSharedInformation</code><span class="sig-paren">(</span><em>si_proxy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseSharedInformation.html#BaseSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>An abstract shared infromation class to provide a nice interface
+to python for a number of C++ shared information classes.</p>
+<dl class="method">
+<dt id="ggtk._BaseSharedInformation.BaseSharedInformation.hasTerm">
+<code class="descname">hasTerm</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseSharedInformation.html#BaseSharedInformation.hasTerm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseSharedInformation.BaseSharedInformation.hasTerm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the term can be found in the databse, false otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ggtk._BaseSharedInformation.BaseSharedInformation.maxInformationContent">
+<code class="descname">maxInformationContent</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseSharedInformation.html#BaseSharedInformation.maxInformationContent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseSharedInformation.BaseSharedInformation.maxInformationContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the maximun information allowed by the corpus for normalization</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ggtk._BaseSharedInformation.BaseSharedInformation.sharedInformation">
+<code class="descname">sharedInformation</code><span class="sig-paren">(</span><em>term_a</em>, <em>term_b=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseSharedInformation.html#BaseSharedInformation.sharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseSharedInformation.BaseSharedInformation.sharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shared information the two terms</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ancestormeansharedinformation-class">
+<h2>AncestorMeanSharedInformation Class<a class="headerlink" href="#ancestormeansharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.AncestorMeanSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">AncestorMeanSharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#AncestorMeanSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.AncestorMeanSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by the mean information content of common ancestors method.
+Full details are available in ggtk/AncestorMeanSharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+<div class="section" id="micasharedinformation-class">
+<h2>MICASharedInformation Class<a class="headerlink" href="#micasharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.MICASharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">MICASharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#MICASharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.MICASharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by the Most Informative Common Ancestor (MICA) method.
+Full details are available in ggtk/MICASharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+<div class="section" id="coutograsmsharedinformation-class">
+<h2>CoutoGraSMSharedInformation Class<a class="headerlink" href="#coutograsmsharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.CoutoGraSMSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">CoutoGraSMSharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#CoutoGraSMSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.CoutoGraSMSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by Couto et al.&#8217;s GraSM method.
+Full details are available in ggtk/CoutoGraSMSharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+<div class="section" id="coutograsmadjustedsharedinformation-class">
+<h2>CoutoGraSMAdjustedSharedInformation Class<a class="headerlink" href="#coutograsmadjustedsharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.CoutoGraSMAdjustedSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">CoutoGraSMAdjustedSharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#CoutoGraSMAdjustedSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.CoutoGraSMAdjustedSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by an adjusted version of Couto et al.&#8217;s GraSM method.
+Full details are available in ggtk/CoutoGraSMAdjustedSharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+<div class="section" id="exclusivelyinheritedsharedinformation-class">
+<h2>ExclusivelyInheritedSharedInformation Class<a class="headerlink" href="#exclusivelyinheritedsharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.ExclusivelyInheritedSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">ExclusivelyInheritedSharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#ExclusivelyInheritedSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.ExclusivelyInheritedSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by the exclusively inherited shared information method.
+Full details are available in ggtk/ExclusivelyInheritedSharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+<div class="section" id="frontiersharedinformation-class">
+<h2>FrontierSharedInformation Class<a class="headerlink" href="#frontiersharedinformation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.FrontierSharedInformation">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">FrontierSharedInformation</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#FrontierSharedInformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.FrontierSharedInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseSharedInformation.BaseSharedInformation" title="ggtk._BaseSharedInformation.BaseSharedInformation"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseSharedInformation.BaseSharedInformation</span></code></a></p>
+<p>A class for calculating the shared information between two terms
+by the semantic frontier method.
+Full details are available in ggtk/FrontierSharedInformation.hpp</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Shared Information</a><ul>
+<li><a class="reference internal" href="#basesharedinformation-class">BaseSharedInformation Class</a></li>
+<li><a class="reference internal" href="#ancestormeansharedinformation-class">AncestorMeanSharedInformation Class</a></li>
+<li><a class="reference internal" href="#micasharedinformation-class">MICASharedInformation Class</a></li>
+<li><a class="reference internal" href="#coutograsmsharedinformation-class">CoutoGraSMSharedInformation Class</a></li>
+<li><a class="reference internal" href="#coutograsmadjustedsharedinformation-class">CoutoGraSMAdjustedSharedInformation Class</a></li>
+<li><a class="reference internal" href="#exclusivelyinheritedsharedinformation-class">ExclusivelyInheritedSharedInformation Class</a></li>
+<li><a class="reference internal" href="#frontiersharedinformation-class">FrontierSharedInformation Class</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="term_similarity.html"
+                        title="previous chapter">Term Similarity</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="term_set_similarity.html"
+                        title="next chapter">Term Set Similarity</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/shared_information.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="term_set_similarity.html" title="Term Set Similarity"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="term_similarity.html" title="Term Similarity"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="ggtk_api.html" >GGTK Python API</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

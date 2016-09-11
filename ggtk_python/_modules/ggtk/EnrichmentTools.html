@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ggtk.EnrichmentTools &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for ggtk.EnrichmentTools</h1><div class="highlight"><pre>
+<span></span><span class="c1">#==============================================================================</span>
+<span class="c1">#  Copyright (c) 2016 Paul W. Bible</span>
+<span class="c1">#</span>
+<span class="c1">#  Distributed under the Boost Software License, Version 1.0. (See accompanying</span>
+<span class="c1">#  file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)</span>
+<span class="c1">#==============================================================================</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">EnrichmentTools Module</span>
+<span class="sd">This module defines free functions that allow enrichment p-values </span>
+<span class="sd">to be calculated. These funcitons can serve as the foundation</span>
+<span class="sd">for more sophisticated enrichment anlayis.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">enrichment_tools</span>
+<span class="kn">import</span> <span class="nn">app_utilities</span>
+
+<div class="viewcode-block" id="getDescendantGenes"><a class="viewcode-back" href="../../enrichment_tools.html#ggtk.EnrichmentTools.getDescendantGenes">[docs]</a><span class="k">def</span> <span class="nf">getDescendantGenes</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">anno_data</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method calculates the set of the genes annotated</span>
+<span class="sd">    with a given term or transatively with a child of that term.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">app_utilities</span><span class="o">.</span><span class="n">setToVec</span><span class="p">(</span><span class="n">enrichment_tools</span><span class="o">.</span><span class="n">getDescendantGenes</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">,</span> <span class="n">anno_data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">go_term</span><span class="p">))</span></div>
+    
+<div class="viewcode-block" id="oneSidedRawPvalue_hyper"><a class="viewcode-back" href="../../enrichment_tools.html#ggtk.EnrichmentTools.oneSidedRawPvalue_hyper">[docs]</a><span class="k">def</span> <span class="nf">oneSidedRawPvalue_hyper</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">pop_success</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">test_value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method calculates p-value of a hypergeometice test give 4 values.</span>
+<span class="sd">    </span>
+<span class="sd">    The sample size,         n</span>
+<span class="sd">    The population success   K</span>
+<span class="sd">    The the population size  N</span>
+<span class="sd">    The test value           k</span>
+
+<span class="sd">    Answers the question:</span>
+<span class="sd">    &quot;What is probability of seeing value of k or more successes</span>
+<span class="sd">    in a sample of size n, given that the population of size N </span>
+<span class="sd">    contains K total successes.&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">enrichment_tools</span><span class="o">.</span><span class="n">oneSidedRawPvalue_hyper</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">pop_success</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">test_value</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="enrichmentSignificance"><a class="viewcode-back" href="../../enrichment_tools.html#ggtk.EnrichmentTools.enrichmentSignificance">[docs]</a><span class="k">def</span> <span class="nf">enrichmentSignificance</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">anno_data</span><span class="p">,</span> <span class="n">genes</span><span class="p">,</span> <span class="n">go_term</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method performs a hypergeometic test of enrichment for a term</span>
+<span class="sd">    given a set of genes that serves as the sample. The population is</span>
+<span class="sd">    taken as all genes in the annotation database.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">gene_set</span> <span class="o">=</span> <span class="n">app_utilities</span><span class="o">.</span><span class="n">vecToSet</span><span class="p">(</span><span class="n">genes</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">enrichment_tools</span><span class="o">.</span><span class="n">enrichmentSignificance</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">,</span> <span class="n">anno_data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">gene_set</span><span class="p">,</span> <span class="n">go_term</span><span class="p">)</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>
