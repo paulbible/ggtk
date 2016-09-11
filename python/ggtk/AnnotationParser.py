@@ -15,7 +15,7 @@ def parse(fname, format="gaf", evidence_codes=None):
     """
     Parse a Gene Ontology Annotation file.
 
-    Options for Format are {'gaf', 'mgi', 'entrex'}.
+    Options for Format are {'gaf', 'mgi', 'entrez'}.
 
     If evidence_codes is "exp", Only experimental evidence
     codes will be used. If evidence_codes is a list, 

@@ -2,3 +2,4 @@ gh_docs/
 python/tests/*.pyc
 python/build
 python/dist
+docs/latex
