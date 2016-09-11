@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "GGTK: The GO Graph Took Kit", "index.html", [
+    [ "GGTK: The GO Graph Tool Kit", "index.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
