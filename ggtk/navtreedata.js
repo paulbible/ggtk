@@ -1,6 +1,7 @@
 var NAVTREE =
 [
-  [ "GGTK: The GO Graph Took Kit for working with the Gene Ontology", "index.html", [
+  [ "GGTK: The GO Graph Took Kit", "index.html", [
+    [ "GGTK: The GO Graph Tool Kit", "index.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -31,7 +32,7 @@ var NAVTREEINDEX =
 [
 "Accumulators_8hpp_source.html",
 "classGoGraph.html#ace2ad63bbc6bb2d1dd3e182e6e9c793e",
-"functions_p.html"
+"functions_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
