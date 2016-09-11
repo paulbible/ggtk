@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Term Similarity &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="index.html" />
+    <link rel="up" title="GGTK Python API" href="ggtk_api.html" />
+    <link rel="next" title="Shared Information" href="shared_information.html" />
+    <link rel="prev" title="Term Maps" href="term_maps.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="shared_information.html" title="Shared Information"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="term_maps.html" title="Term Maps"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="ggtk_api.html" accesskey="U">GGTK Python API</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="term-similarity">
+<h1>Term Similarity<a class="headerlink" href="#term-similarity" title="Permalink to this headline">¶</a></h1>
+<p>A number of classes are defined to calculate various types of term similarity. All these classes conform to the BaseTermSim interface.</p>
+<div class="section" id="basetermsim-class">
+<h2>BaseTermSim Class<a class="headerlink" href="#basetermsim-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ggtk._BaseTermSim.BaseTermSim">
+<em class="property">class </em><code class="descclassname">ggtk._BaseTermSim.</code><code class="descname">BaseTermSim</code><span class="sig-paren">(</span><em>sim_proxy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseTermSim.html#BaseTermSim"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseTermSim.BaseTermSim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>An abstract term similarity class to provide a nice interface
+to python for a number of C++ term similarity classes.</p>
+<dl class="method">
+<dt id="ggtk._BaseTermSim.BaseTermSim.calculateNormalizedTermSimilarity">
+<code class="descname">calculateNormalizedTermSimilarity</code><span class="sig-paren">(</span><em>term_a</em>, <em>term_b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseTermSim.html#BaseTermSim.calculateNormalizedTermSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseTermSim.BaseTermSim.calculateNormalizedTermSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the similarity between the two terms</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ggtk._BaseTermSim.BaseTermSim.calculateTermSimilarity">
+<code class="descname">calculateTermSimilarity</code><span class="sig-paren">(</span><em>term_a</em>, <em>term_b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseTermSim.html#BaseTermSim.calculateTermSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseTermSim.BaseTermSim.calculateTermSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the similarity between the two terms</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ggtk._BaseTermSim.BaseTermSim.termSimilarity">
+<code class="descname">termSimilarity</code><span class="sig-paren">(</span><em>term_a</em>, <em>term_b</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/_BaseTermSim.html#BaseTermSim.termSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk._BaseTermSim.BaseTermSim.termSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the similarity between the two terms, a shorter method name</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ggtk.TermSimilarity">
+<span id="termsimilarity-module"></span><h2>TermSimilarity module<a class="headerlink" href="#module-ggtk.TermSimilarity" title="Permalink to this headline">¶</a></h2>
+<p>TermSimilarity Module
+This module defines the term similarity classes which inherit from the 
+base BaseTermSim python class</p>
+<dl class="class">
+<dt id="ggtk.TermSimilarity.JiangConrathSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">JiangConrathSimilarity</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#JiangConrathSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.JiangConrathSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Jiang Conrath Similarity
+Full details available in ggtk/JiangConrathSimilarity.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.LinSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">LinSimilarity</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#LinSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.LinSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Lin Similarity
+Full details available in ggtk/LinSimilarity.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.ModularJiangConrath">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">ModularJiangConrath</code><span class="sig-paren">(</span><em>si_type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#ModularJiangConrath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.ModularJiangConrath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Jiang Conrath Similarity using a
+shared infromation calculator (other than MCIA)
+Full details available in ggtk/ModularJiangConrath.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.ModularLin">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">ModularLin</code><span class="sig-paren">(</span><em>si_type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#ModularLin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.ModularLin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Lin Similarity using a
+shared infromation calculator (other than MCIA)
+Full details available in ggtk/ModularLin.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.ModularResnik">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">ModularResnik</code><span class="sig-paren">(</span><em>si_type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#ModularResnik"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.ModularResnik" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Resnik Similarity using a
+shared infromation calculator (other than MCIA)
+Full details available in ggtk/ModularResnik.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.PekarStaabSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">PekarStaabSimilarity</code><span class="sig-paren">(</span><em>go_graph</em>, <em>depth_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#PekarStaabSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.PekarStaabSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Pekar Staab similarity
+Full details available in ggtk/PekarStaabSimilarity.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.PrecomputedMatrixTermSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">PrecomputedMatrixTermSimilarity</code><span class="sig-paren">(</span><em>matrix_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#PrecomputedMatrixTermSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.PrecomputedMatrixTermSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate similarity from a precomputed matrix
+Full details available in ggtk/PrecomputedMatrixTermSimilarity.hpp
+Designed to read an !Ontology Specific! similarity matrix,
+written by a TermSimilarityWriter.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.RelevanceSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">RelevanceSimilarity</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#RelevanceSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.RelevanceSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Relevance Similarity
+Full details available in ggtk/RelevanceSimilarity.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.ResnikSimilarity">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">ResnikSimilarity</code><span class="sig-paren">(</span><em>go_graph</em>, <em>ic_map</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#ResnikSimilarity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.ResnikSimilarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ggtk._BaseTermSim.BaseTermSim" title="ggtk._BaseTermSim.BaseTermSim"><code class="xref py py-class docutils literal"><span class="pre">ggtk._BaseTermSim.BaseTermSim</span></code></a></p>
+<p>A class to calculate Resnik Similarity
+Full details available in ggtk/ResnikSimilarity.hpp</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ggtk.TermSimilarity.TermSimilarityWriter">
+<em class="property">class </em><code class="descclassname">ggtk.TermSimilarity.</code><code class="descname">TermSimilarityWriter</code><span class="sig-paren">(</span><em>go_graph</em>, <em>anno_data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#TermSimilarityWriter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.TermSimilarityWriter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>TermSimilarityWrite calculates and writes a term matrix
+for use with the PrecomputedMatrixTermSimilarity
+Full details are available in ggtk/TermSimilarityWriter.hpp</p>
+<dl class="method">
+<dt id="ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrix">
+<code class="descname">writeSimilarityMatrix</code><span class="sig-paren">(</span><em>term_sim</em>, <em>file_name</em>, <em>ontology</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#TermSimilarityWriter.writeSimilarityMatrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixBP">
+<code class="descname">writeSimilarityMatrixBP</code><span class="sig-paren">(</span><em>term_sim</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#TermSimilarityWriter.writeSimilarityMatrixBP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixBP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixCC">
+<code class="descname">writeSimilarityMatrixCC</code><span class="sig-paren">(</span><em>term_sim</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#TermSimilarityWriter.writeSimilarityMatrixCC"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixCC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixMF">
+<code class="descname">writeSimilarityMatrixMF</code><span class="sig-paren">(</span><em>term_sim</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ggtk/TermSimilarity.html#TermSimilarityWriter.writeSimilarityMatrixMF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ggtk.TermSimilarity.TermSimilarityWriter.writeSimilarityMatrixMF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Term Similarity</a><ul>
+<li><a class="reference internal" href="#basetermsim-class">BaseTermSim Class</a></li>
+<li><a class="reference internal" href="#module-ggtk.TermSimilarity">TermSimilarity module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="term_maps.html"
+                        title="previous chapter">Term Maps</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="shared_information.html"
+                        title="next chapter">Shared Information</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/term_similarity.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="shared_information.html" title="Shared Information"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="term_maps.html" title="Term Maps"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="ggtk_api.html" >GGTK Python API</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

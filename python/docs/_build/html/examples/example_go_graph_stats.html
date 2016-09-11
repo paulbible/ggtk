@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GO Graph Statistics Example &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="../index.html" />
+    <link rel="up" title="Code Examples" href="../code_examples.html" />
+    <link rel="next" title="Term Similarity Example" href="example_term_similarity.html" />
+    <link rel="prev" title="Code Examples" href="../code_examples.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="example_term_similarity.html" title="Term Similarity Example"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../code_examples.html" title="Code Examples"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../code_examples.html" accesskey="U">Code Examples</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="go-graph-statistics-example">
+<h1>GO Graph Statistics Example<a class="headerlink" href="#go-graph-statistics-example" title="Permalink to this headline">¶</a></h1>
+<p>Interacting with the gene ontology graph constitutes the most basic functionality of GGTK. This example illustrates how to load a GO graph from file and calculate some basic statistics.</p>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1">#/*=============================================================================</span>
+<span class="c1">#Copyright (c) 2016 Paul W. Bible</span>
+<span class="c1">#</span>
+<span class="c1">#Distributed under the Boost Software License, Version 1.0. (See accompanying</span>
+<span class="c1">#file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)</span>
+<span class="c1">#==============================================================================*/</span>
+<span class="kn">from</span> <span class="nn">ggtk</span> <span class="kn">import</span> <span class="n">GoParser</span>
+<span class="kn">from</span> <span class="nn">ggtk.TermMaps</span> <span class="kn">import</span> <span class="n">TermDepthMap</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Load a graph</span>
+    <span class="n">obo_go_graph_filename</span> <span class="o">=</span> <span class="s1">&#39;../../example_graphs/go-basic.obo&#39;</span>
+    <span class="k">print</span> <span class="s2">&quot;Loading GO Graph from </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">obo_go_graph_filename</span>
+    <span class="n">go_graph</span> <span class="o">=</span> <span class="n">GoParser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">obo_go_graph_filename</span><span class="p">,</span> <span class="s2">&quot;obo&quot;</span><span class="p">)</span>
+    <span class="k">print</span>
+
+    <span class="c1"># Graph statistics</span>
+    <span class="k">print</span> <span class="s2">&quot;----&gt; Graph Statistics &lt;----&quot;</span>
+    <span class="n">n_edges</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getNumEdges</span><span class="p">()</span>
+    <span class="n">n_vertices</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getNumVertices</span><span class="p">()</span>
+    <span class="k">print</span> <span class="s2">&quot;Number of Relationships (edges) in the graph: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n_edges</span>
+    <span class="k">print</span> <span class="s2">&quot;Number of Terms (vertices) in the graph: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n_vertices</span>
+    <span class="k">print</span>
+
+    <span class="c1"># Sub-ontology statistics</span>
+    <span class="k">print</span> <span class="s2">&quot;----&gt; Ontology Statistics &lt;----&quot;</span>
+    <span class="n">bp_terms</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getAllTermsBP</span><span class="p">()</span>
+    <span class="n">mf_terms</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getAllTermsMF</span><span class="p">()</span>
+    <span class="n">cc_terms</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getAllTermsCC</span><span class="p">()</span>
+    <span class="k">print</span> <span class="s2">&quot;Number of BP terms: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">bp_terms</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;-- BP Examples: &quot;</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">bp_terms</span><span class="p">[:</span><span class="mi">3</span><span class="p">]:</span>
+        <span class="k">print</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">term</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermName</span><span class="p">(</span><span class="n">term</span><span class="p">),</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermDescription</span><span class="p">(</span><span class="n">term</span><span class="p">)[:</span><span class="mi">50</span><span class="p">],</span> <span class="s1">&#39;...&quot;&#39;</span><span class="p">])</span>
+    <span class="k">print</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Number of MF terms: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mf_terms</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;-- MF Examples: &quot;</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">mf_terms</span><span class="p">[:</span><span class="mi">3</span><span class="p">]:</span>
+        <span class="k">print</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">term</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermName</span><span class="p">(</span><span class="n">term</span><span class="p">),</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermDescription</span><span class="p">(</span><span class="n">term</span><span class="p">)[:</span><span class="mi">50</span><span class="p">],</span> <span class="s1">&#39;...&quot;&#39;</span><span class="p">])</span>
+    <span class="k">print</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Number of CC terms: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">cc_terms</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;-- CC Examples: &quot;</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">cc_terms</span><span class="p">[:</span><span class="mi">3</span><span class="p">]:</span>
+        <span class="k">print</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">term</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermName</span><span class="p">(</span><span class="n">term</span><span class="p">),</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermDescription</span><span class="p">(</span><span class="n">term</span><span class="p">)[:</span><span class="mi">50</span><span class="p">],</span> <span class="s1">&#39;...&quot;&#39;</span><span class="p">])</span>
+    <span class="k">print</span>
+
+    <span class="k">print</span> <span class="s2">&quot;Total terms: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bp_terms</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">mf_terms</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">cc_terms</span><span class="p">))</span>
+    <span class="k">print</span>
+
+    <span class="c1"># Analyze term depth</span>
+    <span class="k">print</span> <span class="s2">&quot;----&gt; Term Depth of the 3 Ontologies &lt;----&quot;</span>
+    <span class="n">termDepth</span> <span class="o">=</span> <span class="n">TermDepthMap</span><span class="p">(</span><span class="n">go_graph</span><span class="p">)</span>
+
+    <span class="n">bp_depths</span> <span class="o">=</span> <span class="p">[</span><span class="n">termDepth</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">bp_terms</span><span class="p">]</span>
+    <span class="n">max_bp_depth</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">bp_depths</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Max term depth in BP: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">max_bp_depth</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg term depth in BP: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">bp_depths</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bp_depths</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+    <span class="n">mf_depths</span> <span class="o">=</span> <span class="p">[</span><span class="n">termDepth</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">mf_terms</span><span class="p">]</span>
+    <span class="n">max_mf_depth</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">mf_depths</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Max term depth in MF: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">max_mf_depth</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg term depth in MF: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">mf_depths</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mf_depths</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+    <span class="n">cc_depths</span> <span class="o">=</span> <span class="p">[</span><span class="n">termDepth</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">cc_terms</span><span class="p">]</span>
+    <span class="n">max_cc_depth</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cc_depths</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Max term depth in CC: </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">max_cc_depth</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg term depth in MF: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cc_depths</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cc_depths</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+    <span class="k">print</span> <span class="s2">&quot;----&gt; In Degree and Out Degree &lt;----&quot;</span>
+    <span class="n">bp_in_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getChildTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">bp_terms</span><span class="p">]</span>
+    <span class="n">bp_out_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getParentTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">bp_terms</span><span class="p">]</span>
+    <span class="k">print</span> <span class="s2">&quot;Max BP In Degree (Children) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">bp_in_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg BP In Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">bp_in_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bp_in_degrees</span><span class="p">)))</span>
+    <span class="k">print</span> <span class="s2">&quot;Max BP Out Degree (Parents) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">bp_out_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg BP Out Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">bp_out_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bp_out_degrees</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+    <span class="n">mf_in_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getChildTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">mf_terms</span><span class="p">]</span>
+    <span class="n">mf_out_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getParentTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">mf_terms</span><span class="p">]</span>
+    <span class="k">print</span> <span class="s2">&quot;Max MF In Degree (Children) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">mf_in_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg MF In Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">mf_in_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mf_in_degrees</span><span class="p">)))</span>
+    <span class="k">print</span> <span class="s2">&quot;Max MF Out Degree (Parents) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">mf_out_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg MF Out Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">mf_out_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mf_out_degrees</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+    <span class="n">cc_in_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getChildTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">cc_terms</span><span class="p">]</span>
+    <span class="n">cc_out_degrees</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getParentTerms</span><span class="p">(</span><span class="n">term</span><span class="p">))</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">cc_terms</span><span class="p">]</span>
+    <span class="k">print</span> <span class="s2">&quot;Max MF In Degree (Children) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">cc_in_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg MF In Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cc_in_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cc_in_degrees</span><span class="p">)))</span>
+    <span class="k">print</span> <span class="s2">&quot;Max MF Out Degree (Parents) </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">max</span><span class="p">(</span><span class="n">cc_out_degrees</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Avg MF Out Degree </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">cc_out_degrees</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cc_out_degrees</span><span class="p">)))</span>
+    <span class="k">print</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Loading</span> <span class="n">GO</span> <span class="n">Graph</span> <span class="kn">from</span> <span class="nn">..</span><span class="o">/../</span><span class="n">example_graphs</span><span class="o">/</span><span class="n">go</span><span class="o">-</span><span class="n">basic</span><span class="o">.</span><span class="n">obo</span>
+
+<span class="o">----&gt;</span> <span class="n">Graph</span> <span class="n">Statistics</span> <span class="o">&lt;----</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">Relationships</span> <span class="p">(</span><span class="n">edges</span><span class="p">)</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">graph</span><span class="p">:</span> <span class="mi">81084</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">Terms</span> <span class="p">(</span><span class="n">vertices</span><span class="p">)</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">graph</span><span class="p">:</span> <span class="mi">42718</span>
+
+<span class="o">----&gt;</span> <span class="n">Ontology</span> <span class="n">Statistics</span> <span class="o">&lt;----</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">BP</span> <span class="n">terms</span><span class="p">:</span> <span class="mi">28651</span>
+<span class="o">--</span> <span class="n">BP</span> <span class="n">Examples</span><span class="p">:</span> 
+<span class="n">GO</span><span class="p">:</span><span class="mi">0035986</span><span class="p">,</span> <span class="n">senescence</span><span class="o">-</span><span class="n">associated</span> <span class="n">heterochromatin</span> <span class="n">focus</span> <span class="n">assembly</span><span class="p">,</span> <span class="s2">&quot;The assembly of chromatin into senescence-associa, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0006635</span><span class="p">,</span> <span class="n">fatty</span> <span class="n">acid</span> <span class="n">beta</span><span class="o">-</span><span class="n">oxidation</span><span class="p">,</span> <span class="s2">&quot;A fatty acid oxidation process that results in th, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0010070</span><span class="p">,</span> <span class="n">zygote</span> <span class="n">asymmetric</span> <span class="n">cell</span> <span class="n">division</span><span class="p">,</span> <span class="s2">&quot;The division of the zygote into two daughter cell, ...&quot;</span>
+
+<span class="n">Number</span> <span class="n">of</span> <span class="n">MF</span> <span class="n">terms</span><span class="p">:</span> <span class="mi">10160</span>
+<span class="o">--</span> <span class="n">MF</span> <span class="n">Examples</span><span class="p">:</span> 
+<span class="n">GO</span><span class="p">:</span><span class="mi">0047093</span><span class="p">,</span> <span class="mi">4</span><span class="o">-</span><span class="n">hydroxyquinoline</span> <span class="mi">3</span><span class="o">-</span><span class="n">monooxygenase</span> <span class="n">activity</span><span class="p">,</span> <span class="s2">&quot;Catalysis of the reaction: H(+) + NADH + O(2) + q, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0050019</span><span class="p">,</span> <span class="n">L</span><span class="o">-</span><span class="n">arabinitol</span> <span class="mi">4</span><span class="o">-</span><span class="n">dehydrogenase</span> <span class="n">activity</span><span class="p">,</span> <span class="s2">&quot;Catalysis of the reaction: L-arabinitol + NAD(+) , ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0022818</span><span class="p">,</span> <span class="n">sodium</span> <span class="n">ion</span> <span class="n">uniporter</span> <span class="n">activity</span><span class="p">,</span> <span class="s2">&quot;Catalysis of the active transport of a sodium ion, ...&quot;</span>
+
+<span class="n">Number</span> <span class="n">of</span> <span class="n">CC</span> <span class="n">terms</span><span class="p">:</span> <span class="mi">3907</span>
+<span class="o">--</span> <span class="n">CC</span> <span class="n">Examples</span><span class="p">:</span> 
+<span class="n">GO</span><span class="p">:</span><span class="mi">0005575</span><span class="p">,</span> <span class="n">cellular_component</span><span class="p">,</span> <span class="s2">&quot;The part of a cell or its extracellular environme, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0000506</span><span class="p">,</span> <span class="n">glycosylphosphatidylinositol</span><span class="o">-</span><span class="n">N</span><span class="o">-</span><span class="n">acetylglucosaminyltransferase</span> <span class="p">(</span><span class="n">GPI</span><span class="o">-</span><span class="n">GnT</span><span class="p">)</span> <span class="nb">complex</span><span class="p">,</span> <span class="s2">&quot;An enzyme complex that catalyzes the transfer of , ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0009428</span><span class="p">,</span> <span class="n">bacterial</span><span class="o">-</span><span class="nb">type</span> <span class="n">flagellum</span> <span class="n">basal</span> <span class="n">body</span><span class="p">,</span> <span class="n">distal</span> <span class="n">rod</span><span class="p">,</span> <span class="n">P</span> <span class="n">ring</span><span class="p">,</span> <span class="s2">&quot;One of the rings of the flagellar basal body; anc, ...&quot;</span>
+
+<span class="n">Total</span> <span class="n">terms</span><span class="p">:</span> <span class="mi">42718</span>
+
+<span class="o">----&gt;</span> <span class="n">Term</span> <span class="n">Depth</span> <span class="n">of</span> <span class="n">the</span> <span class="mi">3</span> <span class="n">Ontologies</span> <span class="o">&lt;----</span>
+<span class="n">Max</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">BP</span><span class="p">:</span> <span class="mi">11</span>
+<span class="n">Avg</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">BP</span><span class="p">:</span> <span class="mf">5.489128</span>
+
+<span class="n">Max</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">MF</span><span class="p">:</span> <span class="mi">11</span>
+<span class="n">Avg</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">MF</span><span class="p">:</span> <span class="mf">5.168307</span>
+
+<span class="n">Max</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">CC</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">Avg</span> <span class="n">term</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">MF</span><span class="p">:</span> <span class="mf">3.811108</span>
+
+<span class="o">----&gt;</span> <span class="n">In</span> <span class="n">Degree</span> <span class="ow">and</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="o">&lt;----</span>
+<span class="n">Max</span> <span class="n">BP</span> <span class="n">In</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Children</span><span class="p">)</span> <span class="mi">418</span>
+<span class="n">Avg</span> <span class="n">BP</span> <span class="n">In</span> <span class="n">Degree</span> <span class="mf">2.141461</span>
+<span class="n">Max</span> <span class="n">BP</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Parents</span><span class="p">)</span> <span class="mi">8</span>
+<span class="n">Avg</span> <span class="n">BP</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="mf">2.141461</span>
+
+<span class="n">Max</span> <span class="n">MF</span> <span class="n">In</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Children</span><span class="p">)</span> <span class="mi">285</span>
+<span class="n">Avg</span> <span class="n">MF</span> <span class="n">In</span> <span class="n">Degree</span> <span class="mf">1.219193</span>
+<span class="n">Max</span> <span class="n">MF</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Parents</span><span class="p">)</span> <span class="mi">7</span>
+<span class="n">Avg</span> <span class="n">MF</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="mf">1.219193</span>
+
+<span class="n">Max</span> <span class="n">MF</span> <span class="n">In</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Children</span><span class="p">)</span> <span class="mi">464</span>
+<span class="n">Avg</span> <span class="n">MF</span> <span class="n">In</span> <span class="n">Degree</span> <span class="mf">1.879191</span>
+<span class="n">Max</span> <span class="n">MF</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="p">(</span><span class="n">Parents</span><span class="p">)</span> <span class="mi">6</span>
+<span class="n">Avg</span> <span class="n">MF</span> <span class="n">Out</span> <span class="n">Degree</span> <span class="mf">1.879191</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">GO Graph Statistics Example</a><ul>
+<li><a class="reference internal" href="#code">Code</a></li>
+<li><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../code_examples.html"
+                        title="previous chapter">Code Examples</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="example_term_similarity.html"
+                        title="next chapter">Term Similarity Example</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/examples/example_go_graph_stats.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="example_term_similarity.html" title="Term Similarity Example"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../code_examples.html" title="Code Examples"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../code_examples.html" >Code Examples</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>
