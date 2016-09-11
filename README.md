@@ -1,1 +1,2 @@
-# A simple README file for the gh-pages branch
+# The gh-pages branch of GGTK
+This repo hold all the documentations files hosted GitHub Pages.
