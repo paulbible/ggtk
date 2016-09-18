@@ -37,20 +37,34 @@ GGTK requires that you set the environment variable `BOOST` to the location of t
 
     export BOOST=/path/to/boost_1_54_0
 
+At this point, you may want to unzip the example graph and annotation data.::
+
+    cd example_graphs
+    gunzip *.gz
+    cd ../example_annotations
+    gunzip *.gz
+    cd ..
+
 Once you have downloaded the GGTK project folder. Enter the python diretory and enter the following commands::
 
     cd python
     python setup.py build
     python setup.py install
 
+Using the ``--user`` option lets you install the package in your home directory.::
 
-After Python has built and installed the package you may optionally run the tests. You may need to unzip the examples files::
+    python setup.py install --user
+
+
+After Python has built and installed the package you may optionally run the tests. You may need to unzip the examples files.::
 
     cd tests
     python test_all.py
 
 
 These tests will take about 5-10 minutes to complete.
+
+After than you are all set! Take a look at the example code in the next section.
 
 
 Example Code

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GGTK: The GO Graph Tool Kit &#8212; GGTK 0.1 documentation</title>
+    <title>GGTK: The GO Graph Tool Kit &mdash; GGTK 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -39,7 +39,7 @@
         <li class="right" >
           <a href="code_examples.html" title="Code Examples"
              accesskey="N">next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">GGTK 0.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="#">GGTK 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -59,18 +59,31 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BOOST</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">boost_1_54_0</span>
 </pre></div>
 </div>
+<p>At this point, you may want to unzip the example graph and annotation data.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_graphs</span>
+<span class="n">gunzip</span> <span class="o">*.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="o">../</span><span class="n">example_annotations</span>
+<span class="n">gunzip</span> <span class="o">*.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="o">..</span>
+</pre></div>
+</div>
 <p>Once you have downloaded the GGTK project folder. Enter the python diretory and enter the following commands:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">python</span>
 <span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build</span>
 <span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
 </pre></div>
 </div>
-<p>After Python has built and installed the package you may optionally run the tests. You may need to unzip the examples files:</p>
+<p>Using the <code class="docutils literal"><span class="pre">--user</span></code> option lets you install the package in your home directory.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span>
+</pre></div>
+</div>
+<p>After Python has built and installed the package you may optionally run the tests. You may need to unzip the examples files.:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">tests</span>
 <span class="n">python</span> <span class="n">test_all</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 <p>These tests will take about 5-10 minutes to complete.</p>
+<p>After than you are all set! Take a look at the example code in the next section.</p>
 </div>
 <div class="section" id="example-code">
 <h1>Example Code<a class="headerlink" href="#example-code" title="Permalink to this headline">¶</a></h1>
@@ -161,12 +174,12 @@
         <li class="right" >
           <a href="code_examples.html" title="Code Examples"
              >next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">GGTK 0.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="#">GGTK 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2016, Paul W. Bible.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.6.
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
     </div>
   </body>
 </html>
