@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Shared Information Example &mdash; GGTK 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="GGTK 0.1 documentation" href="../index.html" />
+    <link rel="up" title="Code Examples" href="../code_examples.html" />
+    <link rel="next" title="Simple Enrichment Example" href="example_enrichment.html" />
+    <link rel="prev" title="Gene Similarity Example" href="example_gene_similarity.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="example_enrichment.html" title="Simple Enrichment Example"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="example_gene_similarity.html" title="Gene Similarity Example"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../code_examples.html" accesskey="U">Code Examples</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="shared-information-example">
+<h1>Shared Information Example<a class="headerlink" href="#shared-information-example" title="Permalink to this headline">¶</a></h1>
+<p>Different methods of calculating <strong>Shared Information</strong> between two ontology terms can lead to different semantic similarity values. GGTK makes working with different types of shared information calculations simple. This example shows how to create shared information objects and use them in semantic calculations.</p>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1">#/*=============================================================================</span>
+<span class="c1">#Copyright (c) 2016 Paul W. Bible</span>
+<span class="c1">#</span>
+<span class="c1">#Distributed under the Boost Software License, Version 1.0. (See accompanying</span>
+<span class="c1">#file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)</span>
+<span class="c1">#==============================================================================*/</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">ggtk</span> <span class="kn">import</span> <span class="n">GoParser</span><span class="p">,</span> <span class="n">AnnotationParser</span>
+<span class="kn">from</span> <span class="nn">ggtk.TermMaps</span> <span class="kn">import</span> <span class="n">TermInformationContentMap</span>
+<span class="kn">from</span> <span class="nn">ggtk</span> <span class="kn">import</span> <span class="n">TermSimilarity</span>
+
+
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Load the go graph and annotation data</span>
+    <span class="n">obo_go_graph_filename</span> <span class="o">=</span> <span class="s1">&#39;../../example_graphs/go-basic.obo&#39;</span>
+    <span class="n">human_annotation_gaf_filename</span> <span class="o">=</span> <span class="s1">&#39;../../example_annotations/goa_human.gaf&#39;</span>
+    <span class="k">print</span> <span class="s2">&quot;Loading GO Graph from </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">obo_go_graph_filename</span>
+    <span class="n">go_graph</span> <span class="o">=</span> <span class="n">GoParser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">obo_go_graph_filename</span><span class="p">,</span> <span class="s2">&quot;obo&quot;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s2">&quot;Loading Annotation Data from </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">human_annotation_gaf_filename</span>
+    <span class="n">anno_data</span> <span class="o">=</span> <span class="n">AnnotationParser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">human_annotation_gaf_filename</span><span class="p">)</span>
+    <span class="k">print</span>
+
+    <span class="c1"># Get only terms with annotations, Some terms without annotations have probability 0</span>
+    <span class="n">annotated_go_terms</span> <span class="o">=</span> <span class="n">anno_data</span><span class="o">.</span><span class="n">getAllGoTerms</span><span class="p">()</span>
+
+    <span class="c1"># Lets work with some BP terms, Children of the root are all high level categories</span>
+    <span class="n">high_level_bp_terms</span> <span class="o">=</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getChildTerms</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getRootBP</span><span class="p">())</span>
+
+    <span class="c1"># Similiarity values are often 0 when terms only share the root node.</span>
+    <span class="c1"># So we will work with the descendants of one of these high level terms</span>
+    <span class="c1"># choose a single high level term.</span>
+    <span class="n">bp_term</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">high_level_bp_terms</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s1">&#39;---&gt; Working with the &quot;</span><span class="si">%s</span><span class="s1">&quot; branch of BP  &lt;---&#39;</span> <span class="o">%</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermName</span><span class="p">(</span><span class="n">bp_term</span><span class="p">)</span>
+
+    <span class="c1"># We will work with the descendants of this term that are also annotated.</span>
+    <span class="n">descendants</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">go_graph</span><span class="o">.</span><span class="n">getDescendantTerms</span><span class="p">(</span><span class="n">bp_term</span><span class="p">))</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="n">annotated_go_terms</span><span class="p">)</span>
+
+    <span class="c1"># Select a few terms to analyze</span>
+    <span class="n">test_terms</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">descendants</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s1">&#39;---&gt; Selected Test Terms &lt;---&#39;</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">test_terms</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">term</span><span class="p">,</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermName</span><span class="p">(</span><span class="n">term</span><span class="p">),</span> <span class="n">go_graph</span><span class="o">.</span><span class="n">getTermDescription</span><span class="p">(</span><span class="n">term</span><span class="p">)[:</span><span class="mi">50</span><span class="p">],</span> <span class="s1">&#39;...&quot;&#39;</span><span class="p">])</span>
+    <span class="k">print</span>
+
+    <span class="c1"># Construct the information content map</span>
+    <span class="n">ic_map</span> <span class="o">=</span> <span class="n">TermInformationContentMap</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">anno_data</span><span class="p">)</span>
+
+    <span class="c1"># Create similarity calculators from shared information</span>
+    <span class="c1"># Ancestor mean</span>
+    <span class="n">shared_information_anc</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">AncestorMeanSharedInformation</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">)</span>
+    <span class="n">sim_resnik_anc</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">ModularResnik</span><span class="p">(</span><span class="n">shared_information_anc</span><span class="p">)</span>
+
+    <span class="c1"># Most informatics common ancestor (MICA)</span>
+    <span class="n">shared_information_mica</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">MICASharedInformation</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">)</span>
+    <span class="n">sim_resnik_mica</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">ModularResnik</span><span class="p">(</span><span class="n">shared_information_mica</span><span class="p">)</span>
+
+    <span class="c1"># Couto et al. 2007</span>
+    <span class="n">shared_information_couto</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">CoutoGraSMSharedInformation</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">)</span>
+    <span class="n">sim_resnik_couto</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">ModularResnik</span><span class="p">(</span><span class="n">shared_information_couto</span><span class="p">)</span>
+
+    <span class="c1"># Adjusted Couto measure</span>
+    <span class="n">shared_information_couto_adj</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">CoutoGraSMAdjustedSharedInformation</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">)</span>
+    <span class="n">sim_resnik_couto_adj</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">ModularResnik</span><span class="p">(</span><span class="n">shared_information_couto_adj</span><span class="p">)</span>
+
+    <span class="c1"># Frontier shared information</span>
+    <span class="n">shared_information_frontier</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">FrontierSharedInformation</span><span class="p">(</span><span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">)</span>
+    <span class="n">sim_resnik_frontier</span> <span class="o">=</span> <span class="n">TermSimilarity</span><span class="o">.</span><span class="n">ModularResnik</span><span class="p">(</span><span class="n">shared_information_frontier</span><span class="p">)</span>
+
+    <span class="c1"># Calculate Resnik similarity using various shared information calculations</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test_terms</span><span class="p">)):</span>
+        <span class="n">term_i</span> <span class="o">=</span> <span class="n">test_terms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_terms</span><span class="p">)):</span>
+            <span class="n">term_j</span> <span class="o">=</span> <span class="n">test_terms</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="k">print</span> <span class="s1">&#39;--&gt; ResnikSim( </span><span class="si">%s</span><span class="s1">, </span><span class="si">%s</span><span class="s1">) using different Shared Information calculations &lt;--&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%f</span><span class="s1"> Ancestor Mean&#39;</span> <span class="o">%</span> <span class="n">sim_resnik_anc</span><span class="o">.</span><span class="n">calculateNormalizedTermSimilarity</span><span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%f</span><span class="s1"> Most Informative Common Ancestor&#39;</span> <span class="o">%</span> <span class="n">sim_resnik_mica</span><span class="o">.</span><span class="n">calculateNormalizedTermSimilarity</span><span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%f</span><span class="s1"> Couto et al.</span><span class="se">\&#39;</span><span class="s1">s GraSM&#39;</span> <span class="o">%</span> <span class="n">sim_resnik_couto</span><span class="o">.</span><span class="n">calculateNormalizedTermSimilarity</span><span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%f</span><span class="s1"> Adjusted Couto&#39;</span> <span class="o">%</span> <span class="n">sim_resnik_couto_adj</span><span class="o">.</span><span class="n">calculateNormalizedTermSimilarity</span><span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%f</span><span class="s1"> Frotier Shared Information&#39;</span> <span class="o">%</span> <span class="n">sim_resnik_frontier</span><span class="o">.</span><span class="n">calculateNormalizedTermSimilarity</span><span class="p">(</span><span class="n">term_i</span><span class="p">,</span> <span class="n">term_j</span><span class="p">)</span>
+            <span class="k">print</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Loading</span> <span class="n">GO</span> <span class="n">Graph</span> <span class="kn">from</span> <span class="nn">..</span><span class="o">/../</span><span class="n">example_graphs</span><span class="o">/</span><span class="n">go</span><span class="o">-</span><span class="n">basic</span><span class="o">.</span><span class="n">obo</span>
+<span class="n">Loading</span> <span class="n">Annotation</span> <span class="n">Data</span> <span class="kn">from</span> <span class="nn">..</span><span class="o">/../</span><span class="n">example_annotations</span><span class="o">/</span><span class="n">goa_human</span><span class="o">.</span><span class="n">gaf</span>
+
+<span class="o">---&gt;</span> <span class="n">Working</span> <span class="k">with</span> <span class="n">the</span> <span class="s2">&quot;signaling&quot;</span> <span class="n">branch</span> <span class="n">of</span> <span class="n">BP</span>  <span class="o">&lt;---</span>
+<span class="o">---&gt;</span> <span class="n">Selected</span> <span class="n">Test</span> <span class="n">Terms</span> <span class="o">&lt;---</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">,</span> <span class="n">synaptic</span> <span class="n">vesicle</span> <span class="n">priming</span><span class="p">,</span> <span class="s2">&quot;A process that converts synaptic vesicles to a st, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">,</span> <span class="n">angiotensin</span><span class="o">-</span><span class="n">activated</span> <span class="n">signaling</span> <span class="n">pathway</span><span class="p">,</span> <span class="s2">&quot;The series of molecular signals generated as a co, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">,</span> <span class="n">synaptic</span> <span class="n">transmission</span> <span class="n">involved</span> <span class="ow">in</span> <span class="n">micturition</span><span class="p">,</span> <span class="s2">&quot;The process of communication from a neuron to a s, ...&quot;</span>
+<span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">,</span> <span class="n">nucleotide</span><span class="o">-</span><span class="n">binding</span> <span class="n">domain</span><span class="p">,</span> <span class="n">leucine</span> <span class="n">rich</span> <span class="n">repeat</span> <span class="n">containing</span> <span class="n">receptor</span> <span class="n">signaling</span> <span class="n">pathway</span><span class="p">,</span> <span class="s2">&quot;A series of molecular signals generated as a cons, ...&quot;</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.478324</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.863326</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.863326</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.863326</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.863326</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.206114</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.359337</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.206114</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.184227</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.184227</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.357363</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.555131</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.357363</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.356758</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.300079</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0016082</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.206114</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.359337</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.206114</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.184227</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.184227</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.416912</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.831415</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.831415</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.831415</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.831415</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.225788</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.359337</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.225788</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.199808</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.213497</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0038166</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.215972</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.368520</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.215972</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.213093</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.309897</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.472916</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.927792</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.927792</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.927792</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.927792</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0060084</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.225788</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.359337</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.225788</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.199808</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.213497</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+<span class="o">--&gt;</span> <span class="n">ResnikSim</span><span class="p">(</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">,</span> <span class="n">GO</span><span class="p">:</span><span class="mi">0035872</span><span class="p">)</span> <span class="n">using</span> <span class="n">different</span> <span class="n">Shared</span> <span class="n">Information</span> <span class="n">calculations</span> <span class="o">&lt;--</span>
+<span class="mf">0.281228</span> <span class="n">Ancestor</span> <span class="n">Mean</span>
+<span class="mf">0.770187</span> <span class="n">Most</span> <span class="n">Informative</span> <span class="n">Common</span> <span class="n">Ancestor</span>
+<span class="mf">0.770187</span> <span class="n">Couto</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span><span class="s1">&#39;s GraSM</span>
+<span class="mf">0.770187</span> <span class="n">Adjusted</span> <span class="n">Couto</span>
+<span class="mf">0.770187</span> <span class="n">Frotier</span> <span class="n">Shared</span> <span class="n">Information</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Shared Information Example</a><ul>
+<li><a class="reference internal" href="#code">Code</a></li>
+<li><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="example_gene_similarity.html"
+                        title="previous chapter">Gene Similarity Example</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="example_enrichment.html"
+                        title="next chapter">Simple Enrichment Example</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/examples/example_shared_information.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="example_enrichment.html" title="Simple Enrichment Example"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="example_gene_similarity.html" title="Gene Similarity Example"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">GGTK 0.1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../code_examples.html" >Code Examples</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Paul W. Bible.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>
