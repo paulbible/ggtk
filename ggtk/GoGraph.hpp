@@ -17,6 +17,7 @@
 #include <boost/graph/connected_components.hpp>
 #include <boost/graph/strong_components.hpp>
 #include <boost/graph/reverse_graph.hpp>
+#include <boost/tuple/tuple.hpp>
 
 /*! \class GoGraph
 	\brief This class holds the Gene Ontology directed acyclic graph
@@ -611,6 +612,32 @@ public:
 		return outSet;
 	}
 
+	//! Get the root term for a particular term
+	/*!
+		Return the root node for a term's ontology
+	*/
+	std::string getTermRoot(const std::string &term){
+		GO::Onto ontology = getTermOntology(term);
+		switch (ontology){
+			case GO::BP:
+				return GO::getRootTermBP();
+			case GO::MF:
+				return GO::getRootTermMF();
+			case GO::CC:
+				return GO::getRootTermCC();
+			default:
+				return "";
+		}
+	}
+
+	//! Get the root vertex for a particular term
+	/*!
+		Get the root vertex for a particular term
+	*/
+	GoVertex getTermRootVertex(const std::string &term){
+		return getVertexByName(getTermRoot(term));
+	}
+
 
 	//! A helper method to retrun only BP terms from a vector
 	/*!
@@ -713,9 +740,9 @@ public:
 	inline Graph* getInducedSubgraph(const std::string &termId){
 		
 		Graph* subgraph = &_goGraph.create_subgraph();
+		boost::add_vertex(getVertexByName(termId), *subgraph);
 
 		boost::unordered_set<std::string> ancestors = getAncestorTerms(termId);
-
 		boost::unordered_set<std::string>::iterator iter;
 		for(iter = ancestors.begin(); iter != ancestors.end(); ++iter){
 			boost::add_vertex(getVertexByName(*iter),*subgraph);

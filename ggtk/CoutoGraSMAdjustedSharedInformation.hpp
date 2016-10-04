@@ -45,6 +45,7 @@ public:
 	inline CoutoGraSMAdjustedSharedInformation(GoGraph* goGraph, TermInformationContentMap &icMap){
 		_goGraph = goGraph;
 		_icMap = icMap;
+		_pathMemory = boost::unordered_map<std::string, size_t>();
 	}
 
 	//! Calculate disjunctive ancestors.
@@ -174,21 +175,7 @@ public:
 			return 0;
 		}
 
-		//create a subgraph
-		GoGraph::Graph* subgraph = _goGraph->getInducedSubgraph(termB);
-
-		boost::unordered_map<std::string,std::size_t> pathCountMap;
-
-		//pathCountMap[termB] = 1;
-		
-		//use dfs to determing the number of paths to the target gene
-		GoGraph::GoVertex startVertex = boost::vertex(0,*subgraph);
-		PathNumDFSVisitor pathNumVis(pathCountMap);
-		boost::depth_first_search(boost::make_reverse_graph(*subgraph),boost::visitor(pathNumVis).root_vertex(startVertex));
-
-		//std::cout << "nPaths " << termA << " " << pathCountMap[termA] << std::endl;
-		//std::cin.get();
-		return pathCountMap[termA];
+		return pathCount(termA, termB);
 	}
 
 	//! Shared infromation between two conecepts.
@@ -269,43 +256,103 @@ public:
 
 
 private:
-	
-	//! Depth First Visitor to calculate the number of paths between terms
+
+	//! Count paths from B to A
 	/*!
-		A class implementing depth first search to calculate path number
-		  calculates the number of paths to a target, conceptually equivalent to a topological sort.
+		Count paths between B and A
 	*/
-	class PathNumDFSVisitor:public boost::default_dfs_visitor{
-
-	public:
-		PathNumDFSVisitor(boost::unordered_map<std::string,std::size_t>& inMap):pathNumMap(inMap){}
-
-		template < typename Vertex, typename Graph >
-		void finish_vertex(Vertex u, const Graph & g)
-		{
-			std::string term = g[u].termId;
-
-			if(boost::out_degree(u,g) == 0){
-				pathNumMap[term] = 1;
-			}else{
-				pathNumMap[term] = 0;
-				//Iterate over the children of the term to add the child annotations
-				typename boost::graph_traits< Graph >::out_edge_iterator ei, e_end;
-				for(tie(ei, e_end) = boost::out_edges(u, g); ei != e_end; ++ei){
-
-					Vertex v = boost::target(*ei, g);
-					
-					std::string childTermId = g[v].termId;
-					pathNumMap[term] += pathNumMap[childTermId];
-				}
-			}
+	std::size_t pathCount(const std::string &termA, const std::string &termB){
+		if (_icMap[termA] > _icMap[termB]){
+			return 0;
 		}
 
-		boost::unordered_map<std::string,std::size_t>& pathNumMap;
-	};
+		boost::unordered_set<std::string> ancestors = _goGraph->getAncestorTerms(termB);
+		boost::unordered_set<std::string> finished;
+		boost::unordered_map<std::string, size_t> pathMap;
+		ancestors.insert(termB);
+		GoGraph::Graph* g = _goGraph->getGraph();
+		GoGraph::GoVertex v = _goGraph->getTermRootVertex(termB);
+		visitHelper(v, g, ancestors, finished, pathMap);
+
+		return pathMap[termA];
+	}
+
+	//! Recursive helper method that performs the DFS topological sort for path counting
+	/*!
+		A path counting topological sort recursive method.
+	*/
+	void visitHelper(const GoGraph::GoVertex &v, GoGraph::Graph* g,
+		boost::unordered_set<std::string> &ancestors,
+		boost::unordered_set<std::string> &finished,
+		boost::unordered_map<std::string, size_t> &pathMap)
+	{
+		size_t childCount = 0;
+		std::string vTerm = (*g)[v].termId;
+		//std::cout << "discover vertex " << vTerm << std::endl;
+
+		//examine children and recurse
+		GoGraph::InEdgeIterator it, end;
+		for (boost::tie(it, end) = boost::in_edges(v, *g); it != end; ++it){
+			GoGraph::GoVertex child = boost::source(*it, *g);
+			std::string childTerm = (*g)[child].termId;
+			if (!SetUtilities::set_contains(ancestors, childTerm)){
+				continue;
+			}
+			//recurse if child is not finished
+			if (!SetUtilities::set_contains(finished, childTerm)){
+				visitHelper(child, g, ancestors, finished, pathMap);
+			}
+			++childCount;
+		}
+
+		//finish vertex
+		finished.insert(vTerm);
+		//std::cout << "finish vertex " << vTerm << ", childred " << childCount << std::endl;
+		if (childCount == 0){
+			pathMap[vTerm] = 1;
+		}
+		else{
+			pathMap[vTerm] = 0;
+			for (boost::tie(it, end) = boost::in_edges(v, *g); it != end; ++it){
+				GoGraph::GoVertex child = boost::source(*it, *g);
+				std::string childTerm = (*g)[child].termId;
+				if (!SetUtilities::set_contains(ancestors, childTerm)){
+					continue;
+				}
+				pathMap[vTerm] += pathMap[childTerm];
+			}
+		}
+	}
+
+	//! A private function to create a string key from a pair of terms
+	/*!
+		Creates a string key our of a pair to use in memorizing path counts
+	*/
+	std::string keyPair(const std::string &termA, const std::string &termB){
+		if (termA.compare(termB) > 0){
+			return termB + "_" + termA;
+		}
+		else{
+			return termB + "_" + termA;
+		}
+	}
+
+	//! A private function to test if the key as been seen already
+	/*!
+	A private function to test if the key as been seen already.
+	*/
+	bool hasSeenKey(const std::string &key){
+		if (_pathMemory.find(key) != _pathMemory.end()){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 
 	GoGraph* _goGraph;
 	TermInformationContentMap _icMap;
+	boost::unordered_map<std::string, size_t> _pathMemory;
 
 };
 #endif
