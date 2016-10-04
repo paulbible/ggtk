@@ -44,6 +44,8 @@ var classGoGraph =
     [ "getTermOntology", "classGoGraph.html#a9f4f553098e14270f07e7791cfe65447", null ],
     [ "getTermOntologyByIndex", "classGoGraph.html#a0531ffa131c90e9871e280aa5faeaa42", null ],
     [ "getTermOntologyByVertex", "classGoGraph.html#a3ae1998fd4765b2f952290150a7d164b", null ],
+    [ "getTermRoot", "classGoGraph.html#a1ab56df7036cce07e7010d924e409aca", null ],
+    [ "getTermRootVertex", "classGoGraph.html#a7a07d915eeea8d19ffc252b6a0f5a512", null ],
     [ "getTermStringIdByIndex", "classGoGraph.html#aa885bffcce6c156769236ca2af9a453e", null ],
     [ "getVertexByIndex", "classGoGraph.html#a69f38e249704b7e8d9f31a2e3bc03633", null ],
     [ "getVertexByName", "classGoGraph.html#aa66361d5993e6fdf5bd320b6ae15e4bc", null ],

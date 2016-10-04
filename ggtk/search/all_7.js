@@ -67,6 +67,8 @@ var searchData=
   ['gettermontology',['getTermOntology',['../classGoGraph.html#a9f4f553098e14270f07e7791cfe65447',1,'GoGraph']]],
   ['gettermontologybyindex',['getTermOntologyByIndex',['../classGoGraph.html#a0531ffa131c90e9871e280aa5faeaa42',1,'GoGraph']]],
   ['gettermontologybyvertex',['getTermOntologyByVertex',['../classGoGraph.html#a3ae1998fd4765b2f952290150a7d164b',1,'GoGraph']]],
+  ['gettermroot',['getTermRoot',['../classGoGraph.html#a1ab56df7036cce07e7010d924e409aca',1,'GoGraph']]],
+  ['gettermrootvertex',['getTermRootVertex',['../classGoGraph.html#a7a07d915eeea8d19ffc252b6a0f5a512',1,'GoGraph']]],
   ['gettermstringidbyindex',['getTermStringIdByIndex',['../classGoGraph.html#aa885bffcce6c156769236ca2af9a453e',1,'GoGraph']]],
   ['getvalue',['getValue',['../classTermDepthMap.html#af6ba97e619f7fe0a9e906c6eccfd98fa',1,'TermDepthMap::getValue()'],['../classTermProbabilityMap.html#a4ef29e6a25cb1b781c5a0b05b9b82ebf',1,'TermProbabilityMap::getValue()']]],
   ['getvalues',['getValues',['../classTermDepthMap.html#acad3e6559688f3338f7d28fffe53f3ab',1,'TermDepthMap::getValues()'],['../classTermProbabilityMap.html#ae960575c867ee0954b6beee3c10b280d',1,'TermProbabilityMap::getValues()']]],

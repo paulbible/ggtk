@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"functions_n.html":[2,3,0,13],
+"functions_o.html":[2,3,0,14],
+"functions_p.html":[2,3,0,15],
 "functions_r.html":[2,3,0,16],
 "functions_s.html":[2,3,0,17],
 "functions_t.html":[2,3,0,18],
@@ -7,7 +10,6 @@ var NAVTREEINDEX2 =
 "functions_v.html":[2,3,0,19],
 "functions_vars.html":[2,3,2],
 "functions_w.html":[2,3,0,20],
-"functions_~.html":[2,3,0,21],
 "ggtk_8hpp_source.html":[3,0,0,24],
 "hierarchy.html":[2,2],
 "index.html":[],
