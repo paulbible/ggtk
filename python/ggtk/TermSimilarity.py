@@ -9,6 +9,9 @@ TermSimilarity Module
 This module defines the term similarity classes which inherit from the 
 base BaseTermSim python class
 """
+import os
+from exceptions import IOError
+
 import term_sim
 import go_graph
 import annotation_data
@@ -87,6 +90,8 @@ class PrecomputedMatrixTermSimilarity(BaseTermSim):
     written by a TermSimilarityWriter.
     """
     def __init__(self, matrix_file):
+        if not os.path.isfile(matrix_file):
+            raise IOError('GGTK File Error: File %s not found or is not a file.' % matrix_file)
         sim_proxy = term_sim.PrecomputedMatrixTermSimilarity(matrix_file)
         super(self.__class__,self).__init__(sim_proxy)
 

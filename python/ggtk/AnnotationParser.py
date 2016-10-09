@@ -15,7 +15,7 @@ def parse(fname, format="gaf", evidence_codes=None):
     """
     Parse a Gene Ontology Annotation file.
 
-    Options for Format are {'gaf', 'mgi', 'entrez'}.
+    Options for Format are {'gaf', 'mgi', 'entrex'}.
 
     If evidence_codes is "exp", Only experimental evidence
     codes will be used. If evidence_codes is a list, 
@@ -41,7 +41,7 @@ def parse(fname, format="gaf", evidence_codes=None):
             raise ValueError('GGTK Parser Not Defined: No parser of type %s is defined.' % format)
     
         if not p.isFileGood(fname):
-            raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+            raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
         anno_proxy = p.parseAnnotationFile(fname)
         return _AnnotationData.AnnotationData(anno_proxy)
 
@@ -49,21 +49,21 @@ def parse(fname, format="gaf", evidence_codes=None):
         if format == 'gaf' or format == 'goa':
             p = anno_parsers.GafAnnotationParser()
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             anno_proxy = p.parseAnnotationFile(fname)
             return _AnnotationData.AnnotationData(anno_proxy)
 
         elif format == 'mgi':
             p = anno_parsers.MgiAnnotationParser()
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             anno_proxy = p.parseAnnotationFile(fname)
             return _AnnotationData.AnnotationData(anno_proxy)
 
         elif format == 'entrez':
             p = anno_parsers.EntrezGene2GoAnnotationParser()
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             anno_proxy = p.parseAnnotationFile(fname)
             return _AnnotationData.AnnotationData(anno_proxy)
         else:

@@ -8,6 +8,7 @@ file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 #define PRECOMPUTED_MATRIX_TERM_SIMILARITY
 
 #include <vector>
+#include <exception>
 
 #include <ggtk/TermSimilarityInterface.hpp>
 
@@ -84,6 +85,74 @@ public:
 		//std::cout << "cols " << _matrix.at(0).size() << std::endl;
 		//std::cout << "terms " << _termToIndex.size() << std::endl;
 	}
+
+
+	//! A method to check if the file exists and fits the format
+	/*!
+		This method is used to test if a file can be used.
+	*/
+	bool isFileGood(const std::string &filename){
+		std::ifstream in(filename.c_str());
+		if (!in.good()){
+			return false;
+		}
+
+		typedef boost::tokenizer<boost::char_separator<char> > tokenizer;
+		boost::char_separator<char> tab_sep("\t", "", boost::keep_empty_tokens);
+		tokenizer::iterator it;
+		std::string line;
+
+		std::size_t line_count = 0;
+
+		//first line
+		getline(in, line);
+		tokenizer tokens(line, tab_sep);
+		it = tokens.begin();
+
+		std::string firstTerm = *it;
+		++line_count;
+		++it;
+
+		std::vector<double> firstRow;
+		while (it != tokens.end()){
+			std::string strval = *it;
+			double val = atof(strval.c_str());
+			firstRow.push_back(val);
+			++it;
+		}
+
+		try{
+			while (in.good() && line_count < 5){
+				getline(in, line);
+				tokenizer tokens(line, tab_sep);
+				it = tokens.begin();
+				if (it == tokens.end()){ continue; }
+
+				std::string term = *it;
+				++line_count;
+				++it;
+
+				std::vector<double> row;
+				row.reserve(firstRow.size());
+				while (it != tokens.end()){
+					std::string strval = *it;
+					double val = atof(strval.c_str());
+					row.push_back(val);
+					++it;
+				}
+				if (row.size() != firstRow.size()){
+					return false;
+				}
+			}
+		}
+		catch (std::exception e){
+			return false;
+		}
+
+
+	}
+
+
 
 	//! A method for calculating term-to-term similarity for GO terms using a precomputed similarity matrix.
 	/*!

@@ -41,7 +41,7 @@ def parse(fname, format, relationships=None):
         if format == 'obo':
             p = go_parsers.AllowedRelationshipOboGoParser(asrp)
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             graph_proxy = p.parseGoFile(fname)
             num_components = graph_proxy.getNumComponents()
             if num_components != 3:
@@ -51,7 +51,7 @@ def parse(fname, format, relationships=None):
         elif format == 'xml':
             p = go_parsers.AllowedRelationshipXmlGoParser(asrp)
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             graph_proxy =  p.parseGoFile(fname)
             num_components = graph_proxy.getNumComponents()
             if num_components != 3:
@@ -62,13 +62,13 @@ def parse(fname, format, relationships=None):
         if format == 'obo':
             p = go_parsers.StandardOboGoParser()
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             graph_proxy = p.parseGoFile(fname)
             return _GoGraph.GoGraph(graph_proxy)
         elif format == 'xml':
             p = go_parsers.StandardXmlGoParser()
             if not p.isFileGood(fname):
-                raise IOError('GGTK File Error: File not found or incorrectly formatted.')
+                raise IOError('GGTK File Error: File %s not found or incorrectly formatted.' % fname)
             graph_proxy =  p.parseGoFile(fname)
             return _GoGraph.GoGraph(graph_proxy)
         else:

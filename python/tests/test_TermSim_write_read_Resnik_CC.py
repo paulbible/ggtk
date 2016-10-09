@@ -39,6 +39,17 @@ class CoreMethodsTests(TermSimWriterResnikCC_TestCase):
         self.assertEqual(type(self.mat_sim_cc), PrecomputedMatrixTermSimilarity)
 
 
+
+##########################################################################
+# Test PrecomputedMatrixTermSimilarity raises error on bad filename
+##########################################################################
+    def test_precomputed_matrix_bad_file(self):
+        """
+        Test similarity between two bad terms.
+        """
+        with self.assertRaises(IOError):
+            p = PrecomputedMatrixTermSimilarity('fake_file.txt')
+
 ##########################################################################
 # Non-exsitent terms used as input
 ##########################################################################
