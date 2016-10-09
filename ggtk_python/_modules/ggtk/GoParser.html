@@ -90,7 +90,7 @@
         <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;obo&#39;</span><span class="p">:</span>
             <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">AllowedRelationshipOboGoParser</span><span class="p">(</span><span class="n">asrp</span><span class="p">)</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File </span><span class="si">%s</span><span class="s1"> not found or incorrectly formatted.&#39;</span> <span class="o">%</span> <span class="n">fname</span><span class="p">)</span>
             <span class="n">graph_proxy</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
             <span class="n">num_components</span> <span class="o">=</span> <span class="n">graph_proxy</span><span class="o">.</span><span class="n">getNumComponents</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">num_components</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
@@ -100,7 +100,7 @@
         <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;xml&#39;</span><span class="p">:</span>
             <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">AllowedRelationshipXmlGoParser</span><span class="p">(</span><span class="n">asrp</span><span class="p">)</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File </span><span class="si">%s</span><span class="s1"> not found or incorrectly formatted.&#39;</span> <span class="o">%</span> <span class="n">fname</span><span class="p">)</span>
             <span class="n">graph_proxy</span> <span class="o">=</span>  <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
             <span class="n">num_components</span> <span class="o">=</span> <span class="n">graph_proxy</span><span class="o">.</span><span class="n">getNumComponents</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">num_components</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
@@ -111,13 +111,13 @@
         <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;obo&#39;</span><span class="p">:</span>
             <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">StandardOboGoParser</span><span class="p">()</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File </span><span class="si">%s</span><span class="s1"> not found or incorrectly formatted.&#39;</span> <span class="o">%</span> <span class="n">fname</span><span class="p">)</span>
             <span class="n">graph_proxy</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
         <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s1">&#39;xml&#39;</span><span class="p">:</span>
             <span class="n">p</span> <span class="o">=</span> <span class="n">go_parsers</span><span class="o">.</span><span class="n">StandardXmlGoParser</span><span class="p">()</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">isFileGood</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File not found or incorrectly formatted.&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File </span><span class="si">%s</span><span class="s1"> not found or incorrectly formatted.&#39;</span> <span class="o">%</span> <span class="n">fname</span><span class="p">)</span>
             <span class="n">graph_proxy</span> <span class="o">=</span>  <span class="n">p</span><span class="o">.</span><span class="n">parseGoFile</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">_GoGraph</span><span class="o">.</span><span class="n">GoGraph</span><span class="p">(</span><span class="n">graph_proxy</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>

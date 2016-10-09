@@ -58,6 +58,9 @@
 <span class="sd">This module defines the term similarity classes which inherit from the </span>
 <span class="sd">base BaseTermSim python class</span>
 <span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">exceptions</span> <span class="k">import</span> <span class="ne">IOError</span>
+
 <span class="kn">import</span> <span class="nn">term_sim</span>
 <span class="kn">import</span> <span class="nn">go_graph</span>
 <span class="kn">import</span> <span class="nn">annotation_data</span>
@@ -136,6 +139,8 @@
 <span class="sd">    written by a TermSimilarityWriter.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrix_file</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">matrix_file</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;GGTK File Error: File </span><span class="si">%s</span><span class="s1"> not found or is not a file.&#39;</span> <span class="o">%</span> <span class="n">matrix_file</span><span class="p">)</span>
         <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_sim</span><span class="o">.</span><span class="n">PrecomputedMatrixTermSimilarity</span><span class="p">(</span><span class="n">matrix_file</span><span class="p">)</span>
         <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
 
