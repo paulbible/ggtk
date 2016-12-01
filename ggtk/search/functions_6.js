@@ -2,7 +2,7 @@ var searchData=
 [
   ['gafannotationparser',['GafAnnotationParser',['../classGafAnnotationParser.html#a1ec096680cb5e3c4f1111b53cc12ce88',1,'GafAnnotationParser::GafAnnotationParser()'],['../classGafAnnotationParser.html#a24dc9179f8df7e913c648ea90f60e3b2',1,'GafAnnotationParser::GafAnnotationParser(EvidencePolicyInterface *policy)']]],
   ['genomicregion',['GenomicRegion',['../classGenomicRegion.html#a48f916f38aad53815e187c28c211a615',1,'GenomicRegion::GenomicRegion(const std::string chrom, const size_t start, const size_t end, const size_t id, std::string name, std::string desc)'],['../classGenomicRegion.html#a249cece2f76a9085d276ee5970ccfa59',1,'GenomicRegion::GenomicRegion(const size_t id, const size_t start, const size_t end)'],['../classGenomicRegion.html#a8ff9fe5618b932a1caccbd9072ddaaef',1,'GenomicRegion::GenomicRegion()']]],
-  ['gentlemanuisimilarity',['GentlemanUISimilarity',['../classGentlemanUISimilarity.html#af6e913ef9fc584207a25dc732e6492b0',1,'GentlemanUISimilarity']]],
+  ['gentlemansimuisetsimilarity',['GentlemanSimUISetSimilarity',['../classGentlemanSimUISetSimilarity.html#a3ee98adcd88c5f97c365c4e8a450310c',1,'GentlemanSimUISetSimilarity']]],
   ['getallgenes',['getAllGenes',['../classAnnotationData.html#aa2d7d5ad9601b6984470b8267ff37db8',1,'AnnotationData']]],
   ['getallgoterms',['getAllGoTerms',['../classAnnotationData.html#a8b99d05f5f0f619958e7850253946b9c',1,'AnnotationData']]],
   ['getallterms',['getAllTerms',['../classGoGraph.html#ab497e840a1a63b5d25d6a104695a54fb',1,'GoGraph']]],

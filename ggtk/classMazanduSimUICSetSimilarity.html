@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>GGTK: The GO Graph Took Kit: TermSetSimilarityInterface Class Reference</title>
+<title>GGTK: The GO Graph Took Kit: MazanduSimUICSetSimilarity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classTermSetSimilarityInterface.html','');});
+$(document).ready(function(){initNavTree('classMazanduSimUICSetSimilarity.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,44 +107,41 @@ $(document).ready(function(){initNavTree('classTermSetSimilarityInterface.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classTermSetSimilarityInterface-members.html">List of all members</a>  </div>
+<a href="classMazanduSimUICSetSimilarity-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TermSetSimilarityInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">MazanduSimUICSetSimilarity Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An interface class for comparing semantic similarity of sets of <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms.  
- <a href="classTermSetSimilarityInterface.html#details">More...</a></p>
+<p>A class to calculate Mazandu and Mulder's SimUIC similarity between 2 sets of go terms.  
+ <a href="classMazanduSimUICSetSimilarity.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="TermSetSimilarityInterface_8hpp_source.html">ggtk/TermSetSimilarityInterface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="MazanduSimUICSetSimilarity_8hpp_source.html">ggtk/MazanduSimUICSetSimilarity.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for TermSetSimilarityInterface:</div>
+Inheritance diagram for MazanduSimUICSetSimilarity:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classTermSetSimilarityInterface.png" usemap="#TermSetSimilarityInterface_map" alt=""/>
-  <map id="TermSetSimilarityInterface_map" name="TermSetSimilarityInterface_map">
-<area href="classAllPairsAverageSetSimilarity.html" title="A class to calculate the average similarity between all pairs of go terms for 2 sets. " alt="AllPairsAverageSetSimilarity" shape="rect" coords="199,56,388,80"/>
-<area href="classAllPairsMaxSetSimilarity.html" title="A class to calculate the max similarity between all pairs of go terms for 2 sets. ..." alt="AllPairsMaxSetSimilarity" shape="rect" coords="199,112,388,136"/>
-<area href="classBestMatchAverageSetSimilarity.html" title="A class to calculate the best match average similarity between go terms for 2 sets. " alt="BestMatchAverageSetSimilarity" shape="rect" coords="199,168,388,192"/>
-<area href="classGentlemanSimUISetSimilarity.html" alt="GentlemanSimUISetSimilarity" shape="rect" coords="199,224,388,248"/>
-<area href="classJaccardSetSimilarity.html" title="A class to calculate jaccard similarity between 2 sets. " alt="JaccardSetSimilarity" shape="rect" coords="199,280,388,304"/>
-<area href="classMazanduSimDICSetSimilarity.html" title="A class to calculate Mazandu and Mulder&#39;s SimDIC similarity between 2 sets of go terms. " alt="MazanduSimDICSetSimilarity" shape="rect" coords="199,336,388,360"/>
-<area href="classMazanduSimUICSetSimilarity.html" title="A class to calculate Mazandu and Mulder&#39;s SimUIC similarity between 2 sets of go terms. " alt="MazanduSimUICSetSimilarity" shape="rect" coords="199,392,388,416"/>
-<area href="classPesquitaSimGICSetSimilarity.html" title="A class to calculate Pesquita&#39;s SimGIC similarity between sets of go terms. " alt="PesquitaSimGICSetSimilarity" shape="rect" coords="199,448,388,472"/>
+  <img src="classMazanduSimUICSetSimilarity.png" usemap="#MazanduSimUICSetSimilarity_map" alt=""/>
+  <map id="MazanduSimUICSetSimilarity_map" name="MazanduSimUICSetSimilarity_map">
+<area href="classTermSetSimilarityInterface.html" title="An interface class for comparing semantic similarity of sets of GO terms. " alt="TermSetSimilarityInterface" shape="rect" coords="0,0,173,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb985b714efc3df40e55bdd31e425e04"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTermSetSimilarityInterface.html#aeb985b714efc3df40e55bdd31e425e04">calculateSimilarity</a> (const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)=0</td></tr>
-<tr class="memdesc:aeb985b714efc3df40e55bdd31e425e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual method for calculating term set to term set similarity for sets of <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms.  <a href="#aeb985b714efc3df40e55bdd31e425e04">More...</a><br /></td></tr>
-<tr class="separator:aeb985b714efc3df40e55bdd31e425e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e442acd69e94c53cf79d7bd4a8d6316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMazanduSimUICSetSimilarity.html#a8e442acd69e94c53cf79d7bd4a8d6316">MazanduSimUICSetSimilarity</a> (<a class="el" href="classGoGraph.html">GoGraph</a> *graph, const <a class="el" href="classTermInformationContentMap.html">TermInformationContentMap</a> &amp;icMap)</td></tr>
+<tr class="memdesc:a8e442acd69e94c53cf79d7bd4a8d6316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a8e442acd69e94c53cf79d7bd4a8d6316">More...</a><br /></td></tr>
+<tr class="separator:a8e442acd69e94c53cf79d7bd4a8d6316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8210e068dfa88dcccc9ed45d1c7ba314"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMazanduSimUICSetSimilarity.html#a8210e068dfa88dcccc9ed45d1c7ba314">calculateSimilarity</a> (const boost::unordered_set&lt; std::string &gt; &amp;termsA, const boost::unordered_set&lt; std::string &gt; &amp;termsB)</td></tr>
+<tr class="memdesc:a8210e068dfa88dcccc9ed45d1c7ba314"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for calculating term set to term set similarity for <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms;.  <a href="#a8210e068dfa88dcccc9ed45d1c7ba314">More...</a><br /></td></tr>
+<tr class="separator:a8210e068dfa88dcccc9ed45d1c7ba314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An interface class for comparing semantic similarity of sets of <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms. </p>
-<p>This class defines the interface for comparing term set to term set similarity. This is the most useful case for comparing genes with multiple annotations to each other. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeb985b714efc3df40e55bdd31e425e04"></a>
+<div class="textblock"><p>A class to calculate Mazandu and Mulder's SimUIC similarity between 2 sets of go terms. </p>
+<p>A separate measure from their SimDIC.</p>
+<p>Mazandu, G. K., &amp; Mulder, N. J. (2014). Information content-based Gene Ontology functional similarity measures: which one to use for a given biological data type?. PloS one, 9(12), e113859 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8e442acd69e94c53cf79d7bd4a8d6316"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -152,7 +149,45 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double TermSetSimilarityInterface::calculateSimilarity </td>
+          <td class="memname">MazanduSimUICSetSimilarity::MazanduSimUICSetSimilarity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGoGraph.html">GoGraph</a> *&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classTermInformationContentMap.html">TermInformationContentMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>icMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Creates the <a class="el" href="classMazanduSimUICSetSimilarity.html" title="A class to calculate Mazandu and Mulder&#39;s SimUIC similarity between 2 sets of go terms. ">MazanduSimUICSetSimilarity</a> class assigning the <a class="el" href="classGoGraph.html" title="This class holds the Gene Ontology directed acyclic graph. ">GoGraph</a> private memeber. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8210e068dfa88dcccc9ed45d1c7ba314"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MazanduSimUICSetSimilarity::calculateSimilarity </td>
           <td>(</td>
           <td class="paramtype">const boost::unordered_set&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>termsA</em>, </td>
@@ -171,27 +206,27 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A pure virtual method for calculating term set to term set similarity for sets of <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms. </p>
-<p>This pure virtual method requires similarity measure to implement the basic interface that returns a similarity value for two sets of go terms. </p>
+<p>A method for calculating term set to term set similarity for <a class="el" href="namespaceGO.html" title="GO namespaces. ">GO</a> terms;. </p>
+<p>This method returns the best match average similarity. </p>
 
-<p>Implemented in <a class="el" href="classAllPairsMaxSetSimilarity.html#a0eed3f63e2acdeb8365900b9d7a038c1">AllPairsMaxSetSimilarity</a>, <a class="el" href="classMazanduSimUICSetSimilarity.html#a8210e068dfa88dcccc9ed45d1c7ba314">MazanduSimUICSetSimilarity</a>, <a class="el" href="classPesquitaSimGICSetSimilarity.html#a9671b1b8a3e6b21a0cf82648f19beae3">PesquitaSimGICSetSimilarity</a>, <a class="el" href="classMazanduSimDICSetSimilarity.html#a0297bd80bbe2e04e39b691ef55bd8136">MazanduSimDICSetSimilarity</a>, <a class="el" href="classAllPairsAverageSetSimilarity.html#a685cd98d44c2e2ab9ee4fe7071066cde">AllPairsAverageSetSimilarity</a>, <a class="el" href="classBestMatchAverageSetSimilarity.html#adf1b3109b46f04087f919bdb33e131f0">BestMatchAverageSetSimilarity</a>, <a class="el" href="classGentlemanSimUISetSimilarity.html#ac6ab6c4c95f53fa72e0c33fa7ac824aa">GentlemanSimUISetSimilarity</a>, and <a class="el" href="classJaccardSetSimilarity.html#a122a04f7f67b96e393fcde1025a306c3">JaccardSetSimilarity</a>.</p>
+<p>Implements <a class="el" href="classTermSetSimilarityInterface.html#aeb985b714efc3df40e55bdd31e425e04">TermSetSimilarityInterface</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ggtk/<a class="el" href="TermSetSimilarityInterface_8hpp_source.html">TermSetSimilarityInterface.hpp</a></li>
+<li>ggtk/<a class="el" href="MazanduSimUICSetSimilarity_8hpp_source.html">MazanduSimUICSetSimilarity.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="classTermSetSimilarityInterface.html">TermSetSimilarityInterface</a></li>
+    <li class="navelem"><a class="el" href="classMazanduSimUICSetSimilarity.html">MazanduSimUICSetSimilarity</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

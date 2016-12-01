@@ -6,6 +6,7 @@ var searchData=
   ['parseparamfile',['parseParamFile',['../namespaceAppUtilities.html#acc1e4029d959cb721fdd93a4fbc652df',1,'AppUtilities']]],
   ['parsesimplefile',['parseSimpleFile',['../namespaceAppUtilities.html#a122dbc37274a53baca0ad1f152869180',1,'AppUtilities']]],
   ['pekarstaabsimilarity',['PekarStaabSimilarity',['../classPekarStaabSimilarity.html#a8da126a2d3dc923dd1749e2f395d41cf',1,'PekarStaabSimilarity']]],
+  ['pesquitasimgicsetsimilarity',['PesquitaSimGICSetSimilarity',['../classPesquitaSimGICSetSimilarity.html#a935f1f64ae2bb076e3fc9d9c6dd0259a',1,'PesquitaSimGICSetSimilarity']]],
   ['precomputedmatrixtermsimilarity',['PrecomputedMatrixTermSimilarity',['../classPrecomputedMatrixTermSimilarity.html#a7b41f4870cea2125e2997fb5eea5f6fb',1,'PrecomputedMatrixTermSimilarity']]],
   ['projecttermset',['projectTermSet',['../classPrecomputedMatrixTermSimilarity.html#a341a4dba0540acd9087091aa63c51220',1,'PrecomputedMatrixTermSimilarity']]]
 ];

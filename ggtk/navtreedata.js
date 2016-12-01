@@ -31,8 +31,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Accumulators_8hpp_source.html",
-"classGoGraph.html#ac6e27dbb91d23ea04191abac4c06e401",
-"functions_m.html"
+"classGoGraph.html#ab497e840a1a63b5d25d6a104695a54fb",
+"functions_func_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

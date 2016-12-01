@@ -19,6 +19,7 @@ var hierarchy =
       ] ],
       [ "DisallowedSetEvidencePolicy", "classDisallowedSetEvidencePolicy.html", null ]
     ] ],
+    [ "GentlemanUISetSimilarity", "classGentlemanUISetSimilarity.html", null ],
     [ "GoGraph", "classGoGraph.html", null ],
     [ "GoParserFactory", "classGoParserFactory.html", null ],
     [ "GoParserInterface", "classGoParserInterface.html", [
@@ -53,8 +54,11 @@ var hierarchy =
       [ "AllPairsAverageSetSimilarity", "classAllPairsAverageSetSimilarity.html", null ],
       [ "AllPairsMaxSetSimilarity", "classAllPairsMaxSetSimilarity.html", null ],
       [ "BestMatchAverageSetSimilarity", "classBestMatchAverageSetSimilarity.html", null ],
-      [ "GentlemanUISimilarity", "classGentlemanUISimilarity.html", null ],
-      [ "JaccardSetSimilarity", "classJaccardSetSimilarity.html", null ]
+      [ "GentlemanSimUISetSimilarity", "classGentlemanSimUISetSimilarity.html", null ],
+      [ "JaccardSetSimilarity", "classJaccardSetSimilarity.html", null ],
+      [ "MazanduSimDICSetSimilarity", "classMazanduSimDICSetSimilarity.html", null ],
+      [ "MazanduSimUICSetSimilarity", "classMazanduSimUICSetSimilarity.html", null ],
+      [ "PesquitaSimGICSetSimilarity", "classPesquitaSimGICSetSimilarity.html", null ]
     ] ],
     [ "TermSimilarityInterface", "classTermSimilarityInterface.html", [
       [ "JiangConrathSimilarity", "classJiangConrathSimilarity.html", null ],

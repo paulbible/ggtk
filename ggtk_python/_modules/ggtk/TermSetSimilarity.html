@@ -112,6 +112,54 @@
         <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_set_sim</span><span class="o">.</span><span class="n">BestMatchAverageSetSimilarity</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sim</span><span class="o">.</span><span class="n">term_sim</span><span class="p">)</span>
         <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
 
+
+<div class="viewcode-block" id="SimUISetSimilarity"><a class="viewcode-back" href="../../term_set_similarity.html#ggtk.TermSetSimilarity.SimUISetSimilarity">[docs]</a><span class="k">class</span> <span class="nc">SimUISetSimilarity</span><span class="p">(</span><span class="n">BaseTermSetSim</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class to calculate Gentleman&#39;s SimUI SetSimilarity. This is an extended Jaccard measure.</span>
+<span class="sd">    Full details available in ggtk/GentlemanSimUISetSimilarity.hpp</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span> <span class="o">=</span> <span class="n">go_graph</span>
+        <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_set_sim</span><span class="o">.</span><span class="n">GentlemanSimUISetSimilarity</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SimGICSetSimilarity"><a class="viewcode-back" href="../../term_set_similarity.html#ggtk.TermSetSimilarity.SimGICSetSimilarity">[docs]</a><span class="k">class</span> <span class="nc">SimGICSetSimilarity</span><span class="p">(</span><span class="n">BaseTermSetSim</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class to calculate Pesquita et al.&#39;s SimGIC SetSimilarity. This Jaccard weighted by IC.</span>
+<span class="sd">    Full details available in ggtk/PesquitaSimGICSetSimilarity.hpp</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span> <span class="o">=</span> <span class="n">go_graph</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span> <span class="o">=</span> <span class="n">ic_map</span>
+        <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_set_sim</span><span class="o">.</span><span class="n">PesquitaSimGICSetSimilarity</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span><span class="o">.</span><span class="n">term_map</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SimDICSetSimilarity"><a class="viewcode-back" href="../../term_set_similarity.html#ggtk.TermSetSimilarity.SimDICSetSimilarity">[docs]</a><span class="k">class</span> <span class="nc">SimDICSetSimilarity</span><span class="p">(</span><span class="n">BaseTermSetSim</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class to calculate Mazandu and Mulder&#39;s SimDIC SetSimilarity. Similar in spriti to Lin&#39;s measure.</span>
+<span class="sd">    Full details available in ggtk/MazanduSimDICSetSimilarity.hpp</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span> <span class="o">=</span> <span class="n">go_graph</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span> <span class="o">=</span> <span class="n">ic_map</span>
+        <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_set_sim</span><span class="o">.</span><span class="n">MazanduSimDICSetSimilarity</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span><span class="o">.</span><span class="n">term_map</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SimUICSetSimilarity"><a class="viewcode-back" href="../../term_set_similarity.html#ggtk.TermSetSimilarity.SimUICSetSimilarity">[docs]</a><span class="k">class</span> <span class="nc">SimUICSetSimilarity</span><span class="p">(</span><span class="n">BaseTermSetSim</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class to calculate Mazandu and Mulder&#39;s SimUIC SetSimilarity.</span>
+<span class="sd">    Full details available in ggtk/MazanduSimUICSetSimilarity.hpp</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">go_graph</span><span class="p">,</span> <span class="n">ic_map</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span> <span class="o">=</span> <span class="n">go_graph</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span> <span class="o">=</span> <span class="n">ic_map</span>
+        <span class="n">sim_proxy</span> <span class="o">=</span> <span class="n">term_set_sim</span><span class="o">.</span><span class="n">MazanduSimUICSetSimilarity</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">go_graph</span><span class="o">.</span><span class="n">graph</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ic_map</span><span class="o">.</span><span class="n">term_map</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">sim_proxy</span><span class="p">)</span></div>
+
+
 </pre></div>
 
           </div>
