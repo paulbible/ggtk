@@ -12304,6 +12304,82 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_GoGraph_getTermRoot(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GoGraph *arg1 = (GoGraph *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:GoGraph_getTermRoot",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GoGraph_getTermRoot" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GoGraph_getTermRoot" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GoGraph_getTermRoot" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (arg1)->getTermRoot((std::string const &)*arg2);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_GoGraph_getTermRootVertex(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GoGraph *arg1 = (GoGraph *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  GoGraph::GoVertex result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:GoGraph_getTermRootVertex",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GoGraph_getTermRootVertex" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GoGraph_getTermRootVertex" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GoGraph_getTermRootVertex" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (arg1)->getTermRootVertex((std::string const &)*arg2);
+  resultobj = SWIG_NewPointerObj((new GoGraph::GoVertex(static_cast< const GoGraph::GoVertex& >(result))), SWIGTYPE_p_boost__graph_traitsT_GoGraph__Graph_t__vertex_descriptor, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_GoGraph_filterSetForBP__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   GoGraph *arg1 = (GoGraph *) 0 ;
@@ -12978,6 +13054,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GoGraph_getAllTermsMF", _wrap_GoGraph_getAllTermsMF, METH_VARARGS, NULL},
 	 { (char *)"GoGraph_getAllTermsCC", _wrap_GoGraph_getAllTermsCC, METH_VARARGS, NULL},
 	 { (char *)"GoGraph_filterSetForOntology", _wrap_GoGraph_filterSetForOntology, METH_VARARGS, NULL},
+	 { (char *)"GoGraph_getTermRoot", _wrap_GoGraph_getTermRoot, METH_VARARGS, NULL},
+	 { (char *)"GoGraph_getTermRootVertex", _wrap_GoGraph_getTermRootVertex, METH_VARARGS, NULL},
 	 { (char *)"GoGraph_filterSetForBP", _wrap_GoGraph_filterSetForBP, METH_VARARGS, NULL},
 	 { (char *)"GoGraph_filterSetForMF", _wrap_GoGraph_filterSetForMF, METH_VARARGS, NULL},
 	 { (char *)"GoGraph_filterSetForCC", _wrap_GoGraph_filterSetForCC, METH_VARARGS, NULL},

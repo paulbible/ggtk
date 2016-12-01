@@ -11,7 +11,7 @@ from ggtk.TermSimilarity import LinSimilarity
 from ggtk.TermSetSimilarity import AllPairsAverageSetSimilarity
 
 
-class JaccardSetSimilairtyTestCase(unittest.TestCase):
+class AllPairsAverageSetSimilarityTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.graph = ggtk.GoParser.parse("../../example_graphs/go-basic.obo","obo")
@@ -22,7 +22,7 @@ class JaccardSetSimilairtyTestCase(unittest.TestCase):
 
         self.set_sim = AllPairsAverageSetSimilarity(self.term_sim)
 
-class CoreMethodsTests(JaccardSetSimilairtyTestCase):
+class CoreMethodsTests(AllPairsAverageSetSimilarityTestCase):
     ####################
     # Basic test
     ####################

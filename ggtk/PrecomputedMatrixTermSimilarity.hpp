@@ -149,9 +149,8 @@ public:
 			return false;
 		}
 
-
+		return true;
 	}
-
 
 
 	//! A method for calculating term-to-term similarity for GO terms using a precomputed similarity matrix.

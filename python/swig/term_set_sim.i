@@ -13,7 +13,10 @@ file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 #include "ggtk/AllPairsMaxSetSimilarity.hpp"
 #include "ggtk/BestMatchAverageSetSimilarity.hpp"
 #include "ggtk/GentlemanSimUISetSimilarity.hpp"
+#include "ggtk/PesquitaSimGICSetSimilarity.hpp"
 #include "ggtk/JaccardSetSimilarity.hpp"
+#include "ggtk/MazanduSimDICSetSimilarity.hpp"
+#include "ggtk/MazanduSimUICSetSimilarity.hpp"
 
 %}
 
@@ -27,5 +30,8 @@ file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 %include "ggtk/AllPairsMaxSetSimilarity.hpp"
 %include "ggtk/BestMatchAverageSetSimilarity.hpp"
 %include "ggtk/GentlemanSimUISetSimilarity.hpp"
+%include "ggtk/PesquitaSimGICSetSimilarity.hpp"
+%include "ggtk/MazanduSimDICSetSimilarity.hpp"
+%include "ggtk/MazanduSimUICSetSimilarity.hpp"
 %include "ggtk/JaccardSetSimilarity.hpp"
 

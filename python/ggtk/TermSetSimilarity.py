@@ -63,3 +63,51 @@ class BestMatchAverageSetSimilarity(BaseTermSetSim):
         sim_proxy = term_set_sim.BestMatchAverageSetSimilarity(self.sim.term_sim)
         super(self.__class__,self).__init__(sim_proxy)
 
+
+class SimUISetSimilarity(BaseTermSetSim):
+    """
+    A class to calculate Gentleman's SimUI SetSimilarity. This is an extended Jaccard measure.
+    Full details available in ggtk/GentlemanSimUISetSimilarity.hpp
+    """
+    def __init__(self, go_graph):
+        self.go_graph = go_graph
+        sim_proxy = term_set_sim.GentlemanSimUISetSimilarity(self.go_graph.graph)
+        super(self.__class__,self).__init__(sim_proxy)
+
+
+class SimGICSetSimilarity(BaseTermSetSim):
+    """
+    A class to calculate Pesquita et al.'s SimGIC SetSimilarity. This Jaccard weighted by IC.
+    Full details available in ggtk/PesquitaSimGICSetSimilarity.hpp
+    """
+    def __init__(self, go_graph, ic_map):
+        self.go_graph = go_graph
+        self.ic_map = ic_map
+        sim_proxy = term_set_sim.PesquitaSimGICSetSimilarity(self.go_graph.graph, self.ic_map.term_map)
+        super(self.__class__,self).__init__(sim_proxy)
+
+
+class SimDICSetSimilarity(BaseTermSetSim):
+    """
+    A class to calculate Mazandu and Mulder's SimDIC SetSimilarity. Similar in spriti to Lin's measure.
+    Full details available in ggtk/MazanduSimDICSetSimilarity.hpp
+    """
+    def __init__(self, go_graph, ic_map):
+        self.go_graph = go_graph
+        self.ic_map = ic_map
+        sim_proxy = term_set_sim.MazanduSimDICSetSimilarity(self.go_graph.graph, self.ic_map.term_map)
+        super(self.__class__,self).__init__(sim_proxy)
+
+
+class SimUICSetSimilarity(BaseTermSetSim):
+    """
+    A class to calculate Mazandu and Mulder's SimUIC SetSimilarity.
+    Full details available in ggtk/MazanduSimUICSetSimilarity.hpp
+    """
+    def __init__(self, go_graph, ic_map):
+        self.go_graph = go_graph
+        self.ic_map = ic_map
+        sim_proxy = term_set_sim.MazanduSimUICSetSimilarity(self.go_graph.graph, self.ic_map.term_map)
+        super(self.__class__,self).__init__(sim_proxy)
+
+

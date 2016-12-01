@@ -14906,6 +14906,44 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_PrecomputedMatrixTermSimilarity_isFileGood(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PrecomputedMatrixTermSimilarity *arg1 = (PrecomputedMatrixTermSimilarity *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:PrecomputedMatrixTermSimilarity_isFileGood",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_PrecomputedMatrixTermSimilarity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PrecomputedMatrixTermSimilarity_isFileGood" "', argument " "1"" of type '" "PrecomputedMatrixTermSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< PrecomputedMatrixTermSimilarity * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PrecomputedMatrixTermSimilarity_isFileGood" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "PrecomputedMatrixTermSimilarity_isFileGood" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (bool)(arg1)->isFileGood((std::string const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_PrecomputedMatrixTermSimilarity_calculateTermSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   PrecomputedMatrixTermSimilarity *arg1 = (PrecomputedMatrixTermSimilarity *) 0 ;
@@ -15913,6 +15951,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_PekarStaabSimilarity", _wrap_delete_PekarStaabSimilarity, METH_VARARGS, NULL},
 	 { (char *)"PekarStaabSimilarity_swigregister", PekarStaabSimilarity_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_PrecomputedMatrixTermSimilarity", _wrap_new_PrecomputedMatrixTermSimilarity, METH_VARARGS, NULL},
+	 { (char *)"PrecomputedMatrixTermSimilarity_isFileGood", _wrap_PrecomputedMatrixTermSimilarity_isFileGood, METH_VARARGS, NULL},
 	 { (char *)"PrecomputedMatrixTermSimilarity_calculateTermSimilarity", _wrap_PrecomputedMatrixTermSimilarity_calculateTermSimilarity, METH_VARARGS, NULL},
 	 { (char *)"PrecomputedMatrixTermSimilarity_calculateNormalizedTermSimilarity", _wrap_PrecomputedMatrixTermSimilarity_calculateNormalizedTermSimilarity, METH_VARARGS, NULL},
 	 { (char *)"PrecomputedMatrixTermSimilarity_projectTermSet", _wrap_PrecomputedMatrixTermSimilarity_projectTermSet, METH_VARARGS, NULL},

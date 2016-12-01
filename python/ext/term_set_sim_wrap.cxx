@@ -2688,29 +2688,34 @@ SWIG_Python_MustGetPtr(PyObject *obj, swig_type_info *ty, int argnum, int flags)
 #define SWIGTYPE_p_AllPairsAverageSetSimilarity swig_types[0]
 #define SWIGTYPE_p_AllPairsMaxSetSimilarity swig_types[1]
 #define SWIGTYPE_p_BestMatchAverageSetSimilarity swig_types[2]
-#define SWIGTYPE_p_GentlemanUISimilarity swig_types[3]
-#define SWIGTYPE_p_JaccardSetSimilarity swig_types[4]
-#define SWIGTYPE_p_StringArray swig_types[5]
-#define SWIGTYPE_p_TermSetSimilarityInterface swig_types[6]
-#define SWIGTYPE_p_TermSimilarityInterface swig_types[7]
-#define SWIGTYPE_p_allocator_type swig_types[8]
-#define SWIGTYPE_p_boost__unordered_setT_std__string_t swig_types[9]
-#define SWIGTYPE_p_char swig_types[10]
-#define SWIGTYPE_p_difference_type swig_types[11]
-#define SWIGTYPE_p_p_PyObject swig_types[12]
-#define SWIGTYPE_p_size_type swig_types[13]
-#define SWIGTYPE_p_std__invalid_argument swig_types[14]
-#define SWIGTYPE_p_std__string swig_types[15]
-#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t swig_types[16]
-#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t__allocator_type swig_types[17]
-#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t swig_types[18]
-#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t__allocator_type swig_types[19]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[20]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t__allocator_type swig_types[21]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[22]
-#define SWIGTYPE_p_value_type swig_types[23]
-static swig_type_info *swig_types[25];
-static swig_module_info swig_module = {swig_types, 24, 0, 0, 0, 0};
+#define SWIGTYPE_p_GentlemanSimUISetSimilarity swig_types[3]
+#define SWIGTYPE_p_GoGraph swig_types[4]
+#define SWIGTYPE_p_JaccardSetSimilarity swig_types[5]
+#define SWIGTYPE_p_MazanduSimDICSetSimilarity swig_types[6]
+#define SWIGTYPE_p_MazanduSimUICSetSimilarity swig_types[7]
+#define SWIGTYPE_p_PesquitaSimGICSetSimilarity swig_types[8]
+#define SWIGTYPE_p_StringArray swig_types[9]
+#define SWIGTYPE_p_TermInformationContentMap swig_types[10]
+#define SWIGTYPE_p_TermSetSimilarityInterface swig_types[11]
+#define SWIGTYPE_p_TermSimilarityInterface swig_types[12]
+#define SWIGTYPE_p_allocator_type swig_types[13]
+#define SWIGTYPE_p_boost__unordered_setT_std__string_t swig_types[14]
+#define SWIGTYPE_p_char swig_types[15]
+#define SWIGTYPE_p_difference_type swig_types[16]
+#define SWIGTYPE_p_p_PyObject swig_types[17]
+#define SWIGTYPE_p_size_type swig_types[18]
+#define SWIGTYPE_p_std__invalid_argument swig_types[19]
+#define SWIGTYPE_p_std__string swig_types[20]
+#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t swig_types[21]
+#define SWIGTYPE_p_std__vectorT_double_std__allocatorT_double_t_t__allocator_type swig_types[22]
+#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t swig_types[23]
+#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t__allocator_type swig_types[24]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[25]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t__allocator_type swig_types[26]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[27]
+#define SWIGTYPE_p_value_type swig_types[28]
+static swig_type_info *swig_types[30];
+static swig_module_info swig_module = {swig_types, 29, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2814,7 +2819,10 @@ namespace swig {
 #include "ggtk/AllPairsMaxSetSimilarity.hpp"
 #include "ggtk/BestMatchAverageSetSimilarity.hpp"
 #include "ggtk/GentlemanSimUISetSimilarity.hpp"
+#include "ggtk/PesquitaSimGICSetSimilarity.hpp"
 #include "ggtk/JaccardSetSimilarity.hpp"
+#include "ggtk/MazanduSimDICSetSimilarity.hpp"
+#include "ggtk/MazanduSimUICSetSimilarity.hpp"
 
 
 
@@ -11358,55 +11366,67 @@ SWIGINTERN PyObject *BestMatchAverageSetSimilarity_swigregister(PyObject *SWIGUN
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_GentlemanUISimilarity_calculateSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_GentlemanSimUISetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GentlemanUISimilarity *arg1 = (GentlemanUISimilarity *) 0 ;
-  boost::unordered_set< std::string > arg2 ;
-  boost::unordered_set< std::string > arg3 ;
+  GoGraph *arg1 = (GoGraph *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
+  PyObject * obj0 = 0 ;
+  GentlemanSimUISetSimilarity *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_GentlemanSimUISetSimilarity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_GentlemanSimUISetSimilarity" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  result = (GentlemanSimUISetSimilarity *)new GentlemanSimUISetSimilarity(arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_GentlemanSimUISetSimilarity, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_GentlemanSimUISetSimilarity_calculateSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GentlemanSimUISetSimilarity *arg1 = (GentlemanSimUISetSimilarity *) 0 ;
+  boost::unordered_set< std::string > *arg2 = 0 ;
+  boost::unordered_set< std::string > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
   int res2 = 0 ;
-  void *argp3 ;
+  void *argp3 = 0 ;
   int res3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   double result;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:GentlemanUISimilarity_calculateSimilarity",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GentlemanUISimilarity, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:GentlemanSimUISetSimilarity_calculateSimilarity",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GentlemanSimUISetSimilarity, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GentlemanUISimilarity_calculateSimilarity" "', argument " "1"" of type '" "GentlemanUISimilarity *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GentlemanSimUISetSimilarity_calculateSimilarity" "', argument " "1"" of type '" "GentlemanSimUISetSimilarity *""'"); 
   }
-  arg1 = reinterpret_cast< GentlemanUISimilarity * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GentlemanUISimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string >""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GentlemanUISimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string >""'");
-    } else {
-      boost::unordered_set< std::string > * temp = reinterpret_cast< boost::unordered_set< std::string > * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
+  arg1 = reinterpret_cast< GentlemanSimUISetSimilarity * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GentlemanSimUISetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
   }
-  {
-    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
-    if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "GentlemanUISimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string >""'"); 
-    }  
-    if (!argp3) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GentlemanUISimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string >""'");
-    } else {
-      boost::unordered_set< std::string > * temp = reinterpret_cast< boost::unordered_set< std::string > * >(argp3);
-      arg3 = *temp;
-      if (SWIG_IsNewObj(res3)) delete temp;
-    }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GentlemanSimUISetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
   }
-  result = (double)(arg1)->calculateSimilarity(arg2,arg3);
+  arg2 = reinterpret_cast< boost::unordered_set< std::string > * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "GentlemanSimUISetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GentlemanSimUISetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg3 = reinterpret_cast< boost::unordered_set< std::string > * >(argp3);
+  result = (double)(arg1)->calculateSimilarity((boost::unordered_set< std::string > const &)*arg2,(boost::unordered_set< std::string > const &)*arg3);
   resultobj = SWIG_From_double(static_cast< double >(result));
   return resultobj;
 fail:
@@ -11414,19 +11434,19 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_GentlemanUISimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_GentlemanSimUISetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  GentlemanUISimilarity *arg1 = (GentlemanUISimilarity *) 0 ;
+  GentlemanSimUISetSimilarity *arg1 = (GentlemanSimUISetSimilarity *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_GentlemanUISimilarity",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GentlemanUISimilarity, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_GentlemanSimUISetSimilarity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GentlemanSimUISetSimilarity, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_GentlemanUISimilarity" "', argument " "1"" of type '" "GentlemanUISimilarity *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_GentlemanSimUISetSimilarity" "', argument " "1"" of type '" "GentlemanSimUISetSimilarity *""'"); 
   }
-  arg1 = reinterpret_cast< GentlemanUISimilarity * >(argp1);
+  arg1 = reinterpret_cast< GentlemanSimUISetSimilarity * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -11435,10 +11455,334 @@ fail:
 }
 
 
-SWIGINTERN PyObject *GentlemanUISimilarity_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *GentlemanSimUISetSimilarity_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_GentlemanUISimilarity, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_GentlemanSimUISetSimilarity, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_PesquitaSimGICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GoGraph *arg1 = (GoGraph *) 0 ;
+  TermInformationContentMap *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PesquitaSimGICSetSimilarity *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_PesquitaSimGICSetSimilarity",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_PesquitaSimGICSetSimilarity" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_TermInformationContentMap,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_PesquitaSimGICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_PesquitaSimGICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  arg2 = reinterpret_cast< TermInformationContentMap * >(argp2);
+  result = (PesquitaSimGICSetSimilarity *)new PesquitaSimGICSetSimilarity(arg1,(TermInformationContentMap const &)*arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_PesquitaSimGICSetSimilarity, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_PesquitaSimGICSetSimilarity_calculateSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PesquitaSimGICSetSimilarity *arg1 = (PesquitaSimGICSetSimilarity *) 0 ;
+  boost::unordered_set< std::string > *arg2 = 0 ;
+  boost::unordered_set< std::string > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  double result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:PesquitaSimGICSetSimilarity_calculateSimilarity",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_PesquitaSimGICSetSimilarity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "PesquitaSimGICSetSimilarity_calculateSimilarity" "', argument " "1"" of type '" "PesquitaSimGICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< PesquitaSimGICSetSimilarity * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "PesquitaSimGICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "PesquitaSimGICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg2 = reinterpret_cast< boost::unordered_set< std::string > * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "PesquitaSimGICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "PesquitaSimGICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg3 = reinterpret_cast< boost::unordered_set< std::string > * >(argp3);
+  result = (double)(arg1)->calculateSimilarity((boost::unordered_set< std::string > const &)*arg2,(boost::unordered_set< std::string > const &)*arg3);
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_PesquitaSimGICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PesquitaSimGICSetSimilarity *arg1 = (PesquitaSimGICSetSimilarity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_PesquitaSimGICSetSimilarity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_PesquitaSimGICSetSimilarity, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_PesquitaSimGICSetSimilarity" "', argument " "1"" of type '" "PesquitaSimGICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< PesquitaSimGICSetSimilarity * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *PesquitaSimGICSetSimilarity_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_PesquitaSimGICSetSimilarity, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_MazanduSimDICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GoGraph *arg1 = (GoGraph *) 0 ;
+  TermInformationContentMap *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  MazanduSimDICSetSimilarity *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_MazanduSimDICSetSimilarity",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_MazanduSimDICSetSimilarity" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_TermInformationContentMap,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_MazanduSimDICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_MazanduSimDICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  arg2 = reinterpret_cast< TermInformationContentMap * >(argp2);
+  result = (MazanduSimDICSetSimilarity *)new MazanduSimDICSetSimilarity(arg1,(TermInformationContentMap const &)*arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_MazanduSimDICSetSimilarity, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_MazanduSimDICSetSimilarity_calculateSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  MazanduSimDICSetSimilarity *arg1 = (MazanduSimDICSetSimilarity *) 0 ;
+  boost::unordered_set< std::string > *arg2 = 0 ;
+  boost::unordered_set< std::string > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  double result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:MazanduSimDICSetSimilarity_calculateSimilarity",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MazanduSimDICSetSimilarity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MazanduSimDICSetSimilarity_calculateSimilarity" "', argument " "1"" of type '" "MazanduSimDICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< MazanduSimDICSetSimilarity * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "MazanduSimDICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MazanduSimDICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg2 = reinterpret_cast< boost::unordered_set< std::string > * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MazanduSimDICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MazanduSimDICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg3 = reinterpret_cast< boost::unordered_set< std::string > * >(argp3);
+  result = (double)(arg1)->calculateSimilarity((boost::unordered_set< std::string > const &)*arg2,(boost::unordered_set< std::string > const &)*arg3);
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_MazanduSimDICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  MazanduSimDICSetSimilarity *arg1 = (MazanduSimDICSetSimilarity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_MazanduSimDICSetSimilarity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MazanduSimDICSetSimilarity, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_MazanduSimDICSetSimilarity" "', argument " "1"" of type '" "MazanduSimDICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< MazanduSimDICSetSimilarity * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *MazanduSimDICSetSimilarity_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_MazanduSimDICSetSimilarity, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_MazanduSimUICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  GoGraph *arg1 = (GoGraph *) 0 ;
+  TermInformationContentMap *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  MazanduSimUICSetSimilarity *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_MazanduSimUICSetSimilarity",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_GoGraph, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_MazanduSimUICSetSimilarity" "', argument " "1"" of type '" "GoGraph *""'"); 
+  }
+  arg1 = reinterpret_cast< GoGraph * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_TermInformationContentMap,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_MazanduSimUICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_MazanduSimUICSetSimilarity" "', argument " "2"" of type '" "TermInformationContentMap const &""'"); 
+  }
+  arg2 = reinterpret_cast< TermInformationContentMap * >(argp2);
+  result = (MazanduSimUICSetSimilarity *)new MazanduSimUICSetSimilarity(arg1,(TermInformationContentMap const &)*arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_MazanduSimUICSetSimilarity, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_MazanduSimUICSetSimilarity_calculateSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  MazanduSimUICSetSimilarity *arg1 = (MazanduSimUICSetSimilarity *) 0 ;
+  boost::unordered_set< std::string > *arg2 = 0 ;
+  boost::unordered_set< std::string > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  double result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:MazanduSimUICSetSimilarity_calculateSimilarity",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MazanduSimUICSetSimilarity, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "MazanduSimUICSetSimilarity_calculateSimilarity" "', argument " "1"" of type '" "MazanduSimUICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< MazanduSimUICSetSimilarity * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "MazanduSimUICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MazanduSimUICSetSimilarity_calculateSimilarity" "', argument " "2"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg2 = reinterpret_cast< boost::unordered_set< std::string > * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__unordered_setT_std__string_t,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "MazanduSimUICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "MazanduSimUICSetSimilarity_calculateSimilarity" "', argument " "3"" of type '" "boost::unordered_set< std::string > const &""'"); 
+  }
+  arg3 = reinterpret_cast< boost::unordered_set< std::string > * >(argp3);
+  result = (double)(arg1)->calculateSimilarity((boost::unordered_set< std::string > const &)*arg2,(boost::unordered_set< std::string > const &)*arg3);
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_MazanduSimUICSetSimilarity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  MazanduSimUICSetSimilarity *arg1 = (MazanduSimUICSetSimilarity *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_MazanduSimUICSetSimilarity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MazanduSimUICSetSimilarity, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_MazanduSimUICSetSimilarity" "', argument " "1"" of type '" "MazanduSimUICSetSimilarity *""'"); 
+  }
+  arg1 = reinterpret_cast< MazanduSimUICSetSimilarity * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *MazanduSimUICSetSimilarity_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_MazanduSimUICSetSimilarity, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -11680,9 +12024,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"BestMatchAverageSetSimilarity_calculateSimilarity", _wrap_BestMatchAverageSetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
 	 { (char *)"delete_BestMatchAverageSetSimilarity", _wrap_delete_BestMatchAverageSetSimilarity, METH_VARARGS, NULL},
 	 { (char *)"BestMatchAverageSetSimilarity_swigregister", BestMatchAverageSetSimilarity_swigregister, METH_VARARGS, NULL},
-	 { (char *)"GentlemanUISimilarity_calculateSimilarity", _wrap_GentlemanUISimilarity_calculateSimilarity, METH_VARARGS, NULL},
-	 { (char *)"delete_GentlemanUISimilarity", _wrap_delete_GentlemanUISimilarity, METH_VARARGS, NULL},
-	 { (char *)"GentlemanUISimilarity_swigregister", GentlemanUISimilarity_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_GentlemanSimUISetSimilarity", _wrap_new_GentlemanSimUISetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"GentlemanSimUISetSimilarity_calculateSimilarity", _wrap_GentlemanSimUISetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
+	 { (char *)"delete_GentlemanSimUISetSimilarity", _wrap_delete_GentlemanSimUISetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"GentlemanSimUISetSimilarity_swigregister", GentlemanSimUISetSimilarity_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_PesquitaSimGICSetSimilarity", _wrap_new_PesquitaSimGICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"PesquitaSimGICSetSimilarity_calculateSimilarity", _wrap_PesquitaSimGICSetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
+	 { (char *)"delete_PesquitaSimGICSetSimilarity", _wrap_delete_PesquitaSimGICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"PesquitaSimGICSetSimilarity_swigregister", PesquitaSimGICSetSimilarity_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_MazanduSimDICSetSimilarity", _wrap_new_MazanduSimDICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"MazanduSimDICSetSimilarity_calculateSimilarity", _wrap_MazanduSimDICSetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
+	 { (char *)"delete_MazanduSimDICSetSimilarity", _wrap_delete_MazanduSimDICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"MazanduSimDICSetSimilarity_swigregister", MazanduSimDICSetSimilarity_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_MazanduSimUICSetSimilarity", _wrap_new_MazanduSimUICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"MazanduSimUICSetSimilarity_calculateSimilarity", _wrap_MazanduSimUICSetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
+	 { (char *)"delete_MazanduSimUICSetSimilarity", _wrap_delete_MazanduSimUICSetSimilarity, METH_VARARGS, NULL},
+	 { (char *)"MazanduSimUICSetSimilarity_swigregister", MazanduSimUICSetSimilarity_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_JaccardSetSimilarity", _wrap_new_JaccardSetSimilarity, METH_VARARGS, NULL},
 	 { (char *)"JaccardSetSimilarity_calculateSimilarity", _wrap_JaccardSetSimilarity_calculateSimilarity, METH_VARARGS, NULL},
 	 { (char *)"delete_JaccardSetSimilarity", _wrap_delete_JaccardSetSimilarity, METH_VARARGS, NULL},
@@ -11705,8 +12062,17 @@ static void *_p_AllPairsMaxSetSimilarityTo_p_TermSetSimilarityInterface(void *x,
 static void *_p_BestMatchAverageSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((TermSetSimilarityInterface *)  ((BestMatchAverageSetSimilarity *) x));
 }
-static void *_p_GentlemanUISimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((TermSetSimilarityInterface *)  ((GentlemanUISimilarity *) x));
+static void *_p_GentlemanSimUISetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((TermSetSimilarityInterface *)  ((GentlemanSimUISetSimilarity *) x));
+}
+static void *_p_PesquitaSimGICSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((TermSetSimilarityInterface *)  ((PesquitaSimGICSetSimilarity *) x));
+}
+static void *_p_MazanduSimDICSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((TermSetSimilarityInterface *)  ((MazanduSimDICSetSimilarity *) x));
+}
+static void *_p_MazanduSimUICSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((TermSetSimilarityInterface *)  ((MazanduSimUICSetSimilarity *) x));
 }
 static void *_p_JaccardSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((TermSetSimilarityInterface *)  ((JaccardSetSimilarity *) x));
@@ -11714,9 +12080,14 @@ static void *_p_JaccardSetSimilarityTo_p_TermSetSimilarityInterface(void *x, int
 static swig_type_info _swigt__p_AllPairsAverageSetSimilarity = {"_p_AllPairsAverageSetSimilarity", "AllPairsAverageSetSimilarity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_AllPairsMaxSetSimilarity = {"_p_AllPairsMaxSetSimilarity", "AllPairsMaxSetSimilarity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_BestMatchAverageSetSimilarity = {"_p_BestMatchAverageSetSimilarity", "BestMatchAverageSetSimilarity *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_GentlemanUISimilarity = {"_p_GentlemanUISimilarity", "GentlemanUISimilarity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_GentlemanSimUISetSimilarity = {"_p_GentlemanSimUISetSimilarity", "GentlemanSimUISetSimilarity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_GoGraph = {"_p_GoGraph", "GoGraph *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_JaccardSetSimilarity = {"_p_JaccardSetSimilarity", "JaccardSetSimilarity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_MazanduSimDICSetSimilarity = {"_p_MazanduSimDICSetSimilarity", "MazanduSimDICSetSimilarity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_MazanduSimUICSetSimilarity = {"_p_MazanduSimUICSetSimilarity", "MazanduSimUICSetSimilarity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_PesquitaSimGICSetSimilarity = {"_p_PesquitaSimGICSetSimilarity", "PesquitaSimGICSetSimilarity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_StringArray = {"_p_StringArray", "StringArray *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_TermInformationContentMap = {"_p_TermInformationContentMap", "TermInformationContentMap *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TermSetSimilarityInterface = {"_p_TermSetSimilarityInterface", "TermSetSimilarityInterface *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TermSimilarityInterface = {"_p_TermSimilarityInterface", "TermSimilarityInterface *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
@@ -11740,9 +12111,14 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_AllPairsAverageSetSimilarity,
   &_swigt__p_AllPairsMaxSetSimilarity,
   &_swigt__p_BestMatchAverageSetSimilarity,
-  &_swigt__p_GentlemanUISimilarity,
+  &_swigt__p_GentlemanSimUISetSimilarity,
+  &_swigt__p_GoGraph,
   &_swigt__p_JaccardSetSimilarity,
+  &_swigt__p_MazanduSimDICSetSimilarity,
+  &_swigt__p_MazanduSimUICSetSimilarity,
+  &_swigt__p_PesquitaSimGICSetSimilarity,
   &_swigt__p_StringArray,
+  &_swigt__p_TermInformationContentMap,
   &_swigt__p_TermSetSimilarityInterface,
   &_swigt__p_TermSimilarityInterface,
   &_swigt__p_allocator_type,
@@ -11766,10 +12142,15 @@ static swig_type_info *swig_type_initial[] = {
 static swig_cast_info _swigc__p_AllPairsAverageSetSimilarity[] = {  {&_swigt__p_AllPairsAverageSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AllPairsMaxSetSimilarity[] = {  {&_swigt__p_AllPairsMaxSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_BestMatchAverageSetSimilarity[] = {  {&_swigt__p_BestMatchAverageSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_GentlemanUISimilarity[] = {  {&_swigt__p_GentlemanUISimilarity, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_GentlemanSimUISetSimilarity[] = {  {&_swigt__p_GentlemanSimUISetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_GoGraph[] = {  {&_swigt__p_GoGraph, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_JaccardSetSimilarity[] = {  {&_swigt__p_JaccardSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_MazanduSimDICSetSimilarity[] = {  {&_swigt__p_MazanduSimDICSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_MazanduSimUICSetSimilarity[] = {  {&_swigt__p_MazanduSimUICSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_PesquitaSimGICSetSimilarity[] = {  {&_swigt__p_PesquitaSimGICSetSimilarity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_StringArray[] = {  {&_swigt__p_StringArray, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TermSetSimilarityInterface[] = {  {&_swigt__p_TermSetSimilarityInterface, 0, 0, 0},  {&_swigt__p_AllPairsAverageSetSimilarity, _p_AllPairsAverageSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_AllPairsMaxSetSimilarity, _p_AllPairsMaxSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_BestMatchAverageSetSimilarity, _p_BestMatchAverageSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_GentlemanUISimilarity, _p_GentlemanUISimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_JaccardSetSimilarity, _p_JaccardSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_TermInformationContentMap[] = {  {&_swigt__p_TermInformationContentMap, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_TermSetSimilarityInterface[] = {  {&_swigt__p_TermSetSimilarityInterface, 0, 0, 0},  {&_swigt__p_AllPairsAverageSetSimilarity, _p_AllPairsAverageSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_AllPairsMaxSetSimilarity, _p_AllPairsMaxSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_BestMatchAverageSetSimilarity, _p_BestMatchAverageSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_GentlemanSimUISetSimilarity, _p_GentlemanSimUISetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_PesquitaSimGICSetSimilarity, _p_PesquitaSimGICSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_MazanduSimDICSetSimilarity, _p_MazanduSimDICSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_MazanduSimUICSetSimilarity, _p_MazanduSimUICSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},  {&_swigt__p_JaccardSetSimilarity, _p_JaccardSetSimilarityTo_p_TermSetSimilarityInterface, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TermSimilarityInterface[] = {  {&_swigt__p_TermSimilarityInterface, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__unordered_setT_std__string_t[] = {  {&_swigt__p_boost__unordered_setT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -11792,9 +12173,14 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_AllPairsAverageSetSimilarity,
   _swigc__p_AllPairsMaxSetSimilarity,
   _swigc__p_BestMatchAverageSetSimilarity,
-  _swigc__p_GentlemanUISimilarity,
+  _swigc__p_GentlemanSimUISetSimilarity,
+  _swigc__p_GoGraph,
   _swigc__p_JaccardSetSimilarity,
+  _swigc__p_MazanduSimDICSetSimilarity,
+  _swigc__p_MazanduSimUICSetSimilarity,
+  _swigc__p_PesquitaSimGICSetSimilarity,
   _swigc__p_StringArray,
+  _swigc__p_TermInformationContentMap,
   _swigc__p_TermSetSimilarityInterface,
   _swigc__p_TermSimilarityInterface,
   _swigc__p_allocator_type,
