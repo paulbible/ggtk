@@ -22,7 +22,6 @@ var annotated_dup =
     [ "GafAnnotationParser", "classGafAnnotationParser.html", "classGafAnnotationParser" ],
     [ "GenomicRegion", "classGenomicRegion.html", "classGenomicRegion" ],
     [ "GentlemanSimUISetSimilarity", "classGentlemanSimUISetSimilarity.html", "classGentlemanSimUISetSimilarity" ],
-    [ "GentlemanUISetSimilarity", "classGentlemanUISetSimilarity.html", null ],
     [ "GoaAnnotationParser", "classGoaAnnotationParser.html", "classGoaAnnotationParser" ],
     [ "GoGraph", "classGoGraph.html", "classGoGraph" ],
     [ "GoParserFactory", "classGoParserFactory.html", "classGoParserFactory" ],

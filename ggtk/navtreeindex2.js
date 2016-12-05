@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"functions_func_m.html":[2,3,1,11],
 "functions_func_n.html":[2,3,1,12],
 "functions_func_o.html":[2,3,1,13],
 "functions_func_p.html":[2,3,1,14],
@@ -26,8 +25,8 @@ var NAVTREEINDEX2 =
 "functions_w.html":[2,3,0,20],
 "ggtk_8hpp_source.html":[3,0,0,24],
 "hierarchy.html":[2,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "namespaceAccumulators.html":[1,0,0],
 "namespaceAppUtilities.html":[1,0,1],
 "namespaceEnrichmentTools.html":[1,0,2],
@@ -39,11 +38,11 @@ var NAVTREEINDEX2 =
 "namespacemembers_type.html":[1,1,2],
 "namespaces.html":[1,0],
 "pages.html":[],
-"structGoGraph_1_1EdgeProps.html":[2,0,24,0],
-"structGoGraph_1_1EdgeProps.html#ae86950a82bf50040fa0b2c83d7a89fc6":[2,0,24,0,0],
-"structGoGraph_1_1EdgeProps.html#af9336fa93d326a88970e8dafa64fa85e":[2,0,24,0,1],
-"structGoGraph_1_1VertexProps.html":[2,0,24,1],
-"structGoGraph_1_1VertexProps.html#a353631ac064161688da0fb4f458dfcb8":[2,0,24,1,1],
-"structGoGraph_1_1VertexProps.html#a9f3a3e42785bc040b0b827b1ffd3f039":[2,0,24,1,2],
-"structGoGraph_1_1VertexProps.html#ad60aea44237ee479a4c8768226778590":[2,0,24,1,0]
+"structGoGraph_1_1EdgeProps.html":[2,0,23,0],
+"structGoGraph_1_1EdgeProps.html#ae86950a82bf50040fa0b2c83d7a89fc6":[2,0,23,0,0],
+"structGoGraph_1_1EdgeProps.html#af9336fa93d326a88970e8dafa64fa85e":[2,0,23,0,1],
+"structGoGraph_1_1VertexProps.html":[2,0,23,1],
+"structGoGraph_1_1VertexProps.html#a353631ac064161688da0fb4f458dfcb8":[2,0,23,1,1],
+"structGoGraph_1_1VertexProps.html#a9f3a3e42785bc040b0b827b1ffd3f039":[2,0,23,1,2],
+"structGoGraph_1_1VertexProps.html#ad60aea44237ee479a4c8768226778590":[2,0,23,1,0]
 };

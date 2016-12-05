@@ -19,7 +19,6 @@ var hierarchy =
       ] ],
       [ "DisallowedSetEvidencePolicy", "classDisallowedSetEvidencePolicy.html", null ]
     ] ],
-    [ "GentlemanUISetSimilarity", "classGentlemanUISetSimilarity.html", null ],
     [ "GoGraph", "classGoGraph.html", null ],
     [ "GoParserFactory", "classGoParserFactory.html", null ],
     [ "GoParserInterface", "classGoParserInterface.html", [
