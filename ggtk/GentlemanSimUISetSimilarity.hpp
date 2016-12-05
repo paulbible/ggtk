@@ -12,7 +12,7 @@ file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 #include <ggtk/GoGraph.hpp>
 
 
-/*! \class GentlemanUISetSimilarity
+/*! \class GentlemanSimUISetSimilarity
 	\brief A class to calculate Gentleman's UI similarity between go terms for 2 sets.
 
 	Gentlman R. Visualizing and Distances Using GO. URL http://www.bioconductor.org/docs/vignettes.html.
