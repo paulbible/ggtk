@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N build_matrix_res
+### Declare job non-rerunable
+#PBS -r n
+### Output files
+#PBS -e $PBS_JOBNAME.$PBS_JOBID.e
+#PBS -o $PBS_JOBNAME.$PBS_JOBID.o
+### Mail to user
+#PBS -m ae
+#PBS -M paulwbible@yahoo.com
+### pool name
+###PBS -q long
+### Number of nodes (node property)
+#PBS -l nodes=1:ppn=1,mem=10GB,walltime=512:00:00
+
+cd /public/users/paul/dev/ggtk_home/python/pub_scripts/benchmark
+sim=res
+time (./write_matrix_helper.py -o cc -s $sim -i casi -g go_data/gene_ontology_edit.obo.2016-12-01 -a go_data/goa_human_2016-11-28.gaf -m mats_2016-12-03/human_cc_$sim/casi/ccMatrix.txt) 2> human_cc_${sim}_casi_time.txt
+time (./write_matrix_helper.py -o cc -s $sim -i mica -g go_data/gene_ontology_edit.obo.2016-12-01 -a go_data/goa_human_2016-11-28.gaf -m mats_2016-12-03/human_cc_$sim/mica/ccMatrix.txt) 2> human_cc_${sim}_mica_time.txt
+time (./write_matrix_helper.py -o cc -s $sim -i grasm -g go_data/gene_ontology_edit.obo.2016-12-01 -a go_data/goa_human_2016-11-28.gaf -m mats_2016-12-03/human_cc_$sim/grasm/ccMatrix.txt) 2> human_cc_${sim}_grasm_time.txt
+time (./write_matrix_helper.py -o cc -s $sim -i agrasm -g go_data/gene_ontology_edit.obo.2016-12-01 -a go_data/goa_human_2016-11-28.gaf -m mats_2016-12-03/human_cc_$sim/agrasm/ccMatrix.txt) 2> human_cc_${sim}_agrasm_time.txt
+time (./write_matrix_helper.py -o cc -s $sim -i sf -g go_data/gene_ontology_edit.obo.2016-12-01 -a go_data/goa_human_2016-11-28.gaf -m mats_2016-12-03/human_cc_$sim/sf/ccMatrix.txt) 2> human_cc_${sim}_sf_time.txt
