@@ -20,6 +20,7 @@ See the LICENSE_1_0.txt file or a copy at http://www.boost.org/LICENSE_1_0.txt
 
 # Citing GGTK
 If you use GGTK in your research, please cite:
+
 [Bible PW, Sun HW, Morasso MI, Loganantharaj R, Wei L. The effects of shared information on semantic calculations in the Gene Ontology. Computational and Structural Biotechnology Journal. 2017 Jan 30.](http://dx.doi.org/10.1016/j.csbj.2017.01.009)
 
 # Acknowledgements
